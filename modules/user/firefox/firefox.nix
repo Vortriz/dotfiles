@@ -5,5 +5,8 @@
 
     programs.firefox = {
         enable = true;
+        profiles.default.settings = {
+            "mousewheel.default.delta_multiplier_y" = 20;
+        };
     };
 }
