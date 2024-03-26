@@ -4,4 +4,4 @@ echo "NixOS Rebuilding..."
 git add *
 sudo nixos-rebuild switch --flake ~/dotfiles/
 gen=$(nixos-rebuild list-generations --flake ~/dotfiles/ | grep -oP "[0-9]*(?= current)")
-git commit -m "$gen $msg"
+git commit -m "$gen - $msg"

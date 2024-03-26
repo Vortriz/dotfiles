@@ -6,6 +6,7 @@
     programs.vscode = {
         enable = true;
         extensions = with pkgs.vscode-extensions; [
+            # language packs et al
             bbenoist.nix
             james-yu.latex-workshop
             mikestead.dotenv
@@ -19,12 +20,15 @@
             nvarner.typst-lsp
             shd101wyy.markdown-preview-enhanced
             yzhang.markdown-all-in-one
+
+            # themes et al
             catppuccin.catppuccin-vsc
             catppuccin.catppuccin-vsc-icons
             github.github-vscode-theme
             pkief.material-icon-theme
             zhuangtongfa.material-theme
-            eamodio.gitlens
+
+            # misc
             antfu.slidev
             github.copilot
             github.copilot-chat
@@ -33,16 +37,6 @@
             ms-vsliveshare.vsliveshare
             ritwickdey.liveserver
             rubymaniac.vscode-paste-and-indent
-            
-
-            # goessner.mdmath
-            # mark-wiemer.vscode-autohotkey-plus-plus
-            # ms-python.autopep8
-            # ms-python.debugpy
-            # monokai.theme-monokai-pro-vscode
-            # glorwinger.nwscript
-            # moshfeu.compare-folders
-            # ms-edgedevtools.vscode-edge-devtools
         ];
     };
 }
