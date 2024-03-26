@@ -1,0 +1,6 @@
+#!/usr/bin/sh
+read -p "Commit message: " msg
+echo "NixOS Rebuilding..."
+sudo nixos-rebuild switch --flake ~/dotfiles/#default
+gen=$(nixos-rebuild list-generations --flake ~/nixos/ | grep -oP "[0-9]*(?= current)")
+git commit -m "$gen $msg"
