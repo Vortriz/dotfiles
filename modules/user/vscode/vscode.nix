@@ -32,6 +32,7 @@
             antfu.slidev
             github.copilot
             github.copilot-chat
+            donjayamanne.githistory
             ms-azuretools.vscode-docker
             ms-vscode-remote.remote-containers
             ms-vsliveshare.vsliveshare
