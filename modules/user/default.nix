@@ -18,6 +18,8 @@
   # Imports
   imports = [
     ./git/git.nix
+    ./firefox/firefox.nix
+    ./vscode/vscode.nix
   ];
 
   # The home.packages option allows you to install Nix packages into your

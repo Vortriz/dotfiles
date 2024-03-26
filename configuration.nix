@@ -86,9 +86,7 @@
     description = "Rishi";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      firefox #remove this
-      kate # and this
-      thunderbird
+
     ];
   };
 
@@ -103,7 +101,6 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
-  cloudflare-warp
   ];
 
   systemd.packages = [ pkgs.cloudflare-warp ];
