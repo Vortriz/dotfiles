@@ -102,6 +102,7 @@
         wineWowPackages.waylandFull
         bottles
         unzip
+        p7zip
     ];
 
     systemd.packages = [ pkgs.cloudflare-warp ];
