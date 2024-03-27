@@ -21,6 +21,7 @@
     ./firefox/firefox.nix
     ./vscode/vscode.nix
     ./cloudflare-warp/cloudflare-warp.nix
+    #./themes/catppuccin.nix
   ];
 
   # The home.packages option allows you to install Nix packages into your
