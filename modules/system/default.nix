@@ -8,6 +8,7 @@
     imports =
         [ # Include the results of the hardware scan.
         ./hardware-configuration.nix
+        ./app/steam.nix
         # ./app/settings.nix
         ];
 
@@ -99,8 +100,8 @@
     # List packages installed in system profile. To search, run:
     # $ nix search wget
     environment.systemPackages = with pkgs; [
-        wineWowPackages.waylandFull
-        bottles
+        wineWowPackages.stable
+        #bottles
         unzip
         p7zip
     ];
