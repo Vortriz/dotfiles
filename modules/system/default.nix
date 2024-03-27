@@ -8,7 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./wine.nix
+      ./app/wine.nix
       # ./app/settings.nix
     ];
 

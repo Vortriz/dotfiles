@@ -1,6 +1,8 @@
-
 { inputs, config, pkgs, ... }:
 
 {
-    environment.systemPackages = with pkgs; [ wineWowPackages.waylandFull ];
+    environment.systemPackages = with pkgs; [ 
+        wineWowPackages.waylandFull
+        bottles
+        ];
 }
