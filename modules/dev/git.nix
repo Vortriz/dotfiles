@@ -1,8 +1,6 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
-    home.packages = [ pkgs.git ];
-
     programs.git = {
         enable = true;
         userName = "Rishi";
