@@ -17,15 +17,18 @@
     home.packages = with pkgs; [
         cloudflare-warp
         neofetch
-        touchegg
         unzip
         p7zip
-        cpupower-gui
-        copyq
         filelight
         asusctl
-        preload
     ];
+
+    services = {
+        cpupower-gui.enable = true;
+        touchegg.enable = true;
+        copyq.enable = true;
+        preload.enable = true;
+    };
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
     # plain files is through 'home.file'.
