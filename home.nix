@@ -2,10 +2,10 @@
 
 {
     imports = [
-        ./software
-        ./dev
-        ./themes
-        ./system/audio.nix
+        ./modules/software
+        ./modules/dev
+        ./modules/themes
+        ./modules/system/audio.nix
     ];
 
     # Home Manager needs a bit of information about you and the paths it should
@@ -21,14 +21,9 @@
         p7zip
         filelight
         asusctl
+        lm_sensors
+        copyq
     ];
-
-    services = {
-        cpupower-gui.enable = true;
-        touchegg.enable = true;
-        copyq.enable = true;
-        preload.enable = true;
-    };
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
     # plain files is through 'home.file'.
