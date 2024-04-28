@@ -48,7 +48,7 @@
         # Enable the X11 windowing system.
         xserver.enable = true;
         # Enable the KDE Plasma Desktop Environment.
-        xserver.displayManager.sddm.enable = true;
+        displayManager.sddm.enable = true;
         desktopManager.plasma6.enable = true;
 
         # Configure keymap in X11

@@ -7,17 +7,10 @@
 {
     imports = [
         ./hardware-configuration.nix
+        ./modules/system/packages.nix
+        ./modules/system/services.nix
         ./modules/system/settings.nix
-        ./modules/system/thunderbolt.nix
     ];
-
-    services = {
-        cpupower-gui.enable = true;
-        touchegg.enable = true;
-        preload.enable = true;
-        asusd.enable = true;
-        asusd.enableUserService = true;
-    };
     
     # This value determines the NixOS release from which the default
     # settings for stateful data, like file locations and database versions

@@ -2,6 +2,6 @@
 
 {
     imports = [
-        # ./catppuccin.nix
+        ./audio.nix
     ];
 }

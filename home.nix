@@ -2,10 +2,10 @@
 
 {
     imports = [
-        ./modules/software
+        ./modules/customization
         ./modules/dev
-        ./modules/themes
-        ./modules/system/audio.nix
+        ./modules/software
+        ./modules/system
     ];
 
     # Home Manager needs a bit of information about you and the paths it should
@@ -15,14 +15,6 @@
 
     # Utilities
     home.packages = with pkgs; [
-        cloudflare-warp
-        neofetch
-        unzip
-        p7zip
-        filelight
-        asusctl
-        lm_sensors
-        copyq
     ];
 
     # Home Manager is pretty good at managing dotfiles. The primary way to manage
