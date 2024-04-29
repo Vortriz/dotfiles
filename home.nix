@@ -13,7 +13,6 @@
     home.username = "rishi";
     home.homeDirectory = "/home/rishi";
 
-    # Utilities
     home.packages = with pkgs; [
     ];
 

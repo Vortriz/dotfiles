@@ -3,12 +3,15 @@
 {
     imports = [
         ./ffmpeg.nix
+        ./file-manager.nix
         ./firefox.nix
         ./gimp.nix
+        ./obsidian.nix
+        ./sioyek.nix
+        ./social-apps.nix
         ./steam.nix
         ./utilities.nix
         ./vlc.nix
-        ./vscode.nix
         ./wine.nix
         ./youtube-music.nix
     ];

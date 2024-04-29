@@ -5,6 +5,7 @@
         neofetch
         unzip
         p7zip
+        rar
         filelight
     ];
 
