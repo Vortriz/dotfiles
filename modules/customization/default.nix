@@ -2,5 +2,6 @@
 
 {
     imports = [
+        # ./kvantum.nix
     ];
 }

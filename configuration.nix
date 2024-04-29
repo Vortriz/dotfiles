@@ -11,6 +11,10 @@
         ./modules/system/services.nix
         ./modules/system/settings.nix
     ];
+
+    environment.sessionVariables = {
+        QT_QPA_PLATFORMTHEME = "qt6ct";
+    };
     
     # This value determines the NixOS release from which the default
     # settings for stateful data, like file locations and database versions
