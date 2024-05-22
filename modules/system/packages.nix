@@ -9,6 +9,8 @@
 
         libsForQt5.qtstyleplugin-kvantum
 
+        kwallet-pam
+
         # thunderbolt
         thunderbolt
         plasma-thunderbolt
