@@ -6,6 +6,7 @@
         
         asusctl
         lm_sensors
+        # wlr-randr (to-add)
 
         libsForQt5.qtstyleplugin-kvantum
 
