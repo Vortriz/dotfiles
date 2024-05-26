@@ -112,6 +112,8 @@
     hardware.pulseaudio.enable = false;
     security.rtkit.enable = true;
 
+    nix.gc.automatic = true;
+
     # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
 
