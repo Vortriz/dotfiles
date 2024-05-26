@@ -4,7 +4,7 @@
     imports = [
         ./ffmpeg.nix
         ./file-manager.nix
-        ./firefox.nix
+        ./firefox/firefox.nix
         ./gimp.nix
         ./obsidian.nix
         ./sioyek.nix
