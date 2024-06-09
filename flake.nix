@@ -7,6 +7,10 @@
             url = "github:nix-community/home-manager";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+        nbfc-linux = {
+            url = "github:nbfc-linux/nbfc-linux";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
     };
 
     outputs = inputs@{ nixpkgs, home-manager, ... }: {
@@ -25,6 +29,9 @@
                         # Optionally, use home-manager.extraSpecialArgs to pass arguments to home.nix
                     }
                 ];
+                specialArgs = {
+					inherit inputs;
+				};
             };
         };
     };
