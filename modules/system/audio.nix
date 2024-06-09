@@ -2,6 +2,6 @@
 
 {
     services.pulseeffects = {
-        enable = true;
+        enable = false;
     };
 }
