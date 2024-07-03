@@ -2,7 +2,7 @@
 
 {
     imports = [
-        ./font.nix
+        ./fonts
         ./packages.nix
         ./services.nix
         ./settings.nix
