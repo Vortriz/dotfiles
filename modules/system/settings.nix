@@ -134,7 +134,7 @@
     # };
 
     # For steam (wine)
-    hardware.opengl.driSupport32Bit = true;
+    hardware.graphics.enable32Bit = true;
 
     users.users.rishi = {
         isNormalUser = true;
