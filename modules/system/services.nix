@@ -2,7 +2,7 @@
 
 {
     services = {
-        cpupower-gui.enable = false;
+        cpupower-gui.enable = true;
         touchegg.enable = true;
         preload.enable = true;
         asusd.enable = true;
