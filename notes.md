@@ -27,6 +27,7 @@ verify package names
 - ~~thunderbolt~~
 - autocpu-freq
 - ~~gimp~~
+- wpa_supplicant_gui
 
 # my setup
 
