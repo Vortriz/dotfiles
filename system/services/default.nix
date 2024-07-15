@@ -1,4 +1,7 @@
 {
+    pkgs,
+    ...
+}: {
     imports = [
         ./asus.nix
         ./cpu-optimisation.nix

@@ -1,4 +1,7 @@
 {
+    pkgs,
+    ...
+}: {
     imports = [
         ./asusctl.nix
         ./fonts.nix
@@ -6,5 +9,6 @@
         # ./nbfc.nix
         ./nix-ld.nix
         ./warp.nix
+        ./wihotspot.nix
     ];
 }

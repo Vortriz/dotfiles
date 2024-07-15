@@ -1,4 +1,7 @@
 {
+    pkgs,
+    ...
+}: {
     imports = [
         ./file-manager.nix
         ./firefox
@@ -11,6 +14,10 @@
         ./utilities.nix
         ./vlc.nix
         ./vscode.nix
+        ./warp.nix
         ./yt-music.nix
+    ];
+
+    home.packages = with pkgs; [
     ];
 }
