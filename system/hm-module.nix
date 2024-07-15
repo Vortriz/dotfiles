@@ -14,5 +14,6 @@
             # Import your home-manager configuration
             rishi = import ../home-manager/home.nix;
         };
+        backupFileExtension = "backup";
     };
 }

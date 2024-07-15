@@ -1,6 +1,6 @@
 {
     services = {
-        cpupower-gui.enable = true;
+        cpupower-gui.enable = false;
 
         # to prevent conflict with TLP
         power-profiles-daemon.enable = false;
