@@ -3,7 +3,6 @@
     ...
 }: {
     imports = [
-        ./file-manager.nix
         ./firefox
         ./gimp.nix
         ./mpv.nix
