@@ -7,6 +7,7 @@
         ./gimp.nix
         ./mpv.nix
         ./obsidian.nix
+        ./persepolis.nix
         ./sioyek.nix
         ./social-apps.nix
         ./steam.nix
