@@ -3,6 +3,8 @@
     ...
 }: {
     imports = [
+        ./bash.nix
+        ./devenv.nix
         ./ffmpeg.nix
         ./gh.nix
         ./git.nix
