@@ -10,6 +10,7 @@
         ./networking.nix
         ./security.nix
         ./storage-optimization.nix
+        ./swap.nix
         ./time.nix
         ./virtualisation.nix
     ];
