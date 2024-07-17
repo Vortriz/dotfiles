@@ -10,13 +10,26 @@
 
 # things to check out
 
+- [x] ~~alejandra~~ (not ready for prime time)
+- [x] nh
+- [x] ~~nix-output-monitor~~
+- [x] ~~nvd~~
+- [x] ~~nixd~~ ( dont need ig)
+- [x] nix-index
+- [x] comma
+- [x] ~~zed~~ (doesn't work)
+- [ ] kitty
+- [ ] fish
+- [ ] starship
 - lf/yazi/mc
-- nushell/zsh
-- kitty
+- [ ] fzf
+- sd
+- just
+- condo
 - zoxide
 - ripgrep
 - eza
-- bat
+- [ ] bat
 - btop++
 - taskmaster
 - thefuck
