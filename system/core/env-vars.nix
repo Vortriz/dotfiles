@@ -1,6 +1,6 @@
 {
     environment.variables = {
         # For nh
-        FLAKE = "~/dotfiles/";
-    }
+        FLAKE = "$HOME/dotfiles/";
+    };
 }

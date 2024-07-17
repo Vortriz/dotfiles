@@ -46,3 +46,7 @@
 - ksystemlog
 - libreoffice
 - typst
+
+## theming stage
+
+- [ ] kitty

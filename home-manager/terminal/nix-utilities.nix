@@ -3,11 +3,11 @@
     ...
 }: {
     programs = {
-        nh.enable = true;
         nix-index.enable = true;
     };
 
-    home.programs = {
+    home.packages = with pkgs; [
+        nh
         comma
-    };
+    ];
 }
