@@ -3,6 +3,7 @@
     ...
 }: {
     imports = [
+        ./ventoy.nix
         ./wine.nix
     ];
 
