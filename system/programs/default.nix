@@ -5,6 +5,7 @@
     imports = [
         ./asusctl.nix
         ./bash.nix
+        ./cli-utilites.nix
         ./fish.nix
         ./fonts.nix
         ./lmsensors.nix

@@ -12,7 +12,6 @@
         ./kitty.nix
         ./nix-utilities.nix
         ./starship.nix
-        ./utilities.nix
         ./zsh.nix
     ];
 
