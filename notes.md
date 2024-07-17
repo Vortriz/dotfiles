@@ -12,41 +12,48 @@
 
 - [x] ~~alejandra~~ (not ready for prime time)
 - [x] nh
-- [x] ~~nix-output-monitor~~
-- [x] ~~nvd~~
-- [x] ~~nixd~~ ( dont need ig)
+- [x] ~~nix-output-monitor~~ (already in nh)
+- [x] ~~nvd~~ (already in nh)
+- [x] ~~nixd~~ (dont need ig)
 - [x] nix-index
 - [x] comma
 - [x] ~~zed~~ (doesn't work)
-- [ ] kitty
+- [x] kitty
 - [ ] fish
-- [ ] starship
+- [x] starship
 - lf/yazi/mc
-- [ ] fzf
-- sd
-- just
-- condo
-- zoxide
-- ripgrep
-- eza
-- [ ] bat
+- [x] z
+- [x] fzf
+- [x] sd
+- [x] ~~just~~ (dont need rn ig)
+- [x] ~~kondo~~ (dont need ig)
+- [x] ~~zoxide~~ (ig i'll stick to z)
+- [x] ripgrep-all
+- [x] eza
+- [x] bat
 - btop++
 - taskmaster
-- thefuck
-- tldr
-- micro
-- fzf
-- diffuse/meld
-- util-linux
-- android-tools
+- [x] thefuck
+- [x] tealdeer
+- [x] micro
+- [x] fzf
+- [x] ~~diffuse/meld~~ (dont need ig)
+- [x] util-linux
+- [x] android-tools
 - some drive sync utility
-- ventoy
-- anydesk
-- kde partition manager
-- ksystemlog
-- libreoffice
-- typst
+- [x] ventoy-full
+- [x] anydesk
+- [x] kde partition manager
+- [x] ksystemlog
+- [x] onlyoffice
 
-## theming stage
+## theming
 
+- [ ] hyprland
 - [ ] kitty
+
+## programming/typesetting
+
+- [x] python
+- [ ] jupyter
+- [ ] typst
