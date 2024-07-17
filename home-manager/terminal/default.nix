@@ -8,6 +8,7 @@
         ./ffmpeg.nix
         ./gh.nix
         ./git.nix
+        ./kitty.nix
         ./nix-utilities.nix
         ./utilities.nix
         ./zsh.nix
