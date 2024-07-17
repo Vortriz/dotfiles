@@ -10,4 +10,9 @@
         name = "kdewallet";
         enableKwallet = true;
     };
+
+    environment.systemPackages = with pkgs; [
+        kdePackages.ksystemlog
+        kdePackages.partitionmanager
+    ];
 }
