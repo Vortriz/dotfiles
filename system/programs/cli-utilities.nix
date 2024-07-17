@@ -15,11 +15,15 @@
         sd
         ripgrep-all
         eza
-        thefuck
         tealdeer
         micro
 
         util-linux
         android-tools
     ];
+
+    programs.thefuck = {
+        enable = true;
+        alias = "fuck";
+    };
 }
