@@ -4,6 +4,8 @@
 }: {
     imports = [
         ./asusctl.nix
+        ./bash.nix
+        ./fish.nix
         ./fonts.nix
         ./lmsensors.nix
         # ./nbfc.nix

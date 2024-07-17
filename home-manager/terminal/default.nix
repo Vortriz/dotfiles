@@ -6,6 +6,7 @@
         ./bash.nix
         ./devenv.nix
         ./ffmpeg.nix
+        ./fish.nix
         ./gh.nix
         ./git.nix
         ./kitty.nix
