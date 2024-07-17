@@ -21,4 +21,4 @@
 4. Procced to install NixOS
 5. After installation, setup flakes with by adding `nix.settings.experimental-features = [ "nix-command" "flakes" ];` in `configuration.nix`
 6. Download the dotfiles and add the current `hardware-configuration.nix` into the appropriate place
-7. Follow the steps 2-3 again.  
+7. Follow the steps 2-3 again.

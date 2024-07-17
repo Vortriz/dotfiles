@@ -297,7 +297,7 @@
     /*.PinnedDock {
         flex-wrap: nowrap !important;
     }
-    
+
     .PinnedTab {
         overflow: hidden !important;
         min-width: var(--tabs-pinned-width) !important;

@@ -10,7 +10,7 @@ in {
     environment.systemPackages = with pkgs; [
         inputs.nbfc-linux.packages.x86_64-linux.default
     ];
-    
+
     systemd.services.nbfc_service = {
         enable = true;
         description = "NoteBook FanControl service";

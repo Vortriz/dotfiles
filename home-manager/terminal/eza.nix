@@ -6,4 +6,4 @@
         enable = true;
         icons = true;
     };
-}   
+}

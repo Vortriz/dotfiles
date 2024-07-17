@@ -9,7 +9,7 @@
         #     default = "http://172.16.2.250:3128";
         #     noProxy = "127.0.0.1,localhost,internal.domain";
         # };
-        
+
         # Enable networking
         networkmanager.enable = true;
 
