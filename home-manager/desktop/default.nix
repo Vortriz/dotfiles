@@ -3,6 +3,7 @@
     ...
 }: {
     imports = [
+        ./anydesk.nix
         ./ventoy.nix
         ./wine.nix
     ];
