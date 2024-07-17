@@ -10,5 +10,6 @@
         ./nix-ld.nix
         ./warp.nix
         ./wihotspot.nix
+        ./zsh.nix
     ];
 }

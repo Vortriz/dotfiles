@@ -10,6 +10,7 @@
         ./git.nix
         ./nix-utilities.nix
         ./utilities.nix
+        ./zsh.nix
     ];
 
     home.packages = with pkgs; [
