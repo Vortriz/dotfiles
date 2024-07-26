@@ -9,12 +9,13 @@
         ./fish.nix
         ./gh.nix
         ./git.nix
-        ./kitty.nix
+        ./kitty
         ./nix-utilities.nix
         ./starship.nix
         ./zsh.nix
     ];
 
     home.packages = with pkgs; [
+        pfetch
     ];
 }

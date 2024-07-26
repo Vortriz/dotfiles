@@ -36,7 +36,6 @@
 - [x] thefuck
 - [x] tealdeer
 - [x] micro
-- [x] fzf
 - [x] ~~diffuse/meld~~ (dont need ig)
 - [x] util-linux
 - [x] android-tools
