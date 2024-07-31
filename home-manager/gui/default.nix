@@ -9,6 +9,7 @@
         ./obsidian.nix
         ./onlyoffice.nix
         ./persepolis.nix
+        ./qbittorrent.nix
         ./sioyek.nix
         ./social-apps.nix
         ./steam.nix
