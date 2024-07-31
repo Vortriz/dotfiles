@@ -4,6 +4,11 @@
 }: {
     programs.vscode = {
         enable = true;
+
+        userSettings = {
+            "terminal.integrated.fontFamily" = "'FiraCode Nerd Font Mono'";
+        };
+
         extensions = with pkgs.vscode-extensions; [
             # language packs et al
             bbenoist.nix
