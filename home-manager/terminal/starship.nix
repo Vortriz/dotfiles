@@ -9,7 +9,7 @@
             readFile (
                 fetchurl {
                     url = "https://starship.rs/presets/toml/nerd-font-symbols.toml";
-                    sha256 = "sha256:1rf298kmiglm0mrd5ic1nalqs5si9i49xwrx6qqg881qlq6gx994";
+                    sha256 = "sha256:0k1xk78qa07bl3ml8l88bxbk0wskkrh4ym34my10dj1lrkm16k5a";
                 }
             )
         )) // {};
