@@ -73,9 +73,9 @@
     color4                  = "#89B4FA";
     color12                 = "#89B4FA";
 
-    #: magenta
-    color5                  = "#CBA6F7";
-    color13                 = "#CBA6F7";
+    #: pink
+    color5                  = "#F5C2E7";
+    color13                 = "#F5C2E7";
 
     #: cyan
     color6                  = "#94E2D5";
