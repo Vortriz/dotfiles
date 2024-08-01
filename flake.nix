@@ -18,6 +18,8 @@
             url = "github:nbfc-linux/nbfc-linux";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+
+        stylix.url = "github:danth/stylix";
     };
 
     outputs = {
@@ -60,6 +62,7 @@
                 modules = [
                     # > Our main nixos configuration file <
                     ./system/configuration.nix
+                    inputs.stylix.nixosModules.stylix
                 ];
             };
         };

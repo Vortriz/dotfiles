@@ -9,7 +9,7 @@
     allow_remote_control = true;
     # General settings
     window_padding_width = 8;
-    font_size = 12;
+    # font_size = 12;
 
     # The basic colors
     foreground              = "#E2E0EC";

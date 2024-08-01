@@ -5,15 +5,11 @@
     programs.kitty = {
         enable = true;
         font = {
-            name = "FiraCode Nerd Font";
+            name = "FiraCode Nerd Font Mono";
             size = 12;
         };
 
-        # settings = {
-        #     window_padding_width = 15;
-        # };
-
-        settings = import ./apatheia.nix;
+        settings = import ./oledppuccin-mocha.nix;
 
         extraConfig = ''
             map ctrl+backspace send_text all \x17

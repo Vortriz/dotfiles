@@ -10,8 +10,8 @@
     enabled_layouts = "splits:split_axis=vertical";
     # General settings
     window_padding_width = 8;
-    font_size = 12;
-    font_family = "FiraCode";
+    # font_size = 12;
+    # font_family = "FiraCode";
 
     # The basic colors
     foreground              = "#E2E0EC";

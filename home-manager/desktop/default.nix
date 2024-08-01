@@ -10,4 +10,6 @@
 
     home.packages = with pkgs; [
     ];
+
+    stylix.autoEnable = false;
 }

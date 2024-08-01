@@ -3,6 +3,7 @@
     ...
 }: {
     imports = [
+        ./stylix
         ./asusctl.nix
         ./bash.nix
         ./cli-utilities.nix
