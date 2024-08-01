@@ -3,6 +3,7 @@
     ...
 }: {
     imports = [
+        ./hyprwm
         ./anydesk.nix
         ./ventoy.nix
         ./wine.nix

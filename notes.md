@@ -19,7 +19,7 @@
 - [x] comma
 - [x] ~~zed~~ (doesn't work)
 - [x] kitty
-- [ ] fish
+- [x] fish
 - [x] starship
 - lf/yazi/mc
 - [x] z
@@ -54,5 +54,5 @@
 ## programming/typesetting
 
 - [x] python
-- [ ] jupyter
+- [x] jupyter
 - [ ] typst

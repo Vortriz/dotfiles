@@ -4,6 +4,7 @@
 }: {
     imports = [
         ./stylix
+        ./hyprwm
         ./asusctl.nix
         ./bash.nix
         ./cli-utilities.nix
