@@ -38,8 +38,8 @@
             serif = config.stylix.fonts.sansSerif;
 
             sansSerif = {
-                package = pkgs.HelveticaNeueCyr;
-                name = "HelveticaNeueCyr";
+                package = pkgs.google-fonts.override { fonts = [ "Lato" ]; };
+                name = "Lato";
             };
 
             monospace = {
