@@ -5,6 +5,7 @@
     imports = [
         ./bash.nix
         ./devenv.nix
+        ./direnv.nix
         ./ffmpeg.nix
         ./fish.nix
         ./gh.nix

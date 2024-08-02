@@ -11,10 +11,11 @@
         ./fish.nix
         ./fonts.nix
         ./lmsensors.nix
-        # ./nbfc.nix
+        ./lsp.nix
         ./nix-ld.nix
         ./warp.nix
         ./wihotspot.nix
         ./zsh.nix
+        # ./nbfc.nix
     ];
 }

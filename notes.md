@@ -56,3 +56,13 @@
 - [x] python
 - [x] jupyter
 - [ ] typst
+
+# things to do
+
+- [ ] video conferencing
+  - [ ] camera
+  - [ ] microphone
+  - [ ] screen sharing
+- [ ] screenshot workflow
+- [ ] sound
+- [ ] direnv workflow

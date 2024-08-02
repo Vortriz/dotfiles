@@ -11,9 +11,10 @@
 
         extensions = with pkgs.vscode-extensions; [
             # language packs et al
-            bbenoist.nix
             james-yu.latex-workshop
+            jnoortheen.nix-ide
             mikestead.dotenv
+            mkhl.direnv
             ms-python.isort
             ms-python.python
             ms-python.vscode-pylance
