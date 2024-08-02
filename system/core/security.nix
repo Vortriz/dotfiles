@@ -1,5 +1,6 @@
 {
-    security.rtkit.enable = true;
+    # For hyprlock to work
+    security.pam.services.hyprlock = {};
 
     # Allow udisks2 to mount devices without authentication
     # for users in the "wheel" group. (to auto mount other partitions)
