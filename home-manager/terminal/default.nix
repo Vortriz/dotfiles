@@ -1,22 +1,8 @@
 {
-    pkgs,
-    ...
-}: {
     imports = [
-        ./bash.nix
-        ./devenv.nix
-        ./direnv.nix
-        ./ffmpeg.nix
-        ./fish.nix
-        ./gh.nix
-        ./git.nix
-        ./kitty
-        ./nix-utilities.nix
-        ./starship.nix
-        ./zsh.nix
-    ];
-
-    home.packages = with pkgs; [
-        pfetch
+        ./emulators
+        ./programs
+        ./shells
+        ./utilities.nix
     ];
 }

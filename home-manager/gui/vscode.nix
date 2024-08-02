@@ -6,7 +6,25 @@
         enable = true;
 
         userSettings = {
+            # use FiraCode ( to fix broken icons)
             "terminal.integrated.fontFamily" = "'FiraCode Nerd Font Mono'";
+
+            # because this is the only sane thing
+            "editor.detectIndentation" = false;
+            "editor.tabSize" = 4;
+
+            # clean files
+            "files.trimTrailingWhitespace" = true;
+
+            # cleaner file explorer
+            "workbench.tree.indent" = 12;
+
+            # annoying confimation
+            "explorer.confirmDragAndDrop" = false;
+
+            # nix LSP
+            "nix.enableLanguageServer" = true;
+            "nix.serverPath" = "nixd";
         };
 
         extensions = with pkgs.vscode-extensions; [

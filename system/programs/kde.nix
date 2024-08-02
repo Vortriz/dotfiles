@@ -3,6 +3,7 @@
     ...
 }: {
     environment.systemPackages = with pkgs; [
-        asusctl
+        kdePackages.ksystemlog
+        kdePackages.partitionmanager
     ];
 }

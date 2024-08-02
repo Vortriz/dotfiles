@@ -1,9 +1,18 @@
 {
-    stylix.targets.kde.enable = true;
-    stylix.targets.firefox.enable = false;
-    stylix.targets.vscode.enable = true;
-    stylix.targets.kitty.enable = false;
-    stylix.targets.fish.enable = false;
-    stylix.targets.fzf.enable = true;
-    stylix.targets.bat.enable = true;
+    stylix = {
+        autoEnable = false;
+        
+        targets = {
+            kde.enable = true; # doesnt work for qt6 for now
+            gtk.enable = true;
+            firefox.enable = false;
+            vscode.enable = true;
+            kitty.enable = false;
+            fish.enable = false;
+            fzf.enable = true;
+            bat.enable = true;
+            # dunst.enable = true;
+            hyprland.enable = true;
+        };
+    };
 }

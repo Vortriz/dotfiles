@@ -27,6 +27,7 @@
 
         # Other imports
         ./core
+        ./hardware
         ./programs
         ./services
     ];

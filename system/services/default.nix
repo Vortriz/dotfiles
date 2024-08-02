@@ -1,12 +1,9 @@
 {
-    pkgs,
-    ...
-}: {
     imports = [
-        ./asus.nix
+        ./asusd.nix
         ./cpu-optimisation.nix
-        ./kde.nix
         ./pipewire.nix
+        ./plasma6.nix
         ./preload.nix
         ./printing.nix
         ./sddm.nix

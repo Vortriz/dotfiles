@@ -1,21 +1,15 @@
 {
-    pkgs,
-    ...
-}: {
     imports = [
-        ./stylix
         ./hyprwm
-        ./asusctl.nix
-        ./bash.nix
+        ./shells
+        ./stylix
         ./cli-utilities.nix
-        ./fish.nix
         ./fonts.nix
-        ./lmsensors.nix
+        ./hotspot.nix
+        ./kde.nix
         ./lsp.nix
         ./nix-ld.nix
+        ./sound.nix
         ./warp.nix
-        ./wihotspot.nix
-        ./zsh.nix
-        # ./nbfc.nix
     ];
 }

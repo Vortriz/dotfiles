@@ -9,8 +9,7 @@
         autoEnable = false;
 
         targets = {
-            # fish.enable = false;
-            # gtk.enable = false;
+            gtk.enable = true;
         };
 
         image = ./katana-wallpaper.jpg;

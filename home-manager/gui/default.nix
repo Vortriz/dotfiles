@@ -1,25 +1,20 @@
 {
-    pkgs,
-    ...
-}: {
     imports = [
         ./firefox
-        ./gimp.nix
-        ./mpv.nix
+        ./download-manager.nix
+        ./file-managers.nix
+        ./file-transfer.nix
+        ./gaming.nix
+        ./image-editor.nix
+        ./music.nix
         ./obsidian.nix
-        ./onlyoffice.nix
-        ./persepolis.nix
-        ./qbittorrent.nix
-        ./sioyek.nix
+        ./office-suite.nix
+        ./pdf-viewer.nix
+        ./remote-desktop.nix
         ./social-apps.nix
-        ./steam.nix
+        ./torrrent.nix
         ./utilities.nix
-        ./vlc.nix
+        ./video-player.nix
         ./vscode.nix
-        ./warp.nix
-        ./yt-music.nix
-    ];
-
-    home.packages = with pkgs; [
     ];
 }

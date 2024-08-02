@@ -15,7 +15,7 @@
 - [x] ~~nix-output-monitor~~ (already in nh)
 - [x] ~~nvd~~ (already in nh)
 - [x] ~~nixd~~ (dont need ig)
-- [x] nix-index
+- [ ] nix-index
 - [x] comma
 - [x] ~~zed~~ (doesn't work)
 - [x] kitty

@@ -2,11 +2,11 @@
     pkgs,
     ...
 }: {
-    programs = {
-        nix-index.enable = true;
+    programs.mpv = {
+        enable = true;
     };
-
+    
     home.packages = with pkgs; [
-        nh
+        vlc
     ];
 }

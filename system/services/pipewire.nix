@@ -1,8 +1,4 @@
-
 {
-    pkgs,
-    ...
-}: {
     services = {
         # pipewire is a multimedia server
         pipewire = {

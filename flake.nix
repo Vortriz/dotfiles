@@ -9,11 +9,6 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
-        nix-index-database = {
-            url = "github:nix-community/nix-index-database";
-            inputs.nixpkgs.follows = "nixpkgs";
-            };
-
         nbfc-linux = {
             url = "github:nbfc-linux/nbfc-linux";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -43,7 +38,6 @@
         self,
         nixpkgs,
         home-manager,
-        nix-index-database,
         ...
     } @ inputs: let
         inherit (self) outputs;
@@ -88,9 +82,6 @@
             # inherit packages;
 
             modules = [
-                nix-index-database.hmModules.nix-index
-                # optional to also wrap and install comma
-                { programs.nix-index-database.comma.enable = true; }
             ];
         };
     };
