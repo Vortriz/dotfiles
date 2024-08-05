@@ -12,6 +12,10 @@
             # because this is the only sane thing
             "editor.detectIndentation" = false;
             "editor.tabSize" = 4;
+            "[nix]" = {
+                "editor.detectIndentation" = false;
+                "editor.tabSize" = 4;
+            };
 
             # clean files
             "files.trimTrailingWhitespace" = true;
