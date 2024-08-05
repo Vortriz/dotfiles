@@ -24,6 +24,14 @@
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
+  fileSystems."/run/media/PRIMARY" =
+    { device = "/dev/disk/by-uuid/E4A8A64DA8A61DD4";
+    };
+
+  fileSystems."/run/media/SECONDARY" =
+    { device = "/dev/disk/by-uuid/01DAD5BFB335D390";
+    };
+
   swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
