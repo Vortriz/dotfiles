@@ -16,22 +16,22 @@
 
         stylix.url = "github:danth/stylix";
 
-        hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+        # hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
 
-        hyprland-plugins = {
-            url = "github:hyprwm/hyprland-plugins";
-            inputs.hyprland.follows = "hyprland";
-        };
+        # hyprland-plugins = {
+        #     url = "github:hyprwm/hyprland-plugins";
+        #     inputs.hyprland.follows = "hyprland";
+        # };
 
-        hyprgrass = {
-            url = "github:horriblename/hyprgrass";
-            inputs.hyprland.follows = "hyprland";
-        };
+        # hyprgrass = {
+        #     url = "github:horriblename/hyprgrass";
+        #     inputs.hyprland.follows = "hyprland";
+        # };
 
-        hyprlock = {
-            url = "github:hyprwm/hyprlock";
-            inputs.nixpkgs.follows = "hyprland/nixpkgs";
-        };
+        # hyprlock = {
+        #     url = "github:hyprwm/hyprlock";
+        #     inputs.nixpkgs.follows = "hyprland/nixpkgs";
+        # };
     };
 
     outputs = {
