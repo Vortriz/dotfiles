@@ -6,6 +6,9 @@
         devenv
         cachix
         nh
+
+        imagemagick
+        wl-clipboard
     ];
 
     programs = {

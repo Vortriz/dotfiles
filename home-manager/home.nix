@@ -58,8 +58,18 @@
     # Enable home-manager
     programs.home-manager.enable = true;
 
-    # Nicely reload system units when changing configs
-    systemd.user.startServices = "sd-switch";
+    systemd.user = {
+        # Nicely reload system units when changing configs
+        startServices = "sd-switch";
+
+        # Fix for flameshot
+        targets.tray = {
+            Unit = {
+                Description = "Home Manager System Tray";
+                Requires = [ "graphical-session-pre.target" ];
+            };
+        };
+    };
 
     # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
     home.stateVersion = "23.11";

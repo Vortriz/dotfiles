@@ -1,5 +1,5 @@
 {
-    services = {
-        # copyq.enable = true;
-    };
+    imports = [
+        ./flameshot.nix
+    ];
 }
