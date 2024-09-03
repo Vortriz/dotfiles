@@ -22,6 +22,8 @@
         ./services
         ./terminal
         ./stylix.nix
+
+        ../scripts
     ];
 
     nixpkgs = {
