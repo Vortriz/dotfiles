@@ -1,6 +1,6 @@
 {
     imports = [
-        ./hyprwm
+        # ./hyprwm
         ./ventoy.nix
         ./wine.nix
     ];
