@@ -64,6 +64,6 @@
   - [ ] microphone
   - [ ] screen sharing
 - [ ] screenshot workflow
-- [ ] sound
+- [x] sound
 - [ ] devenv/direnv workflow
-- [ ] nixos-rebuild switch logging (make a logfile with deployment timestamp and commit it)
+- [x] nixos-rebuild switch logging (make a logfile with deployment timestamp and commit it)
