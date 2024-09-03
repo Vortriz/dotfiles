@@ -17,7 +17,7 @@
         base16Scheme = {
             base00 = "0d1117"; # Default bg
             base01 = "161b22"; # Lighter bg (status bar, line number, folding mks)
-            base02 = "21262d"; # Selection bg
+            base02 = "282e37"; # Selection bg
             base03 = "899296"; # Comments, invisibles, line hl
             base04 = "c6cdd5"; # Dark fg (status bars)
             base05 = "ecf2f8"; # Default fg (caret, delimiters, Operators)
