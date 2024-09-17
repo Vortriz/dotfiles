@@ -1,9 +1,23 @@
 {
-    virtualisation.vmVariant = {
+    pkgs,
+    ...
+}: {
+    virtualisation = {
         # following configuration is added only when building VM with build-vm
-        virtualisation = {
+        vmVariant.virtualisation = {
             memorySize =  4096;
             cores = 4;
         };
+
+        # for distrobox
+        podman = {
+            enable = true;
+            dockerCompat = true;
+        };
     };
+
+    environment.systemPackages = with pkgs; [
+        distrobox
+        boxbuddy
+    ];
 }
