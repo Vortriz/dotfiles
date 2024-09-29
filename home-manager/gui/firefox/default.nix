@@ -42,7 +42,7 @@
                     (extension "istilldontcareaboutcookies" "idcac-pub@guus.ninja")
                     (extension "raindropio" "jid0-adyhmvsP91nUO8pRv0Mn2VKeB84@jetpack")
                     (extension "sponsorblock" "sponsorBlocker@ajay.app")
-                    (extension "chrome-toggle-extended" "userchrome-toggle- extended@n2ezr.ru")
+                    (extension "chrome-toggle-extended" "userchrome-toggle-extended@n2ezr.ru")
                 ];
         };
     };
