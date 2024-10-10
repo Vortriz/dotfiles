@@ -17,7 +17,7 @@
     - Then run `sudo nixos-rebuild test`
     - Then run the following commands
     ```
-    warp-cli registration new
+    warp-cli register
     warp-cli connect
     ```
 4. Procced to install NixOS
