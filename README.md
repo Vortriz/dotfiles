@@ -34,3 +34,4 @@
     ```
     - Rebuild with `nh os test`
 9. Run `bash post-install` from `dotfiles`
+10. Run `bash rebuild` to finish off
