@@ -5,11 +5,13 @@
 3. Install warp
     - Put this into configuration.nix
     ```
+    nixpkgs.config.allowUnfree = true;
+    
     environment.systemPackages = with pkgs; [ cloudflare-warp ]
 
     systemd = {
-        packages = with pkgs; [ cloudflare-warp ];
-        targets.multi-user.wants = [ "warp-svc.service" ];
+      packages = with pkgs; [ cloudflare-warp ];
+      targets.multi-user.wants = [ "warp-svc.service" ];
     };
     ```
     - Then run `sudo nixos-rebuild test`
