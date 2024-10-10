@@ -6,16 +6,19 @@ echo "We will be running some post install scripts to tweak a few things"
 read -p "Do you want to turn off function lock? (y/n) " fnlock
 if [ ${fnlock,,} = "y" ]; then
     echo "options asus_wmi fnlock_default=N" | sudo tee -a /etc/modprobe.d/alsa-base.conf
-    sudo update-initramfs -u -k all
     read -r -s -p $'Function lock has been disabled. Press enter to continue...'
 fi
 
-# To avoid compilation of python
+echo
+
+# To avoid compilation of python using cachix
 read -p "Do you want to setup Cachix for python? (y/n) " cachix_python
 if [ ${cachix_python,,} = "y" ]; then
     cachix use nixpkgs-python
     read -r -s -p $'Cachix has been setup for python. Press enter to continue...'
 fi
+
+echo
 
 read -r -s -p $'All done. Press enter to reboot...'
 reboot

@@ -8,28 +8,27 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "xhci_pci" "thunderbolt" "vmd" "nvme" "usbhid" ];
+  boot.initrd.availableKernelModules = [ "xhci_pci" "thunderbolt" "vmd" "nvme" "usb_storage" "usbhid" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/887adbdc-cb30-4966-afa7-11310d88f367";
+    { device = "/dev/disk/by-uuid/dbcc6cb5-817e-4fa1-bba3-4c13e6424817";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/36A4-A1B1";
       fsType = "vfat";
-      options = [ "fmask=0022" "dmask=0022" ];
     };
 
   fileSystems."/run/media/PRIMARY" =
-    { device = "/dev/disk/by-uuid/E4A8A64DA8A61DD4";
+    { device = "/dev/disk/by-uuid/01DB174F863FE070";
     };
 
   fileSystems."/run/media/SECONDARY" =
-    { device = "/dev/disk/by-uuid/01DAD5BFB335D390";
+    { device = "/dev/disk/by-uuid/01DB174F3CD77510";
     };
 
   swapDevices = [ ];
@@ -39,7 +38,6 @@
   # still possible to use this option, but it's recommended to use it in conjunction
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
   networking.useDHCP = lib.mkDefault true;
-  # networking.interfaces.CloudflareWARP.useDHCP = lib.mkDefault true;
   # networking.interfaces.wlo1.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
