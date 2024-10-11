@@ -48,14 +48,15 @@
 
 ## theming
 
-- [ ] hyprland
-- [ ] kitty
+- [ ] ~~hyprland~~ niri
+- [x] kitty
 
 ## programming/typesetting
 
 - [x] python
 - [x] jupyter
 - [ ] typst
+- [ ] julia (using distrobox)
 
 # things to do
 
