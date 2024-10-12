@@ -8,6 +8,7 @@
         ./hotspot.nix
         ./kde.nix
         ./lsp.nix
+        ./niri.nix
         ./nix-ld.nix
         ./sound.nix
         ./warp.nix

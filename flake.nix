@@ -14,6 +14,8 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
+        niri.url = "github:sodiboo/niri-flake";
+
         stylix.url = "github:danth/stylix";
 
         # hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
