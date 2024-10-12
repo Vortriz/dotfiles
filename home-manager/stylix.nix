@@ -3,16 +3,18 @@
         autoEnable = false;
 
         targets = {
-            kde.enable = true; # doesnt work for qt6 for now
-            gtk.enable = true;
-            firefox.enable = false;
-            vscode.enable = true;
-            kitty.enable = true;
-            fish.enable = true;
-            fzf.enable = true;
             bat.enable = true;
-            # dunst.enable = true;
+            dunst.enable = true;
+            firefox.enable = false;
+            fish.enable = true;
+            fuzzel.enable = true;
+            fzf.enable = true;
+            gtk.enable = true;
             hyprland.enable = true;
+            kde.enable = true; # doesnt work for qt6 for now
+            kitty.enable = true;
+            niri.enable = true;
+            vscode.enable = true;
         };
     };
 }
