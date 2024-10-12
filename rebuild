@@ -1,8 +1,0 @@
-#!/usr/bin/sh
-echo "Rebuilding new generation.."
-nh os switch
-gen=$(nixos-rebuild list-generations --flake ~/dotfiles/ | grep -oP "[0-9]*(?= current)")
-timestamp=$(date '+%x %X')
-echo "$gen - $timestamp" >> build.log
-git add *
-git commit -m "deployed $gen"
