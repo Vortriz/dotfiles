@@ -13,7 +13,7 @@
             hyprland.enable = true;
             kde.enable = true; # doesnt work for qt6 for now
             kitty.enable = true;
-            niri.enable = true;
+            niri.enable = false;
             vscode.enable = true;
         };
     };

@@ -1,8 +1,8 @@
 {
     imports = [
         # ./hyprwm
-        # ./niri.nix
         ./fuzzel.nix
+        ./niri.nix
         ./ventoy.nix
         ./wine.nix
     ];

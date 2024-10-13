@@ -1,3 +1,0 @@
-binds {
-    Alt+A { spawn "fuzzel"; }
-}
