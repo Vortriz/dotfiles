@@ -11,7 +11,7 @@
     pavucontrol
     # wireplumber
   ];
-  	
+
   programs.waybar = {
     enable = true;
     style = ./style.css;
@@ -58,9 +58,9 @@
           "format-muted" = "󰖁 Muted";
           "format-icons" = {
             "default" = [
-              " "
-              " "
-              " "
+              ""
+              ""
+              ""
             ];
           };
           # "on-click" = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
@@ -151,8 +151,8 @@
         	"reverse-scrolling" = true;
         	"format" = "{icon} {percent}%";
         	"format-icons" = ["" ""];
-        	"on-scroll-up" = "brightnessctl -d intel_backlight -e set +5%";
-        	"on-scroll-down" = "brightnessctl -d intel_backlight -e set 5%-";
+        	"on-scroll-up" = "brightnessctl -d intel_backlight -e set +2%";
+        	"on-scroll-down" = "brightnessctl -d intel_backlight -e set 2%-";
         	"tooltip" = false;
         };
       }
