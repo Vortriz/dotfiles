@@ -25,6 +25,7 @@
 
             # annoying confimation
             "explorer.confirmDragAndDrop" = false;
+            "git.confirmSync" = false;
 
             # nix LSP
             "nix.enableLanguageServer" = true;
