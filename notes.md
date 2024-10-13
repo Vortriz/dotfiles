@@ -51,6 +51,8 @@
 
 - [ ] ~~hyprland~~ niri
 - [x] kitty
+- [ ] anyrun
+- [ ] waybar
 
 ## programming/typesetting
 
@@ -66,7 +68,7 @@
   - [ ] camera
   - [ ] microphone
   - [ ] screen sharing
-- [ ] screenshot workflow
+- [x] screenshot workflow
 - [x] sound
 - [ ] devenv/direnv workflow
 - [x] nixos-rebuild switch logging (make a logfile with deployment timestamp and commit it)
