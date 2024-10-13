@@ -6,6 +6,6 @@
         # settings.binds = {
         #     "Mod+Space".action.spawn = "fuzzel";
         # };
-        config = builtins.readFile ./configs/config.kdl;
+        config = builtins.readFile ./config.kdl;
     };
 }
