@@ -141,10 +141,10 @@
           "format-plugged" = " {capacity}%";
           "format-alt" = "{time} {icon}";
           "format-icons" = [
-            " "
-            " "
-            " "
-            " "
+            ""
+            ""
+            ""
+            ""
           ];
         };
         "backlight" = {
