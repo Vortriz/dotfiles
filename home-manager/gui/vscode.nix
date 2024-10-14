@@ -24,7 +24,7 @@
             "workbench.tree.indent" = 12;
 
             # zoom slightly
-            "window.zoomLevel" = 1;
+            "window.zoomLevel" = 1.2;
 
             # annoying confimation
             "explorer.confirmDragAndDrop" = false;
