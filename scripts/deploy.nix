@@ -11,7 +11,7 @@
                 set timestamp $(date '+%x %X')
                 set branch $(git branch --show-current)
                 echo "$gen - $timestamp" >> $FLAKE/build.log
-                git add *
+                git add -A
                 git commit -m "deployed $gen through $branch"
             else
                 echo "Failed to deploy!"
