@@ -2,6 +2,7 @@
     imports = [
         ./asusd.nix
         ./cpu-optimisation.nix
+        ./keyring.nix
         ./pipewire.nix
         ./plasma6.nix
         ./preload.nix

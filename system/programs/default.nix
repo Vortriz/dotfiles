@@ -1,6 +1,6 @@
 {
     imports = [
-        # ./hyprwm
+        # ./hyprwm.nix
         ./shells
         ./stylix
         ./cli-utilities.nix
