@@ -1,5 +1,5 @@
 {
     services = {
-        desktopManager.plasma6.enable = true;
+        desktopManager.plasma6.enable = false;
     };
 }

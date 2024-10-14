@@ -3,7 +3,7 @@
         pam.services = {
             kwallet = {
                 name = "kdewallet";
-                enableKwallet = true;
+                enableKwallet = false;
             };
 
             # For hyprlock to work
