@@ -33,6 +33,9 @@
             # nix LSP
             "nix.enableLanguageServer" = true;
             "nix.serverPath" = "nixd";
+
+            # fix annoying warning
+            "workbench.colorTheme" = "Stylix";
         };
 
         extensions = with pkgs.vscode-extensions; [
