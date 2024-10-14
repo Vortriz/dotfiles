@@ -12,6 +12,7 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
+  boot.supportedFilesystems = [ "ntfs" ];
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/dbcc6cb5-817e-4fa1-bba3-4c13e6424817";
@@ -25,10 +26,14 @@
 
   fileSystems."/run/media/PRIMARY" =
     { device = "/dev/disk/by-uuid/01DB174F863FE070";
+      fsType = "ntfs-3g";
+      options = [ "rw" "uid=1000"];
     };
 
   fileSystems."/run/media/SECONDARY" =
     { device = "/dev/disk/by-uuid/01DB174F3CD77510";
+      fsType = "ntfs-3g";
+      options = [ "rw" "uid=1000"];
     };
 
   swapDevices = [ ];
