@@ -1,6 +1,6 @@
 {
     imports = [
-        ./dunst.nix
-        ./flameshot.nix
+        ./notification-daemon.nix
+        ./screenshot.nix
     ];
 }

@@ -7,7 +7,7 @@
             };
 
             # For hyprlock to work
-            hyprlock = {};
+            # hyprlock = {};
         };
 
         # for sound and something else too

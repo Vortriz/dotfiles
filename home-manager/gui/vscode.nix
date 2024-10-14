@@ -6,7 +6,7 @@
         enable = true;
 
         userSettings = {
-            # use FiraCode ( to fix broken icons)
+            # use FiraCode (to fix broken icons)
             "terminal.integrated.fontFamily" = "'FiraCode Nerd Font Mono'";
 
             # because this is the only sane thing
@@ -22,6 +22,9 @@
 
             # cleaner file explorer
             "workbench.tree.indent" = 12;
+
+            # zoom slightly
+            "window.zoomLevel" = 1;
 
             # annoying confimation
             "explorer.confirmDragAndDrop" = false;
