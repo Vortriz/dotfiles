@@ -30,7 +30,7 @@ in {
         lm_sensors
         util-linux
         pciutils
-        
+
         android-tools
 
         # inputs.nbfc-linux.packages.x86_64-linux.default

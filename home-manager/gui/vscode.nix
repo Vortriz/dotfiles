@@ -20,6 +20,9 @@
             # clean files
             "files.trimTrailingWhitespace" = true;
 
+            # better diffs
+            "diffEditor.ignoreTrimWhitespace" = false;
+
             # cleaner file explorer
             "workbench.tree.indent" = 12;
 
