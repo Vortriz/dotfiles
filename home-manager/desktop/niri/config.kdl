@@ -236,13 +236,13 @@ animations {
 
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
-window-rule {
-    // This regular expression is intentionally made as specific as possible,
-    // since this is the default config, and we want no false positives.
-    // You can get away with just app-id="wezterm" if you want.
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
-}
+// window-rule {
+//     // This regular expression is intentionally made as specific as possible,
+//     // since this is the default config, and we want no false positives.
+//     // You can get away with just app-id="wezterm" if you want.
+//     match app-id=r#"^org\.wezfurlong\.wezterm$"#
+//     default-column-width {}
+// }
 
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
@@ -261,6 +261,14 @@ window-rule {
 window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
+}
+
+window-rule {
+    match app-id="firefox"
+    match app-id="code"
+    match title=".*pdf"
+
+    open-maximized true
 }
 
 binds {

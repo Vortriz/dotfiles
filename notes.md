@@ -78,3 +78,4 @@
 - [x] sound
 - [ ] devenv/direnv workflow
 - [x] nixos-rebuild switch logging (make a logfile with deployment timestamp and commit it)
+- [ ] nixify adding `"password-store":"gnome-libsecret"` in `.vscode/argv.json`
