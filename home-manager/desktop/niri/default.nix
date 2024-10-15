@@ -31,7 +31,7 @@
             spawn-at-startup =
                 map (s: { command = pkgs.lib.strings.splitString " " s; })
                     [
-                        "{pkgs.waybar}/bin/waybar"
+                        "${pkgs.waybar}/bin/waybar"
                     ];
 
             prefer-no-csd = true;
