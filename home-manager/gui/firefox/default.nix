@@ -9,6 +9,12 @@
             settings = {
                 "mousewheel.default.delta_multiplier_x" = 10;
                 "mousewheel.default.delta_multiplier_y" = 20;
+                "devtools.browserconsole.filter.css" = true;
+                "devtools.chrome.enabled" = true;
+                "devtools.debugger.remote-enabled" = true;
+                "browser.urlbar.update2.engineAliasRefresh" = true;
+                "browser.urlbar.suggest.bookmark" = false;
+                "browser.urlbar.suggest.engines" = false;
             };
         };
 
@@ -24,6 +30,24 @@
             DisablePocket = true;
             DisplayBookmarksToolbar = "never";
             DisplayMenuBar = "default-off";
+
+            SearchEngines = {
+                Add =
+                let
+                    url = "https://search.bus-hit.me";
+                in
+                [
+                    {
+                        Name = "SearXNG";
+                        URLTemplate = "${url}/search?q={searchTerms}";
+                        Method = "GET";
+                        IconURL = "${url}/static/themes/simple/img/favicon.png";
+                        Alias = "@xng";
+                        Description = "SearXNG is a metasearch engine that respects your privacy.";
+                        SuggestURLTemplate = "${url}/autocompleter?q={searchTerms}";
+                    }
+                ];
+            };
 
             ExtensionSettings = with builtins;
                 let extension = shortId: extension_id: {
