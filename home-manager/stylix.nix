@@ -1,5 +1,6 @@
 {
     stylix = {
+        enable = true;
         autoEnable = false;
 
         targets = {
@@ -14,6 +15,7 @@
             kde.enable = false; # doesnt work for qt6 for now
             kitty.enable = true;
             niri.enable = false;
+            swaylock.enable = true;
             vscode.enable = true;
         };
     };

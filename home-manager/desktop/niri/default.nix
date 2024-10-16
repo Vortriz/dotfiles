@@ -81,9 +81,10 @@
 
                 "Mod+T".action = spawn "kitty";
                 "Alt+Space".action = spawn "fuzzel";
-                "Mod+E".action = spawn "nautlius";  # TODO:fix
+                "Mod+E".action = spawn "nautilus";
 
                 "Mod+Q".action = close-window;
+                "Mod+L".action = spawn "lock";
 
                 "Alt+Shift+Tab".action = focus-column-left-or-last;
                 "Alt+Tab".action = focus-column-right-or-first;
