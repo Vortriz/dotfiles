@@ -9,7 +9,6 @@
     	killall
         brightnessctl
         pavucontrol
-        # wireplumber
     ];
 
     programs.waybar = {
