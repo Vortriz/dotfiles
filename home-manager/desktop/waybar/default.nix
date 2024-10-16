@@ -57,7 +57,7 @@
                         "default" = [
                             ""
                             ""
-                            ""
+                            " "
                         ];
                     };
                     "on-click" = "pavucontrol";
@@ -78,7 +78,7 @@
                     "interval" = 1;
                     "format" = " {:%H:%M     %d/%m}";
                     "tooltip" = true;
-                    "tooltip-format" = "<big>{:%Y %B}</big>\n<tt><medium>{calendar}</medium></tt>";
+                    "tooltip-format" = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
                 };
 
                 "memory" = {

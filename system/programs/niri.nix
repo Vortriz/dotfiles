@@ -7,7 +7,7 @@
             NIXOS_OZONE_WL = "1";
 
             # ugly fix for flameshot
-            QT_SCREEN_SCALE_FACTORS = "0.66666666667";
+            QT_SCREEN_SCALE_FACTORS = builtins.toString (2.0 / 3.0);
         };
     };
 }

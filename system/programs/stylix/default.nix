@@ -8,10 +8,6 @@
         enable = true;
         autoEnable = false;
 
-        targets = {
-            gtk.enable = true;
-        };
-
         image = ./katana-wallpaper.jpg;
 
         base16Scheme = {
