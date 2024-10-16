@@ -54,6 +54,7 @@
                     matches = [
                         { app-id = "firefox"; }
                         { app-id = "code"; }
+                        { app-id = "obsidian"; }
                         { title = ".*pdf"; }
                     ];
                     open-maximized = true;
@@ -150,7 +151,7 @@
                     xStr = builtins.toString x;
                 in {
                     "Mod+${xStr}".action = focus-workspace x;
-                    "Mod+Shift+${xStr}".action = move-column-to-workspace x;
+                    "Mod+Ctrl+${xStr}".action = move-column-to-workspace x;
                 })
                 (builtins.genList (x: x + 1) 9)
             ));
