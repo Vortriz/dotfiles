@@ -12,7 +12,7 @@
         extraSpecialArgs = { inherit inputs outputs; };
         users = {
             # Import your home-manager configuration
-            rishi = import ../home-manager/home.nix;
+            vortriz = import ../home-manager/home.nix;
         };
         backupFileExtension = "backup";
     };

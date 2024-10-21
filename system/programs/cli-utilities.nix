@@ -5,7 +5,7 @@
     ...
 }: let
     # for nbfc
-    # myUser = "rishi"; #adjust this to your username
+    # myUser = "vortriz"; #adjust this to your username
     # command = "bin/nbfc_service --config-file '/home/${myUser}/.config/nbfc.json'";
 in {
     environment.systemPackages = with pkgs; [

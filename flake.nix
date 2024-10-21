@@ -1,5 +1,5 @@
 {
-    description = "Rishi's NixOS configuration";
+    description = "Vortriz's NixOS configuration";
 
     inputs = {
         nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -80,7 +80,7 @@
             };
         };
 
-        homeConfigurations.rishi = home-manager.lib.homeManagerConfiguration {
+        homeConfigurations.vortriz = home-manager.lib.homeManagerConfiguration {
             # inherit packages;
 
             modules = [

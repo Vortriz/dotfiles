@@ -65,7 +65,7 @@
             # Workaround for https://github.com/NixOS/nix/issues/9574
             nix-path = config.nix.nixPath;
             # Add myself to the trusted users
-            trusted-users = [ "root" "rishi" ];
+            trusted-users = [ "root" "vortriz" ];
         };
         # Opinionated: disable channels
         channel.enable = false;
@@ -76,7 +76,7 @@
     };
 
     users.users = {
-        rishi = {
+        vortriz = {
             isNormalUser = true;
             openssh.authorizedKeys.keys = [
                 # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect

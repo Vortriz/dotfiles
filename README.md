@@ -22,8 +22,8 @@
     warp-cli connect
     ```
 5. Setup flakes by adding `nix.settings.experimental-features = [ "nix-command" "flakes" ];` to `/etc/nixos/configuration.nix` and rebuild with `sudo nixos-rebuild test`
-6. Download the [dotfiles](https://github.com/RishiVora/nixos-dots) to `Home` and rebuild with `sudo nixos-rebuild switch --flake ~/dotfiles/`, then reboot
-7. Delete `dotfiles` locally and clone [dotfiles](https://github.com/RishiVora/nixos-dots)
+6. Download the [dotfiles](https://github.com/Vortriz/nixos-dots) to `Home` and rebuild with `sudo nixos-rebuild switch --flake ~/dotfiles/`, then reboot
+7. Delete `dotfiles` locally and clone [dotfiles](https://github.com/Vortriz/nixos-dots)
 8. Add mounts
     - Get relevant partitions by running `sudo blkid`
     - Put this into `hardware-configuration.nix`

@@ -51,8 +51,8 @@
     };
 
     home = {
-        username = "rishi";
-        homeDirectory = "/home/rishi";
+        username = "vortriz";
+        homeDirectory = "/home/vortriz";
     };
 
     # Enable home-manager
