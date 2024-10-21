@@ -22,7 +22,6 @@
 - [x] ~~nix-output-monitor~~ (already in nh)
 - [x] ~~nvd~~ (already in nh)
 - [x] ~~nixd~~ (dont need ig)
-- [ ] nix-index
 - [x] comma
 - [x] ~~zed~~ (doesn't work)
 - [x] kitty
@@ -46,12 +45,13 @@
 - [x] ~~diffuse/meld~~ (dont need ig)
 - [x] util-linux
 - [x] android-tools
-- some drive sync utility
 - [x] ventoy-full
 - [x] anydesk
 - [x] kde partition manager
 - [x] ksystemlog
 - [x] onlyoffice
+- [ ] some drive sync utility
+- [ ] nix-index
 
 ## theming
 
@@ -79,3 +79,4 @@
 - [ ] devenv/direnv workflow
 - [x] nixos-rebuild switch logging (make a logfile with deployment timestamp and commit it)
 - [ ] nixify adding `"password-store":"gnome-libsecret"` in `.vscode/argv.json`
+- [ ] make program to for find and open; and remove the ton of aliases

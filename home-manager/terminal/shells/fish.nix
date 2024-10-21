@@ -5,13 +5,17 @@
     programs.fish = {
         enable = true;
 
-        shellAliases = {
-            "fp" = "fd . '/run/media/PRIMARY' | fzf --delimiter='/' --with-nth 5.. --wrap";
-            "fs" = "fd . '/run/media/SECONDARY' | fzf --delimiter='/' --with-nth 5.. --wrap";
-            "fv" = "fd . '/run/media/SECONDARY/nonlinear vault' | fzf --delimiter='/' --with-nth 6.. --wrap";
-            "op" = "open $(fp)";
-            "os" = "open $(fs)";
-            "ov" = "open $(fv)";
-        };
+        shellAliases =
+        let
+            ff = ( path: type: nth:  "fd . '/run/media/${path}' -t ${type} | fzf --delimiter='/' --with-nth ${nth}.. --wrap" );
+        in {
+            "ffv" = ff "SECONDARY/nonlinear vault" "f" "6";
+            "ffp" = ff "PRIMARY" "f" "5";
+            "ffs" = ff "SECONDARY" "f" "5";
+            "fdp" = ff "PRIMARY" "d" "5";
+            "fds" = ff "SECONDARY" "d" "5";
+        } //
+        builtins.mapAttrs ( alias: x: "open $(ff${x})" ) { "ofp" = "p"; "ofs" = "s"; "ofv" = "v"; } //
+        builtins.mapAttrs ( alias: x: "cd $(fd${x})" ) { "cdp" = "p"; "cds" = "s"; };
     };
 }
