@@ -4,7 +4,7 @@
 }: {
     home.packages = [
         (pkgs.writers.writeFishBin "python-setup" {} ''
-            echo "Going to make a python development environment..."
+            echo "Going to make a Python development environment..."
 
             echo "Specify python version ('y' for default 3.10.8):"
             read py_ver
