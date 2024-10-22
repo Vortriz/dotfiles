@@ -7,7 +7,7 @@
 
         shellAliases =
         let
-            ff = ( path: type: nth:  "fd . '/run/media/${path}' -t ${type} | fzf --delimiter='/' --with-nth ${nth}.. --wrap" );
+            ff = ( path: type: nth:  "fd . '/mnt/${path}' -t ${type} | fzf --delimiter='/' --with-nth ${nth}.. --wrap" );
         in {
             "ffv" = ff "SECONDARY/nonlinear vault" "f" "6";
             "ffp" = ff "PRIMARY" "f" "5";
