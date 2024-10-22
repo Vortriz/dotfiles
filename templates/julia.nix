@@ -23,7 +23,9 @@
                     ])
                 ];
 
-                buildInputs = with pkgs; [];
+                buildInputs = with pkgs; [
+                    git
+                ];
             in {
                 devShells.default = pkgs.mkShell {
                     inherit nativeBuildInputs buildInputs;
