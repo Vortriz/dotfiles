@@ -15,23 +15,23 @@
   boot.supportedFilesystems = [ "ntfs" ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/d71bbc21-e59a-446e-b315-bf4b761e8f09";
+    { device = "/dev/disk/by-label/ROOT";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/36A4-A1B1";
+    { device = "/dev/disk/by-label/SYSTEM";
       fsType = "vfat";
     };
 
   fileSystems."/mnt/PRIMARY" =
-    { device = "/dev/disk/by-uuid/01DB174F863FE070";
+    { device = "/dev/disk/by-label/PRIMARY";
       fsType = "ntfs-3g";
       options = [ "rw" "uid=1000"];
     };
 
   fileSystems."/mnt/SECONDARY" =
-    { device = "/dev/disk/by-uuid/01DB174F3CD77510";
+    { device = "/dev/disk/by-label/SECONDARY";
       fsType = "ntfs-3g";
       options = [ "rw" "uid=1000"];
     };
