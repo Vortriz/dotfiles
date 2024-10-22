@@ -1,21 +1,72 @@
 {
     pkgs,
-    lib,
     ...
-}: {
+}:
+let
+    baseDir = ".mozilla/firefox/default";
+
+    shyfox = pkgs.fetchzip {
+        url = "https://github.com/Naezr/ShyFox/archive/refs/heads/main.zip";
+        sha256 = "0iillrfs8g0fwjbmb8an66q94w12gl6shf0db2hjjlmavaw01qfw";
+        stripRoot = true;
+    };
+in {
     programs.firefox = {
         enable = true;
+
         profiles.default = {
             settings = {
-                "mousewheel.default.delta_multiplier_x" = 10;
-                "mousewheel.default.delta_multiplier_y" = 20;
+                "browser.aboutConfig.showWarning" = false; # I know what I'm doing
+                "browser.download.useDownloadDir" = false; # Ask where to save stuff
+                "browser.startup.page" = 3; # Resume previous session on startup
+                "browser.urlbar.suggest.bookmark" = false;
+                "browser.urlbar.suggest.engines" = false;
+                "browser.urlbar.update2.engineAliasRefresh" = true;
                 "devtools.browserconsole.filter.css" = true;
                 "devtools.chrome.enabled" = true;
                 "devtools.debugger.remote-enabled" = true;
-                "browser.urlbar.update2.engineAliasRefresh" = true;
-                "browser.urlbar.suggest.bookmark" = false;
-                "browser.urlbar.suggest.engines" = false;
+                "extensions.activeThemeID" = "firefox-compact-dark@mozilla.org";
+                "mousewheel.default.delta_multiplier_x" = 10;
+                "mousewheel.default.delta_multiplier_y" = 20;
+                "signon.rememberSignons" = false; # Don't prompt me, I use Bitwarden
+                "toolkit.legacyUserProfileCustomizations.stylesheets" = true; # Allow userCrome.css
+                "ui.systemUsesDarkTheme" = "1";
             };
+
+            search = {
+                force = true;
+                default = "SearXNG";
+                order = ["SearXNG" "Google" "MyNixOS" "GitHub"];
+
+                engines = let
+                    engine = ( args: {
+                        iconUpdateURL = "${args.icon}";
+                        updateInterval = 24 * 60 * 60 * 1000;
+                        definedAliases = ["@${args.alias}"];
+                        urls = [
+                            {
+                                template = "${args.surl}";
+                                params = [
+                                    {
+                                        name = "q";
+                                        value = "{searchTerms}";
+                                    }
+                                ];
+                            }
+                        ];
+                    });
+                in {
+                    "Bing".metaData.hidden = true;
+                    "Amazon.com".metaData.hidden = true;
+
+                    "Google"  = engine rec { url = "htttps://google.com";       icon = "${url}/favicon.ico"; alias = "google"; surl = "${url}/search"; };
+                    "SearXNG" = engine rec { url = "https://search.bus-hit.me"; icon = "${url}/favicon.ico"; alias = "xng";    surl = "${url}/search"; };
+                    "MyNixOS" = engine rec { url = "https://mynixos.com";       icon = "${url}/favicon.ico"; alias = "nix";    surl = "${url}/search"; };
+                    "GitHub"  = engine rec { url = "https://github.com/";       icon = "${url}/favicon.ico"; alias = "gh";     surl = "${url}/search"; };
+                };
+            };
+
+            extraConfig = builtins.readFile "${shyfox}/user.js";
         };
 
         policies = {
@@ -30,24 +81,6 @@
             DisablePocket = true;
             DisplayBookmarksToolbar = "never";
             DisplayMenuBar = "default-off";
-
-            SearchEngines = {
-                Add =
-                let
-                    url = "https://search.bus-hit.me";
-                in
-                [
-                    {
-                        Name = "SearXNG";
-                        URLTemplate = "${url}/search?q={searchTerms}";
-                        Method = "GET";
-                        IconURL = "${url}/static/themes/simple/img/favicon.png";
-                        Alias = "@xng";
-                        Description = "SearXNG is a metasearch engine that respects your privacy.";
-                        SuggestURLTemplate = "${url}/autocompleter?q={searchTerms}";
-                    }
-                ];
-            };
 
             ExtensionSettings = with builtins;
                 let extension = shortId: extension_id: {
@@ -68,6 +101,12 @@
                     (extension "sponsorblock" "sponsorBlocker@ajay.app")
                     (extension "userchrome-toggle-extended" "userchrome-toggle-extended@n2ezr.ru")
                 ];
+        };
+    };
+
+    home.file = {
+        "${baseDir}/chrome" = {
+            source = "${shyfox}/chrome";
         };
     };
 }
