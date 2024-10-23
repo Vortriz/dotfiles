@@ -13,6 +13,7 @@
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
   boot.supportedFilesystems = [ "ntfs" ];
+  boot.kernelParams = [ "i915.force_probe=46a6" ];
 
   fileSystems."/" =
     { device = "/dev/disk/by-label/ROOT";
