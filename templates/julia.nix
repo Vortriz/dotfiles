@@ -16,10 +16,10 @@
                 pkgs = nixpkgs.legacyPackages.${system};
 
                 nativeBuildInputs = with pkgs; [
-                    (julia.withPackages.override {
-                        precompile = false;
-                    }[ # Add packages here
+                    (julia.withPackages [
+                        # Add packages here
                         "LanguageServer"
+                        "Pluto"
                     ])
                 ];
 
@@ -32,9 +32,6 @@
 
                     shellHook = ''
                         export JULIA_NUM_THREADS=$(nproc)
-
-                        echo "Precompiling..."
-                        julia -e "using Pkg; Pkg.precompile()"
                     '';
                 };
             }
