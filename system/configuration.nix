@@ -13,9 +13,10 @@
         # outputs.nixosModules.example
 
         # Or modules from other flakes (such as nixos-hardware):
-        # inputs.hardware.nixosModules.common-cpu-amd
-        # inputs.hardware.nixosModules.common-ssd
         inputs.niri.nixosModules.niri
+        inputs.nixos-hardware.nixosModules.asus-battery
+        inputs.nixos-hardware.nixosModules.common-pc-laptop-ssd
+        "${inputs.nixos-hardware}/common/cpu/intel/alder-lake"
 
         # You can also split up your configuration and import pieces of it here:
         # ./users.nix

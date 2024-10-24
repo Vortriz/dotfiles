@@ -1,5 +1,6 @@
 {
     imports = [
+        ./battery.nix
         ./boot.nix
         ./env-vars.nix
         ./locale.nix
