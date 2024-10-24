@@ -81,3 +81,4 @@
 - [ ] nixify adding `"password-store":"gnome-libsecret"` in `.vscode/argv.json` with custom [hm module](https://github.com/nix-community/home-manager/issues/5990)
 - [ ] make program to for find and open; and remove the ton of aliases
 - [ ] make tealdeer hm module (for fun)
+- [ ] restructure ./system
