@@ -5,6 +5,7 @@
         ./stylix
         ./cli-utilities.nix
         ./fonts.nix
+        ./gaming.nix
         ./hotspot.nix
         ./kde.nix
         ./lsp.nix
