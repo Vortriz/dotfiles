@@ -4,6 +4,7 @@
         ./gh.nix
         ./git.nix
         ./tldr.nix
+        ./uv.nix
         ./wormhole.nix
     ];
 }
