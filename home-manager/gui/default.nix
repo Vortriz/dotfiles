@@ -12,7 +12,7 @@
         ./pdf-viewer.nix
         ./remote-desktop.nix
         ./social-apps.nix
-        ./torrrent.nix
+        ./torrent.nix
         ./utilities.nix
         ./video-player.nix
         ./vscode.nix
