@@ -4,7 +4,6 @@
         ./download-manager.nix
         ./file-managers.nix
         ./file-transfer.nix
-        ./gaming.nix
         ./image-editor.nix
         ./music.nix
         ./obsidian.nix

@@ -55,10 +55,10 @@
 
 ## theming
 
-- [ ] ~~hyprland~~ niri
+- [x] ~~hyprland~~ niri
 - [x] kitty
 - [ ] anyrun
-- [ ] waybar
+- [x] waybar
 
 ## programming/typesetting
 
@@ -82,3 +82,4 @@
 - [ ] make program to for find and open; and remove the ton of aliases
 - [ ] make tealdeer hm module (for fun)
 - [ ] restructure ./system
+- [ ] xwayland on niri
