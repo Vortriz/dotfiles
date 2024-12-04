@@ -65,8 +65,7 @@
 - [x] python
 - [x] jupyter
 - [ ] typst
-- [ ] julia (using distrobox)
-- [ ] scientific-fhs
+- [x] julia (scientific-fhsx)
 
 # things to do
 
@@ -78,8 +77,7 @@
 - [x] sound
 - [ ] devenv/direnv workflow
 - [x] nixos-rebuild switch logging (make a logfile with deployment timestamp and commit it)
-- [ ] nixify adding `"password-store":"gnome-libsecret"` in `.vscode/argv.json` with custom [hm module](https://github.com/nix-community/home-manager/issues/5990)
+- [x] nixify adding `"password-store":"gnome-libsecret"` in `.vscode/argv.json` ~~with custom [hm module](https://github.com/nix-community/home-manager/issues/5990)~~ home.file ftw
 - [ ] make program to for find and open; and remove the ton of aliases
 - [ ] make tealdeer hm module (for fun)
-- [ ] restructure ./system
 - [ ] xwayland on niri
