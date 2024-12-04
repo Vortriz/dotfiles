@@ -39,12 +39,19 @@
 
             # fix annoying warning
             "workbench.colorTheme" = "Stylix";
+
+            # julia
+            "julia.symbolCacheDownload" = true;
+            "terminal.integrated.commandsToSkipShell" = [
+               "language-julia.interrupt"
+            ];
         };
 
         extensions = with pkgs.vscode-extensions; [
             # language packs et al
             james-yu.latex-workshop
             jnoortheen.nix-ide
+            julialang.language-julia
             mikestead.dotenv
             mkhl.direnv
             ms-python.isort
@@ -76,5 +83,10 @@
             ritwickdey.liveserver
             rubymaniac.vscode-paste-and-indent
         ];
+    };
+
+    home.file.".vscode/argv.json".text = builtins.toJSON {
+        enable-crash-reporter = false;
+        password-store = "gnome-libsecret";
     };
 }
