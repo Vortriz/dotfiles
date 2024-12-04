@@ -64,7 +64,7 @@
 
 - [x] python
 - [x] jupyter
-- [ ] typst
+- [x] typst
 - [x] julia (scientific-fhsx)
 
 # things to do

@@ -7,6 +7,7 @@
         ./julia.nix
         ./swayidle.nix
         ./swaylock.nix
+        ./typst.nix
         ./ventoy.nix
         ./wine.nix
     ];
