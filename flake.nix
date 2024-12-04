@@ -18,6 +18,8 @@
 
         stylix.url = "github:danth/stylix";
 
+        scientific-fhs.url = "github:manuelbb-upb/scientific-fhs";
+
         # hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
 
         # hyprland-plugins = {

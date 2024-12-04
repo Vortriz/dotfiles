@@ -304,6 +304,19 @@
     },
     "nixpkgs_3": {
       "locked": {
+        "lastModified": 1698318101,
+        "narHash": "sha256-gUihHt3yPD7bVqg+k/UVHgngyaJ3DMEBchbymBMvK1E=",
+        "path": "/nix/store/35dcag44a0ymww0vy0s4jjgxwpv9g62d-source",
+        "rev": "63678e9f3d3afecfeafa0acead6239cdb447574c",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_4": {
+      "locked": {
         "lastModified": 1732238832,
         "narHash": "sha256-sQxuJm8rHY20xq6Ah+GwIUkF95tWjGRd1X8xF+Pkk38=",
         "owner": "NixOS",
@@ -324,7 +337,26 @@
         "nbfc-linux": "nbfc-linux",
         "niri": "niri",
         "nixpkgs": "nixpkgs_2",
+        "scientific-fhs": "scientific-fhs",
         "stylix": "stylix"
+      }
+    },
+    "scientific-fhs": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_3"
+      },
+      "locked": {
+        "lastModified": 1730811492,
+        "narHash": "sha256-B9h8HCJYiAdS4cS9hbxBNtmKxw8SpkuNaR5T3oNCiFk=",
+        "owner": "manuelbb-upb",
+        "repo": "scientific-fhs",
+        "rev": "a8e1ca3946fda5bd8aacab6547d2a8135dd48706",
+        "type": "github"
+      },
+      "original": {
+        "owner": "manuelbb-upb",
+        "repo": "scientific-fhs",
+        "type": "github"
       }
     },
     "stylix": {
@@ -337,7 +369,7 @@
         "flake-utils": "flake-utils",
         "gnome-shell": "gnome-shell",
         "home-manager": "home-manager_2",
-        "nixpkgs": "nixpkgs_3",
+        "nixpkgs": "nixpkgs_4",
         "systems": "systems_2",
         "tinted-foot": "tinted-foot",
         "tinted-kitty": "tinted-kitty",
