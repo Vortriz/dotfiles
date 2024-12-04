@@ -20,7 +20,7 @@
 
         eza = {
             enable = true;
-            icons = true;
+            icons = "auto";
         };
 
         starship = {
