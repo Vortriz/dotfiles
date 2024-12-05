@@ -81,3 +81,4 @@
 - [ ] make program to for find and open; and remove the ton of aliases
 - [ ] make tealdeer hm module (for fun)
 - [ ] xwayland on niri
+- [ ] pendrive not shown
