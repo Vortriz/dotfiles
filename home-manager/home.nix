@@ -72,6 +72,19 @@
         };
     };
 
+    # Default applications
+    xdg.mimeApps = {
+        enable = true;
+        defaultApplications = {
+            "image/png" = "org.nomacs.ImageLounge.desktop";
+            "image/jpg" = "org.nomacs.ImageLounge.desktop";
+            "image/jpeg" = "org.nomacs.ImageLounge.desktop";
+            "application/pdf" = "sioyek.desktop";
+            "x-scheme-handler/tg" = "org.telegram.desktop.desktop";
+            "x-scheme-handler/tonsite" = "org.telegram.desktop.desktop";
+        };
+    };
+
     # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
     home.stateVersion = "23.11";
 }
