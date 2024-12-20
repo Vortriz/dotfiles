@@ -17,6 +17,7 @@
             niri.enable = false;
             swaylock.enable = true;
             vscode.enable = true;
+            yazi.enable = true;
         };
     };
 }

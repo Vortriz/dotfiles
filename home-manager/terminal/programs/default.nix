@@ -6,5 +6,6 @@
         ./tldr.nix
         ./uv.nix
         ./wormhole.nix
+        ./yazi.nix
     ];
 }
