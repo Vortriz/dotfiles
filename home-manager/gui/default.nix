@@ -5,6 +5,7 @@
         ./file-managers.nix
         ./file-transfer.nix
         ./image-editor.nix
+        ./image-viewer.nix
         ./music.nix
         ./obsidian.nix
         ./office-suite.nix
