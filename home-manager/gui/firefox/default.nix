@@ -35,7 +35,7 @@ in {
 
             search = {
                 force = true;
-                default = "SearXNG";
+                default = "Google";
                 order = ["SearXNG" "Google" "MyNixOS" "GitHub"];
 
                 engines = let
