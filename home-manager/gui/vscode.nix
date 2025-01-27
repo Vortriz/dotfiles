@@ -61,7 +61,7 @@
             ms-toolsai.jupyter-renderers
             ms-toolsai.vscode-jupyter-cell-tags
             ms-toolsai.vscode-jupyter-slideshow
-            nvarner.typst-lsp
+            myriad-dreamin.tinymist
             shd101wyy.markdown-preview-enhanced
             yzhang.markdown-all-in-one
 
