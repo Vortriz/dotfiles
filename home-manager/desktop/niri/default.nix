@@ -36,7 +36,7 @@
 
             prefer-no-csd = true;
 
-            screenshot-path = "~/Downloads/captures/screenshots/%Y-%m-%d %H-%M-%S.png";
+            screenshot-path = "~/downloads/captures/screenshots/%Y-%m-%d %H-%M-%S.png";
 
             window-rules = [
                 {
@@ -111,6 +111,8 @@
                 "Mod+Shift+U".action = move-workspace-up;
 
                 "Mod+Tab".action = focus-workspace-previous;
+
+                "Mod+V".action = toggle-window-floating;
 
                 "Mod+Comma".action = consume-window-into-column;
                 "Mod+Period".action = expel-window-from-column;
