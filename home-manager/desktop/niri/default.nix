@@ -11,6 +11,7 @@
             input = {
                 touchpad = {
                     tap-button-map = "left-right-middle";
+                    scroll-factor = 0.75;
                 };
             };
 
@@ -86,31 +87,26 @@
                 "Mod+Q".action = close-window;
                 "Mod+L".action = spawn "lockoff";
 
-                "Alt+Shift+Tab".action = focus-column-left-or-last;
                 "Alt+Tab".action = focus-column-right-or-first;
+                "Alt+Shift+Tab".action = focus-column-left-or-last;
 
-                "Mod+Down".action = focus-window-down;
-                "Mod+Up".action = focus-window-up;
-
-                "Mod+Ctrl+Left".action = move-column-left;
-                "Mod+Ctrl+Down".action = move-window-down;
-                "Mod+Ctrl+Up".action = move-window-up;
-                "Mod+Ctrl+Right".action = move-column-right;
+                "Mod+Tab".action = focus-workspace-previous;
 
                 "Mod+Home".action = focus-column-first;
                 "Mod+End".action = focus-column-last;
+
+                "Mod+Up".action = focus-workspace-up;
+                "Mod+Down".action = focus-workspace-down;
+
+                "Mod+Ctrl+Up".action = move-window-up-or-to-workspace-up;
+                "Mod+Ctrl+Down".action = move-window-down-or-to-workspace-down;
+                "Mod+Ctrl+Left".action = move-column-left;
+                "Mod+Ctrl+Right".action = move-column-right;
                 "Mod+Ctrl+Home".action = move-column-to-first;
                 "Mod+Ctrl+End".action = move-column-to-last;
 
-                "Mod+I".action = focus-workspace-down;
-                "Mod+U".action = focus-workspace-up;
-                "Mod+Ctrl+I".action = move-column-to-workspace-down;
-                "Mod+Ctrl+U".action = move-column-to-workspace-up;
-
-                "Mod+Shift+I".action = move-workspace-down;
-                "Mod+Shift+U".action = move-workspace-up;
-
-                "Mod+Tab".action = focus-workspace-previous;
+                "Mod+Shift+Up".action = move-workspace-up;
+                "Mod+Shift+Down".action = move-workspace-down;
 
                 "Mod+V".action = toggle-window-floating;
 
@@ -132,14 +128,6 @@
                 "Mod+Shift+Minus".action = set-window-height "-10%";
                 "Mod+Shift+Equal".action = set-window-height "+10%";
 
-                "Print".action = screenshot;
-                "Ctrl+Print".action = screenshot-screen;
-                "Alt+Print".action = screenshot-window;
-
-                "Mod+Shift+E".action = quit;
-
-                "Mod+Shift+P".action = power-off-monitors;
-
                 "XF86AudioRaiseVolume" = vol ["+2%"];
                 "XF86AudioLowerVolume" = vol ["-2%"];
 
@@ -148,6 +136,13 @@
 
                 "XF86MonBrightnessUp" = brightness ["+2%"];
                 "XF86MonBrightnessDown" = brightness ["2%-"];
+
+                "Print".action = screenshot;
+                "Ctrl+Print".action = screenshot-screen;
+                "Alt+Print".action = screenshot-window;
+
+                "Mod+Shift+P".action = power-off-monitors;
+                "Mod+Shift+E".action = quit;
             }
             // (lib.attrsets.mergeAttrsList (
                 map (x: let
