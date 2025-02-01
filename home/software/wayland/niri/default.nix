@@ -60,6 +60,18 @@
                     ];
                     open-maximized = true;
                 }
+                {
+                    matches = [
+                        { app-id = "io.missioncenter.MissionCenter"; }
+                    ];
+                    open-floating = true;
+                    default-window-height.proportion = 0.6;
+                    default-column-width.proportion = 0.75;
+                    focus-ring = {
+                        width = 4;
+                        active.color = "#f38ba8";
+                    };
+                }
             ];
 
             binds = with config.lib.niri.actions; let
@@ -83,6 +95,7 @@
                 "Mod+T".action = spawn "kitty";
                 "Alt+Space".action = spawn "ulauncher";
                 "Mod+E".action = spawn "nautilus";
+                "Ctrl+Shift+Escape".action = spawn "missioncenter";
 
                 "Mod+Q".action = close-window;
                 "Mod+L".action = spawn "lockoff";

@@ -37,7 +37,7 @@
 - [x] ripgrep-all
 - [x] eza
 - [x] bat
-- btop++
+- [x] mission center
 - taskmaster
 - [x] thefuck
 - [x] tealdeer
