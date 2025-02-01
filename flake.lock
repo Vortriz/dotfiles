@@ -99,6 +99,23 @@
         "type": "github"
       }
     },
+    "flake-parts": {
+      "inputs": {
+        "nixpkgs-lib": "nixpkgs-lib"
+      },
+      "locked": {
+        "lastModified": 1706830856,
+        "narHash": "sha256-a0NYyp+h9hlb7ddVz4LUn1vT/PLwqfrWYcHMvFB1xYg=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "b253292d9c0a5ead9bc98c4e9a26c6312e27d69f",
+        "type": "github"
+      },
+      "original": {
+        "id": "flake-parts",
+        "type": "indirect"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": [
@@ -335,6 +352,24 @@
         "type": "github"
       }
     },
+    "nixpkgs-lib": {
+      "locked": {
+        "dir": "lib",
+        "lastModified": 1706550542,
+        "narHash": "sha256-UcsnCG6wx++23yeER4Hg18CXWbgNpqNXcHIo5/1Y+hc=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "97b17f32362e475016f942bbdfda4a4a72a8a652",
+        "type": "github"
+      },
+      "original": {
+        "dir": "lib",
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixpkgs-stable": {
       "locked": {
         "lastModified": 1738023785,
@@ -403,7 +438,8 @@
         "niri": "niri",
         "nixpkgs": "nixpkgs_2",
         "scientific-fhs": "scientific-fhs",
-        "stylix": "stylix"
+        "stylix": "stylix",
+        "ulauncher": "ulauncher"
       }
     },
     "scientific-fhs": {
@@ -550,6 +586,27 @@
       "original": {
         "owner": "tinted-theming",
         "repo": "base16-zed",
+        "type": "github"
+      }
+    },
+    "ulauncher": {
+      "inputs": {
+        "flake-parts": "flake-parts",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1733445346,
+        "narHash": "sha256-S6YZOZ5f2UtFcdq5wqN5r11o6IapND+1oqBoL6TMB4c=",
+        "owner": "omarcresp",
+        "repo": "ulauncher",
+        "rev": "d075901fa9d6016f92b17168016620830cc10c08",
+        "type": "github"
+      },
+      "original": {
+        "owner": "omarcresp",
+        "repo": "ulauncher",
         "type": "github"
       }
     },

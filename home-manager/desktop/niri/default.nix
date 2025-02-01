@@ -81,7 +81,7 @@
                 "Mod+Shift+Slash".action = show-hotkey-overlay;
 
                 "Mod+T".action = spawn "kitty";
-                "Alt+Space".action = spawn "fuzzel";
+                "Alt+Space".action = spawn "ulauncher";
                 "Mod+E".action = spawn "nautilus";
 
                 "Mod+Q".action = close-window;

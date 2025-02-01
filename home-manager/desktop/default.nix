@@ -8,6 +8,7 @@
         ./swayidle.nix
         ./swaylock.nix
         ./typst.nix
+        ./ulauncher.nix
         ./ventoy.nix
         ./wine.nix
     ];
