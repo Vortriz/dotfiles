@@ -12,6 +12,7 @@
         ./pdf-viewer.nix
         ./remote-desktop.nix
         ./social-apps.nix
+        ./system-monitor.nix
         ./torrent.nix
         ./utilities.nix
         ./video-player.nix
