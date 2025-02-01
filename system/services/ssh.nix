@@ -2,6 +2,7 @@
     # TODO: This setups a SSH server. Very important if you're setting up a headless system.
     services.openssh = {
         enable = false;
+
         settings = {
             # Opinionated: forbid root login through SSH.
             PermitRootLogin = "no";

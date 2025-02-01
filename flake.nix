@@ -24,23 +24,6 @@
             url = "github:omarcresp/ulauncher";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-
-        # hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
-
-        # hyprland-plugins = {
-        #     url = "github:hyprwm/hyprland-plugins";
-        #     inputs.hyprland.follows = "hyprland";
-        # };
-
-        # hyprgrass = {
-        #     url = "github:horriblename/hyprgrass";
-        #     inputs.hyprland.follows = "hyprland";
-        # };
-
-        # hyprlock = {
-        #     url = "github:hyprwm/hyprlock";
-        #     inputs.nixpkgs.follows = "hyprland/nixpkgs";
-        # };
     };
 
     outputs = {
@@ -88,8 +71,6 @@
         };
 
         homeConfigurations.vortriz = home-manager.lib.homeManagerConfiguration {
-            # inherit packages;
-
             modules = [
             ];
         };

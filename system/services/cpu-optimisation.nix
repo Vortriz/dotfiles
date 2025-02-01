@@ -7,6 +7,7 @@
 
         tlp = {
             enable = true;
+
             settings = {
                 RESTORE_THRESHOLDS_ON_BAT = 1;
                 START_CHARGE_THRESH_BAT0=75;
