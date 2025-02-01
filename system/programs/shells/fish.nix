@@ -6,6 +6,7 @@
 
     programs.fish = {
         enable = true;
+
         shellInit = ''
             direnv hook fish | source
         '';
@@ -17,6 +18,4 @@
         fishPlugins.sponge
         fishPlugins.colored-man-pages
     ];
-
-    # users.defaultUserShell = pkgs.fish; ! DON'T do this, it might break the system
 }

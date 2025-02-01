@@ -1,6 +1,7 @@
 {
     programs.niri.enable = true;
     niri-flake.cache.enable = true;
+
     environment = {
         sessionVariables = {
             # for electron apps
