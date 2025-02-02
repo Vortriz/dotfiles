@@ -37,7 +37,7 @@
 
                 "custom/launcher" = {
                     "format" = " ";
-                    "on-click" = "pkill fuzzel || fuzzel";
+                    "on-click" = "ulauncher-toggle";
                     "tooltip" = false;
                 };
 
