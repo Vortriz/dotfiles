@@ -9,11 +9,6 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
-        nbfc-linux = {
-            url = "github:nbfc-linux/nbfc-linux";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-
         niri.url = "github:sodiboo/niri-flake";
 
         stylix.url = "github:danth/stylix";
@@ -21,7 +16,7 @@
         scientific-fhs.url = "github:manuelbb-upb/scientific-fhs";
 
         ulauncher = {
-            url = "github:omarcresp/ulauncher";
+            url = "github:Ulauncher/Ulauncher";
             inputs.nixpkgs.follows = "nixpkgs";
         };
     };

@@ -38,7 +38,6 @@
 - [x] eza
 - [x] bat
 - [x] mission center
-- taskmaster
 - [x] thefuck
 - [x] tealdeer
 - [x] micro
