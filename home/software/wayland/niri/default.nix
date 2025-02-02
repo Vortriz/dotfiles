@@ -97,6 +97,8 @@
                 "Mod+E".action = spawn "nautilus";
                 "Ctrl+Shift+Escape".action = spawn "missioncenter";
 
+                "Ctrl+Shift+O".action = spawn "oimg";
+
                 "Mod+Q".action = close-window;
                 "Mod+L".action = spawn "lockoff";
 
