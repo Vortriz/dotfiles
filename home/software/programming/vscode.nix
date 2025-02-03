@@ -45,6 +45,11 @@
             "terminal.integrated.commandsToSkipShell" = [
                "language-julia.interrupt"
             ];
+
+            # typst
+            "[typst]" = {
+                "editor.wordSeparators" = "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?";
+            };
         };
 
         extensions = with pkgs.vscode-extensions; [
@@ -74,14 +79,16 @@
 
             # misc
             antfu.slidev
+            donjayamanne.githistory
             github.copilot
             github.copilot-chat
-            donjayamanne.githistory
+            jock.svg
             ms-azuretools.vscode-docker
             ms-vscode-remote.remote-containers
             ms-vsliveshare.vsliveshare
             ritwickdey.liveserver
             rubymaniac.vscode-paste-and-indent
+            tomoki1207.pdf
         ];
     };
 
