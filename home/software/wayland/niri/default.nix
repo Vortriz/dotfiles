@@ -112,6 +112,8 @@
 
                 "Mod+Up".action = focus-workspace-up;
                 "Mod+Down".action = focus-workspace-down;
+                "Mod+Left".action = focus-column-left;
+                "Mod+Right".action = focus-column-right;
 
                 "Mod+Ctrl+Up".action = move-window-up-or-to-workspace-up;
                 "Mod+Ctrl+Down".action = move-window-down-or-to-workspace-down;
