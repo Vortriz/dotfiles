@@ -35,6 +35,10 @@
 
         # productivity
         obsidian
+        zotero
+
+        # remote desktop
+        anydesk
 
         # social media
         discord
@@ -43,24 +47,21 @@
         # system monitor
         mission-center
 
-        # remote desktop
-        anydesk
-
         # torrent
         qbittorrent
 
+        # utilities
+        filelight
+        gnome-calculator
+        ventoy-full
+
         # video player
-        vlc
         mpv
+        vlc
 
         # wine
-        wineWowPackages.stable
-        winetricks
         bottles
-
-        # utilities
-        gnome-calculator
-        filelight
-        ventoy-full
+        winetricks
+        wineWowPackages.stable
     ];
 }
