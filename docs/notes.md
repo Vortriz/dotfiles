@@ -81,3 +81,4 @@
 - [ ] make tealdeer hm module (for fun)
 - [ ] xwayland on niri
 - [ ] pendrive not shown
+- [ ] install uv globally and manage python per project
