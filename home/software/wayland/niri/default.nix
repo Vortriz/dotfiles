@@ -12,6 +12,7 @@
                 touchpad = {
                     tap-button-map = "left-right-middle";
                     scroll-factor = 0.75;
+                    dwt = true;
                 };
             };
 
@@ -71,6 +72,12 @@
                         width = 4;
                         active.color = "#f38ba8";
                     };
+                }
+                {
+                    matches = [
+                        { app-id = "org.gnome.Calculator"; }
+                    ];
+                    open-floating = true;
                 }
             ];
 
