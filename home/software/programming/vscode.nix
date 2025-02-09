@@ -50,6 +50,11 @@
             "[typst]" = {
                 "editor.wordSeparators" = "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?";
             };
+
+            # copilot
+            "github.copilot.enable" = {
+                "shellscript" = false;
+            };
         };
 
         extensions = with pkgs.vscode-extensions; [
