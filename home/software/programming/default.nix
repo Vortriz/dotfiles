@@ -11,5 +11,7 @@
         devenv
         typst
         uv
+
+        texliveFull
     ];
 }
