@@ -8,6 +8,8 @@
     ];
 
     home.packages = with pkgs; [
+        devenv
         typst
+        uv
     ];
 }

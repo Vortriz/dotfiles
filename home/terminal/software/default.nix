@@ -13,12 +13,10 @@
 
     home.packages = with pkgs; [
         cachix
-        devenv
         ffmpeg
         imagemagick
         magic-wormhole
         nh
-        uv
         wl-clipboard
     ];
 }
