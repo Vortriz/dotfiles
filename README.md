@@ -7,3 +7,9 @@
 | **WM**       | niri                       |
 | **Launcher** | Ulauncher                  |
 | **Browser**  | firefox (with shyfox theme)|
+
+# People
+
+I am thankful to a lot of people. Some from whom I ~~stole~~ borrowed the config are:
+
+Misterio77 (for starter config), vimjoyer (for his excellent videos on nix), ... (more as I remember)
