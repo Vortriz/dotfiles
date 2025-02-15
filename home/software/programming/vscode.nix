@@ -45,6 +45,8 @@
             "terminal.integrated.commandsToSkipShell" = [
                "language-julia.interrupt"
             ];
+            "julia.enableTelemetry" = true;
+
 
             # typst
             "[typst]" = {
