@@ -50,9 +50,6 @@
         # torrent
         qbittorrent
 
-        # usenet
-        nzbget
-
         # utilities
         filelight
         gnome-calculator
