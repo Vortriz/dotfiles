@@ -20,6 +20,7 @@
                 mode = {
                     height = 1800;
                     width = 2880;
+                    refresh = 60.001;
                 };
                 scale = 1.5;
             };
