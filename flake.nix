@@ -52,6 +52,14 @@
         # These are usually stuff you would upstream into home-manager
         homeManagerModules = import ./modules/home-manager;
 
+        # Templates
+        templates = {
+            uv2nix = {
+                path = ./templates/uv2nix;
+                description = "uv2nix Flake";
+            };
+        };
+
         # NixOS configuration entrypoint
         # Available through 'nixos-rebuild --flake .#your-hostname'
         nixosConfigurations = {
