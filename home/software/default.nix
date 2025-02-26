@@ -51,7 +51,7 @@
         qbittorrent
 
         # utilities
-        filelight
+        kdePackages.filelight
         gnome-calculator
         ventoy-full
 
