@@ -123,7 +123,6 @@
                         };
                     shellHook = ''
                         unset PYTHONPATH
-                        exec fish
                         echo "Set default python version with 'uv python pin <version>'"
                     '';
                 };
