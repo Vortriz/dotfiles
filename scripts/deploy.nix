@@ -14,8 +14,8 @@
                 set timestamp $(date '+%x %X')
                 set branch $(git branch --show-current)
 
-                echo -e "\n---\nGen $gen - $timestamp" >> $FLAKE/build-log.md
-                nvd diff /nix/var/nix/profiles/system-{$prev_gen,$gen}-link >> $FLAKE/build-log.md
+                echo -e "\n---\n\nGen $gen - $timestamp" >> $FLAKE/build.log
+                nvd diff /nix/var/nix/profiles/system-{$prev_gen,$gen}-link >> $FLAKE/build.log
 
                 git add -A
                 git commit -m "deployed $gen via $branch"
