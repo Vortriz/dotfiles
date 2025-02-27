@@ -102,6 +102,7 @@
                 {
                     matches = [
                         { app-id = "obsidian"; }
+                        { app-id = "com.github.th_ch.youtube_music"; }
                     ];
                     scroll-factor = 0.6;
                 }
