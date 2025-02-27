@@ -13,8 +13,8 @@
     ];
 
     home.packages = with pkgs; [
-        inputs.ulauncher.packages."${pkgs.system}".default
         brightnessctl
+        inputs.ulauncher.packages."${pkgs.system}".default
         pavucontrol
     ];
 }

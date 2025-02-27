@@ -9,8 +9,7 @@
 
     home.packages = with pkgs; [
         devenv
-        typst
-
         texliveFull
+        typst
     ];
 }

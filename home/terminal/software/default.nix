@@ -17,7 +17,7 @@
         imagemagick
         magic-wormhole
         nh
-        wl-clipboard
         nvd
+        wl-clipboard
     ];
 }
