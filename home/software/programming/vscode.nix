@@ -58,6 +58,9 @@
                 "github.copilot.enable" = {
                     "shellscript" = false;
                 };
+
+                # use fish shell by default
+                "terminal.integrated.defaultProfile.linux" = "fish";
             };
 
             extensions = with pkgs.vscode-extensions; [
