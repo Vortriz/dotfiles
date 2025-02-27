@@ -13,9 +13,9 @@
     };
 
     environment.systemPackages = with pkgs; [
-        fishPlugins.z
+        fishPlugins.colored-man-pages
         fishPlugins.fzf-fish
         fishPlugins.sponge
-        fishPlugins.colored-man-pages
+        fishPlugins.z
     ];
 }
