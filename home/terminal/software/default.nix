@@ -18,5 +18,6 @@
         magic-wormhole
         nh
         wl-clipboard
+        nvd
     ];
 }
