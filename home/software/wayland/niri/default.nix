@@ -145,8 +145,6 @@
 
                 "Ctrl+Tab".action = focus-window-down-or-top;
                 "Ctrl+Shift+Tab".action = focus-window-up-or-bottom;
-                "Alt+Tab".action = focus-column-right-or-first;
-                "Alt+Shift+Tab".action = focus-column-left-or-last;
 
                 "Mod+Tab".action = focus-workspace-previous;
 
