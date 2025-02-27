@@ -29,6 +29,14 @@
                 always-center-single-column = true;
                 default-column-width.proportion = 0.5;
                 focus-ring.width = 2;
+
+                tab-indicator = {
+                    enable = true;
+                    hide-when-single-tab = true;
+                    gap = -10;
+                    length.total-proportion = 0.25;
+                    position = "top";
+                };
             };
 
             spawn-at-startup =
@@ -67,11 +75,13 @@
                         { app-id = "io.missioncenter.MissionCenter"; }
                     ];
                     open-floating = true;
+                    shadow.enable = true;
                     default-window-height.proportion = 0.6;
                     default-column-width.proportion = 0.75;
                     focus-ring = {
                         width = 4;
                         active.color = "#f38ba8";
+                        inactive.color = "#ebebeb";
                     };
                 }
                 {
@@ -79,6 +89,21 @@
                         { app-id = "org.gnome.Calculator"; }
                     ];
                     open-floating = true;
+                    shadow.enable = true;
+                }
+                {
+                    matches = [
+                        { title = ".*pdf"; }
+                        { app-id = "kitty"; }
+                    ];
+                    default-column-display = "tabbed";
+                    # TODO: auto-tabbing
+                }
+                {
+                    matches = [
+                        { app-id = "obsidian"; }
+                    ];
+                    scroll-factor = 0.6;
                 }
             ];
 
@@ -97,6 +122,9 @@
                     allow-when-locked = true;
                     action.spawn = [ "brightnessctl" "-d" "intel_backlight" "-e" "set" ] ++ cmd;
                 };
+                rr = cmd: {
+                    spawn = [ "niri" "msg" "output" "eDP-1" "mode" ] ++ cmd;
+                };
             in {
                 "Mod+Shift+Slash".action = show-hotkey-overlay;
 
@@ -106,10 +134,17 @@
                 "Ctrl+Shift+Escape".action = spawn "missioncenter";
 
                 "Ctrl+Shift+O".action = spawn "oimg";
+                "Mod+H".action = rr [ "2880x1800@90.001" ];
+                "Mod+Shift+H".action = rr [ "2880x1800@60.001" ];
 
                 "Mod+Q".action = close-window;
                 "Mod+L".action = spawn "lockoff";
 
+                "Alt+Right".action = focus-window-up;
+                "Alt+Left".action = focus-window-down;
+
+                "Ctrl+Tab".action = focus-window-down-or-top;
+                "Ctrl+Shift+Tab".action = focus-window-up-or-bottom;
                 "Alt+Tab".action = focus-column-right-or-first;
                 "Alt+Shift+Tab".action = focus-column-left-or-last;
 
