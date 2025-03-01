@@ -133,6 +133,8 @@
                 "Alt+Space".action = spawn "ulauncher";
                 "Mod+E".action = spawn "nautilus";
                 "Ctrl+Shift+Escape".action = spawn "missioncenter";
+                "Print".action = spawn [ "flameshot" "gui" ];
+                "Alt+Print".action = screenshot-window;
 
                 "Ctrl+Shift+O".action = spawn "oimg";
                 "Mod+H".action = rr [ "2880x1800@90.001" ];
@@ -144,13 +146,7 @@
                 "Alt+Right".action = focus-window-up;
                 "Alt+Left".action = focus-window-down;
 
-                "Ctrl+Tab".action = focus-window-down-or-top;
-                "Ctrl+Shift+Tab".action = focus-window-up-or-bottom;
-
                 "Mod+Tab".action = focus-workspace-previous;
-
-                "Mod+Home".action = focus-column-first;
-                "Mod+End".action = focus-column-last;
 
                 "Mod+Up".action = focus-workspace-up;
                 "Mod+Down".action = focus-workspace-down;
@@ -161,8 +157,6 @@
                 "Mod+Ctrl+Down".action = move-window-down-or-to-workspace-down;
                 "Mod+Ctrl+Left".action = move-column-left;
                 "Mod+Ctrl+Right".action = move-column-right;
-                "Mod+Ctrl+Home".action = move-column-to-first;
-                "Mod+Ctrl+End".action = move-column-to-last;
 
                 "Mod+Shift+Up".action = move-workspace-up;
                 "Mod+Shift+Down".action = move-workspace-down;
@@ -195,10 +189,6 @@
 
                 "XF86MonBrightnessUp" = brightness ["+2%"];
                 "XF86MonBrightnessDown" = brightness ["2%-"];
-
-                "Print".action = screenshot;
-                "Ctrl+Print".action = screenshot-screen;
-                "Alt+Print".action = screenshot-window;
 
                 "Mod+Shift+P".action = power-off-monitors;
                 "Mod+Shift+E".action = quit;
