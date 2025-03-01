@@ -47,3 +47,29 @@ Gen 59 - 28/02/25 12:54:23 AM IST
 >>> /nix/var/nix/profiles/system-59-link
 No version or selection state changes.
 Closure size: 7674 -> 7674 (23 paths added, 23 paths removed, delta +0, disk usage -48B).
+
+---
+
+Gen 60 - 01/03/25 04:31:59 PM IST
+<<< /nix/var/nix/profiles/system-59-link
+>>> /nix/var/nix/profiles/system-60-link
+Version changes:
+[U*]  #01  cloudflare-warp                           2024.12.554 -> 2025.1.861
+[U.]  #02  deno                                      2.2.1 -> 2.2.2
+[U.]  #03  exiv2                                     0.28.4-lib -> 0.28.5-lib
+[U*]  #04  eza                                       0.20.22, 0.20.22-man -> 0.20.23, 0.20.23-man
+[U.]  #05  flameshot                                 12.1.0-unstable-2025-02-01, 12.1.0-unstable-2025-02-01-fish-completions -> 12.1.0-unstable-2025-02-12, 12.1.0-unstable-2025-02-12-fish-completions
+[U.]  #06  imagemagick                               7.1.1-43, 7.1.1-43-dev, 7.1.1-43-doc, 7.1.1-43-fish-completions -> 7.1.1-44, 7.1.1-44-dev, 7.1.1-44-doc, 7.1.1-44-fish-completions
+[U.]  #07  libmtp                                    1.1.21 -> 1.1.22
+[U.]  #08  libportal                                 0.9.0 -> 0.9.1
+[U.]  #09  libportal-gtk4                            0.9.0 -> 0.9.1
+[U*]  #10  networkmanager                            1.48.10 x2, 1.48.10-doc, 1.48.10-man -> 1.50.2 x2, 1.50.2-doc, 1.50.2-man
+[U.]  #11  nixos-system-nixos                        25.05.20250224.0196c01 -> 25.05.20250227.6313551
+[U.]  #12  sioyek                                    2.0.0-unstable-2024-09-29, 2.0.0-unstable-2024-09-29-fish-completions -> 2.0.0-unstable-2025-02-20, 2.0.0-unstable-2025-02-20-fish-completions
+[U.]  #13  tinymist                                  0.13.0 -> 0.13.2
+[U.]  #14  vscode-extension-github-copilot           1.266.1363 -> 1.275.0
+[U.]  #15  vscode-extension-github-copilot-chat      0.24.2025020602 -> 0.24.2025021302
+[U.]  #16  vscode-extension-myriad-dreamin-tinymist  0.13.0 -> 0.13.2
+[U.]  #17  xwayland                                  24.1.5 -> 24.1.6
+[U.]  #18  yazi                                      25.2.11 x2, 25.2.11-fish-completions -> 25.2.26 x2, 25.2.26-fish-completions
+Closure size: 7674 -> 7674 (188 paths added, 188 paths removed, delta +0, disk usage -2.2MiB).
