@@ -7,7 +7,7 @@
         enable = true;
         autoEnable = false;
 
-        image = ./katana-wallpaper.jpg;
+        image = ./wallpapers/25.jpg;
 
         base16Scheme = {
             base00 = "0d1117"; # Default bg
