@@ -108,4 +108,6 @@
         enable-crash-reporter = false;
         password-store = "gnome-libsecret";
     };
+
+    stylix.targets.vscode.enable = true;
 }
