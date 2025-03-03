@@ -7,4 +7,7 @@
 
         package = pkgs.swaylock-effects;
     };
+
+    stylix.targets.swaylock.enable = true;
+
 }

@@ -15,4 +15,6 @@
         builtins.mapAttrs ( alias: x: "open $(ff${x})" ) { "ofp" = "p"; "ofs" = "s"; "ofv" = "v"; } //
         builtins.mapAttrs ( alias: x: "cd $(fd${x})" ) { "cdp" = "p"; "cds" = "s"; };
     };
+
+    stylix.targets.fish.enable = true;
 }

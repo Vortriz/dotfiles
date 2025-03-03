@@ -12,4 +12,6 @@
             };
         };
     };
+
+    stylix.targets.fuzzel.enable = false;
 }

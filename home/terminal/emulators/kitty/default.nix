@@ -10,4 +10,6 @@
             map ctrl+backspace send_text all \x17
         '';
     };
+
+    stylix.targets.kitty.enable = true;
 }
