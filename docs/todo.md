@@ -14,3 +14,5 @@
 - [ ] some drive sync utility
 - [ ] yazi setup as default file manager
 - [ ] discord needs xdg-desktop-portal
+- [ ] avizo - multimedia notifications
+- [ ] regreet - login manager
