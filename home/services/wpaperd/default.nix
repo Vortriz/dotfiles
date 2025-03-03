@@ -4,5 +4,4 @@
     };
 
     stylix.targets.wpaperd.enable = true;
-
 }
