@@ -73,3 +73,26 @@ Version changes:
 [U.]  #17  xwayland                                  24.1.5 -> 24.1.6
 [U.]  #18  yazi                                      25.2.11 x2, 25.2.11-fish-completions -> 25.2.26 x2, 25.2.26-fish-completions
 Closure size: 7674 -> 7674 (188 paths added, 188 paths removed, delta +0, disk usage -2.2MiB).
+
+---
+
+Gen 61 - 03/03/25 03:02:38 PM IST
+<<< /nix/var/nix/profiles/system-60-link
+>>> /nix/var/nix/profiles/system-61-link
+Version changes:
+[U.]  #1  acpi-call               1.2.2-6.13.4 -> 1.2.2-6.13.5
+[U.]  #2  initrd-linux            6.13.4 -> 6.13.5
+[C.]  #3  libXNVCtrl              390.157, 550.142 -> 390.157, 570.124.04
+[U.]  #4  linux                   6.13.4, 6.13.4-modules, 6.13.4-modules-shrunk -> 6.13.5, 6.13.5-modules, 6.13.5-modules-shrunk
+[U.]  #5  nix-output-monitor      2.1.4 -> 2.1.5
+[U.]  #6  nixos-system-nixos      25.05.20250227.6313551 -> 25.05.20250301.303bd80
+[U.]  #7  qbittorrent             5.0.3, 5.0.3-fish-completions -> 5.0.4, 5.0.4-fish-completions
+[U.]  #8  x86_energy_perf_policy  6.12.16 -> 6.12.17
+Added packages:
+[A.]  #1  25.jpg             <none>
+[A.]  #2  wpaperd            1.1.1
+[A.]  #3  wpaperd-wallpaper  <none>
+[A.]  #4  wpaperd.service    <none>
+Removed packages:
+[R.]  #1  katana-wallpaper.jpg  <none>
+Closure size: 7674 -> 7677 (82 paths added, 79 paths removed, delta +3, disk usage +15.4MiB).
