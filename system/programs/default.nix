@@ -62,10 +62,4 @@
 
         alias = "fuck";
     };
-
-    stylix.targets = {
-        bat.enable = true;
-        fzf.enable = true;
-    };
-
 }
