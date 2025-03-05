@@ -96,3 +96,22 @@ Added packages:
 Removed packages:
 [R.]  #1  katana-wallpaper.jpg  <none>
 Closure size: 7674 -> 7677 (82 paths added, 79 paths removed, delta +3, disk usage +15.4MiB).
+
+---
+
+Gen 62 - 05/03/25 01:44:35 PM IST
+<<< /nix/var/nix/profiles/system-61-link
+>>> /nix/var/nix/profiles/system-62-link
+Version changes:
+[U.]  #01  conmon                                    2.1.12 -> 2.1.13
+[U.]  #02  dart-sass                                 1.85.0 -> 1.85.1
+[U.]  #03  discord                                   0.0.86 -> 0.0.87
+[C*]  #04  gamescope                                 <none>, 3.16.1 -> <none>, 3.16.2
+[U.]  #05  nixos-system-nixos                        25.05.20250301.303bd80 -> 25.05.20250303.ba487db
+[C.]  #06  nss                                       3.101.2 x2, 3.101.2-dev, 3.101.2-man, 3.108 -> 3.101.2 x2, 3.101.2-dev, 3.101.2-man, 3.109
+[U.]  #07  tinymist                                  0.13.2 -> 0.13.4
+[U.]  #08  ventoy                                    1.1.01 -> 1.1.05
+[U.]  #09  vscode-extension-antfu-slidev             0.4.1 -> 51.3.0
+[U.]  #10  vscode-extension-myriad-dreamin-tinymist  0.13.2 -> 0.13.4
+[U.]  #11  yazi                                      25.2.26 x2, 25.2.26-fish-completions -> 25.3.2 x2, 25.3.2-fish-completions
+Closure size: 7677 -> 7677 (91 paths added, 91 paths removed, delta +0, disk usage +49.6MiB).
