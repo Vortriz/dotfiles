@@ -16,3 +16,4 @@
 - [ ] discord needs xdg-desktop-portal
 - [ ] avizo - multimedia notifications
 - [ ] regreet - login manager
+- [ ] nix-melt
