@@ -3,6 +3,7 @@
     ...
 }: {
     imports = [
+        ./aria2.nix
         ./direnv.nix
         ./eza.nix
         ./gh.nix
