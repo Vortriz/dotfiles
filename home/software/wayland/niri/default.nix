@@ -111,20 +111,20 @@
             binds = with config.lib.niri.actions; let
                 vol = cmd: {
                     allow-when-locked = true;
-                    action.spawn = [ "pactl" "set-sink-volume" "@DEFAULT_SINK@" ] ++ cmd;
+                    action.spawn = lib.strings.splitString " " "${pkgs.avizo}/bin/volumectl -u ${cmd}";
                 };
 
-                mute = type: {
+                mute = cmd: {
                     allow-when-locked = true;
-                    action.spawn = [ "pactl" "set-${type}-mute" "@DEFAULT_${lib.toUpper type}@" "toggle"];
+                    action.spawn = lib.strings.splitString " " "${pkgs.avizo}/bin/volumectl ${cmd}";
                 };
 
                 brightness = cmd: {
                     allow-when-locked = true;
-                    action.spawn = [ "brightnessctl" "-d" "intel_backlight" "-e" "set" ] ++ cmd;
+                    action.spawn = lib.strings.splitString " " "${pkgs.avizo}/bin/lightctl -e 4 ${cmd}";
                 };
                 rr = cmd: {
-                    spawn = [ "niri" "msg" "output" "eDP-1" "mode" ] ++ cmd;
+                    spawn = lib.strings.splitString " " "niri msg output eDP-1 mode ${cmd}";
                 };
             in {
                 "Mod+Shift+Slash".action = show-hotkey-overlay;
@@ -137,8 +137,8 @@
                 "Alt+Print".action = screenshot-window;
 
                 "Ctrl+Shift+O".action = spawn "oimg";
-                "Mod+H".action = rr [ "2880x1800@90.001" ];
-                "Mod+Shift+H".action = rr [ "2880x1800@60.001" ];
+                "Mod+H".action = rr "2880x1800@90.001";
+                "Mod+Shift+H".action = rr "2880x1800@60.001";
 
                 "Mod+Q".action = close-window;
                 "Mod+L".action = spawn "lockoff";
@@ -181,14 +181,14 @@
                 "Mod+Shift+Minus".action = set-window-height "-10%";
                 "Mod+Shift+Equal".action = set-window-height "+10%";
 
-                "XF86AudioRaiseVolume" = vol ["+2%"];
-                "XF86AudioLowerVolume" = vol ["-2%"];
+                "XF86AudioRaiseVolume" = vol "+";
+                "XF86AudioLowerVolume" = vol "-";
 
-                "XF86AudioMute" = mute "sink";
-                "XF86AudioMicMute" = mute "source";
+                "XF86AudioMute" = mute "%";
+                "XF86AudioMicMute" = mute "-m %";
 
-                "XF86MonBrightnessUp" = brightness ["+2%"];
-                "XF86MonBrightnessDown" = brightness ["2%-"];
+                "XF86MonBrightnessUp" = brightness "+";
+                "XF86MonBrightnessDown" = brightness "-";
 
                 "Mod+Shift+P".action = power-off-monitors;
                 "Mod+Shift+E".action = quit;
