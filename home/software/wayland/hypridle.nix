@@ -9,14 +9,14 @@
             general = {
                 ignore_dbus_inhibit = false;
                 lock_cmd = "pidof hyprlock || hyprlock";
-                before_sleep_cmd = "loginctl lock-session";
+                before_sleep_cmd = "pidof hyprlock || hyprlock";
                 after_sleep_cmd = "${pkgs.niri}/bin/niri msg action power-on-monitors";
             };
 
             listener = [
                 {
                     timeout = 180;
-                    on-timeout = "loginctl lock-session";
+                    on-timeout = "pidof hyprlock || hyprlock";
                 }
                 {
                     timeout = 240;
