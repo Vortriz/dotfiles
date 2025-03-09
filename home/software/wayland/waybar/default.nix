@@ -104,7 +104,7 @@
 
             "custom/powermenu" = {
                 "format" = "";
-                "on-click" = "loginctl lock-session";
+                "on-click" = "pidof hyprlock || hyprlock --immediate";
                 "on-click-right" = "${pkgs.systemd}/bin/systemctl poweroff";
                 "tooltip" = false;
             };

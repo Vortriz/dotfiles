@@ -141,7 +141,7 @@
                 "Mod+Shift+H".action = rr "2880x1800@60.001";
 
                 "Mod+Q".action = close-window;
-                "Mod+L".action = spawn "${pkgs.hyprlock}/bin/hyprlock";
+                "Mod+L".action = spawn [ "${pkgs.hyprlock}/bin/hyprlock" "--immediate" ];
 
                 "Alt+Right".action = focus-window-up;
                 "Alt+Left".action = focus-window-down;
