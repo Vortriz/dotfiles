@@ -7,7 +7,7 @@
         enable = true;
         autoEnable = false;
 
-        image = ./wallpapers/25.jpg;
+        image = ../../../assets/wallpapers/25.png;
 
         base16Scheme = {
             base00 = "0d1117"; # Default bg
