@@ -104,7 +104,7 @@
 
             "custom/powermenu" = {
                 "format" = "";
-                "on-click" = "lockoff";
+                "on-click" = "loginctl lock-session";
                 "on-click-right" = "${pkgs.systemd}/bin/systemctl poweroff";
                 "tooltip" = false;
             };

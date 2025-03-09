@@ -8,8 +8,8 @@
         ./waybar
 
         ./fuzzel.nix
-        ./swayidle.nix
-        ./swaylock.nix
+        ./hypridle.nix
+        ./hyprlock.nix
     ];
 
     home.packages = with pkgs; [
