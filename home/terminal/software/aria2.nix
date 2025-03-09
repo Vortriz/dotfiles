@@ -3,10 +3,11 @@
         enable = true;
 
         settings = {
-            dir = "/home/vortriz/downloads";
+            dir = "/mnt/SECONDARY/downloads/.tmp";
             max-concurrent-downloads = 4;
             split = 8;
             max-connection-per-server = 8;
+            console-log-level = "warn";
         };
     };
 }

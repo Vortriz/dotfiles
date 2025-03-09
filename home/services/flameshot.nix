@@ -10,7 +10,7 @@
                 contrastOpacity = 188;
                 filenamePattern = "%F (%T)";
                 saveAsFileExtension = "png";
-                savePath = "/home/vortriz/downloads/captures";
+                savePath = "/mnt/SECONDARY/downloads/captures/linux";
                 savePathFixed = false;
                 showStartupLaunchMessage = false;
                 startupLaunch = true;
