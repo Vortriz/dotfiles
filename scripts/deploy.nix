@@ -5,7 +5,7 @@
     home.packages = [
         (pkgs.writers.writeFishBin "deploy" {} ''
             echo "Rebuilding new generation..."
-            nh os switch
+            ${pkgs.nh}/bin/nh os switch
             if test $status = 0
                 cd $FLAKE
 
@@ -15,10 +15,10 @@
                 set branch $(git branch --show-current)
 
                 echo -e "\n---\n\nGen $gen - $timestamp" >> $FLAKE/build.log
-                nvd diff /nix/var/nix/profiles/system-{$prev_gen,$gen}-link >> $FLAKE/build.log
+                ${pkgs.nvd}/bin/nvd diff /nix/var/nix/profiles/system-{$prev_gen,$gen}-link >> $FLAKE/build.log
 
-                git add -A
-                git commit -m "deployed $gen via $branch"
+                ${pkgs.git}/bin/git add -A
+                ${pkgs.git}/bin/git commit -m "deployed $gen via $branch"
                 cd -
             else
                 echo "Failed to deploy!"

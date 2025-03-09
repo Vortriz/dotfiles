@@ -1,7 +1,4 @@
 {
-    pkgs,
-    ...
-}: {
     virtualisation = {
         # following configuration is added only when building VM with build-vm
         vmVariant.virtualisation = {
@@ -16,8 +13,4 @@
             dockerCompat = true;
         };
     };
-
-    environment.systemPackages = with pkgs; [
-
-    ];
 }
