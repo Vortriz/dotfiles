@@ -68,7 +68,6 @@
                 modules = [
                     # > Our main nixos configuration file <
                     ./system/configuration.nix
-                    inputs.stylix.nixosModules.stylix
                 ];
             };
         };
