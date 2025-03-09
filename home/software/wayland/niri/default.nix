@@ -47,7 +47,7 @@
 
             prefer-no-csd = true;
 
-            screenshot-path = "~/downloads/captures/screenshots/%Y-%m-%d %H-%M-%S.png";
+            screenshot-path = "mnt/SECONDARY/downloads/captures/linux/%Y-%m-%d (%H-%M-%S).png";
 
             window-rules = [
                 {
