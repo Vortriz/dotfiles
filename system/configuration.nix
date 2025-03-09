@@ -14,6 +14,7 @@
         # Or modules from other flakes (such as nixos-hardware):
         # inputs.hardware.nixosModules.common-cpu-amd
         # inputs.hardware.nixosModules.common-ssd
+        inputs.stylix.nixosModules.stylix
         inputs.niri.nixosModules.niri
 
         # You can also split up your configuration and import pieces of it here:
@@ -40,6 +41,7 @@
 
             # You can also add overlays exported from other flakes:
             # neovim-nightly-overlay.overlays.default
+            inputs.niri.overlays.niri
 
             # Or define it inline, for example:
             # (final: prev: {

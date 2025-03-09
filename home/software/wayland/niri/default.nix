@@ -42,7 +42,7 @@
             spawn-at-startup =
                 map (s: { command = pkgs.lib.strings.splitString " " s; })
                     [
-                        "${pkgs.waybar}/bin/waybar"
+                        "systemctl --user reset-failed waybar.service"
                     ];
 
             prefer-no-csd = true;
@@ -141,7 +141,7 @@
                 "Mod+Shift+H".action = rr "2880x1800@60.001";
 
                 "Mod+Q".action = close-window;
-                "Mod+L".action = spawn "lockoff";
+                "Mod+L".action = spawn "${pkgs.hyprlock}/bin/hyprlock";
 
                 "Alt+Right".action = focus-window-up;
                 "Alt+Left".action = focus-window-down;
