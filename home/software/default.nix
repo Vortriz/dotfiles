@@ -11,18 +11,12 @@
     ];
 
     home.packages = with pkgs; [
-        # download manager
-        persepolis
-
         # file managers
         nautilus
         superfile
 
         # file transfer
         warp
-
-        # image editor
-        gimp
 
         # image viewer
         nomacs

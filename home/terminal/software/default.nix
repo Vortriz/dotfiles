@@ -15,10 +15,7 @@
     home.packages = with pkgs; [
         cachix
         ffmpeg
-        imagemagick
         magic-wormhole
         nh
-        nvd
-        wl-clipboard
     ];
 }
