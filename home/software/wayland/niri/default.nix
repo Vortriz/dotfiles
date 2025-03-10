@@ -43,6 +43,7 @@
                 map (s: { command = pkgs.lib.strings.splitString " " s; })
                     [
                         "systemctl --user reset-failed waybar.service"
+                        "aria2c --enable-rpc --rpc-listen-all"
                     ];
 
             prefer-no-csd = true;
