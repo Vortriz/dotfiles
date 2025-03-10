@@ -139,3 +139,64 @@ Gen 73 - 10/03/25 04:18:42 AM IST
 >>> /nix/var/nix/profiles/system-73-link
 No version or selection state changes.
 Closure size: 7679 -> 7679 (8 paths added, 8 paths removed, delta +0, disk usage +8B).
+
+---
+
+Gen 74 - 11/03/25 04:38:34 AM IST
+<<< /nix/var/nix/profiles/system-73-link
+>>> /nix/var/nix/profiles/system-74-link
+Version changes:
+[U.]  #01  acpi-call                                  1.2.2-6.13.5 -> 1.2.2-6.13.6
+[C.]  #02  clang                                      19.1.7, 19.1.7-lib x2 -> 19.1.7, 19.1.7-lib
+[U.]  #03  dunst                                      1.12.1, 1.12.1-fish-completions, 1.12.1-man -> 1.12.2, 1.12.2-fish-completions, 1.12.2-man
+[U.]  #04  electron                                   34.2.0 -> 34.3.0
+[U.]  #05  filelight                                  24.12.2 -> 24.12.3
+[U.]  #06  firefox                                    135.0.1 -> 136.0
+[U.]  #07  firefox-unwrapped                          135.0.1 -> 136.0
+[U*]  #08  fish                                       3.7.1, 3.7.1-doc, 3.7.1-fish-completions x2 -> 4.0.0, 4.0.0-doc, 4.0.0_fish-completions x2
+[U*]  #09  fzf                                        0.60.2, 0.60.2-man -> 0.60.3, 0.60.3-man
+[U.]  #10  gh                                         2.67.0, 2.67.0-fish-completions -> 2.68.1, 2.68.1-fish-completions
+[U.]  #11  gvproxy                                    0.8.3 -> 0.8.4
+[C.]  #12  icu4c                                      74.2, 76.1 x2 -> 76.1 x2
+[U.]  #13  initrd-linux                               6.13.5 -> 6.13.6
+[U*]  #14  kpmcore                                    24.12.2 -> 24.12.3
+[U*]  #15  ksystemlog                                 24.12.2 -> 24.12.3
+[U.]  #16  libcupsfilters                             2.1.0 -> 2.1.1
+[U.]  #17  linux                                      6.13.5, 6.13.5-modules, 6.13.5-modules-shrunk -> 6.13.6, 6.13.6-modules, 6.13.6-modules-shrunk
+[U.]  #18  mangohud                                   0.8.0 x2 -> 0.8.1 x2
+[U.]  #19  mesa                                       24.3.4 x2, 24.3.4-drivers x2, 24.3.4-opencl x2, 24.3.4-osmesa x2 -> 25.0.1 x2, 25.0.1-drivers x2
+[U*]  #20  networkmanager                             1.50.2 x2, 1.50.2-doc, 1.50.2-man -> 1.52.0 x2, 1.52.0-doc, 1.52.0-man
+[U.]  #21  nixos-system-nixos                         25.05.20250303.ba487db -> 25.05.20250309.e3e32b6
+[U.]  #22  obsidian                                   1.8.7 -> 1.8.9
+[U.]  #23  osinfo-db                                  20240701 -> 20250124
+[U*]  #24  partitionmanager                           24.12.2 -> 24.12.3
+[C.]  #25  python3                                    3.11.11, 3.12.9 x4, 3.12.9-env x7 -> 3.11.11, 3.12.9 x4, 3.12.9-env x8
+[U.]  #26  python3.12-debugpy                         1.8.12 -> 1.8.13
+[C.]  #27  python3.12-httpcore                        1.0.7 -> 1.0.7 x2
+[C.]  #28  python3.12-httpx                           0.28.1 -> 0.28.1 x2
+[U.]  #29  python3.12-poetry                          2.0.1 -> 2.1.1
+[U.]  #30  python3.12-poetry-core                     2.0.1 -> 2.1.1
+[C.]  #31  python3.12-rapidfuzz                       3.12.1 -> 3.12.1 x2
+[U.]  #32  superfile                                  1.1.7.1 -> 1.2.0.0
+[U.]  #33  talloc                                     2.4.2 x2 -> 2.4.3 x2
+[U.]  #34  tdb                                        1.4.12 x2 -> 1.4.13 x2
+[U.]  #35  typst                                      0.13.0, 0.13.0-fish-completions -> 0.13.1, 0.13.1-fish-completions
+[U.]  #36  vscode                                     1.97.2 -> 1.98.0
+[U.]  #37  vscode-extension-MS-python-vscode-pylance  2025.2.1 -> 2025.3.1
+[U.]  #38  vscode-extension-github-copilot            1.275.0 -> 1.279.1416
+[U.]  #39  vscode-extension-github-copilot-chat       0.24.2025021302 -> 0.26.2025030506
+[U.]  #40  vscode-extension-jnoortheen-nix-ide        0.3.5 -> 0.4.12
+[U.]  #41  vscode-extension-ms-python-python          2025.1.2025021102 -> 2025.2.0
+[U.]  #42  vscode-extension-ms-toolsai-jupyter        2025.1.0 -> 2025.1.2025013001
+[U.]  #43  x86_energy_perf_policy                     6.12.17 -> 6.12.18
+Added packages:
+[A.]  #1  python3.12-aria2p         0.12.1
+[A.]  #2  python3.12-findpython     0.6.2
+[A.]  #3  python3.12-loguru         0.7.3
+[A.]  #4  python3.12-pbs-installer  2025.02.12
+[A.]  #5  python3.12-zstandard      0.23.0
+Removed packages:
+[R.]  #1  SPIRV-LLVM-Translator  19.1.0 x2
+[R.]  #2  libclc                 19.1.7 x2, 19.1.7-dev x2
+[R.]  #3  post-dl                <none>
+Closure size: 7679 -> 7675 (324 paths added, 328 paths removed, delta -4, disk usage -1.1GiB).
