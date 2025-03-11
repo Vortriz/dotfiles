@@ -18,5 +18,8 @@
         ffmpeg
         magic-wormhole
         nh
+        ripgrep-all
+        sd
+        tealdeer
     ];
 }

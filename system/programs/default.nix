@@ -38,14 +38,7 @@
         rar
         unzip
 
-        bat
-        eza
-        fd
-        fzf
         micro
-        ripgrep-all
-        sd
-        tealdeer
 
         lm_sensors
         pciutils
