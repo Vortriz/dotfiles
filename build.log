@@ -200,3 +200,30 @@ Removed packages:
 [R.]  #2  libclc                 19.1.7 x2, 19.1.7-dev x2
 [R.]  #3  post-dl                <none>
 Closure size: 7679 -> 7675 (324 paths added, 328 paths removed, delta -4, disk usage -1.1GiB).
+
+---
+
+Gen 75 - 12/03/25 02:38:23 AM IST
+<<< /nix/var/nix/profiles/system-74-link
+>>> /nix/var/nix/profiles/system-75-link
+Version changes:
+[C-]  #1  fzf     0.60.3, 0.60.3-man -> 0.60.3, 0.60.3-fish-completions, 0.60.3-man
+[C.]  #2  zoxide  0.9.7 -> 0.9.7, 0.9.7-fish-completions
+Selection state changes:
+[C-]  #1  bat                           0.25.0, 0.25.0_fish-completions
+[C-]  #2  eza                           0.20.23, 0.20.23-man
+[C-]  #3  fd                            10.2.0, 10.2.0_fish-completions
+[C-]  #4  fishplugin-colored-man-pages  0-unstable-2022-04-30
+[C-]  #5  fishplugin-fzf.fish           10.3
+[C-]  #6  fishplugin-sponge             1.1.0
+[C-]  #7  ripgrep-all                   0.10.6
+[C-]  #8  sd                            1.0.0, 1.0.0_fish-completions
+[C-]  #9  tealdeer                      1.7.1
+Added packages:
+[A.]  #1  fishplugin-autopair                        1.0.4
+[A.]  #2  fishplugin-fish-bd                         1.3.3
+[A.]  #3  fishplugin-puffer                          1.0.0
+[A.]  #4  vscode-extension-tamasfe-even-better-toml  0.19.2
+Removed packages:
+[R-]  #1  fishplugin-z  0-unstable-2022-04-08
+Closure size: 7675 -> 7680 (41 paths added, 36 paths removed, delta +5, disk usage +11.2MiB).
