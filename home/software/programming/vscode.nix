@@ -79,6 +79,7 @@
                 ms-toolsai.vscode-jupyter-slideshow
                 myriad-dreamin.tinymist
                 shd101wyy.markdown-preview-enhanced
+                tamasfe.even-better-toml
                 yzhang.markdown-all-in-one
 
                 # themes et al
