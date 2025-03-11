@@ -22,6 +22,7 @@
                     width = 2880;
                     refresh = 60.001;
                 };
+
                 scale = 1.5;
             };
 
@@ -47,7 +48,6 @@
                     ];
 
             prefer-no-csd = true;
-
             screenshot-path = "mnt/SECONDARY/downloads/captures/linux/%Y-%m-%d (%H-%M-%S).png";
 
             window-rules = [
@@ -69,16 +69,19 @@
                         { app-id = "obsidian"; }
                         { title = ".*pdf"; }
                     ];
+
                     open-maximized = true;
                 }
                 {
                     matches = [
                         { app-id = "io.missioncenter.MissionCenter"; }
                     ];
+
                     open-floating = true;
                     shadow.enable = true;
                     default-window-height.proportion = 0.6;
                     default-column-width.proportion = 0.75;
+
                     focus-ring = {
                         width = 4;
                         active.color = "#f38ba8";
@@ -89,6 +92,7 @@
                     matches = [
                         { app-id = "org.gnome.Calculator"; }
                     ];
+
                     open-floating = true;
                     shadow.enable = true;
                 }
@@ -97,6 +101,7 @@
                         { title = ".*pdf"; }
                         { app-id = "kitty"; }
                     ];
+
                     default-column-display = "tabbed";
                     # TODO: auto-tabbing
                 }
@@ -105,6 +110,7 @@
                         { app-id = "obsidian"; }
                         { app-id = "com.github.th_ch.youtube_music"; }
                     ];
+
                     scroll-factor = 0.6;
                 }
             ];
@@ -112,18 +118,19 @@
             binds = with config.lib.niri.actions; let
                 vol = cmd: {
                     allow-when-locked = true;
-                    action.spawn = lib.strings.splitString " " "${pkgs.avizo}/bin/volumectl -u ${cmd}";
+                    action.spawn = lib.strings.splitString " " "${pkgs.avizo}/bin/volumectl -d -u ${cmd}";
                 };
 
                 mute = cmd: {
                     allow-when-locked = true;
-                    action.spawn = lib.strings.splitString " " "${pkgs.avizo}/bin/volumectl ${cmd}";
+                    action.spawn = lib.strings.splitString " " "${pkgs.avizo}/bin/volumectl -d ${cmd}";
                 };
 
                 brightness = cmd: {
                     allow-when-locked = true;
-                    action.spawn = lib.strings.splitString " " "${pkgs.avizo}/bin/lightctl -e 4 ${cmd}";
+                    action.spawn = lib.strings.splitString " " "${pkgs.avizo}/bin/lightctl -d -e 4 ${cmd}";
                 };
+
                 rr = cmd: {
                     spawn = lib.strings.splitString " " "niri msg output eDP-1 mode ${cmd}";
                 };
@@ -146,6 +153,8 @@
 
                 "Alt+Right".action = focus-window-up;
                 "Alt+Left".action = focus-window-down;
+                "Alt+Tab".action = focus-window-up-or-bottom;
+                "Alt+Shift+Tab".action = focus-window-down-or-top;
 
                 "Mod+Tab".action = focus-workspace-previous;
 
@@ -163,6 +172,7 @@
                 "Mod+Shift+Down".action = move-workspace-down;
 
                 "Mod+V".action = toggle-window-floating;
+                "Mod+W".action = toggle-column-tabbed-display;
 
                 "Mod+Comma".action = consume-window-into-column;
                 "Mod+Period".action = expel-window-from-column;
