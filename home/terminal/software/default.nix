@@ -10,6 +10,7 @@
         ./git.nix
         ./tldr.nix
         ./yazi.nix
+        ./zoxide.nix
     ];
 
     home.packages = with pkgs; [
