@@ -23,8 +23,8 @@
             src = prev.pkgs.fetchFromGitHub {
                 owner = "flameshot-org";
                 repo = "flameshot";
-                rev = "3d21e4967b68e9ce80fb2238857aa1bf12c7b905";
-                sha256 = "sha256-OLRtF/yjHDN+sIbgilBZ6sBZ3FO6K533kFC1L2peugc=";
+                rev = "1997aed8a332eeb3b468559bf454c5d78b4d2cbb";
+                sha256 = "1xxs08kcdi02c4bx9ns4livnz1xqhvgyrk3c3gn7glgvy79qna4n";
             };
             cmakeFlags = ["-DUSE_WAYLAND_GRIM=true" "-DUSE_WAYLAND_CLIPBOARD=true"];
             buildInputs = old.buildInputs ++ [prev.pkgs.libsForQt5.kguiaddons];
