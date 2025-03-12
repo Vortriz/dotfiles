@@ -47,10 +47,4 @@
         # misc
         linux-wifi-hotspot
     ];
-
-    programs.thefuck = {
-        enable = true;
-
-        alias = "fuck";
-    };
 }
