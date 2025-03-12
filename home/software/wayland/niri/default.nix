@@ -68,6 +68,7 @@
                         { app-id = "code"; }
                         { app-id = "obsidian"; }
                         { title = ".*pdf"; }
+                        { app-id = "yazi"; }
                     ];
 
                     open-maximized = true;
@@ -139,7 +140,7 @@
 
                 "Mod+T".action = spawn "kitty";
                 "Alt+Space".action = spawn "ulauncher";
-                "Mod+E".action = spawn "nautilus";
+                "Mod+E".action = spawn [ "kitty" "--app-id=yazi" "-o" "confirm_os_window_close=0" "yazi" ];
                 "Ctrl+Shift+Escape".action = spawn "missioncenter";
                 "Print".action = spawn [ "flameshot" "gui" ];
                 "Alt+Print".action = screenshot-window;
