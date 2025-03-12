@@ -3,21 +3,21 @@
     ...
 }: {
     imports = [
+        ./yazi
+
         ./aria2.nix
         ./direnv.nix
         ./eza.nix
         ./gh.nix
         ./git.nix
+        ./micro.nix
         ./tldr.nix
-        ./yazi.nix
         ./zoxide.nix
     ];
 
     home.packages = with pkgs; [
         cachix
-        ffmpeg
         magic-wormhole
-        nh
         ripgrep-all
         sd
         tealdeer

@@ -24,9 +24,6 @@
         # music
         youtube-music
 
-        # office suite
-        libreoffice
-
         # productivity
         obsidian
         zotero
