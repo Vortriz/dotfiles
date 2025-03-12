@@ -1,6 +1,6 @@
 {
     nix = {
-        gc.automatic = true;
+        gc.automatic = false; # because nh
         optimise.automatic = true;
     };
 }
