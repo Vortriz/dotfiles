@@ -11,6 +11,7 @@
         ./gh.nix
         ./git.nix
         ./micro.nix
+        ./nh.nix
         ./tldr.nix
         ./zoxide.nix
     ];
