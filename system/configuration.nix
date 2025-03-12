@@ -67,6 +67,9 @@
             nix-path = config.nix.nixPath;
             # Add myself to the trusted users
             trusted-users = [ "root" "vortriz" ];
+            # Add extra Caches
+            extra-substituters = [ "https://yazi.cachix.org" ];
+            extra-trusted-public-keys = [ "yazi.cachix.org-1:Dcdz63NZKfvUCbDGngQDAZq6kOroIrFoyO064uvLh8k=" ];
         };
         # Opinionated: disable channels
         channel.enable = false;

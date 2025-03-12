@@ -38,8 +38,6 @@
         rar
         unzip
 
-        micro
-
         lm_sensors
         pciutils
         util-linux

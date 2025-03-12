@@ -19,6 +19,8 @@
             url = "github:Ulauncher/Ulauncher";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+
+        yazi.url = "github:sxyazi/yazi";
     };
 
     outputs = {
