@@ -21,5 +21,6 @@
         ripgrep-all
         sd
         tealdeer
+        update-nix-fetchgit
     ];
 }
