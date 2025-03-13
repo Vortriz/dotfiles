@@ -454,3 +454,17 @@ Gen 77 - 13/03/25 04:50:21 AM IST
 >>> /nix/var/nix/profiles/system-77-link
 No version or selection state changes.
 Closure size: 7916 -> 7916 (7 paths added, 7 paths removed, delta +0, disk usage +72B).
+
+---
+
+Gen 78 - 14/03/25 03:21:36 AM IST
+<<< /nix/var/nix/profiles/system-77-link
+>>> /nix/var/nix/profiles/system-78-link
+Added packages:
+[A.]  #1  hm_.zoterozoterodefault.keep    <none>
+[A.]  #2  hm_.zoterozoterodefaultuser.js  <none>
+[A.]  #3  hm_.zoterozoteroprofiles.ini    <none>
+[A.]  #4  zotero-better-bibtex            7.0.5
+[A.]  #5  zotero-scipdf                   1.3.0
+[A.]  #6  zotero-zotmoov                  1.2.18
+Closure size: 7916 -> 7922 (20 paths added, 14 paths removed, delta +6, disk usage +36.6MiB).
