@@ -13,6 +13,7 @@
         # Or modules exported from other flakes (such as nix-colors):
         # inputs.nix-colors.homeManagerModules.default
         inputs.scientific-fhs.nixosModules.default
+        inputs.misumisumi-dotfiles.homeManagerModules.zotero
 
         # You can also split up your configuration and import pieces of it here:
         ./services

@@ -8,6 +8,7 @@
         ./wayland
 
         ./sioyek.nix
+        ./zotero.nix
     ];
 
     home.packages = with pkgs; [
@@ -26,7 +27,6 @@
 
         # productivity
         obsidian
-        zotero
 
         # remote desktop
         anydesk
