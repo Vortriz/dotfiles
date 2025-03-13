@@ -69,6 +69,8 @@
                         { app-id = "obsidian"; }
                         { title = ".*pdf"; }
                         { app-id = "yazi"; }
+                        { app-id = "mpv"; }
+                        { app-id = "Zotero"; }
                     ];
 
                     open-maximized = true;
@@ -154,8 +156,8 @@
 
                 "Alt+Right".action = focus-window-up;
                 "Alt+Left".action = focus-window-down;
-                "Alt+Tab".action = focus-window-up-or-bottom;
-                "Alt+Shift+Tab".action = focus-window-down-or-top;
+                "Alt+Tab".action = focus-window-down-or-top;
+                "Alt+Shift+Tab".action = focus-window-up-or-bottom;
 
                 "Mod+Tab".action = focus-workspace-previous;
 
