@@ -4,6 +4,10 @@
 }: {
     programs.fish = {
         enable = true;
+
+        shellAbbrs = {
+            z = "zoxide";
+        };
     };
 
     home.packages = with pkgs.fishPlugins; [
