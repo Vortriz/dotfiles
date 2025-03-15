@@ -88,27 +88,34 @@
             # Package a virtual environment as our main application.
             #
             # Enable no optional dependencies for production build.
-            packages.x86_64-linux.default = pythonSet.mkVirtualEnv "hello-world-env" workspace.deps.default;
+            packages.x86_64-linux.default = pythonSet.mkVirtualEnv builtins.toString ./. workspace.deps.default;
 
             # Make hello runnable with `nix run`
-            apps.x86_64-linux = {
-                default = {
-                    type = "app";
-                    program = "${self.packages.x86_64-linux.default}/bin/hello";
-                };
-            };
+            # apps.x86_64-linux = {
+            #     default = {
+            #         type = "app";
+            #         program = "${self.packages.x86_64-linux.default}/bin/hello";
+            #     };
+            # };
 
-            # This example provides two different modes of development:
-            # - Impurely using uv to manage virtual environments
-            # - Pure development using uv2nix to manage virtual environments
-            devShells.x86_64-linux = {
+            # Impurely using uv to manage virtual environments
+            devShells.x86_64-linux = let
+                mkScript = name: text: let
+                    script = pkgs.writers.writeFishBin name text;
+                in script;
+
+            scripts = [
+                (mkScript "activate" ''source .venv/bin/activate.fish'')
+            ];
+            in {
                 # It is of course perfectly OK to keep using an impure virtualenv workflow and only use uv2nix to build packages.
                 # This devShell simply adds Python and undoes the dependency leakage done by Nixpkgs Python infrastructure.
                 default = pkgs.mkShell {
                     packages = [
                         python
-                        pkgs.uv
-                    ];
+                    ] ++ (with pkgs; [
+                        uv
+                    ]) ++ scripts;
                     env =
                         {
                             # Prevent uv from managing Python downloads
@@ -123,7 +130,7 @@
                         };
                     shellHook = ''
                         unset PYTHONPATH
-                        echo "Set default python version with 'uv python pin <version>'"
+                        uv venv
                     '';
                 };
             };
