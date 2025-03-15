@@ -27,6 +27,7 @@
 
         # productivity
         obsidian
+        pandoc
 
         # remote desktop
         anydesk
