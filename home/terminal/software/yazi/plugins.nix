@@ -54,10 +54,10 @@
             };
 
             what-size = pkgs.fetchFromGitHub {
-                owner = "pirafrank";
+                owner = "Vortriz";
                 repo = "what-size.yazi";
-                rev = "b23e3a4cf44ce12b81fa6be640524acbd40ad9d3";
-                hash = "sha256-SDObD22u2XYF2BYKsdw9ZM+yJLH9xYTwSFRWIwMCi08=";
+                rev = "f4b8b5a5e0aea60ef6350c0100763b5c900c82a7";
+                hash = "sha256-sSeXL9/SOuPKIeZR2ntLP0HGSLBobbrzdTgpikA5jMg=";
             };
 
             restore = pkgs.fetchFromGitHub {
