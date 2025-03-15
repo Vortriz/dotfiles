@@ -7,6 +7,7 @@
         ./niri
         ./waybar
 
+        ./cursor.nix
         ./hypridle.nix
         ./hyprlock.nix
     ];
