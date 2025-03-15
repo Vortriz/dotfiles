@@ -124,5 +124,8 @@
         # office
         poppler-utils
         libreoffice
+
+        # drag and drop
+        ripdrag
     ];
 }

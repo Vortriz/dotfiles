@@ -35,6 +35,12 @@
             # custom-shell
             { on = [ "'" ";" ]; run = "plugin custom-shell -- fish --interactive"; desc = "custom-shell as default, interactive"; }
             { on = [ "'" ":" ]; run = "plugin custom-shell -- fish --interactive --block"; desc = "custom-shell as default, interactive, block"; }
+
+            # escape directly
+            { on = "<Esc>"; run = "close"; desc = "Cancel input"; }
+
+            # drag and drop
+            { on = "<C-n>"; run = ''shell 'ripdrag "$@" -anx 2>/dev/null &' --confirm''; desc = "Drag and drop"; }
         ];
     };
 }

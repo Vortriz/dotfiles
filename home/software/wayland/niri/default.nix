@@ -116,6 +116,17 @@
 
                     scroll-factor = 0.6;
                 }
+                {
+                    matches = [
+                        { app-id = "it.catboy.ripdrag";}
+                    ];
+
+                    open-floating = true;
+                    focus-ring = {
+                        width = 4;
+                        active.color = "#85e89d";
+                    };
+                }
             ];
 
             binds = with config.lib.niri.actions; let
