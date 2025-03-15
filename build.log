@@ -468,3 +468,81 @@ Added packages:
 [A.]  #5  zotero-scipdf                   1.3.0
 [A.]  #6  zotero-zotmoov                  1.2.18
 Closure size: 7916 -> 7922 (20 paths added, 14 paths removed, delta +6, disk usage +36.6MiB).
+
+---
+
+Gen 79 - 15/03/25 07:39:51 AM IST
+<<< /nix/var/nix/profiles/system-78-link
+>>> /nix/var/nix/profiles/system-79-link
+Version changes:
+[C*]  #01  curl                                                  8.11.0, 8.11.0-bin, 8.12.0 x3, 8.12.0-bin x2, 8.12.0-dev, 8.12.0-man -> 8.11.0, 8.11.0-bin, 8.12.1 x3, 8.12.1-bin x2, 8.12.1-dev, 8.12.1-man
+[U.]  #02  deno                                                  2.2.2 -> 2.2.3
+[U.]  #03  double-conversion                                     3.3.0 -> 3.3.1
+[U.]  #04  electron                                              34.3.0 -> 34.3.2
+[U.]  #05  esbuild                                               0.25.0 -> 0.25.1
+[U.]  #06  firefox                                               136.0 -> 136.0.1
+[U.]  #07  firefox-unwrapped                                     136.0 -> 136.0.1
+[C.]  #08  gnutls                                                3.8.6 x3, 3.8.6-bin, 3.8.6-man -> 3.8.6, 3.8.9 x2, 3.8.9-bin, 3.8.9-man
+[U.]  #09  gpgme                                                 1.24.1 -> 1.24.2
+[C.]  #10  imagemagick                                           7.1.1-43, 7.1.1-44, 7.1.1-44-dev, 7.1.1-44-doc -> 7.1.1-43, 7.1.1-45, 7.1.1-45-dev, 7.1.1-45-doc
+[U.]  #11  kitty                                                 0.39.1, 0.39.1-terminfo -> 0.40.0, 0.40.0-terminfo
+[U.]  #12  libassuan                                             2.5.7 x2 -> 3.0.2 x2
+[U.]  #13  libcdio                                               2.1.0 x2 -> 2.2.0 x2
+[C.]  #14  libselinux                                            3.7 x3 -> 3.7, 3.8 x2
+[C.]  #15  libxml2                                               2.13.5 x3, 2.13.5-bin, 2.13.5-dev -> 2.13.5, 2.13.6 x2, 2.13.6-bin, 2.13.6-dev
+[U.]  #16  linux-firmware                                        20250211-zstd -> 20250311-zstd
+[U.]  #17  mesa-libgbm                                           24.3.4 x2 -> 25.0.1 x2
+[U.]  #18  mujs                                                  1.3.5 -> 1.3.6
+[U.]  #19  nixos-system-nixos                                    25.05.20250309.e3e32b6 -> 25.05.20250313.6607cf7
+[U.]  #20  openh264                                              2.5.0 x2 -> 2.6.0 x2
+[C.]  #21  pandoc-cli                                            3.1.11.1 -> 3.1.11.1, 3.1.11.1-fish-completions
+[U.]  #22  pipewire                                              1.2.7 x2, 1.2.7-dev -> 1.4.0 x2, 1.4.0-dev
+[U*]  #23  podman                                                5.4.0, 5.4.0-man -> 5.4.1, 5.4.1-man
+[U*]  #24  podman-docker-compat                                  5.4.0, 5.4.0-man -> 5.4.1, 5.4.1-man
+[C.]  #25  publicsuffix-list                                     0-unstable-2024-12-06, 0-unstable-2025-01-16 x2 -> 0-unstable-2024-12-06, 0-unstable-2025-02-12 x2
+[U.]  #26  python3.12-click                                      8.1.7 -> 8.1.8
+[U.]  #27  python3.12-cryptography                               44.0.0 -> 44.0.1
+[C.]  #28  python3.12-httpcore                                   1.0.7 x2 -> 1.0.7
+[C.]  #29  python3.12-httpx                                      0.28.1 x2 -> 0.28.1
+[U.]  #30  python3.12-humanize                                   4.11.0 -> 4.12.1
+[U.]  #31  python3.12-ipython                                    8.31.0 -> 8.32.0
+[U.]  #32  python3.12-numpy                                      2.2.2 -> 2.2.3
+[C.]  #33  python3.12-rapidfuzz                                  3.12.1 x2 -> 3.12.1
+[C.]  #34  roboto                                                2.138, 64350-tex -> 3.011, 64350-tex
+[C*]  #35  systemd                                               <none>, 257.2 x2, 257.2-man -> <none>, 257.3 x2, 257.3-man
+[C.]  #36  systemd-minimal                                       256.8, 257.2 x2 -> 256.8, 257.3 x2
+[C.]  #37  systemd-minimal-libs                                  256.8, 257.2 x2, 257.2-dev -> 256.8, 257.3 x2, 257.3-dev
+[C.]  #38  taglib                                                1.13.1 x2 -> 1.13.1, 2.0.2 x2
+[C.]  #39  untitled                                              <none> x6 -> <none> x5
+[U.]  #40  vscode                                                1.98.0 -> 1.98.1
+[U.]  #41  vscode-extension-James-Yu-latex-workshop              9.14.1 -> 10.8.0
+[U.]  #42  vscode-extension-PKief-material-icon-theme            4.31.0 -> 5.20.0
+[U.]  #43  vscode-extension-antfu-slidev                         51.3.0 -> 51.4.0
+[U.]  #44  vscode-extension-catppuccin-catppuccin-vsc            3.14.0 -> 3.16.1
+[U.]  #45  vscode-extension-github-github-vscode-theme           6.3.4 -> 6.3.5
+[U.]  #46  vscode-extension-jock-svg                             1.5.2 -> 1.5.4
+[U.]  #47  vscode-extension-julialang-language-julia             1.75.2 -> 1.138.1
+[U.]  #48  vscode-extension-ms-toolsai-jupyter-renderers         1.0.15 -> 1.1.2025012901
+[U.]  #49  vscode-extension-ms-toolsai-vscode-jupyter-cell-tags  0.1.8 -> 0.1.9
+[U.]  #50  vscode-extension-ms-vscode-remote-remote-containers   0.376.0 -> 0.404.0
+[U.]  #51  vscode-extension-tamasfe-even-better-toml             0.19.2 -> 0.21.2
+[U.]  #52  vscode-extension-yzhang-markdown-all-in-one           3.6.2 -> 3.6.3
+[U.]  #53  vscode-extension-zhuangtongfa-material-theme          3.16.2 -> 3.19.0
+[U.]  #54  wayland-protocols                                     1.40 x2 -> 1.41 x2
+[C.]  #55  x264                                                  0-unstable-2023-10-01-lib x3 -> 0-unstable-2023-10-01-lib, 0-unstable-2025-01-03-lib x2
+[U*]  #56  xdg-desktop-portal                                    1.18.4 -> 1.20.0
+[U*]  #57  xdg-desktop-portal-gnome                              47.2 -> 47.3
+Added packages:
+[A.]  #1  SDL_sound           1.0.3
+[A.]  #2  electron-unwrapped  34.3.2
+[A.]  #3  libebur128          1.2.6 x2
+[A.]  #4  libmikmod           3.3.12
+[A.]  #5  np                  <none>
+[A.]  #6  umockdev            0.19.1
+Removed packages:
+[R.]  #1  hm_homevortriz.Xresources  <none>
+[R.]  #2  index.theme                <none>
+[R.]  #3  mcpp                       2.7.2.1
+[R.]  #4  vanilla-dmz                0.4.5
+[R.]  #5  xrdb                       1.2.2
+Closure size: 7922 -> 7922 (3301 paths added, 3301 paths removed, delta +0, disk usage +168.3MiB).
