@@ -67,11 +67,11 @@
                 hash = "sha256-Hxkvmf6iQysjWHaOjm2Q1WOYWyo2K6woTw1rlnpxCyM=";
             };
 
-            augment-command = pkgs.fetchFromGitHub {
-                owner = "hankertrix";
-                repo = "augment-command.yazi";
-                rev = "e676d3c1c347dfd42dec0014b38dfe3a68ae201c";
-                hash = "sha256-igpY71JYfPd5tOw8mTzJstvXJA4UhWgjRxYENWxU/Lo=";
+            file-navigation-wraparound = pkgs.fetchFromGitHub {
+                owner = "Vortriz";
+                repo = "file-navigation-wraparound.yazi";
+                rev = "6484727aff772278b2d2d54f54cf8ce18575aa73";
+                hash = "sha256-QdTMciYOuQMRDRNwLesvepgtzI91JXfHAcgUbH46Gyw=";
             };
 
             auto-layout = pkgs.fetchFromGitHub {

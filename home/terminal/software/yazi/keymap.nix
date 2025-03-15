@@ -28,9 +28,9 @@
             # restore
             { on = "R"; run = "plugin restore"; desc = "Restore last deleted files/folders"; }
 
-            # augment-command
-            { on = "<Up>"; run = "plugin augment-command -- arrow -1"; desc = "Move cursor up"; }
-            { on = "<Down>"; run = "plugin augment-command -- arrow 1"; desc = "Move cursor down"; }
+            # file-navigation-wraparound
+            { on = "<Up>"; run = "plugin file-navigation-wraparound -1"; desc = "Move cursor up"; }
+            { on = "<Down>"; run = "plugin file-navigation-wraparound 1"; desc = "Move cursor down"; }
 
             # custom-shell
             { on = [ "'" ";" ]; run = "plugin custom-shell -- fish --interactive"; desc = "custom-shell as default, interactive"; }
