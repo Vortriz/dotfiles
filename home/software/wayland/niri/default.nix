@@ -135,16 +135,17 @@
                 };
 
                 rr = cmd: {
-                    spawn = lib.strings.splitString " " "niri msg output eDP-1 mode ${cmd}";
+                    spawn = lib.strings.splitString " " "${pkgs.niri}/bin/niri msg output eDP-1 mode ${cmd}";
                 };
+
             in {
                 "Mod+Shift+Slash".action = show-hotkey-overlay;
 
-                "Mod+T".action = spawn "kitty";
+                "Mod+T".action = spawn "${pkgs.kitty}/bin/kitty";
                 "Alt+Space".action = spawn "ulauncher";
-                "Mod+E".action = spawn [ "kitty" "--app-id=yazi" "-o" "confirm_os_window_close=0" "yazi" ];
-                "Ctrl+Shift+Escape".action = spawn "missioncenter";
-                "Print".action = spawn [ "flameshot" "gui" ];
+                "Mod+E".action = spawn [ "${pkgs.kitty}/bin/kitty" "--app-id=yazi" "-o" "confirm_os_window_close=0" "yazi" ];
+                "Ctrl+Shift+Escape".action = spawn "${pkgs.mission-center}/bin/missioncenter";
+                "Print".action = spawn [ "${pkgs.flameshot}/bin/flameshot" "gui" ];
                 "Alt+Print".action = screenshot-window;
 
                 "Ctrl+Shift+O".action = spawn "oimg";
@@ -187,7 +188,7 @@
                 "Mod+Shift+R".action = switch-preset-window-height;
                 "Mod+F".action = maximize-column;
                 "Mod+Shift+F".action = fullscreen-window;
-                "Mod+C".action = center-column;
+                "Mod+Shift+C".action = center-column;
 
                 "Mod+Minus".action = set-column-width "-10%";
                 "Mod+Equal".action = set-column-width "+10%";
