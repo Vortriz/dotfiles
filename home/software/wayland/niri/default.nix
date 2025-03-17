@@ -145,8 +145,11 @@
                     action.spawn = lib.strings.splitString " " "${pkgs.avizo}/bin/lightctl -d -e 4 ${cmd}";
                 };
 
-                rr = cmd: {
-                    spawn = lib.strings.splitString " " "${pkgs.niri}/bin/niri msg output eDP-1 mode ${cmd}";
+                execute = { cmd, notif ? null }: {
+                    spawn = if notif == null then
+                        [ "sh" "-c" cmd ]
+                    else
+                        [ "sh" "-c" ''${cmd} && ${pkgs.dunst}/bin/dunstify "${notif}"'' ];
                 };
 
             in {
@@ -160,11 +163,25 @@
                 "Alt+Print".action = screenshot-window;
 
                 "Ctrl+Shift+O".action = spawn "oimg";
-                "Mod+H".action = rr "2880x1800@90.001";
-                "Mod+Shift+H".action = rr "2880x1800@60.001";
+                "Mod+H".action = execute {
+                    cmd = "niri msg output eDP-1 mode 2880x1800@90.001";
+                    notif = "Set display mode to 90Hz";
+                };
+                "Mod+Shift+H".action = execute {
+                    cmd = "niri msg output eDP-1 mode 2880x1800@60.001";
+                    notif = "Set display mode to 60Hz";
+                };
+                "Mod+S".action = execute {
+                    cmd = "niri msg output eDP-1 scale 1";
+                    notif = "Set display scale to 1";
+                };
+                "Mod+Shift+S".action = execute {
+                    cmd = "niri msg output eDP-1 scale 1.5";
+                    notif = "Set display scale to 1.5";
+                };
+                "Mod+L".action = spawn [ "${pkgs.hyprlock}/bin/hyprlock" "--immediate" ];
 
                 "Mod+Q".action = close-window;
-                "Mod+L".action = spawn [ "${pkgs.hyprlock}/bin/hyprlock" "--immediate" ];
 
                 "Alt+Right".action = focus-window-up;
                 "Alt+Left".action = focus-window-down;
