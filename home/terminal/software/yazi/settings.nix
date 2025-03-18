@@ -14,6 +14,12 @@
             overwrite = true;
         };
 
+        opener = {
+            open = [
+                { run = ''xdg-open "$@"''; orphan = true; desc = "Open"; }
+            ];
+        };
+
         plugin = {
             prepend_previewers = [
                 # glow
