@@ -20,8 +20,6 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
-        yazi.url = "github:sxyazi/yazi";
-
         vortriz-flakes = {
             url = "github:Vortriz/flakes/feat/zotero-addons";
             inputs.nixpkgs.follows = "nixpkgs";
