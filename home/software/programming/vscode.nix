@@ -61,6 +61,9 @@
 
                 # use fish shell by default
                 "terminal.integrated.defaultProfile.linux" = "fish";
+
+                # auto reload direnv
+                "direnv.restart.automatic" = true;
             };
 
             extensions = with pkgs.vscode-extensions; [
