@@ -35,12 +35,12 @@ in {
 
             search = {
                 force = true;
-                default = "Google";
-                order = ["SearXNG" "Google" "MyNixOS" "GitHub"];
+                default = "google";
+                order = ["searxng" "google" "mynixos" "github"];
 
                 engines = let
                     engine = ( args: {
-                        iconUpdateURL = "${args.icon}";
+                        icon = "${args.icon}";
                         updateInterval = 24 * 60 * 60 * 1000;
                         definedAliases = ["@${args.alias}"];
                         urls = [
@@ -56,13 +56,13 @@ in {
                         ];
                     });
                 in {
-                    "Bing".metaData.hidden = true;
-                    "Amazon.com".metaData.hidden = true;
+                    "bing".metaData.hidden = true;
+                    "amazondotcom-us".metaData.hidden = true;
 
-                    "Google"  = engine rec { url = "htttps://google.com";       icon = "${url}/favicon.ico"; alias = "google"; surl = "${url}/search"; };
-                    "SearXNG" = engine rec { url = "https://search.bus-hit.me"; icon = "${url}/favicon.ico"; alias = "xng";    surl = "${url}/search"; };
-                    "MyNixOS" = engine rec { url = "https://mynixos.com";       icon = "${url}/favicon.ico"; alias = "nix";    surl = "${url}/search"; };
-                    "GitHub"  = engine rec { url = "https://github.com/";       icon = "${url}/favicon.ico"; alias = "gh";     surl = "${url}/search"; };
+                    "google"  = engine rec { url = "htttps://google.com";       icon = "${url}/favicon.ico"; alias = "google"; surl = "${url}/search"; };
+                    "searxng" = engine rec { url = "https://search.bus-hit.me"; icon = "${url}/favicon.ico"; alias = "xng";    surl = "${url}/search"; };
+                    "mynixos" = engine rec { url = "https://mynixos.com";       icon = "${url}/favicon.ico"; alias = "nix";    surl = "${url}/search"; };
+                    "github"  = engine rec { url = "https://github.com/";       icon = "${url}/favicon.ico"; alias = "gh";     surl = "${url}/search"; };
                 };
             };
 
