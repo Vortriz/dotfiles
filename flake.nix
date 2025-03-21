@@ -84,5 +84,19 @@
             modules = [
             ];
         };
+
+        devShells.${system}.default = pkgs.mkShell {
+            packages = with pkgs; [
+                nix-prefetch-git
+                jq
+                git
+                nh
+                nvd
+            ];
+
+            shellHook = ''
+                export FLAKE=/home/vortriz/dotfiles/
+            '';
+        };
     };
 }
