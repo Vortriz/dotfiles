@@ -19,7 +19,7 @@
                 "extensions.zotmoov.dst_dir" = path;
             };
 
-            extensions = map (ext: inputs.vortriz-flakes.packages."${pkgs.system}"."zotero-addons.${ext}") [
+            extensions = map (ext: inputs.misumisumi-flakes.packages."${pkgs.system}"."zotero-addons.${ext}") [
                 "zotero-better-bibtex"
                 "zotero-scipdf"
                 "zotero-zotmoov"

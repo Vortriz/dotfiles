@@ -20,8 +20,8 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
-        vortriz-flakes = {
-            url = "github:Vortriz/flakes/feat/zotero-addons";
+        misumisumi-flakes = {
+            url = "github:misumisumi/flakes";
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
