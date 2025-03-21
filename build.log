@@ -769,3 +769,22 @@ Removed packages:
 [R.]  #1  SDL_gfx                     2.0.27
 [R.]  #2  ffmpegthumbnailer-unstable  2024-01-04
 Closure size: 7925 -> 7746 (273 paths added, 452 paths removed, delta -179, disk usage +189.3MiB).
+
+---
+
+Gen 84 - 21/03/25 05:07:00 PM IST
+<<< /nix/var/nix/profiles/system-83-link
+>>> /nix/var/nix/profiles/system-84-link
+Version changes:
+[C.]  #1  ffmpeg              4.4.5-data, 4.4.5-lib, 6.1.2-data, 6.1.2-lib, 7.1-bin, 7.1-data x2, 7.1-lib x2 -> 6.1.2-data, 6.1.2-lib, 7.1-bin, 7.1-data x2, 7.1-lib x2
+[U.]  #2  firefox             136.0.1 -> 136.0.2
+[U.]  #3  firefox-unwrapped   136.0.1 -> 136.0.2
+[U.]  #4  gvproxy             0.8.4 -> 0.8.5
+[U.]  #5  netavark            1.14.0 -> 1.14.1
+[U.]  #6  nixos-system-nixos  25.05.20250318.b6eaf97 -> 25.05.20250319.a84ebe2
+[U.]  #7  tealdeer            1.7.1 -> 1.7.2
+[U.]  #8  zotero              7.0.11 -> 7.0.15
+Removed packages:
+[R.]  #1  SDL_image                       1.2.12
+[R.]  #2  unit-script-podman-prune-start  <none>
+Closure size: 7746 -> 7742 (209 paths added, 213 paths removed, delta -4, disk usage -25.9MiB).
