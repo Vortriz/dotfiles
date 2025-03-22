@@ -13,6 +13,6 @@
         nerd-fonts.fira-code
         nerd-fonts.jetbrains-mono
 
-        (google-fonts.override { fonts = [ "Inter" "Overpass" "Rubik" ]; })
+        (google-fonts.override { fonts = [ "Inter" "Overpass" "Rubik" "Hanken Grotesk" "Open Sans" ]; })
     ];
 }
