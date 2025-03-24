@@ -788,3 +788,129 @@ Removed packages:
 [R.]  #1  SDL_image                       1.2.12
 [R.]  #2  unit-script-podman-prune-start  <none>
 Closure size: 7746 -> 7742 (209 paths added, 213 paths removed, delta -4, disk usage -25.9MiB).
+
+---
+
+Gen 85 - 24/03/25 03:15:28 PM IST
+<<< /nix/var/nix/profiles/system-84-link
+>>> /nix/var/nix/profiles/system-85-link
+Version changes:
+[U.]  #001  SDL2                          2.32.0 x2 -> 2.32.2 x2
+[C.]  #002  alsa-lib                      1.2.13 x2, 1.2.13-dev -> 1.2.13 x2
+[C.]  #003  breeze-icons                  5.116.0, 6.11.0 -> 5.116.0, 6.12.0
+[U.]  #004  faad2                         2.11.1 x2 -> 2.11.2 x2
+[C.]  #005  ffmpeg                        6.1.2-data, 6.1.2-lib, 7.1-bin, 7.1-data x2, 7.1-lib x2 -> 6.1.2-data, 6.1.2-lib, 7.1.1-bin, 7.1.1-data x2, 7.1.1-lib x2
+[U.]  #006  ffmpeg-full                   7.1-bin, 7.1-data, 7.1-fish-completions, 7.1-lib, 7.1-man -> 7.1.1-bin, 7.1.1-data, 7.1.1-fish-completions, 7.1.1-lib, 7.1.1-man
+[U.]  #007  ffmpeg-headless               7.1-bin, 7.1-data x2, 7.1-lib x2 -> 7.1.1-bin, 7.1.1-data x2, 7.1.1-lib x2
+[U.]  #008  gh                            2.68.1, 2.68.1-fish-completions -> 2.69.0, 2.69.0-fish-completions
+[U.]  #009  ghostscript                   10.04.0, 10.04.0-fonts -> 10.05.0, 10.05.0-fonts
+[U.]  #010  ghostscript-with-X            10.04.0, 10.04.0-fonts -> 10.05.0, 10.05.0-fonts
+[U.]  #011  glib                          2.82.4 x2, 2.82.4-bin x2, 2.82.4-dev -> 2.82.5 x2, 2.82.5-bin x2, 2.82.5-dev
+[U.]  #012  hwdata                        0.392 x2 -> 0.393 x2
+[U.]  #013  ijs                           10.04.0 -> 10.05.0
+[C.]  #014  karchive                      5.116.0, 6.11.0 -> 5.116.0, 6.12.0
+[C*]  #015  kauth                         5.116.0, 6.11.0 -> 5.116.0, 6.12.0
+[U.]  #016  kbookmarks                    6.11.0 -> 6.12.0
+[C.]  #017  kcodecs                       5.116.0, 6.11.0 -> 5.116.0, 6.12.0
+[U.]  #018  kcolorscheme                  6.11.0 -> 6.12.0
+[U.]  #019  kcompletion                   6.11.0 -> 6.12.0
+[C.]  #020  kconfig                       5.116.0, 6.11.0 -> 5.116.0, 6.12.0
+[C.]  #021  kconfigwidgets                5.116.0, 6.11.0 -> 5.116.0, 6.12.0
+[C.]  #022  kcoreaddons                   5.116.0, 5.116.0-bin, 6.11.0 -> 5.116.0, 5.116.0-bin, 6.12.0
+[C.]  #023  kcrash                        5.116.0, 6.11.0 -> 5.116.0, 6.12.0
+[C.]  #024  kdbusaddons                   5.116.0, 6.11.0 -> 5.116.0, 6.12.0
+[C.]  #025  kdoctools                     5.116.0, 6.11.0 -> 5.116.0, 6.12.0
+[U*]  #026  kglobalaccel                  6.11.0 -> 6.12.0
+[C.]  #027  kguiaddons                    5.116.0, 6.11.0 -> 5.116.0, 6.12.0
+[C.]  #028  ki18n                         5.116.0, 5.116.0-bin, 6.11.0 -> 5.116.0, 5.116.0-bin, 6.12.0
+[C.]  #029  kiconthemes                   5.116.0, 5.116.0-bin, 6.11.0 -> 5.116.0, 5.116.0-bin, 6.12.0
+[U*]  #030  kio                           6.11.0 -> 6.12.0
+[U.]  #031  kirigami                      6.11.0 -> 6.12.0
+[C.]  #032  kitemviews                    5.116.0, 6.11.0 -> 5.116.0, 6.12.0
+[U.]  #033  kitty                         0.40.0, 0.40.0-terminfo -> 0.40.1, 0.40.1-terminfo
+[U*]  #034  kjobwidgets                   6.11.0 -> 6.12.0
+[C.]  #035  knotifications                5.116.0, 5.116.0-bin, 6.11.0 -> 5.116.0, 5.116.0-bin, 6.12.0
+[U.]  #036  kquickcharts                  6.11.0 -> 6.12.0
+[U.]  #037  kservice                      6.11.0 -> 6.12.0
+[U.]  #038  ktextwidgets                  6.11.0 -> 6.12.0
+[U*]  #039  kwallet                       6.11.0 -> 6.12.0
+[C.]  #040  kwidgetsaddons                5.116.0, 6.11.0 -> 5.116.0, 6.12.0
+[C.]  #041  kwindowsystem                 5.116.0, 6.11.0 -> 5.116.0, 6.12.0
+[U.]  #042  kxmlgui                       6.11.0 -> 6.12.0
+[U.]  #043  libX11                        1.8.11 x2, 1.8.11-dev, 1.8.11-man -> 1.8.12 x2, 1.8.12-dev, 1.8.12-man
+[C.]  #044  libXNVCtrl                    390.157, 570.124.04 -> 390.157, 570.133.07
+[U*]  #045  libcap                        2.73, 2.73-dev, 2.73-doc, 2.73-lib x2, 2.73-man -> 2.74, 2.74-doc, 2.74-lib x2, 2.74-man
+[U.]  #046  liblc3                        1.1.2 x2 -> 1.1.3 x2
+[U.]  #047  libnotify                     0.8.3 -> 0.8.4
+[C.]  #048  libpulseaudio                 17.0 x2, 17.0-dev -> 17.0 x2
+[U.]  #049  libreoffice                   24.8.4.2, 24.8.4.2-wrapped -> 24.8.5.2, 24.8.5.2-wrapped
+[U.]  #050  libwacom                      2.14.0 -> 2.15.0
+[U.]  #051  luajit                        2.1.1713773202 -> 2.1.1741730670
+[U*]  #052  lvm2                          2.03.30, 2.03.30-bin, 2.03.30-lib x2, 2.03.30-man -> 2.03.31, 2.03.31-bin, 2.03.31-lib x2, 2.03.31-man
+[U.]  #053  magic-wormhole                0.17.0-fish-completions -> 0.18.0-fish-completions
+[U.]  #054  mesa                          25.0.1 x2 -> 25.0.2 x2
+[U*]  #055  nixd                          2.6.1 -> 2.6.2
+[U.]  #056  nixf                          2.6.1 -> 2.6.2
+[U.]  #057  nixos-system-nixos            25.05.20250319.a84ebe2 -> 25.05.20250322.1e5b653
+[U.]  #058  nixt                          2.6.1 -> 2.6.2
+[U.]  #059  pipewire                      1.4.0 x2, 1.4.0-dev -> 1.4.1 x2, 1.4.1-dev
+[C*]  #060  polkit                        1.pam, 124 x2, 124-bin, 124_fish-completions -> 1.pam, 126 x2, 126-bin, 126_fish-completions
+[U.]  #061  python3.11-psutil             6.1.1 -> 7.0.0
+[U.]  #062  python3.12-attrs              24.3.0 -> 25.1.0
+[U.]  #063  python3.12-babel              2.16.0 -> 2.17.0
+[U.]  #064  python3.12-certifi            2024.12.14 -> 2025.01.31
+[U.]  #065  python3.12-cleo               2.1.0 -> 2.2.1
+[U.]  #066  python3.12-cryptography       44.0.1 -> 44.0.2
+[U.]  #067  python3.12-executing          2.1.0 -> 2.2.0
+[U.]  #068  python3.12-fastjsonschema     2.19.1 -> 2.21.1
+[U.]  #069  python3.12-filelock           3.16.1 -> 3.17.0
+[U.]  #070  python3.12-findpython         0.6.2 -> 0.6.3
+[U.]  #071  python3.12-jeepney            0.8.0 -> 0.9
+[U.]  #072  python3.12-jinja2             3.1.5 -> 3.1.6
+[U.]  #073  python3.12-json5              0.9.28 -> 0.10.0
+[U.]  #074  python3.12-levenshtein        0.27.0 -> 0.27.1
+[U.]  #075  python3.12-magic-wormhole     0.17.0 -> 0.18.0
+[U.]  #076  python3.12-mako               1.3.8 -> 1.3.9
+[U.]  #077  python3.12-mistune            3.1.0 -> 3.1.2
+[U.]  #078  python3.12-mock               5.1.0 -> 5.2.0
+[U.]  #079  python3.12-pbs-installer      2025.03.11 -> 2025.03.17
+[U.]  #080  python3.12-pkginfo            1.12.0 -> 1.12.1.2
+[U.]  #081  python3.12-prompt-toolkit     3.0.48 -> 3.0.50
+[U.]  #082  python3.12-psutil             6.1.1 -> 7.0.0
+[U.]  #083  python3.12-pydantic           2.10.5 -> 2.10.6
+[U.]  #084  python3.12-pyopenssl          24.3.0, 24.3.0-dev -> 25.0.0, 25.0.0-dev
+[U.]  #085  python3.12-pyzmq              26.2.0 -> 26.2.1
+[U.]  #086  python3.12-rapidfuzz          3.12.1 -> 3.12.2
+[U.]  #087  python3.12-referencing        0.36.1 -> 0.36.2
+[U.]  #088  python3.12-rpds-py            0.22.3 -> 0.23.1
+[U.]  #089  python3.12-setuptools         75.8.0 -> 75.8.2
+[U.]  #090  python3.12-trove-classifiers  2025.1.15.22 -> 2025.3.3.18
+[U.]  #091  python3.12-typeguard          4.4.1 -> 4.4.2
+[U.]  #092  python3.12-virtualenv         20.29.1 -> 20.29.2
+[U.]  #093  python3.12-websockets         14.1 -> 15.0.1
+[U.]  #094  qca                           2.3.9 -> 2.3.10
+[U.]  #095  qqc2-desktop-style            6.11.0 -> 6.12.0
+[U.]  #096  solid                         6.11.0 -> 6.12.0
+[U.]  #097  sonnet                        6.11.0 -> 6.12.0
+[C.]  #098  source                        <none> x15 -> <none> x14
+[C.]  #099  stage                         1-init.sh, 1.03-tex -> 1.03-tex
+[U.]  #100  tevent                        0.16.1 x2 -> 0.16.2 x2
+[C.]  #101  udev-rules                    <none> x2 -> <none>
+[C.]  #102  util-linux-minimal            2.40.4-bin, 2.40.4-lib x2, 2.40.4-login x2, 2.40.4-mount x2, 2.40.4-swap x2 -> 2.40.4-bin, 2.40.4-lib x2, 2.40.4-login x2, 2.40.4-man, 2.40.4-mount x2, 2.40.4-swap x2
+[U.]  #103  webkitgtk                     2.46.6+abi=4.0, 2.46.6+abi=4.1 -> 2.48.0+abi=4.0, 2.48.0+abi=4.1
+[U.]  #104  xauth                         1.1.3 -> 1.1.4
+[U.]  #105  yt-dlp                        2025.2.19 -> 2025.3.21
+Added packages:
+[A.]  #1  hexdump-util-linux-minimal  2.40.4
+[A.]  #2  python3.12-qrcode           8.0
+Removed packages:
+[R.]  #1  SDL                    1.2.15 x2, 1.2.15-dev
+[R.]  #2  directfb               1.7.7 x2
+[R.]  #3  extra-utils            <none>
+[R.]  #4  hexdump-util-linux     2.40.4
+[R.]  #5  initrd-fsinfo          <none>
+[R.]  #6  keymap                 <none>
+[R.]  #7  libvisual              0.4.2 x2
+[R.]  #8  link-units             <none>
+[R.]  #9  python3.12-brotlicffi  1.1.0.0
+Closure size: 7742 -> 7726 (3291 paths added, 3307 paths removed, delta -16, disk usage -833.5MiB).
