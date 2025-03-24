@@ -4,7 +4,7 @@
 }: {
     services = {
         pulseaudio = {
-            enable = true;
+            enable = false;
 
             package = pkgs.pulseaudioFull;
         };

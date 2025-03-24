@@ -2,7 +2,7 @@
     services = {
         # pipewire is a multimedia server
         pipewire = {
-            enable = false;
+            enable = true;
 
             # ALSA is the raw audio interface exposed by Linux
             alsa.enable = true;
