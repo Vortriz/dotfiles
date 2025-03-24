@@ -914,3 +914,13 @@ Removed packages:
 [R.]  #8  link-units             <none>
 [R.]  #9  python3.12-brotlicffi  1.1.0.0
 Closure size: 7742 -> 7726 (3291 paths added, 3307 paths removed, delta -16, disk usage -833.5MiB).
+
+---
+
+Gen 91 - 24/03/25 11:13:41 PM IST
+<<< /nix/var/nix/profiles/system-90-link
+>>> /nix/var/nix/profiles/system-91-link
+Added packages:
+[A.]  #1  slurp                   1.5.0
+[A.]  #2  xdg-desktop-portal-wlr  0.7.1
+Closure size: 7739 -> 7741 (14 paths added, 12 paths removed, delta +2, disk usage +198.2KiB).
