@@ -30,7 +30,8 @@ in {
                 "mousewheel.default.delta_multiplier_y" = 20;
                 "signon.rememberSignons" = false; # Don't prompt me, I use Bitwarden
                 "toolkit.legacyUserProfileCustomizations.stylesheets" = true; # Allow userCrome.css
-                "ui.systemUsesDarkTheme" = "1";
+                "ui.systemUsesDarkTheme" = 1;
+                "widget.use-xdg-desktop-portal.file-picker" = 1;
             };
 
             search = {
