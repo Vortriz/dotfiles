@@ -10,7 +10,7 @@
     update-script = pkgs.writers.writeFishBin "update" {} ''
         echo "Updating flake and git fetcher inputs..."
         cd $FLAKE
-        ${nix} flake update && ${fd} .nix --exec ${unf}
+        ${nix} flake update && ${fd} -e nix --exec ${unf}
         ${git} add -A
         ${git} commit -m "chore: update inputs"
         cd -
