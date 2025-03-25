@@ -15,6 +15,7 @@
             "smart-enter"
             "jump-to-char"
             "smart-filter"
+            "mount"
         ];
 
         other-plugins-src = {
@@ -127,5 +128,8 @@
 
         # drag and drop
         ripdrag
+
+        # mount-yazi
+        udisks
     ];
 }
