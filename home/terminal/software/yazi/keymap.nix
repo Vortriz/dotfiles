@@ -38,6 +38,9 @@
 
             # drag and drop
             { on = "<C-n>"; run = ''shell 'ripdrag "$@" -anx 2>/dev/null &' --confirm''; desc = "Drag and drop"; }
+
+            # mount
+            { on = "M"; run = "plugin mount"; desc = "Mount"; }
         ];
     };
 }

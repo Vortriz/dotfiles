@@ -10,6 +10,7 @@
         ./printing.nix
         ./sound.nix
         ./ssh.nix
+        ./udisks2.nix
         ./x11.nix
     ];
 }
