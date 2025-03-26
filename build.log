@@ -953,3 +953,16 @@ Added packages:
 [A.]  #20  unit-devmon.service      <none>
 [A.]  #21  volume_key               0.3.11
 Closure size: 7741 -> 7766 (104 paths added, 79 paths removed, delta +25, disk usage +36.5MiB).
+
+---
+
+Gen 95 - 26/03/25 11:27:51 PM IST
+<<< /nix/var/nix/profiles/system-94-link
+>>> /nix/var/nix/profiles/system-95-link
+Added packages:
+[A.]  #1  gnome-keyring.service  <none>
+Removed packages:
+[R.]  #1  deploy  <none>
+[R.]  #2  np      <none>
+[R.]  #3  update  <none>
+Closure size: 7766 -> 7764 (15 paths added, 17 paths removed, delta -2, disk usage -2.5KiB).
