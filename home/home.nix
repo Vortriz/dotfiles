@@ -22,7 +22,7 @@
         ./terminal
         ./stylix.nix
 
-        ../scripts
+        ../scripts/others
     ];
 
     nixpkgs = {
