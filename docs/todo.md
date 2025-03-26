@@ -16,3 +16,4 @@
 - [x] avizo - multimedia notifications
 - [ ] regreet - login manager
 - [ ] nix-melt
+- [ ] cpu-optimisation
