@@ -90,14 +90,25 @@
             ];
         };
 
-        devShells.${system}.default = pkgs.mkShell {
+        devShells.${system}.default = let
+            mkFishScript = name: script: pkgs.writers.writeFishBin name (builtins.readFile script);
+
+            base = ./scripts/devshell;
+            scripts = builtins.mapAttrs mkFishScript {
+                deploy = base + /deploy.fish;
+                np     = base + /np.fish;
+                update = base + /update.fish;
+            };
+        in pkgs.mkShell {
             packages = with pkgs; [
-                nix-prefetch-git
-                jq
+                fd
                 git
+                jq
                 nh
+                nix
+                nix-prefetch-git
                 nvd
-            ];
+            ] ++ builtins.attrValues scripts;
 
             shellHook = ''
                 export FLAKE=/home/vortriz/dotfiles/

@@ -1,8 +1,8 @@
 {
     pkgs,
     ...
-}: let
-    battery-script = pkgs.writers.writeFishBin "battery" {} ''
+}:
+    pkgs.writers.writeFishBin "battery" {} ''
         # Get the current battery percentage
         set battery_percentage (cat /sys/class/power_supply/BAT0/capacity)
 
@@ -28,9 +28,4 @@
 
         # Output the battery percentage and icon
         echo "$battery_percentage% $battery_icon"
-    '';
-in {
-    home.packages = [
-        battery-script
-    ];
-}
+    ''
