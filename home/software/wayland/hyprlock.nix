@@ -5,7 +5,7 @@
         settings = {
             # BACKGROUND
             background = {
-                path = "$FLAKE/assets/wallpapers/19.png";
+                path = "$FLAKE/assets/wallpapers/19.png"; # TODO: Make this pure
                 blur_passes = 2;
                 contrast = 1;
                 brightness = 0.5;
