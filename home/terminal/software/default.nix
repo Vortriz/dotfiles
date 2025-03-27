@@ -25,6 +25,4 @@
         tealdeer
         update-nix-fetchgit
     ];
-
-    programs.thefuck.enable = true;
 }
