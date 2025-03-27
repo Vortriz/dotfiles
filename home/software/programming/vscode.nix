@@ -81,6 +81,7 @@
                 ms-toolsai.vscode-jupyter-cell-tags
                 ms-toolsai.vscode-jupyter-slideshow
                 myriad-dreamin.tinymist
+                nefrob.vscode-just-syntax
                 shd101wyy.markdown-preview-enhanced
                 tamasfe.even-better-toml
                 yzhang.markdown-all-in-one

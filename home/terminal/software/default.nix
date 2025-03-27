@@ -18,6 +18,7 @@
 
     home.packages = with pkgs; [
         cachix
+        just
         magic-wormhole
         ripgrep-all
         sd
