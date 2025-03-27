@@ -38,3 +38,9 @@ alias pf := prefetch
 
 @prefetch url:
     nix store prefetch-file --json $argv[2] | jq -r .hash
+
+@gc:
+    nh clean all -k 5
+
+@optimise:
+    nix store optimise -v
