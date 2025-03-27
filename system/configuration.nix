@@ -27,10 +27,12 @@
         ./hm-module.nix
 
         # Other imports
-        ./core
-        ./hardware
+        # ./core
+        # ./hardware
         ./programs
-        ./services
+        ./services.nix
+        ./settings.nix
+        ./shell.nix
     ];
 
     nixpkgs = {

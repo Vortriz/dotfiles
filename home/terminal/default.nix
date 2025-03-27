@@ -1,6 +1,6 @@
 {
     imports = [
-        ./emulators
+        ./emulator
         ./shell
         ./software
     ];

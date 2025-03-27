@@ -17,12 +17,14 @@
         inputs.misumisumi-dotfiles.homeManagerModules.zotero
 
         # You can also split up your configuration and import pieces of it here:
-        ./services
-        ./software
+        ./graphical
+        ./programming
         ./terminal
-        ./stylix.nix
+        ./wayland
 
         ../scripts
+
+        ./stylix.nix
     ];
 
     nixpkgs = {
