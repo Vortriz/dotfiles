@@ -20,6 +20,7 @@
         cachix
         just
         magic-wormhole
+        ookla-speedtest
         ripgrep-all
         sd
         tealdeer
