@@ -966,3 +966,526 @@ Removed packages:
 [R.]  #2  np      <none>
 [R.]  #3  update  <none>
 Closure size: 7766 -> 7764 (15 paths added, 17 paths removed, delta -2, disk usage -2.5KiB).
+
+---
+
+Gen 97 - 27/03/25 11:09:04 PM IST
+<<< /nix/var/nix/profiles/system-96-link
+>>> /nix/var/nix/profiles/system-97-link
+Version changes:
+[U.]  #001  abntexto                                  3.1.1-beta-tex -> 3.2.1-beta-tex
+[U.]  #002  achemso                                   3.13g-tex -> 3.13h-tex
+[U.]  #003  acmart                                    2.09-tex -> 2.12-tex
+[U.]  #004  acpi-call                                 1.2.2-6.13.7 -> 1.2.2-6.14
+[U.]  #005  acronym                                   1.49-tex -> 1.50-tex
+[U.]  #006  addtoluatexpath                           70655-tex -> 73424-tex
+[U.]  #007  adjustbox                                 1.3a-tex -> 1.3c-tex
+[U.]  #008  aiplans                                   1.0-tex -> 3.0-tex
+[D.]  #009  amsmath                                   71408-tex -> 2024-11-01a-tex
+[U.]  #010  aomart                                    1.28-tex -> 1.33, 1.33-man, 1.33-tex, 1.33-texdoc
+[U.]  #011  argumentation                             1.3-tex -> 1.5-tex
+[U.]  #012  asmeconf                                  1.38-tex -> 1.40-tex
+[U.]  #013  asmejour                                  1.23-tex -> 1.24-tex
+[U.]  #014  asymptote                                 2.92, 2.92-man, 2.92-tex, 2.92-texdoc -> 3.01, 3.01-man, 3.01-tex, 3.01-texdoc
+[U.]  #015  asypictureb                               0.3-tex -> 0.4-tex
+[U.]  #016  babel                                     24.12-tex -> 25.4-tex
+[U.]  #017  babel-german                              2.14-tex -> 2.15-tex
+[U.]  #018  babel-welsh                               1.1b-tex -> 1.1c-tex
+[U.]  #019  bangorcsthesis                            1.5.5-tex -> 1.5.6-tex
+[D.]  #020  baskervaldx                               1.078-tex -> 1.08-tex
+[U.]  #021  baskervillef                              1.051-tex -> 1.052-tex
+[U.]  #022  beamer                                    3.71-tex -> 3.72-tex
+[U.]  #023  beamertheme-gotham                        1.1.0.b-tex -> 1.2.1.c-tex
+[U.]  #024  beamertheme-light                         1.0-tex -> 1.2-tex
+[U.]  #025  beamertheme-mirage                        1.1-tex -> 1.1.1-tex
+[U.]  #026  beamertheme-rainbow                       0.2-tex -> 1.0-tex
+[D.]  #027  beamertheme-simpledarkblue                60061-tex -> 1.1-tex
+[U.]  #028  beamertheme-simpleplus                    1.0-tex -> 1.1-tex
+[U.]  #029  beamertheme-tcolorbox                     0.8-tex -> 0.9-tex
+[U.]  #030  bezierplot                                1.5-tex -> 1.6-tex
+[U.]  #031  bib2gls                                   3.9, 3.9-man, 3.9-tex, 3.9-texdoc -> 4.4, 4.4-man, 4.4-tex, 4.4-texdoc
+[U.]  #032  bibcop                                    0.0.21, 0.0.21-man, 0.0.21-tex, 0.0.21-texdoc -> 0.0.25, 0.0.25-man, 0.0.25-tex, 0.0.25-texdoc
+[U.]  #033  biblatex-enc                              1.0-tex -> 1.1-tex
+[U.]  #034  biblatex-gb7714                           2015-1.1r-tex -> 2015-1.1t-tex
+[U.]  #035  biblatex-ieee                             1.3g-tex -> 1.4c-tex
+[U.]  #036  biblatex-lni                              0.6-tex -> 0.7-tex
+[U.]  #037  biblatex-software                         1.2-5-tex -> 1.2-6-tex
+[D.]  #038  bidi                                      39.8-tex -> 25.2.2-tex
+[U.]  #039  bithesis                                  3.8.0-tex -> 3.8.1-tex
+[U.]  #040  bmstu-iu8                                 1.4-tex -> 1.6-tex
+[U.]  #041  bundledoc                                 3.4, 3.4-man, 3.4-tex, 3.4-texdoc -> 3.5, 3.5-man, 3.5-tex, 3.5-texdoc
+[D.]  #042  bxpdfver                                  0.8-tex -> 0.8a-tex
+[U.]  #043  bytefield                                 2.8-tex -> 2.9-tex
+[U.]  #044  calxxxx-yyyy                              20.24a-tex -> 20.25a-tex
+[U.]  #045  cascadiamono-otf                          0.1-tex -> 0.3-tex
+[U.]  #046  causets                                   1.4-tex -> 1.5-tex
+[U.]  #047  cfr-lm                                    1.7-tex -> 1.8a-tex
+[C.]  #048  chafa                                     1.14.5 -> 1.14.5, 1.14.5-bin
+[U.]  #049  changelog                                 2.5.1-tex -> 2.6.0-tex
+[U.]  #050  checkcites                                2.7, 2.7-tex -> 2.8, 2.8-tex
+[U.]  #051  chessboard                                1.9-tex -> 2.0-tex
+[U.]  #052  circuit-macros                            10.6-tex -> 10.7-tex
+[U.]  #053  circuitikz                                1.7.0-tex -> 1.7.1-tex
+[U.]  #054  citation-style-language                   0.6.5, 0.6.5-man, 0.6.5-tex, 0.6.5-texdoc -> 0.7.0, 0.7.0-man, 0.7.0-tex, 0.7.0-texdoc
+[U.]  #055  classicthesis                             4.6-tex -> 4.8-tex
+[U.]  #056  clicks                                    0.4.1-tex -> 0.4.3-tex
+[U.]  #057  codedescribe                              1.4-tex -> 1.5b-tex
+[U.]  #058  codehigh                                  2023A-tex -> 2025C-tex
+[U.]  #059  collcell                                  0.5-tex -> 0.6-tex
+[U.]  #060  colorblind                                1.0-tex -> 1.1-tex
+[U.]  #061  coloredbelts                              0.1.0-tex -> 0.1.1-tex
+[U.]  #062  coloredtheorem                            1.0.4-tex -> 1.1.1-tex
+[U.]  #063  concmath-otf                              0.64-tex -> 0.65-tex
+[U.]  #064  context                                   70360, 70360-man, 70360-tex, 70360-texdoc -> 74490, 74490-man, 74490-tex, 74490-texdoc
+[U.]  #065  context-companion-fonts                   71648-tex -> 72732-tex
+[U.]  #066  context-pocketdiary                       66953-tex -> 73164-tex
+[U.]  #067  cora-macs                                 72655-tex -> 73101-tex
+[U.]  #068  create-theorem                            70177-tex -> 72830-tex
+[U.]  #069  creationboites                            0.1.0-tex -> 0.1.1-tex
+[U.]  #070  crimson                                   64559-tex -> 73074-tex
+[U.]  #071  crossword                                 1.11-tex -> 1.13-tex
+[U.]  #072  cs-techrep                                0.5-tex -> 0.6-tex
+[U.]  #073  csthm                                     1.2-tex -> 1.3-tex
+[U.]  #074  curve2e                                   2.3.1-tex -> 2.6.0-tex
+[U.]  #075  customenvs                                0.2.3-tex -> 0.3.1-tex
+[U.]  #076  cweb                                      72279-man, 72279-tex, 72279-texdoc -> 73451-man, 73451-tex, 73451-texdoc
+[U.]  #077  dashrulex                                 1.01d-tex -> 1.02d-tex
+[U.]  #078  datatool                                  2.32-tex -> 3.0.1-tex
+[U.]  #079  dejavu-otf                                0.04-tex -> 0.06-tex
+[U.]  #080  delimset                                  2.0-tex -> 2.2-tex
+[U.]  #081  dtk-bibliography                          2024-03-tex -> 2024-04-tex
+[U.]  #082  dvipdfmx                                  71832, 71832-man, 71832-tex, 71832-texdoc, 71832-tlpkg -> 73031, 73031-man, 73031-tex, 73031-texdoc, 73031-tlpkg
+[U.]  #083  dvipng                                    1.17 x2, 1.17-man, 1.17-texdoc -> 1.18 x2, 1.18-man, 1.18-texdoc
+[U.]  #084  dynkin-diagrams                           3.14159265358979323846-tex -> 3.141592653589793238462-tex
+[U.]  #085  easybook                                  2024et-tex -> 2025s-tex
+[U.]  #086  easydtx                                   0.1.0, 0.1.0-man, 0.1.0-tex, 0.1.0-texdoc -> 0.2.0, 0.2.0-man, 0.2.0-tex, 0.2.0-texdoc
+[U.]  #087  easyfloats                                1.0.0-tex -> 1.1.0-tex
+[U.]  #088  ebgaramond-maths                          1.2-tex -> 1.3-tex
+[D.]  #089  elsarticle                                3.4-tex -> 3.4c-tex
+[U.]  #090  emulateapj                                28469-tex -> 74171-tex
+[U.]  #091  endheads                                  1.6-tex -> 1.7-tex
+[U.]  #092  enumitem                                  3.9-tex -> 3.11-tex
+[U.]  #093  enverb                                    1.0-tex -> 1.1-tex
+[U.]  #094  eolang                                    0.18.1, 0.18.1-man, 0.18.1-tex, 0.18.1-texdoc -> 0.18.2, 0.18.2-man, 0.18.2-tex, 0.18.2-texdoc
+[U.]  #095  epspdf                                    0.6.5.1, 0.6.5.1-tex -> 0.6.5.2, 0.6.5.2-tex
+[U.]  #096  erewhon-math                              0.66-tex -> 0.67-tex
+[U.]  #097  etoolbox                                  2.5k-tex -> 2.5l-tex
+[U.]  #098  euler-math                                0.61-tex -> 0.62-tex
+[U.]  #099  exam-zh                                   0.2.1-tex -> 0.2.5-tex
+[U.]  #100  exesheet                                  2.7-tex -> 2.8-tex
+[U.]  #101  expkv-bundle                              65623-tex -> 73212-tex
+[U.]  #102  exsol                                     1.6-tex -> 1.7-tex
+[U.]  #103  ezedits                                   1.0-tex -> 1.1-tex
+[U.]  #104  fancyhdr                                  4.3.1-tex -> 5.2-tex
+[U.]  #105  fancyqr                                   2.1-tex -> 2.2-tex
+[U.]  #106  fdsymbol                                  0.8-tex -> 1.0-tex
+[U.]  #107  ffcode                                    0.9.3-tex -> 0.10.1-tex
+[U.]  #108  firstaid                                  1.1f-tex -> 1.1j-tex
+[U.]  #109  fixltxhyph                                0.4-tex -> 0.5-tex
+[U.]  #110  fmtcount                                  3.09-tex -> 3.10-tex
+[U.]  #111  fontname                                  64477-tex -> 74432-tex
+[U.]  #112  fontools                                  69241, 69241-man, 69241-tex, 69241-texdoc -> 73362, 73362-man, 73362-tex, 73362-texdoc
+[U.]  #113  fontscale                                 3.0.1-tex -> 4.0.0-tex
+[U.]  #114  fontsetup                                 2.2.1-tex -> 2.3.0-tex
+[U.]  #115  fontsize                                  0.8.5-tex -> 0.9-tex
+[U.]  #116  footmisc                                  6.0f-tex -> 6.0g-tex
+[U.]  #117  footnoterange                             1.1a-tex -> 1.1b-tex
+[U.]  #118  functional                                2024A-tex -> 2024C-tex
+[U.]  #119  fvextra                                   1.8.0-tex -> 1.12.0-tex
+[U.]  #120  gelasiomath                               1.00-tex -> 1.01-tex
+[U.]  #121  genealogy-profiles                        69580-tex -> 73043-tex
+[U.]  #122  glossaries                                4.54, 4.54-man, 4.54-tex, 4.54-texdoc -> 4.56, 4.56-man, 4.56-tex, 4.56-texdoc
+[U.]  #123  glossaries-extra                          1.53-tex -> 1.57-tex
+[U.]  #124  graphics                                  71408-tex -> 72739-tex
+[U.]  #125  gregoriotex                               6.0.0-tex -> 6.1.0-tex
+[U.]  #126  hagenberg-thesis                          65819-tex -> 74267-tex
+[U.]  #127  hduthesis                                 0.2.1-tex -> 1.0.0-tex
+[U.]  #128  hep-acronym                               1.2-tex -> 1.3-tex
+[U.]  #129  hep-bibliography                          1.2-tex -> 1.3-tex
+[U.]  #130  hep-float                                 1.2-tex -> 1.3-tex
+[U.]  #131  hep-font                                  1.2-tex -> 1.3-tex
+[U.]  #132  hep-graphic                               1.2-tex -> 1.3-tex
+[U.]  #133  hep-math                                  1.2-tex -> 1.3-tex
+[U.]  #134  hep-math-font                             1.2-tex -> 1.3-tex
+[U.]  #135  hep-paper                                 2.2-tex -> 2.3-tex
+[U.]  #136  hep-reference                             1.2-tex -> 1.3-tex
+[U.]  #137  hep-text                                  1.2-tex -> 1.3-tex
+[U.]  #138  hep-title                                 1.2-tex -> 1.3-tex
+[U.]  #139  hideanswer                                1.1-tex -> 1.2-tex
+[U.]  #140  href-ul                                   0.4.0-tex -> 0.5.2-tex
+[U.]  #141  hrefhide                                  1.1a-tex -> 1.1b-tex
+[U.]  #142  huawei                                    0.19.0-tex -> 0.19.1-tex
+[U.]  #143  hustthesis                                1.4-tex -> 2.0.0-tex
+[U.]  #144  hvfloat                                   2.51-tex -> 2.52-tex
+[D.]  #145  hvindex                                   0.04-tex -> 0.04a-tex
+[U.]  #146  hyperref                                  7.01j-tex -> 7.01l-tex
+[U.]  #147  hyph-utf8                                 61719-tex -> 73410-tex
+[U.]  #148  hyphen-afrikaans                          58609-tex -> 73410-tex
+[U.]  #149  hyphen-ancientgreek                       58652-tex -> 73555-tex
+[U.]  #150  hyphen-armenian                           58652-tex -> 73410-tex
+[U.]  #151  hyphen-base                               70247-tex -> 73526-tex
+[U.]  #152  hyphen-basque                             58652-tex -> 73410-tex
+[U.]  #153  hyphen-belarusian                         58652-tex -> 73410-tex
+[U.]  #154  hyphen-bulgarian                          58685-tex -> 73410-tex
+[U.]  #155  hyphen-catalan                            58609-tex -> 73410-tex
+[U.]  #156  hyphen-chinese                            58652-tex -> 73410-tex
+[U.]  #157  hyphen-churchslavonic                     58609-tex -> 73410-tex
+[U.]  #158  hyphen-coptic                             58652-tex -> 73410-tex
+[U.]  #159  hyphen-croatian                           58652-tex -> 73410-tex
+[U.]  #160  hyphen-czech                              58609-tex -> 73410-tex
+[U.]  #161  hyphen-danish                             58652-tex -> 73410-tex
+[U.]  #162  hyphen-english                            58609-tex -> 73410-tex
+[U.]  #163  hyphen-esperanto                          58652-tex -> 73410-tex
+[U.]  #164  hyphen-estonian                           58652-tex -> 73410-tex
+[U.]  #165  hyphen-ethiopic                           58652-tex -> 73410-tex
+[U.]  #166  hyphen-finnish                            71880-tex -> 73410-tex
+[U.]  #167  hyphen-french                             58652-tex -> 73410-tex
+[U.]  #168  hyphen-friulan                            58652-tex -> 73410-tex
+[U.]  #169  hyphen-galician                           58652-tex -> 73410-tex
+[U.]  #170  hyphen-georgian                           58652-tex -> 73410-tex
+[U.]  #171  hyphen-german                             59807-tex -> 73410-tex
+[U.]  #172  hyphen-hungarian                          58652-tex -> 73410-tex
+[U.]  #173  hyphen-icelandic                          58652-tex -> 73410-tex
+[U.]  #174  hyphen-indic                              58652-tex -> 73410-tex
+[U.]  #175  hyphen-indonesian                         58609-tex -> 73410-tex
+[U.]  #176  hyphen-interlingua                        58609-tex -> 73410-tex
+[U.]  #177  hyphen-irish                              58609-tex -> 73410-tex
+[U.]  #178  hyphen-kurmanji                           58652-tex -> 73410-tex
+[U.]  #179  hyphen-latvian                            58652-tex -> 73410-tex
+[U.]  #180  hyphen-lithuanian                         58652-tex -> 73410-tex
+[U.]  #181  hyphen-macedonian                         58652-tex -> 73410-tex
+[U.]  #182  hyphen-mongolian                          58652-tex -> 73410-tex
+[U.]  #183  hyphen-norwegian                          58609-tex -> 73410-tex
+[U.]  #184  hyphen-occitan                            58652-tex -> 73410-tex
+[U.]  #185  hyphen-piedmontese                        58652-tex -> 73410-tex
+[U.]  #186  hyphen-portuguese                         58609-tex -> 73410-tex
+[U.]  #187  hyphen-romanian                           58652-tex -> 73410-tex
+[U.]  #188  hyphen-romansh                            58652-tex -> 73555-tex
+[U.]  #189  hyphen-russian                            58609-tex -> 73410-tex
+[U.]  #190  hyphen-sanskrit                           58652-tex -> 73410-tex
+[U.]  #191  hyphen-slovak                             58609-tex -> 73410-tex
+[U.]  #192  hyphen-slovenian                          58652-tex -> 73410-tex
+[U.]  #193  hyphen-swedish                            58652-tex -> 73410-tex
+[U.]  #194  hyphen-thai                               58652-tex -> 73410-tex
+[U.]  #195  hyphen-turkish                            58652-tex -> 73410-tex
+[U.]  #196  hyphen-turkmen                            58652-tex -> 73410-tex
+[U.]  #197  hyphen-ukrainian                          58652-tex -> 73410-tex
+[U.]  #198  hyphen-uppersorbian                       58609-tex -> 73410-tex
+[U.]  #199  hyphen-welsh                              58652-tex -> 73410-tex
+[U.]  #200  iaria                                     0.5-tex -> 0.6-tex
+[U.]  #201  iaria-lite                                0.5-tex -> 0.6-tex
+[U.]  #202  iexec                                     0.14.0-tex -> 0.15.0-tex
+[U.]  #203  iftex                                     1.0f-tex -> 1.0g-tex
+[U.]  #204  index                                     4.1beta-tex -> 4.04-tex
+[U.]  #205  initrd-linux                              6.13.7 -> 6.14
+[U.]  #206  isphysicalmath                            1.1.0-tex -> 2.0.0-tex
+[U.]  #207  jeuxcartes                                0.2.8-tex -> 0.3.1-tex
+[U.]  #208  jpneduenumerate                           1.2-tex -> 1.3-tex
+[U.]  #209  jpnedumathsymbols                         1.1-tex -> 1.3-tex
+[U.]  #210  jslectureplanner                          1.13-tex -> 1.14-tex
+[U.]  #211  jsonparse                                 0.9.3-tex -> 1.2.1-tex
+[U.]  #212  jwjournal                                 72172-tex -> 72788-tex
+[U.]  #213  kdpcover                                  0.5.1-tex -> 0.6.1-tex
+[U.]  #214  keytheorems                               0.1.8-tex -> 0.2.5-tex
+[U.]  #215  knowledge                                 1.29-tex -> 1.30-tex
+[U.]  #216  kotex-oblivoir                            3.3-tex -> 3.4-tex
+[U.]  #217  kpfonts                                   3.35-tex -> 3.36-tex
+[U.]  #218  kpfonts-otf                               0.63-tex -> 0.66-tex
+[U.]  #219  l3build                                   72567, 72567-man, 72567-tex, 72567-texdoc -> 74232, 74232-man, 74232-tex, 74232-texdoc
+[U.]  #220  l3kernel                                  72625-tex -> 73651-tex
+[U.]  #221  l3kernel-dev                              72506-tex -> 73508-tex
+[U.]  #222  langsci                                   70025-tex -> 73027-tex
+[U.]  #223  lastpage                                  2.1c-tex -> 2.1e-tex
+[U.]  #224  latex                                     2024-06-01_PL2-tex -> 73643-tex
+[U.]  #225  latex-amsmath-dev                         2024-11-01_pre-release_4-tex -> 2025-06-01_pre-release_2-tex
+[U.]  #226  latex-base-dev                            2024-11-01_pre-release_4-tex -> 2025-06-01_pre-release_2-tex
+[U.]  #227  latex-firstaid-dev                        1.1f-tex -> 1.1m-tex
+[U.]  #228  latex-graphics-dev                        2024-11-01_pre-release_4-tex -> 2025-06-01_pre-release_2-tex
+[D.]  #229  latex-lab                                 71408-tex -> 2024-11-01_PL2-tex
+[U.]  #230  latex-lab-dev                             2024-11-01_pre-release_4-tex -> 2025-06-01_pre-release_2-tex
+[U.]  #231  latex-tools-dev                           2024-11-01_pre-release_4-tex -> 2025-06-01_pre-release_2-tex
+[U.]  #232  latex2pydata                              0.2.0-tex -> 0.5.0-tex
+[U.]  #233  latexbug                                  1.0o-tex -> 1.0p-tex
+[U.]  #234  latexmk                                   4.85, 4.85-man, 4.85-tex, 4.85-texdoc -> 4.86a, 4.86a-man, 4.86a-tex, 4.86a-texdoc
+[U.]  #235  lectures                                  1.0.5-tex -> 1.0.6-tex
+[U.]  #236  lete-sans-math                            0.41-tex -> 0.45-tex
+[U.]  #237  letgut                                    0.9.11-tex -> 0.9.12-tex
+[U.]  #238  letterswitharrows                         59993-tex -> 72723-tex
+[U.]  #239  lettrine                                  2.61-tex -> 2.80-tex
+[U.]  #240  libertinus-type1                          72354-tex -> 73445-tex
+[U.]  #241  lie-hasse                                 1.01-tex -> 1.02-tex
+[U.]  #242  linearregression                          71466-tex -> 73123-tex
+[U.]  #243  lineno                                    5.3-tex -> 5.4-tex
+[U.]  #244  linux                                     6.13.7, 6.13.7-modules, 6.13.7-modules-shrunk -> 6.14, 6.14-modules, 6.14-modules-shrunk
+[U.]  #245  lisp-on-tex                               2.0-tex -> 2.1-tex
+[U.]  #246  litetable                                 3.1D-tex -> 3.3B-tex
+[U.]  #247  llncs                                     2.25-tex -> 2.26-tex
+[U.]  #248  lni                                       1.10-tex -> 2.0-tex
+[U.]  #249  lt3luabridge                              2.2.0-tex -> 2.2.1-tex
+[U.]  #250  lua-tinyyaml                              0.4.3-tex -> 0.4.4-tex
+[U.]  #251  luafindfont                               0.14, 0.14-man, 0.14-tex, 0.14-texdoc -> 0.15, 0.15-man, 0.15-tex, 0.15-texdoc
+[U.]  #252  luamml                                    0.1.0-tex -> 0.5.0-tex
+[U.]  #253  luamplib                                  2.34.5-tex -> 2.37.1-tex
+[U.]  #254  luaotfload                                3.28, 3.28-man, 3.28-tex, 3.28-texdoc -> 3.29, 3.29-man, 3.29-tex, 3.29-texdoc
+[U.]  #255  luatexja                                  20241014.0-tex -> 20250208.0-tex
+[U.]  #256  luatexko                                  3.6-tex -> 3.8-tex
+[U.]  #257  luaxml                                    0.2a-tex -> 0.2b-tex
+[U.]  #258  lutabulartools                            67714-tex -> 73345-tex
+[U.]  #259  luwiantype                                1.2-tex -> 1.3-tex
+[U.]  #260  lwarp                                     0.916, 0.916-tex -> 0.918, 0.918-tex
+[U.]  #261  lxfonts                                   2.0b-tex -> 3.0-tex
+[U.]  #262  mahjong                                   1.0.1-tex -> 1.1-tex
+[U.]  #263  make4ht                                   0.4b, 0.4b-tex -> 0.4c, 0.4c-tex
+[U.]  #264  markdown                                  3.7.1-0-g8e726800-tex -> 3.11.0-0-ga9095584, 3.11.0-0-ga9095584-man, 3.11.0-0-ga9095584-tex, 3.11.0-0-ga9095584-texdoc
+[U.]  #265  mathalpha                                 1.143-tex -> 1.145-tex
+[U.]  #266  mathfixs                                  1.11-tex -> 1.12-tex
+[U.]  #267  medmath                                   2024E-tex -> 2025A-tex
+[U.]  #268  memoir                                    3.8.2-tex -> 3.8.3-tex
+[U.]  #269  memoize                                   1.3.0, 1.3.0-man, 1.3.0-tex, 1.3.0-texdoc -> 1.4.1, 1.4.1-man, 1.4.1-tex, 1.4.1-texdoc
+[U.]  #270  metalogox                                 1.06-tex -> 1.07-tex
+[U.]  #271  miama                                     1.1-tex -> 1.2-tex
+[U.]  #272  microtype                                 3.1b-tex -> 3.2a-tex
+[U.]  #273  minim                                     2024-1.6-tex -> 2025-1.7-tex
+[U.]  #274  minim-math                                2024-1.4-tex -> 2025-1.5-tex
+[U.]  #275  minim-mp                                  2024-1.6-tex -> 2025-1.7-tex
+[U.]  #276  minim-pdf                                 2024-1.5-tex -> 2025-1.7-tex
+[U.]  #277  minim-xmp                                 2024-1.3-tex -> 2025-1.4-tex
+[U.]  #278  minted                                    3.1.2, 3.1.2-tex -> 3.6.0, 3.6.0-man, 3.6.0-tex, 3.6.0-texdoc
+[U.]  #279  mitthesis                                 1.16-tex -> 1.19-tex
+[U.]  #280  moloch                                    0.4.0-tex -> 0.6.0-tex
+[U.]  #281  morefloats                                1.0h-tex -> 1.1a-tex
+[U.]  #282  mp-geom2d                                 1.1-tex -> 1.2-tex
+[U.]  #283  mpchess                                   0.8-tex -> 0.9-tex
+[U*]  #284  mtools                                    4.0.47 -> 4.0.48
+[U.]  #285  multirow                                  2.8-tex -> 2.9-tex
+[U.]  #286  naive-ebnf                                0.0.17-tex -> 0.0.18-tex
+[U.]  #287  nameauth                                  4.0-tex -> 4.1-tex
+[U.]  #288  newcomputermodern                         6.0.0-tex -> 7.0.1-tex
+[U.]  #289  newpx                                     1.536-tex -> 1.541-tex
+[U.]  #290  newtx                                     1.754-tex -> 1.756-tex
+[U.]  #291  nicematrix                                6.29-tex -> 7.1a-tex
+[U.]  #292  nimbus15                                  1.014-tex -> 1.015-tex
+[U.]  #293  nixos-system-nixos                        25.05.20250322.1e5b653 -> 25.05.20250325.698214a
+[U.]  #294  njuthesis                                 1.4.1-tex -> 1.4.2-tex
+[U.]  #295  nlctdoc                                   1.10-tex -> 1.13-tex
+[U.]  #296  notebeamer                                4.0A-tex -> 4.1C-tex
+[U.]  #297  numerica-tables                           3.1.0-tex -> 3.2.0-tex
+[U.]  #298  optex                                     1.15-man, 1.15-tex, 1.15-texdoc -> 1.17-man, 1.17-tex, 1.17-texdoc
+[U.]  #299  overarrows                                1.2-tex -> 1.3-tex
+[U.]  #300  pagecolor                                 1.2c-tex -> 1.2d-tex
+[U.]  #301  pageslts                                  1.2f-tex -> 2.0d-tex
+[U.]  #302  pdfjam                                    3.12, 3.12-man, 3.12-tex, 3.12-texdoc -> 4.1, 4.1-man, 4.1-tex, 4.1-texdoc
+[U.]  #303  pdfmanagement-testphase                   0.96m-tex -> 0.96p-tex
+[U.]  #304  pdfpages                                  0.6b-tex -> 0.6e-tex
+[U.]  #305  penlight                                  72301-tex -> 73362-tex
+[U.]  #306  penlightplus                              72426-tex -> 74020-tex
+[C*]  #307  perl                                      5.40.0 x2, 5.40.0-env x17, 5.40.0-man -> 5.40.0 x2, 5.40.0-env x18, 5.40.0-man
+[U.]  #308  perltex                                   2.2, 2.2-man, 2.2-tex, 2.2-texdoc -> 2.3, 2.3-man, 2.3-tex, 2.3-texdoc
+[U.]  #309  pgf-periodictable                         2.1.4-tex -> 2.1.5-tex
+[D.]  #310  pgfmath-xfp                               1.0-tex -> 1.0a-tex
+[U.]  #311  piton                                     4.1-tex -> 4.2c-tex
+[U.]  #312  pixelarttikz                              0.1.4-tex -> 0.1.6-tex
+[U.]  #313  plex                                      69154-tex -> 73028-tex
+[U.]  #314  plex-otf                                  0.08a-tex -> 0.11-tex
+[U.]  #315  pmdraw                                    1.5-tex -> 1.7-tex
+[U.]  #316  pmhanguljamo                              1.1-tex -> 1.1.2-tex
+[U.]  #317  polyglossia                               2.3-tex -> 2.4-tex
+[U.]  #318  postit                                    0.1.3-tex -> 0.1.4-tex
+[U.]  #319  postnotes                                 0.3.0-tex -> 0.5.1-tex
+[U.]  #320  ppmcheckpdf                               2024B-tex -> 2025A, 2025A-man, 2025A-tex, 2025A-texdoc
+[U.]  #321  principia                                 2.0-tex -> 3.2-tex
+[U.]  #322  proflycee                                 3.10e-tex -> 3.11a-tex
+[U.]  #323  profmaquette                              0.99-i-tex -> 0.99-o-tex
+[U.]  #324  profsio                                   0.2.8-tex -> 0.3.0-tex
+[U.]  #325  projlib                                   70305-tex -> 72789-tex
+[U.]  #326  pst-geo                                   0.07-tex -> 0.09-tex
+[U.]  #327  pst-optic                                 1.04-tex -> 1.05-tex
+[U.]  #328  pstricks                                  3.20-tex -> 3.21-tex
+[U.]  #329  pxcjkcat                                  1.4-tex -> 1.6-tex
+[U.]  #330  qstest                                    15878-tex -> 73069-tex
+[U.]  #331  quazip                                    1.4 -> 1.5
+[U.]  #332  randintlist                               0.1.2-tex -> 0.1.3-tex
+[U.]  #333  recorder-fingering                        1.3b-tex -> 1.4-tex
+[U.]  #334  regstats                                  1.1a-tex -> 1.1b-tex
+[U.]  #335  romanbar                                  1.0f-tex -> 1.0g-tex
+[U.]  #336  rpgicons                                  1.8.4-tex -> 1.8.6-tex
+[U.]  #337  rub-kunstgeschichte                       0.2.0-tex -> 0.5.0-tex
+[U.]  #338  runcode                                   2.3-tex -> 2.4-tex
+[U.]  #339  sankey                                    3.0.1-tex -> 3.0.2-tex
+[U.]  #340  schooldocs                                1.5-tex -> 1.6-tex
+[U.]  #341  schwalbe-chess                            2.12-tex -> 2.13-tex
+[U.]  #342  scripture                                 2.0-tex -> 2.1-tex
+[U.]  #343  scrlayer-fancyhdr                         0.2.2-tex -> 0.4-tex
+[U.]  #344  sdl3                                      3.2.6-lib -> 3.2.8-lib
+[U.]  #345  setspaceenhanced                          1.02-tex -> 1.04-tex
+[U.]  #346  sidenotesplus                             1.04-tex -> 1.05-tex
+[U.]  #347  sim-os-menus                              0.1.3-tex -> 0.1.4-tex
+[U.]  #348  simpleicons                               13.14.1-tex -> 14.9.0-tex
+[U.]  #349  siunitx                                   3.3.22-tex -> 3.4.6-tex
+[U.]  #350  sjtutex                                   2.1.4-tex -> 2.2-tex
+[U.]  #351  skdoc                                     1.5d-tex -> 1.5e-tex
+[U.]  #352  skeldoc                                   0.1.2-tex -> 0.1.3-tex
+[U.]  #353  spbmark                                   1.46q-tex -> 1.46x-tex
+[U.]  #354  spelatex                                  0.93-tex -> 0.95-tex
+[D.]  #355  spreadtab                                 0.52-tex -> 0.6-tex
+[U.]  #356  srdp-mathematik                           1.13.0-tex -> 1.13.2-tex
+[C.]  #357  stage                                     1.03-tex -> 1-init.sh, 1.03-tex
+[U.]  #358  standalone                                1.3b-tex -> 1.5a-tex
+[D.]  #359  starray                                   1.9-tex -> 1.9b-tex
+[U.]  #360  suftesi                                   3.2.1-tex -> 3.2.6-tex
+[U.]  #361  systeme                                   0.34-tex -> 0.35-tex
+[U.]  #362  tagpdf                                    0.99f-tex -> 0.99o-tex
+[U.]  #363  tangramtikz                               0.1.5-tex -> 0.1.7-tex
+[U.]  #364  testhyphens                               0.7-tex -> 1.0-tex
+[C.]  #365  tex4ebook                                 0.4, 0.4-tex -> 0.4a, 0.4a-tex
+[U.]  #366  tex4ht                                    72661, 72661-tex -> 74473, 74473-tex
+[U.]  #367  texdef                                    1.9, 1.9-tex -> 1.10, 1.10-tex
+[U.]  #368  texdoc                                    4.1-tlpdb-72673, 4.1-tlpdb-72673-man, 4.1-tlpdb-72673-tex, 4.1-tlpdb-72673-texdoc -> 4.1.1-tlpdb-74525, 4.1.1-tlpdb-74525-man, 4.1.1-tlpdb-74525-tex, 4.1.1-tlpdb-74525-texdoc
+[U.]  #369  texfindpkg                                2023E, 2023E-man, 2023E-tex, 2023E-texdoc -> 2024A, 2024A-man, 2024A-tex, 2024A-texdoc
+[D.]  #370  texlive-combined-minimal                  2024.20241027, 2024.20241027-doc, 2024.20241027-texmfdist, 2024.20241027-texmfroot, 2024.20241027-tlpkg -> 2024-final, 2024-final-doc, 2024-final-texmfdist, 2024-final-texmfroot, 2024-final-tlpkg
+[U.]  #371  texlive-msg-translations                  71858-tlpkg -> 73789-tlpkg
+[U.]  #372  texlive-scripts                           72673, 72673-man, 72673-tex, 72673-texdoc, 72673-tlpkg -> 74525, 74525-man, 74525-tex, 74525-texdoc, 74525-tlpkg
+[U.]  #373  texlive.infra                             71593-tlpdb-72673, 71593-tlpdb-72673-man, 71593-tlpdb-72673-tex, 71593-tlpdb-72673-texdoc, 71593-tlpdb-72673-tlpkg -> 73495-tlpdb-74525, 73495-tlpdb-74525-man, 73495-tlpdb-74525-tex, 73495-tlpdb-74525-texdoc, 73495-tlpdb-74525-tlpkg
+[U.]  #374  texlogsieve                               1.4.1, 1.4.1-man, 1.4.1-tex, 1.4.1-texdoc -> 1.5.0, 1.5.0-man, 1.5.0-tex, 1.5.0-texdoc
+[U.]  #375  textcase                                  1.04-tex -> 1.05-tex
+[U.]  #376  tikz-decofonts                            0.1.0-tex -> 0.1.2-tex
+[U.]  #377  tikzbricks                                0.5-tex -> 0.6-tex
+[D.]  #378  tikzdotncross                             1.2-tex -> 1.2c-tex
+[U.]  #379  tikzducks                                 1.8-tex -> 2.0-tex
+[U.]  #380  tikzlings                                 1.0-tex -> 2.2-tex
+[U.]  #381  tikzmarmots                               2.1-tex -> 2.2-tex
+[U.]  #382  tikzpingus                                1.1-tex -> 1.2-tex
+[U.]  #383  tikzquests                                1.1-tex -> 1.2-tex
+[U.]  #384  tikzviolinplots                           0.7.2-tex -> 0.8.0-tex
+[U.]  #385  tinymist                                  0.13.8 -> 0.13.10
+[U.]  #386  titlesec                                  2.16-tex -> 2.17-tex
+[U.]  #387  tkz-elements                              2.30c-tex -> 3.34c-tex
+[U.]  #388  tkz-grapheur                              0.1.9-tex -> 0.2.0-tex
+[U.]  #389  tlshell                                   70419, 70419-tex, 70419-tlpkg -> 73297, 73297-tex, 73297-tlpkg
+[U.]  #390  tools                                     2024-06-01a-tex -> 72739-tex
+[U.]  #391  toptesi                                   6.4.06-tex -> 6.4.07-tex
+[U.]  #392  tracklang                                 1.6.1-tex -> 1.6.5-tex
+[U.]  #393  tuda-ci                                   3.41-tex -> 4.02-tex
+[U.]  #394  tugboat                                   2.32-tex -> 2.34-tex
+[U.]  #395  tugboat-plain                             1.30-tex -> 1.31-tex
+[U.]  #396  turnthepage                               1.3a-tex -> 2.0a-tex
+[U.]  #397  tutodoc                                   1.5.0-tex -> 1.7.1-tex
+[U.]  #398  typewriter                                1.1-tex -> 1.3-tex
+[U.]  #399  ucph-revy                                 1.0.2-tex -> 1.1.0-tex
+[C.]  #400  udev-rules                                <none> -> <none> x2
+[U.]  #401  unbtex                                    1.5.3-tex -> 1.5.4-tex
+[U.]  #402  undolabl                                  1.0m-tex -> 1.0o-tex
+[U.]  #403  unicode-data                              1.17-tex -> 1.18-tex
+[U.]  #404  upmendex                                  1.07-man, 1.07-texdoc -> 1.11-man, 1.11-texdoc
+[U.]  #405  uptex-base                                72534-tex -> 73291-tex
+[U.]  #406  verifiche                                 7.1-tex -> 8.0-tex
+[U.]  #407  verifycommand                             1.10-tex -> 1.11-tex
+[D.]  #408  vscode-extension-ms-python-python         2025.3.2025031001 -> 2024.15.2024091301
+[U.]  #409  vscode-extension-myriad-dreamin-tinymist  0.13.8 -> 0.13.10
+[U.]  #410  wargame                                   0.6-tex -> 0.8-tex
+[U.]  #411  warning                                   0.10-tex -> 0.11-tex
+[U.]  #412  wrapfig2                                  7.0.0-tex -> 7.0.2-tex
+[U.]  #413  writeongrid                               0.1.7-tex -> 0.1.8-tex
+[U.]  #414  x86_energy_perf_policy                    6.12.19 -> 6.12.20
+[U.]  #415  xcharter-math                             0.64-tex -> 0.65-tex
+[U.]  #416  xcomment                                  1.3-tex -> 1.40-tex
+[U.]  #417  xduts                                     6.1.4.2-tex -> 6.2.5.0-tex
+[U.]  #418  xepersian                                 25.0-tex -> 25.2.2-tex
+[U.]  #419  xetexko                                   4.3-tex -> 4.4-tex
+[U.]  #420  xgreek                                    3.4.0-tex -> 3.5.0-tex
+[U.]  #421  xindex                                    0.62, 0.62-tex -> 0.64, 0.64-tex
+[U.]  #422  xltabular                                 0.2e-tex -> 2.0i-tex
+[U.]  #423  yamlvars                                  72052-tex -> 73941-tex
+[U.]  #424  yb-book                                   0.4.1-tex -> 0.6.3-tex
+[U.]  #425  yfonts-otf                                0.43-tex -> 0.50-tex
+[U.]  #426  ysabeau                                   1.2-tex -> 1.5-tex
+[U.]  #427  zref-check                                0.3.5-tex -> 0.3.7-tex
+[U.]  #428  zref-clever                               0.4.7-tex -> 0.5.1-tex
+[U.]  #429  zref-vario                                0.1.10-tex -> 0.1.12-tex
+[D.]  #430  zugferd                                   0.9-tex -> 0.9d-tex
+Added packages:
+[A.]  #01  anima                 1.1-tex
+[A.]  #02  atableau              2.1.0-tex
+[A.]  #03  beamerthemecelestia   1.0.0-tex
+[A.]  #04  beamertools           0.1-tex
+[A.]  #05  biblatex-accursius    1.0-tex
+[A.]  #06  biblatex-cse          1.1.0-tex
+[A.]  #07  bxcoloremoji          1.0a-tex
+[A.]  #08  calculatoritems       0.1.3-tex
+[A.]  #09  callouts-box          1.0-tex
+[A.]  #10  chronos               0.9-tex
+[A.]  #11  chuushaku             1.0.1-tex
+[A.]  #12  complexpolylongdiv    0.2-tex
+[A.]  #13  convert-jpfonts       1.0.1-tex
+[A.]  #14  datatool-english      1.0-tex
+[A.]  #15  datatool-regions      1.0-tex
+[A.]  #16  enumext               1.1-tex
+[A.]  #17  eqnlines              0.5-tex
+[A.]  #18  euclidean-lattice     1.0-tex
+[A.]  #19  expltools             74292, 74292-tex
+[A.]  #20  extra-utils           <none>
+[A.]  #21  extractbb             1.1.0, 1.1.0-man, 1.1.0-tex, 1.1.0-texdoc
+[A.]  #22  fillpages             1.1.0-tex
+[A.]  #23  fontscripts           0.3-tex
+[A.]  #24  gb4e-next             0.5-tex
+[A.]  #25  gentium-otf           0.01-tex
+[A.]  #26  gentium-sil           6.200-tex
+[A.]  #27  gratzer-color-scheme  1.0-tex
+[A.]  #28  hyphen-albanian       73410-tex
+[A.]  #29  hyphen-arabic         73555-tex
+[A.]  #30  hyphen-farsi          73555-tex
+[A.]  #31  indextra              0.21.2-tex
+[A.]  #32  initrd-fsinfo         <none>
+[A.]  #33  inlinegraphicx        0.1.0-tex
+[A.]  #34  jetbrainsmono-otf     0.1-tex
+[A.]  #35  keymap                <none>
+[A.]  #36  lcevcdec              3.3.5-lib
+[A.]  #37  liederbuch            1.1.0-tex
+[A.]  #38  link-units            <none>
+[A.]  #39  listparskip           1.0-tex
+[A.]  #40  luatbls               74021-tex
+[A.]  #41  luatikz               2.12.0-tex
+[A.]  #42  marginalia            0.80.2-tex
+[A.]  #43  maritime              1.0-tex
+[A.]  #44  math-operator         1.0-tex
+[A.]  #45  mcf2graph             5.19-tex
+[A.]  #46  mp-neuralnetwork      0.1-tex
+[A.]  #47  neoschool             1.0.0-tex
+[A.]  #48  nodepthtext           0.1.0-tex
+[A.]  #49  nstc-proposal         1.0-tex
+[A.]  #50  omgtudoc-asoiu        1.1b-tex
+[A.]  #51  outoruby              0.0.0-tex
+[A.]  #52  packdoc               0.1-tex
+[A.]  #53  pegmatch              2025B-tex
+[A.]  #54  physics-patch         2.4-tex
+[A.]  #55  prisma-flow-diagram   1.0.0-tex
+[A.]  #56  pronunciation         1.0.2-tex
+[A.]  #57  rebuttal              0.1.1-tex
+[A.]  #58  scaletextbullet       2.0.0-tex
+[A.]  #59  stocksize             1.0.3-tex
+[A.]  #60  tabularray-abnt       73487-tex
+[A.]  #61  tikz-bpmn             73368-tex
+[A.]  #62  tikz-triminos         0.1.0-tex
+[A.]  #63  tikzcalendarnotes     1.0-tex
+[A.]  #64  timechart             0.51-tex
+[A.]  #65  timeop                0.1.0-tex
+[A.]  #66  tuple                 0.2-tex
+[A.]  #67  ualberta              2.0.0-tex
+[A.]  #68  unibidi-lua           0.1-tex
+[A.]  #69  whatsnote             3.0B-tex
+Removed packages:
+[R.]  #01  afparticle            1.3-tex
+[R.]  #02  fuck.fish             <none>
+[R.]  #03  gentium-tug           1.102-tex
+[R.]  #04  litebook              0.2b-tex
+[R.]  #05  litesolution          2.4a-tex
+[R.]  #06  padauk                3.002-tex
+[R.]  #07  python3.11-colorama   0.4.6
+[R.]  #08  python3.11-decorator  5.1.1
+[R.]  #09  python3.11-psutil     7.0.0
+[R.]  #10  python3.11-pyte       0.8.2
+[R.]  #11  python3.11-six        1.17.0
+[R.]  #12  python3.11-wcwidth    0.2.13
+[R.]  #13  thefuck               3.32
+[R.]  #14  thmlist               0.1b-tex
+Closure size: 7770 -> 7844 (885 paths added, 811 paths removed, delta +74, disk usage +46.5MiB).

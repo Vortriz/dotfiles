@@ -10,21 +10,20 @@ default:
 @test:
     nh os test $FLAKE
 
+gen := `nixos-rebuild list-generations --flake $FLAKE | grep -oP "[0-9]*(?= current)"`
+timestamp := `date '+%x %X'`
+branch := `git branch --show-current`
+
 @deploy:
     echo -e "Rebuilding new generation...\n"
 
     nh os switch $FLAKE
 
-    set gen $(nixos-rebuild list-generations --flake $FLAKE | grep -oP "[0-9]*(?= current)")
-    set prev_gen (math $gen - 1)
-    set timestamp $(date '+%x %X')
-    set branch $(git branch --show-current)
-
-    echo -e "\n---\n\nGen $gen - $timestamp" >> $FLAKE/build.log
-    nvd diff /nix/var/nix/profiles/system-{$prev_gen,$gen}-link >> $FLAKE/build.log
+    echo -e "\n---\n\nGen {{gen}} - {{timestamp}}" >> $FLAKE/build.log
+    nvd diff $(command ls -d1v /nix/var/nix/profiles/system-*-link|tail -n 2) >> $FLAKE/build.log
 
     git add -A
-    git commit -m "deployed $gen via $branch"
+    git commit -m "deployed {{gen}} via {{branch}}"
 
 @update:
     echo -e "Updating flake and git fetcher inputs...\n"
