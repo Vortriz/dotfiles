@@ -3,15 +3,6 @@
 ## Hyprland
 - Hyprland won't work unless 3D acceleration is enabled. And apparently, Hyprland does not work in a VM.
 
-## python
-- Steps for devenv
-  - ~~(first time) run `$ cachix use nixpkgs-python`~~
-  - ~~start a shell with `devenv init`~~
-  - ~~for python, run `devenv inputs add nixpkgs-python github:cachix/nixpkgs-python --follows nixpkgs`~~
-  - ~~run `which python` and paste the path into *Select Interpreter...*~~
-  - ~~TODO: streamline it~~
-  - just run `python-setup`
-
 ## feature branch
 - Steps to keep feature branch in parity with main branch
   - Commit all the changes `main` and push them `git checkout main && git push origin main`
