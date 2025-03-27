@@ -3,13 +3,9 @@
     ...
 }: {
     imports = [
-        ./shells
-        ./stylix
-
-        ./fonts.nix
-        ./gaming.nix
         ./niri.nix
-        ./nix-ld.nix
+        ./steam.nix
+        ./stylix.nix
         ./warp.nix
     ];
 
