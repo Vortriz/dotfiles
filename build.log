@@ -1489,3 +1489,33 @@ Removed packages:
 [R.]  #13  thefuck               3.32
 [R.]  #14  thmlist               0.1b-tex
 Closure size: 7770 -> 7844 (885 paths added, 811 paths removed, delta +74, disk usage +46.5MiB).
+
+---
+
+Gen 98 - 28/03/25 03:54:31 AM IST
+<<< /nix/var/nix/profiles/system-97-link
+>>> /nix/var/nix/profiles/system-98-link
+Version changes:
+[C*]  #1  glibc-locales  2.40-66 x3 -> 2.40-66 x2
+[C*]  #2  nix            2.24-devenv, 2.24-devenv-man, 2.24.12, 2.24.12-doc, 2.24.12-man -> 2.24.12, 2.24.12-doc, 2.24.12-man
+[C.]  #3  poppler-glib   24.02.0 x2 -> 24.02.0 x3
+Added packages:
+[A.]  #1  libhandy                           1.8.3
+[A.]  #2  pdfarranger                        1.11.1
+[A.]  #3  python3.12-deprecated              1.2.18
+[A.]  #4  python3.12-img2pdf                 0.6.0
+[A.]  #5  python3.12-lxml                    5.3.1
+[A.]  #6  python3.12-pikepdf                 9.5.2
+[A.]  #7  python3.12-wrapt                   1.17.2
+[A.]  #8  sRGC.icc                           <none>
+[A.]  #9  stub-ld-x86_64-unknown-linux-musl  <none>
+Removed packages:
+[R.]  #1  devenv               1.4.1, 1.4.1-fish-completions
+[R.]  #2  git-lfs              3.6.1
+[R-]  #3  ld-library-path      <none>
+[R.]  #4  nix-ld               2.0.3
+[R.]  #5  nix-prefetch-git     <none>
+[R.]  #6  ripgrep-all          0.10.6
+[R.]  #7  sd                   1.0.0, 1.0.0-fish-completions
+[R.]  #8  update-nix-fetchgit  0.2.11
+Closure size: 7844 -> 7841 (42 paths added, 45 paths removed, delta -3, disk usage -61.0MiB).
