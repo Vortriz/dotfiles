@@ -43,8 +43,9 @@
         qbittorrent
 
         # utilities
-        kdePackages.filelight
         gnome-calculator
+        kdePackages.filelight
+        pdfarranger
         ventoy-full
 
         # video player
