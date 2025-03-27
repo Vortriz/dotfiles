@@ -14,7 +14,6 @@
     home.packages = with pkgs; [
         # file managers
         nautilus
-        superfile
 
         # file transfer
         warp
@@ -27,7 +26,6 @@
 
         # productivity
         obsidian
-        pandoc
 
         # remote desktop
         anydesk
