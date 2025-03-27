@@ -21,9 +21,8 @@
         just
         magic-wormhole
         ookla-speedtest
-        ripgrep-all
-        sd
+        pandoc
         tealdeer
-        update-nix-fetchgit
+        superfile
     ];
 }

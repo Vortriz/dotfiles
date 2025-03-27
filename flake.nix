@@ -100,6 +100,7 @@
                 nix
                 nix-prefetch-git
                 nvd
+                update-nix-fetchgit
             ];
         };
     };
