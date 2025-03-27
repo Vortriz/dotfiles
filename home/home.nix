@@ -51,7 +51,7 @@
 
     home = {
         username = "vortriz";
-        homeDirectory = "/home/vortriz";
+        homeDirectory = "/home/vortriz"; # TODO: global vars
     };
 
     # Enable home-manager
