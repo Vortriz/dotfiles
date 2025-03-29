@@ -1519,3 +1519,24 @@ Removed packages:
 [R.]  #7  sd                   1.0.0, 1.0.0-fish-completions
 [R.]  #8  update-nix-fetchgit  0.2.11
 Closure size: 7844 -> 7841 (42 paths added, 45 paths removed, delta -3, disk usage -61.0MiB).
+
+---
+
+Gen 99 - 29/03/25 09:37:03 PM IST
+<<< /nix/var/nix/profiles/system-98-link
+>>> /nix/var/nix/profiles/system-99-link
+Version changes:
+[U.]  #01  SDL_net                            1.2.8 -> 1.2.8-unstable-2024-04-23
+[U.]  #02  dart-sass                          1.85.1 -> 1.86.0
+[U.]  #03  discord                            0.0.88 -> 0.0.89
+[U.]  #04  firefox                            136.0.2 -> 136.0.3
+[U.]  #05  firefox-unwrapped                  136.0.2 -> 136.0.3
+[U.]  #06  libz                               1.2.8.2015.12.26-unstable-2018-03-31 -> 1.2.8.2025.03.07
+[U.]  #07  nixos-system-nixos                 25.05.20250325.698214a -> 25.05.20250327.5e5402e
+[U*]  #08  strace                             6.13, 6.13_fish-completions -> 6.14, 6.14-man
+[U.]  #09  telegram-desktop                   5.12.3 -> 5.13.1
+[U.]  #10  vscode-extension-ms-python-python  2024.15.2024091301 -> 2025.3.2025031001
+[U.]  #11  vvenc                              1.13.0-lib -> 1.13.1-lib
+[U.]  #12  yt-dlp                             2025.3.21 -> 2025.3.26
+[U.]  #13  zotero-better-bibtex               7.0.5 -> 7.0.9
+Closure size: 7841 -> 7841 (124 paths added, 124 paths removed, delta +0, disk usage -14.5MiB).
