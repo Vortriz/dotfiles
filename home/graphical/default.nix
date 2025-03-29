@@ -39,6 +39,7 @@
         qbittorrent
 
         # utilities
+        diffpdf
         gnome-calculator
         kdePackages.filelight
         pdfarranger
