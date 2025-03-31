@@ -1,7 +1,4 @@
-{
-    pkgs,
-    ...
-}: {
+{pkgs, ...}: {
     services.hypridle = {
         enable = true;
 
@@ -28,7 +25,6 @@
                     on-timeout = "${pkgs.systemd}/bin/systemctl suspend";
                 }
             ];
-
         };
     };
 }

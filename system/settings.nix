@@ -12,8 +12,8 @@
         };
 
         kernelPackages = pkgs.linuxPackages_latest;
-        extraModulePackages = with config.boot.kernelPackages; [ acpi_call ];
-        kernelModules = [ "acpi_call" ];
+        extraModulePackages = with config.boot.kernelPackages; [acpi_call];
+        kernelModules = ["acpi_call"];
     };
 
     environment.variables = {
@@ -37,7 +37,7 @@
         nerd-fonts.fira-code
         nerd-fonts.jetbrains-mono
 
-        (google-fonts.override { fonts = [ "Inter" "Overpass" "Rubik" "Hanken Grotesk" "Open Sans" ]; })
+        (google-fonts.override {fonts = ["Inter" "Overpass" "Rubik" "Hanken Grotesk" "Open Sans"];})
     ];
 
     hardware = {
@@ -109,7 +109,7 @@
     swapDevices = [
         {
             device = "/var/lib/swapfile";
-            size = 16*1024;
+            size = 16 * 1024;
         }
     ];
 
@@ -121,7 +121,7 @@
     virtualisation = {
         # following configuration is added only when building VM with build-vm
         vmVariant.virtualisation = {
-            memorySize =  4096;
+            memorySize = 4096;
             cores = 4;
         };
 

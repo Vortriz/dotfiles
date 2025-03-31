@@ -45,12 +45,11 @@
                 };
             };
 
-            spawn-at-startup =
-                map (s: { command = pkgs.lib.strings.splitString " " s; })
-                    [
-                        "systemctl --user reset-failed waybar.service"
-                        "aria2c --enable-rpc --rpc-listen-all"
-                    ];
+            spawn-at-startup = map (s: {command = pkgs.lib.strings.splitString " " s;})
+            [
+                "systemctl --user reset-failed waybar.service"
+                "aria2c --enable-rpc --rpc-listen-all"
+            ];
 
             prefer-no-csd = true;
             screenshot-path = "mnt/SECONDARY/downloads/captures/linux/%Y-%m-%d (%H-%M-%S).png";

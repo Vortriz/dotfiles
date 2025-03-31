@@ -32,7 +32,7 @@
             serif = config.stylix.fonts.sansSerif;
 
             sansSerif = {
-                package = pkgs.google-fonts.override { fonts = [ "Lato" ]; };
+                package = pkgs.google-fonts.override {fonts = ["Lato"];};
                 name = "Lato";
             };
 

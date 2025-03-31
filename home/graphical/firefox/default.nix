@@ -1,8 +1,4 @@
-{
-    pkgs,
-    ...
-}:
-let
+{pkgs, ...}: let
     baseDir = ".mozilla/firefox/default";
 
     shyfox = pkgs.fetchzip {
@@ -40,7 +36,7 @@ in {
                 order = ["searxng" "google" "mynixos" "github"];
 
                 engines = let
-                    engine = ( args: {
+                    engine = (args: {
                         icon = "${args.icon}";
                         updateInterval = 24 * 60 * 60 * 1000;
                         definedAliases = ["@${args.alias}"];
@@ -60,10 +56,30 @@ in {
                     "bing".metaData.hidden = true;
                     "amazondotcom-us".metaData.hidden = true;
 
-                    "google"  = engine rec { url = "htttps://google.com";       icon = "${url}/favicon.ico"; alias = "google"; surl = "${url}/search"; };
-                    "searxng" = engine rec { url = "https://search.bus-hit.me"; icon = "${url}/favicon.ico"; alias = "xng";    surl = "${url}/search"; };
-                    "mynixos" = engine rec { url = "https://mynixos.com";       icon = "${url}/favicon.ico"; alias = "nix";    surl = "${url}/search"; };
-                    "github"  = engine rec { url = "https://github.com";       icon = "${url}/favicon.ico"; alias = "gh";     surl = "${url}/search"; };
+                    "google" = engine rec {
+                        url = "htttps://google.com";
+                        icon = "${url}/favicon.ico";
+                        alias = "google";
+                        surl = "${url}/search";
+                    };
+                    "searxng" = engine rec {
+                        url = "https://search.bus-hit.me";
+                        icon = "${url}/favicon.ico";
+                        alias = "xng";
+                        surl = "${url}/search";
+                    };
+                    "mynixos" = engine rec {
+                        url = "https://mynixos.com";
+                        icon = "${url}/favicon.ico";
+                        alias = "nix";
+                        surl = "${url}/search";
+                    };
+                    "github" = engine rec {
+                        url = "https://github.com";
+                        icon = "${url}/favicon.ico";
+                        alias = "gh";
+                        surl = "${url}/search";
+                    };
                 };
             };
 
@@ -83,15 +99,16 @@ in {
             DisplayBookmarksToolbar = "never";
             DisplayMenuBar = "default-off";
 
-            ExtensionSettings = with builtins;
-                let extension = shortId: extension_id: {
+            ExtensionSettings = with builtins; let
+                extension = shortId: extension_id: {
                     name = extension_id;
                     value = {
                         install_url = "https://addons.mozilla.org/en-US/firefox/downloads/latest/${shortId}/latest.xpi";
                         installation_mode = "normal_installed";
                     };
                 };
-                in listToAttrs [
+            in
+                listToAttrs [
                     (extension "ublock-origin" "uBlock0@raymondhill.net")
                     (extension "darkreader" "addon@darkreader.org")
                     (extension "bitwarden-password-manager" "{446900e4-71c2-419f-a6a7-df9c091e268b}")

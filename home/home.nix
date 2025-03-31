@@ -85,7 +85,7 @@
 
             config = {
                 niri = {
-                    default = [ "gnome" "gtk" ];
+                    default = ["gnome" "gtk"];
                     "org.freedesktop.impl.portal.Access" = "gtk";
                     "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
                     "org.freedesktop.impl.portal.ScreenCast" = "wlr";
@@ -100,10 +100,10 @@
         };
 
         configFile."xdg-desktop-portal-termfilechooser/config".text = ''
-            [filechooser]
-            cmd=${pkgs.xdg-desktop-portal-termfilechooser}/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh
-            default_dir=$HOME
-            env=TERMCMD=kitty
+          [filechooser]
+          cmd=${pkgs.xdg-desktop-portal-termfilechooser}/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh
+          default_dir=$HOME
+          env=TERMCMD=kitty
         '';
     };
 

@@ -1,7 +1,4 @@
-{
-    inputs,
-    ...
-}: {
+{inputs, ...}: {
     # This one brings our custom packages from the 'pkgs' directory
     additions = final: _prev: import ../pkgs final.pkgs;
 
@@ -15,7 +12,7 @@
 
         # fix to make sioyek work on non-qt systems
         sioyek = prev.sioyek.overrideAttrs (previousAttrs: {
-            buildInputs = previousAttrs.buildInputs ++ [ final.kdePackages.qtwayland ];
+            buildInputs = previousAttrs.buildInputs ++ [final.kdePackages.qtwayland];
         });
 
         # fix to make flameshot work on non-kde systems

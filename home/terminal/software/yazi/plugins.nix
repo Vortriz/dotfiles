@@ -1,7 +1,4 @@
-{
-    pkgs,
-    ...
-}: {
+{pkgs, ...}: {
     programs.yazi.plugins = let
         official-plugins-src = pkgs.fetchFromGitHub {
             owner = "yazi-rs";
@@ -102,10 +99,13 @@
         builtins.listToAttrs (map (name: {
             name = name;
             value = "${official-plugins-src}/${name}.yazi";
-        }) official-plugins) // builtins.listToAttrs (map (name: {
+        })
+        official-plugins)
+        // builtins.listToAttrs (map (name: {
             name = name;
             value = other-plugins-src.${name};
-        }) other-plugins);
+        })
+        other-plugins);
 
     # dependencies
     home.packages = with pkgs; [

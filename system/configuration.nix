@@ -68,10 +68,10 @@
             # Workaround for https://github.com/NixOS/nix/issues/9574
             nix-path = config.nix.nixPath;
             # Add myself to the trusted users
-            trusted-users = [ "root" "vortriz" ];
+            trusted-users = ["root" "vortriz"];
             # Add extra Caches
-            extra-substituters = [ ];
-            extra-trusted-public-keys = [ ];
+            extra-substituters = [];
+            extra-trusted-public-keys = [];
         };
         # Opinionated: disable channels
         channel.enable = false;
@@ -87,7 +87,7 @@
             openssh.authorizedKeys.keys = [
                 # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect
             ];
-            extraGroups = [ "networkmanager" "wheel" "video" "aria2" ];
+            extraGroups = ["networkmanager" "wheel" "video" "aria2"];
         };
     };
 

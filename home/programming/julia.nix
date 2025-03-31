@@ -13,11 +13,11 @@
 
     home.file = {
         ".julia/config/startup.jl".text = ''
-            using Pkg
+          using Pkg
 
-            if isfile("Project.toml") && isfile("Manifest.toml")
-                Pkg.activate(".")
-            end
+          if isfile("Project.toml") && isfile("Manifest.toml")
+              Pkg.activate(".")
+          end
         '';
     };
 }
