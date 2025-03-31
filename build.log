@@ -1540,3 +1540,38 @@ Version changes:
 [U.]  #12  yt-dlp                             2025.3.21 -> 2025.3.26
 [U.]  #13  zotero-better-bibtex               7.0.5 -> 7.0.9
 Closure size: 7841 -> 7841 (124 paths added, 124 paths removed, delta +0, disk usage -14.5MiB).
+
+---
+
+Gen 100 - 31/03/25 03:01:50 PM IST
+<<< /nix/var/nix/profiles/system-99-link
+>>> /nix/var/nix/profiles/system-100-link
+Version changes:
+[U.]  #01  crun                                              1.20 -> 1.21
+[U.]  #02  imagemagick                                       7.1.1-45, 7.1.1-45-dev, 7.1.1-45-doc -> 7.1.1-46, 7.1.1-46-dev, 7.1.1-46-doc
+[U.]  #03  libmediainfo                                      24.12 -> 25.03
+[U.]  #04  libppd                                            2.1.0 -> 2.1.1
+[U.]  #05  mediainfo                                         24.12 -> 25.03
+[U.]  #06  mpv                                               0.39.0, 0.39.0-dev, 0.39.0-doc, 0.39.0-man -> 0.40.0, 0.40.0-dev, 0.40.0-doc, 0.40.0-man
+[U.]  #07  mpv-with-scripts                                  0.39.0, 0.39.0-fish-completions -> 0.40.0, 0.40.0-fish-completions
+[U*]  #08  nix                                               2.24.12, 2.24.12-doc, 2.24.12-man -> 2.24.13, 2.24.13-doc, 2.24.13-man
+[U.]  #09  nixos-system-nixos                                25.05.20250327.5e5402e -> 25.05.20250330.52faf48
+[U.]  #10  passt                                             2024_12_11.09478d5 -> 2025_03_20.32f6212
+[U.]  #11  python3.12-jedi-language-server                   0.43.1 -> 0.44.0
+[U.]  #12  superfile                                         1.2.0.0 -> 1.2.1
+[U.]  #13  vscode-extension-James-Yu-latex-workshop          10.8.0 -> 10.9.0
+[U.]  #14  vscode-extension-MS-python-vscode-pylance         2025.3.1 -> 2025.3.2
+[U.]  #15  vscode-extension-catppuccin-catppuccin-vsc        3.16.1 -> 3.17.0
+[U.]  #16  vscode-extension-catppuccin-catppuccin-vsc-icons  1.16.0 -> 1.20.0
+[U.]  #17  vscode-extension-github-copilot                   1.284.0 -> 1.293.0
+[U.]  #18  vscode-extension-jnoortheen-nix-ide               0.4.12 -> 0.4.16
+[U.]  #19  vscode-extension-ms-toolsai-jupyter               2025.1.2025013001 -> 2025.2.0
+[U.]  #20  vscode-extension-nefrob-vscode-just-syntax        0.5.1 -> 0.8.0
+[U.]  #21  x86_energy_perf_policy                            6.12.20 -> 6.12.21
+[U.]  #22  yt-dlp                                            2025.3.26 -> 2025.3.27
+Added packages:
+[A.]  #1  alejandra                               3.1.0
+[A.]  #2  diffpdf                                 2.1.3
+[A.]  #3  poppler-qt5                             24.02.0
+[A.]  #4  vscode-extension-kamadorueda-alejandra  1.0.0
+Closure size: 7841 -> 7845 (180 paths added, 176 paths removed, delta +4, disk usage +11.1MiB).
