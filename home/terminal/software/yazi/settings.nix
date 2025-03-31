@@ -16,46 +16,113 @@
 
         opener = {
             open = [
-                { run = ''xdg-open "$@"''; orphan = true; desc = "Open"; }
+                {
+                    run = ''xdg-open "$@"'';
+                    orphan = true;
+                    desc = "Open";
+                }
             ];
         };
 
         plugin = {
             prepend_previewers = [
                 # glow
-                { name = "*.md"; run = "glow"; }
+                {
+                    name = "*.md";
+                    run = "glow";
+                }
 
                 # mediainfo
-                { mime = "{audio,video,image}/*"; run = "mediainfo"; }
-                { mime = "application/subrip"; run = "mediainfo"; }
+                {
+                    mime = "{audio,video,image}/*";
+                    run = "mediainfo";
+                }
+                {
+                    mime = "application/subrip";
+                    run = "mediainfo";
+                }
 
                 # ouch
-                { mime = "application/*zip"; run = "ouch"; }
-                { mime = "application/x-tar"; run = "ouch"; }
-                { mime = "application/x-bzip2"; run = "ouch"; }
-                { mime = "application/x-7z-compressed"; run = "ouch"; }
-                { mime = "application/x-rar"; run = "ouch"; }
-                { mime = "application/x-xz"; run = "ouch"; }
+                {
+                    mime = "application/*zip";
+                    run = "ouch";
+                }
+                {
+                    mime = "application/x-tar";
+                    run = "ouch";
+                }
+                {
+                    mime = "application/x-bzip2";
+                    run = "ouch";
+                }
+                {
+                    mime = "application/x-7z-compressed";
+                    run = "ouch";
+                }
+                {
+                    mime = "application/x-rar";
+                    run = "ouch";
+                }
+                {
+                    mime = "application/x-xz";
+                    run = "ouch";
+                }
 
                 # office
-                { mime = "application/openxmlformats-officedocument.*"; run = "office"; }
-                { mime = "application/oasis.opendocument.*"; run = "office"; }
-                { mime = "application/ms-*"; run = "office"; }
-                { mime = "application/msword"; run = "office"; }
-                { name = "*.docx"; run = "office"; }
+                {
+                    mime = "application/openxmlformats-officedocument.*";
+                    run = "office";
+                }
+                {
+                    mime = "application/oasis.opendocument.*";
+                    run = "office";
+                }
+                {
+                    mime = "application/ms-*";
+                    run = "office";
+                }
+                {
+                    mime = "application/msword";
+                    run = "office";
+                }
+                {
+                    name = "*.docx";
+                    run = "office";
+                }
             ];
 
-             prepend_preloaders = [
+            prepend_preloaders = [
                 # mediainfo
-                { mime = "{audio,video,image}/*"; run = "mediainfo"; }
-                { mime = "application/subrip"; run = "mediainfo"; }
+                {
+                    mime = "{audio,video,image}/*";
+                    run = "mediainfo";
+                }
+                {
+                    mime = "application/subrip";
+                    run = "mediainfo";
+                }
 
                 # office
-                { mime = "application/openxmlformats-officedocument.*"; run = "office"; }
-                { mime = "application/oasis.opendocument.*"; run = "office"; }
-                { mime = "application/ms-*"; run = "office"; }
-                { mime = "application/msword"; run = "office"; }
-                { name = "*.docx"; run = "office"; }
+                {
+                    mime = "application/openxmlformats-officedocument.*";
+                    run = "office";
+                }
+                {
+                    mime = "application/oasis.opendocument.*";
+                    run = "office";
+                }
+                {
+                    mime = "application/ms-*";
+                    run = "office";
+                }
+                {
+                    mime = "application/msword";
+                    run = "office";
+                }
+                {
+                    name = "*.docx";
+                    run = "office";
+                }
             ];
         };
     };

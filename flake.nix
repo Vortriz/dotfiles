@@ -97,19 +97,21 @@
         };
 
         devShells.${system}.default = pkgs.mkShell {
-            packages = [
-                formatter
-            ] ++ (with pkgs; [
-                fd
-                git
-                jq
-                just
-                nh
-                nix
-                nix-prefetch-git
-                nvd
-                update-nix-fetchgit
-            ]);
+            packages =
+                [
+                    formatter
+                ]
+                ++ (with pkgs; [
+                    fd
+                    git
+                    jq
+                    just
+                    nh
+                    nix
+                    nix-prefetch-git
+                    nvd
+                    update-nix-fetchgit
+                ]);
         };
     };
 }

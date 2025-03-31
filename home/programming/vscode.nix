@@ -1,7 +1,4 @@
-{
-    pkgs,
-    ...
-}: {
+{pkgs, ...}: {
     programs.vscode = {
         enable = true;
 
@@ -32,7 +29,7 @@
                 "explorer.confirmDragAndDrop" = false;
                 "files.trimTrailingWhitespace" = true;
                 "git.confirmSync" = false;
-                "github.copilot.enable" = { "shellscript" = false; };
+                "github.copilot.enable" = {"shellscript" = false;};
 
                 "julia.enableTelemetry" = true;
                 "julia.symbolCacheDownload" = true;
@@ -40,7 +37,7 @@
                 "nix.enableLanguageServer" = true;
                 "nix.serverPath" = "nixd";
 
-                "terminal.integrated.commandsToSkipShell" = [ "language-julia.interrupt" ];
+                "terminal.integrated.commandsToSkipShell" = ["language-julia.interrupt"];
                 "terminal.integrated.defaultProfile.linux" = "fish";
                 "terminal.integrated.fontFamily" = "'FiraCode Nerd Font Mono'";
 
@@ -102,6 +99,6 @@
 
     stylix.targets.vscode = {
         enable = true;
-        profileNames = [ "default" ];
+        profileNames = ["default"];
     };
 }

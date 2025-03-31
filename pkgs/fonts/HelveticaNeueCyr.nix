@@ -1,5 +1,7 @@
-{ stdenvNoCC, fetchzip }:
-
+{
+    stdenvNoCC,
+    fetchzip,
+}:
 stdenvNoCC.mkDerivation {
     pname = "HelveticaNeueCyr";
     version = "1.0";
@@ -11,12 +13,12 @@ stdenvNoCC.mkDerivation {
     };
 
     installPhase = ''
-        runHook preInstall
+      runHook preInstall
 
-        mkdir -p $out/share/fonts/opentype
+      mkdir -p $out/share/fonts/opentype
 
-        install -Dm644 ./*.otf -t $out/share/fonts/opentype
+      install -Dm644 ./*.otf -t $out/share/fonts/opentype
 
-        runHook postInstall
+      runHook postInstall
     '';
 }

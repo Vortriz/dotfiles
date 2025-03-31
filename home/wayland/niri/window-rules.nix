@@ -13,20 +13,20 @@
         }
         {
             matches = [
-                { app-id = "firefox"; }
-                { app-id = "code"; }
-                { app-id = "obsidian"; }
-                { title = ".*pdf"; }
-                { app-id = "yazi"; }
-                { app-id = "mpv"; }
-                { app-id = "Zotero"; }
+                {app-id = "firefox";}
+                {app-id = "code";}
+                {app-id = "obsidian";}
+                {title = ".*pdf";}
+                {app-id = "yazi";}
+                {app-id = "mpv";}
+                {app-id = "Zotero";}
             ];
 
             open-maximized = true;
         }
         {
             matches = [
-                { app-id = "io.missioncenter.MissionCenter"; }
+                {app-id = "io.missioncenter.MissionCenter";}
             ];
 
             open-floating = true;
@@ -42,7 +42,7 @@
         }
         {
             matches = [
-                { app-id = "org.gnome.Calculator"; }
+                {app-id = "org.gnome.Calculator";}
             ];
 
             open-floating = true;
@@ -50,8 +50,8 @@
         }
         {
             matches = [
-                { title = ".*pdf"; }
-                { app-id = "kitty"; }
+                {title = ".*pdf";}
+                {app-id = "kitty";}
             ];
 
             default-column-display = "tabbed";
@@ -59,15 +59,15 @@
         }
         {
             matches = [
-                { app-id = "obsidian"; }
-                { app-id = "com.github.th_ch.youtube_music"; }
+                {app-id = "obsidian";}
+                {app-id = "com.github.th_ch.youtube_music";}
             ];
 
             scroll-factor = 0.6;
         }
         {
             matches = [
-                { app-id = "it.catboy.ripdrag";}
+                {app-id = "it.catboy.ripdrag";}
             ];
 
             open-floating = true;

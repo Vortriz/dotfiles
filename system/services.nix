@@ -1,7 +1,4 @@
-{
-    pkgs,
-    ...
-}: {
+{pkgs, ...}: {
     services = {
         # Asus laptop specific services
         asusd = {
@@ -16,8 +13,8 @@
 
             settings = {
                 RESTORE_THRESHOLDS_ON_BAT = 1;
-                START_CHARGE_THRESH_BAT0=75;
-                STOP_CHARGE_THRESH_BAT0=80;
+                START_CHARGE_THRESH_BAT0 = 75;
+                STOP_CHARGE_THRESH_BAT0 = 80;
 
                 PLATFORM_PROFILE_ON_AC = "performance";
                 PLATFORM_PROFILE_ON_BAT = "balanced";

@@ -5,12 +5,12 @@
         ./plugins.nix
     ];
 
-	programs.yazi = {
-		enable = true;
+    programs.yazi = {
+        enable = true;
 
-		shellWrapperName = "y";
+        shellWrapperName = "y";
         initLua = ./init.lua;
-	};
+    };
 
     stylix.targets.yazi.enable = true;
 }

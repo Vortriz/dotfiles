@@ -1,8 +1,4 @@
-{
-    pkgs,
-    ...
-}:
-{
+{pkgs, ...}: {
     programs.waybar = {
         enable = true;
 
@@ -88,19 +84,17 @@
                 "format" = "󰍛 {usage}%";
             };
 
-            "network" =
-                let
-                    nm-editor = "${pkgs.networkmanagerapplet}/bin/nm-connection-editor";
-                in
-                {
-                    format-wifi = "󰖩 {essid} ";
-                    format-ethernet = "󰈀";
-                    format-alt = "󰤨    {bandwidthDownBytes}";
-                    format-disconnected = "󰤭";
-                    tooltip-format = "{ipaddr}/{ifname} via {gwaddr} ({signalStrength}%)";
-                    on-click-right = "${nm-editor}";
-                    interval = 1;
-                };
+            "network" = let
+                nm-editor = "${pkgs.networkmanagerapplet}/bin/nm-connection-editor";
+            in {
+                format-wifi = "󰖩 {essid} ";
+                format-ethernet = "󰈀";
+                format-alt = "󰤨    {bandwidthDownBytes}";
+                format-disconnected = "󰤭";
+                tooltip-format = "{ipaddr}/{ifname} via {gwaddr} ({signalStrength}%)";
+                on-click-right = "${nm-editor}";
+                interval = 1;
+            };
 
             "custom/powermenu" = {
                 "format" = "";

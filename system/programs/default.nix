@@ -1,7 +1,4 @@
-{
-    pkgs,
-    ...
-}: {
+{pkgs, ...}: {
     imports = [
         ./niri.nix
         ./steam.nix
