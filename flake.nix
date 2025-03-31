@@ -28,6 +28,11 @@
         misumisumi-dotfiles = {
             url = "github:misumisumi/nixos-desktop-config";
         };
+
+        alejandra = {
+            url = "github:kamadorueda/alejandra";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
     };
 
     outputs = {
@@ -40,6 +45,7 @@
 
         system = "x86_64-linux";
         pkgs = nixpkgs.legacyPackages.${system};
+        formatter = inputs.alejandra.defaultPackage.${system};
     in {
         # Your custom packages
         # Accessible through 'nix build', 'nix shell', etc
@@ -47,7 +53,7 @@
 
         # Formatter for your nix files, available through 'nix fmt'
         # Other options beside 'alejandra' include 'nixpkgs-fmt'
-        formatter = pkgs.alejandra;
+        formatter.${system} = formatter;
 
         # Your custom packages and modifications, exported as overlays
         overlays = import ./overlays {inherit inputs;};
@@ -91,7 +97,9 @@
         };
 
         devShells.${system}.default = pkgs.mkShell {
-            packages = with pkgs; [
+            packages = [
+                formatter
+            ] ++ (with pkgs; [
                 fd
                 git
                 jq
@@ -101,7 +109,7 @@
                 nix-prefetch-git
                 nvd
                 update-nix-fetchgit
-            ];
+            ]);
         };
     };
 }
