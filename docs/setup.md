@@ -1,8 +1,8 @@
 # SETUP (Notes to self)
 
-1. Boot into iso
+1. Boot into ISO
 2. Connect to non-institute wifi
-3. Procced to install NixOS
+3. Procced to install NixOS and make sure to label the root partition as ROOT and boot partition as SYSTEM
 4. After installation, install warp
     - Put this into `/etc/nixos/configuration.nix`
     ```
@@ -21,17 +21,6 @@
     warp-cli register
     warp-cli connect
     ```
-5. Setup flakes by adding `nix.settings.experimental-features = [ "nix-command" "flakes" ];` to `/etc/nixos/configuration.nix` and rebuild with `sudo nixos-rebuild test`
-6. Download the [dotfiles](https://github.com/Vortriz/nixos-dots) to `Home` and rebuild with `sudo nixos-rebuild switch --flake ~/dotfiles/`, then reboot
-7. Delete `dotfiles` locally and clone [dotfiles](https://github.com/Vortriz/nixos-dots)
-8. Add mounts
-    - Get relevant partitions by running `sudo blkid`
-    - Put this into `hardware-configuration.nix`
-    ```
-    fileSystems."/run/media/<LABEL>" =
-    { device = "/dev/disk/by-uuid/<UUID>";
-    };
-    ```
-    - Rebuild with `nh os test`
-9. Run `bash post-install` from `dotfiles`
-10. Run `bash rebuild` to finish off
+5. Enter nix shell having git with `nix-shell -p git`. Then clone dotfiles with `git clone https://github.com/Vortriz/dotfiles` and exit the shell.
+6. Then cd into `dotfiles` and enter `nix-shell`. Run `bash post-install`.
+7. Run `just deploy` to finish off.
