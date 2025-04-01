@@ -8,8 +8,8 @@
                     "editor.detectIndentation" = false;
                     "editor.tabSize" = 4;
                     "editor.defaultFormatter" = "kamadorueda.alejandra";
-                    "editor.formatOnPaste" = true;
-                    "editor.formatOnSave" = true;
+                    "editor.formatOnPaste" = false;
+                    "editor.formatOnSave" = false;
                     "editor.formatOnType" = false;
                 };
                 "[typst]" = {
