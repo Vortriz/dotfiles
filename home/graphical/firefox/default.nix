@@ -36,7 +36,7 @@ in {
                 order = ["searxng" "google" "mynixos" "github"];
 
                 engines = let
-                    engine = (args: {
+                    engine = args: {
                         icon = "${args.icon}";
                         updateInterval = 24 * 60 * 60 * 1000;
                         definedAliases = ["@${args.alias}"];
@@ -51,7 +51,7 @@ in {
                                 ];
                             }
                         ];
-                    });
+                    };
                 in {
                     "bing".metaData.hidden = true;
                     "amazondotcom-us".metaData.hidden = true;
