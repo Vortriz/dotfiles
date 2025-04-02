@@ -1575,3 +1575,25 @@ Added packages:
 [A.]  #3  poppler-qt5                             24.02.0
 [A.]  #4  vscode-extension-kamadorueda-alejandra  1.0.0
 Closure size: 7841 -> 7845 (180 paths added, 176 paths removed, delta +4, disk usage +11.1MiB).
+
+---
+
+02/04/25 10:00:52 PM IST
+<<< /nix/var/nix/profiles/system-100-link
+>>> /nix/var/nix/profiles/system-101-link
+Version changes:
+[U.]  #01  btrfs-progs             6.13 -> 6.14
+[U.]  #02  deno                    2.2.4 -> 2.2.6
+[U.]  #03  electron                34.3.3 -> 34.4.1
+[U.]  #04  electron-unwrapped      34.3.3 -> 34.4.1
+[U.]  #05  fzf                     0.60.3, 0.60.3-fish-completions, 0.60.3-man -> 0.61.0, 0.61.0-fish-completions, 0.61.0-man
+[U.]  #06  hypridle                0.1.5 -> 0.1.6
+[C.]  #07  julia                   <none>, 1.11.1 -> <none>, 1.11.4
+[U.]  #08  nixos-system-nixos      25.05.20250330.52faf48 -> 25.05.20250331.77b584d
+[C.]  #09  nss                     3.101.2 x2, 3.101.2-dev, 3.101.2-man, 3.109 -> 3.101.2 x2, 3.101.2-dev, 3.101.2-man, 3.110
+[C.]  #10  python3.12-httpcore     1.0.7 -> 1.0.7 x2
+[C.]  #11  python3.12-httpx        0.28.1 -> 0.28.1 x2
+[U.]  #12  python3.12-poetry       2.1.1 -> 2.1.2
+[U.]  #13  python3.12-poetry-core  2.1.1 -> 2.1.2
+[C.]  #14  python3.12-rapidfuzz    3.12.2 -> 3.12.2 x2
+Closure size: 7845 -> 7848 (149 paths added, 146 paths removed, delta +3, disk usage +120.1MiB).
