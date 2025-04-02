@@ -7,16 +7,10 @@
                 "[nix]" = {
                     "editor.detectIndentation" = false;
                     "editor.tabSize" = 4;
-                    "editor.defaultFormatter" = "kamadorueda.alejandra";
-                    "editor.formatOnPaste" = false;
-                    "editor.formatOnSave" = false;
-                    "editor.formatOnType" = false;
                 };
                 "[typst]" = {
                     "editor.wordSeparators" = "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?";
                 };
-
-                "alejandra.program" = "alejandra";
 
                 "diffEditor.ignoreTrimWhitespace" = false;
                 "direnv.restart.automatic" = true;
@@ -53,7 +47,6 @@
                 james-yu.latex-workshop
                 jnoortheen.nix-ide
                 julialang.language-julia
-                kamadorueda.alejandra
                 mikestead.dotenv
                 mkhl.direnv
                 ms-python.isort
