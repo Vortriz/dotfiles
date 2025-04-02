@@ -13,7 +13,10 @@
 
         stylix.url = "github:danth/stylix";
 
-        scientific-fhs.url = "github:manuelbb-upb/scientific-fhs";
+        scientific-fhs = {
+            url = "github:Vortriz/scientific-fhs";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
 
         ulauncher = {
             url = "github:Ulauncher/Ulauncher";
