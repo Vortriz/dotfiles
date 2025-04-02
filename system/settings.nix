@@ -1,4 +1,9 @@
 {pkgs, ...}: {
+    documentation = {
+        man.enable = false;
+        info.enable = false;
+    };
+
     environment.variables = {
         EDITOR = "micro";
 
