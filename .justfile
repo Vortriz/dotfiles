@@ -11,20 +11,15 @@ export FLAKE := `echo $PWD`
     nh os test $FLAKE
 
 @deploy:
-    #!/usr/bin/env fish
     echo -e "Rebuilding new generation...\n"
 
     nh os switch $FLAKE
 
-    set timestamp $(date '+%x %X')
-    set gen $(nixos-rebuild list-generations --flake $FLAKE | grep -oP "[0-9]*(?= current)")
-    set branch $(git branch --show-current)
-
-    echo -e "\n---\n\n$timestamp" >> $FLAKE/build.log
+    echo -e "\n---\n\n$(date '+%x %X')" >> $FLAKE/build.log
     nvd diff $(command ls -d1v /nix/var/nix/profiles/system-*-link|tail -n 2) >> $FLAKE/build.log
 
     git add -A
-    git commit -m "deployed $gen via $branch"
+    git commit -m "deployed $(nixos-rebuild list-generations --flake $FLAKE | grep -oP '[0-9]*(?= current)')"
 
 @update:
     echo -e "Updating flake and git fetcher inputs...\n"
