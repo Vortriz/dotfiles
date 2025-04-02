@@ -1597,3 +1597,50 @@ Version changes:
 [U.]  #13  python3.12-poetry-core  2.1.1 -> 2.1.2
 [C.]  #14  python3.12-rapidfuzz    3.12.2 -> 3.12.2 x2
 Closure size: 7845 -> 7848 (149 paths added, 146 paths removed, delta +3, disk usage +120.1MiB).
+
+---
+
+02/04/25 10:31:47 PM IST
+<<< /nix/var/nix/profiles/system-101-link
+>>> /nix/var/nix/profiles/system-102-link
+Version changes:
+[C*]  #01  acl                   2.3.2 x2, 2.3.2-bin, 2.3.2-doc, 2.3.2-man -> 2.3.2 x2, 2.3.2-bin, 2.3.2-doc
+[C*]  #02  attr                  2.5.2 x2, 2.5.2-bin, 2.5.2-doc, 2.5.2-man -> 2.5.2 x2, 2.5.2-bin, 2.5.2-doc
+[C*]  #03  bash-interactive      5.2p37 x3, 5.2p37-dev, 5.2p37-doc, 5.2p37-fish-completions, 5.2p37-info, 5.2p37-man x2 -> 5.2p37 x3, 5.2p37-dev, 5.2p37-doc, 5.2p37-fish-completions, 5.2p37-man x2
+[C*]  #04  bind                  9.20.6-host, 9.20.6-lib, 9.20.6-man -> 9.20.6-host, 9.20.6-lib
+[C*]  #05  coreutils-full        9.6, 9.6_fish-completions, 9.6-info -> 9.6, 9.6_fish-completions
+[C*]  #06  diffutils             3.10, 3.10_fish-completions, 3.10-info -> 3.10, 3.10_fish-completions
+[C*]  #07  e2fsprogs             1.47.2, 1.47.2-bin, 1.47.2-info, 1.47.2-man -> 1.47.2, 1.47.2-bin
+[C*]  #08  findutils             4.10.0, 4.10.0_fish-completions, 4.10.0-info -> 4.10.0, 4.10.0_fish-completions
+[C*]  #09  fuse                  2.9.9, 2.9.9-bin, 2.9.9-man, 3.16.2, 3.16.2-bin, 3.16.2-man -> 2.9.9, 2.9.9-bin, 3.16.2, 3.16.2-bin
+[C*]  #10  gawk                  5.3.1 x2, 5.3.1-info, 5.3.1-man -> 5.3.1 x2, 5.3.1-man
+[C*]  #11  gnugrep               3.11 x2, 3.11_fish-completions, 3.11-info -> 3.11 x2, 3.11_fish-completions
+[C*]  #12  gnused                4.9 x2, 4.9_fish-completions, 4.9-info -> 4.9 x2, 4.9_fish-completions
+[C*]  #13  gnutar                1.35 x2, 1.35_fish-completions, 1.35-info -> 1.35 x2, 1.35_fish-completions
+[C*]  #14  gzip                  1.13 x2, 1.13-info, 1.13-man -> 1.13 x2, 1.13-man
+[C*]  #15  iptables              1.8.11 x2, 1.8.11-man -> 1.8.11 x2
+[C*]  #16  libressl              4.0.0, 4.0.0_fish-completions, 4.0.0-man, 4.0.0-nc -> 4.0.0, 4.0.0_fish-completions, 4.0.0-nc
+[C*]  #17  linux-pam             1.6.1 x2, 1.6.1-doc, 1.6.1-man -> 1.6.1 x2, 1.6.1-doc
+[C*]  #18  lm-sensors            3.6.0 x2, 3.6.0-bin, 3.6.0-doc, 3.6.0-man -> 3.6.0 x2, 3.6.0-bin, 3.6.0-doc
+[C*]  #19  lvm2                  2.03.31, 2.03.31-bin, 2.03.31-lib x2, 2.03.31-man -> 2.03.31, 2.03.31-bin, 2.03.31-lib x2
+[C.]  #20  man-cache             <none> x2 -> <none>
+[C-]  #21  man-db                2.13.0, 2.13.0-doc, 2.13.0-fish-completions x2 -> 2.13.0, 2.13.0-fish-completions
+[C*]  #22  nano                  8.3, 8.3_fish-completions, 8.3-info -> 8.3, 8.3_fish-completions
+[C*]  #23  neofetch-unstable     2021-12-10, 2021-12-10-man -> 2021-12-10
+[C*]  #24  ntfs3g                2022.10.3, 2022.10.3-doc, 2022.10.3-man -> 2022.10.3, 2022.10.3-doc
+[C*]  #25  p7zip                 17.06, 17.06-doc, 17.06-lib, 17.06-man -> 17.06, 17.06-doc, 17.06-lib
+[C*]  #26  pipewire              1.4.1 x2, 1.4.1-dev, 1.4.1-doc, 1.4.1-man -> 1.4.1 x2, 1.4.1-dev, 1.4.1-doc
+[C*]  #27  podman                5.4.1, 5.4.1-man -> 5.4.1
+[C*]  #28  podman-docker-compat  5.4.1, 5.4.1-man -> 5.4.1
+[C*]  #29  strace                6.14, 6.14-man -> 6.14
+[C*]  #30  systemd               <none>, 257.3 x2, 257.3-man -> <none>, 257.3 x2
+[C*]  #31  zsh                   5.9, 5.9-doc, 5.9-info, 5.9-man -> 5.9, 5.9-doc, 5.9-man
+[C*]  #32  zstd                  1.5.6 x2, 1.5.6-bin x2, 1.5.6-dev, 1.5.6-man -> 1.5.6 x2, 1.5.6-bin x2, 1.5.6-dev
+Removed packages:
+[R.]  #1  alejandra                                               3.1.0
+[R.]  #2  etc-man_db.conf                                         <none>
+[R-]  #3  nixos-configuration-reference-manpage                   <none>
+[R.]  #4  nixos-configuration-reference-manpage_fish-completions  <none>
+[R-]  #5  texinfo-interactive                                     7.1.1, 7.1.1_fish-completions
+[R.]  #6  vscode-extension-kamadorueda-alejandra                  1.0.0
+Closure size: 7848 -> 7806 (16 paths added, 58 paths removed, delta -42, disk usage -36.1MiB).
