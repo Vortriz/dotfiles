@@ -82,8 +82,6 @@ in {
                     };
                 };
             };
-
-            extraConfig = builtins.readFile "${shyfox}/user.js";
         };
 
         policies = {
@@ -109,6 +107,7 @@ in {
                 };
             in
                 listToAttrs [
+                    # find in source page by `byGUID`
                     (extension "ublock-origin" "uBlock0@raymondhill.net")
                     (extension "darkreader" "addon@darkreader.org")
                     (extension "bitwarden-password-manager" "{446900e4-71c2-419f-a6a7-df9c091e268b}")
@@ -118,9 +117,13 @@ in {
                     (extension "raindropio" "jid0-adyhmvsP91nUO8pRv0Mn2VKeB84@jetpack")
                     (extension "sponsorblock" "sponsorBlocker@ajay.app")
                     (extension "userchrome-toggle-extended" "userchrome-toggle-extended@n2ezr.ru")
+                    (extension "markdown-here" "markdown-here-webext@adam.pritchard")
                 ];
         };
     };
+
+    # ShyFox
+    programs.firefox.profiles.default.extraConfig = builtins.readFile "${shyfox}/user.js";
 
     home.file = {
         "${baseDir}/chrome" = {
