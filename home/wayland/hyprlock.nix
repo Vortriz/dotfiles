@@ -23,7 +23,7 @@
             };
 
             # ANIMATION
-            animation = "fade, 0, 0, default";
+            animations.enabled = false;
 
             # INPUT FIELD
             input-field = [
