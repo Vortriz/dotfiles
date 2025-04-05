@@ -1,5 +1,8 @@
-{
-    programs.niri.enable = true;
+{pkgs, ...}: {
+    programs.niri = {
+        enable = true;
+        package = pkgs.niri-unstable;
+    };
 
     niri-flake.cache.enable = true;
 
