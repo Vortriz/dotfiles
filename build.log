@@ -1644,3 +1644,21 @@ Removed packages:
 [R-]  #5  texinfo-interactive                                     7.1.1, 7.1.1_fish-completions
 [R.]  #6  vscode-extension-kamadorueda-alejandra                  1.0.0
 Closure size: 7848 -> 7806 (16 paths added, 58 paths removed, delta -42, disk usage -36.1MiB).
+
+---
+
+05/04/25 05:47:34 PM IST
+<<< /nix/var/nix/profiles/system-102-link
+>>> /nix/var/nix/profiles/system-103-link
+Version changes:
+[U.]  #01  esbuild               0.25.1 -> 0.25.2
+[U.]  #02  firefox               136.0.3 -> 137.0
+[U.]  #03  firefox-unwrapped     136.0.3 -> 137.0
+[C*]  #04  gamescope             <none>, 3.16.2 -> <none>, 3.16.3
+[U.]  #05  nixos-system-nixos    25.05.20250331.77b584d -> 25.05.20250402.2c8d3f4
+[U*]  #06  sof-firmware          2025.01, 2025.01-zstd -> 2025.01.1, 2025.01.1-zstd
+[U.]  #07  wpaperd               1.1.1 -> 1.2.0
+[U.]  #08  yt-dlp                2025.3.27 -> 2025.3.31
+[U.]  #09  zotero-better-bibtex  7.0.9 -> 7.0.14
+[U.]  #10  zotero-zotmoov        1.2.18 -> 1.2.19
+Closure size: 7806 -> 7806 (81 paths added, 81 paths removed, delta +0, disk usage +8.7MiB).
