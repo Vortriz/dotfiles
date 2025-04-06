@@ -46,6 +46,6 @@
         ];
 
         prefer-no-csd = true;
-        screenshot-path = "mnt/SECONDARY/downloads/captures/linux/%Y-%m-%d (%H-%M-%S).png";
+        screenshot-path = "mnt/HOUSE/downloads/captures/linux/%Y-%m-%d (%H-%M-%S).png";
     };
 }

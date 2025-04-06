@@ -7,7 +7,7 @@
         enable = true;
         profiles.default = {
             settings = let
-                path = "/mnt/SECONDARY/nonlinear vault/03 - Resources/Articles"; # TODO: global vars
+                path = "/mnt/HOUSE/nonlinear-vault/03.resources/articles"; # TODO: global vars
                 bbt-citekey-format = "auth.lower + year";
             in {
                 "extensions.update.autoUpdateDefault" = false;

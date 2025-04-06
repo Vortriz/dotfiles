@@ -7,7 +7,7 @@ from time import sleep
 from bs4 import BeautifulSoup
 import aria2p
 
-downloads_dir = "/mnt/SECONDARY/downloads"
+downloads_dir = "/mnt/HOUSE/downloads"
 secret = ""
 # with open(f"{downloads_dir}/secret", "r") as f:
 #     secret = f.read().strip()
