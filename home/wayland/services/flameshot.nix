@@ -7,7 +7,7 @@
                 contrastOpacity = 188;
                 filenamePattern = "%F (%T)";
                 saveAsFileExtension = "png";
-                savePath = "/mnt/SECONDARY/downloads/captures/linux"; # TODO: global vars
+                savePath = "/mnt/HOUSE/downloads/captures/linux"; # TODO: global vars
                 savePathFixed = false;
                 showStartupLaunchMessage = false;
                 startupLaunch = true;
