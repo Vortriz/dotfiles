@@ -6,13 +6,10 @@
 
         stylix.url = "github:danth/stylix";
 
+        niri.url = "github:sodiboo/niri-flake";
+
         home-manager = {
             url = "github:nix-community/home-manager";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-
-        niri = {
-            url = "github:sodiboo/niri-flake";
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
