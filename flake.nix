@@ -8,6 +8,12 @@
 
         niri.url = "github:sodiboo/niri-flake";
 
+        agenix = {
+            url = "github:ryantm/agenix";
+            inputs.nixpkgs.follows = "nixpkgs";
+            inputs.darwin.follows = "";
+        };
+
         home-manager = {
             url = "github:nix-community/home-manager";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -103,6 +109,7 @@
             packages =
                 [
                     formatter
+                    inputs.agenix.packages.${system}.default
                 ]
                 ++ (with pkgs; [
                     fd
