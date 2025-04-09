@@ -71,11 +71,12 @@
         # Printing
         printing.enable = true;
 
-        # TODO: This setups a SSH server. Very important if you're setting up a headless system.
+        # This setups a SSH server. Very important if you're setting up a headless system.
         openssh = {
-            enable = false;
+            enable = true;
 
             settings = {
+                AllowUsers = ["vortriz"];
                 # Opinionated: forbid root login through SSH.
                 PermitRootLogin = "no";
                 # Opinionated: use keys only.
@@ -88,5 +89,25 @@
         udisks2.enable = true;
         gvfs.enable = true;
         devmon.enable = true;
+    };
+
+    systemd.timers."rclone" = {
+        wantedBy = ["timers.target"];
+        wants = ["network.target"];
+        after = ["network.target"];
+        timerConfig = {
+            OnCalendar = "daily";
+            Persistent = true;
+            Unit = "rclone.service";
+        };
+    };
+
+    systemd.services."rclone" = {
+        script = let
+            rclone = "${pkgs.rclone}/bin/rclone sync";
+        in ''
+          ${rclone} /mnt/HOUSE/nonlinear-vault drive-iiser: -P --metadata
+          ${rclone} /mnt/HOUSE/rishi drive-personal: -P --metadata
+        '';
     };
 }

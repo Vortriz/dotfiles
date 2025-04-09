@@ -28,12 +28,12 @@
         ./hm-module.nix
 
         # Other imports
-        # ./core
-        # ./hardware
         ./programs
         ./services.nix
         ./settings.nix
         ./shell.nix
+
+        ../secrets/agenix.nix
     ];
 
     nixpkgs = {
