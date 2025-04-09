@@ -16,6 +16,7 @@
         # inputs.hardware.nixosModules.common-ssd
         inputs.stylix.nixosModules.stylix
         inputs.niri.nixosModules.niri
+        inputs.agenix.nixosModules.default
 
         # You can also split up your configuration and import pieces of it here:
         # ./users.nix
