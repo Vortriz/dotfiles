@@ -1662,3 +1662,65 @@ Version changes:
 [U.]  #09  zotero-better-bibtex  7.0.9 -> 7.0.14
 [U.]  #10  zotero-zotmoov        1.2.18 -> 1.2.19
 Closure size: 7806 -> 7806 (81 paths added, 81 paths removed, delta +0, disk usage +8.7MiB).
+
+---
+
+09/04/25 09:03:25 AM IST
+<<< /nix/var/nix/profiles/system-111-link
+>>> /nix/var/nix/profiles/system-112-link
+Version changes:
+[U.]  #01  acpi-call                                  1.2.2-6.14 -> 1.2.2-6.14.1
+[U.]  #02  adw-gtk3                                   5.6 -> 5.7
+[U*]  #03  bind                                       9.20.6-host, 9.20.6-lib -> 9.20.7-host, 9.20.7-lib
+[U.]  #04  criu                                       4.0 -> 4.1
+[U.]  #05  dart-sass                                  1.86.0 -> 1.86.3
+[U.]  #06  deno                                       2.2.6 -> 2.2.8
+[U*]  #07  distrobox                                  1.8.1, 1.8.1_fish-completions -> 1.8.1.2, 1.8.1.2_fish-completions
+[U.]  #08  electron                                   34.4.1 -> 34.5.0
+[U.]  #09  electron-unwrapped                         34.4.1 -> 34.5.0
+[U.]  #10  eza                                        0.20.24, 0.20.24-man -> 0.21.0, 0.21.0-man
+[U.]  #11  font-awesome                               6.7.1 -> 6.7.2
+[U.]  #12  fzf                                        0.61.0, 0.61.0-fish-completions, 0.61.0-man -> 0.61.1, 0.61.1-fish-completions, 0.61.1-man
+[U.]  #13  gtk-layer-shell                            0.9.0 -> 0.9.1
+[U.]  #14  hyprgraphics                               0.1.2 -> 0.1.3
+[U.]  #15  imagemagick                                7.1.1-46, 7.1.1-46-dev, 7.1.1-46-doc -> 7.1.1-47, 7.1.1-47-dev, 7.1.1-47-doc
+[U.]  #16  initrd-linux                               6.14 -> 6.14.1
+[U.]  #17  kitty                                      0.40.1, 0.40.1-terminfo -> 0.41.1, 0.41.1-terminfo
+[U.]  #18  linux                                      6.14, 6.14-modules, 6.14-modules-shrunk -> 6.14.1, 6.14.1-modules, 6.14.1-modules-shrunk
+[U.]  #19  mesa                                       25.0.2 x2 -> 25.0.3 x2
+[U*]  #20  nano                                       8.3, 8.3_fish-completions -> 8.4, 8.4_fish-completions
+[U*]  #21  niri-unstable                              2025-04-05-c359d24 -> 2025-04-06-430b155
+[U*]  #22  nix                                        2.24.13, 2.24.13-doc, 2.24.13-man -> 2.24.14, 2.24.14-doc, 2.24.14-man
+[U.]  #23  nix-output-monitor                         2.1.5 -> 2.1.6
+[U.]  #24  nixos-system-nixos                         25.05.20250402.2c8d3f4 -> 25.05.20250408.c8cd814
+[U.]  #25  openvpn                                    2.6.13 -> 2.6.14
+[U*]  #26  pfetch                                     1.8.1 -> 1.9.0
+[C.]  #27  rclone                                     1.69.1, 1.69.1-man -> 1.69.1
+[U.]  #28  sdl3                                       3.2.8-lib -> 3.2.10-lib
+[U.]  #29  sioyek                                     2.0.0-unstable-2025-02-20, 2.0.0-unstable-2025-02-20-fish-completions -> 2.0.0-unstable-2025-03-11, 2.0.0-unstable-2025-03-11-fish-completions
+[C.]  #30  stage                                      1-init.sh, 1.03-tex -> 1.03-tex
+[C.]  #31  udev-rules                                 <none> x2 -> <none>
+[U.]  #32  vscode                                     1.98.2 -> 1.99.0
+[U.]  #33  vscode-extension-MS-python-vscode-pylance  2025.3.2 -> 2025.4.1
+[U.]  #34  vscode-extension-ms-python-isort           2023.13.13171013 -> 2025.0.0
+[U.]  #35  vscode-extension-ms-python-python          2025.3.2025031001 -> 2025.4.0
+[U.]  #36  x86_energy_perf_policy                     6.12.21 -> 6.12.22
+[U.]  #37  youtube-music                              3.7.4 -> 3.8.0
+Added packages:
+[A.]  #01  X-Restart-Triggers-sshd     <none>
+[A.]  #02  age                         1.2.1
+[A.]  #03  etc-bash_logout             <none>
+[A.]  #04  rclone.age                  <none>
+[A.]  #05  sshd.conf-final             <none>
+[A.]  #06  sshd.pam                    <none>
+[A.]  #07  unit-rclone.service         <none>
+[A.]  #08  unit-rclone.timer           <none>
+[A.]  #09  unit-script-rclone-start    <none>
+[A.]  #10  unit-script-sshd-pre-start  <none>
+[A.]  #11  unit-sshd.service           <none>
+Removed packages:
+[R.]  #1  extra-utils    <none>
+[R.]  #2  initrd-fsinfo  <none>
+[R.]  #3  keymap         <none>
+[R.]  #4  link-units     <none>
+Closure size: 7809 -> 7813 (259 paths added, 255 paths removed, delta +4, disk usage -1.9MiB).
