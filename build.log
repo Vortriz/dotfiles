@@ -1724,3 +1724,42 @@ Removed packages:
 [R.]  #3  keymap         <none>
 [R.]  #4  link-units     <none>
 Closure size: 7809 -> 7813 (259 paths added, 255 paths removed, delta +4, disk usage -1.9MiB).
+
+---
+
+11/04/25 04:08:01 AM IST
+<<< /nix/var/nix/profiles/system-115-link
+>>> /nix/var/nix/profiles/system-116-link
+Version changes:
+[C.]  #1  hyprgraphics       0.1.2+date=2025-02-08_175c6b2, 0.1.3 -> 0.1.3
+[C.]  #2  hyprlang           0.6.0, 0.6.0+date=2025-03-05_72df386 -> 0.6.0
+[C.]  #3  hyprlock           0.7.0, 0.7.0+date=2025-04-08_87000be -> 0.7.0
+[C.]  #4  hyprutils          0.5.2, 0.5.2+date=2025-03-09_dd1f720 -> 0.5.2
+[U*]  #5  niri-unstable      2025-04-06-430b155 -> 2025-04-10-df94662
+[C.]  #6  python3            3.11.11, 3.12.9 x4, 3.12.9-env x8 -> 3.11.11, 3.12.9 x4, 3.12.9-env x7
+[C.]  #7  source             <none> x15 -> <none> x14
+[C-]  #8  speech-dispatcher  0.11.5 x2 -> 0.11.5
+Removed packages:
+[R.]  #01  desktops                           <none>
+[R.]  #02  dmenu                              5.3
+[R.]  #03  dotconf                            1.4.1
+[R.]  #04  espeak-ng                          1.51.1
+[R.]  #05  etc-X11-xorg.conf.d                00-keyboard.conf
+[R.]  #06  greetd                             0.10.3
+[R.]  #07  greetd.pam                         <none>
+[R.]  #08  greetd.toml                        <none>
+[R.]  #09  hyprlock_greet.conf                <none>
+[R.]  #10  mbrola                             3.3-unstable-2024-01-29
+[R.]  #11  mbrola-bin                         3.3-unstable-2024-01-29
+[R.]  #12  niri_greet.kdl                     <none>
+[R-]  #13  nixos-icons                        0-unstable-2024-04-10
+[R.]  #14  pcaudiolib                         1.3
+[R.]  #15  python3.12-pydbus                  0.6.0
+[R.]  #16  python3.12-pyxdg                   0.28
+[R.]  #17  sonic-unstable                     2020-12-27
+[R.]  #18  steam.desktop                      <none>
+[R.]  #19  svox                               2018-02-14
+[R.]  #20  unit-autovt-tty1.service-disabled  <none>
+[R.]  #21  unit-greetd.service                <none>
+[R.]  #22  uwsm                               0.21.3
+Closure size: 7842 -> 7813 (40 paths added, 69 paths removed, delta -29, disk usage -698.3MiB).
