@@ -14,9 +14,9 @@
         # Or modules from other flakes (such as nixos-hardware):
         # inputs.hardware.nixosModules.common-cpu-amd
         # inputs.hardware.nixosModules.common-ssd
-        inputs.stylix.nixosModules.stylix
-        inputs.niri.nixosModules.niri
         inputs.agenix.nixosModules.default
+        inputs.niri.nixosModules.niri
+        inputs.stylix.nixosModules.stylix
 
         # You can also split up your configuration and import pieces of it here:
         # ./users.nix
@@ -71,8 +71,8 @@
             # Add myself to the trusted users
             trusted-users = ["root" "vortriz"];
             # Add extra Caches
-            extra-substituters = [];
-            extra-trusted-public-keys = [];
+            substituters = [];
+            trusted-public-keys = [];
         };
         # Opinionated: disable channels
         channel.enable = false;

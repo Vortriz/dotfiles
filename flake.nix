@@ -4,42 +4,33 @@
     inputs = {
         nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-        stylix.url = "github:danth/stylix";
-
+        misumisumi-dotfiles.url = "github:misumisumi/nixos-desktop-config";
         niri.url = "github:sodiboo/niri-flake";
+        stylix.url = "github:danth/stylix";
 
         agenix = {
             url = "github:ryantm/agenix";
             inputs.nixpkgs.follows = "nixpkgs";
             inputs.darwin.follows = "";
         };
-
+        alejandra = {
+            url = "github:kamadorueda/alejandra";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
         home-manager = {
             url = "github:nix-community/home-manager";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-
-        scientific-fhs = {
-            url = "github:Vortriz/scientific-fhs";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-
-        ulauncher = {
-            url = "github:Ulauncher/Ulauncher";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-
         misumisumi-flakes = {
             url = "github:misumisumi/flakes";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-
-        misumisumi-dotfiles = {
-            url = "github:misumisumi/nixos-desktop-config";
+        scientific-fhs = {
+            url = "github:Vortriz/scientific-fhs";
+            inputs.nixpkgs.follows = "nixpkgs";
         };
-
-        alejandra = {
-            url = "github:kamadorueda/alejandra";
+        ulauncher = {
+            url = "github:Ulauncher/Ulauncher";
             inputs.nixpkgs.follows = "nixpkgs";
         };
     };

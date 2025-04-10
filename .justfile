@@ -10,6 +10,9 @@ export FLAKE := `echo $PWD`
 @test:
     nh os test $FLAKE
 
+@switch:
+    nh os switch $FLAKE
+
 @deploy:
     echo -e "Rebuilding new generation...\n"
 
