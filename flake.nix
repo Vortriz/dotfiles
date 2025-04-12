@@ -41,22 +41,21 @@
     outputs = {
         self,
         nixpkgs,
-        home-manager,
         ...
     } @ inputs: let
         inherit (self) outputs;
 
-        system = "x86_64-linux";
-        pkgs = nixpkgs.legacyPackages.${system};
-        formatter = inputs.alejandra.defaultPackage.${system};
-    in {
+        forAllSystems = nixpkgs.lib.genAttrs ["x86_64-linux"];
+        forAllPkgs = f: forAllSystems (system: f nixpkgs.legacyPackages.${system});
+    in rec {
         # Your custom packages
         # Accessible through 'nix build', 'nix shell', etc
-        packages = import ./pkgs pkgs;
+        packages = forAllPkgs (pkgs: import ./pkgs pkgs);
 
         # Formatter for your nix files, available through 'nix fmt'
         # Other options beside 'alejandra' include 'nixpkgs-fmt'
-        formatter.${system} = formatter;
+        # formatter = forAllPkgs (pkgs: pkgs.alejandra); # TODO: switch to this version when https://nixpk.gs/pr-tracker.html?pr=397839
+        formatter = forAllSystems (system: inputs.alejandra.defaultPackage.${system});
 
         # Your custom packages and modifications, exported as overlays
         overlays = import ./overlays {inherit inputs;};
@@ -94,28 +93,27 @@
             };
         };
 
-        homeConfigurations.vortriz = home-manager.lib.homeManagerConfiguration {
-            modules = [
-            ];
-        };
-
-        devShells.${system}.default = pkgs.mkShell {
-            packages =
-                [
-                    formatter
-                    inputs.agenix.packages.${system}.default
-                ]
-                ++ (with pkgs; [
-                    fd
-                    git
-                    jq
-                    just
-                    nh
-                    nix
-                    nix-prefetch-git
-                    nvd
-                    update-nix-fetchgit
-                ]);
-        };
+        devShells = forAllSystems (system: let
+            pkgs = nixpkgs.legacyPackages.${system};
+        in {
+            default = pkgs.mkShell {
+                packages =
+                    [
+                        formatter.${system}
+                        inputs.agenix.packages.${system}.default
+                    ]
+                    ++ (with pkgs; [
+                        fd
+                        git
+                        jq
+                        just
+                        nh
+                        nix
+                        nix-prefetch-git
+                        nvd
+                        update-nix-fetchgit
+                    ]);
+            };
+        });
     };
 }
