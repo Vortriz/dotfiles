@@ -106,8 +106,8 @@
         script = let
             rclone = "${pkgs.rclone}/bin/rclone sync";
         in ''
-          ${rclone} /mnt/HOUSE/nonlinear-vault drive-iiser: -P --metadata
-          ${rclone} /mnt/HOUSE/rishi drive-personal: -P --metadata
+            ${rclone} /mnt/HOUSE/nonlinear-vault drive-iiser: -P --metadata
+            ${rclone} /mnt/HOUSE/rishi drive-personal: -P --metadata
         '';
     };
 }

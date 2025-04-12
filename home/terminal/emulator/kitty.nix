@@ -7,7 +7,7 @@
         };
 
         extraConfig = ''
-          map ctrl+backspace send_text all \x17
+            map ctrl+backspace send_text all \x17
         '';
     };
 
