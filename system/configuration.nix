@@ -30,6 +30,8 @@
 
         # Other imports
         ./programs
+
+        ./cosmic.nix
         ./services.nix
         ./settings.nix
         ./shell.nix

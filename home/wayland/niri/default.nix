@@ -43,6 +43,7 @@
         [
             "systemctl --user reset-failed waybar.service"
             "aria2c --enable-rpc --rpc-listen-all"
+            "cosmic-ext-alternative-startup"
         ];
 
         prefer-no-csd = true;
