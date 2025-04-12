@@ -16,6 +16,7 @@
         # inputs.hardware.nixosModules.common-ssd
         inputs.agenix.nixosModules.default
         inputs.niri.nixosModules.niri
+        inputs.nixos-cosmic.nixosModules.default
         inputs.stylix.nixosModules.stylix
 
         # You can also split up your configuration and import pieces of it here:
@@ -71,8 +72,8 @@
             # Add myself to the trusted users
             trusted-users = ["root" "vortriz"];
             # Add extra Caches
-            substituters = [];
-            trusted-public-keys = [];
+            substituters = ["https://cosmic.cachix.org/"];
+            trusted-public-keys = ["cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE="];
         };
         # Opinionated: disable channels
         channel.enable = false;

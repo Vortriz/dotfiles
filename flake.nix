@@ -4,6 +4,9 @@
     inputs = {
         nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
+        nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
+        nikpkgs.follows = "nixos-cosmic/nixpkgs";
+
         misumisumi-dotfiles.url = "github:misumisumi/nixos-desktop-config";
         niri.url = "github:sodiboo/niri-flake";
         stylix.url = "github:danth/stylix";

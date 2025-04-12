@@ -1,5 +1,6 @@
 {pkgs, ...}: {
     imports = [
+        ./cosmic-greeter.nix
         ./niri.nix
         ./steam.nix
         ./stylix.nix
