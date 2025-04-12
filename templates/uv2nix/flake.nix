@@ -130,8 +130,8 @@
                         LD_LIBRARY_PATH = lib.makeLibraryPath pkgs.pythonManylinuxPackages.manylinux1;
                     };
                 shellHook = ''
-                  unset PYTHONPATH
-                  uv venv
+                    unset PYTHONPATH
+                    uv venv
                 '';
             };
         };
