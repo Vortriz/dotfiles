@@ -109,6 +109,7 @@
                         just
                         nh
                         nix
+                        nix-init
                         nix-prefetch-git
                         nvd
                         update-nix-fetchgit
