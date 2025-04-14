@@ -1,13 +1,17 @@
 {
+    osConfig,
     inputs,
     pkgs,
     ...
-}: {
+}: let
+    storageDir = osConfig.var.storageDir;
+in {
     programs.zotero = {
         enable = true;
+
         profiles.default = {
             settings = let
-                path = "/mnt/HOUSE/nonlinear-vault/03.resources/articles"; # TODO: global vars
+                path = "${storageDir}/nonlinear-vault/03.resources/articles";
                 bbt-citekey-format = "auth.lower + year";
             in {
                 "extensions.update.autoUpdateDefault" = false;

@@ -17,9 +17,9 @@
             sponge
         ]
         ++ (with pkgs; [
+            bat
             fd
             fzf
-            bat
         ]);
 
     home.sessionVariables = {

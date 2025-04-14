@@ -1,12 +1,12 @@
-# This is your system's configuration file.
-# Use this to configure your system environment (it replaces /etc/nixos/configuration.nix)
 {
-    inputs,
-    outputs,
-    lib,
     config,
+    inputs,
+    lib,
+    outputs,
     ...
-}: {
+}: let
+    username = config.var.username;
+in {
     imports = [
         # If you want to use modules your own flake exports (from modules/nixos):
         # outputs.nixosModules.example
@@ -19,9 +19,6 @@
         inputs.nixos-cosmic.nixosModules.default
         inputs.stylix.nixosModules.stylix
 
-        # You can also split up your configuration and import pieces of it here:
-        # ./users.nix
-
         # Import your generated (nixos-generate-config) hardware configuration
         ./hardware-configuration.nix
 
@@ -30,9 +27,11 @@
 
         # Other imports
         ./programs
+
         ./services.nix
         ./settings.nix
         ./shell.nix
+        ./variables.nix
 
         ../secrets/agenix.nix
     ];
@@ -46,13 +45,6 @@
             # You can also add overlays exported from other flakes:
             # neovim-nightly-overlay.overlays.default
             inputs.niri.overlays.niri
-
-            # Or define it inline, for example:
-            # (final: prev: {
-            #     hi = final.hello.overrideAttrs (oldAttrs: {
-            #         patches = [ ./change-hello-to-hi.patch ];
-            #     });
-            # })
         ];
         # Configure your nixpkgs instance
         config = {
@@ -70,7 +62,7 @@
             # Workaround for https://github.com/NixOS/nix/issues/9574
             nix-path = config.nix.nixPath;
             # Add myself to the trusted users
-            trusted-users = ["root" "vortriz"];
+            trusted-users = ["root" username];
             # Add extra Caches
             substituters = ["https://cosmic.cachix.org/" "https://yazi.cachix.org"];
             trusted-public-keys = ["cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" "yazi.cachix.org-1:Dcdz63NZKfvUCbDGngQDAZq6kOroIrFoyO064uvLh8k="];
@@ -84,7 +76,7 @@
     };
 
     users.users = {
-        vortriz = {
+        ${username} = {
             isNormalUser = true;
             openssh.authorizedKeys.keys = [
                 # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect

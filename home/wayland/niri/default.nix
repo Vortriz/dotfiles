@@ -1,4 +1,10 @@
-{pkgs, ...}: {
+{
+    osConfig,
+    pkgs,
+    ...
+}: let
+    storageDir = osConfig.var.storageDir;
+in {
     imports = [
         ./binds.nix
         ./window-rules.nix
@@ -46,6 +52,6 @@
         ];
 
         prefer-no-csd = true;
-        screenshot-path = "mnt/HOUSE/downloads/captures/linux/%Y-%m-%d (%H-%M-%S).png";
+        screenshot-path = "${storageDir}/downloads/captures/linux/%Y-%m-%d (%H-%M-%S).png";
     };
 }

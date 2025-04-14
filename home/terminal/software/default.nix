@@ -19,7 +19,7 @@
         magic-wormhole
         ookla-speedtest
         pandoc
-        tealdeer
         superfile
+        tealdeer
     ];
 }

@@ -1,13 +1,13 @@
 {
-    pkgs,
     config,
+    pkgs,
     ...
 }: {
     stylix = {
         enable = true;
         autoEnable = false;
 
-        image = ../../assets/wallpapers/25.png; # TODO: globalize this
+        image = ../../assets/wallpapers/25.png;
 
         base16Scheme = {
             base00 = "0d1117"; # Default bg

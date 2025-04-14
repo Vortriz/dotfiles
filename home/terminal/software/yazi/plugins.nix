@@ -102,27 +102,14 @@
 
     # dependencies
     home.packages = with pkgs; [
-        # glow-yazi
-        glow
-
-        # mediainfo-yazi
-        mediainfo
-        ffmpeg-full
-
-        # ouch-yazi
-        ouch
-
-        # restore-yazi
-        trash-cli
-
-        # office
-        poppler-utils
-        libreoffice
-
-        # drag and drop
-        ripdrag
-
-        # mount-yazi
-        udisks
+        ffmpeg-full # mediainfo-yazi
+        glow # glow-yazi
+        libreoffice # office
+        mediainfo # mediainfo-yazi
+        ouch # ouch-yazi
+        poppler-utils # office
+        ripdrag # drag and drop
+        trash-cli # restore-yazi
+        udisks # mount-yazi
     ];
 }

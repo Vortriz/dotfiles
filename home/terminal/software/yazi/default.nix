@@ -1,8 +1,8 @@
 {
     imports = [
-        ./settings.nix
         ./keymap.nix
         ./plugins.nix
+        ./settings.nix
     ];
 
     programs.yazi = {

@@ -1,9 +1,11 @@
-{
+{osConfig, ...}: let
+    downloadsDir = osConfig.var.downloadsDir;
+in {
     programs.aria2 = {
         enable = true;
 
         settings = {
-            dir = "/mnt/HOUSE/downloads/.tmp"; # TODO: global vars
+            dir = "${downloadsDir}/.tmp";
             max-concurrent-downloads = 4;
             split = 8;
             max-connection-per-server = 8;

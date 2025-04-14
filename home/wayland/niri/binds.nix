@@ -1,7 +1,7 @@
 {
-    pkgs,
-    lib,
     config,
+    lib,
+    pkgs,
     ...
 }: {
     programs.niri.settings.binds = with config.lib.niri.actions; let
