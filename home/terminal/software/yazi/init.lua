@@ -1,4 +1,14 @@
--- You can configure your bookmarks by lua language
+-- disabled: because broken
+-- -- auto-layout
+-- require("auto-layout")
+
+-- custom-shell
+require("custom-shell"):setup({
+    history_path = "default",
+    save_history = true,
+})
+
+-- yamb
 local bookmarks = {}
 
 local path_sep = package.config:sub(1, 1)
@@ -17,12 +27,3 @@ require("yamb"):setup {
     path = (ya.target_family() == "windows" and os.getenv("APPDATA") .. "\\yazi\\config\\bookmark") or
                 (os.getenv("HOME") .. "/.config/yazi/bookmark"),
 }
-
--- custom-shell
-require("custom-shell"):setup({
-    history_path = "default",
-    save_history = true,
-})
-
--- auto-layout
-require("auto-layout")

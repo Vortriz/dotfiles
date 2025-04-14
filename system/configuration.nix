@@ -72,8 +72,8 @@
             # Add myself to the trusted users
             trusted-users = ["root" "vortriz"];
             # Add extra Caches
-            substituters = ["https://cosmic.cachix.org/"];
-            trusted-public-keys = ["cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE="];
+            substituters = ["https://cosmic.cachix.org/" "https://yazi.cachix.org"];
+            trusted-public-keys = ["cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" "yazi.cachix.org-1:Dcdz63NZKfvUCbDGngQDAZq6kOroIrFoyO064uvLh8k="];
         };
         # Opinionated: disable channels
         channel.enable = false;

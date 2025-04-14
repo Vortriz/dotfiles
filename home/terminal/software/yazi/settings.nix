@@ -42,6 +42,28 @@
                     run = "mediainfo";
                 }
 
+                # office
+                {
+                    mime = "application/openxmlformats-officedocument.*";
+                    run = "office";
+                }
+                {
+                    mime = "application/oasis.opendocument.*";
+                    run = "office";
+                }
+                {
+                    mime = "application/ms-*";
+                    run = "office";
+                }
+                {
+                    mime = "application/msword";
+                    run = "office";
+                }
+                {
+                    name = "*.docx";
+                    run = "office";
+                }
+
                 # ouch
                 {
                     mime = "application/*zip";
@@ -66,28 +88,6 @@
                 {
                     mime = "application/x-xz";
                     run = "ouch";
-                }
-
-                # office
-                {
-                    mime = "application/openxmlformats-officedocument.*";
-                    run = "office";
-                }
-                {
-                    mime = "application/oasis.opendocument.*";
-                    run = "office";
-                }
-                {
-                    mime = "application/ms-*";
-                    run = "office";
-                }
-                {
-                    mime = "application/msword";
-                    run = "office";
-                }
-                {
-                    name = "*.docx";
-                    run = "office";
                 }
             ];
 
