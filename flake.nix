@@ -16,10 +16,6 @@
             inputs.nixpkgs.follows = "nixpkgs";
             inputs.darwin.follows = "";
         };
-        alejandra = {
-            url = "github:kamadorueda/alejandra";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
         home-manager = {
             url = "github:nix-community/home-manager";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -53,9 +49,7 @@
         packages = forAllPkgs (pkgs: import ./pkgs pkgs);
 
         # Formatter for your nix files, available through 'nix fmt'
-        # Other options beside 'alejandra' include 'nixpkgs-fmt'
-        # formatter = forAllPkgs (pkgs: pkgs.alejandra); # TODO: switch to this version when https://nixpk.gs/pr-tracker.html?pr=397839
-        formatter = forAllSystems (system: inputs.alejandra.defaultPackage.${system});
+        formatter = forAllPkgs (pkgs: pkgs.alejandra);
 
         # Your custom packages and modifications, exported as overlays
         overlays = import ./overlays {inherit inputs;};
