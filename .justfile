@@ -19,7 +19,7 @@ export FLAKE := `echo $PWD`
     nh os switch $FLAKE
 
     echo -e "\n---\n\n$(date '+%x %X')" >> $FLAKE/build.log
-    nvd diff $(command ls -d1v /nix/var/nix/profiles/system-*-link|tail -n 2) >> $FLAKE/build.log
+    nvd diff $(command rg -N '>>> (/nix/var/nix/profiles/system-[0-9]+-link)' --only-matching --replace '$1' build.log | tail -1) $(command ls -d1v /nix/var/nix/profiles/system-*-link|tail -n 1) >> $FLAKE/build.log
 
     git add -A
     git commit -m "deployed $(nixos-rebuild list-generations --flake $FLAKE | grep -oP '[0-9]*(?= current)')"
