@@ -1,4 +1,14 @@
-{pkgs, ...}: {
+{
+    config,
+    pkgs,
+    ...
+}: let
+    dotfilesDir = config.var.dotfilesDir;
+    defaultLocale = config.var.defaultLocale;
+    extraLocale = config.var.extraLocale;
+    hostname = config.var.hostname;
+    timeZone = config.var.timeZone;
+in {
     documentation = {
         man.enable = false;
         info.enable = false;
@@ -8,7 +18,7 @@
         EDITOR = "micro";
 
         # For nh
-        FLAKE = "$HOME/dotfiles/";
+        FLAKE = dotfilesDir;
 
         # For OpenGL applications in shell.nix/flake.nix (looking at you GLMakie)
         LD_LIBRARY_PATH = "/run/opengl-driver/lib:/run/opengl-driver-32/lib";
@@ -44,22 +54,22 @@
     ];
 
     i18n = {
-        defaultLocale = "en_IN";
+        defaultLocale = defaultLocale;
         extraLocaleSettings = {
-            LC_ADDRESS = "en_IN";
-            LC_IDENTIFICATION = "en_IN";
-            LC_MEASUREMENT = "en_IN";
-            LC_MONETARY = "en_IN";
-            LC_NAME = "en_IN";
-            LC_NUMERIC = "en_IN";
-            LC_PAPER = "en_IN";
-            LC_TELEPHONE = "en_IN";
-            LC_TIME = "en_IN";
+            LC_ADDRESS = extraLocale;
+            LC_IDENTIFICATION = extraLocale;
+            LC_MEASUREMENT = extraLocale;
+            LC_MONETARY = extraLocale;
+            LC_NAME = extraLocale;
+            LC_NUMERIC = extraLocale;
+            LC_PAPER = extraLocale;
+            LC_TELEPHONE = extraLocale;
+            LC_TIME = extraLocale;
         };
     };
 
     networking = {
-        hostName = "nixos";
+        hostName = hostname;
 
         # Enables wireless support via wpa_supplicant.
         # wireless.enable = true;
@@ -80,12 +90,12 @@
     };
 
     security = {
-        pam.services = {
-            kwallet = {
-                name = "kdewallet";
-                enableKwallet = false;
-            };
-        };
+        # pam.services = {
+        #     kwallet = {
+        #         name = "kdewallet";
+        #         enableKwallet = false;
+        #     };
+        # };
 
         # for sound and something else too
         rtkit.enable = true;
@@ -95,7 +105,7 @@
     };
 
     time = {
-        timeZone = "Asia/Kolkata";
+        timeZone = timeZone;
         hardwareClockInLocalTime = true;
     };
 

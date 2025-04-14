@@ -1,4 +1,10 @@
-{pkgs, ...}: {
+{
+    osConfig,
+    pkgs,
+    ...
+}: let
+    downloadsDir = osConfig.var.downloadsDir;
+in {
     services.flameshot = {
         enable = true;
 
@@ -7,7 +13,7 @@
                 contrastOpacity = 188;
                 filenamePattern = "%F (%T)";
                 saveAsFileExtension = "png";
-                savePath = "/mnt/HOUSE/downloads/captures/linux"; # TODO: global vars
+                savePath = "${downloadsDir}/captures/linux";
                 savePathFixed = false;
                 showStartupLaunchMessage = false;
                 startupLaunch = true;

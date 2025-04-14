@@ -22,8 +22,15 @@
                 ];
             };
         in {
-            "bing".metaData.hidden = true;
             "amazondotcom-us".metaData.hidden = true;
+            "bing".metaData.hidden = true;
+
+            "github" = engine rec {
+                url = "https://github.com";
+                icon = "${url}/favicon.ico";
+                alias = "gh";
+                surl = "${url}/search";
+            };
 
             "google" = engine rec {
                 url = "htttps://google.com";
@@ -31,22 +38,18 @@
                 alias = "google";
                 surl = "${url}/search";
             };
-            "searxng" = engine rec {
-                url = "https://search.bus-hit.me";
-                icon = "${url}/favicon.ico";
-                alias = "xng";
-                surl = "${url}/search";
-            };
+
             "mynixos" = engine rec {
                 url = "https://mynixos.com";
                 icon = "${url}/favicon.ico";
                 alias = "nix";
                 surl = "${url}/search";
             };
-            "github" = engine rec {
-                url = "https://github.com";
+
+            "searxng" = engine rec {
+                url = "https://search.bus-hit.me";
                 icon = "${url}/favicon.ico";
-                alias = "gh";
+                alias = "xng";
                 surl = "${url}/search";
             };
         };

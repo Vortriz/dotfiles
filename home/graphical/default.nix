@@ -7,48 +7,25 @@
     ];
 
     home.packages = with pkgs; [
-        # file managers
-        nautilus
-
-        # file transfer
-        warp
-
-        # image viewer
-        nomacs
-
-        # music
-        youtube-music
-
-        # productivity
-        obsidian
-
-        # remote desktop
         anydesk
-
-        # social media
-        discord
-        telegram-desktop
-
-        # system monitor
-        mission-center
-
-        # torrent
-        qbittorrent
-
-        # utilities
+        bottles
         diffpdf
+        discord
         gnome-calculator
         kdePackages.filelight
-        pdfarranger
-        ventoy-full
-
-        # video player
+        mission-center
         mpv
+        nautilus
+        nomacs # image viewer
+        obsidian
+        pdfarranger
+        qbittorrent
+        telegram-desktop
+        ventoy-full
         vlc
-
-        # wine
-        bottles
+        warp
         winetricks
         wineWowPackages.stable
+        youtube-music
     ];
 }

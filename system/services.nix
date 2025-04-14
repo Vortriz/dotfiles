@@ -1,4 +1,11 @@
-{pkgs, ...}: {
+{
+    config,
+    pkgs,
+    ...
+}: let
+    username = config.var.username;
+    storageDir = config.var.storageDir;
+in {
     services = {
         # Asus laptop specific services
         asusd = {
@@ -76,7 +83,7 @@
             enable = true;
 
             settings = {
-                AllowUsers = ["vortriz"];
+                AllowUsers = [username];
                 # Opinionated: forbid root login through SSH.
                 PermitRootLogin = "no";
                 # Opinionated: use keys only.
@@ -104,10 +111,10 @@
 
     systemd.services."rclone" = {
         script = let
-            rclone = "${pkgs.rclone}/bin/rclone sync";
+            rclone = "${pkgs.rclone}/bin/rclone";
         in ''
-            ${rclone} /mnt/HOUSE/nonlinear-vault drive-iiser: -P --metadata
-            ${rclone} /mnt/HOUSE/rishi drive-personal: -P --metadata
+            ${rclone} sync ${storageDir}/nonlinear-vault drive-iiser: -P --metadata
+            ${rclone} sync ${storageDir}/rishi drive-personal: -P --metadata
         '';
     };
 }

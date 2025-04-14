@@ -8,37 +8,22 @@
     ];
 
     environment.systemPackages = with pkgs; [
-        # nix lsp
-        nixd
-
-        # sound
-        sof-firmware
-
-        # when nix is not nixin
-        distrobox
-        boxbuddy
-
-        # KDE
+        android-tools
+        asusctl
+        boxbuddy # when nix is not nixin
+        distrobox # when nix is not nixin
         kdePackages.ksystemlog
         kdePackages.partitionmanager
-
-        # CLI tools
-        asusctl
-
-        neofetch
-        pfetch
-
-        p7zip
-        rar
-        unzip
-
-        lm_sensors
-        pciutils
-        util-linux
-
-        android-tools
-
-        # misc
         linux-wifi-hotspot
+        lm_sensors
+        neofetch
+        nixd # nix lsp
+        p7zip
+        pciutils
+        pfetch
+        rar
+        sof-firmware # sound
+        unzip
+        util-linux
     ];
 }
