@@ -106,6 +106,7 @@
                         nix-init
                         nix-prefetch-git
                         nvd
+                        ripgrep
                         update-nix-fetchgit
                     ]);
             };
