@@ -35,11 +35,14 @@ export FLAKE := `echo $PWD`
 
 alias pf := prefetch
 
-@prefetch url:
-    nix store prefetch-file --json $argv[2] | jq -r .hash
+@fmt:
+    nix fmt .
 
 @gc:
     nh clean all -k 5
 
 @optimise:
     nix store optimise -v
+
+@prefetch url:
+    nix store prefetch-file --json $argv[2] | jq -r .hash
