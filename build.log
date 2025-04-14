@@ -1806,3 +1806,11 @@ Added packages:
 Removed packages:
 [R.]  #1  ilmbase  2.5.10
 Closure size: 7843 -> 7847 (156 paths added, 152 paths removed, delta +4, disk usage +106.6MiB).
+
+---
+
+14/04/25 10:06:23 AM IST
+<<< /nix/var/nix/profiles/system-133-link
+>>> /nix/var/nix/profiles/system-134-link
+No version or selection state changes.
+Closure size: 7847 -> 7847 (20 paths added, 20 paths removed, delta +0, disk usage +2.4KiB).
