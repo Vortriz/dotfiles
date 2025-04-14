@@ -1814,3 +1814,24 @@ Closure size: 7843 -> 7847 (156 paths added, 152 paths removed, delta +4, disk u
 >>> /nix/var/nix/profiles/system-134-link
 No version or selection state changes.
 Closure size: 7847 -> 7847 (20 paths added, 20 paths removed, delta +0, disk usage +2.4KiB).
+
+---
+
+14/04/25 07:47:51 PM IST
+<<< /nix/var/nix/profiles/system-134-link
+>>> /nix/var/nix/profiles/system-136-link
+Version changes:
+[C.]  #1  source  <none> x15 -> <none> x13
+Removed packages:
+[R.]  #01  etc-zinputrc             <none>
+[R.]  #02  etc-zprofile             <none>
+[R.]  #03  etc-zshenv               <none>
+[R.]  #04  etc-zshrc                <none>
+[R.]  #05  hm_.zshenv               <none>
+[R.]  #06  hm_.zshrc                <none>
+[R.]  #07  kwallet.pam              <none>
+[R-]  #08  nix-zsh-completions      0.5.1
+[R-]  #09  zsh                      5.9, 5.9-doc, 5.9-man
+[R.]  #10  zsh-autosuggestions      0.7.1
+[R-]  #11  zsh-syntax-highlighting  0.8.0
+Closure size: 7847 -> 7832 (33 paths added, 48 paths removed, delta -15, disk usage -11.2MiB).
