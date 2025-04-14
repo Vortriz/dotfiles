@@ -1,11 +1,30 @@
 {
     programs.yazi.keymap = {
         manager.prepend_keymap = [
-            # smart-enter
+            # custom-shell
             {
-                on = "<Enter>";
-                run = "plugin smart-enter";
-                desc = "Enter the child directory, or open the file";
+                on = ["'" ";"];
+                run = "plugin custom-shell -- fish --interactive";
+                desc = "custom-shell as default, interactive";
+            }
+            {
+                on = ["'" ":"];
+                run = "plugin custom-shell -- fish --interactive --block";
+                desc = "custom-shell as default, interactive, block";
+            }
+
+            # drag and drop
+            {
+                on = "<C-n>";
+                run = ''shell 'ripdrag "$@" -anx 2>/dev/null &' --confirm'';
+                desc = "Drag and drop";
+            }
+
+            # first-non-directory
+            {
+                on = "G";
+                run = "plugin first-non-directory";
+                desc = "Jumps to the first file";
             }
 
             # jump-to-char
@@ -15,11 +34,11 @@
                 desc = "Jump to char";
             }
 
-            # smart-filter
+            # mount
             {
-                on = "F";
-                run = "plugin smart-filter";
-                desc = "Smart filter";
+                on = "M";
+                run = "plugin mount";
+                desc = "Mount";
             }
 
             # ouch
@@ -29,11 +48,32 @@
                 desc = "Compress with ouch";
             }
 
-            # first-non-directory
+            # restore
             {
-                on = "G";
-                run = "plugin first-non-directory";
-                desc = "Jumps to the first file";
+                on = "R";
+                run = "plugin restore";
+                desc = "Restore last deleted files/folders";
+            }
+
+            # smart-enter
+            {
+                on = "<Enter>";
+                run = "plugin smart-enter";
+                desc = "Enter the child directory, or open the file";
+            }
+
+            # smart-filter
+            {
+                on = "F";
+                run = "plugin smart-filter";
+                desc = "Smart filter";
+            }
+
+            # what-size
+            {
+                on = "?";
+                run = "plugin what-size";
+                desc = "Calc size of selection or cwd";
             }
 
             # yamb
@@ -56,58 +96,6 @@
                 on = ["b" "r"];
                 run = "plugin yamb rename_by_key";
                 desc = "Rename bookmark by key";
-            }
-
-            # what-size
-            {
-                on = "?";
-                run = "plugin what-size";
-                desc = "Calc size of selection or cwd";
-            }
-
-            # restore
-            {
-                on = "R";
-                run = "plugin restore";
-                desc = "Restore last deleted files/folders";
-            }
-
-            # file-navigation-wraparound
-            {
-                on = "<Up>";
-                run = "plugin file-navigation-wraparound -1";
-                desc = "Move cursor up";
-            }
-            {
-                on = "<Down>";
-                run = "plugin file-navigation-wraparound 1";
-                desc = "Move cursor down";
-            }
-
-            # custom-shell
-            {
-                on = ["'" ";"];
-                run = "plugin custom-shell -- fish --interactive";
-                desc = "custom-shell as default, interactive";
-            }
-            {
-                on = ["'" ":"];
-                run = "plugin custom-shell -- fish --interactive --block";
-                desc = "custom-shell as default, interactive, block";
-            }
-
-            # drag and drop
-            {
-                on = "<C-n>";
-                run = ''shell 'ripdrag "$@" -anx 2>/dev/null &' --confirm'';
-                desc = "Drag and drop";
-            }
-
-            # mount
-            {
-                on = "M";
-                run = "plugin mount";
-                desc = "Mount";
             }
         ];
     };
