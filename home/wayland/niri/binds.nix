@@ -34,7 +34,7 @@
             "Mod+Shift+Slash".action = show-hotkey-overlay;
 
             "Mod+T".action = spawn "${pkgs.kitty}/bin/kitty";
-            "Alt+Space".action = spawn "ulauncher";
+            "Alt+Space".action = spawn "walker";
             "Mod+E".action = spawn ["${pkgs.kitty}/bin/kitty" "--app-id=yazi" "-o" "confirm_os_window_close=0" "yazi"];
             "Ctrl+Shift+Escape".action = spawn "${pkgs.mission-center}/bin/missioncenter";
             "Print".action = spawn ["${pkgs.flameshot}/bin/flameshot" "gui"];

@@ -64,8 +64,18 @@ in {
             # Add myself to the trusted users
             trusted-users = ["root" username];
             # Add extra Caches
-            substituters = ["https://cosmic.cachix.org/" "https://yazi.cachix.org"];
-            trusted-public-keys = ["cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" "yazi.cachix.org-1:Dcdz63NZKfvUCbDGngQDAZq6kOroIrFoyO064uvLh8k="];
+            substituters = [
+                "https://cosmic.cachix.org/"
+                "https://yazi.cachix.org"
+                "https://walker.cachix.org"
+                "https://walker-git.cachix.org"
+            ];
+            trusted-public-keys = [
+                "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE="
+                "yazi.cachix.org-1:Dcdz63NZKfvUCbDGngQDAZq6kOroIrFoyO064uvLh8k="
+                "walker.cachix.org-1:fG8q+uAaMqhsMxWjwvk0IMb4mFPFLqHjuvfwQxE4oJM="
+                "walker-git.cachix.org-1:vmC0ocfPWh0S/vRAQGtChuiZBTAe4wiKDeyyXM0/7pM="
+            ];
         };
         # Opinionated: disable channels
         channel.enable = false;
