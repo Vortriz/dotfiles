@@ -1835,3 +1835,12 @@ Removed packages:
 [R.]  #10  zsh-autosuggestions      0.7.1
 [R-]  #11  zsh-syntax-highlighting  0.8.0
 Closure size: 7847 -> 7832 (33 paths added, 48 paths removed, delta -15, disk usage -11.2MiB).
+
+---
+
+15/04/25 04:05:20 PM IST
+<<< /nix/var/nix/profiles/system-136-link
+>>> /nix/var/nix/profiles/system-137-link
+Added packages:
+[A.]  #1  direnv-config  <none>
+Closure size: 7832 -> 7833 (14 paths added, 13 paths removed, delta +1, disk usage +3.3KiB).
