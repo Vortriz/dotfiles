@@ -6,6 +6,7 @@
     imports = [
         ./niri
         ./services
+        ./walker
         ./waybar
 
         ./cursor.nix

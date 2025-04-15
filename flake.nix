@@ -10,6 +10,7 @@
         misumisumi-dotfiles.url = "github:misumisumi/nixos-desktop-config";
         niri.url = "github:sodiboo/niri-flake";
         stylix.url = "github:danth/stylix";
+        walker.url = "github:abenz1267/walker";
 
         agenix = {
             url = "github:ryantm/agenix";
