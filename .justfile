@@ -14,8 +14,6 @@ export FLAKE := `echo $PWD`
     nh os switch $FLAKE
 
 @deploy:
-    echo -e "Rebuilding new generation...\n"
-
     nh os switch $FLAKE
 
     echo -e "\n---\n\n$(date '+%x %X')" >> $FLAKE/build.log
