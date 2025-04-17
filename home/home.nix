@@ -74,10 +74,10 @@ in {
             enable = true;
 
             defaultApplications = {
-                "image/png" = "org.nomacs.ImageLounge.desktop";
-                "image/jpg" = "org.nomacs.ImageLounge.desktop";
-                "image/jpeg" = "org.nomacs.ImageLounge.desktop";
                 "application/pdf" = "sioyek.desktop";
+                "image/jpeg" = "org.nomacs.ImageLounge.desktop";
+                "image/jpg" = "org.nomacs.ImageLounge.desktop";
+                "image/png" = "org.nomacs.ImageLounge.desktop";
                 "x-scheme-handler/tg" = "org.telegram.desktop.desktop";
                 "x-scheme-handler/tonsite" = "org.telegram.desktop.desktop";
             };
