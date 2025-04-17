@@ -1,6 +1,19 @@
 {
     description = "Vortriz's NixOS configuration";
 
+    nixConfig = {
+        substituters = [
+            "https://cosmic.cachix.org/"
+            "https://yazi.cachix.org"
+            "https://niri.cachix.org"
+        ];
+
+        trusted-public-keys = [
+            "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE="
+            "yazi.cachix.org-1:Dcdz63NZKfvUCbDGngQDAZq6kOroIrFoyO064uvLh8k="
+            "niri.cachix.org-1:Wv0OmO7PsuocRKzfDoJ3mulSl7Z6oezYhGhR+3W2964="
+        ];
+    };
     inputs = {
         nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
