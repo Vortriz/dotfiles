@@ -8,7 +8,7 @@
 in {
     programs.walker = {
         enable = true;
-        package = inputs.walker.packages.${pkgs.system}.default;
+        package = pkgs.walker;
         runAsService = true;
 
         config = importTOML ./config.toml;
