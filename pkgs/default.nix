@@ -3,4 +3,6 @@
 pkgs: {
     HelveticaNeueCyr = pkgs.callPackage ./fonts/HelveticaNeueCyr.nix {};
     SFMono = pkgs.callPackage ./fonts/SFMono.nix {};
+
+    xdg-desktop-portal-termfilechooser-custom = pkgs.callPackage ./xdg-desktop-portal-termfilechooser-custom.nix {};
 }
