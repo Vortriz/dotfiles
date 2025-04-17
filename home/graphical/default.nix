@@ -2,6 +2,7 @@
     imports = [
         ./firefox
 
+        ./nemo.nix
         ./sioyek.nix
         ./zotero.nix
     ];
