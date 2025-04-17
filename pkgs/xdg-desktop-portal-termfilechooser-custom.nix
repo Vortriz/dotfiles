@@ -14,12 +14,12 @@ stdenv.mkDerivation {
     pname = "xdg-desktop-portal-termfilechooser";
     version = "1.0.5-1";
 
-      src = fetchFromGitHub {
+    src = fetchFromGitHub {
         owner = "Vortriz";
         repo = "xdg-desktop-portal-termfilechooser";
         rev = "817988fc0d41ec323f40c64ec0c320a475140a09";
         hash = "sha256-BvN0TKXgwcbCmc7bJVWtJ0qPR1KxAsiFrva57guyxZk=";
-      };
+    };
 
     nativeBuildInputs = [
         meson
