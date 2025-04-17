@@ -22,7 +22,7 @@
     warp-cli connect
     ```
 5. Enter nix shell having git with `nix-shell -p git`. Then clone dotfiles with `git clone https://github.com/Vortriz/dotfiles` and exit the shell.
-6. Then cd into `dotfiles` and enter `nix-shell`. Run `bash post-install`.
+6. Then cd into `dotfiles` and enter `nix develop --extra-experimental-features "flakes nix-command"`. Run `bash post-install`.
 7. Run `just deploy` to finish off.
 
 # FIX broken setup
