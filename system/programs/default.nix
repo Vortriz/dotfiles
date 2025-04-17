@@ -7,6 +7,8 @@
         ./warp.nix
     ];
 
+    programs.dconf.enable = true;
+
     environment.systemPackages = with pkgs; [
         android-tools
         asusctl
