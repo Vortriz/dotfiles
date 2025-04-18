@@ -29,10 +29,6 @@
             url = "github:Vortriz/scientific-fhs";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        ulauncher = {
-            url = "github:Ulauncher/Ulauncher";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
     };
 
     outputs = {
@@ -99,9 +95,11 @@
                     ]
                     ++ (with pkgs; [
                         fd
+                        fish
                         git
                         jq
                         just
+                        micro
                         nh
                         nix
                         nix-init

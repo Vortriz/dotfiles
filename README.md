@@ -5,7 +5,7 @@
 | **Shell**    | fish                       |
 | **Terminal** | kitty                      |
 | **WM**       | niri                       |
-| **Launcher** | Ulauncher                  |
+| **Launcher** | walker                     |
 | **Browser**  | firefox (with shyfox theme)|
 
 # People
