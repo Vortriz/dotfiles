@@ -9,6 +9,10 @@
 
         misumisumi-dotfiles.url = "github:misumisumi/nixos-desktop-config";
         niri.url = "github:sodiboo/niri-flake";
+        niri-overview = {
+            url = "github:YaLTeR/niri/2761922210a6c92dc22bbc5c8dce8c3771b02a54";
+            flake = false;
+        };
         nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
         stylix.url = "github:danth/stylix";
         walker.url = "github:abenz1267/walker";
