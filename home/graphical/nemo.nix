@@ -6,7 +6,6 @@
         exec = "${pkgs.nemo-with-extensions}/bin/nemo";
     };
 
-
     dconf = {
         enable = true;
 
