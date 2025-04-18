@@ -42,46 +42,42 @@
                 "workbench.tree.indent" = 12;
             };
 
-            extensions = with pkgs.vscode-extensions; [
-                # language packs et al
-                james-yu.latex-workshop
-                jnoortheen.nix-ide
-                julialang.language-julia
-                mikestead.dotenv
-                mkhl.direnv
-                ms-python.isort
-                ms-python.python
-                ms-python.vscode-pylance
-                ms-toolsai.jupyter
-                ms-toolsai.jupyter-renderers
-                ms-toolsai.vscode-jupyter-cell-tags
-                ms-toolsai.vscode-jupyter-slideshow
-                myriad-dreamin.tinymist
-                nefrob.vscode-just-syntax
-                shd101wyy.markdown-preview-enhanced
-                tamasfe.even-better-toml
-                yzhang.markdown-all-in-one
+            extensions = with pkgs.vscode-marketplace;
+                [
+                    # language packs et al
+                    james-yu.latex-workshop
+                    jnoortheen.nix-ide
+                    julialang.language-julia
+                    mikestead.dotenv
 
-                # themes et al
-                catppuccin.catppuccin-vsc
-                catppuccin.catppuccin-vsc-icons
-                github.github-vscode-theme
-                pkief.material-icon-theme
-                zhuangtongfa.material-theme
+                    ms-python.isort
+                    ms-python.python
+                    ms-python.vscode-pylance
+                    ms-toolsai.jupyter
+                    ms-toolsai.jupyter-renderers
+                    ms-toolsai.vscode-jupyter-cell-tags
+                    myriad-dreamin.tinymist
+                    nefrob.vscode-just-syntax
+                    shd101wyy.markdown-preview-enhanced
+                    tamasfe.even-better-toml
+                    yzhang.markdown-all-in-one
 
-                # misc
-                antfu.slidev
-                donjayamanne.githistory
-                github.copilot
-                github.copilot-chat
-                jock.svg
-                ms-azuretools.vscode-docker
-                ms-vscode-remote.remote-containers
-                ms-vsliveshare.vsliveshare
-                ritwickdey.liveserver
-                rubymaniac.vscode-paste-and-indent
-                tomoki1207.pdf
-            ];
+                    # misc
+                    antfu.slidev
+                    donjayamanne.githistory
+                    jock.svg
+                    mkhl.direnv
+                    ms-azuretools.vscode-docker
+                    ms-vscode-remote.remote-containers
+                    ms-vsliveshare.vsliveshare
+                    ritwickdey.liveserver
+                    rubymaniac.vscode-paste-and-indent
+                    tomoki1207.pdf
+                ]
+                ++ (with pkgs.vscode-marketplace-release; [
+                    github.copilot
+                    github.copilot-chat
+                ]);
         };
     };
 
