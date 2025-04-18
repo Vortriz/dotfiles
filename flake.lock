@@ -849,6 +849,23 @@
         "type": "github"
       }
     },
+    "niri-overview": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1744962625,
+        "narHash": "sha256-Qz/9ukBt+6ivSR83tSQnE0XTg66iElw5R0VoyJEy3jw=",
+        "owner": "YaLTeR",
+        "repo": "niri",
+        "rev": "2761922210a6c92dc22bbc5c8dce8c3771b02a54",
+        "type": "github"
+      },
+      "original": {
+        "owner": "YaLTeR",
+        "repo": "niri",
+        "rev": "2761922210a6c92dc22bbc5c8dce8c3771b02a54",
+        "type": "github"
+      }
+    },
     "niri-stable": {
       "flake": false,
       "locked": {
@@ -1452,6 +1469,7 @@
           "nixpkgs"
         ],
         "niri": "niri",
+        "niri-overview": "niri-overview",
         "nix-vscode-extensions": "nix-vscode-extensions",
         "nixos-cosmic": "nixos-cosmic",
         "nixpkgs": "nixpkgs_11",
