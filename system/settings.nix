@@ -35,7 +35,15 @@ in {
         nerd-fonts.fira-code
         nerd-fonts.jetbrains-mono
 
-        (google-fonts.override {fonts = ["Inter" "Overpass" "Rubik" "Hanken Grotesk" "Open Sans"];})
+        (google-fonts.override {
+            fonts = [
+                "Inter"
+                "Overpass"
+                "Rubik"
+                "Hanken Grotesk"
+                "Open Sans"
+            ];
+        })
     ];
 
     hardware = {
@@ -75,8 +83,8 @@ in {
         # wireless.enable = true;
 
         # proxy = {
-            # default = "http://172.16.2.250:3128";
-            # noProxy = "127.0.0.1,localhost,internal.domain";
+        # default = "http://172.16.2.250:3128";
+        # noProxy = "127.0.0.1,localhost,internal.domain";
         # };
 
         networkmanager.enable = true;
