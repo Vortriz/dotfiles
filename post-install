@@ -11,5 +11,4 @@ fi
 
 echo
 
-read -r -s -p $'All done. Press enter to reboot...'
-reboot
+read -r -s -p $'All done.'
