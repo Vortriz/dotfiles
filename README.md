@@ -5,11 +5,11 @@
 | **Shell**    | fish                       |
 | **Terminal** | kitty                      |
 | **WM**       | niri                       |
-| **Launcher** | walker                     |
+| **Launcher** | sherlock                   |
 | **Browser**  | firefox (with shyfox theme)|
 
 # People
 
-I am thankful to a lot of people. Some from whom I ~~stole~~ borrowed the config are:
+I am thankful to a lot of people, including but not limited to:
 
-Misterio77 (for starter config), vimjoyer (for his excellent videos on nix), ... (more as I remember)
+Misterio77, vimjoyer, sodiboo ... (more as I remember)
