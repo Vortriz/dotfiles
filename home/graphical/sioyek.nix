@@ -24,4 +24,8 @@
             "ui_font" = "Calibri";
         };
     };
+
+    xdg.mimeApps.defaultApplications = {
+        "application/pdf" = "sioyek.desktop";
+    };
 }

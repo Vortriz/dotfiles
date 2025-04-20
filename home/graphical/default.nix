@@ -3,7 +3,9 @@
         ./firefox
 
         ./nemo.nix
+        ./nomacs.nix
         ./sioyek.nix
+        ./telegram.nix
         ./zotero.nix
     ];
 
@@ -17,11 +19,9 @@
         mission-center
         mpv
         nautilus
-        nomacs # image viewer
         obsidian
         pdfarranger
         qbittorrent
-        telegram-desktop
         ventoy-full
         vlc
         warp
