@@ -6583,3 +6583,11 @@ Added packages:
 Removed packages:
 [R.]  #1  superfile  1.2.1
 Closure size: 8149 -> 8153 (18 paths added, 14 paths removed, delta +4, disk usage +2.6MiB).
+
+---
+
+20/04/25 07:00:15 PM IST
+<<< /nix/var/nix/profiles/system-6-link
+>>> /nix/var/nix/profiles/system-9-link
+No version or selection state changes.
+Closure size: 8153 -> 8153 (24 paths added, 24 paths removed, delta +0, disk usage -8B).
