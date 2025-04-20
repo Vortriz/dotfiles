@@ -9,9 +9,5 @@
 in {
     programs.firefox.profiles.default.extraConfig = builtins.readFile "${shyfox}/user.js";
 
-    home.file = {
-        "${baseDir}/chrome" = {
-            source = "${shyfox}/chrome";
-        };
-    };
+    home.file."${baseDir}/chrome".source = "${shyfox}/chrome";
 }
