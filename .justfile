@@ -38,7 +38,7 @@ export FLAKE := `echo $PWD`
 alias pf := prefetch
 
 @fmt:
-    nix fmt .
+    nix fmt . &> /dev/null
 
 @gc:
     nh clean all -k 5
