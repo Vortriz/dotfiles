@@ -6568,3 +6568,18 @@ Removed packages:
 [R.]  #53  walker.service                                        <none>
 [R-]  #54  xf86-input-libinput                                   1.5.0
 Closure size: 7878 -> 8149 (3663 paths added, 3392 paths removed, delta +271, disk usage -85.3MiB).
+
+---
+
+20/04/25 03:59:42 PM IST
+<<< /nix/var/nix/profiles/system-5-link
+>>> /nix/var/nix/profiles/system-6-link
+Version changes:
+[C.]  #1  comma              1.2-tex -> 1.2-tex, 1.9.0
+[C*]  #2  command-not-found  <none> -> <none> x2
+Added packages:
+[A.]  #1  fzy        1.0
+[A.]  #2  nix-index  0.1.8 x2
+Removed packages:
+[R.]  #1  superfile  1.2.1
+Closure size: 8149 -> 8153 (18 paths added, 14 paths removed, delta +4, disk usage +2.6MiB).
