@@ -1,0 +1,222 @@
+{
+    "auto-layout": {
+        "cargoLocks": null,
+        "date": "2025-03-07",
+        "extract": null,
+        "name": "auto-layout",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "626a6016283558b9766fe305e76b694dd9fb6156",
+            "sha256": "sha256-sGyy1tLDqR1aNrxQBHcswqussorIkQX70rsR2JoC1Lo=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/josephschmitt/auto-layout.yazi"
+        },
+        "version": "626a6016283558b9766fe305e76b694dd9fb6156"
+    },
+    "custom-shell": {
+        "cargoLocks": null,
+        "date": "2025-02-10",
+        "extract": null,
+        "name": "custom-shell",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "6b4550a1b18afbb7ef328ebf54d81de24101288e",
+            "sha256": "sha256-deLbUM4J/pDrLdKeEp62GJ+CFdwsSwOUiX85KuCRStc=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/AnirudhG07/custom-shell.yazi"
+        },
+        "version": "6b4550a1b18afbb7ef328ebf54d81de24101288e"
+    },
+    "glow": {
+        "cargoLocks": null,
+        "date": "2025-04-15",
+        "extract": null,
+        "name": "glow",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "2da96e3ffd9cd9d4dd53e0b2636f83ff69fe9af0",
+            "sha256": "sha256-4krck4U/KWmnl32HWRsblYW/biuqzDPysrEn76buRck=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/Reledia/glow.yazi"
+        },
+        "version": "2da96e3ffd9cd9d4dd53e0b2636f83ff69fe9af0"
+    },
+    "mediainfo": {
+        "cargoLocks": null,
+        "date": "2025-04-17",
+        "extract": null,
+        "name": "mediainfo",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "9629b1e85c3757c834ec83fb7d931982c55f4c3f",
+            "sha256": "sha256-EDEIiZJy/RfXVaLNsKDeklH4qY2h+js2m0y6VSAjPkk=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/boydaihungst/mediainfo.yazi"
+        },
+        "version": "9629b1e85c3757c834ec83fb7d931982c55f4c3f"
+    },
+    "office": {
+        "cargoLocks": null,
+        "date": "2025-03-03",
+        "extract": null,
+        "name": "office",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "bcd9e9e78835c96eb2bb8b8841e4753704b99b17",
+            "sha256": "sha256-rZas/oMNI6H5lXOixDQcL/dQC+J9VCFrOOIIjjLDUc4=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/macydnah/office.yazi"
+        },
+        "version": "bcd9e9e78835c96eb2bb8b8841e4753704b99b17"
+    },
+    "official-plugins-monorepo": {
+        "cargoLocks": null,
+        "date": "2025-04-13",
+        "extract": null,
+        "name": "official-plugins-monorepo",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "b12a9ab085a8c2fe2b921e1547ee667b714185f9",
+            "sha256": "sha256-LWN0riaUazQl3llTNNUMktG+7GLAHaG/IxNj1gFhDRE=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/yazi-rs/plugins"
+        },
+        "version": "b12a9ab085a8c2fe2b921e1547ee667b714185f9"
+    },
+    "other-monorepo": {
+        "cargoLocks": null,
+        "date": "2025-02-03",
+        "extract": null,
+        "name": "other-monorepo",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "ca18a2cfb893e3608997c9de54acced124373871",
+            "sha256": "sha256-v+EmMbrccAlzeR9rhmlFq0f+899l624EhWx1DFz+qzc=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/lpanebr/yazi-plugins"
+        },
+        "version": "ca18a2cfb893e3608997c9de54acced124373871"
+    },
+    "ouch": {
+        "cargoLocks": null,
+        "date": "2025-04-12",
+        "extract": null,
+        "name": "ouch",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "2496cd9ac2d1fb52597b22ae84f3af06c826a86d",
+            "sha256": "sha256-OsNfR7rtnq+ceBTiFjbz+NFMSV/6cQ1THxEFzI4oPJk=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/ndtoan96/ouch.yazi"
+        },
+        "version": "2496cd9ac2d1fb52597b22ae84f3af06c826a86d"
+    },
+    "restore": {
+        "cargoLocks": null,
+        "date": "2025-04-05",
+        "extract": null,
+        "name": "restore",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "328dd888c1e2b9b0cb5dc806f099e3164e179620",
+            "sha256": "sha256-3Z8P25u9bffdjrPjxLRWUQn6MdBS+vyElUBkgV4EUwY=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/boydaihungst/restore.yazi"
+        },
+        "version": "328dd888c1e2b9b0cb5dc806f099e3164e179620"
+    },
+    "what-size": {
+        "cargoLocks": null,
+        "date": "2025-03-15",
+        "extract": null,
+        "name": "what-size",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "f4b8b5a5e0aea60ef6350c0100763b5c900c82a7",
+            "sha256": "sha256-sSeXL9/SOuPKIeZR2ntLP0HGSLBobbrzdTgpikA5jMg=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/Vortriz/what-size.yazi"
+        },
+        "version": "f4b8b5a5e0aea60ef6350c0100763b5c900c82a7"
+    },
+    "yamb": {
+        "cargoLocks": null,
+        "date": "2025-02-28",
+        "extract": null,
+        "name": "yamb",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "22af0033be18eead7b04c2768767d38ccfbaa05b",
+            "sha256": "sha256-NMxZ8/7HQgs+BsZeH4nEglWsRH2ibAzq7hRSyrtFDTA=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/h-hg/yamb.yazi"
+        },
+        "version": "22af0033be18eead7b04c2768767d38ccfbaa05b"
+    }
+}

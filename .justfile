@@ -26,7 +26,8 @@ export FLAKE := `echo $PWD`
     echo -e "Updating flake and git fetcher inputs...\n"
 
     nix flake update
-    fd -e nix --exec update-nix-fetchgit
+    for i in $(command fd sources.toml); set o $(echo $i | sed 's/.toml//'); nvfetcher -c $i -o $o; end
+
 
     git add -A
     git commit -m "chore: update inputs"
