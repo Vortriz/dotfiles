@@ -10,5 +10,9 @@
             icon = "code";
             keywords = "code";
         };
+        Sioyek = {
+            name = "Sioyek";
+            keywords = "sioyek";
+        };
     };
 }
