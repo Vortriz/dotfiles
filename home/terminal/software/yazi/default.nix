@@ -1,15 +1,16 @@
 {
     imports = [
-        ./keymap.nix
         ./plugins.nix
-        ./settings.nix
     ];
 
     programs.yazi = {
         enable = true;
 
-        shellWrapperName = "y";
         initLua = ./init.lua;
+        keymap = import ./keymap.nix;
+        settings = import ./settings.nix;
+
+        shellWrapperName = "y";
     };
 
     stylix.targets.yazi.enable = true;
