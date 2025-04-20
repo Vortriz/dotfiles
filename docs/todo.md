@@ -3,6 +3,15 @@
 - [ ] make tealdeer hm module (for fun)
 - [x] some drive sync utility - rclone
 - [ ] discord needs xdg-desktop-portal
-- [x] ~~regreet - login manager~~ cosmic-greeter
-- [ ] cpu-optimisation
+- [ ] cpu optimisation
 - [ ] figure out cache situation for new install
+- [ ] try zen browser
+  - [ ] flake - https://github.com/0xc000022070/zen-browser-flake
+  - [ ] sideberry
+    - [ ] https://github.com/Erudition/zen-sidebery-mod
+    - [ ] https://github.com/MrOtherGuy/fx-autoconfig
+- [ ] git-hooks
+  - [ ] treefmt-nix - https://github.com/numtide/treefmt-nix
+  - [ ] statix
+  - [ ] deadnix
+    - [ ] fix overlays file issue
