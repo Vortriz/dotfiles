@@ -111,8 +111,8 @@
                         nix-prefetch-git
                         nix-prefetch-github
                         nvd
+                        nvfetcher
                         ripgrep
-                        update-nix-fetchgit
                     ]);
             };
         });
