@@ -9,17 +9,18 @@
         ./git.nix
         ./micro.nix
         ./nh.nix
+        ./nix-index.nix
         ./tldr.nix
         ./zoxide.nix
     ];
 
     home.packages = with pkgs; [
         cachix
+        comma
         just
         magic-wormhole
         ookla-speedtest
         pandoc
-        superfile
         tealdeer
     ];
 }
