@@ -3,7 +3,7 @@
     pkgs,
     ...
 }: let
-    inherit (osConfig.var) storageDir;
+    inherit (osConfig.var) downloadsDir;
 in {
     programs.niri.settings = {
         hotkey-overlay.skip-at-startup = true;
@@ -45,6 +45,14 @@ in {
         ];
 
         prefer-no-csd = true;
-        screenshot-path = "${storageDir}/downloads/captures/linux/%Y-%m-%d (%H-%M-%S).png";
+        screenshot-path = "${downloadsDir}/captures/linux/%Y-%m-%d (%H-%M-%S).png";
+
+        environment = {
+            # for electron apps
+            NIXOS_OZONE_WL = "1";
+
+            # ugly fix for flameshot
+            QT_SCREEN_SCALE_FACTORS = builtins.toString (2.0 / 3.0);
+        };
     };
 }

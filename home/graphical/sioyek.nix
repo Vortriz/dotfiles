@@ -3,7 +3,7 @@
         enable = true;
 
         bindings = {
-            "command" = "<C-S-P>";
+            "command" = "<C-P>";
             "toggle_dark_mode" = "<C-d>";
             "toggle_horizontal_scroll_lock" = "<C-l>";
             "goto_page_with_label" = "<C-g>";
