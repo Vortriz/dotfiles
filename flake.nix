@@ -14,6 +14,7 @@
             flake = false;
         };
         nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
+        sherlock.url = "github:Skxxtz/sherlock";
         stylix.url = "github:danth/stylix";
         walker.url = "github:abenz1267/walker";
 

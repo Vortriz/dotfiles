@@ -1,12 +1,8 @@
-{
-    inputs,
-    pkgs,
-    ...
-}: {
+{pkgs, ...}: {
     imports = [
         ./niri
         ./services
-        ./walker
+        ./sherlock
         ./waybar
 
         ./cursor.nix
