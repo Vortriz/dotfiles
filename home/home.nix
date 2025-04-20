@@ -4,7 +4,6 @@
     osConfig,
     inputs,
     outputs,
-    pkgs,
     ...
 }: let
     inherit (osConfig.var) username;
@@ -27,9 +26,10 @@ in {
         ./terminal
         ./wayland
 
-        ../scripts
-
         ./stylix.nix
+        ./xdg-portal.nix
+
+        ../scripts
     ];
 
     nixpkgs = {
@@ -70,48 +70,8 @@ in {
         startServices = "sd-switch";
     };
 
-    # Default applications
-    xdg = {
-        mimeApps = {
-            enable = true;
-
-            defaultApplications = {
-                "application/pdf" = "sioyek.desktop";
-                "image/jpeg" = "org.nomacs.ImageLounge.desktop";
-                "image/jpg" = "org.nomacs.ImageLounge.desktop";
-                "image/png" = "org.nomacs.ImageLounge.desktop";
-                "x-scheme-handler/tg" = "org.telegram.desktop.desktop";
-                "x-scheme-handler/tonsite" = "org.telegram.desktop.desktop";
-            };
-        };
-
-        # DO NOT EFFING TOUCH THIS
-        portal = {
-            enable = true;
-
-            config = {
-                niri = {
-                    default = ["gnome" "gtk"];
-                    "org.freedesktop.impl.portal.Access" = "gtk";
-                    "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
-                    "org.freedesktop.impl.portal.ScreenCast" = "wlr";
-                    "org.freedesktop.impl.portal.Secret" = "gnome-keyring";
-                };
-            };
-            extraPortals = with pkgs; [
-                xdg-desktop-portal-gtk
-                xdg-desktop-portal-termfilechooser-custom
-                xdg-desktop-portal-wlr
-            ];
-        };
-
-        configFile."xdg-desktop-portal-termfilechooser/config".text = ''
-            [filechooser]
-            cmd=${pkgs.xdg-desktop-portal-termfilechooser-custom}/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh
-            default_dir=$HOME
-            env=TERMCMD=kitty
-        '';
-    };
+    # For setting default applications
+    xdg.mimeApps.enable = true;
 
     # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
     home.stateVersion = "23.11";
