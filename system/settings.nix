@@ -3,11 +3,11 @@
     pkgs,
     ...
 }: let
-    dotfilesDir = config.var.dotfilesDir;
-    defaultLocale = config.var.defaultLocale;
-    extraLocale = config.var.extraLocale;
-    hostname = config.var.hostname;
-    timeZone = config.var.timeZone;
+    inherit (config.var) dotfilesDir;
+    inherit (config.var) defaultLocale;
+    inherit (config.var) extraLocale;
+    inherit (config.var) hostname;
+    inherit (config.var) timeZone;
 in {
     documentation = {
         man.enable = false;
@@ -62,7 +62,7 @@ in {
     ];
 
     i18n = {
-        defaultLocale = defaultLocale;
+        inherit defaultLocale;
         extraLocaleSettings = {
             LC_ADDRESS = extraLocale;
             LC_IDENTIFICATION = extraLocale;
@@ -113,7 +113,7 @@ in {
     };
 
     time = {
-        timeZone = timeZone;
+        inherit timeZone;
         hardwareClockInLocalTime = true;
     };
 

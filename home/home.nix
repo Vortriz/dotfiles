@@ -7,7 +7,7 @@
     pkgs,
     ...
 }: let
-    username = osConfig.var.username;
+    inherit (osConfig.var) username;
 in {
     # You can import other home-manager modules here
     imports = [
@@ -58,7 +58,7 @@ in {
     };
 
     home = {
-        username = username;
+        inherit username;
         homeDirectory = "/home/" + username;
     };
 

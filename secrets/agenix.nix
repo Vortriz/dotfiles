@@ -1,5 +1,5 @@
 {config, ...}: let
-    username = config.var.username;
+    inherit (config.var) username;
 in {
     age.secrets."rclone" = {
         file = ./rclone.age;

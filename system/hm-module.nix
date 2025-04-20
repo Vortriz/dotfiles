@@ -4,7 +4,7 @@
     outputs,
     ...
 }: let
-    username = config.var.username;
+    inherit (config.var) username;
 in {
     imports = [
         # Import home-manager's NixOS module

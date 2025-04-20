@@ -1,5 +1,5 @@
 {osConfig, ...}: let
-    downloadsDir = osConfig.var.downloadsDir;
+    inherit (osConfig.var) downloadsDir;
 in {
     programs.aria2 = {
         enable = true;

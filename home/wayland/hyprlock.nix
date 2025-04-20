@@ -1,5 +1,5 @@
 {osConfig, ...}: let
-    dotfilesDir = osConfig.var.dotfilesDir;
+    inherit (osConfig.var) dotfilesDir;
 in {
     programs.hyprlock = {
         enable = true;

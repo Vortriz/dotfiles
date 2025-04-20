@@ -1,8 +1,8 @@
 {pkgs, ...}: {
     programs.yazi.plugins = let
         plugins-src = pkgs.callPackages ./sources/generated.nix {};
-        official-plugins-monorepo = plugins-src.official-plugins-monorepo;
-        other-monorepo = plugins-src.other-monorepo;
+        inherit (plugins-src) official-plugins-monorepo;
+        inherit (plugins-src) other-monorepo;
 
         official-plugins = [
             "jump-to-char"
@@ -28,17 +28,17 @@
         ];
     in
         builtins.listToAttrs (map (name: {
-            name = name;
+            inherit name;
             value = "${official-plugins-monorepo.src}/${name}.yazi";
         })
         official-plugins)
         // builtins.listToAttrs (map (name: {
-            name = name;
+            inherit name;
             value = "${other-monorepo.src}/${name}.yazi";
         })
         other-monorepo-plugins)
         // builtins.listToAttrs (map (name: {
-            name = name;
+            inherit name;
             value = plugins-src.${name}.src;
         })
         other-plugins);

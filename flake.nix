@@ -100,6 +100,7 @@
                         inputs.agenix.packages.${system}.default
                     ]
                     ++ (with pkgs; [
+                        deadnix
                         fd
                         fish
                         git
@@ -114,6 +115,7 @@
                         nvd
                         nvfetcher
                         ripgrep
+                        statix
                     ]);
             };
         });

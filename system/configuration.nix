@@ -1,11 +1,10 @@
 {
     config,
     inputs,
-    lib,
     outputs,
     ...
 }: let
-    username = config.var.username;
+    inherit (config.var) username;
 in {
     imports = [
         # If you want to use modules your own flake exports (from modules/nixos):
@@ -53,9 +52,7 @@ in {
         };
     };
 
-    nix = let
-        flakeInputs = lib.filterAttrs (_: lib.isType "flake") inputs;
-    in {
+    nix = {
         settings = {
             # Enable flakes and new 'nix' command
             experimental-features = "nix-command flakes";

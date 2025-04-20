@@ -3,7 +3,7 @@
     pkgs,
     ...
 }: let
-    storageDir = osConfig.var.storageDir;
+    inherit (osConfig.var) storageDir;
 in {
     programs.niri.settings = {
         hotkey-overlay.skip-at-startup = true;
