@@ -3,7 +3,7 @@
     pkgs,
     ...
 }: let
-    downloadsDir = osConfig.var.downloadsDir;
+    inherit (osConfig.var) downloadsDir;
 in {
     services.flameshot = {
         enable = true;

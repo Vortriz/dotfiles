@@ -4,7 +4,7 @@
     pkgs,
     ...
 }: let
-    storageDir = osConfig.var.storageDir;
+    inherit (osConfig.var) storageDir;
 in {
     programs.zotero = {
         enable = true;

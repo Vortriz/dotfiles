@@ -3,8 +3,8 @@
     pkgs,
     ...
 }: let
-    username = config.var.username;
-    storageDir = config.var.storageDir;
+    inherit (config.var) username;
+    inherit (config.var) storageDir;
 in {
     services = {
         # Asus laptop specific services
