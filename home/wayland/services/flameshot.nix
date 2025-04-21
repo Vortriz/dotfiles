@@ -1,4 +1,8 @@
-{osConfig, ...}: let
+{
+    osConfig,
+    pkgs,
+    ...
+}: let
     inherit (osConfig.var) downloadsDir;
 in {
     services.flameshot = {
@@ -28,4 +32,6 @@ in {
             };
         };
     };
+
+    home.packages = [pkgs.grim];
 }
