@@ -1,1 +1,28 @@
-{"background":{"id":"default-unsplash","key":"background/unsplash","display":{"luminosity":-0.2,"blur":0}},"focus":false,"data/default-unsplash":{"by":"official","collections":"","featured":false,"paused":true,"search":"","topics":"bo8jQKTaE0Y","timeout":900},"widget/default-greeting":null,"widget/lYFdPnrkXFoB":null,"widget/default-time":{"id":"default-time","key":"widget/time","order":0,"display":{"position":"middleCentre"}},"locale":"en","timeZone":null,"version":3}
+{
+    "background": {
+        "id": "default-unsplash",
+        "key": "background/unsplash",
+        "display": { "luminosity": -0.2, "blur": 0 }
+    },
+    "focus": false,
+    "data/default-unsplash": {
+        "by": "official",
+        "collections": "",
+        "featured": false,
+        "paused": true,
+        "search": "",
+        "topics": "bo8jQKTaE0Y",
+        "timeout": 900
+    },
+    "widget/default-greeting": null,
+    "widget/lYFdPnrkXFoB": null,
+    "widget/default-time": {
+        "id": "default-time",
+        "key": "widget/time",
+        "order": 0,
+        "display": { "position": "middleCentre" }
+    },
+    "locale": "en",
+    "timeZone": null,
+    "version": 3
+}

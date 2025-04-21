@@ -12,9 +12,11 @@
             };
 
             extraPortals = with pkgs; [
+                # keep-sorted start
                 xdg-desktop-portal-gtk
                 xdg-desktop-portal-termfilechooser-custom
                 xdg-desktop-portal-wlr
+                # keep-sorted end
             ];
         };
 

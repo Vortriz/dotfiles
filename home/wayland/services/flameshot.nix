@@ -1,8 +1,4 @@
-{
-    osConfig,
-    pkgs,
-    ...
-}: let
+{osConfig, ...}: let
     inherit (osConfig.var) downloadsDir;
 in {
     services.flameshot = {
@@ -10,6 +6,7 @@ in {
 
         settings = {
             General = {
+                # keep-sorted start
                 contrastOpacity = 188;
                 filenamePattern = "%F (%T)";
                 saveAsFileExtension = "png";
@@ -17,13 +14,10 @@ in {
                 savePathFixed = false;
                 showStartupLaunchMessage = false;
                 startupLaunch = true;
+                # keep-sorted end
             };
         };
     };
-
-    home.packages = with pkgs; [
-        grim # needed
-    ];
 
     # Fix for flameshot
     systemd.user = {

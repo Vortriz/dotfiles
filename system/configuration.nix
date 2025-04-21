@@ -2,54 +2,38 @@
     config,
     inputs,
     outputs,
+    pkgs,
     ...
 }: let
     inherit (config.var) username;
 in {
     imports = [
-        # If you want to use modules your own flake exports (from modules/nixos):
-        # outputs.nixosModules.example
-
-        # Or modules from other flakes (such as nixos-hardware):
-        # inputs.hardware.nixosModules.common-cpu-amd
-        # inputs.hardware.nixosModules.common-ssd
+        # keep-sorted start by_regex=(^inputs|\.nix$) prefix_order=inputs,./
         inputs.agenix.nixosModules.default
         inputs.niri.nixosModules.niri
         inputs.nixos-cosmic.nixosModules.default
         inputs.stylix.nixosModules.stylix
-
-        # Import your generated (nixos-generate-config) hardware configuration
+        ../secrets/agenix.nix
         ./hardware-configuration.nix
-
-        # Using Home Manager as NixOS module
         ./hm-module.nix
-
-        # Other imports
-        ./programs
-
         ./services.nix
         ./settings.nix
-        ./shell.nix
         ./variables.nix
 
-        ../secrets/agenix.nix
+        ./programs
+        # keep-sorted end
     ];
 
     nixpkgs = {
         overlays = [
-            # Add overlays your own flake exports (from overlays and pkgs dir):
+            # keep-sorted start by_regex=^(inputs)
+            inputs.niri.overlays.niri
+
             outputs.overlays.additions
             outputs.overlays.modifications
-
-            # You can also add overlays exported from other flakes:
-            # neovim-nightly-overlay.overlays.default
-            inputs.niri.overlays.niri
+            # keep-sorted end
         ];
-        # Configure your nixpkgs instance
-        config = {
-            # Disable if you don't want unfree packages
-            allowUnfree = true;
-        };
+        config.allowUnfree = true;
     };
 
     nix = {
@@ -85,6 +69,7 @@ in {
                 # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect
             ];
             extraGroups = ["networkmanager" "wheel" "video" "aria2"];
+            shell = pkgs.fish;
         };
     };
 

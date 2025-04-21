@@ -1,7 +1,6 @@
 {pkgs, ...}: {
     imports = [
-        ./yazi
-
+        # keep-sorted start by_regex=\.nix$
         ./aria2.nix
         ./direnv.nix
         ./eza.nix
@@ -12,9 +11,13 @@
         ./nix-index.nix
         ./tldr.nix
         ./zoxide.nix
+
+        ./yazi
+        # keep-sorted end
     ];
 
     home.packages = with pkgs; [
+        # keep-sorted start
         cachix
         comma
         just
@@ -22,5 +25,6 @@
         ookla-speedtest
         pandoc
         tealdeer
+        # keep-sorted end
     ];
 }

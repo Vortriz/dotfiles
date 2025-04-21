@@ -1,60 +1,39 @@
-# This is your home-manager configuration file
-# Use this to configure your home environment (it replaces ~/.config/nixpkgs/home.nix)
 {
-    osConfig,
     inputs,
+    osConfig,
     outputs,
     ...
 }: let
     inherit (osConfig.var) username;
 in {
-    # You can import other home-manager modules here
     imports = [
-        # If you want to use modules your own flake exports (from modules/home-manager):
-        # outputs.homeManagerModules.example
-
-        # Or modules exported from other flakes (such as nix-colors):
-        # inputs.nix-colors.homeManagerModules.default
+        # keep-sorted start by_regex=(^inputs|\.nix$) prefix_order=inputs,./
         inputs.misumisumi-dotfiles.homeManagerModules.zotero
         inputs.scientific-fhs.nixosModules.default
         inputs.sherlock.homeManagerModules.default
         inputs.walker.homeManagerModules.default
-
-        # You can also split up your configuration and import pieces of it here:
-        ./graphical
-        ./programming
-        ./terminal
-        ./wayland
-
         ./stylix.nix
         ./xdg-portal.nix
 
         ../scripts
+        ./graphical
+        ./programming
+        ./terminal
+        ./wayland
+        # keep-sorted end
     ];
 
     nixpkgs = {
-        # You can add overlays here
         overlays = [
-            # Add overlays your own flake exports (from overlays and pkgs dir):
-            outputs.overlays.additions
-            outputs.overlays.modifications
-
-            # You can also add overlays exported from other flakes:
-            # neovim-nightly-overlay.overlays.default
+            # keep-sorted start by_regex=^(inputs)
             inputs.nix-vscode-extensions.overlays.default
 
-            # Or define it inline, for example:
-            # (final: prev: {
-            #     hi = final.hello.overrideAttrs (oldAttrs: {
-            #         patches = [ ./change-hello-to-hi.patch ];
-            #     });
-            # })
+            outputs.overlays.additions
+            outputs.overlays.modifications
+            # keep-sorted end
         ];
-        # Configure your nixpkgs instance
-        config = {
-            # Disable if you don't want unfree packages
-            allowUnfree = true;
-        };
+
+        config.allowUnfree = true;
     };
 
     home = {
@@ -62,7 +41,6 @@ in {
         homeDirectory = "/home/" + username;
     };
 
-    # Enable home-manager
     programs.home-manager.enable = true;
 
     systemd.user = {

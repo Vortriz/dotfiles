@@ -1,15 +1,23 @@
 {pkgs, ...}: {
     imports = [
+        # keep-sorted start by_regex=\.nix$
         ./cosmic-greeter.nix
         ./niri.nix
         ./steam.nix
         ./stylix.nix
         ./warp.nix
+        # keep-sorted end
     ];
 
-    programs.dconf.enable = true;
+    programs = {
+        dconf.enable = true;
+
+        # the default shell
+        fish.enable = true;
+    };
 
     environment.systemPackages = with pkgs; [
+        # keep-sorted start
         android-tools
         asusctl
         boxbuddy # when nix is not nixin
@@ -27,5 +35,6 @@
         sof-firmware # sound
         unzip
         util-linux
+        # keep-sorted end
     ];
 }

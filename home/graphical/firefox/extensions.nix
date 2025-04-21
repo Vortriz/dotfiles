@@ -9,6 +9,7 @@ let
 in
     builtins.listToAttrs [
         # find in source page by `byGUID`
+        # keep-sorted start
         (extension "bitwarden-password-manager" "{446900e4-71c2-419f-a6a7-df9c091e268b}")
         (extension "darkreader" "addon@darkreader.org")
         (extension "istilldontcareaboutcookies" "idcac-pub@guus.ninja")
@@ -19,4 +20,5 @@ in
         (extension "tabliss" "extension@tabliss.io")
         (extension "ublock-origin" "uBlock0@raymondhill.net")
         (extension "userchrome-toggle-extended" "userchrome-toggle-extended@n2ezr.ru")
+        # keep-sorted end
     ]

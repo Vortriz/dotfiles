@@ -5,6 +5,7 @@ _: {
     # You can change versions, add patches, set compilation flags, anything really.
     # https://nixos.wiki/wiki/Overlays
     modifications = _final: prev: {
+        # keep-sorted start block=yes newline_separated=yes
         flameshot = prev.flameshot.overrideAttrs (_old: {
             src = prev.pkgs.fetchFromGitHub {
                 owner = "flameshot-org";
@@ -14,5 +15,6 @@ _: {
             };
             cmakeFlags = ["-DUSE_WAYLAND_GRIM=true" "-DUSE_WAYLAND_CLIPBOARD=true"];
         });
+        # keep-sorted end
     };
 }

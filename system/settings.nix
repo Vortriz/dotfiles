@@ -9,6 +9,7 @@
     inherit (config.var) hostname;
     inherit (config.var) timeZone;
 in {
+    # keep-sorted start block=yes newline_separated=yes
     documentation = {
         man.enable = false;
         info.enable = false;
@@ -25,16 +26,7 @@ in {
     };
 
     fonts.packages = with pkgs; [
-        HelveticaNeueCyr
-        SFMono
-
-        font-awesome
-        roboto
-        source-sans-pro
-
-        nerd-fonts.fira-code
-        nerd-fonts.jetbrains-mono
-
+        # keep-sorted start block=yes
         (google-fonts.override {
             fonts = [
                 "Inter"
@@ -44,6 +36,14 @@ in {
                 "Open Sans"
             ];
         })
+        HelveticaNeueCyr
+        SFMono
+        font-awesome
+        nerd-fonts.fira-code
+        nerd-fonts.jetbrains-mono
+        roboto
+        source-sans-pro
+        # keep-sorted end
     ];
 
     hardware = {
@@ -56,10 +56,6 @@ in {
             enable32Bit = true;
         };
     };
-
-    environment.systemPackages = with pkgs; [
-        blueman
-    ];
 
     i18n = {
         inherit defaultLocale;
@@ -98,13 +94,6 @@ in {
     };
 
     security = {
-        # pam.services = {
-        #     kwallet = {
-        #         name = "kdewallet";
-        #         enableKwallet = false;
-        #     };
-        # };
-
         # for sound and something else too
         rtkit.enable = true;
 
@@ -131,4 +120,5 @@ in {
             dockerCompat = true;
         };
     };
+    # keep-sorted end
 }

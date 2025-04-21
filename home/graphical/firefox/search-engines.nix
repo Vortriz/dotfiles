@@ -21,7 +21,9 @@
             ];
         };
     in {
+        # keep-sorted start block=yes newline_separated=yes
         "amazondotcom-us".metaData.hidden = true;
+
         "bing".metaData.hidden = true;
 
         "github" = engine rec {
@@ -51,5 +53,6 @@
             alias = "xng";
             surl = "${url}/search";
         };
+        # keep-sorted end
     };
 }

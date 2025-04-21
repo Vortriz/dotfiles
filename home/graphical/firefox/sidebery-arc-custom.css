@@ -1,14 +1,36 @@
-#root.root {--tabs-indent: 20px;}
-#root.root {--tabs-pinned-height: 4em;}
-#root.root {--tabs-pinned-width: 4em;}
-#root.root {--tabs-margin: 0.5em;}
-#root.root {--tabs-font: 0.875rem sans-serif;}
-#root.root {--tabs-height: 40px;}
-#root.root {--tabs-border-radius: 0.7em;}
-#root.root {--tabs-inner-gap: 10px;}
-#root.root {--general-border-radius: 10px;}
-#root.root {--toolbar-bg: #3b3f52;}
-#root.root {--frame-bg: #3b3f52;}
+#root.root {
+    --tabs-indent: 20px;
+}
+#root.root {
+    --tabs-pinned-height: 4em;
+}
+#root.root {
+    --tabs-pinned-width: 4em;
+}
+#root.root {
+    --tabs-margin: 0.5em;
+}
+#root.root {
+    --tabs-font: 0.875rem sans-serif;
+}
+#root.root {
+    --tabs-height: 40px;
+}
+#root.root {
+    --tabs-border-radius: 0.7em;
+}
+#root.root {
+    --tabs-inner-gap: 10px;
+}
+#root.root {
+    --general-border-radius: 10px;
+}
+#root.root {
+    --toolbar-bg: #3b3f52;
+}
+#root.root {
+    --frame-bg: #3b3f52;
+}
 @media (prefers-color-scheme: light) {
     #root {
         /* Tab and PinnedTab height adjustment */
@@ -35,7 +57,7 @@
         border-radius: 3px;
     }
 
-    .Tab .close>svg:hover {
+    .Tab .close > svg:hover {
         /* Styling the tab close button */
         border-radius: 3px;
         background: var(--warn) !important;
@@ -81,21 +103,20 @@
         background-color: var(--tabs-bg-hover) !important;
     }
 
-    .NavigationBar .panel-btn>svg,
-    .NavigationBar .panel-btn>img {
+    .NavigationBar .panel-btn > svg,
+    .NavigationBar .panel-btn > img {
         fill: var(--panel-btn) !important;
     }
 
     /* SIDEBAR HACK PATCHES */
 
     @media (max-width: 50px) {
-
         /* Fix to tab tree identation when minimised */
         #root:not(:hover) .Tab {
             --tabs-indent: 0px;
         }
 
-        .Tab[data-lvl]>div.lvl-wrapper {
+        .Tab[data-lvl] > div.lvl-wrapper {
             right: -2px;
         }
 
@@ -140,18 +161,24 @@
 
     /* Optional patch for better tab notifications on pinned tabs */
 
-    .PinnedTab[data-audible] .fav>img,
-    .PinnedTab[data-muted] .fav>img,
-    .PinnedTab[data-loading] .fav>img {
+    .PinnedTab[data-audible] .fav > img,
+    .PinnedTab[data-muted] .fav > img,
+    .PinnedTab[data-loading] .fav > img {
         mask: none;
     }
 
-    .PinnedTab .fav>img {
+    .PinnedTab .fav > img {
         mask: none;
     }
 
-    .PinnedTab[data-updated="true"] .fav>img {
-        mask: radial-gradient(circle at calc(100% - 2px) calc(100% - 2px), rgba(0, 0, 0, 0.141), rgba(0, 0, 0, 0.141) 4px, #000 5px, #000);
+    .PinnedTab[data-updated="true"] .fav > img {
+        mask: radial-gradient(
+            circle at calc(100% - 2px) calc(100% - 2px),
+            rgba(0, 0, 0, 0.141),
+            rgba(0, 0, 0, 0.141) 4px,
+            #000 5px,
+            #000
+        );
     }
 
     .PinnedTab .audio-badge {
@@ -165,7 +192,6 @@
     .PinnedTab[data-updated="true"] .update-badge {
         opacity: 100;
     }
-
 }
 
 @media (prefers-color-scheme: dark) {
@@ -200,7 +226,7 @@
         border-radius: 3px;
     }
 
-    .Tab .close>svg:hover {
+    .Tab .close > svg:hover {
         /* Styling the tab close button */
         border-radius: 3px;
         background: var(--warn) !important;
@@ -246,21 +272,20 @@
         background-color: var(--tabs-bg-hover) !important;
     }
 
-    .NavigationBar .panel-btn>svg,
-    .NavigationBar .panel-btn>img {
+    .NavigationBar .panel-btn > svg,
+    .NavigationBar .panel-btn > img {
         fill: var(--panel-btn) !important;
     }
 
     /* SIDEBAR HACK PATCHES */
 
     @media (max-width: 50px) {
-
         /* Fix to tab tree identation when minimised */
         #root:not(:hover) .Tab {
             --tabs-indent: 0px;
         }
 
-        .Tab[data-lvl]>div.lvl-wrapper {
+        .Tab[data-lvl] > div.lvl-wrapper {
             right: -2px;
         }
 
@@ -305,18 +330,24 @@
 
     /* Optional patch for better tab notifications on pinned tabs */
 
-    .PinnedTab[data-audible] .fav>img,
-    .PinnedTab[data-muted] .fav>img,
-    .PinnedTab[data-loading] .fav>img {
+    .PinnedTab[data-audible] .fav > img,
+    .PinnedTab[data-muted] .fav > img,
+    .PinnedTab[data-loading] .fav > img {
         mask: none;
     }
 
-    .PinnedTab .fav>img {
+    .PinnedTab .fav > img {
         mask: none;
     }
 
-    .PinnedTab[data-updated="true"] .fav>img {
-        mask: radial-gradient(circle at calc(100% - 2px) calc(100% - 2px), rgba(0, 0, 0, 0.141), rgba(0, 0, 0, 0.141) 4px, #000 5px, #000);
+    .PinnedTab[data-updated="true"] .fav > img {
+        mask: radial-gradient(
+            circle at calc(100% - 2px) calc(100% - 2px),
+            rgba(0, 0, 0, 0.141),
+            rgba(0, 0, 0, 0.141) 4px,
+            #000 5px,
+            #000
+        );
     }
 
     .PinnedTab .audio-badge {
@@ -346,10 +377,15 @@
     opacity: 80%;
 }
 
-.Tab[data-parent="true"][data-folded="false"] + .Tab .body::after, .Tab[data-edit="true"] + .Tab .body::after {
-		background-image: linear-gradient(0deg,var(--tabs-normal-fg)0,var(--tabs-normal-fg));
+.Tab[data-parent="true"][data-folded="false"] + .Tab .body::after,
+.Tab[data-edit="true"] + .Tab .body::after {
+    background-image: linear-gradient(
+        0deg,
+        var(--tabs-normal-fg) 0,
+        var(--tabs-normal-fg)
+    );
 }
 
 .Tab .body::after {
-		top: unset;
+    top: unset;
 }
