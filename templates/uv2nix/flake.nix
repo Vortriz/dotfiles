@@ -109,12 +109,8 @@
             # This devShell simply adds Python and undoes the dependency leakage done by Nixpkgs Python infrastructure.
             default = pkgs.mkShell {
                 packages =
-                    [
-                        python
-                    ]
-                    ++ (with pkgs; [
-                        uv
-                    ])
+                    [python]
+                    ++ (with pkgs; [uv])
                     ++ scripts;
                 env =
                     {

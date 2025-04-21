@@ -1,13 +1,15 @@
 {
-    DisableTelemetry = true;
+    # keep-sorted start
     DisableFirefoxStudies = true;
+    DisablePocket = true;
+    DisableTelemetry = true;
+    DisplayBookmarksToolbar = "never";
+    DisplayMenuBar = "default-off";
     EnableTrackingProtection = {
         Value = true;
         Locked = true;
         Cryptomining = true;
         Fingerprinting = true;
     };
-    DisablePocket = true;
-    DisplayBookmarksToolbar = "never";
-    DisplayMenuBar = "default-off";
+    # keep-sorted end
 }

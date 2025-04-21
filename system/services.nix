@@ -7,11 +7,73 @@
     inherit (config.var) storageDir;
 in {
     services = {
+        # Auto mounting
+        udisks2.enable = true;
+        gvfs.enable = true;
+        devmon.enable = true;
+
+        # keep-sorted start block=yes newline_separated=yes
         # Asus laptop specific services
         asusd = {
             enable = true;
 
             enableUserService = true;
+        };
+
+        blueman.enable = true;
+
+        # Gnome keyring is a password manager
+        gnome.gnome-keyring.enable = true;
+
+        # Login manager
+        logind = {
+            powerKey = "suspend";
+            powerKeyLongPress = "poweroff";
+            lidSwitch = "suspend-then-hibernate";
+        };
+
+        # This setups a SSH server. Very important if you're setting up a headless system.
+        openssh = {
+            enable = true;
+
+            settings = {
+                AllowUsers = [username];
+                # Opinionated: forbid root login through SSH.
+                PermitRootLogin = "no";
+                # Opinionated: use keys only.
+                # Remove if you want to SSH using passwords
+                PasswordAuthentication = false;
+            };
+        };
+
+        # Sound
+        pipewire = {
+            enable = true;
+
+            # ALSA is the raw audio interface exposed by Linux
+            alsa.enable = true;
+            alsa.support32Bit = true;
+
+            # PulseAudio server emulation
+            pulse.enable = true;
+
+            # JACK is a more specialized sound server designed for audio production
+            jack.enable = false;
+        };
+
+        # to prevent conflict with TLP
+        power-profiles-daemon.enable = false;
+
+        # Preload
+        preload.enable = true;
+
+        # Printing
+        printing.enable = true;
+
+        pulseaudio = {
+            enable = false;
+
+            package = pkgs.pulseaudioFull;
         };
 
         # TLP is a power management tool for Linux
@@ -37,65 +99,7 @@ in {
                 CPU_ENERGY_PERF_POLICY_ON_BAT = "balanced";
             };
         };
-
-        # to prevent conflict with TLP
-        power-profiles-daemon.enable = false;
-
-        # Gnome keyring is a password manager
-        gnome.gnome-keyring.enable = true;
-
-        # Login manager
-        logind = {
-            powerKey = "suspend";
-            powerKeyLongPress = "poweroff";
-            lidSwitch = "suspend-then-hibernate";
-        };
-
-        # Sound
-        pipewire = {
-            enable = true;
-
-            # ALSA is the raw audio interface exposed by Linux
-            alsa.enable = true;
-            alsa.support32Bit = true;
-
-            # PulseAudio server emulation
-            pulse.enable = true;
-
-            # JACK is a more specialized sound server designed for audio production
-            jack.enable = false;
-        };
-
-        pulseaudio = {
-            enable = false;
-
-            package = pkgs.pulseaudioFull;
-        };
-
-        # Preload
-        preload.enable = true;
-
-        # Printing
-        printing.enable = true;
-
-        # This setups a SSH server. Very important if you're setting up a headless system.
-        openssh = {
-            enable = true;
-
-            settings = {
-                AllowUsers = [username];
-                # Opinionated: forbid root login through SSH.
-                PermitRootLogin = "no";
-                # Opinionated: use keys only.
-                # Remove if you want to SSH using passwords
-                PasswordAuthentication = false;
-            };
-        };
-
-        # Auto mounting
-        udisks2.enable = true;
-        gvfs.enable = true;
-        devmon.enable = true;
+        # keep-sorted end
     };
 
     systemd.timers."rclone" = {

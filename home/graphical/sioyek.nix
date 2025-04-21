@@ -2,14 +2,17 @@
     programs.sioyek = {
         enable = true;
 
+        # keep-sorted start block=yes
         bindings = {
+            # keep-sorted start
             "command" = "<C-P>";
+            "goto_page_with_label" = "<C-g>";
             "toggle_dark_mode" = "<C-d>";
             "toggle_horizontal_scroll_lock" = "<C-l>";
-            "goto_page_with_label" = "<C-g>";
+            # keep-sorted end
         };
-
         config = {
+            # keep-sorted start
             "font_size" = "14";
             "linear_filter" = "1";
             "page_separator_color" = "0.9 0.9 0.9";
@@ -22,7 +25,9 @@
             "status_bar_font_size" = "14";
             "status_bar_text_color" = "0 0 0";
             "ui_font" = "Calibri";
+            # keep-sorted end
         };
+        # keep-sorted end
     };
 
     xdg.mimeApps.defaultApplications = {

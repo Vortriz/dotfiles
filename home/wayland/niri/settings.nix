@@ -5,54 +5,52 @@
 }: let
     inherit (osConfig.var) downloadsDir;
 in {
-    programs.niri.settings = {
-        hotkey-overlay.skip-at-startup = true;
+    hotkey-overlay.skip-at-startup = true;
 
-        input.touchpad = {
-            tap-button-map = "left-right-middle";
-            scroll-factor = 0.75;
-            dwt = true;
+    input.touchpad = {
+        tap-button-map = "left-right-middle";
+        scroll-factor = 0.75;
+        dwt = false;
+    };
+
+    outputs."eDP-1" = {
+        mode = {
+            height = 1800;
+            width = 2880;
+            refresh = 60.001;
         };
 
-        outputs."eDP-1" = {
-            mode = {
-                height = 1800;
-                width = 2880;
-                refresh = 60.001;
-            };
+        scale = 1.5;
+    };
 
-            scale = 1.5;
+    layout = {
+        always-center-single-column = true;
+        default-column-width.proportion = 0.5;
+        focus-ring.width = 2;
+
+        tab-indicator = {
+            enable = true;
+            hide-when-single-tab = true;
+            gap = -10;
+            length.total-proportion = 0.25;
+            position = "top";
         };
+    };
 
-        layout = {
-            always-center-single-column = true;
-            default-column-width.proportion = 0.5;
-            focus-ring.width = 2;
+    spawn-at-startup = map (s: {command = pkgs.lib.strings.splitString " " s;})
+    [
+        "systemctl --user reset-failed waybar.service"
+        "aria2c --enable-rpc --rpc-listen-all"
+    ];
 
-            tab-indicator = {
-                enable = true;
-                hide-when-single-tab = true;
-                gap = -10;
-                length.total-proportion = 0.25;
-                position = "top";
-            };
-        };
+    prefer-no-csd = true;
+    screenshot-path = "${downloadsDir}/captures/linux/%Y-%m-%d (%H-%M-%S).png";
 
-        spawn-at-startup = map (s: {command = pkgs.lib.strings.splitString " " s;})
-        [
-            "systemctl --user reset-failed waybar.service"
-            "aria2c --enable-rpc --rpc-listen-all"
-        ];
+    environment = {
+        # for electron apps
+        NIXOS_OZONE_WL = "1";
 
-        prefer-no-csd = true;
-        screenshot-path = "${downloadsDir}/captures/linux/%Y-%m-%d (%H-%M-%S).png";
-
-        environment = {
-            # for electron apps
-            NIXOS_OZONE_WL = "1";
-
-            # ugly fix for flameshot
-            QT_SCREEN_SCALE_FACTORS = builtins.toString (2.0 / 3.0);
-        };
+        # ugly fix for flameshot
+        QT_SCREEN_SCALE_FACTORS = builtins.toString (2.0 / 3.0);
     };
 }

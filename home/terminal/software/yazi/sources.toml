@@ -1,44 +1,43 @@
-[official-plugins-monorepo]
-src.git = "https://github.com/yazi-rs/plugins"
-fetch.git = "https://github.com/yazi-rs/plugins"
-
-[other-monorepo]
-src.git = "https://github.com/lpanebr/yazi-plugins"
-fetch.git = "https://github.com/lpanebr/yazi-plugins"
-
 [auto-layout]
-src.git = "https://github.com/josephschmitt/auto-layout.yazi"
 fetch.git = "https://github.com/josephschmitt/auto-layout.yazi"
+src.git = "https://github.com/josephschmitt/auto-layout.yazi"
 
 [custom-shell]
-src.git = "https://github.com/AnirudhG07/custom-shell.yazi"
 fetch.git = "https://github.com/AnirudhG07/custom-shell.yazi"
+src.git = "https://github.com/AnirudhG07/custom-shell.yazi"
 
 [glow]
-src.git = "https://github.com/Reledia/glow.yazi"
 fetch.git = "https://github.com/Reledia/glow.yazi"
+src.git = "https://github.com/Reledia/glow.yazi"
 
 [mediainfo]
-src.git = "https://github.com/boydaihungst/mediainfo.yazi"
 fetch.git = "https://github.com/boydaihungst/mediainfo.yazi"
+src.git = "https://github.com/boydaihungst/mediainfo.yazi"
 
 [office]
-src.git = "https://github.com/macydnah/office.yazi"
 fetch.git = "https://github.com/macydnah/office.yazi"
+src.git = "https://github.com/macydnah/office.yazi"
+
+[official-plugins-monorepo]
+fetch.git = "https://github.com/yazi-rs/plugins"
+src.git = "https://github.com/yazi-rs/plugins"
+
+[other-monorepo]
+fetch.git = "https://github.com/lpanebr/yazi-plugins"
+src.git = "https://github.com/lpanebr/yazi-plugins"
 
 [ouch]
-src.git = "https://github.com/ndtoan96/ouch.yazi"
 fetch.git = "https://github.com/ndtoan96/ouch.yazi"
+src.git = "https://github.com/ndtoan96/ouch.yazi"
 
 [restore]
-src.git = "https://github.com/boydaihungst/restore.yazi"
 fetch.git = "https://github.com/boydaihungst/restore.yazi"
+src.git = "https://github.com/boydaihungst/restore.yazi"
 
 [what-size]
-src.git = "https://github.com/Vortriz/what-size.yazi"
 fetch.git = "https://github.com/Vortriz/what-size.yazi"
+src.git = "https://github.com/Vortriz/what-size.yazi"
 
 [yamb]
-src.git = "https://github.com/h-hg/yamb.yazi"
 fetch.git = "https://github.com/h-hg/yamb.yazi"
-
+src.git = "https://github.com/h-hg/yamb.yazi"

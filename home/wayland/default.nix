@@ -1,17 +1,21 @@
 {pkgs, ...}: {
     imports = [
+        # keep-sorted start by_regex=\.nix$
+        ./cursor.nix
+        ./hypridle.nix
+        ./hyprlock.nix
+
         ./niri
         ./services
         ./sherlock
         ./waybar
-
-        ./cursor.nix
-        ./hypridle.nix
-        ./hyprlock.nix
+        # keep-sorted end
     ];
 
     home.packages = with pkgs; [
+        # keep-sorted start
         brightnessctl
         pavucontrol
+        # keep-sorted end
     ];
 }

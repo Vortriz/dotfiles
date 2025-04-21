@@ -4,6 +4,7 @@
 
         profiles.default = {
             userSettings = {
+                # keep-sorted start block=yes
                 "[nix]" = {
                     "editor.detectIndentation" = false;
                     "editor.tabSize" = 4;
@@ -11,45 +12,39 @@
                 "[typst]" = {
                     "editor.wordSeparators" = "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?";
                 };
-
                 "diffEditor.ignoreTrimWhitespace" = false;
                 "direnv.restart.automatic" = true;
-
                 "editor.detectIndentation" = false;
                 "editor.indentSize" = "tabSize";
                 "editor.insertSpaces" = true;
                 "editor.tabSize" = 4;
-
                 "explorer.confirmDragAndDrop" = false;
                 "files.trimTrailingWhitespace" = true;
                 "git.confirmSync" = false;
                 "github.copilot.enable" = {"shellscript" = false;};
-
                 "julia.enableTelemetry" = true;
                 "julia.symbolCacheDownload" = true;
-
                 "nix.enableLanguageServer" = true;
                 "nix.serverPath" = "nixd";
-
                 "terminal.integrated.commandsToSkipShell" = ["language-julia.interrupt"];
                 "terminal.integrated.defaultProfile.linux" = "fish";
                 "terminal.integrated.fontFamily" = "'FiraCode Nerd Font Mono'";
-
                 "tinymist.formatterIndentSize" = 4;
                 "window.zoomLevel" = 1.2;
-
                 "workbench.colorTheme" = "Stylix";
                 "workbench.tree.indent" = 12;
+                # keep-sorted end
             };
 
             extensions = with pkgs.vscode-marketplace;
                 [
                     # language packs et al
+
+                    # keep-sorted start
                     james-yu.latex-workshop
                     jnoortheen.nix-ide
                     julialang.language-julia
                     mikestead.dotenv
-
                     ms-python.isort
                     ms-python.python
                     ms-python.vscode-pylance
@@ -61,8 +56,11 @@
                     shd101wyy.markdown-preview-enhanced
                     tamasfe.even-better-toml
                     yzhang.markdown-all-in-one
+                    # keep-sorted end
 
                     # misc
+
+                    # keep-sorted start
                     antfu.slidev
                     donjayamanne.githistory
                     jock.svg
@@ -73,10 +71,13 @@
                     ritwickdey.liveserver
                     rubymaniac.vscode-paste-and-indent
                     tomoki1207.pdf
+                    # keep-sorted end
                 ]
                 ++ (with pkgs.vscode-marketplace-release; [
+                    # keep-sorted start
                     github.copilot
                     github.copilot-chat
+                    # keep-sorted end
                 ]);
         };
     };

@@ -1,4 +1,5 @@
 {
+    # keep-sorted start
     "app.normandy.api_url" = "";
     "app.normandy.enabled" = false; # https://mozilla.github.io/normandy/
     "app.shield.optoutstudies.enabled" = false;
@@ -39,4 +40,5 @@
     "toolkit.telemetry.unified" = false;
     "ui.systemUsesDarkTheme" = 1;
     "widget.use-xdg-desktop-portal.file-picker" = 1;
+    # keep-sorted end
 }

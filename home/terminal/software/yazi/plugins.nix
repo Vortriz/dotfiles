@@ -5,17 +5,22 @@
         inherit (plugins-src) other-monorepo;
 
         official-plugins = [
+            # keep-sorted start
             "jump-to-char"
             "mount"
             "smart-enter"
             "smart-filter"
+            # keep-sorted end
         ];
 
         other-monorepo-plugins = [
+            # keep-sorted start
             "first-non-directory"
+            # keep-sorted end
         ];
 
         other-plugins = [
+            # keep-sorted start
             # "auto-layout"
             "custom-shell"
             "glow"
@@ -25,6 +30,7 @@
             "restore"
             "what-size"
             "yamb"
+            # keep-sorted end
         ];
     in
         builtins.listToAttrs (map (name: {
@@ -45,6 +51,7 @@
 
     # dependencies
     home.packages = with pkgs; [
+        # keep-sorted start
         ffmpeg-full # mediainfo-yazi
         glow # glow-yazi
         libreoffice # office
@@ -54,5 +61,6 @@
         ripdrag # drag and drop
         trash-cli # restore-yazi
         udisks # mount-yazi
+        # keep-sorted end
     ];
 }

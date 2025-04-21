@@ -9,17 +9,21 @@
 
     home.packages = with pkgs.fishPlugins;
         [
+            # keep-sorted start
             autopair
             colored-man-pages
             fish-bd
             fzf-fish
             puffer
             sponge
+            # keep-sorted end
         ]
         ++ (with pkgs; [
+            # keep-sorted start
             bat
             fd
             fzf
+            # keep-sorted end
         ]);
 
     home.sessionVariables = {

@@ -1,15 +1,18 @@
 {pkgs, ...}: {
     imports = [
-        ./firefox
-
+        # keep-sorted start by_regex=\.nix$
         ./nemo.nix
         ./nomacs.nix
         ./sioyek.nix
         ./telegram.nix
         ./zotero.nix
+
+        ./firefox
+        #keep-sorted end
     ];
 
     home.packages = with pkgs; [
+        # keep-sorted start
         anydesk
         bottles
         diffpdf
@@ -25,8 +28,9 @@
         ventoy-full
         vlc
         warp
-        winetricks
         wineWowPackages.stable
+        winetricks
         youtube-music
+        # keep-sorted end
     ];
 }

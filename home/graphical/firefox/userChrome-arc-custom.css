@@ -1,160 +1,168 @@
-#appcontent>#tabbrowser-tabbox>#tabbrowser-tabpanels>.deck-selected>.browserContainer>.browserStack>browser {
-  border-radius: 10px !important;
-  margin: 10px !important;
-  margin-top: 30px !important;
+#appcontent
+    > #tabbrowser-tabbox
+    > #tabbrowser-tabpanels
+    > .deck-selected
+    > .browserContainer
+    > .browserStack
+    > browser {
+    border-radius: 10px !important;
+    margin: 10px !important;
+    margin-top: 30px !important;
 }
 
 .browserStack {
-  background: #3b3f52;
+    background: #3b3f52;
 }
 
 .browserContainer {
-  background-color: var(--lwt-accent-color-inactive,
-      var(--lwt-accent-color)) !important;
-  background-image: var(--lwt-header-image), var(--lwt-additional-images) !important;
-  background-repeat: no-repeat, var(--lwt-background-tiling) !important;
-  background-position:
-    right top,
-    var(--lwt-background-alignment) !important;
+    background-color: var(
+        --lwt-accent-color-inactive,
+        var(--lwt-accent-color)
+    ) !important;
+    background-image:
+        var(--lwt-header-image), var(--lwt-additional-images) !important;
+    background-repeat: no-repeat, var(--lwt-background-tiling) !important;
+    background-position:
+        right top,
+        var(--lwt-background-alignment) !important;
 }
 
 #titlebar {
-  /* display: none !important; */
+    /* display: none !important; */
 }
 
 .titlebar-buttonbox-container {
-  /* display: none !important; */
+    /* display: none !important; */
 }
 
 #forward-button,
 #back-button,
 #reload-button {
-  /* display: none !important; */
+    /* display: none !important; */
 }
 
 #sidebar-button {
-  margin-left: 10px !important;
+    margin-left: 10px !important;
 }
 
 #navigator-toolbox {
-  position: fixed;
-  z-index: 1;
-  height: 30px;
-  overflow: var(--is-bar-visible, visible);
-  right: 0;
-  top: 0;
-  width: 100%;
-  background-color: transparent !important;
-  border: 0px !important;
+    position: fixed;
+    z-index: 1;
+    height: 30px;
+    overflow: var(--is-bar-visible, visible);
+    right: 0;
+    top: 0;
+    width: 100%;
+    background-color: transparent !important;
+    border: 0px !important;
 }
 
 #nav-bar {
-  background-color: #3b3f52 !important;
+    background-color: #3b3f52 !important;
 }
 
 toolbarbutton[open="true"] {
-  --is-bar-visible: visible !important;
+    --is-bar-visible: visible !important;
 }
 
 #sidebar-header {
-  display: none;
+    display: none;
 }
 
 #sidebar-box {
-  z-index: 2;
-  min-width: 300px !important;
-  max-width: 300px !important;
-  min-height: unset !important;
-  max-height: unset !important;
-  border-right: none !important;
+    z-index: 2;
+    min-width: 300px !important;
+    max-width: 300px !important;
+    min-height: unset !important;
+    max-height: unset !important;
+    border-right: none !important;
 }
 
 #sidebar-splitter {
-  z-index: 2;
-  display: none !important;
-  background-color: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
+    z-index: 2;
+    display: none !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 /* add overlay when focusing URL bar input */
 #urlbar:is([breakout][breakout-extend]) {
-  &:before {
-    content: "";
-    position: fixed;
-    pointer-events: none;
+    &:before {
+        content: "";
+        position: fixed;
+        pointer-events: none;
 
-    width: 100vw;
-    height: 100vh;
+        width: 100vw;
+        height: 100vh;
 
-    top: 0px;
-    left: 0px;
+        top: 0px;
+        left: 0px;
 
-    background-color: #000000;
-    opacity: 0.5;
-    backdrop-filter: blur(300px);
-    z-index: -1;
-  }
+        background-color: #000000;
+        opacity: 0.5;
+        backdrop-filter: blur(300px);
+        z-index: -1;
+    }
 }
 
 /* CUSTOM */
 :root {
-  --toolbarbutton-inner-padding: 8px;
+    --toolbarbutton-inner-padding: 8px;
 }
 
 #titlebar {
-  height: 30px;
+    height: 30px;
 }
 
 .toolbar-items,
 .titlebar-spacer {
-  display: none !important;
+    display: none !important;
 }
 
 #TabsToolbar {
-  justify-content: end;
+    justify-content: end;
 }
 
 #browser {
-  background-color: #3b3f52;
+    background-color: #3b3f52;
 }
 
 #sidebar-box,
 .devtools-toolbox-side-iframe {
-  margin-top: 30px;
-  margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 #sidebar-box {
-  border-radius: 1em;
-  z-index: unset !important;
+    border-radius: 1em;
+    z-index: unset !important;
 }
 
 #sidebar {
-  border-radius: 1em;
-  border: 0px;
+    border-radius: 1em;
+    border: 0px;
 }
 
 toolbarspring {
-  display: none;
+    display: none;
 }
 
 #nav-bar {
-  margin-top: -30px;
-  margin-right: 300px;
-  margin-left: 300px;
+    margin-top: -30px;
+    margin-right: 300px;
+    margin-left: 300px;
 }
 
 #urlbar-background {
-  background-color: #3b3f52 !important;
+    background-color: #3b3f52 !important;
 }
 
 #urlbar-input {
-  text-align: center !important;
+    text-align: center !important;
 }
 
 #star-button-box,
 #fxa-toolbar-menu-button {
-  display: none !important;
-
+    display: none !important;
 }

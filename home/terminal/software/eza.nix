@@ -3,10 +3,6 @@
         enable = true;
 
         icons = "auto";
-
-        extraOptions = [
-            "--group-directories-first"
-            "--header"
-        ];
+        extraOptions = ["--group-directories-first" "--header"];
     };
 }
