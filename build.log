@@ -6624,3 +6624,21 @@ Added packages:
 Removed packages:
 [R.]  #1  plugins-b12a9ab  <none>
 Closure size: 8152 -> 8152 (7 paths added, 7 paths removed, delta +0, disk usage -5.2KiB).
+
+---
+
+22/04/25 09:25:55 PM IST
+<<< /nix/var/nix/profiles/system-12-link
+>>> /nix/var/nix/profiles/system-13-link
+Version changes:
+[C.]  #1  grim                                 1.4.1 -> 1.4.1, 1.4.1-fish-completions
+[U.]  #2  restore.yazi                         328dd88 -> 978e988
+[U.]  #3  vscode-extension-ms-python-python    2025.5.2025042101 -> 2025.5.2025042201
+[D.]  #4  vscode-extension-ms-toolsai-jupyter  2025.4.2025041701 -> 2025.3.0
+Added packages:
+[A.]  #1  what-size.yazi-f1c6b69                       <none>
+[A.]  #2  xdg-desktop-portal-termfilechooser-unstable  2025-04-22
+Removed packages:
+[R.]  #1  what-size.yazi-f4b8b5a              <none>
+[R.]  #2  xdg-desktop-portal-termfilechooser  1.0.5-1
+Closure size: 8152 -> 8153 (21 paths added, 20 paths removed, delta +1, disk usage +8.3KiB).
