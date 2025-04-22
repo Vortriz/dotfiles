@@ -115,31 +115,31 @@
   };
   restore = {
     pname = "restore";
-    version = "328dd888c1e2b9b0cb5dc806f099e3164e179620";
+    version = "978e988fffd2a20f78b66ffbf4ece4a30031b2cc";
     src = fetchgit {
       url = "https://github.com/boydaihungst/restore.yazi";
-      rev = "328dd888c1e2b9b0cb5dc806f099e3164e179620";
+      rev = "978e988fffd2a20f78b66ffbf4ece4a30031b2cc";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-3Z8P25u9bffdjrPjxLRWUQn6MdBS+vyElUBkgV4EUwY=";
+      sha256 = "sha256-ahJMMvjTcfiHYjlUVc2ao7+/aMLXIMbB0pvyDlj0//w=";
     };
-    date = "2025-04-05";
+    date = "2025-04-22";
   };
   what-size = {
     pname = "what-size";
-    version = "f4b8b5a5e0aea60ef6350c0100763b5c900c82a7";
+    version = "f1c6b691363e602d0ddbee29384017d08b608f64";
     src = fetchgit {
-      url = "https://github.com/Vortriz/what-size.yazi";
-      rev = "f4b8b5a5e0aea60ef6350c0100763b5c900c82a7";
+      url = "https://github.com/pirafrank/what-size.yazi";
+      rev = "f1c6b691363e602d0ddbee29384017d08b608f64";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-sSeXL9/SOuPKIeZR2ntLP0HGSLBobbrzdTgpikA5jMg=";
+      sha256 = "sha256-M1phqmo318/VYkLWiqjEWuHlnQ+hfz5H+k8G0zsmclg=";
     };
-    date = "2025-03-15";
+    date = "2025-04-07";
   };
   yamb = {
     pname = "yamb";
