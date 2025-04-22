@@ -35,8 +35,8 @@ fetch.git = "https://github.com/boydaihungst/restore.yazi"
 src.git = "https://github.com/boydaihungst/restore.yazi"
 
 [what-size]
-fetch.git = "https://github.com/Vortriz/what-size.yazi"
-src.git = "https://github.com/Vortriz/what-size.yazi"
+fetch.git = "https://github.com/pirafrank/what-size.yazi"
+src.git = "https://github.com/pirafrank/what-size.yazi"
 
 [yamb]
 fetch.git = "https://github.com/h-hg/yamb.yazi"
