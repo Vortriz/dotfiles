@@ -48,7 +48,6 @@
                     ms-python.isort
                     ms-python.python
                     ms-python.vscode-pylance
-                    ms-toolsai.jupyter
                     ms-toolsai.jupyter-renderers
                     ms-toolsai.vscode-jupyter-cell-tags
                     myriad-dreamin.tinymist
@@ -77,6 +76,7 @@
                     # keep-sorted start
                     github.copilot
                     github.copilot-chat
+                    ms-toolsai.jupyter
                     # keep-sorted end
                 ]);
         };
