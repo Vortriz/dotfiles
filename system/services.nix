@@ -4,7 +4,6 @@
     ...
 }: let
     inherit (config.var) username;
-    inherit (config.var) storageDir;
 in {
     services = {
         # Auto mounting
@@ -100,25 +99,5 @@ in {
             };
         };
         # keep-sorted end
-    };
-
-    systemd.timers."rclone" = {
-        wantedBy = ["timers.target"];
-        wants = ["network.target"];
-        after = ["network.target"];
-        timerConfig = {
-            OnCalendar = "daily";
-            Persistent = true;
-            Unit = "rclone.service";
-        };
-    };
-
-    systemd.services."rclone" = {
-        script = let
-            rclone = "${pkgs.rclone}/bin/rclone";
-        in ''
-            ${rclone} sync ${storageDir}/nonlinear-vault drive-iiser: -P --metadata
-            ${rclone} sync ${storageDir}/rishi drive-personal: -P --metadata
-        '';
     };
 }
