@@ -61,7 +61,10 @@
             pre-commit-check = inputs.pre-commit-hooks.lib.${system}.run {
                 src = ./.;
                 hooks = {
-                    flake-checker.enable = true;
+                    flake-checker = {
+                        enable = true;
+                        after = ["treefmt-nix"];
+                    };
                     treefmt-nix = {
                         enable = true;
                         entry = "${treefmtEval.${system}.config.build.wrapper}/bin/treefmt";
