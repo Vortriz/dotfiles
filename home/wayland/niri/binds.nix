@@ -33,14 +33,17 @@ in
     {
         "Mod+Shift+Slash".action = show-hotkey-overlay;
 
-        "Mod+T".action = spawn "${pkgs.kitty}/bin/kitty";
         "Alt+Space".action = spawn "sherlock";
+        "Mod+T".action = spawn "${pkgs.kitty}/bin/kitty";
         "Mod+E".action = spawn ["${pkgs.kitty}/bin/kitty" "--app-id=yazi" "-o" "confirm_os_window_close=0" "yazi"];
         "Ctrl+Shift+Escape".action = spawn "${pkgs.mission-center}/bin/missioncenter";
-        "Print".action = spawn ["${pkgs.flameshot}/bin/flameshot" "gui"];
-        "Alt+Print".action = screenshot-window;
 
+        "Print".action = spawn ["${pkgs.flameshot}/bin/flameshot" "gui"];
+        "Ctrl+Print".action = screenshot-window;
+        "Ctrl+Shift+Print".action.screenshot-screen = []; #TODO: change after https://github.com/sodiboo/niri-flake/issues/944
         "Ctrl+Shift+O".action = spawn "oimg";
+        "Mod+C".action = spawn ["${pkgs.hyprpicker}/bin/hyprpicker" "-andz"];
+
         "Mod+H".action = execute {
             cmd = "niri msg output eDP-1 mode 2880x1800@90.001";
             notif = "Set display mode to 90Hz";
@@ -61,8 +64,8 @@ in
 
         "Mod+Q".action = close-window;
 
-        "Alt+Right".action = focus-window-up;
-        "Alt+Left".action = focus-window-down;
+        "Alt+Right".action = focus-window-down;
+        "Alt+Left".action = focus-window-up;
         "Alt+Tab".action = focus-window-down-or-top;
         "Alt+Shift+Tab".action = focus-window-up-or-bottom;
 
