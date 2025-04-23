@@ -6642,3 +6642,52 @@ Removed packages:
 [R.]  #1  what-size.yazi-f4b8b5a              <none>
 [R.]  #2  xdg-desktop-portal-termfilechooser  1.0.5-1
 Closure size: 8152 -> 8153 (21 paths added, 20 paths removed, delta +1, disk usage +8.3KiB).
+
+---
+
+23/04/25 09:47:27 PM IST
+<<< /nix/var/nix/profiles/system-13-link
+>>> /nix/var/nix/profiles/system-14-link
+Version changes:
+[U.]  #01  acpi-call                             1.2.2-6.14.2 -> 1.2.2-6.14.3
+[U.]  #02  deno                                  2.2.8 -> 2.2.11
+[U.]  #03  discord                               0.0.89 -> 0.0.91
+[U.]  #04  electron                              34.5.0 -> 35.1.4
+[U.]  #05  electron-unwrapped                    34.5.0 -> 35.1.4
+[U.]  #06  eza                                   0.21.0, 0.21.0-man -> 0.21.1, 0.21.1-man
+[U.]  #07  filelight                             24.12.3 -> 25.04.0
+[U.]  #08  fzf                                   0.61.1, 0.61.1-fish-completions, 0.61.1-man -> 0.61.2, 0.61.2-fish-completions, 0.61.2-man
+[U.]  #09  hyprlock                              0.8.0 -> 0.8.1
+[U.]  #10  initrd-linux                          6.14.2 -> 6.14.3
+[U.]  #11  inxi                                  3.3.37-1 -> 3.3.38-1
+[U*]  #12  kpmcore                               24.12.3 -> 25.04.0
+[U*]  #13  ksystemlog                            24.12.3 -> 25.04.0
+[U.]  #14  linux                                 6.14.2, 6.14.2-modules, 6.14.2-modules-shrunk -> 6.14.3, 6.14.3-modules, 6.14.3-modules-shrunk
+[U*]  #15  niri-unstable                         2025-04-17-7884d3b -> 2025-04-22-6ab055a
+[U*]  #16  nixd                                  2.6.2 -> 2.6.3
+[U.]  #17  nixf                                  2.6.2 -> 2.6.3
+[U.]  #18  nixos-system-nixos                    25.05.20250417.b024ced -> 25.05.20250421.c11863f
+[U.]  #19  nixt                                  2.6.2 -> 2.6.3
+[U*]  #20  partitionmanager                      24.12.3 -> 25.04.0
+[C.]  #21  rclone                                1.69.1 -> 1.69.1, 1.69.1-man
+[C.]  #22  stage                                 1.03-tex -> 1-init.sh, 1.03-tex
+[C.]  #23  udev-rules                            <none> -> <none> x2
+[U.]  #24  vscode                                1.99.2 -> 1.99.3
+[U.]  #25  vscode-extension-github-copilot-chat  0.26.5 -> 0.26.6
+[C.]  #26  wl-clipboard                          2.2.1 -> 2.2.1, 2.2.1-fish-completions
+[U.]  #27  x86_energy_perf_policy                6.12.23 -> 6.12.24
+Added packages:
+[A.]  #1  extra-utils    <none>
+[A.]  #2  hyprpicker     0.4.4
+[A.]  #3  initrd-fsinfo  <none>
+[A.]  #4  keymap         <none>
+[A.]  #5  link-units     <none>
+Removed packages:
+[R.]  #1  i3lock-color.pam          <none>
+[R.]  #2  i3lock.pam                <none>
+[R.]  #3  unit-rclone.service       <none>
+[R.]  #4  unit-rclone.timer         <none>
+[R.]  #5  unit-script-rclone-start  <none>
+[R.]  #6  xlock.pam                 <none>
+[R.]  #7  xscreensaver.pam          <none>
+Closure size: 8153 -> 8155 (134 paths added, 132 paths removed, delta +2, disk usage +131.5MiB).
