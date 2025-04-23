@@ -7,13 +7,16 @@ export FLAKE := `echo $PWD`
 @default:
     just --list
 
+@check:
+    nix flake check
+
 @test *args:
     nh os test $FLAKE $argv[2..-1]
 
 @switch *args:
     nh os switch $FLAKE $argv[2..-1]
 
-@deploy *args:
+@deploy *args: check
     nh os switch $FLAKE $argv[2..-1]
 
     echo -e "\n---\n\n$(date '+%x %X')" >> $FLAKE/build.log
@@ -22,7 +25,7 @@ export FLAKE := `echo $PWD`
     git add -A
     git commit -m "deployed $(nixos-rebuild list-generations --flake $FLAKE | grep -oP '[0-9]*(?= current)')"
 
-@update:
+@update: check
     echo -e "Updating flake and fetchgit inputs...\n"
 
     nix flake update
