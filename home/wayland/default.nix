@@ -16,6 +16,7 @@
         # keep-sorted start
         brightnessctl
         pavucontrol
+        wl-clipboard
         # keep-sorted end
     ];
 }
