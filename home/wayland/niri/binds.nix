@@ -5,19 +5,21 @@
     ...
 }:
 with config.lib.niri.actions; let
+    inherit (lib.strings) splitString;
+
     vol = cmd: {
         allow-when-locked = true;
-        action.spawn = lib.strings.splitString " " "${pkgs.avizo}/bin/volumectl -d -u ${cmd}";
+        action.spawn = splitString " " "${pkgs.avizo}/bin/volumectl -d -u ${cmd}";
     };
 
     mute = cmd: {
         allow-when-locked = true;
-        action.spawn = lib.strings.splitString " " "${pkgs.avizo}/bin/volumectl -d ${cmd}";
+        action.spawn = splitString " " "${pkgs.avizo}/bin/volumectl -d ${cmd}";
     };
 
     brightness = cmd: {
         allow-when-locked = true;
-        action.spawn = lib.strings.splitString " " "${pkgs.avizo}/bin/lightctl -d -e 4 ${cmd}";
+        action.spawn = splitString " " "${pkgs.avizo}/bin/lightctl -d -e 4 ${cmd}";
     };
 
     execute = {
@@ -70,6 +72,7 @@ in
         "Alt+Shift+Tab".action = focus-window-up-or-bottom;
 
         "Mod+Tab".action = focus-workspace-previous;
+        "Mod+Shift+Tab".action = focus-column-right-or-first;
 
         "Mod+Up".action = focus-workspace-up;
         "Mod+Down".action = focus-workspace-down;
