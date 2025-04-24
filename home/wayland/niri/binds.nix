@@ -54,17 +54,17 @@ in
             cmd = "niri msg output eDP-1 mode 2880x1800@60.001";
             notif = "Set display mode to 60Hz";
         };
-        "Mod+S".action = execute {
+        "Mod+Z".action = execute {
             cmd = "niri msg output eDP-1 scale 1";
             notif = "Set display scale to 1";
         };
-        "Mod+Shift+S".action = execute {
+        "Mod+Shift+Z".action = execute {
             cmd = "niri msg output eDP-1 scale 1.5";
             notif = "Set display scale to 1.5";
         };
-        "Mod+L".action = spawn ["${pkgs.hyprlock}/bin/hyprlock" "--immediate"];
 
         "Mod+Q".action = close-window;
+        "Mod+L".action = spawn ["${pkgs.hyprlock}/bin/hyprlock" "--immediate"];
 
         "Alt+Right".action = focus-window-down;
         "Alt+Left".action = focus-window-up;
@@ -74,21 +74,21 @@ in
         "Mod+Tab".action = focus-workspace-previous;
         "Mod+Shift+Tab".action = focus-column-right-or-first;
 
-        "Mod+Up".action = focus-workspace-up;
-        "Mod+Down".action = focus-workspace-down;
-        "Mod+Left".action = focus-column-left;
-        "Mod+Right".action = focus-column-right;
+        "Mod+W".action = focus-workspace-up;
+        "Mod+S".action = focus-workspace-down;
+        "Mod+A".action = focus-column-left;
+        "Mod+D".action = focus-column-right;
 
-        "Mod+Ctrl+Up".action = move-window-up-or-to-workspace-up;
-        "Mod+Ctrl+Down".action = move-window-down-or-to-workspace-down;
-        "Mod+Ctrl+Left".action = move-column-left;
-        "Mod+Ctrl+Right".action = move-column-right;
+        "Mod+Ctrl+W".action = move-window-up-or-to-workspace-up;
+        "Mod+Ctrl+S".action = move-window-down-or-to-workspace-down;
+        "Mod+Ctrl+A".action = move-column-left;
+        "Mod+Ctrl+D".action = move-column-right;
 
-        "Mod+Shift+Up".action = move-workspace-up;
-        "Mod+Shift+Down".action = move-workspace-down;
+        "Mod+Shift+W".action = move-workspace-up;
+        "Mod+Shift+S".action = move-workspace-down;
 
-        "Mod+V".action = toggle-window-floating;
-        "Mod+W".action = toggle-column-tabbed-display;
+        "Mod+Up".action = toggle-window-floating;
+        "Mod+Shift+T".action = toggle-column-tabbed-display;
 
         "Mod+Comma".action = consume-window-into-column;
         "Mod+Period".action = expel-window-from-column;
