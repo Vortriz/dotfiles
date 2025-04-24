@@ -32,6 +32,9 @@
     }: let
         inherit (nixpkgs) lib;
 
+        # This example is only using x86_64-linux
+        system = "x86_64-linux";
+
         # Load a uv workspace from a workspace root.
         # Uv2nix treats all uv projects as workspace projects.
         workspace = uv2nix.lib.workspace.loadWorkspace {workspaceRoot = ./.;};
@@ -60,8 +63,7 @@
             # It's using https://pyproject-nix.github.io/pyproject.nix/build.html
         };
 
-        # This example is only using x86_64-linux
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        pkgs = nixpkgs.legacyPackages.${system};
 
         # Use Python 3.12 from nixpkgs
         python = pkgs.python312;
@@ -84,18 +86,10 @@
         # Package a virtual environment as our main application.
         #
         # Enable no optional dependencies for production build.
-        packages.x86_64-linux.default = pythonSet.mkVirtualEnv builtins.toString ./. workspace.deps.default;
-
-        # Make hello runnable with `nix run`
-        # apps.x86_64-linux = {
-        #     default = {
-        #         type = "app";
-        #         program = "${self.packages.x86_64-linux.default}/bin/hello";
-        #     };
-        # };
+        packages.${system}.default = pythonSet.mkVirtualEnv builtins.toString ./. workspace.deps.default;
 
         # Impurely using uv to manage virtual environments
-        devShells.x86_64-linux = let
+        devShells.${system} = let
             mkScript = name: text: let
                 script = pkgs.writers.writeFishBin name text;
             in
@@ -127,6 +121,7 @@
                 shellHook = ''
                     unset PYTHONPATH
                     uv venv
+                    echo "To activate the virtualenv, run `activate`"
                 '';
             };
         };
