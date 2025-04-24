@@ -4,6 +4,7 @@
     ...
 }: let
     inherit (osConfig.var) downloadsDir;
+    inherit (osConfig.var) storageDir;
 in {
     hotkey-overlay.skip-at-startup = true;
 
@@ -52,5 +53,8 @@ in {
 
         # ugly fix for flameshot
         QT_SCREEN_SCALE_FACTORS = builtins.toString (2.0 / 3.0);
+
+        # Set uv cache directory
+        UV_CACHE_DIR = "${storageDir}/dev/.cache/uv";
     };
 }
