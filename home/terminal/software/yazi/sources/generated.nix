@@ -115,17 +115,17 @@
   };
   restore = {
     pname = "restore";
-    version = "978e988fffd2a20f78b66ffbf4ece4a30031b2cc";
+    version = "539aad5077dc8b342a580036e416f2b949b6590e";
     src = fetchgit {
       url = "https://github.com/boydaihungst/restore.yazi";
-      rev = "978e988fffd2a20f78b66ffbf4ece4a30031b2cc";
+      rev = "539aad5077dc8b342a580036e416f2b949b6590e";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-ahJMMvjTcfiHYjlUVc2ao7+/aMLXIMbB0pvyDlj0//w=";
+      sha256 = "sha256-ngwbweKF7pSEpzy1TNzbKz8cFIWaDison5vCiGxkHFk=";
     };
-    date = "2025-04-22";
+    date = "2025-04-25";
   };
   what-size = {
     pname = "what-size";
