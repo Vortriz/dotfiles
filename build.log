@@ -6716,3 +6716,14 @@ Added packages:
 Removed packages:
 [R.]  #1  untitled  <none> x5
 Closure size: 8155 -> 8155 (200 paths added, 200 paths removed, delta +0, disk usage +4.8MiB).
+
+---
+
+25/04/25 06:54:21 PM IST
+<<< /nix/var/nix/profiles/system-15-link
+>>> /nix/var/nix/profiles/system-16-link
+Version changes:
+[U*]  #1  niri-unstable                      2025-04-22-6ab055a -> 2025-04-25-85cd64e
+[D.]  #2  restore.yazi                       978e988 -> 539aad5
+[U.]  #3  vscode-extension-ms-python-python  2025.5.2025042201 -> 2025.5.2025042401
+Closure size: 8155 -> 8155 (20 paths added, 20 paths removed, delta +0, disk usage +1.8MiB).
