@@ -1,6 +1,5 @@
 {
     config,
-    inputs,
     outputs,
     pkgs,
     ...
@@ -8,11 +7,7 @@
     inherit (config.var) username;
 in {
     imports = [
-        # keep-sorted start by_regex=(^inputs|\.nix$) prefix_order=inputs,./
-        inputs.agenix.nixosModules.default
-        inputs.niri.nixosModules.niri
-        inputs.nixos-cosmic.nixosModules.default
-        inputs.stylix.nixosModules.stylix
+        # keep-sorted start by_regex=\.nix$
         ../secrets/agenix.nix
         ./hardware-configuration.nix
         ./hm-module.nix
@@ -26,13 +21,10 @@ in {
 
     nixpkgs = {
         overlays = [
-            # keep-sorted start by_regex=^(inputs)
-            inputs.niri.overlays.niri
-
             outputs.overlays.additions
             outputs.overlays.modifications
-            # keep-sorted end
         ];
+
         config.allowUnfree = true;
     };
 

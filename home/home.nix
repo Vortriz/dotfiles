@@ -1,5 +1,4 @@
 {
-    inputs,
     osConfig,
     outputs,
     ...
@@ -7,11 +6,7 @@
     inherit (osConfig.var) username;
 in {
     imports = [
-        # keep-sorted start by_regex=(^inputs|\.nix$) prefix_order=inputs,./
-        inputs.misumisumi-dotfiles.homeManagerModules.zotero
-        inputs.scientific-fhs.nixosModules.default
-        inputs.sherlock.homeManagerModules.default
-        inputs.walker.homeManagerModules.default
+        # keep-sorted start by_regex=\.nix$
         ./stylix.nix
         ./xdg-portal.nix
 
@@ -25,12 +20,8 @@ in {
 
     nixpkgs = {
         overlays = [
-            # keep-sorted start by_regex=^(inputs)
-            inputs.nix-vscode-extensions.overlays.default
-
             outputs.overlays.additions
             outputs.overlays.modifications
-            # keep-sorted end
         ];
 
         config.allowUnfree = true;

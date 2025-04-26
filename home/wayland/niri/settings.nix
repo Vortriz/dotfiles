@@ -38,6 +38,21 @@ in {
         };
     };
 
+    animations = {
+        window-open = {
+            easing = {
+                curve = "ease-out-expo";
+                duration-ms = 250;
+            };
+        };
+        window-close = {
+            easing = {
+                curve = "ease-out-quad";
+                duration-ms = 250;
+            };
+        };
+    };
+
     spawn-at-startup = map (s: {command = pkgs.lib.strings.splitString " " s;})
     [
         "systemctl --user reset-failed waybar.service"
