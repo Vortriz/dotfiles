@@ -3,8 +3,7 @@
     pkgs,
     ...
 }: let
-    inherit (osConfig.var) downloadsDir;
-    inherit (osConfig.var) storageDir;
+    inherit (osConfig.var) downloadsDir storageDir;
 in {
     hotkey-overlay.skip-at-startup = true;
 

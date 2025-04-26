@@ -1,8 +1,7 @@
 {pkgs, ...}: {
     programs.yazi.plugins = let
         plugins-src = pkgs.callPackages ./sources/generated.nix {};
-        inherit (plugins-src) official-plugins-monorepo;
-        inherit (plugins-src) other-monorepo;
+        inherit (plugins-src) official-plugins-monorepo other-monorepo;
 
         official-plugins = [
             # keep-sorted start

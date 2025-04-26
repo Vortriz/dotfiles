@@ -32,10 +32,13 @@ in {
         settings = {
             # Enable flakes and new 'nix' command
             experimental-features = "nix-command flakes";
+
             # Workaround for https://github.com/NixOS/nix/issues/9574
             nix-path = config.nix.nixPath;
+
             # Add myself to the trusted users
             trusted-users = ["root" username];
+
             # Add extra Caches
             substituters = [
                 "https://cosmic.cachix.org/"
@@ -58,7 +61,7 @@ in {
         ${username} = {
             isNormalUser = true;
             openssh.authorizedKeys.keys = [
-                # TODO: Add your SSH public key(s) here, if you plan on using SSH to connect
+                # Add your SSH public key(s) here, if you plan on using SSH to connect
             ];
             extraGroups = ["networkmanager" "wheel" "video" "aria2"];
             shell = pkgs.fish;
