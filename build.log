@@ -6727,3 +6727,25 @@ Version changes:
 [D.]  #2  restore.yazi                       978e988 -> 539aad5
 [U.]  #3  vscode-extension-ms-python-python  2025.5.2025042201 -> 2025.5.2025042401
 Closure size: 8155 -> 8155 (20 paths added, 20 paths removed, delta +0, disk usage +1.8MiB).
+
+---
+
+26/04/25 07:20:22 PM IST
+<<< /nix/var/nix/profiles/system-16-link
+>>> /nix/var/nix/profiles/system-17-link
+Version changes:
+[U.]  #01  anydesk                            6.4.2 -> 7.0.0
+[U.]  #02  flameshot                          12.1.0-unstable-2025-03-10, 12.1.0-unstable-2025-03-10-fish-completions -> 12.1.0-unstable-2025-04-07, 12.1.0-unstable-2025-04-07-fish-completions
+[U.]  #03  fzf                                0.61.2, 0.61.2-fish-completions, 0.61.2-man -> 0.61.3, 0.61.3-fish-completions, 0.61.3-man
+[U.]  #04  gh                                 2.70.0, 2.70.0-fish-completions -> 2.71.0, 2.71.0-fish-completions
+[U.]  #05  libblake3                          1.8.0 -> 1.8.2
+[U.]  #06  nh                                 3.6.0 -> 4.0.0
+[U*]  #07  niri-unstable                      2025-04-25-85cd64e -> 2025-04-26-78e3daf
+[U.]  #08  nixos-system-nixos                 25.05.20250423.8a2f738 -> 25.05.20250424.f771eb4
+[U.]  #09  obsidian                           1.8.9 -> 1.8.10
+[U.]  #10  vscode-extension-github-copilot    1.303.0 -> 1.309.0
+[U.]  #11  vscode-extension-ms-python-python  2025.5.2025042401 -> 2025.5.2025042501
+[U.]  #12  zotero-better-bibtex               7.0.19 -> 7.0.22
+Added packages:
+[A.]  #1  tbb  2021.11.0, 2021.11.0-dev
+Closure size: 8155 -> 8157 (101 paths added, 99 paths removed, delta +2, disk usage +16.6MiB).
