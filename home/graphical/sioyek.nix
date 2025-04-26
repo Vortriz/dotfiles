@@ -5,6 +5,7 @@
         # keep-sorted start block=yes
         bindings = {
             # keep-sorted start
+            "close_window" = "q";
             "command" = "<C-P>";
             "goto_page_with_label" = "<C-g>";
             "toggle_dark_mode" = "<C-d>";
