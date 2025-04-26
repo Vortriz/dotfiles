@@ -34,7 +34,7 @@
 
             "custom/launcher" = {
                 "format" = " ";
-                "on-click" = "walker";
+                "on-click" = "sherlock";
                 "tooltip" = false;
             };
 

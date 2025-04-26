@@ -35,7 +35,6 @@
         sherlock.url = "github:Skxxtz/sherlock";
         stylix.url = "github:danth/stylix";
         treefmt-nix.url = "github:numtide/treefmt-nix";
-        walker.url = "github:abenz1267/walker";
         # keep-sorted end
     };
 
