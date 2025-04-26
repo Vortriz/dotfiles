@@ -1,4 +1,6 @@
-{
+{inputs, ...}: {
+    imports = [inputs.scientific-fhs.nixosModules.default];
+
     programs.scientific-fhs = {
         enable = true;
         enableNVIDIA = false;
