@@ -49,8 +49,7 @@
         forAllPkgs = f: forAllSystems (system: f nixpkgs.legacyPackages.${system});
         treefmtEval = forAllPkgs (pkgs: inputs.treefmt-nix.lib.evalModule pkgs ./treefmt.nix);
     in {
-        # Your custom packages
-        # Accessible through 'nix build', 'nix shell', etc
+        # Your custom packages, accessible through 'nix build', 'nix shell', etc
         packages = forAllPkgs (pkgs: import ./pkgs pkgs);
 
         # Formatter for your nix files, available through 'nix fmt'

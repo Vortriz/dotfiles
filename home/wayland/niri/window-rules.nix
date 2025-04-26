@@ -54,7 +54,7 @@
         ];
 
         default-column-display = "tabbed";
-        # TODO: auto-tabbing
+        # TODO: auto-tabbing when it lands
     }
     {
         matches = [

@@ -3,11 +3,7 @@
     pkgs,
     ...
 }: let
-    inherit (config.var) dotfilesDir;
-    inherit (config.var) defaultLocale;
-    inherit (config.var) extraLocale;
-    inherit (config.var) hostname;
-    inherit (config.var) timeZone;
+    inherit (config.var) dotfilesDir defaultLocale extraLocale hostname timeZone;
 in {
     # keep-sorted start block=yes newline_separated=yes
     documentation = {
