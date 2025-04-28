@@ -10,8 +10,6 @@
     - [ ] sideberry
         - [ ] https://github.com/Erudition/zen-sidebery-mod
         - [ ] https://github.com/MrOtherGuy/fx-autoconfig
-- [x] git-hooks
-    - [x] treefmt-nix - https://github.com/numtide/treefmt-nix
-    - [x] statix
-    - [x] deadnix
-        - [x] fix overlays file issue
+- [ ] ags/ignis
+    - [ ] replace avizo
+    - [ ] replace waybar
