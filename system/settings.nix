@@ -3,7 +3,7 @@
     pkgs,
     ...
 }: let
-    inherit (config.var) dotfilesDir defaultLocale extraLocale hostname timeZone;
+    inherit (config.var) defaultLocale extraLocale hostname timeZone;
 in {
     # keep-sorted start block=yes newline_separated=yes
     documentation = {
@@ -13,9 +13,6 @@ in {
 
     environment.variables = {
         EDITOR = "micro";
-
-        # For nh
-        FLAKE = dotfilesDir;
 
         # For OpenGL applications in shell.nix/flake.nix (looking at you GLMakie)
         LD_LIBRARY_PATH = "/run/opengl-driver/lib:/run/opengl-driver-32/lib";
