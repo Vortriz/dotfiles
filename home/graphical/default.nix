@@ -1,6 +1,7 @@
 {pkgs, ...}: {
     imports = [
         # keep-sorted start by_regex=\.nix$
+        ./celluloid.nix
         ./nemo.nix
         ./nomacs.nix
         ./sioyek.nix
@@ -20,7 +21,6 @@
         gnome-calculator
         kdePackages.filelight
         mission-center
-        mpv
         nautilus
         obsidian
         pdfarranger
