@@ -81,7 +81,7 @@
     },
     "office": {
         "cargoLocks": null,
-        "date": "2025-03-03",
+        "date": "2025-04-26",
         "extract": null,
         "name": "office",
         "passthru": null,
@@ -91,17 +91,17 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "bcd9e9e78835c96eb2bb8b8841e4753704b99b17",
-            "sha256": "sha256-rZas/oMNI6H5lXOixDQcL/dQC+J9VCFrOOIIjjLDUc4=",
+            "rev": "d1e3e51857c109fbfc707ab0f9f383dc98b9795f",
+            "sha256": "sha256-ORcexu1f7hb7G4IyzQIfGlCkH3OWlk4w5FtZrbXkR40=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/macydnah/office.yazi"
         },
-        "version": "bcd9e9e78835c96eb2bb8b8841e4753704b99b17"
+        "version": "d1e3e51857c109fbfc707ab0f9f383dc98b9795f"
     },
     "official-plugins-monorepo": {
         "cargoLocks": null,
-        "date": "2025-04-21",
+        "date": "2025-04-27",
         "extract": null,
         "name": "official-plugins-monorepo",
         "passthru": null,
@@ -111,13 +111,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "4b027c79371af963d4ae3a8b69e42177aa3fa6ee",
-            "sha256": "sha256-auGNSn6tX72go7kYaH16hxRng+iZWw99dKTTUN91Cow=",
+            "rev": "864a0210d9ba1e8eb925160c2e2a25342031d8d3",
+            "sha256": "sha256-m3709h7/AHJAtoJ3ebDA40c77D+5dCycpecprjVqj/k=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/yazi-rs/plugins"
         },
-        "version": "4b027c79371af963d4ae3a8b69e42177aa3fa6ee"
+        "version": "864a0210d9ba1e8eb925160c2e2a25342031d8d3"
     },
     "other-monorepo": {
         "cargoLocks": null,
