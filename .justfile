@@ -1,7 +1,7 @@
 set shell := ["fish", "-c"]
 set positional-arguments
 
-export FLAKE := `echo $PWD`
+export NH_FLAKE := `echo $PWD`
 
 
 @default:
