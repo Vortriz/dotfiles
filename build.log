@@ -6749,3 +6749,17 @@ Version changes:
 Added packages:
 [A.]  #1  tbb  2021.11.0, 2021.11.0-dev
 Closure size: 8155 -> 8157 (101 paths added, 99 paths removed, delta +2, disk usage +16.6MiB).
+
+---
+
+28/04/25 10:37:15 AM IST
+<<< /nix/var/nix/profiles/system-17-link
+>>> /nix/var/nix/profiles/system-18-link
+Version changes:
+[U*]  #1  niri-unstable  2025-04-26-78e3daf -> 2025-04-27-758cca5
+[U.]  #2  plugins        4b027c7 -> 864a021
+Added packages:
+[A.]  #1  office.yazi-d1e3e51  <none>
+Removed packages:
+[R.]  #1  office.yazi-bcd9e9e  <none>
+Closure size: 8157 -> 8157 (31 paths added, 31 paths removed, delta +0, disk usage +11.2KiB).
