@@ -21,6 +21,23 @@
                 desc = "Open";
             }
         ];
+
+        play = [
+            {
+                run = ''celluloid "$@"'';
+                orphan = true;
+                desc = "Play";
+            }
+        ];
+    };
+
+    open = {
+        prepend_rules = [
+            {
+                mime = "video/*";
+                use = "play";
+            }
+        ];
     };
 
     plugin = {
