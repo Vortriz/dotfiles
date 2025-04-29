@@ -1,11 +1,10 @@
 {pkgs, ...}: {
     home.packages = [pkgs.telegram-desktop];
 
-    xdg.mimeApps.defaultApplications = {
-        # keep-sorted start
-        "image/jpeg" = "org.nomacs.ImageLounge.desktop";
-        "image/jpg" = "org.nomacs.ImageLounge.desktop";
-        "image/png" = "org.nomacs.ImageLounge.desktop";
-        # keep-sorted end
+    xdg.mimeApps.defaultApplications = let
+        telegram = "org.telegram.desktop.desktop";
+    in {
+        "x-scheme-handler/tg" = telegram;
+        "x-scheme-handler/tonsite" = telegram;
     };
 }
