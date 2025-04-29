@@ -6763,3 +6763,41 @@ Added packages:
 Removed packages:
 [R.]  #1  office.yazi-bcd9e9e  <none>
 Closure size: 8157 -> 8157 (31 paths added, 31 paths removed, delta +0, disk usage +11.2KiB).
+
+---
+
+29/04/25 03:24:26 PM IST
+<<< /nix/var/nix/profiles/system-18-link
+>>> /nix/var/nix/profiles/system-21-link
+Version changes:
+[C.]  #01  abseil-cpp                                    20240722.1 -> 20210324.2, 20240722.1
+[U.]  #02  acpi-call                                     1.2.2-6.14.3 -> 1.2.2-6.14.4
+[U.]  #03  adw-gtk3                                      5.8 -> 5.10
+[U.]  #04  deno                                          2.2.11 -> 2.2.12
+[U.]  #05  esbuild                                       0.25.2 -> 0.25.3
+[U.]  #06  eza                                           0.21.1, 0.21.1-man -> 0.21.2, 0.21.2-man
+[U.]  #07  gh                                            2.71.0, 2.71.0-fish-completions -> 2.71.2, 2.71.2-fish-completions
+[U.]  #08  initrd-linux                                  6.14.3 -> 6.14.4
+[U.]  #09  linux                                         6.14.3, 6.14.3-modules, 6.14.3-modules-shrunk -> 6.14.4, 6.14.4-modules, 6.14.4-modules-shrunk
+[C.]  #10  mpv-with-scripts                              0.40.0, 0.40.0-fish-completions -> 0.40.0
+[U.]  #11  nerd-fonts-fira-code                          3.3.0+6.2 -> 3.4.0+6.2
+[U.]  #12  nerd-fonts-jetbrains-mono                     3.3.0+2.304 -> 3.4.0+2.304
+[U*]  #13  niri-unstable                                 2025-04-27-758cca5 -> 2025-04-29-5f117c6
+[U.]  #14  nixos-system-nixos                            25.05.20250424.f771eb4 -> 25.05.20250427.5461b7f
+[C.]  #15  openexr                                       2.5.10, 3.2.4 x3, 3.2.4-bin, 3.2.4-dev -> 3.2.4 x3, 3.2.4-bin, 3.2.4-dev
+[U.]  #16  passt                                         2025_03_20.32f6212 -> 2025_04_15.2340bbf
+[C.]  #17  perl5.40.0-Image-ExifTool                     13.25 -> 13.25, 13.25-fish-completions
+[C.]  #18  protobuf                                      29.4 -> 21.12, 29.4
+[U.]  #19  python3.12-debugpy                            1.8.13 -> 1.8.14
+[U.]  #20  python3.12-jedi-language-server               0.44.0 -> 0.45.0
+[U.]  #21  starship                                      1.22.1 -> 1.23.0
+[U.]  #22  unifont                                       16.0.02 -> 16.0.03
+[U.]  #23  vscode-extension-ms-azuretools-vscode-docker  1.29.5 -> 1.29.6
+[U.]  #24  x86_energy_perf_policy                        6.12.24 -> 6.12.25
+[U.]  #25  youtube-music                                 3.8.0 -> 3.9.0
+Added packages:
+[A.]  #1  celluloid  0.28, 0.28-fish-completions
+[A.]  #2  live555    2024.09.20
+Removed packages:
+[R.]  #1  stub-ld-i686-unknown-linux-musl  <none>
+Closure size: 8157 -> 8160 (162 paths added, 159 paths removed, delta +3, disk usage +25.8MiB).
