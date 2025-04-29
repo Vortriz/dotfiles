@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
     imports = [
         ./plugins.nix
     ];
@@ -14,4 +14,8 @@
     };
 
     stylix.targets.yazi.enable = true;
+
+    home.packages = with pkgs; [
+        exiftool
+    ];
 }
