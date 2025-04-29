@@ -2,10 +2,12 @@
     # image viewer
     home.packages = [pkgs.nomacs];
 
-    xdg.mimeApps.defaultApplications = {
-        # keep-sorted start
-        "x-scheme-handler/tg" = "org.telegram.desktop.desktop";
-        "x-scheme-handler/tonsite" = "org.telegram.desktop.desktop";
-        # keep-sorted end
+    xdg.mimeApps.defaultApplications = let
+        nomacs = "org.nomacs.ImageLounge.desktop";
+    in {
+        "image/jpeg" = nomacs;
+        "image/jpg" = nomacs;
+        "image/png" = nomacs;
+        "image/tiff" = nomacs;
     };
 }
