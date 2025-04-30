@@ -2,6 +2,7 @@
     imports = [
         # keep-sorted start by_regex=\.nix$
         ./celluloid.nix
+        ./gtk.nix
         ./nemo.nix
         ./nomacs.nix
         ./sioyek.nix
