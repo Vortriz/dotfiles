@@ -17,7 +17,7 @@
             {app-id = "obsidian";}
             {title = ".*pdf";}
             {app-id = "yazi";}
-            {app-id = "mpv";}
+            {app-id = "celluloid";}
             {app-id = "Zotero";}
         ];
 
