@@ -6801,3 +6801,21 @@ Added packages:
 Removed packages:
 [R.]  #1  stub-ld-i686-unknown-linux-musl  <none>
 Closure size: 8157 -> 8160 (162 paths added, 159 paths removed, delta +3, disk usage +25.8MiB).
+
+---
+
+30/04/25 07:16:11 PM IST
+<<< /nix/var/nix/profiles/system-21-link
+>>> /nix/var/nix/profiles/system-22-link
+Version changes:
+[U.]  #01  firefox                                      137.0.2 -> 138.0
+[U.]  #02  firefox-unwrapped                            137.0.2 -> 138.0
+[C.]  #03  libXNVCtrl                                   390.157, 570.133.07 -> 390.157, 570.144
+[U*]  #04  niri-unstable                                2025-04-29-5f117c6 -> 2025-04-30-af080a0
+[U.]  #05  nixos-system-nixos                           25.05.20250427.5461b7f -> 25.05.20250429.46e634b
+[U.]  #06  python3.12-jupyterlab                        4.3.6 -> 4.4.1
+[U.]  #07  python3.12-notebook                          7.3.3 -> 7.4.1
+[U.]  #08  vscode-extension-github-copilot              1.309.0 -> 1.311.0
+[U.]  #09  vscode-extension-ms-python-isort             2025.1.10981008 -> 2025.1.11191009
+[U.]  #10  xdg-desktop-portal-termfilechooser-unstable  2025-04-22 -> 2025-04-29
+Closure size: 8160 -> 8160 (77 paths added, 77 paths removed, delta +0, disk usage +12.5MiB).
