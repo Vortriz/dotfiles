@@ -125,7 +125,7 @@ in
             xStr = builtins.toString x;
         in {
             "Mod+${xStr}".action = focus-workspace x;
-            "Mod+Ctrl+${xStr}".action = move-column-to-workspace x;
+            # "Mod+Ctrl+${xStr}".action = move-column-to-workspace x; # TODO: niri-flake is borked atm
         })
         (builtins.genList (x: x + 1) 9)
     ))
