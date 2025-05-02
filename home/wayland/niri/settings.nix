@@ -10,7 +10,7 @@ in {
     input.touchpad = {
         tap-button-map = "left-right-middle";
         scroll-factor = 0.75;
-        dwt = false;
+        dwt = true;
     };
 
     outputs."eDP-1" = {
