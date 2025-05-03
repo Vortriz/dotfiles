@@ -13,10 +13,14 @@ in {
 
     home-manager = {
         extraSpecialArgs = {inherit inputs outputs;};
+
+        backupFileExtension = "backup";
+        useGlobalPkgs = true;
+        useUserPackages = true;
+
         users = {
             # Import your home-manager configuration
             ${username} = import ../home/home.nix;
         };
-        backupFileExtension = "backup";
     };
 }

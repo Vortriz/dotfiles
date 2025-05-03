@@ -1,8 +1,4 @@
-{
-    osConfig,
-    outputs,
-    ...
-}: let
+{osConfig, ...}: let
     inherit (osConfig.var) username;
 in {
     imports = [
@@ -17,15 +13,6 @@ in {
         ./wayland
         # keep-sorted end
     ];
-
-    nixpkgs = {
-        overlays = [
-            outputs.overlays.additions
-            outputs.overlays.modifications
-        ];
-
-        config.allowUnfree = true;
-    };
 
     home = {
         inherit username;
