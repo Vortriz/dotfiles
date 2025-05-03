@@ -1,5 +1,6 @@
 {
     config,
+    inputs,
     outputs,
     pkgs,
     ...
@@ -23,6 +24,10 @@ in {
         overlays = [
             outputs.overlays.additions
             outputs.overlays.modifications
+
+            # keep-sorted start
+            inputs.nix-vscode-extensions.overlays.default
+            #keep-sorted end
         ];
 
         config.allowUnfree = true;

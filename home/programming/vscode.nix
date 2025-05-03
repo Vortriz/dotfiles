@@ -1,10 +1,4 @@
-{
-    inputs,
-    pkgs,
-    ...
-}: {
-    nixpkgs.overlays = [inputs.nix-vscode-extensions.overlays.default];
-
+{pkgs, ...}: {
     programs.vscode = {
         enable = true;
 
