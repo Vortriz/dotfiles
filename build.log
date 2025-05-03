@@ -7202,3 +7202,11 @@ Removed packages:
 [R.]  #6  rtmpdump-unstable  2021-02-19
 [R.]  #7  sherlock           0.1.10
 Closure size: 8160 -> 7918 (255 paths added, 497 paths removed, delta -242, disk usage -918.1MiB).
+
+---
+
+03/05/25 06:30:55 PM IST
+<<< /nix/var/nix/profiles/system-24-link
+>>> /nix/var/nix/profiles/system-25-link
+No version or selection state changes.
+Closure size: 7918 -> 7918 (13 paths added, 13 paths removed, delta +0, disk usage +9.8KiB).
