@@ -8,3 +8,8 @@
     - Start rebase `git rebase main`
     - Resolve any conflicts (probably in `build.log`) and do `git rebase --continue` till everything is sorted out
     - Then push the rebase to github `git push origin niri --force`
+
+## steam issues
+
+- Run under `xwayland-satellite`
+- Fix black screen with: https://github.com/YaLTeR/niri/wiki/Application-Issues#steam

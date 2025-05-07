@@ -24,9 +24,6 @@ in {
                 disable_loading_bar = true;
             };
 
-            # ANIMATION
-            animations.enabled = false;
-
             # INPUT FIELD
             input-field = [
                 {

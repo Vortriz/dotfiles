@@ -7,20 +7,7 @@
 with config.lib.niri.actions; let
     inherit (lib.strings) splitString;
 
-    vol = cmd: {
-        allow-when-locked = true;
-        action.spawn = splitString " " "${pkgs.avizo}/bin/volumectl -d -u ${cmd}";
-    };
-
-    mute = cmd: {
-        allow-when-locked = true;
-        action.spawn = splitString " " "${pkgs.avizo}/bin/volumectl -d ${cmd}";
-    };
-
-    brightness = cmd: {
-        allow-when-locked = true;
-        action.spawn = splitString " " "${pkgs.avizo}/bin/lightctl -d -e 4 ${cmd}";
-    };
+    spawn' = cmd: spawn (splitString " " cmd);
 
     execute = {
         cmd,
@@ -31,20 +18,35 @@ with config.lib.niri.actions; let
             then ["sh" "-c" cmd]
             else ["sh" "-c" ''${cmd} && ${pkgs.dunst}/bin/dunstify "${notif}"''];
     };
+
+    vol = cmd: {
+        allow-when-locked = true;
+        action = spawn' "${pkgs.avizo}/bin/volumectl -d -u ${cmd}";
+    };
+
+    mute = cmd: {
+        allow-when-locked = true;
+        action = spawn' "${pkgs.avizo}/bin/volumectl -d ${cmd}";
+    };
+
+    brightness = cmd: {
+        allow-when-locked = true;
+        action = spawn' "${pkgs.avizo}/bin/lightctl -d -e 4 ${cmd}";
+    };
 in
     {
         "Mod+Shift+Slash".action = show-hotkey-overlay;
 
-        "Alt+Space".action = spawn "sherlock";
-        "Mod+T".action = spawn "${pkgs.kitty}/bin/kitty";
-        "Mod+E".action = spawn ["${pkgs.kitty}/bin/kitty" "--app-id=yazi" "-o" "confirm_os_window_close=0" "yazi"];
+        "Alt+Space".action = spawn' "sherlock";
+        "Mod+T".action = spawn' "${pkgs.kitty}/bin/kitty";
+        "Mod+E".action = spawn' "${pkgs.kitty}/bin/kitty --app-id=yazi -o confirm_os_window_close=0 yazi";
         "Ctrl+Shift+Escape".action = spawn "${pkgs.mission-center}/bin/missioncenter";
 
-        "Print".action = spawn ["${pkgs.flameshot}/bin/flameshot" "gui"];
+        "Print".action = spawn "${pkgs.flameshot}/bin/flameshot gui";
         "Ctrl+Print".action = screenshot-window;
         "Ctrl+Shift+Print".action.screenshot-screen = []; #TODO: change after https://github.com/sodiboo/niri-flake/issues/944
         "Ctrl+Shift+O".action = spawn "oimg";
-        "Mod+C".action = spawn ["${pkgs.hyprpicker}/bin/hyprpicker" "-andz"];
+        "Mod+C".action = spawn "${pkgs.hyprpicker}/bin/hyprpicker -andz";
 
         "Mod+H".action = execute {
             cmd = "niri msg output eDP-1 mode 2880x1800@90.001";
@@ -64,7 +66,7 @@ in
         };
 
         "Mod+Q".action = close-window;
-        "Mod+L".action = spawn ["${pkgs.hyprlock}/bin/hyprlock" "--immediate"];
+        "Mod+L".action = execute {cmd = "niri msg action do-screen-transition && ${pkgs.hyprlock}/bin/hyprlock --immediate";};
 
         "Alt+Right".action = focus-window-down;
         "Alt+Left".action = focus-window-up;
