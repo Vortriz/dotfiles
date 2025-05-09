@@ -3,7 +3,7 @@
         enable = true;
 
         clean = {
-            enable = true;
+            enable = false; # vacation # TODO: preserve project roots
 
             extraArgs = "--keep 5";
         };
