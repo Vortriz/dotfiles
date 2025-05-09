@@ -14,6 +14,4 @@
     - [ ] replace avizo
     - [ ] replace waybar
 - [ ] fix tinymist
-- [ ] try sherlock unstable branch
-    - [ ] see if it fixed missing fallback entries
 - [ ] setup rust

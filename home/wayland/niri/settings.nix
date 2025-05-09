@@ -70,5 +70,8 @@ in {
 
         # Set uv cache directory
         UV_CACHE_DIR = "${storageDir}/dev/.cache/uv";
+
+        # For xwayland-satellite
+        DISPLAY = ":0";
     };
 }
