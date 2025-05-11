@@ -38,9 +38,6 @@ in {
             # Enable flakes and new 'nix' command
             experimental-features = "nix-command flakes";
 
-            # Workaround for https://github.com/NixOS/nix/issues/9574
-            nix-path = config.nix.nixPath;
-
             # Add myself to the trusted users
             trusted-users = ["root" username];
 
@@ -74,5 +71,5 @@ in {
     };
 
     # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
-    system.stateVersion = "23.11";
+    system.stateVersion = "24.11";
 }
