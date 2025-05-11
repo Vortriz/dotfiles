@@ -92,7 +92,13 @@ in {
 
         # idk
         polkit.enable = true;
+
+        # oxidizing sudo
+        sudo-rs.enable = true;
+        sudo.enable = false;
     };
+
+    system.rebuild.enableNg = true;
 
     time = {
         inherit timeZone;
