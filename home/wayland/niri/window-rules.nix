@@ -11,6 +11,8 @@
         };
     }
     {
+        open-maximized = true;
+
         matches = [
             {app-id = "firefox";}
             {app-id = "code";}
@@ -20,8 +22,6 @@
             {app-id = "celluloid";}
             {app-id = "Zotero";}
         ];
-
-        open-maximized = true;
     }
     {
         matches = [
@@ -48,21 +48,20 @@
         shadow.enable = true;
     }
     {
+        default-column-display = "tabbed"; # TODO: auto-tabbing when it lands
+
         matches = [
             {title = ".*pdf";}
             {app-id = "kitty";}
         ];
-
-        default-column-display = "tabbed";
-        # TODO: auto-tabbing when it lands
     }
     {
+        scroll-factor = 0.6;
+
         matches = [
             {app-id = "obsidian";}
             {app-id = "com.github.th_ch.youtube_music";}
         ];
-
-        scroll-factor = 0.6;
     }
     {
         matches = [
@@ -74,5 +73,32 @@
             width = 4;
             active.color = "#85e89d";
         };
+    }
+    {
+        open-on-workspace = "Acad";
+        open-focused = true;
+
+        matches = [
+            {app-id = "obsidian";}
+            {title = ".*pdf";}
+            {app-id = "Zotero";}
+        ];
+    }
+    {
+        open-on-workspace = "Browse";
+        open-focused = true;
+
+        matches = [
+            {app-id = "firefox";}
+            {app-id = "com.github.th_ch.youtube_music";}
+        ];
+    }
+    {
+        open-on-workspace = "Code";
+        open-focused = true;
+
+        matches = [
+            {app-id = "code";}
+        ];
     }
 ]
