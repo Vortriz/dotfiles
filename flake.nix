@@ -115,7 +115,7 @@
                     fd
                     fish
                     git
-                    jq
+                    jaq
                     just
                     micro
                     nh

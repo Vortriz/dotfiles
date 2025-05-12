@@ -23,7 +23,7 @@ export NH_FLAKE := `echo $PWD`
     nvd diff $(command rg -N '>>> (/nix/var/nix/profiles/system-[0-9]+-link)' --only-matching --replace '$1' build.log | tail -1) $(command ls -d1v /nix/var/nix/profiles/system-*-link|tail -n 1) >> $NH_FLAKE/build.log
 
     git add -A
-    git commit -m "deployed $(nixos-rebuild list-generations --flake $NH_FLAKE | grep -oP '[0-9]*(?= current)')"
+    git commit -m "deployed $(nixos-rebuild list-generations --flake $NH_FLAKE --json | jaq '.[0].generation')"
 
 @update: check
     echo -e "Updating flake and fetchgit inputs...\n"
@@ -43,4 +43,4 @@ alias pf := prefetch
     nix store optimise -v
 
 @prefetch url:
-    nix store prefetch-file --json $argv[2] | jq -r .hash
+    nix store prefetch-file --json $argv[2] | jaq -r .hash
