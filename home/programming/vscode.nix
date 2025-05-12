@@ -2,6 +2,8 @@
     programs.vscode = {
         enable = true;
 
+        mutableExtensionsDir = false;
+
         profiles.default = {
             userSettings = {
                 # keep-sorted start block=yes

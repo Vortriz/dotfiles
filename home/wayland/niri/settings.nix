@@ -37,6 +37,12 @@ in {
         };
     };
 
+    workspaces = {
+        "Acad" = {};
+        "Browse" = {};
+        "Code" = {};
+    };
+
     animations = {
         window-open = {
             easing = {
