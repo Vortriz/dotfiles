@@ -52,6 +52,7 @@
                     ms-toolsai.vscode-jupyter-cell-tags
                     myriad-dreamin.tinymist
                     nefrob.vscode-just-syntax
+                    rust-lang.rust-analyzer
                     shd101wyy.markdown-preview-enhanced
                     tamasfe.even-better-toml
                     yzhang.markdown-all-in-one
