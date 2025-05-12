@@ -7567,3 +7567,43 @@ Closure size: 7918 -> 8226 (3730 paths added, 3422 paths removed, delta +308, di
 >>> /nix/var/nix/profiles/system-27-link
 No version or selection state changes.
 Closure size: 8226 -> 8226 (0 paths added, 0 paths removed, delta +0, disk usage +0B).
+
+---
+
+12/05/25 11:12:10 PM IST
+<<< /nix/var/nix/profiles/system-27-link
+>>> /nix/var/nix/profiles/system-29-link
+Version changes:
+[U.]  #01  cni-plugins                                          1.6.1 -> 1.7.1
+[U.]  #02  flameshot                                            12.1.0-unstable-2025-04-07, 12.1.0-unstable-2025-04-07-fish-completions -> 12.1.0-unstable-2025-05-04, 12.1.0-unstable-2025-05-04-fish-completions
+[U.]  #03  fzf                                                  0.61.3, 0.61.3-fish-completions, 0.61.3-man -> 0.62.0, 0.62.0-fish-completions, 0.62.0-man
+[U.]  #04  hyprlock                                             0.8.1, 0.8.1-fish-completions -> 0.8.2, 0.8.2-fish-completions
+[U.]  #05  libei                                                1.4.0 -> 1.4.1
+[U.]  #06  nixos-system-nixos                                   25.05.20250505.3730d8a -> 25.05.20250508.dda3dcd
+[U.]  #07  python3.12-async-lru                                 2.0.4 -> 2.0.5
+[U.]  #08  python3.12-img2pdf                                   0.6.0 -> 0.6.1
+[U.]  #09  smartmontools                                        7.4 -> 7.5
+[U.]  #10  vscode-extension-github-copilot                      1.314.0 -> 1.317.0
+[U.]  #11  vscode-extension-github-copilot-chat                 0.26.7 -> 0.27.0
+[U.]  #12  vscode-extension-ms-toolsai-jupyter                  2025.3.0 -> 2025.4.0
+[U.]  #13  vscode-extension-ms-vscode-remote-remote-containers  0.412.0 -> 0.414.0
+Added packages:
+[A.]  #01  extensions-json-default                   <none>
+[A+]  #02  nixos-rebuild-ng                          0.0.0, 0.0.0_fish-completions
+[A.]  #03  rust-analyzer                             2025-05-05
+[A.]  #04  rust-analyzer-unwrapped                   2025-05-05
+[A.]  #05  rust-lib-src                              <none>
+[A.]  #06  sudo-i.pam                                <none>
+[A+]  #07  sudo-rs                                   0.2.5, 0.2.5_fish-completions
+[A.]  #08  vscode-extension-rust-lang-rust-analyzer  0.4.2453
+[A.]  #09  vscode-extensions                         <none>
+[A.]  #10  xwayland-satellite                        0.5.1, 0.5.1-fish-completions
+Removed packages:
+[R.]  #1  hm_.vscodeextensions.extensionsimmutable.json        <none>
+[R.]  #2  nh-clean.service                                     <none>
+[R.]  #3  nh-clean.timer                                       <none>
+[R-]  #4  nixos-rebuild                                        <none>
+[R.]  #5  nixos-rebuild_fish-completions                       <none>
+[R.]  #6  security-wrapper-sudoedit-x86_64-unknown-linux-musl  <none>
+[R-]  #7  sudo                                                 1.9.16p2, 1.9.16p2_fish-completions
+Closure size: 8226 -> 8231 (199 paths added, 194 paths removed, delta +5, disk usage +134.3MiB).
