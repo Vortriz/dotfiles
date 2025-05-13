@@ -23,7 +23,10 @@
                 "explorer.confirmDragAndDrop" = false;
                 "files.trimTrailingWhitespace" = true;
                 "git.confirmSync" = false;
-                "github.copilot.enable" = {"shellscript" = false;};
+                "github.copilot.enable" = {
+                    "rust" = false;
+                    "shellscript" = false;
+                };
                 "julia.enableTelemetry" = true;
                 "julia.symbolCacheDownload" = true;
                 "nix.enableLanguageServer" = true;
