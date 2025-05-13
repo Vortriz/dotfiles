@@ -1,13 +1,11 @@
 {
-    osConfig,
     inputs,
+    osConfig,
     pkgs,
     ...
 }: let
     inherit (osConfig.var) storageDir;
 in {
-    imports = [inputs.misumisumi-dotfiles.homeManagerModules.zotero];
-
     programs.zotero = {
         enable = true;
 
