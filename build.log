@@ -7607,3 +7607,78 @@ Removed packages:
 [R.]  #6  security-wrapper-sudoedit-x86_64-unknown-linux-musl  <none>
 [R-]  #7  sudo                                                 1.9.16p2, 1.9.16p2_fish-completions
 Closure size: 8226 -> 8231 (199 paths added, 194 paths removed, delta +5, disk usage +134.3MiB).
+
+---
+
+13/05/25 06:14:24 PM IST
+<<< /nix/var/nix/profiles/system-29-link
+>>> /nix/var/nix/profiles/system-30-link
+Version changes:
+[U.]  #01  acpi-call                                  1.2.2-6.14.5 -> 1.2.2-6.14.6
+[C.]  #02  breeze-icons                               5.116.0, 6.13.0 -> 5.116.0, 6.14.0
+[C.]  #03  cryptsetup                                 2.7.5 x3, 2.7.5-bin -> 2.7.5 x3
+[U.]  #04  discord                                    0.0.93, 0.0.93-fish-completions -> 0.0.94, 0.0.94-fish-completions
+[U.]  #05  filelight                                  25.04.0, 25.04.0-fish-completions -> 25.04.1, 25.04.1-fish-completions
+[U.]  #06  gvproxy                                    0.8.5 -> 0.8.6
+[U.]  #07  hyprlang                                   0.6.1 -> 0.6.3
+[U.]  #08  hyprutils                                  0.7.0 -> 0.7.1
+[U.]  #09  initrd-linux                               6.14.5 -> 6.14.6
+[C.]  #10  karchive                                   5.116.0, 6.13.0 -> 5.116.0, 6.14.0
+[C*]  #11  kauth                                      5.116.0, 6.13.0 -> 5.116.0, 6.14.0
+[U.]  #12  kbookmarks                                 6.13.0 -> 6.14.0
+[C.]  #13  kcodecs                                    5.116.0, 6.13.0 -> 5.116.0, 6.14.0
+[U.]  #14  kcolorscheme                               6.13.0 -> 6.14.0
+[U.]  #15  kcompletion                                6.13.0 -> 6.14.0
+[C.]  #16  kconfig                                    5.116.0, 6.13.0 -> 5.116.0, 6.14.0
+[C.]  #17  kconfigwidgets                             5.116.0, 6.13.0 -> 5.116.0, 6.14.0
+[C.]  #18  kcoreaddons                                5.116.0, 5.116.0-bin, 6.13.0 -> 5.116.0, 5.116.0-bin, 6.14.0
+[C.]  #19  kcrash                                     5.116.0, 6.13.0 -> 5.116.0, 6.14.0
+[C.]  #20  kdbusaddons                                5.116.0, 6.13.0 -> 5.116.0, 6.14.0
+[C.]  #21  kdoctools                                  5.116.0, 6.13.0 -> 5.116.0, 6.14.0
+[U*]  #22  kglobalaccel                               6.13.0 -> 6.14.0
+[C.]  #23  kguiaddons                                 5.116.0, 6.13.0 -> 5.116.0, 6.14.0
+[C.]  #24  ki18n                                      5.116.0, 5.116.0-bin, 6.13.0 -> 5.116.0, 5.116.0-bin, 6.14.0
+[C.]  #25  kiconthemes                                5.116.0, 5.116.0-bin, 6.13.0 -> 5.116.0, 5.116.0-bin, 6.14.0
+[U*]  #26  kio                                        6.13.0 -> 6.14.0
+[U.]  #27  kirigami                                   6.13.0 -> 6.14.0
+[C.]  #28  kitemviews                                 5.116.0, 6.13.0 -> 5.116.0, 6.14.0
+[U*]  #29  kjobwidgets                                6.13.0 -> 6.14.0
+[C.]  #30  knotifications                             5.116.0, 5.116.0-bin, 6.13.0 -> 5.116.0, 5.116.0-bin, 6.14.0
+[U*]  #31  kpmcore                                    25.04.0 -> 25.04.1
+[U.]  #32  kquickcharts                               6.13.0 -> 6.14.0
+[U.]  #33  kservice                                   6.13.0 -> 6.14.0
+[U*]  #34  ksystemlog                                 25.04.0 -> 25.04.1
+[U.]  #35  ktextwidgets                               6.13.0 -> 6.14.0
+[U*]  #36  kwallet                                    6.13.0 -> 6.14.0
+[C.]  #37  kwidgetsaddons                             5.116.0, 6.13.0 -> 5.116.0, 6.14.0
+[C.]  #38  kwindowsystem                              5.116.0, 6.13.0 -> 5.116.0, 6.14.0
+[U.]  #39  kxmlgui                                    6.13.0 -> 6.14.0
+[U.]  #40  linux                                      6.14.5, 6.14.5-modules, 6.14.5-modules-shrunk -> 6.14.6, 6.14.6-modules, 6.14.6-modules-shrunk
+[U.]  #41  linux-firmware                             20250410-zstd -> 20250509-zstd
+[U*]  #42  niri-unstable                              2025-05-01-6c9705d -> 2025-05-13-6d083ea
+[U.]  #43  nix-direnv                                 3.0.6 -> 3.0.7
+[U.]  #44  nixos-system-nixos                         25.05.20250508.dda3dcd -> 25.05.20250510.d89fc19
+[U*]  #45  partitionmanager                           25.04.0 -> 25.04.1
+[U.]  #46  passt                                      2025_04_15.2340bbf -> 2025_05_03.587980c
+[C.]  #47  pcre                                       8.45 x2 -> 8.45
+[D.]  #48  plugins                                    864a021 -> 55bf699
+[C.]  #49  python3.12-httpcore                        1.0.7 -> 1.0.7 x2
+[C.]  #50  python3.12-httpx                           0.28.1 -> 0.28.1 x2
+[U.]  #51  python3.12-poetry                          2.1.2 -> 2.1.3
+[U.]  #52  python3.12-poetry-core                     2.1.2 -> 2.1.3
+[U.]  #53  qqc2-desktop-style                         6.13.0 -> 6.14.0
+[U.]  #54  solid                                      6.13.0 -> 6.14.0
+[U.]  #55  sonnet                                     6.13.0 -> 6.14.0
+[U*]  #56  sudo-rs                                    0.2.5, 0.2.5_fish-completions -> 0.2.6, 0.2.6_fish-completions
+[C.]  #57  util-linux-minimal                         2.39.4-lib, 2.39.4-login, 2.39.4-mount, 2.39.4-swap, 2.41-bin, 2.41-lib x2, 2.41-login x2, 2.41-man, 2.41-mount x2, 2.41-swap x2 -> 2.39.4-lib, 2.39.4-login, 2.39.4-mount, 2.39.4-swap, 2.41-bin, 2.41-lib x2, 2.41-login x2, 2.41-mount x2, 2.41-swap x2
+[U.]  #58  vscode-extension-ms-python-python          2025.7.2025050601 -> 2025.7.2025051201
+[U.]  #59  vscode-extension-ms-python-vscode-pylance  2025.4.103 -> 2025.4.104
+[U.]  #60  vscode-extension-rust-lang-rust-analyzer   0.4.2453 -> 0.4.2458
+[U.]  #61  x86_energy_perf_policy                     6.12.26 -> 6.12.28
+[U.]  #62  zotero-better-bibtex                       7.0.22 -> 7.0.24
+Added packages:
+[A.]  #1  mozilla-native-messaging-hosts  <none>
+Removed packages:
+[R.]  #1  hexdump-util-linux-minimal  2.41
+[R.]  #2  ventoy                      1.1.05, 1.1.05-fish-completions
+Closure size: 8231 -> 8228 (292 paths added, 295 paths removed, delta -3, disk usage -2.9MiB).
