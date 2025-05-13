@@ -6,6 +6,7 @@ in {
         ./stylix.nix
         ./xdg-portal.nix
 
+        ../modules/home-manager
         ../scripts
         ./graphical
         ./programming

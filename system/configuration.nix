@@ -16,6 +16,7 @@ in {
         ./settings.nix
         ./variables.nix
 
+        ../modules/nixos
         ./programs
         # keep-sorted end
     ];

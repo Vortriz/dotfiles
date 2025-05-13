@@ -15,7 +15,6 @@
             url = "github:nix-community/home-manager";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        misumisumi-dotfiles.url = "github:misumisumi/nixos-desktop-config";
         misumisumi-flakes = {
             url = "github:misumisumi/flakes";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -74,14 +73,6 @@
 
         # Your custom packages and modifications, exported as overlays
         overlays = import ./overlays {inherit inputs;};
-
-        # Reusable nixos modules you might want to export
-        # These are usually stuff you would upstream into nixpkgs
-        nixosModules = import ./modules/nixos;
-
-        # Reusable home-manager modules you might want to export
-        # These are usually stuff you would upstream into home-manager
-        homeManagerModules = import ./modules/home-manager;
 
         # Templates
         templates = import ./templates;
