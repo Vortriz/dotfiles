@@ -2,7 +2,8 @@
     imports = [
         # keep-sorted start by_regex=\.nix$
         ./julia.nix
-        ./vscode.nix
+
+        ./vscode
         # keep-sorted end
     ];
 
