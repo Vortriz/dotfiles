@@ -1,8 +1,17 @@
-{pkgs, ...}: {
+{
+    osConfig,
+    pkgs,
+    ...
+}: let
+    inherit (osConfig.var) monospaceFontName;
+in {
     programs.waybar = {
         enable = true;
 
-        style = ./style.css;
+        style = pkgs.substitute {
+            src = ./style.css;
+            substitutions = ["--subst-var-by" "font-name" monospaceFontName];
+        };
 
         settings.mainBar = {
             layer = "top";

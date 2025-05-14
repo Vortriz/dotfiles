@@ -3,7 +3,9 @@
     inputs,
     pkgs,
     ...
-}: {
+}: let
+    inherit (config.var) monospaceFont monospaceFontName;
+in {
     imports = [inputs.stylix.nixosModules.stylix];
 
     stylix = {
@@ -40,8 +42,8 @@
             };
 
             monospace = {
-                package = pkgs.nerd-fonts.jetbrains-mono;
-                name = "JetBrainsMono Nerd Font";
+                package = monospaceFont;
+                name = monospaceFontName;
             };
 
             emoji = {

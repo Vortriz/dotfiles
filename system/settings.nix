@@ -3,7 +3,7 @@
     pkgs,
     ...
 }: let
-    inherit (config.var) defaultLocale extraLocale hostname timeZone;
+    inherit (config.var) defaultLocale extraLocale hostname monospaceFont timeZone;
 in {
     # keep-sorted start block=yes newline_separated=yes
     documentation = {
@@ -18,26 +18,28 @@ in {
         LD_LIBRARY_PATH = "/run/opengl-driver/lib:/run/opengl-driver-32/lib";
     };
 
-    fonts.packages = with pkgs; [
-        # keep-sorted start block=yes
-        (google-fonts.override {
-            fonts = [
-                "Inter"
-                "Overpass"
-                "Rubik"
-                "Hanken Grotesk"
-                "Open Sans"
-            ];
-        })
-        HelveticaNeueCyr
-        SFMono
-        font-awesome
-        nerd-fonts.fira-code
-        nerd-fonts.jetbrains-mono
-        roboto
-        source-sans-pro
-        # keep-sorted end
-    ];
+    fonts.packages = with pkgs;
+        [
+            # keep-sorted start block=yes
+            (google-fonts.override {
+                fonts = [
+                    "Inter"
+                    "Overpass"
+                    "Rubik"
+                    "Hanken Grotesk"
+                    "Open Sans"
+                ];
+            })
+            HelveticaNeueCyr
+            SFMono
+            font-awesome
+            nerd-fonts.fira-code
+            nerd-fonts.jetbrains-mono
+            roboto
+            source-sans-pro
+            # keep-sorted end
+        ]
+        ++ [monospaceFont];
 
     hardware = {
         bluetooth.enable = true;

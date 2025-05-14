@@ -1,6 +1,7 @@
 {
     config,
     lib,
+    pkgs,
     ...
 }: {
     config.var = rec {
@@ -14,6 +15,9 @@
 
         storageDir = "/mnt/HOUSE";
         downloadsDir = storageDir + "/downloads";
+
+        monospaceFont = pkgs.maple-mono.Normal-NF-unhinted;
+        monospaceFontName = "Maple Mono Normal NF";
     };
 
     # Let this here
