@@ -1,0 +1,74 @@
+{
+    "[nix]": {
+        "editor.detectIndentation": false,
+        "editor.tabSize": 4
+    },
+    "[typst]": {
+        "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "direnv.restart.automatic": true,
+    "editor.detectIndentation": false,
+    "editor.fontLigatures": "'calt'",
+    "editor.indentSize": "tabSize",
+    "editor.insertSpaces": true,
+    "editor.semanticTokenColorCustomizations": {
+        "rules": {
+            "interface": {
+                "italic": true
+            },
+            "selfParameter": {
+                "italic": true
+            },
+            "keyword": {
+                "italic": true
+            },
+            "*.static": {
+                "italic": true
+            }
+        }
+    },
+    "editor.tabSize": 4,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "constant.language.undefined",
+                    "constant.language.null",
+                    "constant.language.nullptr",
+                    "meta.type keyword.operator.expression.typeof",
+                    "meta.type keyword.operator.expression.keyof",
+                    "keyword.control",
+                    "keyword.function",
+                    "keyword.operator.new",
+                    "keyword.operator.borrow.and.rust",
+                    "storage.type",
+                    "storage.modifier",
+                    "variable.language.this",
+                    "markup.italic"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    },
+    "explorer.confirmDragAndDrop": false,
+    "files.trimTrailingWhitespace": true,
+    "git.confirmSync": false,
+    "github.copilot.enable": {
+        "rust": false,
+        "shellscript": false
+    },
+    "julia.enableTelemetry": true,
+    "julia.symbolCacheDownload": true,
+    "nix.enableLanguageServer": true,
+    "nix.serverPath": "nixd",
+    "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "terminal.integrated.fontFamily": "'@font-name@'",
+    "tinymist.formatterIndentSize": 4,
+    "window.zoomLevel": 1.2,
+    "workbench.colorTheme": "Stylix",
+    "workbench.tree.indent": 12
+}
