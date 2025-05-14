@@ -1,8 +1,14 @@
-{pkgs, ...}: {
+{
+    osConfig,
+    pkgs,
+    ...
+}: let
+    inherit (osConfig.var) monospaceFontName;
+in {
     programs.vscode = {
         enable = true;
 
-        mutableExtensionsDir = false;
+        mutableExtensionsDir = true;
 
         profiles.default = {
             userSettings = {
@@ -17,9 +23,50 @@
                 "diffEditor.ignoreTrimWhitespace" = false;
                 "direnv.restart.automatic" = true;
                 "editor.detectIndentation" = false;
+                "editor.fontLigatures" = "'calt'";
                 "editor.indentSize" = "tabSize";
                 "editor.insertSpaces" = true;
+                "editor.semanticTokenColorCustomizations" = {
+                    rules = {
+                        interface = {
+                            italic = true;
+                        };
+                        selfParameter = {
+                            italic = true;
+                        };
+                        keyword = {
+                            italic = true;
+                        };
+                        "*.static" = {
+                            italic = true;
+                        };
+                    };
+                };
                 "editor.tabSize" = 4;
+                "editor.tokenColorCustomizations" = {
+                    textMateRules = [
+                        {
+                            scope = [
+                                "constant.language.undefined"
+                                "constant.language.null"
+                                "constant.language.nullptr"
+                                "meta.type keyword.operator.expression.typeof"
+                                "meta.type keyword.operator.expression.keyof"
+                                "keyword.control"
+                                "keyword.function"
+                                "keyword.operator.new"
+                                "keyword.operator.borrow.and.rust"
+                                "storage.type"
+                                "storage.modifier"
+                                "variable.language.this"
+                                "markup.italic"
+                            ];
+                            settings = {
+                                fontStyle = "italic";
+                            };
+                        }
+                    ];
+                };
                 "explorer.confirmDragAndDrop" = false;
                 "files.trimTrailingWhitespace" = true;
                 "git.confirmSync" = false;
@@ -33,7 +80,7 @@
                 "nix.serverPath" = "nixd";
                 "terminal.integrated.commandsToSkipShell" = ["language-julia.interrupt"];
                 "terminal.integrated.defaultProfile.linux" = "fish";
-                "terminal.integrated.fontFamily" = "'FiraCode Nerd Font Mono'";
+                "terminal.integrated.fontFamily" = "'${monospaceFontName}'";
                 "tinymist.formatterIndentSize" = 4;
                 "window.zoomLevel" = 1.2;
                 "workbench.colorTheme" = "Stylix";

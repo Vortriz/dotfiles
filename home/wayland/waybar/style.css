@@ -1,5 +1,6 @@
+/* replace all variables of the format @var-name@ with appropriate values before using this outside the waybar nix module */
 * {
-    font-family: "JetBrainsMono Nerd Font";
+    font-family: "@font-name@";
     font-size: 12pt;
     font-weight: bold;
     border-radius: 8px;
