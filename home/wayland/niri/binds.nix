@@ -40,13 +40,13 @@ in
         "Alt+Space".action = spawn' "sherlock";
         "Mod+T".action = spawn' "${pkgs.kitty}/bin/kitty";
         "Mod+E".action = spawn' "${pkgs.kitty}/bin/kitty --app-id=yazi -o confirm_os_window_close=0 yazi";
-        "Ctrl+Shift+Escape".action = spawn "${pkgs.mission-center}/bin/missioncenter";
+        "Ctrl+Shift+Escape".action = spawn' "${pkgs.mission-center}/bin/missioncenter";
 
-        "Print".action = spawn "${pkgs.flameshot}/bin/flameshot gui";
+        "Print".action = spawn' "${pkgs.flameshot}/bin/flameshot gui";
         "Ctrl+Print".action = screenshot-window;
         "Ctrl+Shift+Print".action.screenshot-screen = []; #TODO: change after https://github.com/sodiboo/niri-flake/issues/944
-        "Ctrl+Shift+O".action = spawn "oimg";
-        "Mod+C".action = spawn "${pkgs.hyprpicker}/bin/hyprpicker -andz";
+        "Ctrl+Shift+O".action = spawn' "oimg";
+        "Mod+C".action = spawn' "${pkgs.hyprpicker}/bin/hyprpicker -andz";
 
         "Mod+H".action = execute {
             cmd = "niri msg output eDP-1 mode 2880x1800@90.001";

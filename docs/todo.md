@@ -1,7 +1,6 @@
 # things to do
 
 - [ ] make tealdeer hm module (for fun)
-- [x] some drive sync utility - rclone
 - [ ] discord needs xdg-desktop-portal
 - [ ] cpu optimisation
 - [ ] figure out cache situation for new install
@@ -13,5 +12,5 @@
 - [ ] ags/ignis
     - [ ] replace avizo
     - [ ] replace waybar
-- [ ] fix tinymist
-- [ ] setup rust
+- [x] fix tinymist
+- [x] setup rust
