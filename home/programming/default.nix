@@ -4,6 +4,7 @@
         ./julia.nix
 
         ./vscode
+        ./zed
         # keep-sorted end
     ];
 
