@@ -18,6 +18,8 @@
 
         monospaceFont = pkgs.maple-mono.Normal-NF-unhinted;
         monospaceFontName = "Maple Mono Normal NF";
+
+        shell = "fish";
     };
 
     # Let this here
