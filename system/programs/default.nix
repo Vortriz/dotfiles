@@ -1,4 +1,10 @@
-{pkgs, ...}: {
+{
+    config,
+    pkgs,
+    ...
+}: let
+    inherit (config.var) shell;
+in {
     imports = [
         # keep-sorted start by_regex=\.nix$
         ./cosmic-greeter.nix
@@ -13,7 +19,7 @@
         dconf.enable = true;
 
         # the default shell
-        fish.enable = true;
+        ${shell}.enable = true;
     };
 
     environment.systemPackages = with pkgs; [

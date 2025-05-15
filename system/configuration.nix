@@ -5,7 +5,7 @@
     pkgs,
     ...
 }: let
-    inherit (config.var) username;
+    inherit (config.var) username shell;
 in {
     imports = [
         # keep-sorted start by_regex=\.nix$
@@ -67,7 +67,7 @@ in {
                 # Add your SSH public key(s) here, if you plan on using SSH to connect
             ];
             extraGroups = ["networkmanager" "wheel" "video" "aria2"];
-            shell = pkgs.fish;
+            shell = pkgs.${shell};
         };
     };
 

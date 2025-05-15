@@ -65,7 +65,7 @@
     "nix.enableLanguageServer": true,
     "nix.serverPath": "nixd",
     "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
-    "terminal.integrated.defaultProfile.linux": "fish",
+    "terminal.integrated.defaultProfile.linux": "@shell@",
     "terminal.integrated.fontFamily": "'@font-name@'",
     "tinymist.formatterIndentSize": 4,
     "window.zoomLevel": 1.2,

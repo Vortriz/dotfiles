@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+    osConfig,
+    pkgs,
+    ...
+}: {
     imports = [
         ./plugins.nix
     ];
@@ -7,7 +11,7 @@
         enable = true;
 
         initLua = ./init.lua;
-        keymap = import ./keymap.nix;
+        keymap = import ./keymap.nix {inherit osConfig;};
         settings = import ./settings.nix;
 
         shellWrapperName = "y";

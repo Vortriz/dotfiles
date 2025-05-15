@@ -1,14 +1,16 @@
-{
+{osConfig, ...}: let
+    inherit (osConfig.var) shell;
+in {
     manager.prepend_keymap = [
         # custom-shell
         {
             on = ["'" ";"];
-            run = "plugin custom-shell -- fish --interactive";
+            run = "plugin custom-shell -- ${shell} --interactive";
             desc = "custom-shell as default, interactive";
         }
         {
             on = ["'" ":"];
-            run = "plugin custom-shell -- fish --interactive --block";
+            run = "plugin custom-shell -- ${shell} --interactive --block";
             desc = "custom-shell as default, interactive, block";
         }
 

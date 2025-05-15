@@ -3,7 +3,7 @@
     pkgs,
     ...
 }: let
-    inherit (osConfig.var) monospaceFontName;
+    inherit (osConfig.var) monospaceFontName shell;
 in {
     programs.vscode = {
         enable = true;
@@ -16,7 +16,14 @@ in {
 
             userSettings = builtins.fromJSON (builtins.readFile (pkgs.substitute {
                 src = ./settings.json;
-                substitutions = ["--subst-var-by" "font-name" monospaceFontName];
+                substitutions = [
+                    "--subst-var-by"
+                    "font-name"
+                    monospaceFontName
+                    "--subst-var-by"
+                    "shell"
+                    shell
+                ];
             }));
 
             extensions = import ./extensions.nix {inherit pkgs;};
