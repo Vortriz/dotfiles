@@ -1,4 +1,10 @@
 {
+    lib,
+    osConfig,
+    ...
+}: let
+    inherit (osConfig.defaults) terminal;
+in {
     appearance = {
         width = 600;
         height = 400;
@@ -13,6 +19,6 @@
     };
 
     default_apps = {
-        terminal = "kitty";
+        terminal = lib.getName terminal;
     };
 }

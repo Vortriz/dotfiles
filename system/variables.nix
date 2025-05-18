@@ -1,5 +1,6 @@
 {
     config,
+    inputs,
     lib,
     pkgs,
     ...
@@ -18,13 +19,32 @@
 
         monospaceFont = pkgs.maple-mono.Normal-NF-unhinted;
         monospaceFontName = "Maple Mono Normal NF";
-
-        shell = "fish";
     };
+
+    config.defaults =
+        (with pkgs; {
+            # keep-sorted start
+            browser = firefox;
+            code-editor = zed-editor;
+            file-manager = yazi;
+            shell = fish;
+            terminal = kitty;
+            video-player = celluloid;
+            # keep-sorted end
+        })
+        // (with inputs; {
+            # keep-sorted start
+            launcher = sherlock.packages.${pkgs.system}.default;
+            # keep-sorted end
+        });
 
     # Let this here
     options = {
         var = lib.mkOption {
+            type = lib.types.attrs;
+            default = {};
+        };
+        defaults = lib.mkOption {
             type = lib.types.attrs;
             default = {};
         };

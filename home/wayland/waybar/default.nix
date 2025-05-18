@@ -1,9 +1,11 @@
 {
+    lib,
     osConfig,
     pkgs,
     ...
 }: let
     inherit (osConfig.var) monospaceFontName;
+    inherit (osConfig.defaults) launcher;
 in {
     programs.waybar = {
         enable = true;
@@ -43,7 +45,7 @@ in {
 
             "custom/launcher" = {
                 "format" = " ";
-                "on-click" = "sherlock";
+                "on-click" = "${lib.getName launcher} ";
                 "tooltip" = false;
             };
 
@@ -108,7 +110,7 @@ in {
             "custom/powermenu" = {
                 "format" = "";
                 "on-click" = "pidof hyprlock || hyprlock --immediate";
-                "on-click-right" = "${pkgs.systemd}/bin/systemctl poweroff";
+                "on-click-right" = "$systemctl poweroff";
                 "tooltip" = false;
             };
 

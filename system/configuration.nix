@@ -2,7 +2,6 @@
     config,
     inputs,
     outputs,
-    pkgs,
     ...
 }: let
     inherit (config.var) username shell;
@@ -67,7 +66,7 @@ in {
                 # Add your SSH public key(s) here, if you plan on using SSH to connect
             ];
             extraGroups = ["networkmanager" "wheel" "video" "aria2"];
-            shell = pkgs.${shell};
+            inherit shell;
         };
     };
 

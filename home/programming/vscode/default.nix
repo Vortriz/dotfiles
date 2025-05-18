@@ -1,9 +1,11 @@
 {
+    lib,
     osConfig,
     pkgs,
     ...
 }: let
-    inherit (osConfig.var) monospaceFontName shell;
+    inherit (osConfig.var) monospaceFontName;
+    inherit (osConfig.defaults) shell;
 in {
     programs.vscode = {
         enable = true;
@@ -22,7 +24,7 @@ in {
                     monospaceFontName
                     "--subst-var-by"
                     "shell"
-                    shell
+                    "${lib.getName shell}"
                 ];
             }));
 

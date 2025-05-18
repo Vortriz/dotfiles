@@ -1,4 +1,11 @@
-[
+{
+    lib,
+    osConfig,
+    ...
+}: let
+    inherit (lib) getName;
+    inherit (osConfig.defaults) browser code-editor file-manager terminal video-player;
+in [
     {
         clip-to-geometry = true;
         geometry-corner-radius = let
@@ -14,13 +21,14 @@
         open-maximized = true;
 
         matches = [
-            {app-id = "firefox";}
+            {app-id = "${getName browser}";}
+            {app-id = "${getName file-manager}";}
+            {app-id = "${getName video-player}";}
             {app-id = "code";}
             {app-id = "obsidian";}
             {title = ".*pdf";}
-            {app-id = "yazi";}
-            {app-id = "celluloid";}
             {app-id = "Zotero";}
+            {app-id = "dev.zed.Zed";}
         ];
     }
     {
@@ -51,8 +59,8 @@
         default-column-display = "tabbed"; # TODO: auto-tabbing when it lands
 
         matches = [
+            {app-id = "${getName terminal}";}
             {title = ".*pdf";}
-            {app-id = "kitty";}
         ];
     }
     {
@@ -89,7 +97,7 @@
         open-focused = true;
 
         matches = [
-            {app-id = "firefox";}
+            {app-id = "${getName browser}";}
             {app-id = "com.github.th_ch.youtube_music";}
         ];
     }
@@ -98,6 +106,7 @@
         open-focused = true;
 
         matches = [
+            {app-id = "${getName code-editor}";}
             {app-id = "code";}
         ];
     }

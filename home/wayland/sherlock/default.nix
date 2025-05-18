@@ -1,4 +1,9 @@
-{inputs, ...}: {
+{
+    inputs,
+    lib,
+    osConfig,
+    ...
+}: {
     imports = [inputs.sherlock.homeManagerModules.default];
 
     programs.sherlock = {
@@ -6,7 +11,7 @@
 
         settings = {
             aliases = import ./aliases.nix;
-            config = import ./config.nix;
+            config = import ./config.nix {inherit lib osConfig;};
             launchers = import ./launchers.nix;
 
             style = with builtins;
