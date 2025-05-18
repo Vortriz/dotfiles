@@ -1,28 +1,33 @@
 {
     "background": {
+        "display": {
+            "blur": 0,
+            "luminosity": -0.2
+        },
         "id": "default-unsplash",
-        "key": "background/unsplash",
-        "display": { "luminosity": -0.2, "blur": 0 }
+        "key": "background/unsplash"
     },
-    "focus": false,
     "data/default-unsplash": {
         "by": "official",
         "collections": "",
         "featured": false,
         "paused": true,
         "search": "",
-        "topics": "bo8jQKTaE0Y",
-        "timeout": 900
+        "timeout": 900,
+        "topics": "bo8jQKTaE0Y"
     },
-    "widget/default-greeting": null,
-    "widget/lYFdPnrkXFoB": null,
-    "widget/default-time": {
-        "id": "default-time",
-        "key": "widget/time",
-        "order": 0,
-        "display": { "position": "middleCentre" }
-    },
+    "focus": false,
     "locale": "en",
     "timeZone": null,
-    "version": 3
+    "version": 3,
+    "widget/default-greeting": null,
+    "widget/default-time": {
+        "display": {
+            "position": "middleCentre"
+        },
+        "id": "default-time",
+        "key": "widget/time",
+        "order": 0
+    },
+    "widget/lYFdPnrkXFoB": null
 }

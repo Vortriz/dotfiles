@@ -12,5 +12,5 @@
 - [ ] ags/ignis
     - [ ] replace avizo
     - [ ] replace waybar
-- [x] fix tinymist
-- [x] setup rust
+- [x] setup LSPs in zed
+- [ ] emoji picker

@@ -3,7 +3,7 @@
         enable = true;
 
         shellAliases = {
-            z = "zoxide";
+            cd = "zoxide";
         };
     };
 
