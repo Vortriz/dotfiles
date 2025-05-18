@@ -1,5 +1,10 @@
-{pkgs, ...}: let
-    flameshot = "${pkgs.flameshot}/bin/flameshot";
+{
+    lib,
+    pkgs,
+    ...
+}: let
+    inherit (lib) getExe;
+    flameshot = getExe pkgs.flameshot;
     magick = "${pkgs.imagemagick}/bin/magick";
     wl-copy = "${pkgs.wl-clipboard}/bin/wl-copy";
 in

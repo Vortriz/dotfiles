@@ -7,15 +7,10 @@
 }: {
     programs.niri = {
         settings =
-            {
-                binds = import ./binds.nix {
-                    inherit config lib pkgs;
-                };
-
-                window-rules = import ./window-rules.nix;
-            }
-            // import ./settings.nix {
-                inherit osConfig pkgs;
+            import ./settings.nix {inherit osConfig pkgs;}
+            // {
+                binds = import ./binds.nix {inherit config lib osConfig pkgs;};
+                window-rules = import ./window-rules.nix {inherit lib osConfig;};
             };
     };
 }

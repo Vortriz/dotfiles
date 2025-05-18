@@ -1,4 +1,5 @@
 {
+    lib,
     osConfig,
     pkgs,
     ...
@@ -11,8 +12,8 @@
         enable = true;
 
         initLua = ./init.lua;
-        keymap = import ./keymap.nix {inherit osConfig;};
-        settings = import ./settings.nix;
+        keymap = import ./keymap.nix {inherit lib osConfig;};
+        settings = import ./settings.nix {inherit lib osConfig;};
 
         shellWrapperName = "y";
     };

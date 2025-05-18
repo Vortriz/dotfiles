@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{
     services.hypridle = {
         enable = true;
 
@@ -7,7 +7,7 @@
                 ignore_dbus_inhibit = false;
                 lock_cmd = "pidof hyprlock || hyprlock";
                 before_sleep_cmd = "pidof hyprlock || hyprlock";
-                after_sleep_cmd = "${pkgs.niri}/bin/niri msg action power-on-monitors";
+                after_sleep_cmd = "niri msg action power-on-monitors";
             };
 
             listener = [
@@ -17,12 +17,12 @@
                 }
                 {
                     timeout = 240;
-                    on-timeout = "${pkgs.niri}/bin/niri msg action power-off-monitors";
-                    on-resume = "${pkgs.niri}/bin/niri msg action power-on-monitors";
+                    on-timeout = "niri msg action power-off-monitors";
+                    on-resume = "niri msg action power-on-monitors";
                 }
                 {
                     timeout = 600;
-                    on-timeout = "${pkgs.systemd}/bin/systemctl suspend";
+                    on-timeout = "systemctl suspend";
                 }
             ];
         };

@@ -1,11 +1,15 @@
 {
     config,
     lib,
+    osConfig,
     pkgs,
     ...
 }:
 with config.lib.niri.actions; let
+    inherit (lib) getExe getExe' getName;
     inherit (lib.strings) splitString;
+
+    inherit (osConfig.defaults) file-manager launcher terminal;
 
     spawn' = cmd: spawn (splitString " " cmd);
 
@@ -37,16 +41,16 @@ in
     {
         "Mod+Shift+Slash".action = show-hotkey-overlay;
 
-        "Alt+Space".action = spawn' "sherlock";
-        "Mod+T".action = spawn' "${pkgs.kitty}/bin/kitty";
-        "Mod+E".action = spawn' "${pkgs.kitty}/bin/kitty --app-id=yazi -o confirm_os_window_close=0 yazi";
-        "Ctrl+Shift+Escape".action = spawn' "${pkgs.mission-center}/bin/missioncenter";
+        "Alt+Space".action = spawn' (getExe' launcher "sherlock");
+        "Mod+T".action = spawn' (getExe terminal);
+        "Mod+E".action = spawn' "${getExe terminal} --app-id=${getName file-manager} -o confirm_os_window_close=0 ${getExe file-manager}";
+        "Ctrl+Shift+Escape".action = spawn' (getExe pkgs.mission-center);
 
-        "Print".action = spawn' "${pkgs.flameshot}/bin/flameshot gui";
+        "Print".action = spawn' "${getExe pkgs.flameshot} gui";
         "Ctrl+Print".action = screenshot-window;
         "Ctrl+Shift+Print".action.screenshot-screen = []; #TODO: change after https://github.com/sodiboo/niri-flake/issues/944
         "Ctrl+Shift+O".action = spawn' "oimg";
-        "Mod+C".action = spawn' "${pkgs.hyprpicker}/bin/hyprpicker -andz";
+        "Mod+C".action = spawn' "${getExe pkgs.hyprpicker} -andz";
 
         "Mod+H".action = execute {
             cmd = "niri msg output eDP-1 mode 2880x1800@90.001";
@@ -66,7 +70,7 @@ in
         };
 
         "Mod+Q".action = close-window;
-        "Mod+L".action = execute {cmd = "niri msg action do-screen-transition && ${pkgs.hyprlock}/bin/hyprlock --immediate";};
+        "Mod+L".action = execute {cmd = "niri msg action do-screen-transition && ${getExe pkgs.hyprlock} --immediate";};
 
         "Alt+Right".action = focus-window-down;
         "Alt+Left".action = focus-window-up;

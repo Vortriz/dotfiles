@@ -1,4 +1,10 @@
 {
+    lib,
+    osConfig,
+    ...
+}: let
+    inherit (osConfig.defaults) video-player;
+in {
     manager = {
         show_hidden = true;
         sort_by = "natural";
@@ -24,7 +30,7 @@
 
         play = [
             {
-                run = ''celluloid "$@"'';
+                run = ''${lib.getName video-player} "$@"'';
                 orphan = true;
                 desc = "Play";
             }

@@ -1,16 +1,23 @@
-{pkgs, ...}: {
+{
+    osConfig,
+    lib,
+    pkgs,
+    ...
+}: let
+    inherit (osConfig.defaults) terminal;
+in {
     home.packages = [pkgs.nemo-with-extensions];
 
     xdg.desktopEntries.nemo = {
         name = "Nemo";
-        exec = "${pkgs.nemo-with-extensions}/bin/nemo";
+        exec = "nemo";
     };
 
     dconf = {
         enable = true;
 
         settings = {
-            "org/cinnamon/desktop/applications/terminal".exec = "kitty";
+            "org/cinnamon/desktop/applications/terminal".exec = lib.getName terminal;
         };
     };
 }
