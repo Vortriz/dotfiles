@@ -4,7 +4,8 @@
     outputs,
     ...
 }: let
-    inherit (config.var) username shell;
+    inherit (config.var) username;
+    inherit (config.defaults) shell;
 in {
     imports = [
         # keep-sorted start by_regex=\.nix$
@@ -39,7 +40,7 @@ in {
             experimental-features = "nix-command flakes";
 
             # Add myself to the trusted users
-            trusted-users = ["root" username];
+            trusted-users = [username];
 
             # Add extra Caches
             substituters = [
@@ -50,11 +51,13 @@ in {
                 "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE="
                 "yazi.cachix.org-1:Dcdz63NZKfvUCbDGngQDAZq6kOroIrFoyO064uvLh8k="
             ];
+
+            warn-dirty = false;
         };
         # Opinionated: disable channels
         channel.enable = false;
 
-        # Opinionated: make flake registry and nix path match flake inputs
+        # Opinionated: make flake registry and nix path match flake inputs (add more inputs if needed)
         # registry = lib.mapAttrs (_: flake: {inherit flake;}) flakeInputs;
         # nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
     };
