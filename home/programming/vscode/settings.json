@@ -14,16 +14,16 @@
     "editor.insertSpaces": true,
     "editor.semanticTokenColorCustomizations": {
         "rules": {
-            "interface": {
+            "*.static": {
                 "italic": true
             },
-            "selfParameter": {
+            "interface": {
                 "italic": true
             },
             "keyword": {
                 "italic": true
             },
-            "*.static": {
+            "selfParameter": {
                 "italic": true
             }
         }

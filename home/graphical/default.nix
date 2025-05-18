@@ -22,12 +22,10 @@
         gnome-calculator
         kdePackages.filelight
         mission-center
-        nautilus
         obsidian
         pdfarranger
         qbittorrent
         # ventoy-full # drop till this shit is sorted out: https://github.com/NixOS/nixpkgs/issues/404663
-        vlc
         warp
         wineWowPackages.stable
         winetricks

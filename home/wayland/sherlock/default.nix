@@ -12,7 +12,7 @@
             style = with builtins;
                 readFile (fetchurl {
                     url = "https://raw.githubusercontent.com/Skxxtz/sherlock/refs/heads/documentation/resources/main.css";
-                    sha256 = "sha256-0K6KiNBq26Yvf2epkJNj9Yc/C6F3KQ6xXCrbbj0bTwM=";
+                    sha256 = "sha256:1pdvwcmfdxpf661z18jkmisg0lb16c52zlzghn72a7y063qnf0x3";
                 })
                 + readFile ./extra.css;
         };
