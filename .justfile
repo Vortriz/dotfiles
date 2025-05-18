@@ -1,46 +1,81 @@
 set shell := ["fish", "-c"]
-set positional-arguments
 
 export NH_FLAKE := `echo $PWD`
-
+export NIXPKGS_ALLOW_UNFREE := "1"
+profiles-path := "/nix/var/nix/profiles"
 
 @default:
     just --list
 
+[group('SANITY')]
 @check:
     nix flake check
 
+[group('SANITY')]
+@fmt:
+    nix fmt
+
+[group('SYSTEM')]
 @test *args:
-    nh os test $NH_FLAKE $argv[2..-1]
+    nh os test {{ args }}
 
+[group('SYSTEM')]
 @switch *args:
-    nh os switch $NH_FLAKE $argv[2..-1]
+    nh os switch {{ args }}
 
+[group('SYSTEM')]
 @deploy *args: check
-    nh os switch $NH_FLAKE $argv[2..-1]
+    nh os switch {{ args }}
 
-    echo -e "\n---\n\n$(date '+%x %X')" >> $NH_FLAKE/build.log
-    nvd diff $(command rg -N '>>> (/nix/var/nix/profiles/system-[0-9]+-link)' --only-matching --replace '$1' build.log | tail -1) $(command ls -d1v /nix/var/nix/profiles/system-*-link|tail -n 1) >> $NH_FLAKE/build.log
+    echo -e "\n---\n\n$(date '+%x %X')" >> build.log
+    nvd diff \
+    $(command rg -N '>>> ({{ profiles-path }}/system-[0-9]+-link)' --only-matching --replace '$1' build.log | tail -1) \
+    $(command ls -d1v {{ profiles-path }}/system-*-link | tail -n 1) \
+    >> build.log
 
     git add -A
-    git commit -m "deployed $(nixos-rebuild list-generations --flake $NH_FLAKE --json | jaq '.[0].generation')"
+    git commit -m "deployed $(command ls -d1v {{ profiles-path }}/system-*-link | tail -n 1)"
 
+[group('SYSTEM')]
 @update: check
     echo -e "Updating flake and fetchgit inputs...\n"
 
     nix flake update
-    for i in $(command fd sources.toml); set o $(echo $i | sed 's/.toml//'); nvfetcher -c $i -o $o; end
+    for i in $(command fd sources.toml); \
+        set o $(echo $i | sed 's/.toml//'); \
+        nvfetcher -c $i -o $o; \
+    end
 
     git add -A
     git commit -m "chore: update inputs"
 
-alias pf := prefetch
-
+[group('MAINTENANCE')]
 @gc:
     nh clean all -k 5
 
+[group('MAINTENANCE')]
 @optimise:
     nix store optimise -v
 
+alias pf := prefetch
+
+[group('TOOLS')]
 @prefetch url:
-    nix store prefetch-file --json $argv[2] | jaq -r .hash
+    nix store prefetch-file --json {{ url }} | jaq -r .hash
+
+[group('TOOLS')]
+@search name:
+    nh search {{ name }}
+
+[group('TOOLS')]
+@explore name:
+    yazi $(nix eval --raw nixpkgs#{{ name }})
+
+[group('TOOLS')]
+@repl:
+    nh os repl --expr \
+    "let \
+        flake = builtins.getFlake (toString ./.); \
+        nixpkgs = import <nixpkgs> {}; \
+    in \
+        {inherit flake;} // flake // builtins // nixpkgs // nixpkgs.lib // flake.nixosConfigurations"
