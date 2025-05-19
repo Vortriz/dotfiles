@@ -51,6 +51,7 @@ in
         "Ctrl+Shift+Print".action.screenshot-screen = []; #TODO: change after https://github.com/sodiboo/niri-flake/issues/944
         "Ctrl+Shift+O".action = spawn' "oimg";
         "Mod+C".action = spawn' "${getExe pkgs.hyprpicker} -andz";
+        "Mod+Period".action = spawn' (getExe pkgs.smile);
 
         "Mod+H".action = execute {
             cmd = "niri msg output eDP-1 mode 2880x1800@90.001";
@@ -95,9 +96,6 @@ in
 
         "Mod+Up".action = toggle-window-floating;
         "Mod+Shift+T".action = toggle-column-tabbed-display;
-
-        "Mod+Comma".action = consume-window-into-column;
-        "Mod+Period".action = expel-window-from-column;
 
         "Mod+BracketLeft".action = consume-or-expel-window-left;
         "Mod+BracketRight".action = consume-or-expel-window-right;

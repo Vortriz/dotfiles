@@ -25,6 +25,7 @@
         obsidian
         pdfarranger
         qbittorrent
+        smile
         # ventoy-full # drop till this shit is sorted out: https://github.com/NixOS/nixpkgs/issues/404663
         warp
         wineWowPackages.stable
