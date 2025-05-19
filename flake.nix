@@ -3,7 +3,6 @@
 
     inputs = {
         nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-        # nikpkgs.follows = "nixos-cosmic/nixpkgs";
 
         # keep-sorted start block=yes
         agenix = {
@@ -19,21 +18,24 @@
             url = "github:misumisumi/flakes";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        niri-overview = {
-            url = "github:YaLTeR/niri/2761922210a6c92dc22bbc5c8dce8c3771b02a54";
-            flake = false;
-        };
         niri.url = "github:sodiboo/niri-flake";
         nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
-        nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
-        pre-commit-hooks.url = "github:cachix/git-hooks.nix";
-        scientific-fhs = {
-            url = "github:Vortriz/scientific-fhs";
+        # nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
+        pre-commit-hooks = {
+            url = "github:cachix/git-hooks.nix";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+        scientific-fhs = {
+            url = "github:Vortriz/scientific-fhs";
+            # inputs.nixpkgs.follows = "nixpkgs";
+            flake = false;
+        };
         sherlock.url = "github:Skxxtz/sherlock";
-        stylix.url = "github:danth/stylix";
-        treefmt-nix.url = "github:numtide/treefmt-nix";
+        stylix.url = "github:nix-community/stylix";
+        treefmt-nix = {
+            url = "github:numtide/treefmt-nix";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
         # keep-sorted end
     };
 
