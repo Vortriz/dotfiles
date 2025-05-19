@@ -44,12 +44,10 @@ in {
 
             # Add extra Caches
             substituters = [
-                "https://cosmic.cachix.org/"
-                "https://yazi.cachix.org"
+                # "https://cosmic.cachix.org/"
             ];
             trusted-public-keys = [
-                "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE="
-                "yazi.cachix.org-1:Dcdz63NZKfvUCbDGngQDAZq6kOroIrFoyO064uvLh8k="
+                # "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE="
             ];
 
             warn-dirty = false;
