@@ -4,7 +4,7 @@
     ...
 }: let
     inherit (lib) getName;
-    inherit (osConfig.defaults) browser code-editor file-manager terminal video-player;
+    inherit (osConfig.defaults) browser file-manager terminal video-player;
 in [
     {
         clip-to-geometry = true;
@@ -21,9 +21,9 @@ in [
         open-maximized = true;
 
         matches = [
-            {app-id = "${getName browser}";}
-            {app-id = "${getName file-manager}";}
-            {app-id = "${getName video-player}";}
+            {app-id = getName browser;}
+            {app-id = getName file-manager;}
+            {app-id = getName video-player;}
             {app-id = "code";}
             {app-id = "obsidian";}
             {title = ".*pdf";}
@@ -59,7 +59,7 @@ in [
         default-column-display = "tabbed"; # TODO: auto-tabbing when it lands
 
         matches = [
-            {app-id = "${getName terminal}";}
+            {app-id = getName terminal;}
             {title = ".*pdf";}
         ];
     }
@@ -74,6 +74,7 @@ in [
     {
         matches = [
             {app-id = "it.catboy.ripdrag";}
+            {app-id = "it.mijorus.smile";}
         ];
 
         open-floating = true;
@@ -97,7 +98,7 @@ in [
         open-focused = true;
 
         matches = [
-            {app-id = "${getName browser}";}
+            {app-id = getName browser;}
             {app-id = "com.github.th_ch.youtube_music";}
         ];
     }
@@ -106,7 +107,7 @@ in [
         open-focused = true;
 
         matches = [
-            {app-id = "${getName code-editor}";}
+            {app-id = "dev.zed.Zed";}
             {app-id = "code";}
         ];
     }
