@@ -13,5 +13,6 @@
     - [ ] replace avizo
     - [ ] replace waybar
 - [x] emoji picker
-- [ ] configure ai in zed
-    - [ ] https://github.com/utensils/mcp-nixos
+- [x] configure ai in zed
+    - [x] https://github.com/utensils/mcp-nixos
+        - [ ] but schite aint worke - https://github.com/zed-industries/zed/issues/23507

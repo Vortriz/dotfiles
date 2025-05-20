@@ -18,6 +18,7 @@
             url = "github:nix-community/home-manager";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+        mcp-nixos.url = "github:utensils/mcp-nixos";
         misumisumi-flakes = {
             url = "github:misumisumi/flakes";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -105,27 +106,31 @@
                     treefmtEval.${system}.config.build.wrapper
                 ];
 
-                packages = with pkgs; [
-                    # keep-sorted start prefix_order=inputs,
-                    inputs.agenix.packages.${system}.default
-
-                    fd
-                    fish
-                    git
-                    jaq
-                    just
-                    micro
-                    nh
-                    nix
-                    nix-init
-                    nix-melt
-                    nix-prefetch-git
-                    nix-prefetch-github
-                    nvd
-                    nvfetcher
-                    ripgrep
-                    # keep-sorted end
-                ];
+                packages =
+                    (with pkgs; [
+                        # keep-sorted start
+                        fd
+                        fish
+                        git
+                        jaq
+                        just
+                        micro
+                        nh
+                        nix
+                        nix-init
+                        nix-melt
+                        nix-prefetch-git
+                        nix-prefetch-github
+                        nvd
+                        nvfetcher
+                        ripgrep
+                        # keep-sorted end
+                    ])
+                    ++ (with inputs; [
+                        # keep-sorted start
+                        agenix.packages.${system}.default
+                        # keep-sorted end
+                    ]);
             };
         });
     };
