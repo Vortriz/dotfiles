@@ -12,6 +12,8 @@
         ./tldr.nix
         ./zoxide.nix
 
+        ./anifetch
+        ./nix-search-tv
         ./yazi
         # keep-sorted end
     ];

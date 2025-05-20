@@ -10,6 +10,10 @@
             inputs.nixpkgs.follows = "nixpkgs";
             inputs.darwin.follows = "";
         };
+        anifetch = {
+            url = "github:Notenlish/anifetch";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
         home-manager = {
             url = "github:nix-community/home-manager";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -19,6 +23,10 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         niri.url = "github:sodiboo/niri-flake";
+        nix-search-tv = {
+            url = "github:3timeslazy/nix-search-tv";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
         nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
         # nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
         pre-commit-hooks = {
@@ -110,6 +118,7 @@
                     nh
                     nix
                     nix-init
+                    nix-melt
                     nix-prefetch-git
                     nix-prefetch-github
                     nvd

@@ -1,5 +1,6 @@
 {
     config,
+    inputs,
     lib,
     osConfig,
     pkgs,
@@ -9,8 +10,8 @@
         settings =
             import ./settings.nix {inherit osConfig pkgs;}
             // {
-                binds = import ./binds.nix {inherit config lib osConfig pkgs;};
-                window-rules = import ./window-rules.nix {inherit lib osConfig;};
+                binds = import ./binds.nix {inherit config inputs lib osConfig pkgs;};
+                window-rules = import ./window-rules.nix {inherit inputs lib osConfig;};
             };
     };
 }

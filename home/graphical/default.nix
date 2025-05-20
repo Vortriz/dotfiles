@@ -18,7 +18,6 @@
         anydesk
         bottles
         diffpdf
-        discord
         gnome-calculator
         kdePackages.filelight
         mission-center
@@ -27,6 +26,7 @@
         qbittorrent
         smile
         # ventoy-full # drop till this shit is sorted out: https://github.com/NixOS/nixpkgs/issues/404663
+        vesktop
         warp
         wineWowPackages.stable
         winetricks
