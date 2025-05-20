@@ -4,4 +4,8 @@
 
         options = ["--cmd cd"];
     };
+
+    programs.fish.shellAliases = {
+        cd = "zoxide";
+    };
 }

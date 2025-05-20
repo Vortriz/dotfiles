@@ -55,13 +55,8 @@
                 };
                 Sleep = {
                     icon = "system-suspend";
-                    exec = "systemctl suspend";
-                    search_string = "sleep;";
-                };
-                Lock = {
-                    icon = "system-lock-screen";
-                    exec = "hyprlock && systemctl suspend";
-                    search_string = "lock;";
+                    exec = "systemctl hybrid-sleep";
+                    search_string = "sleep";
                 };
                 Reboot = {
                     icon = "system-reboot";
