@@ -25,11 +25,7 @@
             url = "github:cachix/git-hooks.nix";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        scientific-fhs = {
-            url = "github:Vortriz/scientific-fhs";
-            # inputs.nixpkgs.follows = "nixpkgs";
-            flake = false;
-        };
+        scientific-fhs.url = "github:Vortriz/scientific-fhs";
         sherlock.url = "github:Skxxtz/sherlock";
         stylix.url = "github:nix-community/stylix";
         treefmt-nix = {

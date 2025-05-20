@@ -45,17 +45,17 @@
   };
   mediainfo = {
     pname = "mediainfo";
-    version = "9629b1e85c3757c834ec83fb7d931982c55f4c3f";
+    version = "70ed2287159b17bf2b9c1598252c5c33ba52b8a3";
     src = fetchgit {
       url = "https://github.com/boydaihungst/mediainfo.yazi";
-      rev = "9629b1e85c3757c834ec83fb7d931982c55f4c3f";
+      rev = "70ed2287159b17bf2b9c1598252c5c33ba52b8a3";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-EDEIiZJy/RfXVaLNsKDeklH4qY2h+js2m0y6VSAjPkk=";
+      sha256 = "sha256-MMsKb9+zeOtWrpE3SalWhGIqeOwHrLdwf8xWYvWXjbo=";
     };
-    date = "2025-04-17";
+    date = "2025-05-19";
   };
   office = {
     pname = "office";
@@ -115,17 +115,17 @@
   };
   restore = {
     pname = "restore";
-    version = "539aad5077dc8b342a580036e416f2b949b6590e";
+    version = "1bfd5f71cb59bebde192126e2255bf4dc9f3b249";
     src = fetchgit {
       url = "https://github.com/boydaihungst/restore.yazi";
-      rev = "539aad5077dc8b342a580036e416f2b949b6590e";
+      rev = "1bfd5f71cb59bebde192126e2255bf4dc9f3b249";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-ngwbweKF7pSEpzy1TNzbKz8cFIWaDison5vCiGxkHFk=";
+      sha256 = "sha256-JaeJxFnLqZZGduSwwvGD3q1bdJUSEyu0W6EI+4Hwwc0=";
     };
-    date = "2025-04-25";
+    date = "2025-05-19";
   };
   what-size = {
     pname = "what-size";
