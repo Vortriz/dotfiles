@@ -30,6 +30,10 @@
 6. Then cd into `dotfiles` and enter `nix develop --extra-experimental-features "flakes nix-command"`. Run `bash post-install`.
 7. Run `just deploy` to finish off.
 
+## Post install
+
+1. Rekey Agenix
+
 # FIX broken setup
 
 1. Boot into ISO and connect to wifi
