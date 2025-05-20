@@ -1,5 +1,6 @@
 {
     config,
+    inputs,
     lib,
     osConfig,
     pkgs,
@@ -9,9 +10,16 @@ with config.lib.niri.actions; let
     inherit (lib) getExe getExe' getName;
     inherit (lib.strings) splitString;
 
+    inherit (osConfig.var) system;
     inherit (osConfig.defaults) file-manager launcher terminal;
 
     spawn' = cmd: spawn (splitString " " cmd);
+
+    open-tui = {
+        app-id,
+        cmd,
+    }:
+        spawn' "${getExe terminal} -o confirm_os_window_close=0 --app-id=${app-id} ${cmd}";
 
     execute = {
         cmd,
@@ -43,7 +51,14 @@ in
 
         "Alt+Space".action = spawn' (getExe' launcher "sherlock");
         "Mod+T".action = spawn' (getExe terminal);
-        "Mod+E".action = spawn' "${getExe terminal} --app-id=${getName file-manager} -o confirm_os_window_close=0 ${getExe file-manager}";
+        "Mod+E".action = open-tui {
+            app-id = getName file-manager;
+            cmd = getExe file-manager;
+        };
+        "Mod+P".action = open-tui {
+            app-id = getName inputs.nix-search-tv.packages.${system}.default;
+            cmd = "ns";
+        };
         "Ctrl+Shift+Escape".action = spawn' (getExe pkgs.mission-center);
 
         "Print".action = spawn' "${getExe pkgs.flameshot} gui";

@@ -8,7 +8,7 @@ profiles-path := "/nix/var/nix/profiles"
     just --list
 
 [group('SANITY')]
-@check:
+@check: fmt
     nix flake check
 
 [group('SANITY')]
@@ -64,8 +64,8 @@ alias pf := prefetch
     nix store prefetch-file --json {{ url }} | jaq -r .hash
 
 [group('TOOLS')]
-@search name:
-    nh search {{ name }}
+@search:
+    ns
 
 [group('TOOLS')]
 @explore name:

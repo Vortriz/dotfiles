@@ -1,7 +1,7 @@
 # things to do
 
 - [ ] make tealdeer hm module (for fun)
-- [ ] discord needs xdg-desktop-portal
+- [x] ~~discord needs xwayland~~ use vesktop
 - [ ] cpu optimisation
 - [ ] figure out cache situation for new install
 - [ ] try zen browser
@@ -12,5 +12,6 @@
 - [ ] ags/ignis
     - [ ] replace avizo
     - [ ] replace waybar
-- [x] setup LSPs in zed
-- [ ] emoji picker
+- [x] emoji picker
+- [ ] configure ai in zed
+    - [ ] https://github.com/utensils/mcp-nixos

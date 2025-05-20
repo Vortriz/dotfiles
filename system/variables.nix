@@ -13,6 +13,7 @@
         timeZone = "Asia/Kolkata";
         defaultLocale = "en_IN";
         extraLocale = defaultLocale;
+        inherit (pkgs) system;
 
         storageDir = "/mnt/HOUSE";
         downloadsDir = storageDir + "/downloads";
