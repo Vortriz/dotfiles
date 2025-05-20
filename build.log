@@ -7868,3 +7868,90 @@ Added packages:
 Removed packages:
 [R-]  #1  niri  25.05
 Closure size: 8227 -> 8231 (39 paths added, 35 paths removed, delta +4, disk usage +6.8MiB).
+
+---
+
+21/05/25 02:43:07 AM IST
+<<< /nix/var/nix/profiles/system-33-link
+>>> /nix/var/nix/profiles/system-36-link
+Version changes:
+[C.]  #01  bash                5.2p37 x3 -> 5.2p37 x4
+[C*]  #02  bzip2               1.0.8 x3, 1.0.8-bin x3, 1.0.8-dev, 1.0.8-man -> 1.0.8 x4, 1.0.8-bin x3, 1.0.8-dev, 1.0.8-man
+[C.]  #03  chafa               1.14.5, 1.14.5-bin -> 1.14.5, 1.14.5-bin, 1.14.5-dev
+[C.]  #04  expat               2.6.4, 2.7.1 x2, 2.7.1-dev -> 2.6.4 x2, 2.7.1 x2, 2.7.1-dev
+[C.]  #05  ffmpeg              6.1.2-data, 6.1.2-lib, 7.1-data, 7.1-lib, 7.1.1-bin, 7.1.1-data x2, 7.1.1-lib x2 -> 6.1.2-data, 6.1.2-lib, 7.1-data, 7.1-lib, 7.1.1, 7.1.1-bin, 7.1.1-data x2, 7.1.1-dev, 7.1.1-lib x2
+[C.]  #06  gcc                 13.3.0-lib, 13.3.0-libgcc, 14.2.1.20250322, 14.2.1.20250322-lib x4, 14.2.1.20250322-libgcc x4, 14.2.1.20250322-man -> 13.3.0-lib, 13.3.0-libgcc, 14.2.1.20250322, 14.2.1.20250322-lib x4, 14.2.1.20250322-libgcc x4, 14.2.1.20250322-man, 14-20241116-lib, 14-20241116-libgcc
+[C.]  #07  gdbm                1.24-lib, 1.25-lib x2 -> 1.24-lib x2, 1.25-lib x2
+[C*]  #08  glibc               2.40-66 x3, 2.40-66-bin x2, 2.40-66-dev, 2.40-66-getent x3 -> 2.40-66 x4, 2.40-66-bin x2, 2.40-66-dev, 2.40-66-getent x3
+[C.]  #09  libffi              3.4.6, 3.4.8 x2, 3.4.8-dev -> 3.4.6 x2, 3.4.8 x2, 3.4.8-dev
+[C.]  #10  libidn2             2.3.7, 2.3.8 x2, 2.3.8-bin, 2.3.8-dev -> 2.3.7 x2, 2.3.8 x2, 2.3.8-bin, 2.3.8-dev
+[C.]  #11  libunistring        1.2, 1.3 x2 -> 1.2, 1.3 x3
+[C.]  #12  libxcrypt           4.4.36, 4.4.38 x4, 4.4.38-man -> 4.4.36, 4.4.38 x5, 4.4.38-man
+[C.]  #13  mailcap             2.1.54 x3 -> 2.1.54 x4
+[C.]  #14  mpdecimal           4.0.0 x3 -> 4.0.0 x4
+[C*]  #15  ncurses             6.4.20221231, 6.5 x2, 6.5-dev, 6.5-man -> 6.4.20221231, 6.5 x3, 6.5-dev, 6.5-man
+[C.]  #16  nss-cacert          3.111, 3.111-p11kit -> 3.108, 3.111, 3.111-p11kit
+[C.]  #17  openssl             3.3.3, 3.4.1 x2, 3.4.1-bin, 3.4.1-dev, 3.4.1-man -> 3.3.3, 3.4.1 x3, 3.4.1-bin, 3.4.1-dev, 3.4.1-man
+[C.]  #18  python3             3.11.12, 3.12.8, 3.12.10 x4, 3.12.10-env x9 -> 3.11.11, 3.11.12, 3.12.8, 3.12.10 x4, 3.12.10-env x9
+[C.]  #19  readline            8.2p13 x3 -> 8.2p13 x4
+[C.]  #20  sqlite              3.46.1, 3.48.0 x2, 3.48.0-bin, 3.48.0-dev -> 3.46.1, 3.48.0 x3, 3.48.0-bin, 3.48.0-dev
+[C.]  #21  tzdata              2024b, 2025b x2 -> 2024b, 2025a, 2025b x2
+[C.]  #22  util-linux-minimal  2.39.4-lib, 2.39.4-login, 2.39.4-mount, 2.39.4-swap, 2.41-bin, 2.41-lib x2, 2.41-login x2, 2.41-mount x2, 2.41-swap x2 -> 2.39.4-lib, 2.39.4-login, 2.39.4-mount, 2.39.4-swap, 2.40.4-lib, 2.41-bin, 2.41-lib x2, 2.41-login x2, 2.41-mount x2, 2.41-swap x2
+[C.]  #23  xgcc                13.3.0-libgcc, 14.2.1.20250322-libgcc x2 -> 13.3.0-libgcc, 14.2.1.20250322-libgcc x2, 14-20241116-libgcc
+[C*]  #24  xz                  5.6.3, 5.6.3-bin, 5.8.1 x2, 5.8.1-bin x2, 5.8.1-dev, 5.8.1-doc, 5.8.1-man -> 5.6.3, 5.6.3-bin, 5.6.4, 5.8.1 x2, 5.8.1-bin x2, 5.8.1-dev, 5.8.1-doc, 5.8.1-man
+[C.]  #25  zlib                1.3.1 x3, 1.3.1-dev -> 1.3.1 x4, 1.3.1-dev
+Added packages:
+[A.]  #01  config.jsonc                                  <none>
+[A.]  #02  ddcutil                                       2.2.0
+[A.]  #03  fastfetch                                     2.43.0, 2.43.0-fish-completions, 2.43.0-man
+[A.]  #04  libelf                                        0.8.13
+[A.]  #05  libsepol                                      3.8.1
+[A.]  #06  libsysprof-capture                            48.0
+[A.]  #07  libxfce4util                                  4.20.1
+[A.]  #08  loop-anifetch.sh                              <none>
+[A.]  #09  mcp-nixos                                     0.5.1
+[A.]  #10  nix-search-tv                                 62da5aff52cc196f1e97e5692dd17b466505448a, 62da5aff52cc196f1e97e5692dd17b466505448a-fish-completions
+[A.]  #11  ns                                            <none>
+[A.]  #12  ns-fish-completions                           <none>
+[A.]  #13  opencl-headers                                2024.10.24
+[A.]  #14  python3.11-annotated-types                    0.7.0
+[A.]  #15  python3.11-anyio                              4.8.0
+[A.]  #16  python3.11-beautifulsoup4                     4.12.3
+[A.]  #17  python3.11-certifi                            2025.01.31
+[A.]  #18  python3.11-chardet                            5.2.0
+[A.]  #19  python3.11-charset-normalizer                 3.4.1
+[A.]  #20  python3.11-click                              8.1.8
+[A.]  #21  python3.11-h11                                0.14.0
+[A.]  #22  python3.11-httpcore                           1.0.7
+[A.]  #23  python3.11-httpx                              0.28.1
+[A.]  #24  python3.11-httpx-sse                          0.4.0
+[A.]  #25  python3.11-idna                               3.10
+[A.]  #26  python3.11-mcp                                1.3.0
+[A.]  #27  python3.11-psutil                             7.0.0
+[A.]  #28  python3.11-pydantic                           2.10.6
+[A.]  #29  python3.11-pydantic-core                      2.27.2
+[A.]  #30  python3.11-pydantic-settings                  2.8.1
+[A.]  #31  python3.11-python-dotenv                      1.0.1
+[A.]  #32  python3.11-requests                           2.32.3
+[A.]  #33  python3.11-sniffio                            1.3.1
+[A.]  #34  python3.11-soupsieve                          2.6
+[A.]  #35  python3.11-sse-starlette                      2.2.1
+[A.]  #36  python3.11-starlette                          0.46.0
+[A.]  #37  python3.11-typing-extensions                  4.12.2
+[A.]  #38  python3.11-urllib3                            2.3.0
+[A.]  #39  python3.11-uvicorn                            0.34.0
+[A.]  #40  python3.12-aniftech-wrapped                   <none>
+[A.]  #41  python3.12-aniftech-wrapped-fish-completions  <none>
+[A.]  #42  vesktop                                       1.5.6, 1.5.6-fish-completions
+[A.]  #43  xfconf                                        4.20.0
+[A.]  #44  yyjson                                        0.11.0
+[A.]  #45  zed-user-keymaps                              <none>
+Removed packages:
+[R.]  #1  dee-unstable                 2017-06-16
+[R.]  #2  disable-breaking-updates.py  <none>
+[R.]  #3  discord                      0.0.94, 0.0.94-fish-completions
+[R.]  #4  discord.desktop              <none>
+[R.]  #5  libappindicator-gtk3         12.10.1+20.10.20200706.1
+[R.]  #6  libcxx                       19.1.7
+[R.]  #7  libunity-unstable            2021-02-01
+Closure size: 8231 -> 8299 (94 paths added, 26 paths removed, delta +68, disk usage -12.6MiB).
