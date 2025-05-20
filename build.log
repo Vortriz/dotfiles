@@ -7848,3 +7848,23 @@ Removed packages:
 [R.]  #11  schroedinger   1.0.11
 [R.]  #12  vlc            3.0.21, 3.0.21-fish-completions
 Closure size: 8227 -> 8227 (3423 paths added, 3423 paths removed, delta +0, disk usage +469.3MiB).
+
+---
+
+20/05/25 02:44:06 PM IST
+<<< /nix/var/nix/profiles/system-32-link
+>>> /nix/var/nix/profiles/system-33-link
+Version changes:
+[D.]  #1  mediainfo.yazi                            9629b1e -> 70ed228
+[D.]  #2  restore.yazi                              539aad5 -> 1bfd5f7
+[U.]  #3  vscode-extension-jnoortheen-nix-ide       0.4.16 -> 0.4.18
+[U.]  #4  vscode-extension-ms-python-python         2025.7.2025051601 -> 2025.7.2025051901
+[U.]  #5  vscode-extension-rust-lang-rust-analyzer  0.4.2464 -> 0.4.2467
+Added packages:
+[A+]  #1  niri-unstable          2025-05-19-3f2b7e6
+[A.]  #2  python3.12-manimpango  0.6.0
+[A.]  #3  smile                  2.10.1, 2.10.1-fish-completions
+[A.]  #4  xdotool                3.20211022.1
+Removed packages:
+[R-]  #1  niri  25.05
+Closure size: 8227 -> 8231 (39 paths added, 35 paths removed, delta +4, disk usage +6.8MiB).
