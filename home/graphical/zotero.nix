@@ -1,10 +1,9 @@
 {
     inputs,
     osConfig,
-    pkgs,
     ...
 }: let
-    inherit (osConfig.var) storageDir;
+    inherit (osConfig.var) storageDir system;
 in {
     programs.zotero = {
         enable = true;
@@ -26,7 +25,7 @@ in {
                 # keep-sorted end
             };
 
-            extensions = map (ext: inputs.misumisumi-flakes.packages."${pkgs.system}"."zotero-addons.${ext}") [
+            extensions = map (ext: inputs.misumisumi-flakes.packages.${system}."zotero-addons.${ext}") [
                 # keep-sorted start
                 "zotero-better-bibtex"
                 "zotero-scipdf"

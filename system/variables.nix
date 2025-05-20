@@ -35,7 +35,7 @@
         })
         // (with inputs; {
             # keep-sorted start
-            launcher = sherlock.packages.${pkgs.system}.default;
+            launcher = sherlock.packages.${config.var.system}.default;
             # keep-sorted end
         });
 

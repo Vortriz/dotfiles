@@ -1,14 +1,8 @@
 {pkgs, ...}: {
-    programs.fish = {
-        enable = true;
+    programs.fish.enable = true;
 
-        shellAliases = {
-            cd = "zoxide";
-        };
-    };
-
-    home.packages = with pkgs.fishPlugins;
-        [
+    home.packages =
+        (with pkgs.fishPlugins; [
             # keep-sorted start
             autopair
             colored-man-pages
@@ -17,7 +11,7 @@
             puffer
             sponge
             # keep-sorted end
-        ]
+        ])
         ++ (with pkgs; [
             # keep-sorted start
             bat
