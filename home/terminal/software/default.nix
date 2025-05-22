@@ -21,7 +21,6 @@
     home.packages = with pkgs; [
         # keep-sorted start
         cachix
-        comma
         just
         magic-wormhole
         ookla-speedtest
