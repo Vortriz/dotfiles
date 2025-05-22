@@ -28,7 +28,7 @@ with config.lib.niri.actions; let
         spawn =
             if notif == null
             then ["sh" "-c" cmd]
-            else ["sh" "-c" ''${cmd} && ${pkgs.dunst}/bin/dunstify "${notif}"''];
+            else ["sh" "-c" ''${cmd} && ${getExe pkgs.libnotify} "${notif}"''];
     };
 
     vol = cmd: {
@@ -65,7 +65,7 @@ in
         "Ctrl+Print".action = screenshot-window;
         "Ctrl+Shift+Print".action.screenshot-screen = []; #TODO: change after https://github.com/sodiboo/niri-flake/issues/944
         "Ctrl+Shift+O".action = spawn' "oimg";
-        "Mod+C".action = spawn' "${getExe pkgs.hyprpicker} -andz";
+        "Mod+C".action = spawn' "pick-color ui";
         "Mod+Period".action = spawn' (getExe pkgs.smile);
 
         "Mod+H".action = execute {

@@ -1,9 +1,13 @@
-{pkgs, ...}: {
-    home.packages = [
-        # keep-sorted start
-        (pkgs.callPackage ./battery.nix {})
-        (pkgs.callPackage ./dl.nix {})
-        (pkgs.callPackage ./oimg.nix {})
-        # keep-sorted end
-    ];
+{
+    lib,
+    pkgs,
+    ...
+}: let
+    inherit (lib) hasSuffix map filter;
+in {
+    home.packages =
+        lib.filesystem.listFilesRecursive ./.
+        |> map builtins.baseNameOf
+        |> filter (f: hasSuffix ".nix" f && !hasSuffix "default.nix" f)
+        |> map (f: pkgs.callPackage ./${f} {});
 }

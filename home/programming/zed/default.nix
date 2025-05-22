@@ -12,20 +12,7 @@ in {
 
         userSettings = import ./settings.nix {inherit lib osConfig pkgs;};
 
-        userKeymaps = [
-            {
-                bindings = {
-                    ctrl-q = null;
-                };
-            }
-            {
-                context = "Terminal";
-                bindings = {
-                    ctrl-shift-f = "pane::DeploySearch";
-                    ctrl-s = ["terminal::SendKeystroke" "ctrl-s"];
-                };
-            }
-        ];
+        userKeymaps = import ./keymap.nix;
 
         extensions = [
             # keep-sorted start
