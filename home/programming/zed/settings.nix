@@ -71,7 +71,6 @@ in {
     };
     terminal = {
         detect_venv.on.activate_script = "${lib.getName shell}";
-        line_height = "standard";
         cursor_shape = "bar";
         toolbar.breadcrumbs = false;
     };
