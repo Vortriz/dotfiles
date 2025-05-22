@@ -641,6 +641,26 @@
         "type": "github"
       }
     },
+    "nix-index-database": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1747540584,
+        "narHash": "sha256-cxCQ413JTUuRv9Ygd8DABJ1D6kuB/nTfQqC0Lu9C0ls=",
+        "owner": "nix-community",
+        "repo": "nix-index-database",
+        "rev": "ec179dd13fb7b4c6844f55be91436f7857226dce",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nix-index-database",
+        "type": "github"
+      }
+    },
     "nix-search-tv": {
       "inputs": {
         "flake-utils": "flake-utils_3",
@@ -965,6 +985,7 @@
         "mcp-nixos": "mcp-nixos",
         "misumisumi-flakes": "misumisumi-flakes",
         "niri": "niri",
+        "nix-index-database": "nix-index-database",
         "nix-search-tv": "nix-search-tv",
         "nix-vscode-extensions": "nix-vscode-extensions",
         "nixpkgs": "nixpkgs_6",

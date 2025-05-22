@@ -24,6 +24,10 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         niri.url = "github:sodiboo/niri-flake";
+        nix-index-database = {
+            url = "github:nix-community/nix-index-database";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
         nix-search-tv = {
             url = "github:3timeslazy/nix-search-tv";
             inputs.nixpkgs.follows = "nixpkgs";
