@@ -7955,3 +7955,25 @@ Removed packages:
 [R.]  #6  libcxx                       19.1.7
 [R.]  #7  libunity-unstable            2021-02-01
 Closure size: 8231 -> 8299 (94 paths added, 26 paths removed, delta +68, disk usage -12.6MiB).
+
+---
+
+24/05/25 01:39:08 AM IST
+<<< /nix/var/nix/profiles/system-36-link
+>>> /nix/var/nix/profiles/system-37-link
+Version changes:
+[C.]  #1  comma             1.2-tex, 1.9.0, 1.9.0-fish-completions -> 1.2-tex, 1.9.0
+[C.]  #2  gtk4-layer-shell  1.0.4 -> 1.0.4, 1.1.1
+[C.]  #3  nix-index         0.1.8 x2, 0.1.8-fish-completions -> 0.1.8
+Added packages:
+[A.]  #1  comma-with-db                1.9.0, 1.9.0-fish-completions
+[A.]  #2  index-x86_64-linux           <none>
+[A.]  #3  index-x86_64-linux-small     <none>
+[A.]  #4  nix-index-database           <none> x2
+[A.]  #5  nix-index-with-full-db       0.1.8, 0.1.8-fish-completions
+[A.]  #6  pick-color                   <none>
+[A.]  #7  pick-color-fish-completions  <none>
+[A.]  #8  python3.12-niriswitcher      0.5.2
+Removed packages:
+[R.]  #1  hyprpicker  0.4.5
+Closure size: 8299 -> 8307 (35 paths added, 27 paths removed, delta +8, disk usage +78.9MiB).
