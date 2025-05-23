@@ -45,6 +45,8 @@ with config.lib.niri.actions; let
         allow-when-locked = true;
         action = spawn' "${pkgs.avizo}/bin/lightctl -d -e 4 ${cmd}";
     };
+
+    niriswitcher = spawn' "pkill -USR1 niriswitcher";
 in
     {
         "Mod+Shift+Slash".action = show-hotkey-overlay;
@@ -90,8 +92,11 @@ in
 
         "Alt+Right".action = focus-window-down;
         "Alt+Left".action = focus-window-up;
-        "Alt+Tab".action = focus-window-down-or-top;
-        "Alt+Shift+Tab".action = focus-window-up-or-bottom;
+
+        "Alt+Tab".action = niriswitcher;
+        "Alt+Shift+Tab".action = niriswitcher;
+        "Alt+grave".action = niriswitcher;
+        "Alt+Shift+grave".action = niriswitcher;
 
         "Mod+Tab".action = focus-workspace-previous;
         "Mod+Shift+Tab".action = focus-column-right-or-first;
