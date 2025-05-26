@@ -34,7 +34,7 @@ profiles-path := "/nix/var/nix/profiles"
     >> build.log
 
     git add -A
-    git commit -m "deployed $(command ls -d1v {{ profiles-path }}/system-*-link | tail -n 1)"
+    git commit -m "deployed $(nixos-rebuild list-generations --flake $NH_FLAKE --json | jaq '.[0].generation')"
 
 [group('SYSTEM')]
 @update: check
