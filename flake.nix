@@ -33,11 +33,15 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
+        # nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
         nur = {
             url = "github:nix-community/NUR";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        # nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
+        nur-vortriz = {
+            url = "path:/mnt/HOUSE/dev/nix/nur-packages";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
         pre-commit-hooks = {
             url = "github:cachix/git-hooks.nix";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -87,7 +91,7 @@
         });
 
         # Your custom packages and modifications, exported as overlays
-        overlays = import ./overlays {inherit inputs;};
+        overlays = import ./overlays {};
 
         # Templates
         templates = import ./templates;

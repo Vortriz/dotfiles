@@ -8,12 +8,12 @@ profiles-path := "/nix/var/nix/profiles"
     just --list
 
 [group('SANITY')]
-@check: fmt
-    nix flake check
-
-[group('SANITY')]
 @fmt:
     nix fmt
+
+[group('SANITY')]
+@check: fmt
+    nix flake check
 
 [group('SYSTEM')]
 @test *args:
@@ -79,3 +79,7 @@ alias pf := prefetch
         nixpkgs = import <nixpkgs> {}; \
     in \
         {inherit flake;} // flake // builtins // nixpkgs // nixpkgs.lib // flake.nixosConfigurations"
+
+[group('TOOLS')]
+@debug-nur:
+    nix flake update nur-vortriz

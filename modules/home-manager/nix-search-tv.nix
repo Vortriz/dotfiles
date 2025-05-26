@@ -7,7 +7,7 @@ with lib; let
     cfg = config.programs.nix-search-tv;
 in {
     options.programs.nix-search-tv = {
-        enable = mkEnableOption "Enable nix-search-tv";
+        enable = mkEnableOption "nix-search-tv";
 
         package = mkOption {
             type = types.package;
