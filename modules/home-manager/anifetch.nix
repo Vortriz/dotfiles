@@ -7,7 +7,7 @@ with lib; let
     cfg = config.programs.anifetch;
 in {
     options.programs.anifetch = {
-        enable = mkEnableOption "Enable anifetch";
+        enable = mkEnableOption "anifetch";
 
         package = mkOption {
             type = types.package;

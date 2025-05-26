@@ -1,6 +1,5 @@
 {
     config,
-    inputs,
     lib,
     osConfig,
     pkgs,
@@ -10,7 +9,6 @@ with config.lib.niri.actions; let
     inherit (lib) getExe getExe' getName;
     inherit (lib.strings) splitString;
 
-    inherit (osConfig.var) system;
     inherit (osConfig.defaults) file-manager launcher terminal;
 
     spawn' = cmd: spawn (splitString " " cmd);
@@ -51,14 +49,14 @@ in
     {
         "Mod+Shift+Slash".action = show-hotkey-overlay;
 
-        "Alt+Space".action = spawn' (getExe' launcher "sherlock");
+        "Alt+Space".action = spawn' (getExe' launcher "sherlock"); # use getExe when https://github.com/Skxxtz/sherlock/pull/78 is merged
         "Mod+T".action = spawn' (getExe terminal);
         "Mod+E".action = open-tui {
             app-id = getName file-manager;
             cmd = getExe file-manager;
         };
         "Mod+P".action = open-tui {
-            app-id = getName inputs.nix-search-tv.packages.${system}.default;
+            app-id = getName config.programs.nix-search-tv.package;
             cmd = "ns";
         };
         "Ctrl+Shift+Escape".action = spawn' (getExe pkgs.mission-center);
