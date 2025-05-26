@@ -1,7 +1,6 @@
 {pkgs, ...}: {
     imports = [
         # keep-sorted start by_regex=\.nix$
-        # ./cosmic-greeter.nix
         ./niri.nix
         ./steam.nix
         ./stylix.nix
