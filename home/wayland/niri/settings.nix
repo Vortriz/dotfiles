@@ -63,7 +63,7 @@ in {
     [
         "systemctl --user reset-failed waybar.service"
         "aria2c --enable-rpc --rpc-listen-all"
-        "${lib.getExe pkgs.niriswitcher}"
+        "${lib.getExe pkgs.nur.repos.Vortriz.niriswitcher}"
     ];
 
     prefer-no-csd = true;

@@ -26,7 +26,6 @@
         ookla-speedtest
         pandoc
         rclone
-        tealdeer
         # keep-sorted end
     ];
 }

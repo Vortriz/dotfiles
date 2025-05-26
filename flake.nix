@@ -33,6 +33,10 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
+        nur = {
+            url = "github:nix-community/NUR";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
         # nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
         pre-commit-hooks = {
             url = "github:cachix/git-hooks.nix";
