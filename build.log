@@ -7977,3 +7977,57 @@ Added packages:
 Removed packages:
 [R.]  #1  hyprpicker  0.4.5
 Closure size: 8299 -> 8307 (35 paths added, 27 paths removed, delta +8, disk usage +78.9MiB).
+
+---
+
+26/05/25 05:28:12 PM IST
+<<< /nix/var/nix/profiles/system-37-link
+>>> /nix/var/nix/profiles/system-39-link
+Version changes:
+[U.]  #01  SDL_net                                   1.2.8-unstable-2024-04-23 -> 1.2.8-unstable-2025-04-21
+[U.]  #02  acpi-call                                 1.2.2-6.14.6 -> 1.2.2-6.14.8
+[U*]  #03  bind                                      9.20.8-dnsutils, 9.20.8-host, 9.20.8-lib -> 9.20.9-dnsutils, 9.20.9-host, 9.20.9-lib
+[U.]  #04  celluloid                                 0.28, 0.28-fish-completions -> 0.29, 0.29-fish-completions
+[U*]  #05  cloudflare-warp                           2025.2.600 -> 2025.4.929
+[U.]  #06  firefox                                   138.0.3, 138.0.3-fish-completions -> 138.0.4, 138.0.4-fish-completions
+[U.]  #07  firefox-unwrapped                         138.0.3 -> 138.0.4
+[U.]  #08  flatpak                                   1.16.0 -> 1.16.1
+[U.]  #09  gh                                        2.72.0, 2.72.0-fish-completions -> 2.73.0, 2.73.0-fish-completions
+[U.]  #10  initrd-linux                              6.14.6 -> 6.14.8
+[U.]  #11  kirigami-addons                           1.7.0 -> 1.8.1
+[U.]  #12  kitty                                     0.42.0, 0.42.0-fish-completions, 0.42.0-terminfo -> 0.42.1, 0.42.1-fish-completions, 0.42.1-terminfo
+[C.]  #13  libXNVCtrl                                390.157, 570.144 -> 390.157, 570.153.02
+[U.]  #14  libmikmod                                 3.3.12 -> 3.3.13
+[U.]  #15  libndctl                                  79, 79-man -> 81, 81-man
+[U.]  #16  linux                                     6.14.6, 6.14.6-modules, 6.14.6-modules-shrunk -> 6.14.8, 6.14.8-modules, 6.14.8-modules-shrunk
+[U.]  #17  mesa                                      25.0.6 x2 -> 25.1.1 x2
+[U*]  #18  niri-unstable                             2025-05-19-3f2b7e6 -> 2025-05-23-a605a3f
+[U.]  #19  nixos-system-nixos                        25.11.20250518.292fa7d -> 25.11.20250523.063f43f
+[C.]  #20  python3.12-niriswitcher                   0.5.2 -> 0.5.2, 0.5.2-fish-completions
+[U.]  #21  rclone                                    1.69.1, 1.69.1-fish-completions, 1.69.1-man -> 1.69.2, 1.69.2-fish-completions, 1.69.2-man
+[U.]  #22  resvg                                     0.44.0 -> 0.45.1
+[U.]  #23  sioyek                                    2.0.0-unstable-2025-04-08, 2.0.0-unstable-2025-04-08-fish-completions -> 2.0.0-unstable-2025-05-13, 2.0.0-unstable-2025-05-13-fish-completions
+[U.]  #24  vscode-extension-github-copilot           1.322.0 -> 1.323.0
+[U.]  #25  vscode-extension-github-copilot-chat      0.27.1 -> 0.27.2
+[U.]  #26  vscode-extension-ms-python-python         2025.7.2025051901 -> 2025.7.2025052301
+[U.]  #27  vscode-extension-ms-toolsai-jupyter       2025.4.0 -> 2025.4.1
+[U.]  #28  vscode-extension-rust-lang-rust-analyzer  0.4.2467 -> 0.4.2472
+[U*]  #29  wireplumber                               0.5.8, 0.5.8-doc -> 0.5.10, 0.5.10-doc
+[U.]  #30  x86_energy_perf_policy                    6.12.28 -> 6.12.30
+[U.]  #31  xapp                                      2.8.8, 2.8.8-dev -> 2.8.9, 2.8.9-dev
+[U.]  #32  yt-dlp                                    2025.4.30 -> 2025.5.22
+[U.]  #33  yyjson                                    0.11.0 -> 0.11.1
+[U.]  #34  zed-editor                                0.186.9 -> 0.187.6
+[U.]  #35  zed-editor-wrapped                        0.186.9, 0.186.9-fish-completions -> 0.187.6, 0.187.6-fish-completions
+[U.]  #36  zotero-better-bibtex                      7.0.26 -> 7.0.27
+Added packages:
+[A.]  #1  desktop-file-utils   0.28
+[A.]  #2  gamemode             1.8.2, 1.8.2-dev, 1.8.2-lib x2
+[A.]  #3  libtraceevent        1.8.4
+[A.]  #4  libtracefs           1.8.1
+[A.]  #5  tealdeer-config      <none>
+[A.]  #6  tldr-update.service  <none>
+[A.]  #7  tldr-update.timer    <none>
+Removed packages:
+[R.]  #1  hm_.configtealdeerconfig.toml  <none>
+Closure size: 8307 -> 8317 (227 paths added, 217 paths removed, delta +10, disk usage +45.3MiB).
