@@ -5,6 +5,4 @@ pkgs: {
     SFMono = pkgs.callPackage ./fonts/SFMono.nix {};
 
     xdg-desktop-portal-termfilechooser-custom = pkgs.callPackage ./xdg-desktop-portal-termfilechooser-custom.nix {};
-
-    niriswitcher = pkgs.python3Packages.callPackage ./niriswitcher.nix {};
 }

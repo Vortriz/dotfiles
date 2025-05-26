@@ -1,6 +1,6 @@
 # things to do
 
-- [ ] make tealdeer hm module (for fun)
+- [x] ~~make tealdeer hm module (for fun)~~ someone already made it
 - [x] ~~discord needs xwayland~~ use vesktop
 - [ ] cpu optimisation
 - [ ] figure out cache situation for new install

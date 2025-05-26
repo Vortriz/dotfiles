@@ -28,6 +28,7 @@ in {
 
             # keep-sorted start
             inputs.nix-vscode-extensions.overlays.default
+            inputs.nur.overlays.default
             #keep-sorted end
         ];
 
@@ -49,6 +50,9 @@ in {
             trusted-public-keys = [
                 # "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE="
             ];
+
+            # Provide system architecture to nix
+            system-features = ["nixos-test" "benchmark" "big-parallel" "kvm"] ++ ["gccarch-alderlake"];
 
             warn-dirty = false;
         };
