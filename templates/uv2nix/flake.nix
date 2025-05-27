@@ -32,8 +32,12 @@
     }: let
         inherit (nixpkgs) lib;
 
-        # This example is only using x86_64-linux
+        # Change accordingly
         system = "x86_64-linux";
+        pkgs = import nixpkgs {inherit system;};
+
+        # Use Python 3.12 from nixpkgs
+        python = pkgs.python312;
 
         # Load a uv workspace from a workspace root.
         # Uv2nix treats all uv projects as workspace projects.
@@ -63,11 +67,6 @@
             # It's using https://pyproject-nix.github.io/pyproject.nix/build.html
         };
 
-        pkgs = nixpkgs.legacyPackages.${system};
-
-        # Use Python 3.12 from nixpkgs
-        python = pkgs.python312;
-
         # Construct package set
         pythonSet =
             # Use base package set from pyproject.nix builders
@@ -90,10 +89,7 @@
 
         # Impurely using uv to manage virtual environments
         devShells.${system} = let
-            mkScript = name: text: let
-                script = pkgs.writers.writeFishBin name text;
-            in
-                script;
+            mkScript = name: text: pkgs.writers.writeFishBin name text;
 
             scripts = [
                 (mkScript "activate" ''source .venv/bin/activate.fish'')
@@ -120,8 +116,6 @@
                     };
                 shellHook = ''
                     unset PYTHONPATH
-                    uv venv
-                    echo "To activate the virtualenv, run `activate`"
                 '';
             };
         };

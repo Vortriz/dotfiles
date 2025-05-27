@@ -7,26 +7,13 @@
 }: let
     inherit (osConfig.var) system;
 in {
+    imports = [inputs.zed-extensions.homeManagerModules.default];
+
     programs.zed-editor = {
         enable = true;
 
         userSettings = import ./settings.nix {inherit lib osConfig pkgs;};
-
         userKeymaps = import ./keymap.nix;
-
-        extensions = [
-            # keep-sorted start
-            "fish"
-            "julia"
-            "just"
-            "just-ls"
-            "latex"
-            "nix"
-            "toml"
-            "typst"
-            "vscode-icons"
-            # keep-sorted end
-        ];
 
         extraPackages =
             (with pkgs; [
@@ -36,7 +23,6 @@ in {
                 nixd
                 package-version-server
                 rust-analyzer
-                taplo-lsp
                 texlab
                 tinymist
                 # keep-sorted end
@@ -44,6 +30,22 @@ in {
             ++ (with inputs; [
                 mcp-nixos.packages.${system}.default
             ]);
+    };
+
+    programs.zed-editor-extensions = {
+        enable = true;
+        packages = with pkgs.zed-extensions; [
+            # keep-sorted start
+            julia
+            just
+            latex
+            nix
+            ruff
+            tombi
+            typst
+            vscode-icons
+            # keep-sorted end
+        ];
     };
 
     stylix.targets.zed.enable = true;
