@@ -29,6 +29,7 @@ in {
             # keep-sorted start
             inputs.nix-vscode-extensions.overlays.default
             inputs.nur.overlays.default
+            inputs.zed-extensions.overlays.default
             #keep-sorted end
         ];
 

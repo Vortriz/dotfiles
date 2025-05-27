@@ -9,19 +9,14 @@
 
     fontName = lib.mkForce monospaceFontName;
     fontSize = lib.mkForce 18;
-    default_model = {
-        provider = "copilot_chat";
-        model = "gpt-4.1";
-    };
 in {
     # keep-sorted start block=yes
     agent = {
-        verison = "2";
-        inherit default_model;
-    };
-    assistant = {
-        verison = "2";
-        inherit default_model;
+        version = "2";
+        default_model = {
+            provider = "copilot_chat";
+            model = "gpt-4.1";
+        };
     };
     auto_update = false;
     buffer_font_family = fontName;

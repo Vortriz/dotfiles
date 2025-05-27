@@ -33,7 +33,6 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
-        # nixos-cosmic.url = "github:lilyinstarlight/nixos-cosmic";
         nur = {
             url = "github:nix-community/NUR";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -53,6 +52,7 @@
             url = "github:numtide/treefmt-nix";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+        zed-extensions.url = "github:DuskSystems/nix-zed-extensions";
         # keep-sorted end
     };
 
