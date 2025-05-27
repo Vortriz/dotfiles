@@ -8031,3 +8031,68 @@ Added packages:
 Removed packages:
 [R.]  #1  hm_.configtealdeerconfig.toml  <none>
 Closure size: 8307 -> 8317 (227 paths added, 217 paths removed, delta +10, disk usage +45.3MiB).
+
+---
+
+28/05/25 02:41:50 AM IST
+<<< /nix/var/nix/profiles/system-39-link
+>>> /nix/var/nix/profiles/system-41-link
+Version changes:
+[C.]  #01  bibtex                                    0.99d-man, 0.99d-tex, 0.99d-texdoc -> <none>, 0.99d-man, 0.99d-tex, 0.99d-texdoc
+[C*]  #02  dconf                                     0.40.0, 0.40.0_fish-completions, 0.40.0-lib x3 -> 0.40.0, 0.40.0_fish-completions x2, 0.40.0-lib x3
+[U.]  #03  fastfetch                                 2.43.0, 2.43.0-fish-completions, 2.43.0-man -> 2.44.0, 2.44.0-fish-completions, 2.44.0-man
+[U.]  #04  fuse-overlayfs                            1.14 -> 1.15
+[C.]  #05  julia                                     <none>, 1.11.4 -> <none> x3, 1.11.4
+[C.]  #06  just                                      1.40.0, 1.40.0-fish-completions, 1.40.0-man -> <none> x2, 1.40.0, 1.40.0-fish-completions, 1.40.0-man
+[C.]  #07  latex                                     73643-tex -> <none> x2, 73643-tex
+[U.]  #08  libcpuid                                  0.7.1 -> 0.8.0
+[U.]  #09  netavark                                  1.14.1 -> 1.15.0
+[C*]  #10  nix                                       2.28.3, 2.28.3-doc, 2.28.3-man -> <none> x2, 2.28.3, 2.28.3-doc, 2.28.3-man
+[U.]  #11  nixos-system-nixos                        25.11.20250523.063f43f -> 25.11.20250525.62b852f
+[D.]  #12  plugins                                   55bf699 -> 4df8f70
+[C.]  #13  source                                    <none> x2 -> <none> x3
+[C+]  #14  speech-dispatcher                         0.12.1 -> 0.12.1 x2
+[C.]  #15  typst                                     0.13.1, 0.13.1-fish-completions -> <none> x2, 0.13.1, 0.13.1-fish-completions
+[U.]  #16  vscode                                    1.100.1, 1.100.1-fish-completions -> 1.100.2, 1.100.2-fish-completions
+[U.]  #17  vscode-extension-ms-python-python         2025.7.2025052301 -> 2025.7.2025052601
+[U.]  #18  vscode-extension-rust-lang-rust-analyzer  0.4.2472 -> 0.4.2473
+[U.]  #19  zziplib                                   0.13.78 -> 0.13.79
+Added packages:
+[A+]  #01  accountsservice                     23.13.9
+[A.]  #02  cosmic-comp                         1.0.0-alpha.7
+[A.]  #03  cosmic-greeter                      1.0.0-alpha.7
+[A.]  #04  cosmic-greeter.pam                  <none>
+[A.]  #05  cosmic-icons                        1.0.0-alpha.7
+[A.]  #06  cosmic-randr                        1.0.0-alpha.7
+[A.]  #07  cosmic-settings                     1.0.0-alpha.7
+[A.]  #08  desktops                            <none>
+[A.]  #09  dotconf                             1.4.1
+[A.]  #10  espeak-ng                           1.51.1
+[A.]  #11  etc-X11-xorg.conf.d                 00-keyboard.conf
+[A.]  #12  greetd                              0.10.3
+[A.]  #13  greetd.pam                          <none>
+[A.]  #14  greetd.toml                         <none>
+[A.]  #15  mbrola                              3.3-unstable-2024-01-29
+[A.]  #16  mbrola-bin                          3.3-unstable-2024-01-29
+[A+]  #17  niri                                25.05.1
+[A+]  #18  nixos-icons                         0-unstable-2024-04-10
+[A.]  #19  pcaudiolib                          1.3
+[A.]  #20  pop-icon-theme                      3.5.0
+[A.]  #21  python3.12-pyxdg                    0.28
+[A.]  #22  ruff                                <none>
+[A.]  #23  sonic-unstable                      2020-12-27
+[A.]  #24  steam.desktop                       <none>
+[A.]  #25  svox                                2018-02-14
+[A.]  #26  tombi                               <none>
+[A.]  #27  toml                                <none>
+[A.]  #28  unit-accounts-daemon.service        <none>
+[A.]  #29  unit-autovt-tty1.service-disabled   <none>
+[A.]  #30  unit-cosmic-greeter-daemon.service  <none>
+[A.]  #31  unit-greetd.service                 <none>
+[A.]  #32  unit-speech-dispatcher.socket       <none>
+[A.]  #33  vscode-icons                        <none>
+[A+]  #34  xf86-input-libinput                 1.5.0
+Removed packages:
+[R-]  #1  niri-unstable  2025-05-23-a605a3f
+[R.]  #2  taplo          0.9.3
+Closure size: 8317 -> 8363 (355 paths added, 309 paths removed, delta +46, disk usage +929.2MiB).
