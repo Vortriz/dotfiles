@@ -37,7 +37,7 @@ in {
     icon_theme = "VSCode Icons (Dark)";
     languages = {
         Nix = {
-            language_servers = ["nil" "nixd"];
+            language_servers = ["nixd" "!nil"];
             formatter.external = {
                 command = "alejandra";
                 arguments = ["--quiet"];
@@ -47,14 +47,15 @@ in {
             language_servers = ["tinymist"];
         };
     };
-    lsp = lib.mergeAttrsList (
-        map (name: {
+    lsp =
+        ["rust-analyzer" "nixd" "tinymist"]
+        |> map (name: {
             ${name}.binary = {
                 path_lookup = true;
                 path = lib.getExe pkgs.${name};
             };
-        }) ["rust-analyzer" "nixd" "nil" "tinymist"]
-    );
+        })
+        |> lib.mergeAttrsList;
     minimap = {
         show = "always";
         thumb = "always";

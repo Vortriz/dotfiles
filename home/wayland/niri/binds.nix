@@ -63,7 +63,7 @@ in
 
         "Print".action = spawn' "${getExe pkgs.flameshot} gui";
         "Ctrl+Print".action = screenshot-window;
-        "Ctrl+Shift+Print".action.screenshot-screen = []; #TODO: change after https://github.com/sodiboo/niri-flake/issues/944
+        "Ctrl+Shift+Print".action.screenshot-screen = []; # [TODO] change after https://github.com/sodiboo/niri-flake/issues/944
         "Ctrl+Shift+O".action = spawn' "oimg";
         "Mod+C".action = spawn' "pick-color ui";
         "Mod+Period".action = spawn' (getExe pkgs.smile);
@@ -142,12 +142,9 @@ in
         "Mod+Shift+P".action = power-off-monitors;
         "Mod+Shift+E".action = quit;
     }
-    // (lib.attrsets.mergeAttrsList (
-        map (x: let
-            xStr = builtins.toString x;
-        in {
-            "Mod+${xStr}".action = focus-workspace x;
-            # "Mod+Ctrl+${xStr}".action = move-column-to-workspace x; # TODO: niri-flake is borked atm
-        })
-        (builtins.genList (x: x + 1) 9)
-    ))
+    // (builtins.genList (x: x + 1) 3
+    |> map (x: {
+        "Mod+${toString x}".action = focus-workspace x;
+        # "Mod+Ctrl+${toString x}".action = move-column-to-workspace x; # [TODO] niri-flake is borked atm
+    })
+    |> lib.attrsets.mergeAttrsList)

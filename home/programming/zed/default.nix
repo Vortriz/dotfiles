@@ -19,7 +19,6 @@ in {
             (with pkgs; [
                 # keep-sorted start
                 alejandra
-                nil
                 nixd
                 package-version-server
                 rust-analyzer

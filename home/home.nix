@@ -1,31 +1,24 @@
-{osConfig, ...}: let
+{
+    lib,
+    osConfig,
+    ...
+}: let
     inherit (osConfig.var) username;
 in {
-    imports = [
-        # keep-sorted start by_regex=\.nix$
-        ./stylix.nix
-        ./xdg-portal.nix
-
-        ../modules/home-manager
-        ../scripts
-        ./graphical
-        ./programming
-        ./terminal
-        ./wayland
-        # keep-sorted end
-    ];
+    imports = lib.filesystem.listFilesRecursive ./. |> lib.filter (f: baseNameOf f == "default.nix");
 
     home = {
         inherit username;
         homeDirectory = "/home/" + username;
     };
 
-    programs.home-manager.enable = true;
-
-    systemd.user = {
-        # Nicely reload system units when changing configs
-        startServices = "sd-switch";
+    programs.home-manager = {
+        enable = true;
+        # path = "${osConfig.var.storageDir}/dev/nix/home-manager";
     };
+
+    # Nicely reload system units when changing configs
+    systemd.user.startServices = "sd-switch";
 
     # For setting default applications
     xdg.mimeApps.enable = true;

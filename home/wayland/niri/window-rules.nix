@@ -60,7 +60,7 @@ in [
         shadow.enable = true;
     }
     {
-        default-column-display = "tabbed"; # TODO: auto-tabbing when it lands
+        default-column-display = "tabbed"; # [TODO] auto-tabbing when it lands
 
         matches = [
             {app-id = getName terminal;}

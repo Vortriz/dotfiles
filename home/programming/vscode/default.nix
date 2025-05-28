@@ -16,17 +16,22 @@ in {
             enableUpdateCheck = false;
             enableExtensionUpdateCheck = false;
 
-            userSettings = builtins.fromJSON (builtins.readFile (pkgs.substitute {
-                src = ./settings.json;
-                substitutions = [
-                    "--subst-var-by"
-                    "font-name"
-                    monospaceFontName
-                    "--subst-var-by"
-                    "shell"
-                    "${lib.getName shell}"
-                ];
-            }));
+            # = builtins.fromJSON (builtins.readFile ());
+
+            userSettings =
+                pkgs.substitute {
+                    src = ./settings.json;
+                    substitutions = [
+                        "--subst-var-by"
+                        "font-name"
+                        monospaceFontName
+                        "--subst-var-by"
+                        "shell"
+                        "${lib.getName shell}"
+                    ];
+                }
+                |> builtins.readFile
+                |> builtins.fromJSON;
 
             extensions = import ./extensions.nix {inherit pkgs;};
         };
