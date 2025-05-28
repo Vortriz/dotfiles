@@ -15,7 +15,6 @@ in {
         # Asus laptop specific services
         asusd = {
             enable = true;
-
             enableUserService = true;
         };
 
@@ -71,7 +70,6 @@ in {
 
         pulseaudio = {
             enable = false;
-
             package = pkgs.pulseaudioFull;
         };
 
