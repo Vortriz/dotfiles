@@ -7,18 +7,30 @@
 }: let
     inherit (osConfig.var) system;
 in {
-    imports = [inputs.zed-extensions.homeManagerModules.default];
-
     programs.zed-editor = {
         enable = true;
 
         userSettings = import ./settings.nix {inherit lib osConfig pkgs;};
         userKeymaps = import ./keymap.nix;
 
+        extensions = [
+            # keep-sorted start
+            "julia"
+            "just"
+            "latex"
+            "ltex"
+            "nix"
+            "ruff"
+            "typst"
+            "vscode-icons"
+            # keep-sorted end
+        ];
+
         extraPackages =
             (with pkgs; [
                 # keep-sorted start
                 alejandra
+                ltex-ls-plus
                 nixd
                 package-version-server
                 rust-analyzer
@@ -29,22 +41,6 @@ in {
             ++ (with inputs; [
                 mcp-nixos.packages.${system}.default
             ]);
-    };
-
-    programs.zed-editor-extensions = {
-        enable = true;
-        packages = with pkgs.zed-extensions; [
-            # keep-sorted start
-            julia
-            just
-            latex
-            nix
-            ruff
-            tombi
-            typst
-            vscode-icons
-            # keep-sorted end
-        ];
     };
 
     stylix.targets.zed.enable = true;

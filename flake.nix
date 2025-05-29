@@ -33,6 +33,7 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
+        nixos-cli.url = "github:nix-community/nixos-cli";
         nur = {
             url = "github:nix-community/NUR";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -52,20 +53,21 @@
             url = "github:numtide/treefmt-nix";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        zed-extensions.url = "github:DuskSystems/nix-zed-extensions";
         # keep-sorted end
     };
 
     outputs = {
         self,
         nixpkgs,
+        treefmt-nix,
         ...
     } @ inputs: let
         inherit (self) outputs;
+        inherit (nixpkgs) lib legacyPackages;
 
-        forAllSystems = nixpkgs.lib.genAttrs ["x86_64-linux"];
-        forAllPkgs = f: forAllSystems (system: f nixpkgs.legacyPackages.${system});
-        treefmtEval = forAllPkgs (pkgs: inputs.treefmt-nix.lib.evalModule pkgs ./treefmt.nix);
+        forAllSystems = lib.genAttrs ["x86_64-linux"];
+        forAllPkgs = f: forAllSystems (system: f legacyPackages.${system});
+        treefmtEval = forAllPkgs (pkgs: treefmt-nix.lib.evalModule pkgs ./treefmt.nix);
     in {
         # Your custom packages, accessible through 'nix build', 'nix shell', etc
         packages = forAllPkgs (pkgs: import ./pkgs pkgs);
@@ -81,10 +83,9 @@
                         enable = true;
                         after = ["treefmt-nix"];
                     };
-                    treefmt-nix = {
+                    treefmt = {
                         enable = true;
-                        entry = "${treefmtEval.${system}.config.build.wrapper}/bin/treefmt";
-                        pass_filenames = false;
+                        package = outputs.formatter.${system};
                     };
                 };
             };
@@ -98,7 +99,7 @@
 
         # NixOS configuration entrypoint
         nixosConfigurations = {
-            nixos = nixpkgs.lib.nixosSystem {
+            nixos = lib.nixosSystem {
                 specialArgs = {inherit inputs outputs;};
                 modules = [
                     # > Our main nixos configuration file <
@@ -107,16 +108,15 @@
             };
         };
 
-        devShells = forAllSystems (system: let
-            pkgs = nixpkgs.legacyPackages.${system};
-        in {
+        devShells = forAllPkgs (pkgs: {
             default = pkgs.mkShell {
-                inherit (self.checks.${system}.pre-commit-check) shellHook;
+                inherit (self.checks.${pkgs.system}.pre-commit-check) shellHook;
 
-                buildInputs = [
-                    self.checks.${system}.pre-commit-check.enabledPackages
-                    treefmtEval.${system}.config.build.wrapper
-                ];
+                buildInputs = self.checks.${pkgs.system}.pre-commit-check.enabledPackages;
+
+                env = {
+                    NIXOS_CONFIG = self.nixosConfigurations.nixos.config.var.dotfilesDir;
+                };
 
                 packages =
                     (with pkgs; [
@@ -128,11 +128,11 @@
                         just
                         micro
                         nh
-                        nix
                         nix-init
                         nix-melt
                         nix-prefetch-git
                         nix-prefetch-github
+                        nom
                         nvd
                         nvfetcher
                         ripgrep
@@ -140,10 +140,25 @@
                     ])
                     ++ (with inputs; [
                         # keep-sorted start
-                        agenix.packages.${system}.default
+                        agenix.packages.${pkgs.system}.default
                         # keep-sorted end
+                    ])
+                    ++ (with self.nixosConfigurations.nixos.config; [
+                        nix.package
                     ]);
             };
         });
     };
+
+    # Enable at the time of fresh deployment
+    # nixConfig = {
+    #     extra-substituters = [
+    #         "https://niri.cachix.org"
+    #         "https://watersucks.cachix.org"
+    #     ];
+    #     extra-trusted-public-keys = [
+    #         "niri.cachix.org-1:Wv0OmO7PsuocRKzfDoJ3mulSl7Z6oezYhGhR+3W2964="
+    #         "watersucks.cachix.org-1:6gadPC5R8iLWQ3EUtfu3GFrVY7X6I4Fwz/ihW25Jbv8="
+    #     ];
+    # };
 }

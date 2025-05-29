@@ -28,7 +28,6 @@ in {
             # keep-sorted start
             inputs.nix-vscode-extensions.overlays.default
             inputs.nur.overlays.default
-            inputs.zed-extensions.overlays.default
             #keep-sorted end
         ];
 
@@ -45,10 +44,12 @@ in {
 
             # Add extra Caches
             substituters = [
-                # "https://cosmic.cachix.org/"
+                "https://niri.cachix.org"
+                "https://watersucks.cachix.org"
             ];
             trusted-public-keys = [
-                # "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE="
+                "niri.cachix.org-1:Wv0OmO7PsuocRKzfDoJ3mulSl7Z6oezYhGhR+3W2964="
+                "watersucks.cachix.org-1:6gadPC5R8iLWQ3EUtfu3GFrVY7X6I4Fwz/ihW25Jbv8="
             ];
 
             # Provide system architecture to nix
