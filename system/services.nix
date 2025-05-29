@@ -1,10 +1,13 @@
 {
     config,
+    inputs,
     pkgs,
     ...
 }: let
-    inherit (config.var) username;
+    inherit (config.var) username dotfilesDir;
 in {
+    imports = [inputs.nixos-cli.nixosModules.nixos-cli];
+
     services = {
         # Auto mounting
         udisks2.enable = true;
@@ -28,6 +31,18 @@ in {
             powerKey = "suspend";
             powerKeyLongPress = "poweroff";
             lidSwitch = "suspend-then-hibernate";
+        };
+
+        nixos-cli = {
+            enable = true;
+            config = {
+                config_location = dotfilesDir;
+                use_nvd = true;
+
+                apply = {
+                    ignore_dirty_tree = true;
+                };
+            };
         };
 
         # This setups a SSH server. Very important if you're setting up a headless system.

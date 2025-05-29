@@ -48,7 +48,16 @@ in {
         };
     };
     lsp =
-        ["rust-analyzer" "nixd" "tinymist"]
+        [
+            # keep-sorted start
+            "ltex-ls-plus"
+            "nixd"
+            "package-version-server"
+            "rust-analyzer"
+            "texlab"
+            "tinymist"
+            # keep-sorted end
+        ]
         |> map (name: {
             ${name}.binary = {
                 path_lookup = true;
