@@ -8096,3 +8096,26 @@ Removed packages:
 [R-]  #1  niri-unstable  2025-05-23-a605a3f
 [R.]  #2  taplo          0.9.3
 Closure size: 8317 -> 8363 (355 paths added, 309 paths removed, delta +46, disk usage +929.2MiB).
+
+---
+
+30/05/25 12:54:05 PM IST
+<<< /nix/var/nix/profiles/system-46-link
+>>> /nix/var/nix/profiles/system-44-link
+Version changes:
+[D.]  #01  acpi-call                          1.2.2-6.15 -> 1.2.2-6.14.8
+[D.]  #02  apr                                1.7.6 -> 1.7.5
+[D.]  #03  firefox                            139.0, 139.0-fish-completions -> 138.0.4, 138.0.4-fish-completions
+[D.]  #04  firefox-unwrapped                  139.0 -> 138.0.4
+[D.]  #05  initrd-linux                       6.15 -> 6.14.8
+[D.]  #06  libinput                           1.28.1 -> 1.27.1
+[D.]  #07  linux                              6.15, 6.15-modules, 6.15-modules-shrunk -> 6.14.8, 6.14.8-modules, 6.14.8-modules-shrunk
+[D*]  #08  mkpasswd                           5.6.1, 5.6.1_fish-completions -> 5.6.0, 5.6.0_fish-completions
+[D.]  #09  nixos-system-nixos                 25.11.20250527.4faa5f5 -> 25.11.20250525.62b852f
+[C.]  #10  nss                                3.101.2 x2, 3.101.2-dev, 3.101.2-man, 3.112 -> 3.101.2 x2, 3.101.2-dev, 3.101.2-man, 3.111
+[D.]  #11  snobol4                            2.3.3, 2.3.3-man -> 2.3.2, 2.3.2-man
+[D.]  #12  vscode-extension-ms-python-python  2025.7.2025052701 -> 2025.7.2025052601
+[D.]  #13  zoxide                             0.9.8, 0.9.8-fish-completions -> 0.9.7, 0.9.7-fish-completions
+Removed packages:
+[R.]  #1  ruff  0.11.11
+Closure size: 8349 -> 8348 (131 paths added, 132 paths removed, delta -1, disk usage -127.9MiB).
