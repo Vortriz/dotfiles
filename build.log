@@ -8119,3 +8119,52 @@ Version changes:
 Removed packages:
 [R.]  #1  ruff  0.11.11
 Closure size: 8349 -> 8348 (131 paths added, 132 paths removed, delta -1, disk usage -127.9MiB).
+
+---
+
+31/05/25 02:11:17 AM IST
+<<< /nix/var/nix/profiles/system-44-link
+>>> /nix/var/nix/profiles/system-47-link
+Version changes:
+[U.]  #01  acpi-call                                     1.2.2-6.14.8 -> 1.2.2-6.15
+[U.]  #02  apr                                           1.7.5 -> 1.7.6
+[U.]  #03  avizo                                         1.3, 1.3-fish-completions -> 1.3-unstable-2024-11-03, 1.3-unstable-2024-11-03-fish-completions
+[U.]  #04  firefox                                       138.0.4, 138.0.4-fish-completions -> 139.0, 139.0-fish-completions
+[U.]  #05  firefox-unwrapped                             138.0.4 -> 139.0
+[C*]  #06  gamescope                                     <none>, 3.16.9 -> <none>, 3.16.10
+[U.]  #07  initrd-linux                                  6.14.8 -> 6.15
+[U.]  #08  libinput                                      1.27.1 -> 1.28.1
+[U.]  #09  libplacebo                                    7.349.0 -> 7.351.0
+[U.]  #10  linux                                         6.14.8, 6.14.8-modules, 6.14.8-modules-shrunk -> 6.15, 6.15-modules, 6.15-modules-shrunk
+[U*]  #11  mkpasswd                                      5.6.0, 5.6.0_fish-completions -> 5.6.1, 5.6.1_fish-completions
+[U.]  #12  nh                                            4.0.3, 4.0.3-fish-completions -> 4.1.0, 4.1.0-fish-completions
+[U.]  #13  nixos-system-nixos                            25.11.20250525.62b852f -> 25.11.20250528.96ec055
+[C.]  #14  nss                                           3.101.2 x2, 3.101.2-dev, 3.101.2-man, 3.111 -> 3.101.2 x2, 3.101.2-dev, 3.101.2-man, 3.112
+[U.]  #15  rclone                                        1.69.2, 1.69.2-fish-completions, 1.69.2-man -> 1.69.3, 1.69.3-fish-completions, 1.69.3-man
+[U.]  #16  restore.yazi                                  1bfd5f7 -> 86dff43
+[U.]  #17  sioyek                                        2.0.0-unstable-2025-05-13, 2.0.0-unstable-2025-05-13-fish-completions -> 2.0.0-unstable-2025-05-23, 2.0.0-unstable-2025-05-23-fish-completions
+[U.]  #18  snobol4                                       2.3.2, 2.3.2-man -> 2.3.3, 2.3.3-man
+[U*]  #19  strace                                        6.14 -> 6.15
+[U.]  #20  vscode-extension-github-copilot               1.323.0 -> 1.326.0
+[U.]  #21  vscode-extension-julialang-language-julia     1.140.2 -> 1.141.2
+[U.]  #22  vscode-extension-ms-azuretools-vscode-docker  1.29.6 -> 2.0.0
+[U.]  #23  vscode-extension-ms-python-python             2025.7.2025052601 -> 2025.7.2025052901
+[U.]  #24  vscode-extension-rust-lang-rust-analyzer      0.4.2473 -> 0.4.2478
+[U.]  #25  xdg-desktop-portal-termfilechooser-unstable   2025-04-29, 2025-04-29-fish-completions -> 2025-05-30, 2025-05-30-fish-completions
+[U.]  #26  yazi                                          25.4.8 x2, 25.4.8-fish-completions -> 25.5.28 x2, 25.5.28-fish-completions
+[U.]  #27  zed-editor                                    0.187.6 -> 0.187.9
+[U.]  #28  zed-editor-wrapped                            0.187.6, 0.187.6-fish-completions -> 0.187.9, 0.187.9-fish-completions
+[U.]  #29  zotero-better-bibtex                          7.0.27 -> 7.0.28
+[U.]  #30  zoxide                                        0.9.7, 0.9.7-fish-completions -> 0.9.8, 0.9.8-fish-completions
+Added packages:
+[A.]  #1  custom-shell.yazi-c4c2fea  <none>
+[A.]  #2  mediainfo.yazi-c6d0de7     <none>
+[A.]  #3  plugins-c0ad8a3            <none>
+[A.]  #4  ruff                       0.11.11
+[A.]  #5  what-size.yazi             0a4904c
+Removed packages:
+[R.]  #1  custom-shell.yazi       6b4550a
+[R.]  #2  mediainfo.yazi          70ed228
+[R.]  #3  plugins                 4df8f70
+[R.]  #4  what-size.yazi-f1c6b69  <none>
+Closure size: 8348 -> 8349 (272 paths added, 271 paths removed, delta +1, disk usage +125.4MiB).
