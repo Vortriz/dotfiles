@@ -1,5 +1,5 @@
 {
-    callPackages,
+    sources,
     stdenv,
     lib,
     xdg-desktop-portal,
@@ -10,11 +10,11 @@
     systemd,
     scdoc,
 }: let
-    source = (callPackages ./sources/generated.nix {}).xdg-desktop-portal-termfilechooser;
+    inherit (sources.xdg-desktop-portal-termfilechooser) src pname date;
 in
     stdenv.mkDerivation {
-        inherit (source) src pname;
-        version = "unstable-${source.date}";
+        inherit pname src;
+        version = "unstable-${date}";
 
         nativeBuildInputs = [
             meson
@@ -36,7 +36,6 @@ in
             homepage = "https://github.com/hunkyburrito/xdg-desktop-portal-termfilechooser";
             license = licenses.mit;
             platforms = platforms.linux;
-            maintainers = with lib.maintainers; [];
             mainProgram = "xdg-desktop-portal-termfilechooser";
         };
     }

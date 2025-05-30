@@ -33,6 +33,7 @@ in {
                 ltex-ls-plus
                 nixd
                 package-version-server
+                ruff
                 rust-analyzer
                 texlab
                 tinymist
