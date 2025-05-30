@@ -43,9 +43,6 @@ in {
                 arguments = ["--quiet"];
             };
         };
-        Typst = {
-            language_servers = ["tinymist"];
-        };
     };
     lsp =
         [
@@ -64,7 +61,14 @@ in {
                 path = lib.getExe pkgs.${name};
             };
         })
-        |> lib.mergeAttrsList;
+        |> lib.mergeAttrsList
+        |> (x:
+            lib.attrsets.recursiveUpdate x {
+                "tinymist".settings = {
+                    exportPdf = "onType";
+                    outputPath = "$root/$name";
+                };
+            });
     minimap = {
         show = "always";
         thumb = "always";
