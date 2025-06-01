@@ -1,24 +1,4 @@
 {
-    "auto-layout": {
-        "cargoLocks": null,
-        "date": "2025-03-07",
-        "extract": null,
-        "name": "auto-layout",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "626a6016283558b9766fe305e76b694dd9fb6156",
-            "sha256": "sha256-sGyy1tLDqR1aNrxQBHcswqussorIkQX70rsR2JoC1Lo=",
-            "sparseCheckout": [],
-            "type": "git",
-            "url": "https://github.com/josephschmitt/auto-layout.yazi"
-        },
-        "version": "626a6016283558b9766fe305e76b694dd9fb6156"
-    },
     "custom-shell": {
         "cargoLocks": null,
         "date": "2025-05-30",
@@ -38,26 +18,6 @@
             "url": "https://github.com/AnirudhG07/custom-shell.yazi"
         },
         "version": "c4c2fea03da2e6761303a16944fe1e3e888a8d39"
-    },
-    "glow": {
-        "cargoLocks": null,
-        "date": "2025-04-15",
-        "extract": null,
-        "name": "glow",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "2da96e3ffd9cd9d4dd53e0b2636f83ff69fe9af0",
-            "sha256": "sha256-4krck4U/KWmnl32HWRsblYW/biuqzDPysrEn76buRck=",
-            "sparseCheckout": [],
-            "type": "git",
-            "url": "https://github.com/Reledia/glow.yazi"
-        },
-        "version": "2da96e3ffd9cd9d4dd53e0b2636f83ff69fe9af0"
     },
     "mediainfo": {
         "cargoLocks": null,
@@ -101,7 +61,7 @@
     },
     "official-plugins-monorepo": {
         "cargoLocks": null,
-        "date": "2025-05-29",
+        "date": "2025-05-31",
         "extract": null,
         "name": "official-plugins-monorepo",
         "passthru": null,
@@ -111,13 +71,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "c0ad8a3c995e2e71c471515b9cf17d68c8425fd7",
-            "sha256": "sha256-WC/5FNzZiGxl9HKWjF+QMEJC8RXqT8WtOmjVH6kBqaY=",
+            "rev": "63f9650e522336e0010261dcd0ffb0bf114cf912",
+            "sha256": "sha256-ZCLJ6BjMAj64/zM606qxnmzl2la4dvO/F5QFicBEYfU=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/yazi-rs/plugins"
         },
-        "version": "c0ad8a3c995e2e71c471515b9cf17d68c8425fd7"
+        "version": "63f9650e522336e0010261dcd0ffb0bf114cf912"
     },
     "other-monorepo": {
         "cargoLocks": null,
@@ -178,6 +138,26 @@
             "url": "https://github.com/boydaihungst/restore.yazi"
         },
         "version": "86dff4319ace07da83c235ccab7a14bc0853a03a"
+    },
+    "starship": {
+        "cargoLocks": null,
+        "date": "2025-05-30",
+        "extract": null,
+        "name": "starship",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "428d43ac0846cb1885493a1f01c049a883b70155",
+            "sha256": "sha256-YkDkMC2SJIfpKrt93W/v5R3wOrYcat7QTbPrWqIKXG8=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/Rolv-Apneseth/starship.yazi"
+        },
+        "version": "428d43ac0846cb1885493a1f01c049a883b70155"
     },
     "what-size": {
         "cargoLocks": null,

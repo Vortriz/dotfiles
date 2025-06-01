@@ -5,7 +5,7 @@
 }: let
     inherit (osConfig.defaults) video-player;
 in {
-    manager = {
+    mgr = {
         show_hidden = true;
         sort_by = "natural";
     };
@@ -47,104 +47,44 @@ in {
     };
 
     plugin = {
-        prepend_previewers = [
-            # glow
-            {
-                name = "*.md";
-                run = "glow";
-            }
+        prepend_previewers =
+            [
+                # glow/piper markdown
+                {
+                    name = ["*.md"];
+                    run = [''piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"''];
+                }
 
-            # mediainfo
-            {
-                mime = "{audio,video,image}/*";
-                run = "mediainfo";
-            }
-            {
-                mime = "application/subrip";
-                run = "mediainfo";
-            }
+                # mediainfo
+                {
+                    mime = ["{audio,video,image}/*" "application/subrip"];
+                    run = ["mediainfo"];
+                }
 
-            # office
-            {
-                mime = "application/openxmlformats-officedocument.*";
-                run = "office";
-            }
-            {
-                mime = "application/oasis.opendocument.*";
-                run = "office";
-            }
-            {
-                mime = "application/ms-*";
-                run = "office";
-            }
-            {
-                mime = "application/msword";
-                run = "office";
-            }
-            {
-                name = "*.docx";
-                run = "office";
-            }
+                # office
+                {
+                    name = ["application/openxmlformats-officedocument.*" "application/oasis.opendocument.*" "application/ms-*" "application/msword" "*.docx"];
+                    run = ["office"];
+                }
 
-            # ouch
-            {
-                mime = "application/*zip";
-                run = "ouch";
-            }
-            {
-                mime = "application/x-tar";
-                run = "ouch";
-            }
-            {
-                mime = "application/x-bzip2";
-                run = "ouch";
-            }
-            {
-                mime = "application/x-7z-compressed";
-                run = "ouch";
-            }
-            {
-                mime = "application/x-rar";
-                run = "ouch";
-            }
-            {
-                mime = "application/x-xz";
-                run = "ouch";
-            }
-        ];
+                # ouch
+                {
+                    mime = ["application/*zip" "application/*tar" "application/*rar" "application/x-bzip2" "application/x-7z-compressed" "application/x-xz"];
+                    run = [''piper -- ouch list -tA "$1"''];
+                }
+            ]
+            |> map (lib.attrsets.cartesianProduct)
+            |> lib.lists.concatLists;
 
-        prepend_preloaders = [
-            # mediainfo
-            {
-                mime = "{audio,video,image}/*";
-                run = "mediainfo";
-            }
-            {
-                mime = "application/subrip";
-                run = "mediainfo";
-            }
-
-            # office
-            {
-                mime = "application/openxmlformats-officedocument.*";
-                run = "office";
-            }
-            {
-                mime = "application/oasis.opendocument.*";
-                run = "office";
-            }
-            {
-                mime = "application/ms-*";
-                run = "office";
-            }
-            {
-                mime = "application/msword";
-                run = "office";
-            }
-            {
-                name = "*.docx";
-                run = "office";
-            }
-        ];
+        prepend_preloaders =
+            [
+                # mediainfo
+                {
+                    mime = ["{audio,video,image}/*" "application/subrip"];
+                    run = ["mediainfo"];
+                }
+            ]
+            |> map (lib.attrsets.cartesianProduct)
+            |> lib.lists.concatLists;
     };
 }

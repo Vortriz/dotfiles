@@ -8,6 +8,7 @@
 
     programs.sherlock = {
         enable = true;
+        # package = pkgs.sherlock-launcher;
 
         settings = {
             aliases = import ./aliases.nix;

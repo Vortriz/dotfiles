@@ -22,6 +22,7 @@
         ]);
 
     home.sessionVariables = {
+        fish_greeting = "";
         fzf_preview_dir_cmd = "eza -1 --all";
         sponge_allow_previously_successful = "false";
     };
