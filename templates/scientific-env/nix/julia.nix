@@ -3,11 +3,8 @@
     cfg,
 }:
 pkgs.buildFHSEnv {
-    targetPkgs = pkgs:
-        (with pkgs; [
-            cfg.julia.package
-            xwayland-satellite # For X11 applications in Wayland
-        ])
+    targetPkgs = _pkgs:
+        [cfg.julia.package]
         ++ cfg.julia.extraPackages;
 
     extraOutputsToInstall = ["man" "dev"];

@@ -27,7 +27,9 @@
         };
 
         # Packages that you want available in the Julia FHS environment (NOT the julia packages themselves)
-        extraPackages = [];
+        extraPackages = with pkgs; [
+            xwayland-satellite # For X11 applications in Wayland
+        ];
     };
 
     additionalPackages = with pkgs; [
