@@ -5,7 +5,7 @@
 }: let
     inherit (osConfig.defaults) shell;
 in {
-    manager.prepend_keymap = [
+    mgr.prepend_keymap = [
         # custom-shell
         {
             on = ["'" ";"];

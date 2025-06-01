@@ -11,6 +11,7 @@
             # keep-sorted start
             "jump-to-char"
             "mount"
+            "piper"
             "smart-enter"
             "smart-filter"
             # keep-sorted end
@@ -25,11 +26,11 @@
         other-plugins = [
             # keep-sorted start
             "custom-shell"
-            "glow"
             "mediainfo"
             "office"
             "ouch"
             "restore"
+            "starship"
             "what-size"
             "yamb"
             # keep-sorted end

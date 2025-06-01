@@ -1,7 +1,3 @@
--- disabled: because broken
--- -- auto-layout
--- require("auto-layout")
-
 -- custom-shell
 require("custom-shell"):setup({
     history_path = "default",
@@ -27,3 +23,9 @@ require("yamb"):setup {
     path = (ya.target_family() == "windows" and os.getenv("APPDATA") .. "\\yazi\\config\\bookmark") or
                 (os.getenv("HOME") .. "/.config/yazi/bookmark"),
 }
+
+-- starship
+require("starship"):setup({
+    -- Custom starship configuration file to use
+    config_file = "~/.config/starship.toml",
+})

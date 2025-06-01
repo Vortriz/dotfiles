@@ -37,7 +37,7 @@ profiles-path := "/nix/var/nix/profiles"
     git commit -m "deployed $(nixos-rebuild list-generations --flake $NH_FLAKE --json | jaq '.[0].generation')"
 
 [group('SYSTEM')]
-@update: check
+@get-updates: check
     echo -e "Updating flake and fetchgit inputs...\n"
 
     nix flake update
@@ -46,6 +46,8 @@ profiles-path := "/nix/var/nix/profiles"
         nvfetcher -c $i -o $o; \
     end
 
+[group('SYSTEM')]
+@update: get-updates
     git add -A
     git commit -m "chore: update inputs"
 
@@ -73,7 +75,7 @@ alias pf := prefetch
 
 [group('TOOLS')]
 @repl:
-    nh os repl --expr \
+    nix repl --expr \
     "let \
         flake = builtins.getFlake (toString ./.); \
         nixpkgs = import <nixpkgs> {}; \
