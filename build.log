@@ -8168,3 +8168,187 @@ Removed packages:
 [R.]  #3  plugins                 4df8f70
 [R.]  #4  what-size.yazi-f1c6b69  <none>
 Closure size: 8348 -> 8349 (272 paths added, 271 paths removed, delta +1, disk usage +125.4MiB).
+
+---
+
+01/06/25 05:22:44 PM IST
+<<< /nix/var/nix/profiles/system-47-link
+>>> /nix/var/nix/profiles/system-48-link
+Version changes:
+[C*]  #01  bash-interactive                           5.2p37 x4, 5.2p37-dev, 5.2p37-doc, 5.2p37-fish-completions, 5.2p37-man x2 -> 5.2p37 x4, 5.2p37-doc, 5.2p37-fish-completions, 5.2p37-man x2
+[U.]  #02  chafa                                      1.14.5, 1.14.5-bin, 1.14.5-dev -> 1.16.1, 1.16.1-bin, 1.16.1-dev
+[U*]  #03  cloudflare-warp                            2025.4.929 -> 2025.4.943
+[C*]  #04  curl                                       8.12.1, 8.13.0 x3, 8.13.0-bin x2, 8.13.0-dev, 8.13.0-man -> 8.12.1, 8.13.0 x2, 8.13.0-bin x2, 8.13.0-dev, 8.13.0-man
+[U.]  #05  electron                                   35.3.0 -> 35.5.0
+[U.]  #06  electron-unwrapped                         35.3.0 -> 35.5.0
+[U.]  #07  eza                                        0.21.3, 0.21.3-fish-completions, 0.21.3-man -> 0.21.4, 0.21.4-fish-completions, 0.21.4-man
+[U.]  #08  firefox                                    139.0, 139.0-fish-completions -> 139.0.1, 139.0.1-fish-completions
+[U.]  #09  firefox-unwrapped                          139.0 -> 139.0.1
+[C.]  #10  fonts.conf                                 <none> x2 -> <none>
+[C.]  #11  gcc                                        13.3.0-lib, 13.3.0-libgcc, 14.2.1.20250322, 14.2.1.20250322-lib x4, 14.2.1.20250322-libgcc x4, 14.2.1.20250322-man, 14-20241116-lib, 14-20241116-libgcc -> 13.3.0-lib, 13.3.0-libgcc, 14.2.1.20250322, 14.2.1.20250322-lib x4, 14.2.1.20250322-libgcc x4, 14-20241116-lib, 14-20241116-libgcc
+[C.]  #12  gfortran                                   14.2.1.20250322, 14.2.1.20250322-lib, 14.2.1.20250322-libgcc, 14.2.1.20250322-man -> 14.2.1.20250322-lib, 14.2.1.20250322-libgcc
+[U.]  #13  gh                                         2.73.0, 2.73.0-fish-completions -> 2.74.0, 2.74.0-fish-completions
+[U.]  #14  glow                                       2.1.0, 2.1.0-fish-completions -> 2.1.1, 2.1.1-fish-completions
+[C.]  #15  gnumake                                    4.4.1, 4.4.1-man -> 4.4.1
+[C.]  #16  ldconfig                                   <none> x2 -> <none>
+[U.]  #17  nixos-system-nixos                         25.11.20250528.96ec055 -> 25.11.20250531.910796c
+[C.]  #18  nspr                                       4.36 x2, 4.36-dev -> 4.36 x2
+[C.]  #19  nss                                        3.101.2 x2, 3.101.2-dev, 3.101.2-man, 3.112 -> 3.101.2 x2, 3.112
+[C.]  #20  openssl                                    3.3.3, 3.4.1 x3, 3.4.1-bin, 3.4.1-dev, 3.4.1-man -> 3.3.3, 3.4.1 x3, 3.4.1-bin, 3.4.1-dev
+[C.]  #21  python3                                    3.11.11, 3.11.12, 3.12.8, 3.12.10 x4, 3.12.10-env x9 -> 3.11.11, 3.11.12, 3.12.8, 3.12.10 x4, 3.12.10-env x8
+[C*]  #22  shadow                                     4.17.4, 4.17.4-dev, 4.17.4-man, 4.17.4-su, 20312-tex -> 4.17.4, 4.17.4-man, 4.17.4-su, 20312-tex
+[U.]  #23  sherlock                                   0.1.11, 0.1.11-fish-completions -> 0.1.12, 0.1.12-fish-completions
+[C.]  #24  source                                     <none> x4 -> <none> x3
+[C*]  #25  util-linux                                 2.41, 2.41-bin, 2.41-dev, 2.41-lib, 2.41-login, 2.41-man, 2.41-mount, 2.41-swap -> 2.41-bin, 2.41-lib, 2.41-login, 2.41-mount, 2.41-swap
+[U.]  #26  vscode-extension-julialang-language-julia  1.141.2 -> 1.142.1
+[U.]  #27  vscode-extension-ms-python-python          2025.7.2025052901 -> 2025.7.2025053001
+[U.]  #28  vscode-extension-rust-lang-rust-analyzer   0.4.2478 -> 0.4.2480
+[U.]  #29  x86_energy_perf_policy                     6.12.30 -> 6.12.31
+[U.]  #30  yazi                                       25.5.28 x2, 25.5.28-fish-completions -> 25.5.31 x2, 25.5.31-fish-completions
+[U.]  #31  zed-editor                                 0.187.9 -> 0.188.3
+[U.]  #32  zed-editor-wrapped                         0.187.9, 0.187.9-fish-completions -> 0.188.3, 0.188.3-fish-completions
+Added packages:
+[A+]  #1  niri-unstable  2025-06-01-09da884
+[A.]  #2  plugins        63f9650
+[A.]  #3  starship.yazi  428d43a
+Removed packages:
+[R.]  #001  autoconf                              2.72
+[R.]  #002  binutils                              2.44, 2.44-lib, 2.44-man
+[R.]  #003  binutils-wrapper                      2.44 x2, 2.44-man
+[R.]  #004  clang                                 19.1.7, 19.1.7-lib
+[R.]  #005  clang-wrapper                         19.1.7
+[R.]  #006  cmake                                 3.31.6
+[R.]  #007  compiler-rt-libc                      19.1.7, 19.1.7-dev
+[R.]  #008  dart-sass                             1.89.0
+[R.]  #009  deno                                  2.2.12
+[R.]  #010  esbuild                               0.25.4
+[R.]  #011  expand-response-params                <none> x2
+[R.]  #012  gcc-wrapper                           14.2.1.20250322
+[R.]  #013  gfortran-wrapper                      14.2.1.20250322, 14.2.1.20250322-man
+[R.]  #014  glow.yazi                             2da96e3
+[R.]  #015  gperf                                 3.1
+[R.]  #016  julia                                 <none>, 1.11.4
+[R.]  #017  julia-bash                            <none>
+[R.]  #018  julia-bash-bwrap                      <none>
+[R.]  #019  julia-bash-fhsenv-profile             <none>
+[R.]  #020  julia-bash-fhsenv-rootfs              <none>
+[R.]  #021  julia-bash-fish-completions           <none>
+[R.]  #022  julia-bash-init                       <none>
+[R.]  #023  julia-bwrap                           <none>
+[R.]  #024  julia-fhsenv-profile                  <none>
+[R.]  #025  julia-fhsenv-rootfs                   <none>
+[R.]  #026  julia-fish-completions                <none>
+[R.]  #027  julia-init                            <none>
+[R-]  #028  niri                                  25.05.1
+[R.]  #029  plugins-c0ad8a3                       <none>
+[R.]  #030  python3.12-anyio                      4.9.0
+[R.]  #031  python3.12-argon2-cffi                23.1.0
+[R.]  #032  python3.12-argon2-cffi-bindings       21.2.0
+[R.]  #033  python3.12-arrow                      1.3.0
+[R.]  #034  python3.12-asttokens                  3.0.0
+[R.]  #035  python3.12-async-lru                  2.0.5
+[R.]  #036  python3.12-babel                      2.17.0
+[R.]  #037  python3.12-bleach                     6.2.0
+[R.]  #038  python3.12-build                      1.2.2.post1
+[R.]  #039  python3.12-cachecontrol               0.14.3
+[R.]  #040  python3.12-cleo                       2.2.1
+[R.]  #041  python3.12-comm                       0.2.2
+[R.]  #042  python3.12-crashtest                  0.4.1
+[R.]  #043  python3.12-decorator                  5.2.1
+[R.]  #044  python3.12-defusedxml                 0.8.0rc2
+[R.]  #045  python3.12-distlib                    0.3.9
+[R.]  #046  python3.12-dulwich                    0.22.8
+[R.]  #047  python3.12-executing                  2.2.0
+[R.]  #048  python3.12-fastjsonschema             2.21.1
+[R.]  #049  python3.12-filelock                   3.18.0
+[R.]  #050  python3.12-findpython                 0.6.3
+[R.]  #051  python3.12-fqdn                       1.5.1
+[R.]  #052  python3.12-h11                        0.16.0
+[R.]  #053  python3.12-html5lib                   1.1
+[R.]  #054  python3.12-httpcore                   1.0.9 x2
+[R.]  #055  python3.12-httpx                      0.28.1 x2
+[R.]  #056  python3.12-installer                  0.7.0
+[R.]  #057  python3.12-ipykernel                  6.29.5
+[R.]  #058  python3.12-ipython                    9.2.0
+[R.]  #059  python3.12-ipython-pygments-lexers    1.1.1
+[R.]  #060  python3.12-ipywidgets                 8.1.5
+[R.]  #061  python3.12-isoduration                20.11.0
+[R.]  #062  python3.12-jaraco-classes             3.4.0
+[R.]  #063  python3.12-jaraco-context             6.0.1
+[R.]  #064  python3.12-jaraco-functools           4.1.0
+[R.]  #065  python3.12-jinja2                     3.1.6
+[R.]  #066  python3.12-json5                      0.10.0
+[R.]  #067  python3.12-jsonpointer                3.0.0
+[R.]  #068  python3.12-jsonschema                 4.23.0
+[R.]  #069  python3.12-jsonschema-specifications  2024.10.1
+[R.]  #070  python3.12-jupyter                    1.1.1
+[R.]  #071  python3.12-jupyter-client             8.6.3
+[R.]  #072  python3.12-jupyter-console            6.6.3
+[R.]  #073  python3.12-jupyter-core               5.7.2
+[R.]  #074  python3.12-jupyter-events             0.11.0
+[R.]  #075  python3.12-jupyter-lsp                2.2.5
+[R.]  #076  python3.12-jupyter-server             2.15.0
+[R.]  #077  python3.12-jupyter-server-terminals   0.5.3
+[R.]  #078  python3.12-jupyterlab                 4.4.1
+[R.]  #079  python3.12-jupyterlab-pygments        0.3.0
+[R.]  #080  python3.12-jupyterlab-server          2.27.3
+[R.]  #081  python3.12-jupyterlab-widgets         3.0.13
+[R.]  #082  python3.12-keyring                    25.6.0
+[R.]  #083  python3.12-matplotlib-inline          0.1.7
+[R.]  #084  python3.12-mistune                    3.1.2
+[R.]  #085  python3.12-more-itertools             10.6.0
+[R.]  #086  python3.12-msgpack                    1.1.0
+[R.]  #087  python3.12-nbclient                   0.10.2
+[R.]  #088  python3.12-nbconvert                  7.16.6
+[R.]  #089  python3.12-nbformat                   5.10.4
+[R.]  #090  python3.12-nest-asyncio               1.6.0
+[R.]  #091  python3.12-notebook                   7.4.1
+[R.]  #092  python3.12-notebook-shim              0.2.4
+[R.]  #093  python3.12-overrides                  7.7.0
+[R.]  #094  python3.12-pandocfilters              1.5.1
+[R.]  #095  python3.12-pbs-installer              2025.03.17
+[R.]  #096  python3.12-pexpect                    4.9.0
+[R.]  #097  python3.12-pkginfo                    1.12.1.2
+[R.]  #098  python3.12-poetry                     2.1.3
+[R.]  #099  python3.12-poetry-core                2.1.3
+[R.]  #100  python3.12-prometheus-client          0.21.1
+[R.]  #101  python3.12-prompt-toolkit             3.0.50
+[R.]  #102  python3.12-ptyprocess                 0.7.0
+[R.]  #103  python3.12-pure-eval                  0.2.3
+[R.]  #104  python3.12-pyproject-hooks            1.2.0
+[R.]  #105  python3.12-python-json-logger         3.2.1
+[R.]  #106  python3.12-pyzmq                      26.3.0
+[R.]  #107  python3.12-rapidfuzz                  3.13.0
+[R.]  #108  python3.12-referencing                0.36.2
+[R.]  #109  python3.12-requests-toolbelt          1.0.0
+[R.]  #110  python3.12-rfc3339-validator          0.1.4
+[R.]  #111  python3.12-rfc3986-validator          0.1.1
+[R.]  #112  python3.12-rpds-py                    0.24.0
+[R.]  #113  python3.12-send2trash                 1.8.3
+[R.]  #114  python3.12-shellingham                1.5.4
+[R.]  #115  python3.12-sniffio                    1.3.1
+[R.]  #116  python3.12-stack-data                 0.6.3
+[R.]  #117  python3.12-terminado                  0.18.1
+[R.]  #118  python3.12-tinycss2                   1.4.0
+[R.]  #119  python3.12-tomlkit                    0.13.2
+[R.]  #120  python3.12-tornado                    6.4.2
+[R.]  #121  python3.12-traitlets                  5.14.3
+[R.]  #122  python3.12-trove-classifiers          2025.3.19.19
+[R.]  #123  python3.12-types-python-dateutil      2.9.0.20241206
+[R.]  #124  python3.12-uri-template               1.3.0
+[R.]  #125  python3.12-virtualenv                 20.30.0
+[R.]  #126  python3.12-wcwidth                    0.2.13
+[R.]  #127  python3.12-webcolors                  24.11.1
+[R.]  #128  python3.12-webencodings               0.5.1
+[R.]  #129  python3.12-widgetsnbextension         4.0.13
+[R.]  #130  python3.12-zstandard                  0.23.0
+[R.]  #131  quarto                                <none>, 1.3.450
+[R.]  #132  quarto-bwrap                          <none>
+[R.]  #133  quarto-fhsenv-profile                 <none>
+[R.]  #134  quarto-fhsenv-rootfs                  <none>
+[R.]  #135  quarto-fish-completions               <none>
+[R.]  #136  quarto-init                           <none>
+[R.]  #137  rhash                                 1.4.4
+[R.]  #138  texlive-combined-minimal              2024-final, 2024-final-doc, 2024-final-texmfdist, 2024-final-texmfroot, 2024-final-tlpkg
+[R.]  #139  typst                                 0.13.1, 0.13.1-fish-completions
+Closure size: 8349 -> 8178 (137 paths added, 308 paths removed, delta -171, disk usage -2.8GiB).
