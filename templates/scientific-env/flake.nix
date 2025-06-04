@@ -4,6 +4,8 @@
     inputs = {
         nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
+        flake-utils.url = "github:numtide/flake-utils";
+
         devshell = {
             url = "github:numtide/devshell";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -31,50 +33,74 @@
 
     outputs = {
         nixpkgs,
+        flake-utils,
         devshell,
-        uv2nix,
-        pyproject-nix,
-        pyproject-build-systems,
         ...
     }: let
-        inherit (nixpkgs) lib;
-        pkgs = import nixpkgs {
-            inherit system;
-            overlays = [devshell.overlays.default];
-        };
+        systems = ["x86_64-linux"];
+    in
+        flake-utils.lib.eachSystem systems (
+            system: let
+                pkgs = import nixpkgs {
+                    inherit system;
+                    overlays = [devshell.overlays.default];
+                };
 
-        cfg = import ./config.nix {inherit pkgs;};
-        inherit (cfg) system;
+                inherit (nixpkgs) lib;
 
-        enablePython = cfg.python.enable;
-        enableJulia = cfg.julia.enable;
+                # Python package used by uv
+                python = pkgs.python312;
+            in {
+                formatter = pkgs.alejandra;
 
-        uv2nixCfg = import ./nix/python.nix {inherit lib cfg pkgs uv2nix pyproject-nix pyproject-build-systems;};
-    in {
-        formatter.${system} = pkgs.alejandra;
+                devShells.default = pkgs.devshell.mkShell {
+                    name = "scientific-dev";
 
-        packages = lib.optionalAttrs cfg.python.enable uv2nixCfg.packages;
+                    packages =
+                        (with pkgs; [
+                            # Python stuff
+                            python
+                            uv
+                            nodejs # for using copilot in marimo
+                            ruff # for formatting
 
-        devShells.${system}.default = pkgs.devshell.mkShell {
-            name = "scientific-dev";
+                            # Julia stuff
+                            julia-bin
+                            xwayland-satellite
 
-            packages =
-                lib.optionals enablePython ([
-                    uv2nixCfg.python
-                    pkgs.uv
-                ]
-                ++ cfg.python.extraPackages)
-                ++ lib.optionals enableJulia [(import ./nix/julia.nix {inherit pkgs cfg;})]
-                ++ cfg.additionalPackages;
+                            # Extra stuff
+                            typst
+                        ])
+                        ++ (with pkgs.python312Packages; [
+                            python-lsp-server # for LSP features in marimo
+                        ]);
 
-            env = lib.attrsets.attrsToList (
-                lib.optionalAttrs enablePython uv2nixCfg.env
-                // lib.optionalAttrs enablePython cfg.python.env
-                // lib.optionalAttrs enableJulia cfg.julia.env
-                // cfg.env
-            );
+                    env = lib.attrsets.attrsToList (
+                        {
+                            # Prevent uv from managing Python downloads
+                            UV_PYTHON_DOWNLOADS = "never";
+                            # Force uv to use nixpkgs Python interpreter
+                            UV_PYTHON = python.interpreter;
+                        }
+                        // lib.optionalAttrs pkgs.stdenv.isLinux {
+                            # Python libraries often load native shared objects using dlopen(3).
+                            # Setting LD_LIBRARY_PATH makes the dynamic library loader aware of libraries without using RPATH for lookup.
+                            LD_LIBRARY_PATH = lib.makeLibraryPath pkgs.pythonManylinuxPackages.manylinux1;
+                        }
+                        // {
+                            JULIA_NUM_THREADS = 16;
+                            DISPLAY = ":0";
+                        }
+                    );
 
-            devshell.startup.setup.text = lib.optionalString enablePython uv2nixCfg.shellHook;
-        };
-    };
+                    devshell = {
+                        startup.default.text = ''
+                            unset PYTHONPATH
+                        '';
+
+                        motd = "";
+                    };
+                };
+            }
+        );
 }
