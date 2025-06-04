@@ -19,6 +19,5 @@
     scientific-env = {
         path = ./scientific-env;
         description = "Scientific dev environment with Julia and Python (via uv)";
-        welcomeText = "It is suggested to change settings in `config.nix` before proceeding.";
     };
 }

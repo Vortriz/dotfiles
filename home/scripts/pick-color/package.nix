@@ -17,6 +17,8 @@ pkgs.writers.writeFishBin "pick-color" {
         ])}"
     ];
 } ''
+    # credits to @sargas_de_al:matrix.org from niri matrix room
+
     switch $argv
         case rgb
             niri msg pick-color |\
