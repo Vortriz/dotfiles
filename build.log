@@ -8352,3 +8352,29 @@ Removed packages:
 [R.]  #138  texlive-combined-minimal              2024-final, 2024-final-doc, 2024-final-texmfdist, 2024-final-texmfroot, 2024-final-tlpkg
 [R.]  #139  typst                                 0.13.1, 0.13.1-fish-completions
 Closure size: 8349 -> 8178 (137 paths added, 308 paths removed, delta -171, disk usage -2.8GiB).
+
+---
+
+04/06/25 11:58:50 PM IST
+<<< /nix/var/nix/profiles/system-48-link
+>>> /nix/var/nix/profiles/system-49-link
+Version changes:
+[U.]  #01  bootspec                                   1.0.0 -> 1.0.1
+[U*]  #02  niri-unstable                              2025-06-01-09da884 -> 2025-06-04-9858599
+[U.]  #03  nixos-system-nixos                         25.11.20250531.910796c -> 25.11.20250603.c2a0396
+[C.]  #04  noto-fonts-color-emoji                     2.047, 2.047-fish-completions -> 2.047
+[D.]  #05  ouch.yazi                                  2496cd9 -> 10b4627
+[U.]  #06  pdfarranger                                1.11.1, 1.11.1-fish-completions -> 1.12.0, 1.12.0-fish-completions
+[U.]  #07  python3.12-curl-cffi                       0.7.4 -> 0.10.0
+[U.]  #08  ruff                                       0.11.11 -> 0.11.12
+[D.]  #09  starship.yazi                              428d43a -> 6a0f3f7
+[U.]  #10  vscode-extension-github-copilot-chat       0.27.2 -> 0.27.3
+[U.]  #11  vscode-extension-james-yu-latex-workshop   10.9.1 -> 10.10.0
+[U.]  #12  vscode-extension-julialang-language-julia  1.142.1 -> 1.144.1
+[U.]  #13  vscode-extension-ms-python-vscode-pylance  2025.5.100 -> 2025.5.101
+[U.]  #14  vscode-extension-rust-lang-rust-analyzer   0.4.2480 -> 0.4.2484
+Added packages:
+[A.]  #1  office.yazi  4002d36
+Removed packages:
+[R.]  #1  office.yazi-d1e3e51  <none>
+Closure size: 8178 -> 8177 (127 paths added, 128 paths removed, delta -1, disk usage +2.6MiB).
