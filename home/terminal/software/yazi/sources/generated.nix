@@ -31,17 +31,17 @@
   };
   office = {
     pname = "office";
-    version = "d1e3e51857c109fbfc707ab0f9f383dc98b9795f";
+    version = "4002d368c09841d5722d55720fd29c2eba05300f";
     src = fetchgit {
       url = "https://github.com/macydnah/office.yazi";
-      rev = "d1e3e51857c109fbfc707ab0f9f383dc98b9795f";
+      rev = "4002d368c09841d5722d55720fd29c2eba05300f";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-ORcexu1f7hb7G4IyzQIfGlCkH3OWlk4w5FtZrbXkR40=";
+      sha256 = "sha256-XE+EfVPsO09zG8qYEhN6O95mS9NJlTdOd4Gsem2KtPI=";
     };
-    date = "2025-04-26";
+    date = "2025-06-02";
   };
   official-plugins-monorepo = {
     pname = "official-plugins-monorepo";
@@ -73,17 +73,17 @@
   };
   ouch = {
     pname = "ouch";
-    version = "2496cd9ac2d1fb52597b22ae84f3af06c826a86d";
+    version = "10b462765f37502065555e83c68a72bb26870fe2";
     src = fetchgit {
       url = "https://github.com/ndtoan96/ouch.yazi";
-      rev = "2496cd9ac2d1fb52597b22ae84f3af06c826a86d";
+      rev = "10b462765f37502065555e83c68a72bb26870fe2";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-OsNfR7rtnq+ceBTiFjbz+NFMSV/6cQ1THxEFzI4oPJk=";
+      sha256 = "sha256-mtXl76a54Deg4cyrD0wr++sD/5b/kCsnJ+ngM6OokTc=";
     };
-    date = "2025-04-12";
+    date = "2025-06-02";
   };
   restore = {
     pname = "restore";
@@ -101,17 +101,17 @@
   };
   starship = {
     pname = "starship";
-    version = "428d43ac0846cb1885493a1f01c049a883b70155";
+    version = "6a0f3f788971b155cbc7cec47f6f11aebbc148c9";
     src = fetchgit {
       url = "https://github.com/Rolv-Apneseth/starship.yazi";
-      rev = "428d43ac0846cb1885493a1f01c049a883b70155";
+      rev = "6a0f3f788971b155cbc7cec47f6f11aebbc148c9";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-YkDkMC2SJIfpKrt93W/v5R3wOrYcat7QTbPrWqIKXG8=";
+      sha256 = "sha256-q1G0Y4JAuAv8+zckImzbRvozVn489qiYVGFQbdCxC98=";
     };
-    date = "2025-05-30";
+    date = "2025-06-01";
   };
   what-size = {
     pname = "what-size";
