@@ -15,6 +15,15 @@ _: {
             };
             cmakeFlags = ["-DUSE_WAYLAND_GRIM=true" "-DUSE_WAYLAND_CLIPBOARD=true"];
         });
+
+        niriswitcher = prev.niriswitcher.overrideAttrs (_old: {
+            src = prev.pkgs.fetchFromGitHub {
+                owner = "isaksamsten";
+                repo = "niriswitcher";
+                rev = "de0ef44a6423776934434328fc5a38c61124176e";
+                hash = "sha256-njEd9s432qlBeQSXRL5gDSIEgzF0qwceND09aGTRo0U=";
+            };
+        });
         # keep-sorted end
     };
 }
