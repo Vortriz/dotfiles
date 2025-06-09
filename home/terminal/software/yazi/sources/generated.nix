@@ -3,31 +3,31 @@
 {
   custom-shell = {
     pname = "custom-shell";
-    version = "c4c2fea03da2e6761303a16944fe1e3e888a8d39";
+    version = "b04213d2f4ca6079bef37491be07860baa8264b9";
     src = fetchgit {
       url = "https://github.com/AnirudhG07/custom-shell.yazi";
-      rev = "c4c2fea03da2e6761303a16944fe1e3e888a8d39";
+      rev = "b04213d2f4ca6079bef37491be07860baa8264b9";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-B2brFAwg8xpfoDXK0K7GmawAJQBvlBQweZK0wbwr15w=";
+      sha256 = "sha256-hJVFZvcHgcjmcwUUGs1Q668KjeLSCEVuAhAD1A8ZM90=";
     };
-    date = "2025-05-30";
+    date = "2025-06-07";
   };
   mediainfo = {
     pname = "mediainfo";
-    version = "c6d0de764f6e667c1a7a49f8acc9030c02a1a45c";
+    version = "a7d1aa69a1a107e64540c17f19ac94be1366769f";
     src = fetchgit {
       url = "https://github.com/boydaihungst/mediainfo.yazi";
-      rev = "c6d0de764f6e667c1a7a49f8acc9030c02a1a45c";
+      rev = "a7d1aa69a1a107e64540c17f19ac94be1366769f";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-CVHY66AcOC0STi+uDwbKe+HI3WN7MPgszlFHB479V/E=";
+      sha256 = "sha256-HUD8Sv1C4gzZRvSEIYqcmm+A0mBYDuwZHCNH26kipS0=";
     };
-    date = "2025-05-30";
+    date = "2025-06-05";
   };
   office = {
     pname = "office";
@@ -87,17 +87,17 @@
   };
   restore = {
     pname = "restore";
-    version = "86dff4319ace07da83c235ccab7a14bc0853a03a";
+    version = "b7c33766e0bc4bbbb99e8e934be90e3beb881d29";
     src = fetchgit {
       url = "https://github.com/boydaihungst/restore.yazi";
-      rev = "86dff4319ace07da83c235ccab7a14bc0853a03a";
+      rev = "b7c33766e0bc4bbbb99e8e934be90e3beb881d29";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-7hMFTeNghXIf3Db2AtguIzLkWbXYtJNwGkFdymDr35s=";
+      sha256 = "sha256-qtthY7eySqXoA3TARubZF0SsYkkLEgkjdtPUxR5ro0I=";
     };
-    date = "2025-05-30";
+    date = "2025-06-05";
   };
   starship = {
     pname = "starship";

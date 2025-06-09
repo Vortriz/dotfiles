@@ -44,7 +44,9 @@ with config.lib.niri.actions; let
         action = spawn' "${pkgs.avizo}/bin/lightctl -d -e 4 ${cmd}";
     };
 
-    niriswitcher = spawn' "pkill -USR1 niriswitcher";
+    niriswitcher-gdbus = cmd: "${pkgs.glib}/bin/gdbus call --session --dest io.github.isaksamsten.Niriswitcher --object-path /io/github/isaksamsten/Niriswitcher --method io.github.isaksamsten.Niriswitcher." + cmd;
+    niriswitcher-window = spawn' (niriswitcher-gdbus "application");
+    niriswitcher-workspace = spawn' (niriswitcher-gdbus "workspace");
 in
     {
         "Mod+Shift+Slash".action = show-hotkey-overlay;
@@ -91,10 +93,10 @@ in
         "Alt+Right".action = focus-window-down;
         "Alt+Left".action = focus-window-up;
 
-        "Alt+Tab".action = niriswitcher;
-        "Alt+Shift+Tab".action = niriswitcher;
-        "Alt+grave".action = niriswitcher;
-        "Alt+Shift+grave".action = niriswitcher;
+        "Alt+Tab".action = niriswitcher-window;
+        "Alt+Shift+Tab".action = niriswitcher-window;
+        "Alt+grave".action = niriswitcher-workspace;
+        "Alt+Shift+grave".action = niriswitcher-workspace;
 
         "Mod+Tab".action = focus-workspace-previous;
         "Mod+Shift+Tab".action = focus-column-right-or-first;
