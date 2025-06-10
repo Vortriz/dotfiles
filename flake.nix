@@ -38,10 +38,10 @@
             url = "github:nix-community/NUR";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        nur-vortriz = {
-            url = "path:/mnt/HOUSE/dev/nix/nur-packages";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
+        # nur-vortriz = {
+        #     url = "path:/mnt/HOUSE/dev/nix/nur-packages";
+        #     inputs.nixpkgs.follows = "nixpkgs";
+        # };
         pre-commit-hooks = {
             url = "github:cachix/git-hooks.nix";
             inputs.nixpkgs.follows = "nixpkgs";

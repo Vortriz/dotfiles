@@ -3,12 +3,14 @@
     lib,
     osConfig,
     ...
-}: {
+}: let
+    inherit (osConfig.defaults) launcher;
+in {
     imports = [inputs.sherlock.homeManagerModules.default];
 
     programs.sherlock = {
         enable = true;
-        # package = pkgs.sherlock-launcher;
+        package = launcher;
 
         settings = {
             aliases = import ./aliases.nix;
