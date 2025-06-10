@@ -6,7 +6,7 @@
     ...
 }:
 with config.lib.niri.actions; let
-    inherit (lib) getExe getExe' getName;
+    inherit (lib) getExe getName;
     inherit (lib.strings) splitString;
 
     inherit (osConfig.defaults) file-manager launcher terminal;
@@ -51,7 +51,7 @@ in
     {
         "Mod+Shift+Slash".action = show-hotkey-overlay;
 
-        "Alt+Space".action = spawn' (getExe' launcher "sherlock"); # use getExe when https://github.com/Skxxtz/sherlock/pull/78 is merged
+        "Alt+Space".action = spawn' (getExe launcher);
         "Mod+T".action = spawn' (getExe terminal);
         "Mod+E".action = open-tui {
             app-id = getName file-manager;
