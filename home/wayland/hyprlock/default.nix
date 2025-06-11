@@ -5,6 +5,8 @@ in {
         enable = true;
 
         settings = {
+            auth.fingerprint.enabled = true;
+
             # BACKGROUND
             background = {
                 path = "${dotfilesDir}/assets/wallpapers/19.png";
