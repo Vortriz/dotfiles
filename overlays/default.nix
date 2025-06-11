@@ -15,6 +15,18 @@ _: {
             };
             cmakeFlags = ["-DUSE_WAYLAND_GRIM=true" "-DUSE_WAYLAND_CLIPBOARD=true"];
         });
+
+        # https://discourse.nixos.org/t/request-for-libfprint-port-for-2808-a658/55474/32?u=vortriz
+        fprintd = prev.fprintd.overrideAttrs (_old: rec {
+            version = "1.94.4";
+            src = prev.pkgs.fetchFromGitLab {
+                domain = "gitlab.freedesktop.org";
+                owner = "libfprint";
+                repo = "fprintd";
+                rev = "refs/tags/v${version}}";
+                hash = "sha256-B2g2d29jSER30OUqCkdk3+Hv5T3DA4SUKoyiqHb8FeU=";
+            };
+        });
         # keep-sorted end
     };
 }

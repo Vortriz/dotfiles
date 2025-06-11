@@ -23,6 +23,13 @@ in {
 
         blueman.enable = true;
 
+        fprintd = {
+            enable = true;
+            package = pkgs.fprintd.override {
+                libfprint = pkgs.libfprint-focaltech-2808-a658;
+            };
+        };
+
         # Gnome keyring is a password manager
         gnome.gnome-keyring.enable = true;
 
@@ -111,6 +118,8 @@ in {
                 CPU_ENERGY_PERF_POLICY_ON_BAT = "balanced";
             };
         };
+
+        udev.packages = [pkgs.libfprint-focaltech-2808-a658];
         # keep-sorted end
     };
 }
