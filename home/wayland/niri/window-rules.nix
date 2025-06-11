@@ -68,7 +68,7 @@ in [
         ];
     }
     {
-        scroll-factor = 0.6;
+        scroll-factor = 0.4;
 
         matches = [
             {app-id = "obsidian";}
@@ -114,5 +114,13 @@ in [
             {app-id = "dev.zed.Zed";}
             {app-id = "code";}
         ];
+    }
+    {
+        matches = [
+            {app-id = "com.github.th_ch.youtube_music";}
+        ];
+
+        default-column-width.proportion = 0.7;
+        default-window-height.proportion = 0.7;
     }
 ]

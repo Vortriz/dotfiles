@@ -6,13 +6,13 @@
     inherit (osConfig.var) downloadsDir;
 in {
     services = {
-        # keep-sorted start block=yes
-
+        # keep-sorted start block=yes newline_separated=yes
         avizo = {
             enable = true;
 
             settings.default.time = 1.5;
         };
+
         dunst = {
             enable = true;
 
@@ -21,6 +21,7 @@ in {
                 format = "";
             };
         };
+
         flameshot = {
             enable = true;
 
@@ -38,7 +39,9 @@ in {
                 };
             };
         };
+
         gnome-keyring.enable = true;
+
         wpaperd.enable = true;
         # keep-sorted end
     };
