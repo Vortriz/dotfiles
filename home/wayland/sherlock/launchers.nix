@@ -1,4 +1,23 @@
 [
+    # keep-sorted start block=yes newline_separated=yes
+    {
+        name = "App Launcher";
+        type = "app_launcher";
+        alias = "app";
+        args = {};
+        priority = 1;
+        home = true;
+    }
+
+    {
+        name = "Calculator";
+        type = "calculation";
+        args = {
+            capabilities = ["calc.math" "calc.units"];
+        };
+        priority = 1;
+    }
+
     {
         name = "Clipboard";
         type = "clipboard-execution";
@@ -8,26 +27,11 @@
         priority = 1;
         home = true;
     }
-    {
-        name = "Calculator";
-        type = "calculation";
-        args = {
-            capabilities = ["calc.math" "calc.units"];
-        };
-        priority = 1;
-    }
-    {
-        name = "App Launcher";
-        alias = "app";
-        type = "app_launcher";
-        args = {};
-        priority = 1;
-        home = true;
-    }
+
     {
         name = "Cloudflare Warp";
-        alias = "w";
         type = "command";
+        alias = "w";
         args = {
             commands = {
                 "Connect Warp" = {
@@ -42,10 +46,20 @@
         };
         priority = 4;
     }
+
+    {
+        name = "Emoji Picker";
+        type = "emoji_picker";
+        alias = "emoji";
+        args = {};
+        priority = 4;
+        home = false;
+    }
+
     {
         name = "Power Management";
-        alias = ":";
         type = "command";
+        alias = ":";
         args = {
             commands = {
                 Shutdown = {
@@ -67,4 +81,5 @@
         };
         priority = 4;
     }
+    # keep-sorted end
 ]
