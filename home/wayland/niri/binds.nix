@@ -144,7 +144,7 @@ in
         "Mod+Shift+P".action = power-off-monitors;
         "Mod+Shift+E".action = quit;
     }
-    // (builtins.genList (x: x + 1) 3
+    // (builtins.genList (x: x + 1) 9
     |> map (x: {
         "Mod+${toString x}".action = focus-workspace x;
         # "Mod+Ctrl+${toString x}".action = move-column-to-workspace x; # [TODO] niri-flake is borked atm

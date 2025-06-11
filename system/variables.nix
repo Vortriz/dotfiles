@@ -28,7 +28,6 @@
             browser = firefox;
             code-editor = zed-editor;
             file-manager = yazi;
-            launcher = sherlock-launcher;
             shell = fish;
             terminal = kitty;
             video-player = celluloid;
@@ -36,6 +35,7 @@
         })
         // (with inputs; {
             # keep-sorted start
+            launcher = inputs.sherlock.packages.${config.var.system}.default;
             # keep-sorted end
         });
 
