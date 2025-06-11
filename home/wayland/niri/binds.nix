@@ -13,20 +13,36 @@ with config.lib.niri.actions; let
 
     spawn' = cmd: spawn (splitString " " cmd);
 
-    open-tui = {
-        app-id,
-        cmd,
-    }:
-        spawn' "${getExe terminal} -o confirm_os_window_close=0 --app-id=${app-id} ${cmd}";
+    open = {
+        app,
+        args ? "",
+        title ? "Launch ${getName app}",
+    }: {
+        action = spawn' (lib.strings.trim "${getExe app} ${args}");
+        hotkey-overlay = {inherit title;};
+    };
 
-    execute = {
+    open-tui = {
+        app,
+        app-id,
+    }: {
+        action = spawn' "${getExe terminal} -o confirm_os_window_close=0 --app-id=${app-id} ${app}";
+        hotkey-overlay.title = "Launch ${app-id}";
+    };
+
+    run = {
         cmd,
         notif ? null,
+        title ? null,
     }: {
-        spawn =
+        action.spawn =
             if notif == null
             then ["sh" "-c" cmd]
             else ["sh" "-c" ''${cmd} && ${getExe pkgs.libnotify} "${notif}"''];
+        hotkey-overlay =
+            if title == null
+            then {hidden = true;}
+            else {inherit title;};
     };
 
     vol = cmd: {
@@ -44,51 +60,71 @@ with config.lib.niri.actions; let
         action = spawn' "${pkgs.avizo}/bin/lightctl -d -e 4 ${cmd}";
     };
 
-    niriswitcher-gdbus = cmd: "${pkgs.glib}/bin/gdbus call --session --dest io.github.isaksamsten.Niriswitcher --object-path /io/github/isaksamsten/Niriswitcher --method io.github.isaksamsten.Niriswitcher." + cmd;
+    niriswitcher-gdbus = cmd:
+        "${pkgs.glib}/bin/gdbus call --session \
+        --dest io.github.isaksamsten.Niriswitcher \
+        --object-path /io/github/isaksamsten/Niriswitcher \
+        --method io.github.isaksamsten.Niriswitcher."
+        + cmd;
     niriswitcher-window = spawn' (niriswitcher-gdbus "application");
     niriswitcher-workspace = spawn' (niriswitcher-gdbus "workspace");
 in
     {
         "Mod+Shift+Slash".action = show-hotkey-overlay;
 
-        "Alt+Space".action = spawn' (getExe launcher);
-        "Mod+T".action = spawn' (getExe terminal);
-        "Mod+E".action = open-tui {
-            app-id = getName file-manager;
-            cmd = getExe file-manager;
-        };
-        "Mod+P".action = open-tui {
-            app-id = getName config.programs.nix-search-tv.package;
-            cmd = "ns";
-        };
-        "Ctrl+Shift+Escape".action = spawn' (getExe pkgs.mission-center);
+        "Alt+Space" = open {app = launcher;};
+        "Mod+T" = open {app = terminal;};
+        "Ctrl+Shift+Escape" = open {app = pkgs.mission-center;};
 
-        "Print".action = spawn' "${getExe pkgs.flameshot} gui";
+        "Mod+E" = open-tui {
+            app = getExe file-manager;
+            app-id = getName file-manager;
+        };
+        "Mod+P" = open-tui {
+            app = "ns";
+            app-id = getName config.programs.nix-search-tv.package;
+        };
+
+        "Print" = open {
+            app = pkgs.flameshot;
+            args = "gui";
+            title = "Take screenshot with flameshot";
+        };
         "Ctrl+Print".action = screenshot-window;
         "Ctrl+Shift+Print".action.screenshot-screen = []; # [TODO] change after https://github.com/sodiboo/niri-flake/issues/944
-        "Ctrl+Shift+O".action = spawn' "oimg";
-        "Mod+C".action = spawn' "pick-color ui";
-        "Mod+Period".action = spawn' (getExe pkgs.smile);
 
-        "Mod+H".action = execute {
+        "Mod+C" = run {
+            cmd = "${getExe pkgs.zenity} --color-selection --title 'Color picker' --color $(${getExe pkgs.hyprpicker} -an)";
+            title = "Open color picker";
+        };
+        "Mod+Period" = run {
+            cmd = "${getExe launcher} --sub-menu emoji";
+            title = "Open emoji picker";
+        };
+        "Ctrl+Shift+O".action = spawn' "oimg";
+
+        "Mod+H" = run {
             cmd = "niri msg output eDP-1 mode 2880x1800@90.001";
             notif = "Set display mode to 90Hz";
         };
-        "Mod+Shift+H".action = execute {
+        "Mod+Shift+H" = run {
             cmd = "niri msg output eDP-1 mode 2880x1800@60.001";
             notif = "Set display mode to 60Hz";
         };
-        "Mod+Z".action = execute {
+        "Mod+Z" = run {
             cmd = "niri msg output eDP-1 scale 1";
             notif = "Set display scale to 1";
         };
-        "Mod+Shift+Z".action = execute {
+        "Mod+Shift+Z" = run {
             cmd = "niri msg output eDP-1 scale 1.5";
             notif = "Set display scale to 1.5";
         };
 
         "Mod+Q".action = close-window;
-        "Mod+L".action = execute {cmd = "niri msg action do-screen-transition && ${getExe pkgs.hyprlock} --immediate";};
+        "Mod+L" = run {
+            cmd = "niri msg action do-screen-transition && ${getExe pkgs.hyprlock} --immediate";
+            title = "Lock screen";
+        };
 
         "Alt+Right".action = focus-window-down;
         "Alt+Left".action = focus-window-up;
@@ -123,8 +159,14 @@ in
         "Mod+R".action = switch-preset-column-width;
         "Mod+Shift+R".action = switch-preset-window-height;
         "Mod+F".action = maximize-column;
-        "Mod+Shift+F".action = fullscreen-window;
-        "Mod+Shift+C".action = center-column;
+        "Mod+Shift+F" = {
+            action = fullscreen-window;
+            hotkey-overlay.title = "Fullscreen Window";
+        };
+        "Mod+Shift+C" = {
+            action = center-column;
+            hotkey-overlay.title = "Center Column";
+        };
 
         "Mod+Minus".action = set-column-width "-10%";
         "Mod+Equal".action = set-column-width "+10%";

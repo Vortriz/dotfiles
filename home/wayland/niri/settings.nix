@@ -6,7 +6,10 @@
 }: let
     inherit (osConfig.var) downloadsDir storageDir;
 in {
-    hotkey-overlay.skip-at-startup = true;
+    hotkey-overlay = {
+        skip-at-startup = true;
+        # hide-hot-bound = true; # When niri-flake implements it
+    };
 
     input.touchpad = {
         tap-button-map = "left-right-middle";
