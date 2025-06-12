@@ -11,7 +11,7 @@
         pdfarranger
         qbittorrent
         smile
-        # ventoy-full # drop till this shit is sorted out: https://github.com/NixOS/nixpkgs/issues/404663
+        # ventoy-full # drop till this shit is sorted out: [ERROR] https://github.com/NixOS/nixpkgs/issues/404663
         vesktop
         warp
         wineWowPackages.stable

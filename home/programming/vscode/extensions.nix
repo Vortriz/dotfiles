@@ -19,7 +19,7 @@ with pkgs.vscode-marketplace;
         shd101wyy.markdown-preview-enhanced
         tamasfe.even-better-toml
         yzhang.markdown-all-in-one
-        # ltex-plus.vscode-ltex-plus # https://github.com/nix-community/nix-vscode-extensions/issues/123
+        # ltex-plus.vscode-ltex-plus # [FIXME] https://github.com/nix-community/nix-vscode-extensions/issues/123
         # keep-sorted end
 
         # misc
