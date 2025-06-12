@@ -1,7 +1,5 @@
 # things to do
 
-- [x] ~~make tealdeer hm module (for fun)~~ someone already made it
-- [x] ~~discord needs xwayland~~ use vesktop
 - [ ] cpu optimisation
 - [ ] figure out cache situation for new install
 - [ ] try zen browser
@@ -12,7 +10,8 @@
 - [ ] ags/ignis
     - [ ] replace avizo
     - [ ] replace waybar
-- [x] emoji picker
 - [x] configure ai in zed
     - [x] https://github.com/utensils/mcp-nixos
         - [ ] but schite aint worke - https://github.com/zed-industries/zed/issues/23507
+- [ ] https://github.com/boydaihungst/gvfs.yazi
+- [ ] sioyek doesn't launch from sherlock
