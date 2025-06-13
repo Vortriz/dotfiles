@@ -21,7 +21,7 @@ in {
             extraPortals = with pkgs; [
                 # keep-sorted start
                 xdg-desktop-portal-gtk
-                xdg-desktop-portal-termfilechooser-custom
+                xdg-desktop-portal-termfilechooser-git
                 xdg-desktop-portal-wlr
                 # keep-sorted end
             ];
@@ -29,7 +29,7 @@ in {
 
         configFile."xdg-desktop-portal-termfilechooser/config".text = ''
             [filechooser]
-            cmd=${pkgs.xdg-desktop-portal-termfilechooser-custom}/share/xdg-desktop-portal-termfilechooser/${lib.getName file-manager}-wrapper.sh
+            cmd=${pkgs.xdg-desktop-portal-termfilechooser-git}/share/xdg-desktop-portal-termfilechooser/${lib.getName file-manager}-wrapper.sh
             default_dir=$HOME
             env=TERMCMD=${lib.getName terminal}
         '';

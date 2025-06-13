@@ -96,6 +96,7 @@ in {
 
         pam.services = {
             login.enableGnomeKeyring = true;
+            gdm.enableGnomeKeyring = true;
             hyprlock = {};
         };
 

@@ -7,5 +7,5 @@ in {
     HelveticaNeueCyr = callPackage ./fonts/HelveticaNeueCyr.nix {};
     SFMono = callPackage ./fonts/SFMono.nix {};
 
-    xdg-desktop-portal-termfilechooser-custom = callPackage' ./xdg-desktop-portal-termfilechooser-custom/package.nix;
+    xdg-desktop-portal-termfilechooser-git = callPackage' ./xdg-desktop-portal-termfilechooser-git/package.nix;
 }

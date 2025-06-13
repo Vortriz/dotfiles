@@ -13,5 +13,5 @@
 
     niri-flake.cache.enable = true;
 
-    services.displayManager.cosmic-greeter.enable = true;
+    services.xserver.displayManager.gdm.enable = true;
 }
