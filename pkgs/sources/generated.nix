@@ -3,16 +3,16 @@
 {
   xdg-desktop-portal-termfilechooser = {
     pname = "xdg-desktop-portal-termfilechooser";
-    version = "802aa2718893c979576962c9148dcb1e219656b8";
+    version = "7384c9913af733ad3ff89ed7554b2b08146ca045";
     src = fetchgit {
       url = "https://github.com/hunkyburrito/xdg-desktop-portal-termfilechooser";
-      rev = "802aa2718893c979576962c9148dcb1e219656b8";
+      rev = "7384c9913af733ad3ff89ed7554b2b08146ca045";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-VPuwylQJoiYIjjpJ+sfwdjxmezwfP4yraD3fBO4fOIE=";
+      sha256 = "sha256-athhWR/5KjIy8pIhbXjdj8E4YIS0U2rBfG7abgVFIrU=";
     };
-    date = "2025-05-30";
+    date = "2025-06-11";
   };
 }
