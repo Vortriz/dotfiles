@@ -17,4 +17,10 @@
             ctrl-right = "editor::AcceptPartialEditPrediction";
         };
     }
+    {
+        context = "Workspace";
+        bindings = {
+            ctrl-shift-f = ["pane::DeploySearch" {excluded_files = "build.log, flake.lock";}];
+        };
+    }
 ]
