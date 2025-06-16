@@ -31,7 +31,10 @@ in {
             #keep-sorted end
         ];
 
-        config.allowUnfree = true;
+        config = {
+            allowUnfree = true;
+            allowBroken = true;
+        };
     };
 
     nix = {
