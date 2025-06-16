@@ -61,10 +61,7 @@ with config.lib.niri.actions; let
     };
 
     niriswitcher-gdbus = cmd:
-        "${pkgs.glib}/bin/gdbus call --session \
-        --dest io.github.isaksamsten.Niriswitcher \
-        --object-path /io/github/isaksamsten/Niriswitcher \
-        --method io.github.isaksamsten.Niriswitcher."
+        "${pkgs.glib}/bin/gdbus call --session --dest io.github.isaksamsten.Niriswitcher --object-path /io/github/isaksamsten/Niriswitcher --method io.github.isaksamsten.Niriswitcher."
         + cmd;
     niriswitcher-window = spawn' (niriswitcher-gdbus "application");
     niriswitcher-workspace = spawn' (niriswitcher-gdbus "workspace");
