@@ -4,7 +4,6 @@
         brightnessctl
         pavucontrol
         wl-clipboard
-        xwayland-satellite
         # keep-sorted end
     ];
 }

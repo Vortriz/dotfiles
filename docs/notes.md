@@ -11,7 +11,6 @@
 
 ## steam issues
 
-- Run under `xwayland-satellite`
 - Fix black screen with: https://github.com/YaLTeR/niri/wiki/Application-Issues#steam
 
 ## AVX2 support

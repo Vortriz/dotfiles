@@ -6,9 +6,35 @@
 }: let
     inherit (osConfig.var) downloadsDir storageDir;
 in {
+    animations = {
+        window-open.kind = {
+            easing = {
+                curve = "ease-out-expo";
+                duration-ms = 250;
+            };
+        };
+        window-close.kind = {
+            easing = {
+                curve = "ease-out-quad";
+                duration-ms = 250;
+            };
+        };
+    };
+
+    environment = {
+        # for electron apps
+        NIXOS_OZONE_WL = "1";
+
+        # ugly fix for flameshot
+        QT_SCREEN_SCALE_FACTORS = builtins.toString (2.0 / 3.0);
+
+        # Set uv cache directory
+        UV_CACHE_DIR = "${storageDir}/dev/.cache/uv";
+    };
+
     hotkey-overlay = {
         skip-at-startup = true;
-        # hide-hot-bound = true; # When niri-flake implements it
+        hide-not-bound = true;
     };
 
     input.touchpad = {
@@ -17,15 +43,12 @@ in {
         dwt = true;
     };
 
-    outputs."eDP-1" = {
-        mode = {
-            height = 1800;
-            width = 2880;
-            refresh = 60.001;
-        };
-
-        scale = 1.5;
-    };
+    layer-rules = [
+        {
+            matches = [{namespace = "overview";}];
+            place-within-backdrop = true;
+        }
+    ];
 
     layout = {
         always-center-single-column = true;
@@ -41,48 +64,35 @@ in {
         };
     };
 
-    workspaces = {
-        "Acad" = {};
-        "Browse" = {};
-        "Code" = {};
+    outputs."eDP-1" = {
+        mode = {
+            height = 1800;
+            width = 2880;
+            refresh = 60.001;
+        };
+
+        scale = 1.5;
     };
 
-    animations = {
-        window-open = {
-            easing = {
-                curve = "ease-out-expo";
-                duration-ms = 250;
-            };
-        };
-        window-close = {
-            easing = {
-                curve = "ease-out-quad";
-                duration-ms = 250;
-            };
-        };
-    };
+    prefer-no-csd = true;
 
-    spawn-at-startup = map (s: {command = pkgs.lib.strings.splitString " " s;})
+    screenshot-path = "${downloadsDir}/captures/linux/%Y-%m-%d (%H-%M-%S).png";
+
+    spawn-at-startup = map (s: {command = lib.strings.splitString " " s;})
     [
         "systemctl --user reset-failed waybar.service"
         "aria2c --enable-rpc --rpc-listen-all"
         "${lib.getExe pkgs.niriswitcher}"
     ];
 
-    prefer-no-csd = true;
-    screenshot-path = "${downloadsDir}/captures/linux/%Y-%m-%d (%H-%M-%S).png";
+    workspaces = {
+        "Acad" = {};
+        "Browse" = {};
+        "Code" = {};
+    };
 
-    environment = {
-        # for electron apps
-        NIXOS_OZONE_WL = "1";
-
-        # ugly fix for flameshot
-        QT_SCREEN_SCALE_FACTORS = builtins.toString (2.0 / 3.0);
-
-        # Set uv cache directory
-        UV_CACHE_DIR = "${storageDir}/dev/.cache/uv";
-
-        # For xwayland-satellite
-        DISPLAY = ":0";
+    xwayland-satellite = {
+        enable = true;
+        path = lib.getExe pkgs.xwayland-satellite-unstable;
     };
 }

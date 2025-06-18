@@ -11,6 +11,12 @@
     };
     Sioyek = {
         name = "Sioyek";
-        keywords = "sioyek";
+        exec = "sioyek %U";
+        icon = "sioyek-icon-linux";
+    };
+    "Wifi Hotspot" = {
+        name = "Hotspot";
+        exec = "wihotspot";
+        icon = "wihotspot";
     };
 }
