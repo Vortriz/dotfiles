@@ -9106,3 +9106,31 @@ Removed packages:
 [R.]  #17  unit-greetd.service                 <none>
 [R-]  #18  xf86-input-libinput                 1.5.0
 Closure size: 7874 -> 8221 (597 paths added, 250 paths removed, delta +347, disk usage +1.2GiB).
+
+---
+
+18/06/25 03:27:58 PM IST
+<<< /nix/var/nix/profiles/system-57-link
+>>> /nix/var/nix/profiles/system-62-link
+Version changes:
+[C.]  #1  chafa          1.16.1, 1.16.1-bin, 1.16.1-dev -> 1.16.1, 1.16.1-bin
+[C.]  #2  ffmpeg         6.1.2-data, 6.1.2-lib, 7.1-data, 7.1-lib, 7.1.1, 7.1.1-bin, 7.1.1-data x2, 7.1.1-dev, 7.1.1-lib x2 -> 6.1.2-data, 6.1.2-lib, 7.1-data, 7.1-lib, 7.1.1-bin, 7.1.1-data x2, 7.1.1-lib x2
+[C.]  #3  nautilus       48.1 -> 48.1, 48.1-fish-completions
+[U*]  #4  niri-unstable  2025-06-13-f3f6e79 -> 2025-06-16-da3dc91
+[U.]  #5  sherlock       0.1.13, 0.1.13-fish-completions -> 0.1.14, 0.1.14-fish-completions
+Added packages:
+[A.]  #1  config.toml                  <none>
+[A.]  #2  swww                         0.10.3-master, 0.10.3-master-fish-completions
+[A.]  #3  swww-overview.service        <none>
+[A.]  #4  swww-workspace.service       <none>
+[A.]  #5  xwayland-satellite-unstable  2025-06-07-da2ecb5
+Removed packages:
+[R.]  #1  25.png                                        <none>
+[R.]  #2  loop-anifetch.sh                              <none>
+[R.]  #3  python3.12-aniftech-wrapped                   <none>
+[R.]  #4  python3.12-aniftech-wrapped-fish-completions  <none>
+[R.]  #5  wpaperd                                       1.2.1, 1.2.1-fish-completions
+[R.]  #6  wpaperd-wallpaper                             <none>
+[R.]  #7  wpaperd.service                               <none>
+[R.]  #8  xwayland-satellite                            0.6, 0.6-fish-completions
+Closure size: 8221 -> 8215 (44 paths added, 50 paths removed, delta -6, disk usage -7.3MiB).
