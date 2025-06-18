@@ -5,6 +5,10 @@
 }: let
     inherit (osConfig.var) downloadsDir;
 in {
+    imports = [
+        ./swww.nix
+    ];
+
     services = {
         # keep-sorted start block=yes newline_separated=yes
         avizo = {
@@ -41,14 +45,11 @@ in {
         };
 
         gnome-keyring.enable = true;
-
-        wpaperd.enable = true;
         # keep-sorted end
     };
 
     stylix.targets.avizo.enable = true;
     stylix.targets.dunst.enable = true;
-    stylix.targets.wpaperd.enable = true;
 
     systemd.user.targets.tray.Unit = {
         Description = "Home Manager System Tray";

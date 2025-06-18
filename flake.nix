@@ -48,11 +48,11 @@
         };
         sherlock.url = "github:Skxxtz/sherlock";
         stylix.url = "github:nix-community/stylix";
+        swww.url = "github:LGFae/swww";
         treefmt-nix = {
             url = "github:numtide/treefmt-nix";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        # swww.url = "github:LGFae/swww"; # [ERROR] https://github.com/LGFae/swww/issues/445
         # keep-sorted end
     };
 
