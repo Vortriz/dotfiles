@@ -10,10 +10,6 @@
             inputs.nixpkgs.follows = "nixpkgs";
             inputs.darwin.follows = "";
         };
-        anifetch = {
-            url = "github:Notenlish/anifetch";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
         home-manager = {
             url = "github:nix-community/home-manager";
             inputs.nixpkgs.follows = "nixpkgs";

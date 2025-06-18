@@ -35,7 +35,8 @@
         })
         // (with inputs; {
             # keep-sorted start
-            launcher = inputs.sherlock.packages.${config.var.system}.default;
+            launcher = sherlock.packages.${config.var.system}.default;
+            wallpaper = swww.packages.${config.var.system}.default;
             # keep-sorted end
         });
 
