@@ -9134,3 +9134,38 @@ Removed packages:
 [R.]  #7  wpaperd.service                               <none>
 [R.]  #8  xwayland-satellite                            0.6, 0.6-fish-completions
 Closure size: 8221 -> 8215 (44 paths added, 50 paths removed, delta -6, disk usage -7.3MiB).
+
+---
+
+19/06/25 02:50:01 PM IST
+<<< /nix/var/nix/profiles/system-62-link
+>>> /nix/var/nix/profiles/system-63-link
+Version changes:
+[C*]  #01  gamescope                                    <none>, 3.16.11 -> <none>, 3.16.12
+[U.]  #02  libusbmuxd                                   2.1.0 -> 2.1.1
+[U.]  #03  linux-firmware                               20250509-zstd -> 20250613-zstd
+[U*]  #04  lm-sensors                                   3.6.0 x2, 3.6.0-bin, 3.6.0-doc -> 3.6.2 x2, 3.6.2-bin, 3.6.2-doc
+[U*]  #05  mkpasswd                                     5.6.1, 5.6.1_fish-completions -> 5.6.2, 5.6.2_fish-completions
+[U*]  #06  nano                                         8.4, 8.4_fish-completions -> 8.5, 8.5_fish-completions
+[U*]  #07  niri-unstable                                2025-06-16-da3dc91 -> 2025-06-18-ed14e8d, 2025-06-18-ed14e8d-doc
+[U.]  #08  nixos-system-nixos                           25.11.20250613.ee930f9 -> 25.11.20250617.9e83b64
+[U.]  #09  rust-analyzer                                2025-06-02 -> 2025-06-09
+[U.]  #10  rust-analyzer-unwrapped                      2025-06-02 -> 2025-06-09
+[U.]  #11  sane-backends                                1.3.1 x2, 1.3.1-man -> 1.4.0 x2, 1.4.0-man
+[U.]  #12  sioyek                                       2.0.0-unstable-2025-05-30, 2.0.0-unstable-2025-05-30-fish-completions -> 2.0.0-unstable-2025-06-07, 2.0.0-unstable-2025-06-07-fish-completions
+[U.]  #13  telegram-desktop                             5.15.3, 5.15.3-fish-completions -> 5.15.4, 5.15.4-fish-completions
+[U.]  #14  vscode                                       1.100.3, 1.100.3-fish-completions -> 1.101.0, 1.101.0-fish-completions
+[U.]  #15  vscode-extension-ms-python-python            2025.7.2025060501 -> 2025.9.2025061801
+[U.]  #16  vscode-extension-rust-lang-rust-analyzer     0.4.2499 -> 0.4.2503
+[U.]  #17  xdg-desktop-portal-termfilechooser-unstable  2025-06-11, 2025-06-11-fish-completions -> 2025-06-18, 2025-06-18-fish-completions
+Added packages:
+[A.]  #1  mediainfo.yazi-b754342      <none>
+[A.]  #2  nh-clean.service            <none>
+[A.]  #3  nh-clean.timer              <none>
+[A.]  #4  plugins                     86d28e4
+[A.]  #5  unit-gcr-ssh-agent.service  <none>
+[A.]  #6  unit-gcr-ssh-agent.socket   <none>
+Removed packages:
+[R.]  #1  mediainfo.yazi-a7d1aa6  <none>
+[R.]  #2  plugins-aeca767         <none>
+Closure size: 8215 -> 8220 (210 paths added, 205 paths removed, delta +5, disk usage +79.0MiB).
