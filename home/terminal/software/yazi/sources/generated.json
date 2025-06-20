@@ -31,13 +31,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "b7543421fda00925a860e17ccf1ff96aaab038ce",
-            "sha256": "sha256-MJdvL9arf4g9BO/sYZ8RLknco6qTxaQILnsuAeEJZoc=",
+            "rev": "a15cdfac6bf23e53fc04a82bc15732257fc789aa",
+            "sha256": "sha256-mvl45GaNaFxZntGJa+sZCrR0lDpHanxAE9FQPPpCMaY=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/boydaihungst/mediainfo.yazi"
         },
-        "version": "b7543421fda00925a860e17ccf1ff96aaab038ce"
+        "version": "a15cdfac6bf23e53fc04a82bc15732257fc789aa"
     },
     "office": {
         "cargoLocks": null,
@@ -161,7 +161,7 @@
     },
     "what-size": {
         "cargoLocks": null,
-        "date": "2025-05-28",
+        "date": "2025-06-19",
         "extract": null,
         "name": "what-size",
         "passthru": null,
@@ -171,13 +171,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "0a4904cf4f8f14d36fe72976d9b6b7597cd303ee",
-            "sha256": "sha256-3prRpFuz1ZjPkpl1h4WCL7HY7XhIWGU5hg1E8bG/8f0=",
+            "rev": "d8966568f2a80394bf1f9a1ace6708ddd4cc8154",
+            "sha256": "sha256-s2BifzWr/uewDI6Bowy7J+5LrID6I6OFEA5BrlOPNcM=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/pirafrank/what-size.yazi"
         },
-        "version": "0a4904cf4f8f14d36fe72976d9b6b7597cd303ee"
+        "version": "d8966568f2a80394bf1f9a1ace6708ddd4cc8154"
     },
     "yamb": {
         "cargoLocks": null,
