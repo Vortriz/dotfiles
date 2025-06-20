@@ -42,7 +42,7 @@
             url = "github:cachix/git-hooks.nix";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        sherlock.url = "github:Skxxtz/sherlock/unstable/release-v0.1.14";
+        sherlock.url = "github:Skxxtz/sherlock";
         stylix.url = "github:nix-community/stylix";
         swww.url = "github:LGFae/swww";
         treefmt-nix = {
