@@ -21,6 +21,7 @@ in {
 
             modules-left = [
                 "custom/launcher"
+                "idle_inhibitor"
                 "niri/workspaces"
             ];
 
@@ -49,6 +50,15 @@ in {
                 "tooltip" = false;
             };
 
+            "idle_inhibitor" = {
+                "format" = "{icon}";
+                "format-icons" = {
+                    "activated" = " ";
+                    "deactivated" = " ";
+                };
+                tootip = true;
+            };
+
             "pulseaudio" = {
                 "scroll-step" = 1;
                 "reverse-scrolling" = true;
@@ -68,8 +78,8 @@ in {
 
             "pulseaudio#microphone" = {
                 "format" = "{format_source}";
-                "format-source" = " {volume}%";
-                "format-source-muted" = "  Muted";
+                "format-source" = "";
+                "format-source-muted" = " ";
                 "on-click-right" = "pactl set-source-mute @DEFAULT_SOURCE@ toggle";
                 "on-scroll-up" = "pactl set-source-volume @DEFAULT_SOURCE@ +2%";
                 "on-scroll-down" = "pactl set-source-volume @DEFAULT_SOURCE@ -2%";
