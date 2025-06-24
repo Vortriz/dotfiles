@@ -1,6 +1,6 @@
 {pkgs, ...}:
 pkgs.writers.writePython3Bin "dl" {
-    libraries = with pkgs.python312Packages; [
+    libraries = with pkgs.python3Packages; [
         requests
         beautifulsoup4
         aria2p
