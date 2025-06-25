@@ -100,22 +100,8 @@ in
         };
         "Ctrl+Shift+O".action = spawn' "oimg";
 
-        "Mod+H" = run {
-            cmd = "niri msg output eDP-1 mode 2880x1800@90.001";
-            notif = "Set display mode to 90Hz";
-        };
-        "Mod+Shift+H" = run {
-            cmd = "niri msg output eDP-1 mode 2880x1800@60.001";
-            notif = "Set display mode to 60Hz";
-        };
-        "Mod+Z" = run {
-            cmd = "niri msg output eDP-1 scale 1";
-            notif = "Set display scale to 1";
-        };
-        "Mod+Shift+Z" = run {
-            cmd = "niri msg output eDP-1 scale 1.5";
-            notif = "Set display scale to 1.5";
-        };
+        "Mod+H".action = spawn' "cycle-rr";
+        "Mod+Z".action = spawn' "cycle-scale";
 
         "Mod+Q".action = close-window;
         "Mod+L" = run {

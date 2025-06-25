@@ -6,6 +6,6 @@ pkgs.writers.writePython3Bin "dl" {
         aria2p
     ];
 
-    flakeIgnore = ["F401" "E501"];
+    flakeIgnore = ["F401" "E501" "W503"];
 }
 ./dl.py
