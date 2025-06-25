@@ -9551,3 +9551,30 @@ Removed packages:
 [R.]  #104  quazip                            1.5
 [R.]  #105  restore.yazi-b7c3376              <none>
 Closure size: 8220 -> 8203 (3348 paths added, 3365 paths removed, delta -17, disk usage -8.4MiB).
+
+---
+
+25/06/25 08:28:35 PM IST
+<<< /nix/var/nix/profiles/system-67-link
+>>> /nix/var/nix/profiles/system-74-link
+Version changes:
+[U*]  #1  niri-unstable                2025-06-23-4c02f3b, 2025-06-23-4c02f3b-doc -> 2025-06-24-37458d9, 2025-06-24-37458d9-doc
+[C.]  #2  python3                      3.11.11, 3.11.13, 3.12.8, 3.13.4 x4, 3.13.4-env x10 -> 3.11.11, 3.11.13, 3.12.8, 3.13.4 x4, 3.13.4-env x11
+[U.]  #3  xwayland-satellite-unstable  2025-06-23-117af56 -> 2025-06-25-2e7c318
+Added packages:
+[A.]  #01  cycle-rr                      <none>
+[A.]  #02  cycle-rr-fish-completions     <none>
+[A.]  #03  cycle-scale                   <none>
+[A.]  #04  cycle-scale-fish-completions  <none>
+[A.]  #05  python3.13-aria2p             0.12.1
+[A.]  #06  python3.13-async-timeout      5.0.1
+[A.]  #07  python3.13-beautifulsoup4     4.13.4
+[A.]  #08  python3.13-bidict             0.23.1
+[A.]  #09  python3.13-dbus-fast          2.44.1
+[A.]  #10  python3.13-desktop-notifier   6.1.1
+[A.]  #11  python3.13-loguru             0.7.3
+[A.]  #12  python3.13-platformdirs       4.3.8
+[A.]  #13  python3.13-soupsieve          2.7
+[A.]  #14  python3.13-toml               0.10.2
+[A.]  #15  python3.13-websocket-client   1.8.0
+Closure size: 8203 -> 8219 (56 paths added, 40 paths removed, delta +16, disk usage +9.0MiB).
