@@ -1,7 +1,7 @@
 # things to do
 
 - [ ] cpu optimisation
-- [ ] figure out cache situation for new install
+- [x] figure out cache situation for new install
 - [ ] try zen browser
     - [ ] flake - https://github.com/0xc000022070/zen-browser-flake
     - [ ] sideberry
@@ -14,4 +14,4 @@
     - [x] https://github.com/utensils/mcp-nixos
         - [ ] but schite aint worke - https://github.com/zed-industries/zed/issues/23507
 - [ ] https://github.com/boydaihungst/gvfs.yazi
-- [ ] sioyek doesn't launch from sherlock
+- [x] sioyek doesn't launch from sherlock

@@ -1,5 +1,7 @@
 <h1 align="center">Vortriz/dotfiles</h1>
 
+<img src="/assets/screenshot.png" alt="screenshot">
+
 |              | Wayland                     |
 | ------------ | --------------------------- |
 | **Shell**    | fish                        |

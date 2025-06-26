@@ -1,10 +1,4 @@
 {
-    lib,
-    osConfig,
-    ...
-}: let
-    inherit (osConfig.defaults) shell;
-in {
     "$schema" = "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json";
     logo = {
         type = "builtin";
@@ -68,7 +62,7 @@ in {
         }
         {
             type = "shell";
-            format = lib.getName shell;
+            format = "{pretty-name} {version}";
             key = "└ └";
             keyColor = "yellow";
         }
