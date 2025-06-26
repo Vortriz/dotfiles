@@ -1,4 +1,5 @@
 {
+    config,
     inputs,
     lib,
     osConfig,
@@ -13,10 +14,6 @@ in {
         package = launcher;
 
         settings = {
-            aliases = import ./aliases.nix;
-            config = import ./config.nix {inherit lib osConfig;};
-            launchers = import ./launchers.nix;
-
             style = with builtins;
                 fetchurl {
                     url = "https://raw.githubusercontent.com/Skxxtz/sherlock/refs/heads/documentation/resources/main.css";
@@ -24,6 +21,15 @@ in {
                 }
                 |> readFile
                 |> (f: f + readFile ./extra.css);
+        };
+    };
+
+    programs.niri.settings.binds = {
+        "Alt+Space" = config.niri-lib.open {app = launcher;};
+
+        "Mod+Period" = config.niri-lib.run {
+            cmd = "${lib.getExe launcher} --sub-menu emoji";
+            title = "Open emoji picker";
         };
     };
 }

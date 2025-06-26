@@ -5,7 +5,7 @@
 }: let
     inherit (osConfig.defaults) shell;
 in {
-    mgr.prepend_keymap = [
+    programs.yazi.keymap.mgr.prepend_keymap = [
         # custom-shell
         {
             on = ["'" ";"];

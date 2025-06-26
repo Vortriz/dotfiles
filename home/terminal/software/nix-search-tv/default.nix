@@ -1,4 +1,9 @@
-{pkgs, ...}: let
+{
+    config,
+    pkgs,
+    lib,
+    ...
+}: let
     ns =
         builtins.fetchurl {
             url = "https://raw.githubusercontent.com/3timeslazy/nix-search-tv/refs/heads/main/nixpkgs.sh";
@@ -11,4 +16,9 @@ in {
         pkgs.nix-search-tv
         ns
     ];
+
+    programs.niri.settings.binds."Mod+P" = config.niri-lib.open-tui {
+        app = "ns";
+        app-id = lib.getName pkgs.nix-search-tv;
+    };
 }

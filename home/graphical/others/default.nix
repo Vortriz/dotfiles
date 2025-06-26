@@ -6,7 +6,6 @@
         diffpdf
         gnome-calculator
         kdePackages.filelight
-        mission-center
         obsidian
         pdfarranger
         qbittorrent

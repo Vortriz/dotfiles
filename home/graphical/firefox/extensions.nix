@@ -6,8 +6,8 @@ let
             installation_mode = "normal_installed";
         };
     };
-in
-    builtins.listToAttrs [
+in {
+    programs.firefox.policies.ExtensionSettings = builtins.listToAttrs [
         # find in source page by `byGUID`
         # keep-sorted start
         (extension "bitwarden-password-manager" "{446900e4-71c2-419f-a6a7-df9c091e268b}")
@@ -21,4 +21,5 @@ in
         (extension "ublock-origin" "uBlock0@raymondhill.net")
         (extension "userchrome-toggle-extended" "userchrome-toggle-extended@n2ezr.ru")
         # keep-sorted end
-    ]
+    ];
+}

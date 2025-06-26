@@ -1,4 +1,10 @@
-{osConfig, ...}: let
+{
+    config,
+    lib,
+    osConfig,
+    pkgs,
+    ...
+}: let
     inherit (osConfig.var) dotfilesDir;
 in {
     programs.hyprlock = {
@@ -84,5 +90,10 @@ in {
                 }
             ];
         };
+    };
+
+    programs.niri.settings.binds."Mod+L" = config.niri-lib.run {
+        cmd = "niri msg action do-screen-transition && ${lib.getExe pkgs.hyprlock} --immediate";
+        title = "Lock screen";
     };
 }

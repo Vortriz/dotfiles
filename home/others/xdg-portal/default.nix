@@ -34,6 +34,4 @@ in {
             env=TERMCMD=${lib.getName terminal}
         '';
     };
-
-    home.packages = [pkgs.nautilus]; # [FIXME] xdg-desktop-portal-termfilechooser-git is acting up
 }

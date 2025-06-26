@@ -32,8 +32,6 @@ in {
                 }
                 |> builtins.readFile
                 |> builtins.fromJSON;
-
-            extensions = import ./extensions.nix {inherit pkgs;};
         };
     };
 

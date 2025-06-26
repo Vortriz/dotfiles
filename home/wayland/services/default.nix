@@ -1,11 +1,6 @@
 {
-    osConfig,
-    pkgs,
-    ...
-}: let
-    inherit (osConfig.var) downloadsDir;
-in {
     imports = [
+        ./flameshot.nix
         ./swww.nix
     ];
 
@@ -26,24 +21,6 @@ in {
             };
         };
 
-        flameshot = {
-            enable = true;
-
-            settings = {
-                General = {
-                    # keep-sorted start
-                    contrastOpacity = 188;
-                    filenamePattern = "%F (%T)";
-                    saveAsFileExtension = "png";
-                    savePath = "${downloadsDir}/captures/linux";
-                    savePathFixed = false;
-                    showStartupLaunchMessage = false;
-                    startupLaunch = true;
-                    # keep-sorted end
-                };
-            };
-        };
-
         gnome-keyring.enable = true;
         # keep-sorted end
     };
@@ -55,6 +32,4 @@ in {
         Description = "Home Manager System Tray";
         Requires = ["graphical-session-pre.target"];
     };
-
-    home.packages = [pkgs.grim];
 }
