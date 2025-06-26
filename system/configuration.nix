@@ -45,8 +45,8 @@ in {
 
             # Add extra Caches
             substituters = [
-                "https://niri.cachix.org"
-                "https://watersucks.cachix.org"
+                "https://niri.cachix.org?priority=10"
+                "https://watersucks.cachix.org?priority=11"
             ];
             trusted-public-keys = [
                 "niri.cachix.org-1:Wv0OmO7PsuocRKzfDoJ3mulSl7Z6oezYhGhR+3W2964="

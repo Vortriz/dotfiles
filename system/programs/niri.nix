@@ -11,7 +11,7 @@
         package = pkgs.niri-unstable;
     };
 
-    niri-flake.cache.enable = true;
+    niri-flake.cache.enable = false;
 
     services.displayManager.gdm.enable = true;
 }
