@@ -79,7 +79,7 @@ in
         };
         "Mod+P" = open-tui {
             app = "ns";
-            app-id = getName config.programs.nix-search-tv.package;
+            app-id = getName pkgs.nix-search-tv;
         };
 
         "Print" = open {

@@ -1,6 +1,5 @@
 {
     config,
-    inputs,
     outputs,
     ...
 }: let
@@ -26,9 +25,8 @@ in {
             outputs.overlays.modifications
 
             # keep-sorted start
-            inputs.nix-vscode-extensions.overlays.default
-            inputs.nur.overlays.default
-            #keep-sorted end
+            # inputs.nur.overlays.default
+            # keep-sorted end
         ];
 
         config = {

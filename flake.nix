@@ -14,7 +14,7 @@
             url = "github:nix-community/home-manager";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        mcp-nixos.url = "github:utensils/mcp-nixos";
+        # mcp-nixos.url = "github:utensils/mcp-nixos"; # wait for zed to support this
         misumisumi-flakes = {
             url = "github:misumisumi/flakes";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -24,16 +24,11 @@
             url = "github:nix-community/nix-index-database";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        nix-search-tv = {
-            url = "github:3timeslazy/nix-search-tv";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-        nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
-        nixos-cli.url = "github:nix-community/nixos-cli";
-        nur = {
-            url = "github:nix-community/NUR";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
+        # nixos-cli.url = "github:nix-community/nixos-cli";
+        # nur = {
+        #     url = "github:nix-community/NUR";
+        #     inputs.nixpkgs.follows = "nixpkgs";
+        # };
         # nur-vortriz = {
         #     url = "path:/mnt/HOUSE/dev/nix/nur-packages";
         #     inputs.nixpkgs.follows = "nixpkgs";
@@ -42,9 +37,13 @@
             url = "github:cachix/git-hooks.nix";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        sherlock.url = "github:Skxxtz/sherlock";
+        sherlock = {
+            url = "github:Skxxtz/sherlock";
+            inputs.nixpkgs.follows = "nixpkgs";
+            inputs.home-manager.follows = "home-manager";
+        };
         stylix.url = "github:nix-community/stylix";
-        swww.url = "github:LGFae/swww";
+        swww.url = "github:LGFae/swww"; # [TODO] remove when new release is in nixpkgs
         treefmt-nix = {
             url = "github:numtide/treefmt-nix";
             inputs.nixpkgs.follows = "nixpkgs";

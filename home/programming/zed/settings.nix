@@ -21,16 +21,16 @@ in {
     auto_update = false;
     buffer_font_family = fontName;
     buffer_font_size = fontSize;
-    context_servers = {
-        nixos = {
-            command = {
-                path = "mcp-nixos";
-                args = [];
-                env = {};
-            };
-            settings = {};
-        };
-    };
+    # context_servers = {
+    #     nixos = {
+    #         command = {
+    #             path = "mcp-nixos";
+    #             args = [];
+    #             env = {};
+    #         };
+    #         settings = {};
+    #     };
+    # };
     cursor_shape = "bar";
     features.edit_prediction_provider = "copilot";
     git.inline_blame.enabled = false;

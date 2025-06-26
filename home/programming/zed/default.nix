@@ -1,12 +1,9 @@
 {
-    inputs,
     lib,
     osConfig,
     pkgs,
     ...
-}: let
-    inherit (osConfig.var) system;
-in {
+}: {
     programs.zed-editor = {
         enable = true;
 
@@ -26,22 +23,18 @@ in {
             # keep-sorted end
         ];
 
-        extraPackages =
-            (with pkgs; [
-                # keep-sorted start
-                alejandra
-                ltex-ls-plus
-                nixd
-                package-version-server
-                ruff
-                rust-analyzer
-                texlab
-                tinymist
-                # keep-sorted end
-            ])
-            ++ (with inputs; [
-                mcp-nixos.packages.${system}.default
-            ]);
+        extraPackages = with pkgs; [
+            # keep-sorted start
+            alejandra
+            ltex-ls-plus
+            nixd
+            package-version-server
+            ruff
+            rust-analyzer
+            texlab
+            tinymist
+            # keep-sorted end
+        ];
     };
 
     stylix.targets.zed.enable = true;

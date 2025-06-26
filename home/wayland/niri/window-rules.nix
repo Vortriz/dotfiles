@@ -1,11 +1,9 @@
 {
-    inputs,
     lib,
     osConfig,
     ...
 }: let
     inherit (lib) getName;
-    inherit (osConfig.var) system;
     inherit (osConfig.defaults) browser file-manager terminal video-player;
 in [
     {
@@ -32,7 +30,7 @@ in [
             {app-id = "Zotero";}
             {app-id = "dev.zed.Zed";}
             {app-id = "vesktop";}
-            {app-id = getName inputs.nix-search-tv.packages.${system}.default;}
+            {app-id = "nix-search-tv";}
         ];
     }
     {

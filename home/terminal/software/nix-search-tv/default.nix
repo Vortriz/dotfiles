@@ -1,10 +1,4 @@
-{
-    inputs,
-    osConfig,
-    pkgs,
-    ...
-}: let
-    inherit (osConfig.var) system;
+{pkgs, ...}: let
     ns =
         builtins.fetchurl {
             url = "https://raw.githubusercontent.com/3timeslazy/nix-search-tv/refs/heads/main/nixpkgs.sh";
@@ -13,10 +7,8 @@
         |> builtins.readFile
         |> pkgs.writeShellScriptBin "ns";
 in {
-    programs.nix-search-tv = {
-        enable = true;
-        package = inputs.nix-search-tv.packages.${system}.default;
-    };
-
-    home.packages = [ns];
+    home.packages = [
+        pkgs.nix-search-tv
+        ns
+    ];
 }
