@@ -9948,3 +9948,60 @@ Removed packages:
 [R.]  #40  vscode-extension-rubymaniac-vscode-paste-and-indent  0.0.8
 [R.]  #41  vscode-extension-rust-lang-rust-analyzer             0.4.2511
 Closure size: 8219 -> 7855 (157 paths added, 521 paths removed, delta -364, disk usage -1.3GiB).
+
+---
+
+27/06/25 01:11:18 AM IST
+<<< /nix/var/nix/profiles/system-75-link
+>>> /nix/var/nix/profiles/system-76-link
+Version changes:
+[C.]  #1  nautilus  48.2, 48.2-fish-completions -> 48.2
+[C.]  #2  source    <none> x3 -> <none> x4
+Removed packages:
+[R.]  #01  gdb                                                   16.3
+[R.]  #02  libipt                                                2.1.2
+[R.]  #03  python3.13-annotated-types                            0.7.0
+[R.]  #04  python3.13-cattrs                                     24.1.3
+[R.]  #05  python3.13-debugpy                                    1.8.14
+[R.]  #06  python3.13-docstring-to-markdown                      0.15
+[R.]  #07  python3.13-jedi                                       0.19.2
+[R.]  #08  python3.13-jedi-language-server                       0.45.1
+[R.]  #09  python3.13-lsprotocol                                 2023.0.1
+[R.]  #10  python3.13-parso                                      0.8.4
+[R.]  #11  python3.13-pydantic                                   2.11.4
+[R.]  #12  python3.13-pydantic-core                              2.33.2
+[R.]  #13  python3.13-pygls                                      1.3.1
+[R.]  #14  python3.13-typeguard                                  4.4.2
+[R.]  #15  python3.13-typing-inspection                          0.4.1
+[R.]  #16  setup-debug-info-dirs-hook                            <none>
+[R.]  #17  source-highlight                                      3.1.9
+[R.]  #18  vscode-extension-James-Yu-latex-workshop              10.10.0
+[R.]  #19  vscode-extension-MS-python-vscode-pylance             2025.6.1
+[R.]  #20  vscode-extension-Rubymaniac-vscode-paste-and-indent   0.0.8
+[R.]  #21  vscode-extension-donjayamanne-githistory              0.6.20
+[R.]  #22  vscode-extension-github-copilot                       1.335.0
+[R.]  #23  vscode-extension-github-copilot-chat                  0.28.0
+[R.]  #24  vscode-extension-jnoortheen-nix-ide                   0.4.18
+[R.]  #25  vscode-extension-jock-svg                             1.5.4
+[R.]  #26  vscode-extension-julialang-language-julia             1.146.2
+[R.]  #27  vscode-extension-ltex-plus-vscode-ltex-plus           15.5.1
+[R.]  #28  vscode-extension-mikestead-dotenv                     1.0.1
+[R.]  #29  vscode-extension-mkhl-direnv                          0.17.0
+[R.]  #30  vscode-extension-ms-azuretools-vscode-docker          2.0.0
+[R.]  #31  vscode-extension-ms-python-isort                      2025.0.0
+[R.]  #32  vscode-extension-ms-python-python                     2025.6.1
+[R.]  #33  vscode-extension-ms-toolsai-jupyter                   2025.4.1
+[R.]  #34  vscode-extension-ms-toolsai-jupyter-renderers         1.1.2025012901
+[R.]  #35  vscode-extension-ms-toolsai-vscode-jupyter-cell-tags  0.1.9
+[R.]  #36  vscode-extension-ms-vscode-remote-remote-containers   0.417.0
+[R.]  #37  vscode-extension-ms-vsliveshare-vsliveshare           1.0.5948
+[R.]  #38  vscode-extension-myriad-dreamin-tinymist              0.13.14
+[R.]  #39  vscode-extension-nefrob-vscode-just-syntax            0.8.0
+[R.]  #40  vscode-extension-ritwickdey-liveserver                5.7.9
+[R.]  #41  vscode-extension-rust-analyzer                        0.3.2308
+[R.]  #42  vscode-extension-shd101wyy-markdown-preview-enhanced  0.8.18
+[R.]  #43  vscode-extension-tamasfe-even-better-toml             0.21.2
+[R.]  #44  vscode-extension-tomoki1207-pdf                       1.2.2
+[R.]  #45  vscode-extension-yzhang-markdown-all-in-one           3.6.3
+[R.]  #46  xsel                                                  1.2.1
+Closure size: 7855 -> 7809 (23 paths added, 69 paths removed, delta -46, disk usage -579.0MiB).
