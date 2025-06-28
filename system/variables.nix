@@ -31,12 +31,12 @@
             shell = fish;
             terminal = kitty;
             video-player = celluloid;
+            wallpaper = swww-git;
             # keep-sorted end
         })
         // (with inputs; {
             # keep-sorted start
             launcher = sherlock.packages.${config.var.system}.default;
-            wallpaper = swww.packages.${config.var.system}.default;
             # keep-sorted end
         });
 

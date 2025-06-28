@@ -1,13 +1,12 @@
 {
     config,
-    inputs,
     osConfig,
+    pkgs,
     ...
 }: let
-    inherit (osConfig.var) system;
     inherit (osConfig.defaults) wallpaper;
 in {
-    home.packages = [inputs.swww.packages.${system}.default];
+    home.packages = [pkgs.swww-git];
 
     systemd.user.services.swww-workspace = {
         Install = {

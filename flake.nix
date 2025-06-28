@@ -43,7 +43,6 @@
             inputs.home-manager.follows = "home-manager";
         };
         stylix.url = "github:nix-community/stylix";
-        swww.url = "github:LGFae/swww"; # [TODO] remove when new release is in nixpkgs
         treefmt-nix = {
             url = "github:numtide/treefmt-nix";
             inputs.nixpkgs.follows = "nixpkgs";
