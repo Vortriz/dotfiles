@@ -15,10 +15,6 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         # mcp-nixos.url = "github:utensils/mcp-nixos"; # wait for zed to support this
-        misumisumi-flakes = {
-            url = "github:misumisumi/flakes";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
         niri.url = "github:sodiboo/niri-flake";
         nix-index-database = {
             url = "github:nix-community/nix-index-database";
