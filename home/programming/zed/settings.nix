@@ -40,9 +40,24 @@ in {
             Nix = {
                 language_servers = ["nixd" "!nil"];
                 formatter.external = {
-                    command = "alejandra";
-                    arguments = ["--quiet"];
+                    command = "nix";
+                    arguments = ["fmt"];
                 };
+            };
+            Python = {
+                language_servers = ["pyright" "ruff" "!pylsp"];
+                format_on_save = "on";
+                formatter = [
+                    {
+                        code_actions = {
+                            "source.fixAll.ruff" = true;
+                            "source.organizeImports.ruff" = true;
+                        };
+                    }
+                    {
+                        language_server.name = "ruff";
+                    }
+                ];
             };
         };
         lsp =
