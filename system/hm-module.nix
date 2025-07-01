@@ -2,6 +2,7 @@
     config,
     inputs,
     outputs,
+    system,
     ...
 }: let
     inherit (config.var) username;
@@ -12,7 +13,7 @@ in {
     ];
 
     home-manager = {
-        extraSpecialArgs = {inherit inputs outputs;};
+        extraSpecialArgs = {inherit inputs outputs system;};
 
         backupFileExtension = "backup";
         useGlobalPkgs = true;

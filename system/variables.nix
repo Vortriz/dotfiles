@@ -3,6 +3,7 @@
     inputs,
     lib,
     pkgs,
+    system,
     ...
 }: {
     config.var = rec {
@@ -13,7 +14,6 @@
         timeZone = "Asia/Kolkata";
         defaultLocale = "en_IN";
         extraLocale = defaultLocale;
-        inherit (pkgs) system;
 
         storageDir = "/mnt/HOUSE";
         downloadsDir = storageDir + "/downloads";
@@ -36,8 +36,8 @@
         })
         // (with inputs; {
             # keep-sorted start
-            desktop-shell = niri-shell.packages.${config.var.system}.default;
-            launcher = sherlock.packages.${config.var.system}.default;
+            desktop-shell = niri-shell.packages.${system}.default;
+            launcher = sherlock.packages.${system}.default;
             # keep-sorted end
         });
 
