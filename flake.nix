@@ -20,6 +20,7 @@
             url = "github:nix-community/nix-index-database";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+        nixos-hardware.url = "github:NixOS/nixos-hardware";
         # nixos-cli.url = "github:nix-community/nixos-cli";
         # nur = {
         #     url = "github:nix-community/NUR";

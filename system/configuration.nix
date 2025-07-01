@@ -11,6 +11,7 @@ in {
         ../secrets/agenix.nix
         ./hardware-configuration.nix
         ./hm-module.nix
+        ./nixos-hw.nix
         ./services.nix
         ./settings.nix
         ./variables.nix
