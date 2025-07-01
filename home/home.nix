@@ -20,9 +20,6 @@ in {
     # Nicely reload system units when changing configs
     systemd.user.startServices = "sd-switch";
 
-    # For setting default applications
-    xdg.mimeApps.enable = true;
-
     # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
     home.stateVersion = "24.11";
 }

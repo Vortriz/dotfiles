@@ -4,9 +4,22 @@
     pkgs,
     ...
 }: let
+    inherit (osConfig.var) downloadsDir;
     inherit (osConfig.defaults) file-manager terminal;
 in {
     xdg = {
+        # For setting default applications
+        mimeApps.enable = true;
+
+        userDirs = {
+            enable = true;
+
+            download = downloadsDir;
+            pictures = "${downloadsDir}/media";
+            videos = "${downloadsDir}/media";
+        };
+
+        # Portals
         portal = {
             enable = true;
 
