@@ -7,20 +7,29 @@
 with config.lib.niri.actions; let
     inherit (config.niri-lib) spawn' run;
 
-    vol = cmd: {
-        allow-when-locked = true;
-        action = spawn' "${pkgs.avizo}/bin/volumectl -d -u ${cmd}";
-    };
+    vol = cmd:
+        (run {
+            cmd = "${lib.getExe pkgs.pamixer} ${cmd} && ignis open-window ignis_OSD_Speaker";
+        })
+        // {
+            allow-when-locked = true;
+        };
 
-    mute = cmd: {
-        allow-when-locked = true;
-        action = spawn' "${pkgs.avizo}/bin/volumectl -d ${cmd}";
-    };
+    mute = cmd: device:
+        (run {
+            cmd = "${lib.getExe pkgs.pamixer} -t${cmd} && ignis open-window ignis_OSD_${device}";
+        })
+        // {
+            allow-when-locked = true;
+        };
 
-    brightness = cmd: {
-        allow-when-locked = true;
-        action = spawn' "${pkgs.avizo}/bin/lightctl -d -e 4 ${cmd}";
-    };
+    brightness = cmd:
+        (run {
+            cmd = "${lib.getExe pkgs.brightnessctl} set -e ${cmd} && ignis open-window ignis_OSD_Backlight";
+        })
+        // {
+            allow-when-locked = true;
+        };
 in {
     programs.niri.settings.binds =
         {
@@ -84,14 +93,14 @@ in {
             "Mod+Shift+Minus".action = set-window-height "-10%";
             "Mod+Shift+Equal".action = set-window-height "+10%";
 
-            "XF86AudioRaiseVolume" = vol "+";
-            "XF86AudioLowerVolume" = vol "-";
+            "XF86AudioRaiseVolume" = vol "-i 5";
+            "XF86AudioLowerVolume" = vol "-d 5";
 
-            "XF86AudioMute" = mute "%";
-            "XF86AudioMicMute" = mute "-m %";
+            "XF86AudioMute" = mute "" "Speaker";
+            "XF86AudioMicMute" = mute " --default-source" "Mic";
 
-            "XF86MonBrightnessUp" = brightness "+";
-            "XF86MonBrightnessDown" = brightness "-";
+            "XF86MonBrightnessUp" = brightness "+5%";
+            "XF86MonBrightnessDown" = brightness "5%-";
 
             "Mod+Shift+P".action = power-off-monitors;
             "Mod+Shift+E".action = quit;

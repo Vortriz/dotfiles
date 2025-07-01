@@ -8,7 +8,7 @@
     inherit (osConfig.defaults) launcher;
 in {
     programs.waybar = {
-        enable = true;
+        enable = false;
 
         style = pkgs.substitute {
             src = ./style.css;

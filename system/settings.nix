@@ -42,7 +42,11 @@ in {
         ++ [monospaceFont];
 
     hardware = {
-        bluetooth.enable = true;
+        bluetooth = {
+            enable = true;
+
+            powerOnBoot = false;
+        };
 
         graphics = {
             enable = true;

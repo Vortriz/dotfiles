@@ -105,6 +105,8 @@ in {
         };
 
         udev.packages = [pkgs.libfprint-focaltech-2808-a658];
+
+        upower.enable = true;
         # keep-sorted end
     };
 }

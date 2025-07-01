@@ -14,6 +14,10 @@
             url = "github:nix-community/home-manager";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+        niri-shell = {
+            url = "github:Vortriz/niri-shell";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
         # mcp-nixos.url = "github:utensils/mcp-nixos"; # wait for zed to support this
         niri.url = "github:sodiboo/niri-flake";
         nix-index-database = {

@@ -4,7 +4,8 @@
     pkgs,
     ...
 }: let
-    inherit (osConfig.var) downloadsDir storageDir;
+    inherit (osConfig.var) downloadsDir storageDir username;
+    inherit (osConfig.defaults) desktop-shell;
 in {
     programs.niri.settings = {
         animations = {
@@ -56,10 +57,12 @@ in {
             default-column-width.proportion = 0.5;
             focus-ring.width = 2;
 
+            struts.top = -8;
+
             tab-indicator = {
                 enable = true;
                 hide-when-single-tab = true;
-                gap = -10;
+                gap = -12;
                 length.total-proportion = 0.25;
                 position = "top";
             };
@@ -84,6 +87,7 @@ in {
             "systemctl --user reset-failed waybar.service"
             "aria2c --enable-rpc --rpc-listen-all"
             "${lib.getExe pkgs.niriswitcher}"
+            "${lib.getExe desktop-shell} init -c /home/${username}/ignis/config.py"
         ];
 
         workspaces = {

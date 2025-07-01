@@ -8,6 +8,7 @@
             "ltex"
             "nix"
             "ruff"
+            "scss"
             "typst"
             "vscode-icons"
             # keep-sorted end
@@ -23,6 +24,7 @@
             rust-analyzer
             texlab
             tinymist
+            tree-sitter-grammars.tree-sitter-scss
             # keep-sorted end
         ];
     };
