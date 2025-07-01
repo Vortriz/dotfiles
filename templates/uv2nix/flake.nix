@@ -2,7 +2,7 @@
     description = "uv2nix Flake";
 
     inputs = {
-        nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+        nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
         pyproject-nix = {
             url = "github:pyproject-nix/pyproject.nix";
