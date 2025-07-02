@@ -10497,3 +10497,26 @@ Removed packages:
 [R.]  #16  waybar-config.json        <none>
 [R.]  #17  waybar.service            <none>
 Closure size: 7809 -> 7918 (1055 paths added, 946 paths removed, delta +109, disk usage +1.6GiB).
+
+---
+
+03/07/25 02:16:11 AM IST
+<<< /nix/var/nix/profiles/system-79-link
+>>> /nix/var/nix/profiles/system-80-link
+Version changes:
+[D.]  #1  python3.13-ignis  0.5.dev0+date=20250701_2fc39ad, 0.5.dev0+date=20250701_2fc39ad-fish-completions -> 0.5.dev0+date=20250701_f3c2086, 0.5.dev0+date=20250701_f3c2086-fish-completions
+Added packages:
+[A.]  #01  deadnix             1.2.1
+[A.]  #02  keep-sorted         0.6.1
+[A.]  #03  plugins-e5f00e2     <none>
+[A.]  #04  prettier            3.5.3
+[A.]  #05  python3.13-tomlkit  0.13.3
+[A.]  #06  statix              0.5.8
+[A.]  #07  statix-config       <none>
+[A.]  #08  statix-fix          <none>
+[A.]  #09  toml-sort           0.24.2
+[A.]  #10  treefmt             <none>, 2.3.1
+[A.]  #11  treefmt.toml        <none>
+Removed packages:
+[R.]  #1  plugins  2ad42fa
+Closure size: 7918 -> 7929 (30 paths added, 19 paths removed, delta +11, disk usage +25.7MiB).
