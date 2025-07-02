@@ -3,6 +3,7 @@
     inputs,
     lib,
     osConfig,
+    pkgs,
     ...
 }: let
     inherit (osConfig.defaults) launcher;
@@ -25,11 +26,13 @@ in {
     };
 
     programs.niri.settings.binds = {
-        "Alt+Space" = config.niri-lib.open {app = launcher;};
+        # "Alt+Space" = config.niri-lib.open {app = launcher;};
 
-        "Mod+Period" = config.niri-lib.run {
-            cmd = "${lib.getExe launcher} --sub-menu emoji";
-            title = "Open emoji picker";
-        };
+        # "Mod+Period" = config.niri-lib.run {
+        #     cmd = "${lib.getExe launcher} --sub-menu emoji";
+        #     title = "Open emoji picker";
+        # };
+
+        "Alt+Space" = config.niri-lib.open {app = pkgs.walker;};
     };
 }
