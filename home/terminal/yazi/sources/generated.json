@@ -61,7 +61,7 @@
     },
     "official-plugins-monorepo": {
         "cargoLocks": null,
-        "date": "2025-06-28",
+        "date": "2025-07-02",
         "extract": null,
         "name": "official-plugins-monorepo",
         "passthru": null,
@@ -71,13 +71,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "2ad42fa7065b4885ff058280b4ab4309c11a5755",
-            "sha256": "sha256-+FDiOaEYkA0A8w+Cg2Y/pFZY56lOsWLeKCNwLI0ZKVk=",
+            "rev": "e5f00e2716fd177b0ca0d313f1a6e64f01c12760",
+            "sha256": "sha256-DLcmzCmITybWrYuBpTyswtoGUimpagkyeVUWmbKjarY=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/yazi-rs/plugins"
         },
-        "version": "2ad42fa7065b4885ff058280b4ab4309c11a5755"
+        "version": "e5f00e2716fd177b0ca0d313f1a6e64f01c12760"
     },
     "other-monorepo": {
         "cargoLocks": null,
