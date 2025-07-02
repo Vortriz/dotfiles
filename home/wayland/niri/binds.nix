@@ -5,31 +5,8 @@
     ...
 }:
 with config.lib.niri.actions; let
+    inherit (lib) getExe;
     inherit (config.niri-lib) spawn' run;
-
-    vol = cmd:
-        (run {
-            cmd = "${lib.getExe pkgs.pamixer} ${cmd} && ignis open-window ignis_OSD_Speaker";
-        })
-        // {
-            allow-when-locked = true;
-        };
-
-    mute = cmd: device:
-        (run {
-            cmd = "${lib.getExe pkgs.pamixer} -t${cmd} && ignis open-window ignis_OSD_${device}";
-        })
-        // {
-            allow-when-locked = true;
-        };
-
-    brightness = cmd:
-        (run {
-            cmd = "${lib.getExe pkgs.brightnessctl} set -e ${cmd} && ignis open-window ignis_OSD_Backlight";
-        })
-        // {
-            allow-when-locked = true;
-        };
 in {
     programs.niri.settings.binds =
         {
@@ -39,14 +16,20 @@ in {
             "Ctrl+Shift+Print".action.screenshot-screen = []; # [TODO] change after https://github.com/sodiboo/niri-flake/issues/944
 
             "Mod+C" = run {
-                cmd = "${lib.getExe pkgs.zenity} --color-selection --title 'Color picker' --color $(${lib.getExe pkgs.hyprpicker} -an)";
+                cmd = "${getExe pkgs.zenity} --color-selection --title 'Color picker' --color $(${getExe pkgs.hyprpicker} -an)";
                 title = "Open color picker";
             };
 
             "Ctrl+Shift+O".action = spawn' "oimg";
 
-            "Mod+H".action = spawn' "cycle-rr";
-            "Mod+Z".action = spawn' "cycle-scale";
+            "Mod+H" = run {
+                cmd = "cycle-rr";
+                title = "Toggle refresh rate";
+            };
+            "Mod+Z" = run {
+                cmd = "cycle-scale";
+                title = "Toggle display scale";
+            };
 
             "Mod+Q".action = close-window;
 
@@ -92,15 +75,6 @@ in {
 
             "Mod+Shift+Minus".action = set-window-height "-10%";
             "Mod+Shift+Equal".action = set-window-height "+10%";
-
-            "XF86AudioRaiseVolume" = vol "-i 5";
-            "XF86AudioLowerVolume" = vol "-d 5";
-
-            "XF86AudioMute" = mute "" "Speaker";
-            "XF86AudioMicMute" = mute " --default-source" "Mic";
-
-            "XF86MonBrightnessUp" = brightness "+5%";
-            "XF86MonBrightnessDown" = brightness "5%-";
 
             "Mod+Shift+P".action = power-off-monitors;
             "Mod+Shift+E".action = quit;
