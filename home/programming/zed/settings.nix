@@ -24,6 +24,7 @@ in {
         buffer_font_size = fontSize;
         # context_servers = {
         #     nixos = {
+        #         source =  "custom";
         #         command = {
         #             path = "mcp-nixos";
         #             args = [];
@@ -38,6 +39,7 @@ in {
         icon_theme = "VSCode Icons (Dark)";
         languages = {
             Nix = {
+                format_on_save = "on";
                 language_servers = ["nixd" "!nil"];
                 formatter.external = {
                     command = "nix";
@@ -45,28 +47,30 @@ in {
                 };
             };
             Python = {
-                language_servers = ["pyright" "ruff" "!pylsp"];
                 format_on_save = "on";
+                language_servers = ["pyright" "ruff" "!pylsp"];
                 formatter = [
                     {
                         code_actions = {
-                            "source.fixAll.ruff" = true;
                             "source.organizeImports.ruff" = true;
+                            "source.fixAll.ruff" = true;
                         };
                     }
                     {
-                        language_server.name = "ruff";
+                        external = {
+                            command = "ruff";
+                            arguments = ["format" "--stdin-filename" "{buffer_path}"];
+                        };
                     }
                 ];
             };
         };
         lsp =
-            [
+            ([
                 # keep-sorted start
                 "ltex-ls-plus"
                 "nixd"
                 "package-version-server"
-                "ruff"
                 "rust-analyzer"
                 "texlab"
                 "tinymist"
@@ -78,7 +82,16 @@ in {
                     path = lib.getExe pkgs.${name};
                 };
             })
-            |> lib.mergeAttrsList;
+            |> lib.mergeAttrsList)
+            // {
+                ruff = {
+                    binary = {
+                        path_lookup = true;
+                        path = lib.getExe pkgs.ruff;
+                    };
+                    initialization_options.settings.path = "./pyproject.toml";
+                };
+            };
         minimap = {
             show = "always";
             thumb = "always";

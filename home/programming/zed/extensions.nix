@@ -1,5 +1,11 @@
-{pkgs, ...}: {
-    programs.zed-editor = {
+{
+    outputs,
+    pkgs,
+    lib,
+    system,
+    ...
+}: {
+    programs.zed-editor = rec {
         extensions = [
             # keep-sorted start
             "julia"
@@ -19,6 +25,7 @@
             alejandra
             ltex-ls-plus
             nixd
+            outputs.formatter.${system}
             package-version-server
             ruff
             rust-analyzer
@@ -27,5 +34,9 @@
             tree-sitter-grammars.tree-sitter-scss
             # keep-sorted end
         ];
+
+        userSettings = {
+            auto_install_extensions = lib.attrsets.genAttrs extensions (_ext: false);
+        };
     };
 }
