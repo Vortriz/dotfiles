@@ -60,18 +60,18 @@
         inherit (self) outputs;
         inherit (nixpkgs) lib legacyPackages;
 
-        forAllSystems = lib.genAttrs ["x86_64-linux"];
-        forAllPkgs = f: forAllSystems (system: f legacyPackages.${system});
-        treefmtEval = forAllPkgs (pkgs: treefmt-nix.lib.evalModule pkgs ./treefmt.nix);
+        systems = ["x86_64-linux"];
+        forAllSystems = f: (lib.genAttrs systems) (system: f legacyPackages.${system});
+        treefmtEval = forAllSystems (pkgs: treefmt-nix.lib.evalModule pkgs ./treefmt.nix);
     in {
         # Your custom packages, accessible through 'nix build', 'nix shell', etc
-        packages = forAllPkgs (pkgs: import ./pkgs pkgs);
+        packages = forAllSystems (pkgs: import ./pkgs pkgs);
 
         # Formatter for your nix files, available through 'nix fmt'
-        formatter = forAllPkgs (pkgs: treefmtEval.${pkgs.system}.config.build.wrapper);
+        formatter = forAllSystems (pkgs: treefmtEval.${pkgs.system}.config.build.wrapper);
 
-        checks = forAllSystems (system: {
-            pre-commit-check = inputs.pre-commit-hooks.lib.${system}.run {
+        checks = forAllSystems (pkgs: {
+            pre-commit-check = inputs.pre-commit-hooks.lib.${pkgs.system}.run {
                 src = ./.;
                 hooks = {
                     flake-checker = {
@@ -80,7 +80,7 @@
                     };
                     treefmt = {
                         enable = true;
-                        package = outputs.formatter.${system};
+                        package = self.formatter.${pkgs.system};
                     };
                 };
             };
@@ -106,7 +106,7 @@
             };
         };
 
-        devShells = forAllPkgs (pkgs: {
+        devShells = forAllSystems (pkgs: {
             default = pkgs.mkShell {
                 inherit (self.checks.${pkgs.system}.pre-commit-check) shellHook;
 
