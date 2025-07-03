@@ -1,5 +1,6 @@
 {
     config,
+    inputs,
     outputs,
     ...
 }: let
@@ -27,6 +28,7 @@ in {
 
             # keep-sorted start
             # inputs.nur.overlays.default
+            inputs.niri-shell.overlays.default
             # keep-sorted end
         ];
 

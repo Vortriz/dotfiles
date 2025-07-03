@@ -5,7 +5,6 @@
     ...
 }: let
     inherit (osConfig.var) downloadsDir storageDir username;
-    inherit (osConfig.defaults) desktop-shell;
 in {
     programs.niri.settings = {
         animations = {
@@ -87,7 +86,7 @@ in {
             "systemctl --user reset-failed waybar.service"
             "aria2c --enable-rpc --rpc-listen-all"
             "${lib.getExe pkgs.niriswitcher}"
-            "${lib.getExe desktop-shell} init -c /home/${username}/ignis/config.py"
+            "${lib.getExe pkgs.ignis} init -c /home/${username}/ignis/config.py"
         ];
 
         workspaces = {

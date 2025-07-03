@@ -452,11 +452,11 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1751488680,
-        "narHash": "sha256-s/ZFwQ3YCOp9j30AI7FcEwelKCY7cqQYYsDkUY6cSaE=",
+        "lastModified": 1751542299,
+        "narHash": "sha256-PSlLodqJA4ANKIhRC5PSncQz5x6XEFGDJ35dLkb3Saw=",
         "owner": "Vortriz",
         "repo": "niri-shell",
-        "rev": "cd1bb5e3e5085337e5b40dfbef8734013979ad5d",
+        "rev": "fd45ff1c5efc3c8eb1c31d8b63bd4db09243a11f",
         "type": "github"
       },
       "original": {

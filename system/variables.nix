@@ -36,7 +36,6 @@
         })
         // (with inputs; {
             # keep-sorted start
-            desktop-shell = niri-shell.packages.${system}.default;
             launcher = sherlock.packages.${system}.default;
             # keep-sorted end
         });
