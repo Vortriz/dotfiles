@@ -25,6 +25,7 @@
             alejandra
             ltex-ls-plus
             nixd
+            nodejs
             outputs.formatter.${system}
             package-version-server
             ruff
