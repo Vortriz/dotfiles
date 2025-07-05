@@ -10520,3 +10520,16 @@ Added packages:
 Removed packages:
 [R.]  #1  plugins  2ad42fa
 Closure size: 7918 -> 7929 (30 paths added, 19 paths removed, delta +11, disk usage +25.7MiB).
+
+---
+
+05/07/25 07:27:58 PM IST
+<<< /nix/var/nix/profiles/system-80-link
+>>> /nix/var/nix/profiles/system-81-link
+Added packages:
+[A.]  #1  mediainfo.yazi-cc12f3f  <none>
+[A.]  #2  plugins-cbc4450         <none>
+Removed packages:
+[R.]  #1  mediainfo.yazi-b74b7b8  <none>
+[R.]  #2  plugins-e5f00e2         <none>
+Closure size: 7929 -> 7929 (20 paths added, 20 paths removed, delta +0, disk usage +10.9KiB).
