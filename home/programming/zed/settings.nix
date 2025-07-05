@@ -88,8 +88,8 @@ in {
                     binary = {
                         path_lookup = true;
                         path = lib.getExe pkgs.ruff;
+                        arguments = ["server"];
                     };
-                    initialization_options.settings.path = "./pyproject.toml";
                 };
             };
         minimap = {

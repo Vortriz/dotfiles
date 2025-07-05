@@ -11,7 +11,7 @@
 
     programs.niri.settings.binds = let
         inherit (lib) getExe;
-        inherit (config.niri-lib) run;
+        inherit (config.niri-lib) run spawn';
 
         ignis = getExe config.programs.niri-shell.package;
 
@@ -47,5 +47,7 @@
 
         "XF86MonBrightnessUp" = brightness "+5%";
         "XF86MonBrightnessDown" = brightness "5%-";
+
+        "Mod+B".action = spawn' "${getExe pkgs.ignis} toggle-window ignis_BAR_0";
     };
 }

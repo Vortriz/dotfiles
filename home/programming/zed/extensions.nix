@@ -37,7 +37,7 @@
         ];
 
         userSettings = {
-            auto_install_extensions = lib.attrsets.genAttrs extensions (_ext: false);
+            auto_install_extensions = lib.attrsets.genAttrs extensions (_: false);
         };
     };
 }
