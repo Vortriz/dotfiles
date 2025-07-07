@@ -4,7 +4,7 @@
     pkgs,
     ...
 }: let
-    inherit (osConfig.var) downloadsDir storageDir username;
+    inherit (osConfig.var) downloadsDir username;
 in {
     programs.niri.settings = {
         animations = {
@@ -28,9 +28,6 @@ in {
 
             # ugly fix for flameshot
             QT_SCREEN_SCALE_FACTORS = builtins.toString (2.0 / 3.0);
-
-            # Set uv cache directory
-            UV_CACHE_DIR = "${storageDir}/dev/.cache/uv";
         };
 
         hotkey-overlay = {

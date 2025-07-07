@@ -8,6 +8,7 @@
     inherit (osConfig.defaults) file-manager terminal;
 in {
     xdg = {
+        enable = true;
         # For setting default applications
         mimeApps.enable = true;
 
