@@ -80,7 +80,8 @@ alias pf := prefetch
         flake = builtins.getFlake (toString ./.); \
         nixpkgs = import <nixpkgs> {}; \
     in \
-        {inherit flake;} // flake // builtins // nixpkgs // nixpkgs.lib // flake.nixosConfigurations"
+        {inherit flake;} // flake // builtins // nixpkgs // nixpkgs.lib // \
+        flake.nixosConfigurations // flake.nixosConfigurations.nixos.config.home-manager.users"
 
 [group('TOOLS')]
 @debug-nur:
