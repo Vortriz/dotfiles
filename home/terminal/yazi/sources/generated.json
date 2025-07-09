@@ -61,7 +61,7 @@
     },
     "official-plugins-monorepo": {
         "cargoLocks": null,
-        "date": "2025-07-05",
+        "date": "2025-07-06",
         "extract": null,
         "name": "official-plugins-monorepo",
         "passthru": null,
@@ -71,13 +71,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "cbc4450a6c238114362e3c2fbca355166c2a2202",
-            "sha256": "sha256-otD7zmm/Juh68D2czRhtU7CZFIaMgADxuo8p68cS7fk=",
+            "rev": "b8860253fc44e500edeb7a09db648a829084facd",
+            "sha256": "sha256-29K8PmBoqAMcQhDIfOVnbJt2FU4BR6k23Es9CqyEloo=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/yazi-rs/plugins"
         },
-        "version": "cbc4450a6c238114362e3c2fbca355166c2a2202"
+        "version": "b8860253fc44e500edeb7a09db648a829084facd"
     },
     "other-monorepo": {
         "cargoLocks": null,
@@ -101,7 +101,7 @@
     },
     "ouch": {
         "cargoLocks": null,
-        "date": "2025-06-11",
+        "date": "2025-07-07",
         "extract": null,
         "name": "ouch",
         "passthru": null,
@@ -111,13 +111,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "1ee69a56da3c4b90ec8716dd9dd6b82e7a944614",
-            "sha256": "sha256-4KZeDkMXlhUV0Zh+VGBtz9kFPGOWCexYVuKUSCN463o=",
+            "rev": "bb941c4891b21762f98318a6ad484827726019e6",
+            "sha256": "sha256-g/ZHArXksRo49k9UBHap0CXzIdycQigjbdCzDK1VaLY=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/ndtoan96/ouch.yazi"
         },
-        "version": "1ee69a56da3c4b90ec8716dd9dd6b82e7a944614"
+        "version": "bb941c4891b21762f98318a6ad484827726019e6"
     },
     "restore": {
         "cargoLocks": null,
@@ -141,7 +141,7 @@
     },
     "starship": {
         "cargoLocks": null,
-        "date": "2025-06-01",
+        "date": "2025-07-08",
         "extract": null,
         "name": "starship",
         "passthru": null,
@@ -151,13 +151,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "6a0f3f788971b155cbc7cec47f6f11aebbc148c9",
-            "sha256": "sha256-q1G0Y4JAuAv8+zckImzbRvozVn489qiYVGFQbdCxC98=",
+            "rev": "a63550b2f91f0553cc545fd8081a03810bc41bc0",
+            "sha256": "sha256-PYeR6fiWDbUMpJbTFSkM57FzmCbsB4W4IXXe25wLncg=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/Rolv-Apneseth/starship.yazi"
         },
-        "version": "6a0f3f788971b155cbc7cec47f6f11aebbc148c9"
+        "version": "a63550b2f91f0553cc545fd8081a03810bc41bc0"
     },
     "what-size": {
         "cargoLocks": null,
