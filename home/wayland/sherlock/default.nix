@@ -34,7 +34,10 @@ in {
             #     title = "Open emoji picker";
             # };
 
-            "Alt+Space" = config.niri-lib.open {app = pkgs.walker;};
+            "Alt+Space" = config.niri-lib.run {
+                cmd = "${lib.getExe pkgs.walker} --modules applications";
+                title = "Open Walker";
+            };
         };
 
         spawn-at-startup = [
