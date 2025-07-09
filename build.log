@@ -10533,3 +10533,76 @@ Removed packages:
 [R.]  #1  mediainfo.yazi-b74b7b8  <none>
 [R.]  #2  plugins-e5f00e2         <none>
 Closure size: 7929 -> 7929 (20 paths added, 20 paths removed, delta +0, disk usage +10.9KiB).
+
+---
+
+09/07/25 03:48:14 PM IST
+<<< /nix/var/nix/profiles/system-81-link
+>>> /nix/var/nix/profiles/system-83-link
+Version changes:
+[U.]  #01  MapleMonoNormal-NF-unhinted  7.3, 7.3-fish-completions -> 7.4, 7.4-fish-completions
+[U.]  #02  assimp                       5.4.3-lib -> 6.0.2-lib
+[U*]  #03  bind                         9.20.9-dnsutils, 9.20.9-host, 9.20.9-lib -> 9.20.10-dnsutils, 9.20.10-host, 9.20.10-lib
+[U*]  #04  blueman                      2.4.4, 2.4.4_fish-completions -> 2.4.6, 2.4.6_fish-completions
+[U.]  #05  eza                          0.21.6, 0.21.6-fish-completions, 0.21.6-man -> 0.22.0, 0.22.0-fish-completions, 0.22.0-man
+[U.]  #06  fastfetch                    2.46.0, 2.46.0-fish-completions, 2.46.0-man -> 2.47.0, 2.47.0-fish-completions, 2.47.0-man
+[U.]  #07  filelight                    25.04.2, 25.04.2-fish-completions -> 25.04.3, 25.04.3-fish-completions
+[U.]  #08  firefox                      140.0.1, 140.0.1-fish-completions -> 140.0.2, 140.0.2-fish-completions
+[U.]  #09  firefox-unwrapped            140.0.1 -> 140.0.2
+[U.]  #10  gnome-control-center         48.2 -> 48.3
+[U.]  #11  intel-gmmlib                 22.7.2 x2 -> 22.7.3 x2
+[C*]  #12  iproute2                     6.14.0 x2, 6.14.0_fish-completions -> 6.14.0, 6.14.0_fish-completions
+[U*]  #13  iputils                      20240905 x2, 20240905_fish-completions -> 20250605 x2, 20250605_fish-completions
+[U*]  #14  kpmcore                      25.04.2 -> 25.04.3
+[U*]  #15  ksystemlog                   25.04.2 -> 25.04.3
+[U.]  #16  libimobiledevice-glue        1.3.1 -> 1.3.2
+[U.]  #17  libphonenumber               9.0.5 -> 9.0.8
+[U*]  #18  libressl                     4.0.0, 4.0.0_fish-completions, 4.0.0-nc -> 4.1.0, 4.1.0_fish-completions, 4.1.0-nc
+[U.]  #19  mesa                         25.1.4 x2 -> 25.1.5 x2
+[U*]  #20  mtools                       4.0.48 -> 4.0.49
+[U.]  #21  nixos-system-nixos           25.11.20250630.3016b4b -> 25.11.20250706.1fd8bad
+[U*]  #22  partitionmanager             25.04.2 -> 25.04.3
+[U.]  #23  qbittorrent                  5.1.1, 5.1.1-fish-completions -> 5.1.2, 5.1.2-fish-completions
+[U.]  #24  ruff                         0.12.1 -> 0.12.2
+[U*]  #25  sudo-rs                      0.2.6, 0.2.6_fish-completions -> 0.2.7
+[U.]  #26  tevent                       0.16.2 x2 -> 0.17.0 x2
+[U.]  #27  vscode                       1.101.1, 1.101.1-fish-completions -> 1.101.2, 1.101.2-fish-completions
+[U.]  #28  xfsprogs                     6.13.0, 6.13.0-bin -> 6.15.0, 6.15.0-bin
+[U.]  #29  yt-dlp                       2025.6.25 -> 2025.6.30
+[U.]  #30  zed-editor                   0.192.7 -> 0.193.3
+[U.]  #31  zed-editor-wrapped           0.192.7, 0.192.7-fish-completions -> 0.193.3, 0.193.3-fish-completions
+Added packages:
+[A.]  #01  cfitsio                   4.4.1
+[A.]  #02  cgif                      0.5.0
+[A.]  #03  hm_juliaconfigstartup.jl  <none>
+[A.]  #04  libdicom                  1.0.5
+[A.]  #05  matio                     1.5.28
+[A.]  #06  openslide                 4.0.0
+[A.]  #07  ouch.yazi-bb941c4         <none>
+[A.]  #08  plugins-b886025           <none>
+[A.]  #09  starship.yazi-a63550b     <none>
+[A.]  #10  vips                      8.16.1
+[A.]  #11  walker                    0.12.23
+Removed packages:
+[R-]  #01  NetworkManager-fortisslvpn-gnome  1.4.0
+[R-]  #02  NetworkManager-iodine-gnome       1.2.0-unstable-2024-11-02
+[R-]  #03  NetworkManager-l2tp-gnome         1.20.20
+[R-]  #04  NetworkManager-openconnect        1.2.10
+[R-]  #05  NetworkManager-openvpn            1.12.0
+[R-]  #06  NetworkManager-sstp-gnome         1.3.2
+[R-]  #07  NetworkManager-vpnc               1.4.0
+[R.]  #08  hm_.juliaconfigstartup.jl         <none>
+[R.]  #09  iodine                            0.8.0
+[R.]  #10  openconnect                       9.12 x2
+[R.]  #11  openfortivpn                      1.23.1
+[R.]  #12  openvpn                           2.6.14
+[R.]  #13  ouch.yazi                         1ee69a5
+[R.]  #14  plugins-cbc4450                   <none>
+[R.]  #15  sstp-client-unstable              2023-03-25
+[R.]  #16  starship.yazi                     6a0f3f7
+[R.]  #17  stoken                            0.93 x2
+[R.]  #18  strongswan                        5.9.14
+[R.]  #19  vpnc-scripts-unstable             2023-01-03 x2
+[R.]  #20  vpnc-unstable                     2025-06-16
+[R.]  #21  xl2tpd                            1.3.19
+Closure size: 7929 -> 7914 (427 paths added, 442 paths removed, delta -15, disk usage +11.4MiB).
