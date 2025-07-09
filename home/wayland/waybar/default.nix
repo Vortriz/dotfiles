@@ -156,7 +156,7 @@ in {
                 "tooltip" = false;
             };
         };
-    };
 
-    programs.waybar.systemd.enable = true;
+        systemd.enable = osConfig.programs.waybar.enable;
+    };
 }

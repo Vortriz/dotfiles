@@ -4,7 +4,7 @@
     pkgs,
     ...
 }: let
-    inherit (osConfig.var) downloadsDir username;
+    inherit (osConfig.var) downloadsDir;
 in {
     programs.niri.settings = {
         animations = {
@@ -77,14 +77,6 @@ in {
         prefer-no-csd = true;
 
         screenshot-path = "${downloadsDir}/captures/linux/%Y-%m-%d (%H-%M-%S).png";
-
-        spawn-at-startup = map (s: {command = lib.strings.splitString " " s;})
-        [
-            "systemctl --user reset-failed waybar.service"
-            "aria2c --enable-rpc --rpc-listen-all"
-            "${lib.getExe pkgs.niriswitcher}"
-            "${lib.getExe pkgs.ignis} init -c /home/${username}/ignis/config.py"
-        ];
 
         workspaces = {
             "Acad" = {};

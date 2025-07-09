@@ -1,5 +1,6 @@
 {
     config,
+    lib,
     pkgs,
     ...
 }: let
@@ -20,10 +21,16 @@ in {
         };
     };
 
-    programs.niri.settings.binds = {
-        "Alt+Tab".action = niriswitcher-window;
-        "Alt+Shift+Tab".action = niriswitcher-window;
-        "Alt+grave".action = niriswitcher-workspace;
-        "Alt+Shift+grave".action = niriswitcher-workspace;
+    programs.niri.settings = {
+        binds = {
+            "Alt+Tab".action = niriswitcher-window;
+            "Alt+Shift+Tab".action = niriswitcher-window;
+            "Alt+grave".action = niriswitcher-workspace;
+            "Alt+Shift+grave".action = niriswitcher-workspace;
+        };
+
+        spawn-at-startup = [
+            {command = [(lib.getExe pkgs.niriswitcher)];}
+        ];
     };
 }

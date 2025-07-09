@@ -1,4 +1,9 @@
-{osConfig, ...}: let
+{
+    lib,
+    osConfig,
+    pkgs,
+    ...
+}: let
     inherit (osConfig.var) downloadsDir;
 in {
     programs.aria2 = {
@@ -14,4 +19,8 @@ in {
             # keep-sorted end
         };
     };
+
+    programs.niri.settings.spawn-at-startup = [
+        {command = [(lib.getExe pkgs.aria2) "--enable-rpc" "--rpc-listen-all"];}
+    ];
 }
