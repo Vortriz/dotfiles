@@ -87,17 +87,17 @@
   };
   restore = {
     pname = "restore";
-    version = "2c2802d8d2941dcf2c26bd07587de69e3589549c";
+    version = "84f1921806c49b7b20af26cbe57cb4fd286142e2";
     src = fetchgit {
       url = "https://github.com/boydaihungst/restore.yazi";
-      rev = "2c2802d8d2941dcf2c26bd07587de69e3589549c";
+      rev = "84f1921806c49b7b20af26cbe57cb4fd286142e2";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-n/PNwyCOL3uCWgtSjq4+dPwr+hWSF4h9fbvZOQPBuYM=";
+      sha256 = "sha256-pEQZ/2Z4XVYlfzqtCz51bIgE9KzkDF/qyX8vThhlWGI=";
     };
-    date = "2025-06-26";
+    date = "2025-07-11";
   };
   starship = {
     pname = "starship";

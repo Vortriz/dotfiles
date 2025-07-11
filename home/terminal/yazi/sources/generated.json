@@ -121,7 +121,7 @@
     },
     "restore": {
         "cargoLocks": null,
-        "date": "2025-06-26",
+        "date": "2025-07-11",
         "extract": null,
         "name": "restore",
         "passthru": null,
@@ -131,13 +131,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "2c2802d8d2941dcf2c26bd07587de69e3589549c",
-            "sha256": "sha256-n/PNwyCOL3uCWgtSjq4+dPwr+hWSF4h9fbvZOQPBuYM=",
+            "rev": "84f1921806c49b7b20af26cbe57cb4fd286142e2",
+            "sha256": "sha256-pEQZ/2Z4XVYlfzqtCz51bIgE9KzkDF/qyX8vThhlWGI=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/boydaihungst/restore.yazi"
         },
-        "version": "2c2802d8d2941dcf2c26bd07587de69e3589549c"
+        "version": "84f1921806c49b7b20af26cbe57cb4fd286142e2"
     },
     "starship": {
         "cargoLocks": null,
