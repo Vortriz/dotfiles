@@ -19,6 +19,24 @@ in {
             };
         }
         {
+            matches = [
+                {is-window-cast-target = true;}
+            ];
+
+            focus-ring.enable = false;
+
+            border = {
+                enable = true;
+                width = 2;
+                active.color = "#85e89d";
+            };
+
+            shadow = {
+                enable = true;
+                color = "#85e89d70";
+            };
+        }
+        {
             open-maximized = true;
 
             matches = [

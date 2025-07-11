@@ -12,8 +12,14 @@ in {
         {
             "Mod+Shift+Slash".action = show-hotkey-overlay;
 
-            "Ctrl+Print".action = screenshot-window;
-            "Ctrl+Shift+Print".action.screenshot-screen = []; # [TODO] change after https://github.com/sodiboo/niri-flake/issues/944
+            "Ctrl+Print" = {
+                action = screenshot-window;
+                hotkey-overlay.title = "Take screenshot of focused window";
+            };
+            "Ctrl+Shift+Print" = {
+                action.screenshot-screen = []; # [TODO] change after https://github.com/sodiboo/niri-flake/issues/944
+                hotkey-overlay.title = "Take screenshot of focused display";
+            };
 
             "Mod+C" = run {
                 cmd = "${getExe pkgs.zenity} --color-selection --title 'Color picker' --color $(${getExe pkgs.hyprpicker} -an)";
@@ -64,10 +70,6 @@ in {
             "Mod+Shift+F" = {
                 action = fullscreen-window;
                 hotkey-overlay.title = "Fullscreen Window";
-            };
-            "Mod+Shift+C" = {
-                action = center-column;
-                hotkey-overlay.title = "Center Column";
             };
 
             "Mod+Minus".action = set-column-width "-10%";
