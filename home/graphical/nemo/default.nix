@@ -14,8 +14,6 @@ in {
     };
 
     dconf = {
-        enable = true;
-
         settings = {
             "org/cinnamon/desktop/applications/terminal".exec = lib.getName terminal;
         };

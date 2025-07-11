@@ -27,9 +27,6 @@ in {
             };
         };
 
-        # Gnome keyring is a password manager
-        gnome.gnome-keyring.enable = true;
-
         # Login manager
         logind = {
             powerKey = "suspend";

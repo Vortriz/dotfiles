@@ -20,8 +20,6 @@
                 format = "";
             };
         };
-
-        gnome-keyring.enable = true;
         # keep-sorted end
     };
 

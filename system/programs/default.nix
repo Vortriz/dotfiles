@@ -9,8 +9,6 @@
     ];
 
     programs = {
-        dconf.enable = true;
-
         # the default shell
         fish.enable = true;
     };

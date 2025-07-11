@@ -95,9 +95,6 @@ in {
         # for sound and something else too
         rtkit.enable = true;
 
-        # idk
-        polkit.enable = true;
-
         pam.services = {
             login.enableGnomeKeyring = true;
             gdm.enableGnomeKeyring = true;
