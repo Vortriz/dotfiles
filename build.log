@@ -10606,3 +10606,163 @@ Removed packages:
 [R.]  #20  vpnc-unstable                     2025-06-16
 [R.]  #21  xl2tpd                            1.3.19
 Closure size: 7929 -> 7914 (427 paths added, 442 paths removed, delta -15, disk usage +11.4MiB).
+
+---
+
+11/07/25 04:14:45 PM IST
+<<< /nix/var/nix/profiles/system-83-link
+>>> /nix/var/nix/profiles/system-84-link
+Version changes:
+[U.]  #001  acpi-call                 1.2.2-6.15.4 -> 1.2.2-6.15.5
+[D.]  #002  amsmath                   75374-tex -> 2025-06-01_Patch_level_1-tex
+[U.]  #003  arara                     7.1.5, 7.1.5-man, 7.1.5-tex, 7.1.5-texdoc -> 7.2.0, 7.2.0-man, 7.2.0-tex, 7.2.0-texdoc
+[U.]  #004  ascelike                  2.3-tex -> 3.0-tex
+[U.]  #005  babel                     25.7-tex -> 25.10-tex
+[U.]  #006  babel-french              3.6c-tex -> 75643-tex
+[U.]  #007  beamer                    3.72-tex -> 3.74-tex
+[U.]  #008  beamerthemecelestia       1.0.1-tex -> 1.0.3-tex
+[U.]  #009  beebe                     75238-tex -> 75389-tex
+[U.]  #010  biblatex-ext              0.19-tex -> 0.20-tex
+[U.]  #011  biblatex-gb7714           2015-1.1u-tex -> 2015-1.1v-tex
+[U.]  #012  bmstu-iu8                 1.7-tex -> 1.8-tex
+[U.]  #013  bxjscls                   2.9c-tex -> 2.9d-tex
+[U.]  #014  cahierprof                1.0-tex -> 1.2-tex
+[U.]  #015  cfr-lm                    1.8a-tex -> 1.9-tex
+[U.]  #016  chafa                     1.16.1, 1.16.1-bin -> 1.16.2, 1.16.2-bin
+[U.]  #017  circuitikz                1.8.0-tex -> 1.8.1-tex
+[U.]  #018  cloze                     1.6-tex -> 1.8.1-tex
+[U.]  #019  cmtiup                    2.1-tex -> 2.2-tex
+[U.]  #020  codedescribe              1.9-tex -> 1.10-tex
+[U.]  #021  coloredbelts              0.1.3-tex -> 0.1.4-tex
+[D.]  #022  context                   75187, 75187-man, 75187-tex, 75187-texdoc -> 2025-06-12_1421_B, 2025-06-12_1421_B-man, 2025-06-12_1421_B-tex, 2025-06-12_1421_B-texdoc
+[U.]  #023  context-legacy            74403, 74403-man, 74403-tex, 74403-texdoc -> 75496, 75496-man, 75496-tex, 75496-texdoc
+[U.]  #024  couleurs-fr               0.1.2-tex -> 0.1.3-tex
+[U.]  #025  creationboites            0.1.2-tex -> 0.1.4-tex
+[U.]  #026  customenvs                0.40b-tex -> 0.40c-tex
+[U.]  #027  dccpaper                  2.5-tex -> 2.6-tex
+[U.]  #028  enumext                   1.3-tex -> 1.5-tex
+[U.]  #029  eqnlines                  0.10-tex -> 0.10.1-tex
+[U.]  #030  erewhon                   1.122-tex -> 1.123-tex
+[U.]  #031  expltools                 75347, 75347-tex -> 75612, 75612-tex
+[U.]  #032  farbe                     0.1.0-tex -> 0.2.0-tex
+[U.]  #033  firstaid                  1.1o-tex -> 1.1p-tex
+[U.]  #034  fontname                  74435-tex -> 75544-tex
+[U.]  #035  fragoli                   1.1.1-tex -> 1.2.3-tex
+[U.]  #036  fzf                       0.63.0, 0.63.0-fish-completions, 0.63.0-man -> 0.64.0, 0.64.0-fish-completions, 0.64.0-man
+[U.]  #037  gbt7714                   2.1.7-tex -> 2.1.8-tex
+[U.]  #038  gentium-otf               0.02-tex -> 1.00-tex
+[U.]  #039  gentium-sil               6.200-tex -> 7.000-tex
+[U.]  #040  hypdestopt                2.8-tex -> 2.9-tex
+[U.]  #041  hyperref                  7.01m-tex -> 7.01n-tex
+[U.]  #042  initrd-linux              6.15.4 -> 6.15.5
+[U.]  #043  jsonparse                 1.6.1-tex -> 1.6.3-tex
+[U.]  #044  keytheorems               0.2.7-tex -> 0.3.0-tex
+[U.]  #045  kirigami-addons           1.8.1 -> 1.9.0
+[U.]  #046  koma-script               3.44-tex -> 3.45-tex
+[U.]  #047  kpathsea                  73918, 73918-man, 73918-tex, 73918-texdoc -> 75425, 75425-man, 75425-tex, 75425-texdoc
+[U.]  #048  l3backend                 75045-tex -> 75628-tex
+[U.]  #049  l3backend-dev             74956-tex -> 75463-tex
+[U.]  #050  l3kernel                  75374-tex -> 75627-tex
+[U.]  #051  l3kernel-dev              75322-tex -> 75655-tex
+[U.]  #052  lastpage                  2.1e-tex -> 2.1g-tex
+[U.]  #053  latex                     75374-tex -> 75474-tex
+[U.]  #054  latexmk                   4.86a, 4.86a-man, 4.86a-tex, 4.86a-texdoc -> 4.87, 4.87-man, 4.87-tex, 4.87-texdoc
+[U.]  #055  libertinus-otf            0.32-tex -> 0.33-tex
+[U.]  #056  linguistix                0.2-tex -> 0.5a-tex
+[U.]  #057  linux                     6.15.4, 6.15.4-modules, 6.15.4-modules-shrunk -> 6.15.5, 6.15.5-modules, 6.15.5-modules-shrunk
+[U.]  #058  lparse                    0.1.0-tex -> 0.2.0-tex
+[U.]  #059  lt3luabridge              2.2.1-tex -> 2.2.2-tex
+[U.]  #060  luakeys                   0.15.0-tex -> 0.16.0-tex
+[U.]  #061  luamml                    0.5.0-tex -> 0.6.0-tex
+[U.]  #062  luatex                    73850, 73850-man, 73850-tex, 73850-texdoc -> 75423, 75423-man, 75423-tex, 75423-texdoc
+[U.]  #063  luatexja                  20250506.0-tex -> 20250614.0-tex
+[U.]  #064  luatexko                  3.8-tex -> 4.0-tex
+[U.]  #065  markdown                  3.11.3-0-ge29029b2, 3.11.3-0-ge29029b2-man, 3.11.3-0-ge29029b2-tex, 3.11.3-0-ge29029b2-texdoc -> 3.11.4-0-g260a31e6, 3.11.4-0-g260a31e6-man, 3.11.4-0-g260a31e6-tex, 3.11.4-0-g260a31e6-texdoc
+[D.]  #066  mathfont                  2.4-tex -> 2.4a-tex
+[U.]  #067  mcf2graph                 5.20-tex -> 5.24-tex
+[U.]  #068  media9                    1.29-tex -> 1.30-tex
+[U.]  #069  mptopdf                   74241, 74241-man, 74241-tex, 74241-texdoc -> 75495, 75495-man, 75495-tex, 75495-texdoc
+[U.]  #070  mwcls                     0.75-tex -> 0.76-tex
+[C-]  #071  net-tools                 2.10 x2, 2.10_fish-completions -> 2.10
+[U.]  #072  newcomputermodern         7.0.2-tex -> 7.0.3-tex
+[U.]  #073  newpx                     1.541-tex -> 1.542-tex
+[U.]  #074  nfssext-cfr               1.1-tex -> 1.3-tex
+[U.]  #075  nicematrix                7.1c-tex -> 7.1d-tex
+[U.]  #076  nixos-system-nixos        25.11.20250706.1fd8bad -> 25.11.20250708.9807714
+[U.]  #077  nodetree                  2.4.0-tex -> 2.4.1-tex
+[U.]  #078  pageslts                  2.0d-tex -> 2.0e-tex
+[U.]  #079  pdflscape                 0.13-tex -> 0.14-tex
+[U.]  #080  pdfmanagement-testphase   0.96r-tex -> 0.96t-tex
+[U.]  #081  pgf-spectra               3.0.1a-tex -> 3.0.2-tex
+[U.]  #082  pictochrono               0.1.0-tex -> 0.1.1-tex
+[U.]  #083  piton                     4.5-tex -> 4.6a-tex
+[U.]  #084  pmhanguljamo              1.1.2-tex -> 1.2-tex
+[U.]  #085  polyglossia               2.5-tex -> 2.6-tex
+[U.]  #086  profcollege               0.99-A-k-tex -> 0.99-A-l-tex
+[U.]  #087  proflycee                 3.12a-tex -> 3.12b-tex
+[U.]  #088  proof-at-the-end          69602-tex -> 75479-tex
+[U.]  #089  pstricks                  3.21-tex -> 3.22-tex
+[U.]  #090  pynotebook                0.1.3-tex -> 0.1.4-tex
+[U.]  #091  quiver                    1.3.0-tex -> 1.5.5-tex
+[U.]  #092  refcheck                  1.9.1-tex -> 1.9.2-tex
+[U.]  #093  rerunfilecheck            1.10-tex -> 1.11-tex
+[U.]  #094  resphilosophica           1.36-tex -> 1.37-tex
+[U.]  #095  restore.yazi              2c2802d -> 84f1921
+[U.]  #096  rpgicons                  1.8.6-tex -> 1.9.0-tex
+[U.]  #097  rust-analyzer             2025-06-16 -> 2025-06-30
+[U.]  #098  rust-analyzer-unwrapped   2025-06-16 -> 2025-06-30
+[U.]  #099  schulmathematik           1.7-tex -> 1.7.1-tex
+[U.]  #100  simpleicons               14.14.0-tex -> 15.3.0-tex
+[U.]  #101  simplekv                  0.31-tex -> 0.32-tex
+[C.]  #102  stage                     1-init.sh, 1.03-tex -> 1.03-tex
+[U.]  #103  struktex                  2.3c-0-g7d3fc5b-tex -> 3.0a-tex
+[U.]  #104  sttools                   3.1-tex -> 3.2-tex
+[U.]  #105  systeme                   0.42-tex -> 0.43-tex
+[U.]  #106  tagpdf                    0.99q-tex -> 0.99s-tex
+[U.]  #107  tcolorbox                 6.5.0-tex -> 6.6.0-tex
+[U.]  #108  tex4ht                    75380, 75380-tex -> 75646, 75646-tex
+[U.]  #109  texdoc                    4.1.1-tlpdb-75382, 4.1.1-tlpdb-75382-man, 4.1.1-tlpdb-75382-tex, 4.1.1-tlpdb-75382-texdoc -> 4.1.1-tlpdb-75669, 4.1.1-tlpdb-75669-man, 4.1.1-tlpdb-75669-tex, 4.1.1-tlpdb-75669-texdoc
+[U.]  #110  texlive-msg-translations  74865-tlpkg -> 75420-tlpkg
+[U.]  #111  texlive-scripts           75382, 75382-man, 75382-tex, 75382-texdoc, 75382-tlpkg -> 75669, 75669-man, 75669-tex, 75669-texdoc, 75669-tlpkg
+[U.]  #112  texlive.infra             75215-tlpdb-75382, 75215-tlpdb-75382-man, 75215-tlpdb-75382-tex, 75215-tlpdb-75382-texdoc, 75215-tlpdb-75382-tlpkg -> 75590-tlpdb-75669, 75590-tlpdb-75669-man, 75590-tlpdb-75669-tex, 75590-tlpdb-75669-texdoc, 75590-tlpdb-75669-tlpkg
+[U.]  #113  tikzpingus                1.2-tex -> 1.3-tex
+[U.]  #114  tkz-elements              4.00c-tex -> 4.15c-tex
+[U.]  #115  tlshell                   74646, 74646-tex, 74646-tlpkg -> 75412, 75412-tex, 75412-tlpkg
+[U.]  #116  transparent               1.5-tex -> 1.6-tex
+[U.]  #117  trivialpursuit            0.1.4-tex -> 0.1.5-tex
+[U.]  #118  tugboat-plain             1.31-tex -> 1.32-tex
+[U.]  #119  uantwerpendocs            4.10-tex -> 4.11-tex
+[C.]  #120  udev-rules                <none> x2 -> <none>
+[U.]  #121  uni-titlepage             1.2-tex -> 1.3-tex
+[U.]  #122  upmendex                  1.11-man, 1.11-texdoc -> 1.20-man, 1.20-texdoc
+[U.]  #123  walker                    0.12.23 -> 0.12.28
+[U.]  #124  x86_energy_perf_policy    6.12.35 -> 6.12.36
+[U.]  #125  yquant                    0.7.5-tex -> 0.8-tex
+[U.]  #126  zref                      2.35-tex -> 2.36-tex
+Added packages:
+[A.]  #01  aeskwadraat              1.0.1-tex
+[A.]  #02  citeright                1.0.0-tex
+[A.]  #03  context-animation        75386-tex
+[A.]  #04  eoldef                   1.0-tex
+[A.]  #05  hideproofs               1.0-tex
+[A+]  #06  hostname-debian          3.25 x2
+[A.]  #07  liturgy-cw               0.2-tex
+[A.]  #08  multinotes               1.1-tex
+[A.]  #09  quantum-chemistry-bonn   0.1-tex
+[A.]  #10  quantumcubemodel         0.1.0-tex
+[A.]  #11  show-pdf-tags            1.1, 1.1-man, 1.1-tex, 1.1-texdoc
+[A.]  #12  sysuthesis               0.3.0-tex
+[A.]  #13  tictactoe                1.0-tex
+[A.]  #14  tikz-cookingsymbols      2.0-tex
+[A.]  #15  tokmap                   1.0-tex
+[A.]  #16  tools-Patch_level_1-tex  <none>
+[A.]  #17  visualtoks               1.1-tex
+Removed packages:
+[R.]  #1  context-companion-fonts  72732-tex
+[R.]  #2  context-texlive          74241, 74241-man, 74241-tex, 74241-texdoc
+[R.]  #3  extra-utils              <none>
+[R.]  #4  initrd-fsinfo            <none>
+[R.]  #5  keymap                   <none>
+[R.]  #6  link-units               <none>
+[R.]  #7  tools                    75374-tex
+Closure size: 7914 -> 7921 (333 paths added, 326 paths removed, delta +7, disk usage -18.5MiB).
