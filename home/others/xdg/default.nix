@@ -28,15 +28,15 @@ in {
                 default = ["gnome" "gtk"];
                 "org.freedesktop.impl.portal.Access" = "gtk";
                 "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
-                "org.freedesktop.impl.portal.ScreenCast" = "wlr";
+                "org.freedesktop.impl.portal.ScreenCast" = "gnome";
                 "org.freedesktop.impl.portal.Secret" = "gnome-keyring";
             };
 
             extraPortals = with pkgs; [
                 # keep-sorted start
+                xdg-desktop-portal-gnome
                 xdg-desktop-portal-gtk
                 xdg-desktop-portal-termfilechooser-git
-                xdg-desktop-portal-wlr
                 # keep-sorted end
             ];
         };
