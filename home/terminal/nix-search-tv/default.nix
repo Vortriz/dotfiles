@@ -7,7 +7,7 @@
     ns =
         builtins.fetchurl {
             url = "https://raw.githubusercontent.com/3timeslazy/nix-search-tv/refs/heads/main/nixpkgs.sh";
-            sha256 = "sha256-/usZX16ept4bXAf10jggeVwOn8B7Rs2dV48F9Jc0dbk=";
+            sha256 = "sha256:0k7vkd83zgbwr3fgkf4nszwaq3ab9344w4nq9krj75fpla1vawxz";
         }
         |> builtins.readFile
         |> pkgs.writeShellScriptBin "ns";
