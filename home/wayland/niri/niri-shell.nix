@@ -2,34 +2,51 @@
     config,
     inputs,
     lib,
-    osConfig,
     pkgs,
     ...
 }: let
-    inherit (osConfig.var) username;
+    qs = inputs.quickshell.packages.${pkgs.system}.default.overrideAttrs (prevAttrs: {
+        nativeBuildInputs =
+            prevAttrs.nativeBuildInputs
+            ++ (with pkgs; [kdePackages.qt5compat]);
+    });
 in {
-    imports = [inputs.niri-shell.homeModules.default];
-
-    programs.niri-shell.enable = true;
+    home.packages =
+        [
+            qs
+        ]
+        ++ (with pkgs; [
+            material-symbols
+            cava
+            wallust
+            gpu-screen-recorder
+        ])
+        ++ (with pkgs.kdePackages; [
+            qtmultimedia
+            qtimageformats
+            qtsvg
+            syntax-highlighting
+        ])
+        ++ [pkgs.libsForQt5.qt5.qtgraphicaleffects];
 
     programs.niri.settings = {
         binds = let
             inherit (lib) getExe;
             inherit (config.niri-lib) run;
 
-            ignis = getExe config.programs.niri-shell.package;
+            # [TODO] OSD
 
             vol = cmd:
                 (run {
-                    cmd = "${getExe pkgs.pamixer} ${cmd} && ${ignis} open-window ignis_OSD_Speaker";
+                    cmd = "${getExe pkgs.pamixer} ${cmd}";
                 })
                 // {
                     allow-when-locked = true;
                 };
 
-            mute = cmd: device:
+            mute = cmd: _device:
                 (run {
-                    cmd = "${getExe pkgs.pamixer} -t${cmd} && ${ignis} open-window ignis_OSD_${device}";
+                    cmd = "${getExe pkgs.pamixer} -t${cmd}";
                 })
                 // {
                     allow-when-locked = true;
@@ -37,7 +54,7 @@ in {
 
             brightness = cmd:
                 (run {
-                    cmd = "${getExe pkgs.brightnessctl} set -e ${cmd} && ${ignis} open-window ignis_OSD_Backlight";
+                    cmd = "${getExe pkgs.brightnessctl} set -e ${cmd}";
                 })
                 // {
                     allow-when-locked = true;
@@ -52,14 +69,14 @@ in {
             "XF86MonBrightnessUp" = brightness "+5%";
             "XF86MonBrightnessDown" = brightness "5%-";
 
-            "Mod+B" = run {
-                cmd = "${getExe pkgs.ignis} toggle-window ignis_BAR_0";
-                title = "Toggle Bar";
-            };
+            # "Mod+B" = run {
+            #     cmd = "${getExe pkgs.ignis} toggle-window ignis_BAR_0";
+            #     title = "Toggle Bar";
+            # };
         };
 
         spawn-at-startup = [
-            {command = [(lib.getExe pkgs.ignis) "init" "-c" "/home/${username}/ignis/config.py"];}
+            {command = [(lib.getExe qs)];}
         ];
     };
 }

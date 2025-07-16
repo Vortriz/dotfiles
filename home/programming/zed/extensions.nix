@@ -13,6 +13,7 @@
             "latex"
             "ltex"
             "nix"
+            "qml"
             "ruff"
             "scss"
             "typst"
@@ -23,6 +24,7 @@
         extraPackages = with pkgs; [
             # keep-sorted start
             alejandra
+            kdePackages.qtdeclarative
             ltex-ls-plus
             nixd
             nodejs

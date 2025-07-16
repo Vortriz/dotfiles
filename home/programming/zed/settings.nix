@@ -84,12 +84,15 @@ in {
             })
             |> lib.mergeAttrsList)
             // {
-                ruff = {
-                    binary = {
-                        path_lookup = true;
-                        path = lib.getExe pkgs.ruff;
-                        arguments = ["server"];
-                    };
+                ruff.binary = {
+                    path_lookup = true;
+                    path = lib.getExe pkgs.ruff;
+                    arguments = ["server"];
+                };
+                qml.binary = {
+                    path_lookup = true;
+                    path = "${pkgs.kdePackages.qtdeclarative}/bin/qmlls";
+                    arguments = ["-E"];
                 };
             };
         minimap = {
