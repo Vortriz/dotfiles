@@ -33,15 +33,6 @@ in {
             #     cmd = "${lib.getExe launcher} --sub-menu emoji";
             #     title = "Open emoji picker";
             # };
-
-            "Alt+Space" = config.niri-lib.run {
-                cmd = "${lib.getExe pkgs.walker} --modules applications";
-                title = "Open Walker";
-            };
         };
-
-        spawn-at-startup = [
-            {command = [(lib.getExe pkgs.walker) "--gapplication-service"];}
-        ];
     };
 }

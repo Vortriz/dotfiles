@@ -69,6 +69,11 @@ in {
             "XF86MonBrightnessUp" = brightness "+5%";
             "XF86MonBrightnessDown" = brightness "5%-";
 
+            "Alt+Space" = run {
+                cmd = "${lib.getExe qs} ipc call globalIPC toggleLauncher";
+                title = "Open application launcher";
+            };
+
             # "Mod+B" = run {
             #     cmd = "${getExe pkgs.ignis} toggle-window ignis_BAR_0";
             #     title = "Toggle Bar";
