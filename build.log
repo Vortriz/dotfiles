@@ -10766,3 +10766,79 @@ Removed packages:
 [R.]  #6  link-units               <none>
 [R.]  #7  tools                    75374-tex
 Closure size: 7914 -> 7921 (333 paths added, 326 paths removed, delta +7, disk usage -18.5MiB).
+
+---
+
+17/07/25 03:10:51 AM IST
+<<< /nix/var/nix/profiles/system-84-link
+>>> /nix/var/nix/profiles/system-86-link
+Version changes:
+[C.]  #01  breeze-icons              5.116.0, 6.15.0, 6.15.0-dev -> 5.116.0, 6.15.0
+[C.]  #02  gnome-bluetooth           47.1, 47.1-dev -> 47.1
+[C.]  #03  gnutls                    3.8.9 x2, 3.8.9-bin, 3.8.9-dev, 3.8.9-man -> 3.8.9 x2, 3.8.9-bin, 3.8.9-man
+[C.]  #04  gpu-screen-recorder       5.5.7 -> 5.5.7, 5.5.7-fish-completions
+[C.]  #05  graphene                  1.10.8 x2, 1.10.8-dev -> 1.10.8 x2
+[C.]  #06  gtk4                      4.18.5 x2, 4.18.5-dev -> 4.18.5 x2
+[C.]  #07  gtk4-layer-shell          1.1.1, 1.1.1-dev -> 1.1.1
+[C.]  #08  libXdmcp                  1.1.5 x2, 1.1.5-dev -> 1.1.5 x2
+[C*]  #09  libcap                    2.75, 2.75-dev, 2.75-doc, 2.75-lib x2, 2.75-man -> 2.75, 2.75-doc, 2.75-lib x2, 2.75-man
+[C.]  #10  libdatrie                 2019-12-20, 2019-12-20-bin, 2019-12-20-dev, 2019-12-20-lib x2 -> 2019-12-20-lib x2
+[C.]  #11  libepoxy                  1.5.10 x2, 1.5.10-dev -> 1.5.10 x2
+[C.]  #12  libgcrypt                 1.10.3, 1.10.3-bin, 1.10.3-dev, 1.10.3-lib x2 -> 1.10.3-bin, 1.10.3-lib x2
+[C.]  #13  libgpg-error              1.51 x2, 1.51-dev -> 1.51 x2
+[C.]  #14  libproxy                  0.5.9, 0.5.9-dev -> 0.5.9
+[C.]  #15  libpulseaudio             17.0 x2, 17.0-dev -> 17.0 x2
+[C.]  #16  libselinux                3.8.1 x2, 3.8.1-bin, 3.8.1-dev -> 3.8.1 x2
+[C.]  #17  libsepol                  3.8.1, 3.8.1-bin, 3.8.1-dev -> 3.8.1
+[C.]  #18  libthai                   0.1.29 x2, 0.1.29-dev -> 0.1.29 x2
+[C.]  #19  liburcu                   0.15.2, 0.15.2-dev -> 0.15.2
+[C.]  #20  libxslt                   1.1.43 x2, 1.1.43-bin, 1.1.43-dev -> 1.1.43 x2, 1.1.43-bin
+[C.]  #21  lttng-ust                 2.13.8 x2, 2.13.8-bin, 2.13.8-dev -> 2.13.8 x2
+[C.]  #22  md4c                      0.5.2, 0.5.2-dev, 0.5.2-lib -> 0.5.2-lib
+[C.]  #23  nettle                    3.10.1 x2, 3.10.1-dev -> 3.10.1 x2
+[C*]  #24  networkmanager            1.52.0 x2, 1.52.0-dev, 1.52.0-doc, 1.52.0-man -> 1.52.0 x2, 1.52.0-doc, 1.52.0-man
+[C.]  #25  pcre2                     10.44 x2, 10.44-bin, 10.44-dev -> 10.44 x2
+[C.]  #26  qtbase                    5.15.17, 5.15.17-bin, 6.9.0, 6.9.0-dev, 6.9.0-only-plugins-qml -> 5.15.17, 5.15.17-bin, 6.9.0, 6.9.0-only-plugins-qml
+[C.]  #27  qtimageformats            6.9.0 -> 6.9.0, 6.9.0-fish-completions
+[C.]  #28  qtmultimedia              6.9.0 -> 6.9.0, 6.9.0-fish-completions
+[C.]  #29  qtsvg                     5.15.17, 5.15.17-bin, 6.9.0, 6.9.0-dev -> 5.15.17, 5.15.17-bin, 6.9.0, 6.9.0-fish-completions
+[C*]  #30  systemd                   <none>, 257.6 x2, 257.6-dev -> <none>, 257.6 x2
+[C.]  #31  systemd-minimal-libs      257.6 x2, 257.6-dev -> 257.6 x2
+[C*]  #32  util-linux                2.41, 2.41-bin, 2.41-dev, 2.41-lib, 2.41-login, 2.41-mount, 2.41-swap -> 2.41-bin, 2.41-lib, 2.41-login, 2.41-mount, 2.41-swap
+[C.]  #33  vulkan-loader             1.4.313.0 x2, 1.4.313.0-dev -> 1.4.313.0 x2
+[C.]  #34  xcb-util                  0.4.1, 0.4.1-dev -> 0.4.1
+[C.]  #35  xcb-util-cursor           0.1.5, 0.1.5-dev -> 0.1.5
+[C.]  #36  xcb-util-image            0.4.1, 0.4.1-dev -> 0.4.1
+[C.]  #37  xcb-util-keysyms          0.4.1 x2, 0.4.1-dev -> 0.4.1 x2
+[C.]  #38  xcb-util-renderutil       0.3.10, 0.3.10-dev -> 0.3.10
+[C.]  #39  xcb-util-wm               0.4.2, 0.4.2-dev -> 0.4.2
+[C*]  #40  xdg-desktop-portal-gnome  48.0 -> 48.0, 48.0-fish-completions
+Added packages:
+[A.]  #1  cava                 0.10.4, 0.10.4-fish-completions
+[A.]  #2  dunefetch-unstable   2025-07-16, 2025-07-16-fish-completions
+[A.]  #3  material-symbols     4.0.0-unstable-2025-04-11, 4.0.0-unstable-2025-04-11-fish-completions
+[A.]  #4  qtgraphicaleffects   5.15.17, 5.15.17-fish-completions
+[A.]  #5  quickshell           0.1.0, 0.1.0-fish-completions
+[A.]  #6  syntax-highlighting  6.15.0, 6.15.0-fish-completions
+[A.]  #7  wallust              3.3.0, 3.3.0-fish-completions
+Removed packages:
+[R.]  #01  dart-sass                    1.89.2
+[R.]  #02  extra-cmake-modules          6.15.0
+[R.]  #03  fix-qt-builtin-paths.sh      <none>
+[R.]  #04  fix-qt-module-paths.sh       <none>
+[R.]  #05  gnome-keyring.service        <none>
+[R.]  #06  lksctp-tools                 1.0.21
+[R.]  #07  lndir                        1.0.5
+[R.]  #08  mariadb-connector-odbc       3.1.20
+[R.]  #09  papirus-icon-theme           20250501, 20250501-fish-completions
+[R.]  #10  psqlodbc                     17.00.0002
+[R.]  #11  python3.13-ignis             0.5.dev0+date=20250701_f3c2086, 0.5.dev0+date=20250701_f3c2086-fish-completions
+[R.]  #12  python3.13-jinja2            3.1.6
+[R.]  #13  python3.13-markdown-it-py    3.0.0
+[R.]  #14  python3.13-materialyoucolor  2.0.10
+[R.]  #15  python3.13-mdurl             0.1.2
+[R.]  #16  python3.13-rich              14.0.0
+[R.]  #17  slurp                        1.5.0
+[R.]  #18  sqlite-connector-odbc        0.9993
+[R.]  #19  xdg-desktop-portal-wlr       0.7.1, 0.7.1-fish-completions
+Closure size: 7921 -> 7873 (38 paths added, 86 paths removed, delta -48, disk usage -152.7MiB).
