@@ -11,5 +11,5 @@ in {
         "kitty/scroll_mark.py".source = "${ks}/scroll_mark.py";
     };
 
-    programs.kitty.settings."map ctrl+f" = "launch --location=hsplit --allow-remote-control kitty +kitten search.py @active-kitty-window-id";
+    programs.kitty.settings."map ctrl+shift+f" = "launch --location=hsplit --allow-remote-control kitty +kitten search.py @active-kitty-window-id";
 }
