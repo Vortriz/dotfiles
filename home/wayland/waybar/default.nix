@@ -1,11 +1,9 @@
 {
-    lib,
     osConfig,
     pkgs,
     ...
 }: let
     inherit (osConfig.var) monospaceFontName;
-    inherit (osConfig.defaults) launcher;
 in {
     programs.waybar = {
         enable = false;
@@ -20,7 +18,6 @@ in {
             position = "top";
 
             modules-left = [
-                "custom/launcher"
                 "idle_inhibitor"
                 "niri/workspaces"
             ];
@@ -42,12 +39,6 @@ in {
             ];
 
             "niri/workspaces" = {
-            };
-
-            "custom/launcher" = {
-                "format" = " ";
-                "on-click" = "${lib.getName launcher} ";
-                "tooltip" = false;
             };
 
             "idle_inhibitor" = {
