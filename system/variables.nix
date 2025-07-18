@@ -3,7 +3,6 @@
     inputs,
     lib,
     pkgs,
-    system,
     ...
 }: {
     config.var = rec {
@@ -26,7 +25,6 @@
         (with pkgs; {
             # keep-sorted start
             browser = firefox;
-            code-editor = zed-editor;
             file-manager = yazi;
             shell = fish;
             terminal = kitty;
@@ -36,7 +34,6 @@
         })
         // (with inputs; {
             # keep-sorted start
-            launcher = sherlock.packages.${system}.default;
             # keep-sorted end
         });
 

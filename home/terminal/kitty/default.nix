@@ -1,10 +1,4 @@
-{
-    config,
-    osConfig,
-    ...
-}: let
-    inherit (osConfig.defaults) terminal;
-in {
+{config, ...}: {
     imports = [
         ./kitty-search.nix
     ];
@@ -23,5 +17,5 @@ in {
 
     stylix.targets.kitty.enable = true;
 
-    programs.niri.settings.binds."Mod+T" = config.niri-lib.open {app = terminal;};
+    programs.niri.settings.binds."Mod+T" = config.niri-lib.open {app = config.programs.kitty.package;};
 }

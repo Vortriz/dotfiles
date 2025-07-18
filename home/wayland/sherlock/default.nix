@@ -1,18 +1,13 @@
 {
-    config,
     inputs,
-    lib,
-    osConfig,
     pkgs,
     ...
-}: let
-    inherit (osConfig.defaults) launcher;
-in {
+}: {
     imports = [inputs.sherlock.homeManagerModules.default];
 
     programs.sherlock = {
         enable = true;
-        package = launcher;
+        package = inputs.sherlock.packages.${pkgs.system}.default;
 
         settings = {
             style = with builtins;
