@@ -122,6 +122,7 @@ in {
             matches = [
                 {app-id = getName browser;}
                 {app-id = "com.github.th_ch.youtube_music";}
+                {app-id = "vesktop";}
             ];
         }
         {
