@@ -6,6 +6,13 @@
     inherit (osConfig.defaults) shell;
 in {
     programs.yazi.keymap.mgr.prepend_keymap = [
+        # bunny
+        {
+            on = "j";
+            run = "plugin bunny";
+            desc = "Start bunny.yazi";
+        }
+
         # custom-shell
         {
             on = ["'" ";"];
@@ -69,9 +76,16 @@ in {
 
         # smart-filter
         {
-            on = "F";
+            on = "J";
             run = "plugin smart-filter";
             desc = "Smart filter";
+        }
+
+        # toggle-pane
+        {
+            on = "T";
+            run = "plugin toggle-pane max-current";
+            desc = "Maximize or restore the preview pane";
         }
 
         # what-size
@@ -81,26 +95,16 @@ in {
             desc = "Calc size of selection or cwd";
         }
 
-        # yamb
+        # zoom
         {
-            on = "j";
-            run = "plugin yamb jump_by_key";
-            desc = "Jump bookmark by key";
+            on = "+";
+            run = "plugin zoom 1";
+            desc = "Zoom in hovered file";
         }
         {
-            on = ["b" "a"];
-            run = "plugin yamb save";
-            desc = "Add bookmark";
-        }
-        {
-            on = ["b" "d"];
-            run = "plugin yamb delete_by_key";
-            desc = "Delete bookmark by key";
-        }
-        {
-            on = ["b" "r"];
-            run = "plugin yamb rename_by_key";
-            desc = "Rename bookmark by key";
+            on = "-";
+            run = "plugin zoom -1";
+            desc = "Zoom out hovered file";
         }
     ];
 }

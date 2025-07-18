@@ -1,4 +1,24 @@
 {
+    "bunny": {
+        "cargoLocks": null,
+        "date": "2025-07-09",
+        "extract": null,
+        "name": "bunny",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "bd8a767220e606f2c68c7ea7d67d1c0b97b7daf3",
+            "sha256": "sha256-mdVCZMvoe9agrnX7aZeGf0oXGffE2Fhk9f1JNbir8+Q=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/stelcodes/bunny.yazi"
+        },
+        "version": "bd8a767220e606f2c68c7ea7d67d1c0b97b7daf3"
+    },
     "custom-shell": {
         "cargoLocks": null,
         "date": "2025-06-07",
@@ -101,7 +121,7 @@
     },
     "ouch": {
         "cargoLocks": null,
-        "date": "2025-07-07",
+        "date": "2025-07-13",
         "extract": null,
         "name": "ouch",
         "passthru": null,
@@ -111,13 +131,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "bb941c4891b21762f98318a6ad484827726019e6",
-            "sha256": "sha256-g/ZHArXksRo49k9UBHap0CXzIdycQigjbdCzDK1VaLY=",
+            "rev": "0742fffea5229271164016bf96fb599d861972db",
+            "sha256": "sha256-C0wG8NQ+zjAMfd+J39Uvs3K4U6e3Qpo1yLPm2xcsAaI=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/ndtoan96/ouch.yazi"
         },
-        "version": "bb941c4891b21762f98318a6ad484827726019e6"
+        "version": "0742fffea5229271164016bf96fb599d861972db"
     },
     "restore": {
         "cargoLocks": null,
@@ -178,25 +198,5 @@
             "url": "https://github.com/pirafrank/what-size.yazi"
         },
         "version": "d8966568f2a80394bf1f9a1ace6708ddd4cc8154"
-    },
-    "yamb": {
-        "cargoLocks": null,
-        "date": "2025-02-28",
-        "extract": null,
-        "name": "yamb",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "22af0033be18eead7b04c2768767d38ccfbaa05b",
-            "sha256": "sha256-NMxZ8/7HQgs+BsZeH4nEglWsRH2ibAzq7hRSyrtFDTA=",
-            "sparseCheckout": [],
-            "type": "git",
-            "url": "https://github.com/h-hg/yamb.yazi"
-        },
-        "version": "22af0033be18eead7b04c2768767d38ccfbaa05b"
     }
 }

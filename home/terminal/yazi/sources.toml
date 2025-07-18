@@ -1,3 +1,7 @@
+[bunny]
+fetch.git = "https://github.com/stelcodes/bunny.yazi"
+src.git = "https://github.com/stelcodes/bunny.yazi"
+
 [custom-shell]
 fetch.git = "https://github.com/AnirudhG07/custom-shell.yazi"
 src.git = "https://github.com/AnirudhG07/custom-shell.yazi"
@@ -33,7 +37,3 @@ src.git = "https://github.com/Rolv-Apneseth/starship.yazi"
 [what-size]
 fetch.git = "https://github.com/pirafrank/what-size.yazi"
 src.git = "https://github.com/pirafrank/what-size.yazi"
-
-[yamb]
-fetch.git = "https://github.com/h-hg/yamb.yazi"
-src.git = "https://github.com/h-hg/yamb.yazi"
