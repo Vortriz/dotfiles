@@ -1,8 +1,7 @@
 {
-    # taken from https://pyproject-nix.github.io/uv2nix/usage/hello-world.html
-    uv2nix = {
-        path = ./uv2nix;
-        description = "uv2nix Flake";
+    minimal-sci-env = {
+        path = ./minimal-sci-env;
+        description = "Minimal scientific env";
     };
 
     typst-presentation = {
