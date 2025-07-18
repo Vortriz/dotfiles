@@ -10842,3 +10842,26 @@ Removed packages:
 [R.]  #18  sqlite-connector-odbc        0.9993
 [R.]  #19  xdg-desktop-portal-wlr       0.7.1, 0.7.1-fish-completions
 Closure size: 7921 -> 7873 (38 paths added, 86 paths removed, delta -48, disk usage -152.7MiB).
+
+---
+
+18/07/25 05:41:19 PM IST
+<<< /nix/var/nix/profiles/system-86-link
+>>> /nix/var/nix/profiles/system-88-link
+Version changes:
+[C.]  #1  imagemagick  7.1.1-47, 7.1.1-47-dev, 7.1.1-47-doc -> 7.1.1-47, 7.1.1-47-dev, 7.1.1-47-doc, 7.1.1-47-fish-completions
+Added packages:
+[A.]  #1  bunny.yazi-bd8a767  <none>
+[A.]  #2  ouch.yazi           0742fff
+Removed packages:
+[R.]  #01  cfitsio            4.4.1
+[R.]  #02  cgif               0.5.0
+[R.]  #03  hm_yazibookmark    <none>
+[R.]  #04  libdicom           1.0.5
+[R.]  #05  matio              1.5.28
+[R.]  #06  openslide          4.0.0
+[R.]  #07  ouch.yazi-bb941c4  <none>
+[R.]  #08  vips               8.16.1
+[R.]  #09  walker             0.12.28
+[R.]  #10  yamb.yazi          22af003
+Closure size: 7873 -> 7866 (19 paths added, 26 paths removed, delta -7, disk usage -33.9MiB).
