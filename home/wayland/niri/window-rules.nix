@@ -1,12 +1,15 @@
 {
+    config,
     lib,
     osConfig,
     ...
 }: let
     inherit (lib) getName;
     inherit (osConfig.defaults) browser file-manager terminal video-player;
+    inherit (config.lib.stylix) colors;
 in {
     programs.niri.settings.window-rules = [
+        # general rules
         {
             clip-to-geometry = true;
             geometry-corner-radius = let
@@ -36,6 +39,8 @@ in {
                 color = "#85e89d70";
             };
         }
+
+        # bulk window rules
         {
             open-maximized = true;
 
@@ -50,34 +55,27 @@ in {
                 {app-id = "dev.zed.Zed";}
                 {app-id = "vesktop";}
                 {app-id = "nix-search-tv";}
+                {app-id = ''libreoffice-(calc|draw|impress|math|writer)'';}
             ];
         }
         {
+            open-floating = true;
+            border = {
+                enable = true;
+                width = 2;
+                inactive.color = config.lib.stylix.colors.withHashtag.base03;
+            };
+            shadow.enable = true;
+
             matches = [
                 {app-id = "io.missioncenter.MissionCenter";}
-            ];
-
-            open-floating = true;
-            shadow.enable = true;
-            default-window-height.proportion = 0.6;
-            default-column-width.proportion = 0.75;
-
-            focus-ring = {
-                width = 4;
-                active.color = "#f38ba8";
-                inactive.color = "#ebebeb";
-            };
-        }
-        {
-            matches = [
                 {app-id = "org.gnome.Calculator";}
+                {app-id = "it.catboy.ripdrag";}
+                {app-id = "it.mijorus.smile";}
             ];
-
-            open-floating = true;
-            shadow.enable = true;
         }
         {
-            default-column-display = "tabbed"; # [TODO] auto-tabbing when it lands
+            default-column-display = "tabbed";
 
             matches = [
                 {app-id = getName terminal;}
@@ -93,18 +91,37 @@ in {
                 {app-id = "vesktop";}
             ];
         }
-        {
-            matches = [
-                {app-id = "it.catboy.ripdrag";}
-                {app-id = "it.mijorus.smile";}
-            ];
 
-            open-floating = true;
-            focus-ring = {
-                width = 4;
-                active.color = "#85e89d";
-            };
+        # specific window rules
+        {
+            matches = [{app-id = "io.missioncenter.MissionCenter";}];
+
+            default-window-height.proportion = 0.6;
+            default-column-width.proportion = 0.75;
+
+            focus-ring.active.color = colors.withHashtag.base0E;
+            border.active.color = colors.withHashtag.base0E;
         }
+        {
+            matches = [{app-id = "it.catboy.ripdrag";}];
+
+            focus-ring.active.color = colors.withHashtag.base0F;
+            border.active.color = colors.withHashtag.base0F;
+        }
+        {
+            matches = [{app-id = "it.mijorus.smile";}];
+
+            focus-ring.active.color = colors.withHashtag.base0A;
+            border.active.color = colors.withHashtag.base0A;
+        }
+        {
+            matches = [{app-id = "com.github.th_ch.youtube_music";}];
+
+            default-column-width.proportion = 0.7;
+            default-window-height.proportion = 0.7;
+        }
+
+        # workspace rules
         {
             open-on-workspace = "Acad";
             open-focused = true;
@@ -133,14 +150,6 @@ in {
                 {app-id = "dev.zed.Zed";}
                 {app-id = "code";}
             ];
-        }
-        {
-            matches = [
-                {app-id = "com.github.th_ch.youtube_music";}
-            ];
-
-            default-column-width.proportion = 0.7;
-            default-window-height.proportion = 0.7;
         }
     ];
 }

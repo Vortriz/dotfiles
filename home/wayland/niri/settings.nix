@@ -51,7 +51,10 @@ in {
         layout = {
             always-center-single-column = true;
             default-column-width.proportion = 0.5;
-            focus-ring.width = 2;
+            focus-ring = {
+                enable = true;
+                width = 2;
+            };
 
             struts.top = -8;
 

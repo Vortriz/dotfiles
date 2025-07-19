@@ -14,6 +14,8 @@ in {
 
         image = ../../assets/wallpapers/25.png;
 
+        polarity = "dark";
+
         base16Scheme = {
             base00 = "0d1117"; # Default bg
             base01 = "161b22"; # Lighter bg (status bar, line number, folding mks)
@@ -23,12 +25,12 @@ in {
             base05 = "ecf2f8"; # Default fg (caret, delimiters, Operators)
             base06 = "d3dbe3"; # Light fg (not often used)
             base07 = "dde5ed"; # Light bg (not often used)
-            base08 = "B392E9"; # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
+            base08 = "b392e9"; # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
             base09 = "ffab70"; # Integers, Boolean, Constants, XML Attributes, Markup Link Url
             base0A = "ffdf5d"; # Classes, Markup Bold, Search Text Background
             base0B = "a5d6ff"; # Strings, Inherited Class, Markup Code, Diff Inserted
             base0C = "89dceb"; # Support, regex, escape chars
-            base0D = "6AB1F0"; # Function, methods, headings
+            base0D = "6ab1f0"; # Function, methods, headings
             base0E = "f38ba8"; # Keywords
             base0F = "85e89d"; # Deprecated, open/close embedded tags
         };
