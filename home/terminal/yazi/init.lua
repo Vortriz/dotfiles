@@ -33,3 +33,29 @@ require("starship"):setup({
     -- Custom starship configuration file to use
     config_file = "~/.config/starship.toml",
 })
+
+-- custom: move tabs back to header
+function Tabs.height() return 0 end
+
+Header:children_add(function()
+  if #cx.tabs == 1 then return "" end
+  local spans = {}
+  for i = 1, #cx.tabs do
+    spans[#spans + 1] = ui.Span(" " .. i .. " ")
+  end
+  spans[cx.tabs.idx]:reverse()
+  return ui.Line(spans)
+end, 9000, Header.RIGHT)
+
+
+-- custom: some padding
+local old_layout = Tab.layout
+
+Tab.layout = function(self, ...)
+  self._area = ui.Rect({ x = self._area.x, y = self._area.y + 1, w = self._area.w, h = self._area.h - 2 })
+  return old_layout(self, ...)
+end
+
+
+-- custom: remove mode from status
+Status:children_remove(1, Status._left)
