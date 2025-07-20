@@ -70,7 +70,7 @@ in {
             "XF86MonBrightnessDown" = brightness "5%-";
 
             "Alt+Space" = run {
-                cmd = "${lib.getExe qs} ipc call globalIPC toggleLauncher";
+                cmd = "${lib.getExe qs} -c thorn ipc call runnerIPC toggleRunner";
                 title = "Open application launcher";
             };
 
@@ -82,6 +82,7 @@ in {
 
         spawn-at-startup = [
             {command = [(lib.getExe qs)];}
+            {command = [(lib.getExe qs) "-c" "thorn"];}
         ];
     };
 }
