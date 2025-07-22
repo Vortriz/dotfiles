@@ -77,6 +77,8 @@ in {
             package = pkgs.pulseaudioFull;
         };
 
+        speechd.enable = false;
+
         # TLP is a power management tool for Linux
         tlp = {
             enable = true;
