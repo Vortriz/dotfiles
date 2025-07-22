@@ -6,7 +6,7 @@
     imports = [inputs.sherlock.homeManagerModules.default];
 
     programs.sherlock = {
-        enable = true;
+        enable = false;
         package = inputs.sherlock.packages.${pkgs.system}.default;
 
         settings = {
