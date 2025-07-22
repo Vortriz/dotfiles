@@ -30,6 +30,10 @@ in {
         ++ [pkgs.libsForQt5.qt5.qtgraphicaleffects];
 
     programs.niri.settings = {
+        spawn-at-startup = [
+            {command = [(lib.getExe qs)];}
+        ];
+
         binds = let
             inherit (lib) getExe;
             inherit (config.niri-lib) run;
@@ -70,19 +74,14 @@ in {
             "XF86MonBrightnessDown" = brightness "5%-";
 
             "Alt+Space" = run {
-                cmd = "${lib.getExe qs} -c thorn ipc call runnerIPC toggleRunner";
+                cmd = "${lib.getExe qs} ipc call globalIPC toggleRunner";
                 title = "Open application launcher";
             };
 
-            # "Mod+B" = run {
-            #     cmd = "${getExe pkgs.ignis} toggle-window ignis_BAR_0";
-            #     title = "Toggle Bar";
-            # };
+            "Mod+B" = run {
+                cmd = "${getExe qs} ipc call bar toggleBar";
+                title = "Toggle Bar";
+            };
         };
-
-        spawn-at-startup = [
-            {command = [(lib.getExe qs)];}
-            {command = [(lib.getExe qs) "-c" "thorn"];}
-        ];
     };
 }
