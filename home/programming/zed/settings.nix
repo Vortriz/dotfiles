@@ -13,7 +13,6 @@ in {
     programs.zed-editor.userSettings = {
         # keep-sorted start block=yes
         agent = {
-            version = "2";
             default_model = {
                 provider = "copilot_chat";
                 model = "gpt-4.1";
