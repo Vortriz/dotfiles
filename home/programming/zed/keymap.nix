@@ -3,6 +3,9 @@
         {
             bindings = {
                 ctrl-q = null;
+                alt-ctrl-o = ["projects::OpenRecent" {"create_new_window" = false;}];
+                ctrl-p = "file_finder::Toggle";
+                ctrl-shift-p = "command_palette::Toggle";
             };
         }
         {
