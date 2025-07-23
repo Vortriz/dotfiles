@@ -25,10 +25,7 @@ in {
 
             # GENERAL
             general = {
-                # no_fade_in = true;
-                # no_fade_out = true;
                 hide_cursor = false;
-                grace = 5;
                 disable_loading_bar = true;
             };
 
