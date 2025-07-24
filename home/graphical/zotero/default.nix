@@ -1,4 +1,5 @@
 {
+    lib,
     osConfig,
     pkgs,
     ...
@@ -14,13 +15,14 @@ in {
                 bbt-citekey-format = "auth.lower + year";
             in {
                 # keep-sorted start
+                "browser.aboutConfig.showWarning" = false;
                 "extensions.update.autoUpdateDefault" = false;
                 "extensions.zotero.attachmentRenameTemplate" = ''{{ if {{ authors match="[^,]+,[^,]+,[^,]+" }} }}{{ authors max="1" suffix=" et al." }}{{ else }}{{ authors max="3" join=", " }}{{ endif }} - {{ year }} - {{ title }}'';
                 "extensions.zotero.baseAttachmentPath" = path;
-                "extensions.zotero.fileHandler.pdf" = "system";
                 "extensions.zotero.translators.better-bibtex.baseAttachmentPath" = path;
                 "extensions.zotero.translators.better-bibtex.citekeyFormat" = bbt-citekey-format;
                 "extensions.zotero.translators.better-bibtex.citekeyFormatEditing" = bbt-citekey-format;
+                "extensions.zotero.translators.better-bibtex.path.git" = lib.getExe pkgs.git;
                 "extensions.zotmoov.dst_dir" = path;
                 # keep-sorted end
             };
