@@ -2,8 +2,8 @@
     baseDir = ".mozilla/firefox/default";
 
     shyfox = pkgs.fetchzip {
-        url = "https://github.com/z4na14/ShyFox/archive/refs/heads/main.zip";
-        sha256 = "sha256-5fMWersBNRK8Taw6JFcdVhZpK5bZI32Vsaa8vqdOwPk=";
+        url = "https://github.com/Vortriz/ShyFox/archive/refs/heads/main.zip";
+        sha256 = "sha256-0w+J81PhWeJ/I1uhGOf1r8yHoc/qw6wWGAtsSHB+8hE=";
         stripRoot = true;
     };
 in {
