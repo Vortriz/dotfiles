@@ -29,17 +29,17 @@
         formatter.${system} = pkgs.alejandra;
 
         # Impurely using uv to manage virtual environments
-        devShells.${system}.default = pkgs.devshell.mkShell (
+        devShells.${system}.default = let
+            # Use Python 3.12 from nixpkgs
+            python = pkgs.python312;
+        in
+            pkgs.devshell.mkShell
             {
                 name = "sci";
                 devshell.motd = "";
-            }
-            // (let
-                # Use Python 3.12 from nixpkgs
-                python = pkgs.python312;
-            in
-                lib.optionalAttrs cfg.enablePython {
-                    packages =
+
+                packages =
+                    lib.lists.optionals cfg.enablePython (
                         [python]
                         ++ (with pkgs; [
                             uv
@@ -48,9 +48,17 @@
                         ])
                         ++ (with pkgs.python312Packages; [
                             python-lsp-server
-                        ]);
+                        ])
+                    )
+                    ++ lib.lists.optionals cfg.enableJulia [
+                        pkgs.julia-bin
+                    ]
+                    ++ lib.lists.optionals cfg.enableTypst [
+                        pkgs.typst
+                    ];
 
-                    env = [
+                env =
+                    lib.lists.optionals cfg.enablePython [
                         {
                             # Prevent uv from managing Python downloads
                             name = "UV_PYTHON_DOWNLOADS";
@@ -68,31 +76,23 @@
                             name = "LD_LIBRARY_PATH";
                             prefix = lib.makeLibraryPath pkgs.pythonManylinuxPackages.manylinux2014;
                         }
-                    ];
-
-                    commands = [
+                    ]
+                    ++ lib.lists.optionals cfg.enableJulia [
                         {
-                            help = "Activate the Python virtual environment";
-                            name = "activate";
-                            command = "source .venv/bin/activate.fish";
+                            name = "JULIA_NUM_THREADS";
+                            value = "auto";
                         }
                     ];
 
-                    devshell.startup.default.text = "unset PYTHONPATH";
-                })
-            // lib.optionalAttrs cfg.enableJulia {
-                packages = [pkgs.julia-bin];
-
-                env = [
+                commands = lib.lists.optionals cfg.enablePython [
                     {
-                        name = "JULIA_NUM_THREADS";
-                        value = "auto";
+                        help = "Activate the Python virtual environment";
+                        name = "activate";
+                        command = "source .venv/bin/activate.fish";
                     }
                 ];
-            }
-            // lib.optionalAttrs cfg.enableTypst {
-                packages = [pkgs.typst];
-            }
-        );
+
+                devshell.startup.default.text = lib.strings.optionalString cfg.enablePython "unset PYTHONPATH";
+            };
     };
 }
