@@ -1,11 +1,11 @@
-import json
 import asyncio
+import json
 import subprocess
 
 from desktop_notifier import DesktopNotifier
 
 
-async def main() -> None:
+async def main(current_display, set_scale) -> None:
     notifier = DesktopNotifier(app_name="Niri", app_icon=None)
 
     subprocess.run(
@@ -35,4 +35,4 @@ set_scale = scales[(scales.index(current_scale) + 1) % len(scales)]
 current_display = fo["name"]
 
 
-asyncio.run(main())
+asyncio.run(main(current_display, set_scale))

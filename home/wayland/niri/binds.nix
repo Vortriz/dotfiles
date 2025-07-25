@@ -26,6 +26,10 @@ in {
                 title = "Open color picker";
             };
 
+            "Mod+Alt+W" = run {
+                cmd = "toggle-warp";
+            };
+
             "Ctrl+Shift+O".action = spawn' "oimg";
 
             "Mod+H" = run {
