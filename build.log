@@ -15641,3 +15641,36 @@ Removed packages:
 [R.]  #4539  zziplib                               0.13.79
 [R.]  #4540  zztex                                 17.7-tex
 Closure size: 7866 -> 2724 (2698 paths added, 7840 paths removed, delta -5142, disk usage -5.7GiB).
+
+---
+
+25/07/25 03:18:42 PM IST
+<<< /nix/var/nix/profiles/system-90-link
+>>> /nix/var/nix/profiles/system-95-link
+Version changes:
+[U*]  #01  bind                9.20.10-dnsutils, 9.20.10-host, 9.20.10-lib -> 9.20.11-dnsutils, 9.20.11-host, 9.20.11-lib
+[U.]  #02  direnv              2.37.0, 2.37.0-fish-completions -> 2.37.1, 2.37.1-fish-completions
+[U.]  #03  electron            35.7.2 -> 37.2.2
+[U.]  #04  electron-unwrapped  35.7.2 -> 37.2.2
+[U.]  #05  firefox             140.0.4, 140.0.4-fish-completions -> 141.0, 141.0-fish-completions
+[U.]  #06  firefox-unwrapped   140.0.4 -> 141.0
+[C.]  #07  gcc                 14.3.0, 14.3.0-lib x4, 14.3.0-libgcc x4 -> 14.3.0, 14.3.0-lib x3, 14.3.0-libgcc x3, 15.1.0-lib, 15.1.0-libgcc
+[U.]  #08  intel-gmmlib        22.7.3 x2 -> 22.8.1 x2
+[U.]  #09  just                1.42.2, 1.42.2-fish-completions, 1.42.2-man -> 1.42.3, 1.42.3-fish-completions, 1.42.3-man
+[U.]  #10  libphonenumber      9.0.9 -> 9.0.10
+[U.]  #11  libtracefs          1.8.1 -> 1.8.2
+[U.]  #12  nixos-system-nixos  25.11.20250719.c87b95e -> 25.11.20250723.fc02ee7
+[C.]  #13  nss                 3.101.2 x2, 3.113 -> 3.101.2 x2, 3.114
+[U.]  #14  yt-dlp              2025.6.30 -> 2025.07.21
+Added packages:
+[A.]  #1  plugins-de53d90               <none>
+[A.]  #2  toggle-warp                   <none>
+[A.]  #3  toggle-warp-fish-completions  <none>
+Removed packages:
+[R.]  #1  hm_sherlockconfig.json          <none>
+[R.]  #2  hm_sherlockfallback.json        <none>
+[R.]  #3  hm_sherlockmain.css             <none>
+[R.]  #4  hm_sherlocksherlock_alias.json  <none>
+[R.]  #5  hm_sherlocksherlockignore       <none>
+[R.]  #6  plugins                         1ab21d4
+Closure size: 2724 -> 2721 (209 paths added, 212 paths removed, delta -3, disk usage +15.3MiB).
