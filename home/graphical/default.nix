@@ -3,6 +3,7 @@
         # keep-sorted start
         anydesk
         bottles
+        celluloid
         diffpdf
         gnome-calculator
         kdePackages.filelight

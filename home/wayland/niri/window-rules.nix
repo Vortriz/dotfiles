@@ -5,7 +5,7 @@
     ...
 }: let
     inherit (lib) getName;
-    inherit (osConfig.defaults) browser file-manager terminal video-player;
+    inherit (osConfig.defaults) browser file-manager terminal;
     inherit (config.lib.stylix) colors;
 in {
     programs.niri.settings.window-rules = [
@@ -47,7 +47,7 @@ in {
             matches = [
                 {app-id = getName browser;}
                 {app-id = getName file-manager;}
-                {app-id = getName video-player;}
+                {app-id = "com.github.rafostar.Clapper";}
                 {app-id = "code";}
                 {app-id = "obsidian";}
                 {title = ".*pdf";}
