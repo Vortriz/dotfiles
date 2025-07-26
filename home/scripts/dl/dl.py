@@ -1,7 +1,7 @@
 import os
-import sys
 import shutil
 import subprocess
+import sys
 from time import sleep
 
 import aria2p
@@ -67,9 +67,7 @@ def download(url, downloads_dir):
             )
             break
     else:
-        print("\033[96mSort the file!\033[0m")
-        sleep(2)
-        subprocess.run(["superfile", downloads_base_path])
+        print("\033[96mDownloaded to .tmp. Sort the file!\033[0m")
 
     print(f"\nDownloaded:\n\033[1m{filename}\033[0m")
 

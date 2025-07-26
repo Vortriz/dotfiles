@@ -6,6 +6,12 @@
     inherit (osConfig.defaults) shell;
 in {
     programs.yazi.keymap.mgr.prepend_keymap = [
+        {
+            on = "<S-s>";
+            run = "link";
+            desc = "Symlink the absolute path of yanked files";
+        }
+
         # bunny
         {
             on = "j";
