@@ -62,7 +62,10 @@ in {
                 enable = true;
                 hide-when-single-tab = true;
                 gap = -12;
-                length.total-proportion = 0.25;
+                gaps-between-tabs = 4;
+                width = 6;
+                corner-radius = 3;
+                length.total-proportion = 0.15;
                 position = "top";
             };
         };
