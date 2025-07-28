@@ -45,17 +45,17 @@
   };
   office = {
     pname = "office";
-    version = "4002d368c09841d5722d55720fd29c2eba05300f";
+    version = "33cc61af68b04be8b6a75d90bb36c9c1252de0fb";
     src = fetchgit {
       url = "https://github.com/macydnah/office.yazi";
-      rev = "4002d368c09841d5722d55720fd29c2eba05300f";
+      rev = "33cc61af68b04be8b6a75d90bb36c9c1252de0fb";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-XE+EfVPsO09zG8qYEhN6O95mS9NJlTdOd4Gsem2KtPI=";
+      sha256 = "sha256-/zFSyVzyJLvNINB5vD5RlOimdhQT0WrmjjDUIhNlyj4=";
     };
-    date = "2025-06-02";
+    date = "2025-07-27";
   };
   official-plugins-monorepo = {
     pname = "official-plugins-monorepo";

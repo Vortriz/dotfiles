@@ -61,7 +61,7 @@
     },
     "office": {
         "cargoLocks": null,
-        "date": "2025-06-02",
+        "date": "2025-07-27",
         "extract": null,
         "name": "office",
         "passthru": null,
@@ -71,13 +71,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "4002d368c09841d5722d55720fd29c2eba05300f",
-            "sha256": "sha256-XE+EfVPsO09zG8qYEhN6O95mS9NJlTdOd4Gsem2KtPI=",
+            "rev": "33cc61af68b04be8b6a75d90bb36c9c1252de0fb",
+            "sha256": "sha256-/zFSyVzyJLvNINB5vD5RlOimdhQT0WrmjjDUIhNlyj4=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/macydnah/office.yazi"
         },
-        "version": "4002d368c09841d5722d55720fd29c2eba05300f"
+        "version": "33cc61af68b04be8b6a75d90bb36c9c1252de0fb"
     },
     "official-plugins-monorepo": {
         "cargoLocks": null,
