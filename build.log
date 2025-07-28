@@ -15674,3 +15674,83 @@ Removed packages:
 [R.]  #5  hm_sherlocksherlockignore       <none>
 [R.]  #6  plugins                         1ab21d4
 Closure size: 2724 -> 2721 (209 paths added, 212 paths removed, delta -3, disk usage +15.3MiB).
+
+---
+
+29/07/25 12:29:43 AM IST
+<<< /nix/var/nix/profiles/system-95-link
+>>> /nix/var/nix/profiles/system-97-link
+Version changes:
+[U.]  #01  acpi-call                                    1.2.2-6.15.7 -> 1.2.2-6.15.8
+[U.]  #02  audit                                        4.0.5-bin, 4.0.5-lib x2 -> 4.1.0-bin, 4.1.0-lib x2
+[U.]  #03  bash                                         5.2p37 x2 -> 5.3p0 x2
+[U*]  #04  bash-interactive                             5.2p37 x3, 5.2p37-doc, 5.2p37-fish-completions, 5.2p37-man x2 -> 5.3p0 x3, 5.3p0-doc, 5.3p0-fish-completions, 5.3p0-man x2
+[U.]  #05  comma                                        2.2.0 -> 2.3.0
+[U.]  #06  comma-with-db                                2.2.0, 2.2.0-fish-completions -> 2.3.0, 2.3.0-fish-completions
+[U.]  #07  ethtool                                      6.14 x2 -> 6.15 x2
+[C.]  #08  exiv2                                        0.28.5-lib -> 0.28.5, 0.28.5-lib
+[U.]  #09  game-music-emu                               0.6.3 x2 -> 0.6.4 x2
+[U.]  #10  gettext                                      0.25 x2 -> 0.25.1 x2
+[U.]  #11  gh                                           2.76.0, 2.76.0-fish-completions -> 2.76.1, 2.76.1-fish-completions
+[U.]  #12  git                                          2.50.0, 2.50.0-doc, 2.50.0-fish-completions -> 2.50.1, 2.50.1-doc, 2.50.1-fish-completions
+[U.]  #13  gnutls                                       3.8.9 x2, 3.8.9-bin, 3.8.9-man -> 3.8.10 x2, 3.8.10-bin, 3.8.10-man
+[U.]  #14  hyprlang                                     0.6.3 -> 0.6.4
+[U.]  #15  initrd-linux                                 6.15.7 -> 6.15.8
+[U.]  #16  libde265                                     1.0.15 x2 -> 1.0.16 x2
+[U.]  #17  libffi                                       3.4.8 x2, 3.4.8-dev -> 3.5.1 x2, 3.5.1-dev
+[U.]  #18  libogg                                       1.3.5 x2 -> 1.3.6 x2
+[U.]  #19  libproxy                                     0.5.9 -> 0.5.10
+[C.]  #20  libsoup                                      2.74.3, 3.6.5 x2 -> 3.6.5 x2
+[U.]  #21  libwebp                                      1.5.0 x4 -> 1.6.0 x4
+[U.]  #22  linux                                        6.15.7, 6.15.7-modules, 6.15.7-modules-shrunk -> 6.15.8, 6.15.8-modules, 6.15.8-modules-shrunk
+[U*]  #23  lvm2                                         2.03.32, 2.03.32-bin, 2.03.32-lib x2 -> 2.03.33, 2.03.33-bin, 2.03.33-lib x2
+[U.]  #24  neon                                         0.32.5 x2 -> 0.34.2 x2
+[U.]  #25  nixos-system-nixos                           25.11.20250723.fc02ee7 -> 25.11.20250726.17f6bd1
+[U.]  #26  nspr                                         4.36 x2 -> 4.37 x2
+[D.]  #27  office.yazi                                  4002d36 -> 33cc61a
+[U.]  #28  python3.13-certifi                           2025.04.26 -> 2025.06.15
+[U.]  #29  quickshell-wrapped                           0.1.0, 0.1.0-fish-completions -> 0.2.0, 0.2.0-fish-completions
+[U.]  #30  readline                                     8.2p13 x2 -> 8.3p1 x2
+[U.]  #31  ruff                                         0.12.3 -> 0.12.4
+[U.]  #32  rust-analyzer                                2025-07-14 -> 2025-07-21
+[U.]  #33  rust-analyzer-unwrapped                      2025-07-14 -> 2025-07-21
+[U.]  #34  s2n-tls                                      1.5.21 -> 1.5.22
+[U.]  #35  sdl3                                         3.2.16-lib x2 -> 3.2.18-lib x2
+[U.]  #36  sioyek                                       2.0.0-unstable-2025-06-07, 2.0.0-unstable-2025-06-07-fish-completions -> 2.0.0-unstable-2025-07-09, 2.0.0-unstable-2025-07-09-fish-completions
+[U.]  #37  sqlite                                       3.50.1 x2, 3.50.1-bin, 3.50.1-dev -> 3.50.2 x2, 3.50.2-bin, 3.50.2-dev
+[U.]  #38  vpl-gpu-rt                                   25.2.6 -> 25.3.0
+[U.]  #39  wayland                                      1.23.1 x2, 1.23.1-dev x2 -> 1.24.0 x2, 1.24.0-dev x2
+[U.]  #40  wayland-scanner                              1.23.1 x2 -> 1.24.0 x2
+[U.]  #41  x86_energy_perf_policy                       6.12.39 -> 6.12.40
+[U.]  #42  xdg-desktop-portal-termfilechooser-unstable  2025-07-12, 2025-07-12-fish-completions -> 2025-07-27, 2025-07-27-fish-completions
+[U.]  #43  zed-editor                                   0.195.5 -> 0.196.6
+[U.]  #44  zed-editor-wrapped                           0.195.5, 0.195.5-fish-completions -> 0.196.6, 0.196.6-fish-completions
+Added packages:
+[A.]  #01  appstream-qt            1.0.4
+[A.]  #02  attica                  6.16.0
+[A.]  #03  breeze                  6.4.3
+[A.]  #04  davs2                   1.7-lib
+[A.]  #05  ebook-tools             0.2.2
+[A.]  #06  frameworkintegration    6.16.0
+[A.]  #07  haruna                  1.4.0, 1.4.0-fish-completions
+[A.]  #08  kcmutils                6.16.0
+[A.]  #09  kdecoration             6.4.3
+[A.]  #10  kdegraphics-mobipocket  25.04.3
+[A.]  #11  kfilemetadata           6.16.0
+[A.]  #12  knewstuff               6.16.0
+[A.]  #13  kpackage                6.16.0
+[A.]  #14  libappimage             1.0.4-5
+[A.]  #15  libzip                  1.11.4
+[A.]  #16  mpvqt                   1.1.1
+[A.]  #17  oxygen-icons            6.1.0
+[A.]  #18  packagekit-qt           1.1.2
+[A.]  #19  poppler-qt6             25.05.0
+[A.]  #20  rtl8192su               0-unstable-2016-10-05-zstd
+[A.]  #21  squashfuse              0.6.1
+[A.]  #22  syndication             6.16.0
+[A.]  #23  uavs3d                  1.1-unstable-2023-02-23
+[A.]  #24  xavs2                   1.4-lib
+Removed packages:
+[R.]  #1  libgdata            0.18.1
+[R.]  #2  rtl8192su-unstable  2016-10-05-zstd
+Closure size: 2721 -> 2744 (2716 paths added, 2693 paths removed, delta +23, disk usage +154.4MiB).
