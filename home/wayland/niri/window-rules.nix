@@ -47,7 +47,7 @@ in {
             matches = [
                 {app-id = getName browser;}
                 {app-id = getName file-manager;}
-                {app-id = "com.github.rafostar.Clapper";}
+                {app-id = "org.kde.haruna";}
                 {app-id = "code";}
                 {app-id = "obsidian";}
                 {title = ".*pdf";}

@@ -28,7 +28,7 @@
             file-manager = yazi;
             shell = fish;
             terminal = kitty;
-            video-player = clapper;
+            video-player = haruna;
             wallpaper = swww-git;
             # keep-sorted end
         })
