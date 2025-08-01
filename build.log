@@ -15754,3 +15754,18 @@ Removed packages:
 [R.]  #1  libgdata            0.18.1
 [R.]  #2  rtl8192su-unstable  2016-10-05-zstd
 Closure size: 2721 -> 2744 (2716 paths added, 2693 paths removed, delta +23, disk usage +154.4MiB).
+
+---
+
+01/08/25 09:00:32 AM IST
+<<< /nix/var/nix/profiles/system-97-link
+>>> /nix/var/nix/profiles/system-98-link
+Version changes:
+[U.]  #1  fzf                  0.64.0, 0.64.0-fish-completions, 0.64.0-man -> 0.65.0, 0.65.0-fish-completions, 0.65.0-man
+[C.]  #2  gettext              0.25.1 x2 -> 0.25.1
+[U.]  #3  gpu-screen-recorder  5.6.1, 5.6.1-fish-completions -> 5.6.3, 5.6.3-fish-completions
+[U.]  #4  just                 1.42.3, 1.42.3-fish-completions, 1.42.3-man -> 1.42.4, 1.42.4-fish-completions, 1.42.4-man
+[U*]  #5  niri-unstable        2025-07-18-fefc0bc, 2025-07-18-fefc0bc-doc -> 2025-07-31-91b6a11, 2025-07-31-91b6a11-doc
+[U.]  #6  nixos-system-nixos   25.11.20250726.17f6bd1 -> 25.11.20250728.dc96378
+[U.]  #7  vscode               1.102.1, 1.102.1-fish-completions -> 1.102.2, 1.102.2-fish-completions
+Closure size: 2744 -> 2743 (79 paths added, 80 paths removed, delta -1, disk usage +4.8MiB).
