@@ -41,7 +41,7 @@
     },
     "mediainfo": {
         "cargoLocks": null,
-        "date": "2025-07-19",
+        "date": "2025-08-06",
         "extract": null,
         "name": "mediainfo",
         "passthru": null,
@@ -51,13 +51,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "f89605ce7ca33181ee6770e641d80ec4673093e0",
-            "sha256": "sha256-NloChkZWKo9JL636d+G7vgEY/HX24udngYftw/Ydzk4=",
+            "rev": "0e2ae47cfb2b7c7a32d714c753b1cebbaa75d127",
+            "sha256": "sha256-CHigaujMHd1BuYyyxzI5B4ZYQhuH2YZptVVJToq39sY=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/boydaihungst/mediainfo.yazi"
         },
-        "version": "f89605ce7ca33181ee6770e641d80ec4673093e0"
+        "version": "0e2ae47cfb2b7c7a32d714c753b1cebbaa75d127"
     },
     "office": {
         "cargoLocks": null,
