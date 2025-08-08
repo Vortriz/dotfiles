@@ -42,11 +42,11 @@
             url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        sherlock = {
-            url = "github:Skxxtz/sherlock";
-            inputs.nixpkgs.follows = "nixpkgs";
-            inputs.home-manager.follows = "home-manager";
-        };
+        # sherlock = {
+        #     url = "github:Skxxtz/sherlock";
+        #     inputs.nixpkgs.follows = "nixpkgs";
+        #     inputs.home-manager.follows = "home-manager";
+        # };
         stylix.url = "github:nix-community/stylix";
         treefmt-nix = {
             url = "github:numtide/treefmt-nix";

@@ -1,5 +1,5 @@
 {
-    programs.sherlock.settings.launchers = [
+    programs.sherlock.launchers = [
         # keep-sorted start block=yes newline_separated=yes
         {
             name = "App Launcher";

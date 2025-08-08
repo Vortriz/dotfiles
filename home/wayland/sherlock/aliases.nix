@@ -1,5 +1,5 @@
 {
-    programs.sherlock.settings.aliases = {
+    programs.sherlock.aliases = {
         Kitty = {
             name = "Kitty";
             icon = "terminal";

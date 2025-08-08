@@ -5,7 +5,7 @@
 }: let
     inherit (osConfig.defaults) terminal;
 in {
-    programs.sherlock.settings.config = {
+    programs.sherlock.settings = {
         appearance = {
             width = 600;
             height = 400;
