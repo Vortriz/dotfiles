@@ -7,6 +7,8 @@
     inherit (osConfig.var) monospaceFontName;
     inherit (osConfig.defaults) shell;
 in {
+    imports = [./extensions.nix];
+
     programs.vscode = {
         enable = true;
 
@@ -15,8 +17,6 @@ in {
         profiles.default = {
             enableUpdateCheck = false;
             enableExtensionUpdateCheck = false;
-
-            # = builtins.fromJSON (builtins.readFile ());
 
             userSettings =
                 pkgs.substitute {

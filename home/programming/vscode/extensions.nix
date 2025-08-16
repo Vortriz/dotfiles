@@ -1,12 +1,11 @@
 {pkgs, ...}: {
-    programs.vscode.vscode.default.extensions = with pkgs.vscode-extensions; [
+    programs.vscode.profiles.default.extensions = with pkgs.vscode-extensions; [
         # language packs et al
 
         # keep-sorted start
         james-yu.latex-workshop
         jnoortheen.nix-ide
         julialang.language-julia
-        ltex-plus.vscode-ltex-plus
         mikestead.dotenv
         ms-python.isort
         ms-python.python
