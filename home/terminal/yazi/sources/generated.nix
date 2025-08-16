@@ -59,17 +59,17 @@
   };
   official-plugins-monorepo = {
     pname = "official-plugins-monorepo";
-    version = "de53d90cb2740f84ae595f93d0c4c23f8618a9e4";
+    version = "e95c7b384e7b0a9793fe1471f0f8f7810ef2a7ed";
     src = fetchgit {
       url = "https://github.com/yazi-rs/plugins";
-      rev = "de53d90cb2740f84ae595f93d0c4c23f8618a9e4";
+      rev = "e95c7b384e7b0a9793fe1471f0f8f7810ef2a7ed";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-ixZKOtLOwLHLeSoEkk07TB3N57DXoVEyImR3qzGUzxQ=";
+      sha256 = "sha256-TUS+yXxBOt6tL/zz10k4ezot8IgVg0/2BbS8wPs9KcE=";
     };
-    date = "2025-07-23";
+    date = "2025-08-11";
   };
   other-monorepo = {
     pname = "other-monorepo";
@@ -101,17 +101,17 @@
   };
   restore = {
     pname = "restore";
-    version = "84f1921806c49b7b20af26cbe57cb4fd286142e2";
+    version = "2a2ba2fbaee72f88054a43723becf66c3cfb892e";
     src = fetchgit {
       url = "https://github.com/boydaihungst/restore.yazi";
-      rev = "84f1921806c49b7b20af26cbe57cb4fd286142e2";
+      rev = "2a2ba2fbaee72f88054a43723becf66c3cfb892e";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-pEQZ/2Z4XVYlfzqtCz51bIgE9KzkDF/qyX8vThhlWGI=";
+      sha256 = "sha256-FqvQuKNH3jjXQ/7N7MsUsOoh9DTreZTjpdQ4lrr2iLk=";
     };
-    date = "2025-07-11";
+    date = "2025-08-12";
   };
   starship = {
     pname = "starship";

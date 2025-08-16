@@ -4,7 +4,6 @@
 2. Connect to non-institute wifi
 3. Procced to install NixOS and make sure to label the root partition as ROOT and boot partition as SYSTEM
 4. After installation, install warp
-
     - Put this into `/etc/nixos/configuration.nix`
 
     ```

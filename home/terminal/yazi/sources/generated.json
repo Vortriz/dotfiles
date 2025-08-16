@@ -81,7 +81,7 @@
     },
     "official-plugins-monorepo": {
         "cargoLocks": null,
-        "date": "2025-07-23",
+        "date": "2025-08-11",
         "extract": null,
         "name": "official-plugins-monorepo",
         "passthru": null,
@@ -91,13 +91,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "de53d90cb2740f84ae595f93d0c4c23f8618a9e4",
-            "sha256": "sha256-ixZKOtLOwLHLeSoEkk07TB3N57DXoVEyImR3qzGUzxQ=",
+            "rev": "e95c7b384e7b0a9793fe1471f0f8f7810ef2a7ed",
+            "sha256": "sha256-TUS+yXxBOt6tL/zz10k4ezot8IgVg0/2BbS8wPs9KcE=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/yazi-rs/plugins"
         },
-        "version": "de53d90cb2740f84ae595f93d0c4c23f8618a9e4"
+        "version": "e95c7b384e7b0a9793fe1471f0f8f7810ef2a7ed"
     },
     "other-monorepo": {
         "cargoLocks": null,
@@ -141,7 +141,7 @@
     },
     "restore": {
         "cargoLocks": null,
-        "date": "2025-07-11",
+        "date": "2025-08-12",
         "extract": null,
         "name": "restore",
         "passthru": null,
@@ -151,13 +151,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "84f1921806c49b7b20af26cbe57cb4fd286142e2",
-            "sha256": "sha256-pEQZ/2Z4XVYlfzqtCz51bIgE9KzkDF/qyX8vThhlWGI=",
+            "rev": "2a2ba2fbaee72f88054a43723becf66c3cfb892e",
+            "sha256": "sha256-FqvQuKNH3jjXQ/7N7MsUsOoh9DTreZTjpdQ4lrr2iLk=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/boydaihungst/restore.yazi"
         },
-        "version": "84f1921806c49b7b20af26cbe57cb4fd286142e2"
+        "version": "2a2ba2fbaee72f88054a43723becf66c3cfb892e"
     },
     "starship": {
         "cargoLocks": null,
