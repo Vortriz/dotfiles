@@ -15,7 +15,7 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         niri-shell = {
-            url = "github:Vortriz/niri-shell";
+            url = "path:/home/vortriz/.config/quickshell/DankMaterialShell";
             inputs.nixpkgs.follows = "nixpkgs";
         };
         # mcp-nixos.url = "github:utensils/mcp-nixos"; # wait for zed to support this
@@ -38,15 +38,6 @@
             url = "github:cachix/git-hooks.nix";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        quickshell = {
-            url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-        # sherlock = {
-        #     url = "github:Skxxtz/sherlock";
-        #     inputs.nixpkgs.follows = "nixpkgs";
-        #     inputs.home-manager.follows = "home-manager";
-        # };
         stylix.url = "github:nix-community/stylix";
         treefmt-nix = {
             url = "github:numtide/treefmt-nix";

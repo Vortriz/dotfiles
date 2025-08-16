@@ -143,28 +143,6 @@
         "type": "github"
       }
     },
-    "flake-utils": {
-      "inputs": {
-        "systems": [
-          "niri-shell",
-          "ignis",
-          "systems"
-        ]
-      },
-      "locked": {
-        "lastModified": 1731533236,
-        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
     "fromYaml": {
       "flake": false,
       "locked": {
@@ -219,22 +197,6 @@
         "type": "github"
       }
     },
-    "gvc": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1735384240,
-        "narHash": "sha256-ikF9EzFlsRH8i4+SVUHETF4Jk1ob2JX1RLsuMdzrQOQ=",
-        "owner": "ignis-sh",
-        "repo": "libgnome-volume-control-wheel",
-        "rev": "2d1cb33dacdae43127bb843a48b159ea7b8925d0",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ignis-sh",
-        "repo": "libgnome-volume-control-wheel",
-        "type": "github"
-      }
-    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -276,33 +238,6 @@
         "type": "github"
       }
     },
-    "ignis": {
-      "inputs": {
-        "flake-utils": "flake-utils",
-        "gvc": "gvc",
-        "nixpkgs": [
-          "niri-shell",
-          "nixpkgs"
-        ],
-        "systems": [
-          "niri-shell",
-          "systems"
-        ]
-      },
-      "locked": {
-        "lastModified": 1751392561,
-        "narHash": "sha256-dxSyn3YdKumTVwOvl3jgaJ+rN7t6ZZxtl9Ifm85YGCg=",
-        "owner": "ignis-sh",
-        "repo": "ignis",
-        "rev": "f3c2086a4c2de674a714a773cdb9fbd936905420",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ignis-sh",
-        "repo": "ignis",
-        "type": "github"
-      }
-    },
     "niri": {
       "inputs": {
         "niri-stable": "niri-stable",
@@ -328,24 +263,20 @@
     },
     "niri-shell": {
       "inputs": {
-        "ignis": "ignis",
         "nixpkgs": [
           "nixpkgs"
         ],
-        "systems": "systems_2"
+        "quickshell": "quickshell"
       },
       "locked": {
-        "lastModified": 1751542299,
-        "narHash": "sha256-PSlLodqJA4ANKIhRC5PSncQz5x6XEFGDJ35dLkb3Saw=",
-        "owner": "Vortriz",
-        "repo": "niri-shell",
-        "rev": "fd45ff1c5efc3c8eb1c31d8b63bd4db09243a11f",
-        "type": "github"
+        "lastModified": 1755356410,
+        "narHash": "sha256-UTCzfwFjejA8bx8ghGG/9rLdMF0hJsV5ye8ZHWOUqp4=",
+        "path": "/home/vortriz/.config/quickshell/DankMaterialShell",
+        "type": "path"
       },
       "original": {
-        "owner": "Vortriz",
-        "repo": "niri-shell",
-        "type": "github"
+        "path": "/home/vortriz/.config/quickshell/DankMaterialShell",
+        "type": "path"
       }
     },
     "niri-stable": {
@@ -530,6 +461,7 @@
     "quickshell": {
       "inputs": {
         "nixpkgs": [
+          "niri-shell",
           "nixpkgs"
         ]
       },
@@ -540,11 +472,11 @@
         "rev": "a5431dd02dc23d9ef1680e67777fed00fe5f7cda",
         "revCount": 665,
         "type": "git",
-        "url": "https://git.outfoxxed.me/outfoxxed/quickshell"
+        "url": "https://git.outfoxxed.me/quickshell/quickshell"
       },
       "original": {
         "type": "git",
-        "url": "https://git.outfoxxed.me/outfoxxed/quickshell"
+        "url": "https://git.outfoxxed.me/quickshell/quickshell"
       }
     },
     "root": {
@@ -557,7 +489,6 @@
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_2",
         "pre-commit-hooks": "pre-commit-hooks",
-        "quickshell": "quickshell",
         "stylix": "stylix",
         "treefmt-nix": "treefmt-nix"
       }
@@ -573,7 +504,7 @@
         "gnome-shell": "gnome-shell",
         "nixpkgs": "nixpkgs_3",
         "nur": "nur",
-        "systems": "systems_3",
+        "systems": "systems_2",
         "tinted-foot": "tinted-foot",
         "tinted-kitty": "tinted-kitty",
         "tinted-schemes": "tinted-schemes",
@@ -610,20 +541,6 @@
       }
     },
     "systems_2": {
-      "flake": false,
-      "locked": {
-        "path": "./flake.systems.nix",
-        "type": "path"
-      },
-      "original": {
-        "path": "./flake.systems.nix",
-        "type": "path"
-      },
-      "parent": [
-        "niri-shell"
-      ]
-    },
-    "systems_3": {
       "locked": {
         "lastModified": 1681028828,
         "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
