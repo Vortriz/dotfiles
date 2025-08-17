@@ -269,8 +269,8 @@
         "quickshell": "quickshell"
       },
       "locked": {
-        "lastModified": 1755356410,
-        "narHash": "sha256-UTCzfwFjejA8bx8ghGG/9rLdMF0hJsV5ye8ZHWOUqp4=",
+        "lastModified": 1755428244,
+        "narHash": "sha256-3oCawqdQpKOpadZ937FJsq0crl1bp03BCs9BNjSLCik=",
         "path": "/home/vortriz/.config/quickshell/DankMaterialShell",
         "type": "path"
       },
