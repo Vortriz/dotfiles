@@ -15994,3 +15994,68 @@ Removed packages:
 [R.]  #16  unit-mount-pstore.service  <none>
 [R.]  #17  wallust                    3.4.0, 3.4.0-fish-completions
 Closure size: 2743 -> 2813 (485 paths added, 415 paths removed, delta +70, disk usage +785.9MiB).
+
+---
+
+20/08/25 09:47:57 PM IST
+<<< /nix/var/nix/profiles/system-102-link
+>>> /nix/var/nix/profiles/system-105-link
+Version changes:
+[U.]  #01  aardvark-dns                                          1.15.0 -> 1.16.0
+[U.]  #02  acpi-call                                             1.2.2-6.16 -> 1.2.2-6.16.1
+[U.]  #03  curl-impersonate-chrome                               0.8.0 -> 1.2.0
+[U.]  #04  dunefetch-unstable                                    2025-07-16, 2025-07-16-fish-completions -> 2025-08-12, 2025-08-12-fish-completions
+[U.]  #05  fastfetch                                             2.49.0, 2.49.0-fish-completions, 2.49.0-man -> 2.50.2, 2.50.2-fish-completions, 2.50.2-man
+[U.]  #06  filelight                                             25.04.3, 25.04.3-fish-completions -> 25.08.0, 25.08.0-fish-completions
+[U.]  #07  flameshot                                             12.1.0-unstable-2025-05-04, 12.1.0-unstable-2025-05-04-fish-completions -> 13.0.1, 13.0.1-fish-completions
+[U.]  #08  gvproxy                                               0.8.6 -> 0.8.7
+[U.]  #09  imagemagick                                           7.1.2-0, 7.1.2-0-dev, 7.1.2-0-doc, 7.1.2-0-fish-completions -> 7.1.2-1, 7.1.2-1-dev, 7.1.2-1-doc, 7.1.2-1-fish-completions
+[U.]  #10  initrd-linux                                          6.16 -> 6.16.1
+[U.]  #11  kdegraphics-mobipocket                                25.04.3 -> 25.08.0
+[U.]  #12  keep-sorted                                           0.6.1 -> 0.7.0
+[U*]  #13  kpmcore                                               25.04.3 -> 25.08.0
+[U*]  #14  ksystemlog                                            25.04.3 -> 25.08.0
+[C.]  #15  libxcrypt                                             4.4.38 x4, 4.4.38-man -> 4.4.38 x2, 4.4.38-man
+[U.]  #16  linux                                                 6.16, 6.16-modules, 6.16-modules-shrunk -> 6.16.1, 6.16.1-modules x2, 6.16.1-modules-shrunk
+[U.]  #17  netavark                                              1.15.2 -> 1.16.0
+[U*]  #18  niri-unstable                                         2025-08-16-af30cc8, 2025-08-16-af30cc8-doc -> 2025-08-17-a6febb8, 2025-08-17-a6febb8-doc
+[U.]  #19  nix-search-tv                                         2.1.7, 2.1.7-fish-completions -> 2.1.8, 2.1.8-fish-completions
+[U.]  #20  nixos-system-nixos                                    25.11.20250814.fbcf476 -> 25.11.20250819.2007595
+[U.]  #21  obsidian                                              1.8.10, 1.8.10-fish-completions -> 1.9.10, 1.9.10-fish-completions
+[U*]  #22  partitionmanager                                      25.04.3 -> 25.08.0
+[U.]  #23  passt                                                 2025_06_11.0293c6f -> 2025_08_05.309eefd
+[U*]  #24  podman                                                5.5.2 -> 5.6.0
+[U*]  #25  podman-docker-compat                                  5.5.2 -> 5.6.0
+[C.]  #26  python3                                               3.11.13, 3.13.5 x4, 3.13.5-env x9 -> 3.11.13, 3.13.5 x2, 3.13.5-env x9
+[U.]  #27  python3.13-desktop-notifier                           6.1.1 -> 6.2.0
+[U.]  #28  python3.13-pathvalidate                               3.2.3 -> 3.3.1
+[U.]  #29  runc                                                  1.1.15 -> 1.3.0
+[U.]  #30  samba                                                 4.20.8 x2, 4.20.8-man -> 4.22.3 x2, 4.22.3-man
+[U.]  #31  sd-switch                                             0.5.4 -> 0.5.5
+[U.]  #32  sherlock-launcher                                     0.1.14-2, 0.1.14-2-fish-completions -> 0.1.14-3, 0.1.14-3-fish-completions
+[U.]  #33  sioyek                                                2.0.0-unstable-2025-07-09, 2.0.0-unstable-2025-07-09-fish-completions -> 2.0.0-unstable-2025-08-08, 2.0.0-unstable-2025-08-08-fish-completions
+[C.]  #34  udev-rules                                            <none> x2 -> <none>
+[U.]  #35  vscode                                                1.103.0, 1.103.0-fish-completions -> 1.103.1, 1.103.1-fish-completions
+[U.]  #36  vscode-extension-github-copilot-chat                  0.29.1 -> 0.30.1
+[U.]  #37  vscode-extension-shd101wyy-markdown-preview-enhanced  0.8.18 -> 0.8.19
+[U.]  #38  x86_energy_perf_policy                                6.12.41 -> 6.12.42
+[U.]  #39  yt-dlp                                                2025.07.21 -> 2025.08.11
+[U.]  #40  yyjson                                                0.11.1 -> 0.12.0
+[U.]  #41  zed-editor                                            0.199.6 -> 0.199.10
+[U.]  #42  zed-editor-wrapped                                    0.199.6, 0.199.6-fish-completions -> 0.199.10, 0.199.10-fish-completions
+Added packages:
+[A.]  #1  KDSingleApplication  1.2.0
+[A.]  #2  dgop-unstable        2025-08-11, 2025-08-11-fish-completions
+[A.]  #3  lmdb                 0.9.33
+Removed packages:
+[R.]  #01  avizo             1.3-unstable-2024-11-03, 1.3-unstable-2024-11-03-fish-completions
+[R.]  #02  avizo-config.ini  <none>
+[R.]  #03  avizo.service     <none>
+[R.]  #04  extra-utils       <none>
+[R.]  #05  initrd-fsinfo     <none>
+[R.]  #06  keymap            <none>
+[R.]  #07  ldb               2.9.2 x2
+[R.]  #08  link-units        <none>
+[R.]  #09  pamixer           1.6
+[R.]  #10  stage             1-init.sh
+Closure size: 2813 -> 2801 (274 paths added, 286 paths removed, delta -12, disk usage -195.9MiB).
