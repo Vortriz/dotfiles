@@ -1,4 +1,8 @@
-{inputs, ...}: {
+{
+    inputs,
+    pkgs,
+    ...
+}: {
     imports = [inputs.niri-shell.homeModules.DankMaterialShell];
 
     programs.DankMaterialShell = {
@@ -6,4 +10,6 @@
         enableKeybinds = true;
         enableSpawn = true;
     };
+
+    home.packages = [pkgs.dgop-git];
 }

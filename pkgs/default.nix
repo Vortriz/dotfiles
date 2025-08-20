@@ -10,4 +10,5 @@ in {
     swww-git = callPackage ./swww/package.nix {}; # remove when swww 0.10.4 is in nixpkgs
     xdg-desktop-portal-termfilechooser-git = callPackage' ./xdg-desktop-portal-termfilechooser-git/package.nix;
     dunefetch-git = callPackage' ./dunefetch-git/package.nix;
+    dgop-git = callPackage' ./dgop-git/package.nix;
 }
