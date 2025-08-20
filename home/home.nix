@@ -36,6 +36,11 @@ in {
         RUSTUP_HOME = "${dataHome}/rustup";
     };
 
+    systemd.user.targets.tray.Unit = {
+        Description = "Home Manager System Tray";
+        Requires = ["graphical-session-pre.target"];
+    };
+
     # Nicely reload system units when changing configs
     systemd.user.startServices = "sd-switch";
 
