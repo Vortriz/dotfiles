@@ -1,5 +1,6 @@
 {
     config,
+    lib,
     pkgs,
     ...
 }: let
@@ -104,6 +105,25 @@ in {
         # oxidizing sudo
         sudo-rs.enable = true;
         sudo.enable = false;
+
+        # espanso
+        wrappers.espanso = {
+            capabilities = "cap_dac_override+p";
+            owner = "root";
+            group = "root";
+            source = lib.getExe (
+                pkgs.espanso-wayland.overrideAttrs (old: {
+                    patchPhase =
+                        old.patchPhase or ""
+                        + ''
+                            substituteInPlace espanso/src/cli/daemon/mod.rs \
+                                --replace-fail \
+                                  'std::env::current_exe().expect("unable to obtain espanso executable location");' \
+                                  'std::ffi::OsString::from("/run/wrappers/bin/espanso");'
+                        '';
+                })
+            );
+        };
     };
 
     system.rebuild.enableNg = true;
