@@ -3,17 +3,17 @@
 {
   dgop = {
     pname = "dgop";
-    version = "ea31f32db1c7ed1905b98eaaa0f3fd8d9afb36fc";
+    version = "4d3a0431b7d65008349c45952d53665e3aade0f7";
     src = fetchgit {
       url = "https://github.com/AvengeMedia/dgop";
-      rev = "ea31f32db1c7ed1905b98eaaa0f3fd8d9afb36fc";
+      rev = "4d3a0431b7d65008349c45952d53665e3aade0f7";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-QCJbcczQjUZ+Xf7tQHckuP9h8SD0C4p0C8SVByIAq/g=";
+      sha256 = "sha256-Who8Q9eZS2QTXasgTL4i9YtHkjPqAZven1znUI+nP6w=";
     };
-    date = "2025-08-11";
+    date = "2025-08-23";
   };
   dunefetch = {
     pname = "dunefetch";

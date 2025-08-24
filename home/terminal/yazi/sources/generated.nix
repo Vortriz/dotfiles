@@ -59,17 +59,17 @@
   };
   official-plugins-monorepo = {
     pname = "official-plugins-monorepo";
-    version = "e95c7b384e7b0a9793fe1471f0f8f7810ef2a7ed";
+    version = "d7588f6d29b5998733d5a71ec312c7248ba14555";
     src = fetchgit {
       url = "https://github.com/yazi-rs/plugins";
-      rev = "e95c7b384e7b0a9793fe1471f0f8f7810ef2a7ed";
+      rev = "d7588f6d29b5998733d5a71ec312c7248ba14555";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-TUS+yXxBOt6tL/zz10k4ezot8IgVg0/2BbS8wPs9KcE=";
+      sha256 = "sha256-9+58QhdM4HVOAfEC224TrPEx1N7F2VLGMxKVLAM4nJw=";
     };
-    date = "2025-08-11";
+    date = "2025-08-23";
   };
   other-monorepo = {
     pname = "other-monorepo";
