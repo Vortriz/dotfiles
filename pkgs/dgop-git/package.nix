@@ -9,7 +9,7 @@ in
         inherit pname src;
         version = "unstable-${date}";
 
-        vendorHash = "sha256-+5rN3ekzExcnFdxK2xqOzgYiUzxbJtODHGd4HVq6hqk=";
+        vendorHash = "sha256-+3o/Kg5ROSgp8IZfvU71JvbEgaiLasx5IAkjq27faLQ=";
 
         ldflags = ["-s" "-w"];
 
