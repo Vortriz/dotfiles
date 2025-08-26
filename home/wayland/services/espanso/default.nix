@@ -6,6 +6,7 @@
     services.espanso = {
         enable = true;
         configs.default = {
+            show_notifications = false;
             search_shortcut = "ALT+SHIFT+SPACE";
         };
         matches.default.matches = [
