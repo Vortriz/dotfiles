@@ -28,10 +28,10 @@ in {
         };
 
         # Login manager
-        logind = {
-            powerKey = "suspend";
-            powerKeyLongPress = "poweroff";
-            lidSwitch = "suspend-then-hibernate";
+        logind.settings.Login = {
+            HnadlePowerKey = "suspend";
+            HandlePowerKeyLongPress = "poweroff";
+            HandleLidSwitch = "suspend-then-hibernate";
         };
 
         # This setups a SSH server. Very important if you're setting up a headless system.

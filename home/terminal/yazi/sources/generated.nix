@@ -31,17 +31,17 @@
   };
   mediainfo = {
     pname = "mediainfo";
-    version = "0e2ae47cfb2b7c7a32d714c753b1cebbaa75d127";
+    version = "2093ab79d47d750c0b74759d2dd93aff8c7ee5c8";
     src = fetchgit {
       url = "https://github.com/boydaihungst/mediainfo.yazi";
-      rev = "0e2ae47cfb2b7c7a32d714c753b1cebbaa75d127";
+      rev = "2093ab79d47d750c0b74759d2dd93aff8c7ee5c8";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-CHigaujMHd1BuYyyxzI5B4ZYQhuH2YZptVVJToq39sY=";
+      sha256 = "sha256-GObz6kpBTT1HuWgsAWlbbzCw2GxZGKLTWaUKKztiTaw=";
     };
-    date = "2025-08-06";
+    date = "2025-08-29";
   };
   office = {
     pname = "office";
@@ -101,17 +101,17 @@
   };
   restore = {
     pname = "restore";
-    version = "2a2ba2fbaee72f88054a43723becf66c3cfb892e";
+    version = "dc40509c03f1c33f1ef008330c6694effe674082";
     src = fetchgit {
       url = "https://github.com/boydaihungst/restore.yazi";
-      rev = "2a2ba2fbaee72f88054a43723becf66c3cfb892e";
+      rev = "dc40509c03f1c33f1ef008330c6694effe674082";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-FqvQuKNH3jjXQ/7N7MsUsOoh9DTreZTjpdQ4lrr2iLk=";
+      sha256 = "sha256-Lkt1TB07UqvuTU1JdwfHBSyn7/MOdd+iJawCSrPwXhw=";
     };
-    date = "2025-08-12";
+    date = "2025-08-28";
   };
   starship = {
     pname = "starship";

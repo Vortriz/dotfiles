@@ -41,7 +41,7 @@
     },
     "mediainfo": {
         "cargoLocks": null,
-        "date": "2025-08-06",
+        "date": "2025-08-29",
         "extract": null,
         "name": "mediainfo",
         "passthru": null,
@@ -51,13 +51,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "0e2ae47cfb2b7c7a32d714c753b1cebbaa75d127",
-            "sha256": "sha256-CHigaujMHd1BuYyyxzI5B4ZYQhuH2YZptVVJToq39sY=",
+            "rev": "2093ab79d47d750c0b74759d2dd93aff8c7ee5c8",
+            "sha256": "sha256-GObz6kpBTT1HuWgsAWlbbzCw2GxZGKLTWaUKKztiTaw=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/boydaihungst/mediainfo.yazi"
         },
-        "version": "0e2ae47cfb2b7c7a32d714c753b1cebbaa75d127"
+        "version": "2093ab79d47d750c0b74759d2dd93aff8c7ee5c8"
     },
     "office": {
         "cargoLocks": null,
@@ -141,7 +141,7 @@
     },
     "restore": {
         "cargoLocks": null,
-        "date": "2025-08-12",
+        "date": "2025-08-28",
         "extract": null,
         "name": "restore",
         "passthru": null,
@@ -151,13 +151,13 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "2a2ba2fbaee72f88054a43723becf66c3cfb892e",
-            "sha256": "sha256-FqvQuKNH3jjXQ/7N7MsUsOoh9DTreZTjpdQ4lrr2iLk=",
+            "rev": "dc40509c03f1c33f1ef008330c6694effe674082",
+            "sha256": "sha256-Lkt1TB07UqvuTU1JdwfHBSyn7/MOdd+iJawCSrPwXhw=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/boydaihungst/restore.yazi"
         },
-        "version": "2a2ba2fbaee72f88054a43723becf66c3cfb892e"
+        "version": "dc40509c03f1c33f1ef008330c6694effe674082"
     },
     "starship": {
         "cargoLocks": null,
