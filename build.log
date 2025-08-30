@@ -16108,3 +16108,191 @@ Removed packages:
 [R.]  #4  plugins-e95c7b3  <none>
 [R.]  #5  qtx11extras      5.15.17
 Closure size: 2801 -> 2790 (72 paths added, 83 paths removed, delta -11, disk usage -50.1MiB).
+
+---
+
+30/08/25 02:06:01 PM IST
+<<< /nix/var/nix/profiles/system-107-link
+>>> /nix/var/nix/profiles/system-108-link
+Version changes:
+[U.]  #001  MapleMonoNormal-NF-unhinted                  7.4, 7.4-fish-completions -> 7.6, 7.6-fish-completions
+[C.]  #002  abseil-cpp                                   20210324.2, 20250512.1 x2 -> 20210324.2, 20250127.1 x2
+[U.]  #003  acpi-call                                    1.2.2-6.16.1 -> 1.2.2-6.16.3
+[U.]  #004  alsa-ucm-conf                                1.2.12 x2 -> 1.2.14 x2
+[U.]  #005  audit                                        4.1.0-lib x2 -> 4.1.1-unstable-2025-08-01-lib x2
+[U.]  #006  aws-c-auth                                   0.8.1 -> 0.9.0
+[U.]  #007  aws-c-cal                                    0.8.0 -> 0.9.2
+[U.]  #008  aws-c-common                                 0.10.3 -> 0.12.4
+[U.]  #009  aws-c-compression                            0.3.0 -> 0.3.1
+[U.]  #010  aws-c-event-stream                           0.5.0 -> 0.5.5
+[U.]  #011  aws-c-http                                   0.9.2 -> 0.10.4
+[U.]  #012  aws-c-io                                     0.15.3 -> 0.21.2
+[U.]  #013  aws-c-mqtt                                   0.11.0 -> 0.13.3
+[U.]  #014  aws-c-s3                                     0.7.1 -> 0.8.6
+[U.]  #015  aws-c-sdkutils                               0.2.1 -> 0.2.4
+[U.]  #016  aws-checksums                                0.2.2 -> 0.2.7
+[U.]  #017  aws-crt-cpp                                  0.29.4 -> 0.33.1
+[U.]  #018  aws-sdk-cpp                                  1.11.448 -> 1.11.612
+[U.]  #019  bash                                         5.3p0 x2 -> 5.3p3 x2
+[U*]  #020  bash-interactive                             5.3p0 x3, 5.3p0-doc, 5.3p0-fish-completions, 5.3p0-man x2 -> 5.3p3 x3, 5.3p3-doc, 5.3p3-fish-completions, 5.3p3-man x2
+[U.]  #021  bootspec                                     1.0.1 -> 1.1.0
+[C.]  #022  container-init                               <none> x2 -> <none>
+[U.]  #023  cracklib                                     2.10.0 x2 -> 2.10.3 x2
+[U.]  #024  djvulibre                                    3.5.28, 3.5.28-bin, 3.5.28-dev, 3.5.28-lib -> 3.5.29, 3.5.29-bin, 3.5.29-dev, 3.5.29-lib
+[U*]  #025  e2fsprogs                                    1.47.2, 1.47.2-bin -> 1.47.3, 1.47.3-bin
+[U.]  #026  electron                                     37.2.6 -> 37.3.1
+[U.]  #027  electron-unwrapped                           37.2.6 -> 37.3.1
+[U.]  #028  fd                                           10.2.0, 10.2.0-fish-completions -> 10.3.0, 10.3.0-fish-completions
+[U.]  #029  firefox                                      141.0.3, 141.0.3-fish-completions -> 142.0, 142.0-fish-completions
+[U.]  #030  firefox-unwrapped                            141.0.3 -> 142.0
+[U.]  #031  flameshot                                    13.0.1, 13.0.1-fish-completions -> 13.1.0, 13.1.0-fish-completions
+[U.]  #032  freerdp                                      3.16.0 -> 3.17.0
+[C.]  #033  gcc                                          14.3.0, 14.3.0-lib x3, 14.3.0-libgcc x3, 15.1.0-lib, 15.1.0-libgcc -> 14.3.0, 14.3.0-lib x3, 14.3.0-libgcc x3, 15.2.0-lib, 15.2.0-libgcc
+[U.]  #034  gexiv2                                       0.14.5 -> 0.14.6
+[U.]  #035  gh                                           2.76.2, 2.76.2-fish-completions -> 2.78.0, 2.78.0-fish-completions
+[C.]  #036  glib                                         2.84.3 x2, 2.84.3-bin x2, 2.84.3-dev -> 2.84.3 x2, 2.84.3-bin x2, 2.84.3-dev, 2.84.3-fish-completions
+[U.]  #037  gperftools                                   2.15 -> 2.17
+[U.]  #038  gssdp                                        1.6.3 x2 -> 1.6.4 x2
+[U.]  #039  gst-libav                                    1.26.0 x2 -> 1.26.3 x2
+[U.]  #040  gst-plugins-bad                              1.26.0 x2 -> 1.26.3 x2
+[U.]  #041  gst-plugins-base                             1.26.0 x2 -> 1.26.3 x2
+[U.]  #042  gst-plugins-good                             1.26.0 x2 -> 1.26.3 x2
+[U.]  #043  gst-plugins-ugly                             1.26.0 x2 -> 1.26.3 x2
+[U.]  #044  gstreamer                                    1.26.0 x2, 1.26.0-bin -> 1.26.3 x2, 1.26.3-bin
+[U.]  #045  gtk4-layer-shell                             1.1.1 -> 1.2.0
+[U.]  #046  gupnp                                        1.6.8 x2 -> 1.6.9 x2
+[U.]  #047  hwdata                                       0.397 x2 -> 0.398 x2
+[U.]  #048  hypridle                                     0.1.6 -> 0.1.7
+[U.]  #049  hyprutils                                    0.8.2 -> 0.8.3
+[U.]  #050  imagemagick                                  7.1.2-1, 7.1.2-1-dev, 7.1.2-1-doc, 7.1.2-1-fish-completions -> 7.1.2-2, 7.1.2-2-dev, 7.1.2-2-doc, 7.1.2-2-fish-completions
+[U.]  #051  imath                                        3.1.12 x2 -> 3.2.0 x2
+[U.]  #052  initrd-linux                                 6.16.1 -> 6.16.3
+[U.]  #053  intel-compute-runtime                        25.27.34303.6 -> 25.31.34666.3
+[U*]  #054  kbd                                          2.7.1 x2, 2.7.1_fish-completions -> 2.8.0 x4
+[U.]  #055  keep-sorted                                  0.7.0 -> 0.7.1
+[C.]  #056  libXNVCtrl                                   390.157, 580.76.05 -> 390.157, 570.181
+[U.]  #057  libadwaita                                   1.7.4 x2 -> 1.7.5 x2
+[U.]  #058  libbpf                                       1.5.1 x2 -> 1.6.1 x2
+[U.]  #059  libcamera                                    0.5.1 x2 -> 0.5.2 x2
+[C*]  #060  libcap                                       2.76, 2.76-doc, 2.76-lib x2, 2.76-man -> 2.76, 2.76-doc, 2.76-lib x4, 2.76-man
+[U.]  #061  libdrm                                       2.4.124 x2, 2.4.124-bin x2, 2.4.124-dev x2 -> 2.4.125 x2, 2.4.125-bin x2, 2.4.125-dev x2
+[U.]  #062  libmicrohttpd                                1.0.1 x2 -> 1.0.2 x2
+[U.]  #063  libnftnl                                     1.2.9 x2 -> 1.3.0 x2
+[U.]  #064  libopenmpt                                   0.8.0 x2 -> 0.8.2 x2
+[U.]  #065  libpng                                       1.6.47 -> 1.6.49
+[U.]  #066  libpng-apng                                  1.6.47 x2, 1.6.47-dev, 1.6.47-man -> 1.6.49 x2, 1.6.49-dev, 1.6.49-man
+[U.]  #067  libraqm                                      0.10.2 -> 0.10.3
+[U.]  #068  libxml2                                      2.14.4-unstable-2025-06-20 x2, 2.14.4-unstable-2025-06-20-bin, 2.14.4-unstable-2025-06-20-dev -> 2.14.5 x2, 2.14.5-bin, 2.14.5-dev
+[U.]  #069  lilv                                         0.24.24 x2 -> 0.24.26 x2
+[U.]  #070  linux                                        6.16.1, 6.16.1-modules x2, 6.16.1-modules-shrunk -> 6.16.3, 6.16.3-modules x2, 6.16.3-modules-shrunk
+[U.]  #071  linux-headers                                6.14.7 -> 6.16
+[U.]  #072  linux-headers-static                         6.14.7 -> 6.16
+[U*]  #073  linux-pam                                    1.6.1 x2, 1.6.1-doc -> 1.7.1 x2, 1.7.1-doc
+[U.]  #074  magic-wormhole                               0.19.2-fish-completions -> 0.20.0-fish-completions
+[U.]  #075  mbedtls                                      3.6.3 x2 -> 3.6.4 x2
+[U.]  #076  mediainfo                                    25.04, 25.04-fish-completions -> 25.07, 25.07-fish-completions
+[U.]  #077  mediainfo.yazi                               0e2ae47 -> 2093ab7
+[U.]  #078  mesa                                         25.2.0 x2 -> 25.2.1 x2
+[U*]  #079  nano                                         8.5, 8.5_fish-completions -> 8.6, 8.6_fish-completions
+[U.]  #080  netavark                                     1.16.0 -> 1.16.1
+[U.]  #081  nettle                                       3.10.1 x2 -> 3.10.2 x2
+[U.]  #082  nftables                                     1.1.3 x2 -> 1.1.4 x2
+[U.]  #083  nghttp2                                      1.65.0, 1.65.0-dev, 1.65.0-lib x2 -> 1.66.0, 1.66.0-dev, 1.66.0-lib x2
+[U*]  #084  niri-unstable                                2025-08-22-2865ec3, 2025-08-22-2865ec3-doc -> 2025-08-29-dfe463e, 2025-08-29-dfe463e-doc
+[U.]  #085  nixos-system-nixos                           25.11.20250819.2007595 -> 25.11.20250828.dfb2f12
+[U.]  #086  nodejs                                       22.17.0 -> 22.18.0
+[C.]  #087  nss                                          3.101.2 x2, 3.114 -> 3.101.2 x2, 3.114.1
+[U.]  #088  nss-cacert                                   3.113.1, 3.113.1-p11kit -> 3.114, 3.114-p11kit
+[U.]  #089  obsidian                                     1.9.10, 1.9.10-fish-completions -> 1.9.12, 1.9.12-fish-completions
+[U.]  #090  opencl-headers                               2024.10.24 -> 2025.07.22
+[U.]  #091  packagekit-qt                                1.1.2 -> 1.1.3
+[U*]  #092  pipewire                                     1.4.6 x2, 1.4.6-dev, 1.4.6-doc -> 1.4.7 x2, 1.4.7-dev, 1.4.7-doc
+[U.]  #093  publicsuffix-list                            0-unstable-2025-06-10 x2 -> 0-unstable-2025-07-22 x2
+[C.]  #094  python3                                      3.11.13, 3.13.5 x2, 3.13.5-env x9 -> 3.11.13, 3.13.6 x2, 3.13.6-env x9
+[U.]  #095  python3.13-aiohttp                           3.12.14 -> 3.12.15
+[U.]  #096  python3.13-aiostream                         0.6.4 -> 0.7.0
+[U.]  #097  python3.13-automat                           24.8.1 -> 25.4.16
+[U.]  #098  python3.13-cattrs                            24.1.3 -> 25.1.1
+[U.]  #099  python3.13-certifi                           2025.06.15 -> 2025.07.14
+[U.]  #100  python3.13-curl-cffi                         0.11.1 -> 0.12.0
+[U.]  #101  python3.13-docstring-to-markdown             0.15 -> 0.17
+[U.]  #102  python3.13-freezegun                         1.5.1 -> 1.5.4
+[U.]  #103  python3.13-frozenlist                        1.6.0 -> 1.7.0
+[U.]  #104  python3.13-libevdev                          0.11 -> 0.12
+[U.]  #105  python3.13-lxml                              5.4.0 -> 6.0.0
+[U.]  #106  python3.13-magic-wormhole                    0.19.2 -> 0.20.0
+[U.]  #107  python3.13-markdown                          3.8 x2 -> 3.8.2 x2
+[U.]  #108  python3.13-multidict                         6.4.4 -> 6.6.3
+[U.]  #109  python3.13-niriswitcher                      0.7.0, 0.7.0-fish-completions -> 0.7.1, 0.7.1-fish-completions
+[U.]  #110  python3.13-oauthlib                          3.2.2 -> 3.3.1
+[U.]  #111  python3.13-propcache                         0.3.1 -> 0.3.2
+[U.]  #112  python3.13-pycairo                           1.27.0 -> 1.28.0
+[U.]  #113  python3.13-setuptools                        80.7.1 -> 80.9.0
+[U.]  #114  python3.13-twisted                           24.11.0 -> 25.5.0
+[U.]  #115  python3.13-typeguard                         4.4.2 -> 4.4.4
+[U.]  #116  python3.13-typing-extensions                 4.13.2 -> 4.14.1
+[U.]  #117  python3.13-urllib3                           2.4.0 -> 2.5.0
+[U.]  #118  python3.13-urwid                             2.6.16 -> 3.0.2
+[U.]  #119  rav1e                                        0.8.0 -> 0.8.1
+[U.]  #120  rclone                                       1.70.3, 1.70.3-fish-completions, 1.70.3-man -> 1.71.0, 1.71.0-fish-completions, 1.71.0-man
+[U.]  #121  ruff                                         0.12.4 -> 0.12.8
+[U.]  #122  s2n-tls                                      1.5.22 -> 1.5.23
+[U.]  #123  sdl3                                         3.2.18-lib x2 -> 3.2.20-lib x2
+[U.]  #124  shaderc                                      2025.2-lib -> 2025.3-lib
+[U*]  #125  shadow                                       4.17.4, 4.17.4-man, 4.17.4-su -> 4.18.0, 4.18.0-man, 4.18.0-su
+[U*]  #126  strace                                       6.15 -> 6.16
+[C*]  #127  systemd                                      <none>, 257.6 x2 -> <none>, 257.7 x2
+[U.]  #128  systemd-minimal                              257.6 x2 -> 257.7 x2
+[U.]  #129  systemd-minimal-libs                         257.6 x2 -> 257.7 x2
+[U.]  #130  thin-provisioning-tools                      1.2.0 -> 1.2.1
+[U.]  #131  tinymist                                     0.13.22 -> 0.13.24
+[U.]  #132  umockdev                                     0.19.1 -> 0.19.2
+[U.]  #133  unbound                                      1.23.0-lib x2 -> 1.23.1-lib x2
+[U*]  #134  util-linux                                   2.41-bin, 2.41-lib, 2.41-login, 2.41-mount, 2.41-swap -> 2.41.1-bin, 2.41.1-lastlog, 2.41.1-lib, 2.41.1-login, 2.41.1-mount, 2.41.1-swap
+[U.]  #135  util-linux-minimal                           2.41-bin, 2.41-lib x2, 2.41-login x2, 2.41-mount x2, 2.41-swap x2 -> 2.41.1-bin, 2.41.1-lib x2, 2.41.1-login x2, 2.41.1-mount x2, 2.41.1-swap x2
+[U.]  #136  vscode                                       1.103.1, 1.103.1-fish-completions -> 1.103.2, 1.103.2-fish-completions
+[U.]  #137  vscode-extension-James-Yu-latex-workshop     10.10.1 -> 10.10.2
+[U.]  #138  vscode-extension-ms-python-python            2025.10.1 -> 2025.12.0
+[U.]  #139  vscode-extension-ms-toolsai-jupyter          2025.6.0 -> 2025.7.0
+[U.]  #140  vscode-extension-ms-vsliveshare-vsliveshare  1.0.5948 -> 1.0.5959
+[U.]  #141  vscode-extension-myriad-dreamin-tinymist     0.13.22 -> 0.13.24
+[U.]  #142  vulkan-headers                               1.4.313.0 x2 -> 1.4.321.0 x2
+[U.]  #143  vulkan-loader                                1.4.313.0 x2 -> 1.4.321.0 x2
+[U.]  #144  x86_energy_perf_policy                       6.12.42 -> 6.12.43
+[U.]  #145  xwayland-satellite-unstable                  2025-08-23-d759c64 -> 2025-08-27-af33f7e
+[C*]  #146  xz                                           5.8.1 x2, 5.8.1-bin x2, 5.8.1-dev, 5.8.1-doc, 5.8.1-man -> 5.8.1 x2, 5.8.1-bin x2, 5.8.1-doc, 5.8.1-man
+[U.]  #147  youtube-music                                3.9.0, 3.9.0-fish-completions -> 3.10.0, 3.10.0-fish-completions
+[U.]  #148  yt-dlp                                       2025.08.11 -> 2025.08.22
+[U.]  #149  zed-editor                                   0.199.10 -> 0.201.5
+[U.]  #150  zed-editor-wrapped                           0.199.10, 0.199.10-fish-completions -> 0.201.5, 0.201.5-fish-completions
+Added packages:
+[A.]  #01  gammastep                                            2.0.11, 2.0.11-fish-completions
+[A.]  #02  kdeclarative                                         6.17.0
+[A.]  #03  librest                                              0.10.2
+[A.]  #04  libx11                                               1.8.12 x2, 1.8.12-dev, 1.8.12-man
+[A.]  #05  libxau                                               1.0.12 x2, 1.0.12-dev
+[A.]  #06  libxdmcp                                             1.1.5 x2
+[A.]  #07  libxext                                              1.3.6 x2, 1.3.6-dev, 1.3.6-man
+[A.]  #08  onnxruntime                                          1.22.0
+[A.]  #09  perl5.40.0-Crypt-URandom                             0.39
+[A.]  #10  python3.13-importlib-metadata                        8.7.0
+[A.]  #11  python3.13-zipp                                      3.23.0
+[A.]  #12  restore.yazi-dc40509                                 <none>
+[A.]  #13  security-wrapper-sudoedit-x86_64-unknown-linux-musl  <none>
+[A.]  #14  su-l.pam                                             <none>
+[A.]  #15  unit-lastlog2-import.service                         <none>
+[A.]  #16  unit-systemd-tmpfiles-clean.timer                    <none>
+Removed packages:
+[R.]  #01  libX11                             1.8.12 x2, 1.8.12-dev, 1.8.12-man
+[R.]  #02  libXau                             1.0.12 x2, 1.0.12-dev
+[R.]  #03  libXdmcp                           1.1.5 x2
+[R.]  #04  libXext                            1.3.6 x2, 1.3.6-dev, 1.3.6-man
+[R-]  #05  nixos-container                    <none>
+[R.]  #06  reload-container                   <none>
+[R.]  #07  rest                               0.9.1
+[R.]  #08  restore.yazi                       2a2ba2f
+[R.]  #09  unit-container-.service            <none>
+[R.]  #10  unit-script-container_-post-start  <none>
+[R.]  #11  unit-script-container_-pre-start   <none>
+[R.]  #12  unit-script-container_-start       <none>
+Closure size: 2790 -> 2798 (2766 paths added, 2758 paths removed, delta +8, disk usage +17.3MiB).
