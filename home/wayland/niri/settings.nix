@@ -20,6 +20,7 @@ in {
                     duration-ms = 250;
                 };
             };
+            exit-confirmation-open-close.enable = false;
         };
 
         environment = {
