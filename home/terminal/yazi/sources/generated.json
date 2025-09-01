@@ -39,6 +39,26 @@
         },
         "version": "b04213d2f4ca6079bef37491be07860baa8264b9"
     },
+    "hover-after-moved": {
+        "cargoLocks": null,
+        "date": "2025-08-12",
+        "extract": null,
+        "name": "hover-after-moved",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "89420e5f049c400ef4d50e6f20aff21ae47239f5",
+            "sha256": "sha256-sifYpeepzxt1N2WJXxTDvKh7tH+QasgZXOfka6ZSrXE=",
+            "sparseCheckout": [],
+            "type": "git",
+            "url": "https://github.com/boydaihungst/hover-after-moved.yazi"
+        },
+        "version": "89420e5f049c400ef4d50e6f20aff21ae47239f5"
+    },
     "mediainfo": {
         "cargoLocks": null,
         "date": "2025-08-29",

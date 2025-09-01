@@ -29,6 +29,20 @@
     };
     date = "2025-06-07";
   };
+  hover-after-moved = {
+    pname = "hover-after-moved";
+    version = "89420e5f049c400ef4d50e6f20aff21ae47239f5";
+    src = fetchgit {
+      url = "https://github.com/boydaihungst/hover-after-moved.yazi";
+      rev = "89420e5f049c400ef4d50e6f20aff21ae47239f5";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-sifYpeepzxt1N2WJXxTDvKh7tH+QasgZXOfka6ZSrXE=";
+    };
+    date = "2025-08-12";
+  };
   mediainfo = {
     pname = "mediainfo";
     version = "2093ab79d47d750c0b74759d2dd93aff8c7ee5c8";

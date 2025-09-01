@@ -6,6 +6,10 @@ src.git = "https://github.com/stelcodes/bunny.yazi"
 fetch.git = "https://github.com/AnirudhG07/custom-shell.yazi"
 src.git = "https://github.com/AnirudhG07/custom-shell.yazi"
 
+[hover-after-moved]
+fetch.git = "https://github.com/boydaihungst/hover-after-moved.yazi"
+src.git = "https://github.com/boydaihungst/hover-after-moved.yazi"
+
 [mediainfo]
 fetch.git = "https://github.com/boydaihungst/mediainfo.yazi"
 src.git = "https://github.com/boydaihungst/mediainfo.yazi"

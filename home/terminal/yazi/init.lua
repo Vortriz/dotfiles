@@ -34,6 +34,9 @@ require("starship"):setup({
     config_file = "~/.config/starship.toml",
 })
 
+-- hover-after-moved
+require("hover-after-moved"):setup()
+
 -- custom: move tabs back to header
 function Tabs.height() return 0 end
 

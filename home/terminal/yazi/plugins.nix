@@ -30,6 +30,7 @@
                 # keep-sorted start
                 "bunny"
                 "custom-shell"
+                "hover-after-moved"
                 "mediainfo"
                 "office"
                 "ouch"
