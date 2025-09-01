@@ -30,7 +30,7 @@ in {
                 cmd = "toggle-warp";
             };
 
-            "Ctrl+Shift+O".action = spawn' "oimg";
+            "Ctrl+Shift+O".action = spawn-sh "oimg";
 
             "Mod+H" = run {
                 cmd = "cycle-rr";

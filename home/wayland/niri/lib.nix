@@ -18,18 +18,16 @@
     };
 
     config = let
-        inherit (config.lib.niri) actions;
+        inherit (config.lib.niri.actions) spawn-sh;
         inherit (osConfig.defaults) terminal;
     in {
         niri-lib = rec {
-            spawn' = cmd: actions.spawn (lib.splitString " " cmd);
-
             open = {
                 app,
                 args ? "",
                 title ? "Launch ${lib.getName app}",
             }: {
-                action = spawn' (lib.strings.trim "${lib.getExe app} ${args}");
+                action = spawn-sh (lib.strings.trim "${lib.getExe app} ${args}");
                 hotkey-overlay = {inherit title;};
             };
 
@@ -37,7 +35,7 @@
                 app,
                 app-id,
             }: {
-                action = spawn' "${lib.getExe terminal} -o confirm_os_window_close=0 --app-id=${app-id} ${app}";
+                action = spawn-sh "${lib.getExe terminal} -o confirm_os_window_close=0 --app-id=${app-id} ${app}";
                 hotkey-overlay.title = "Launch ${app-id}";
             };
 
@@ -46,10 +44,10 @@
                 notif ? null,
                 title ? null,
             }: {
-                action.spawn =
+                action.spawn-sh =
                     if notif == null
-                    then ["sh" "-c" cmd]
-                    else ["sh" "-c" ''${cmd} && ${lib.getExe pkgs.libnotify} "${notif}"''];
+                    then cmd
+                    else ''${cmd} && ${lib.getExe pkgs.libnotify} "${notif}"'';
                 hotkey-overlay =
                     if title == null
                     then {hidden = true;}
