@@ -15,6 +15,10 @@
         };
     };
 
+    xdg.mimeApps.defaultApplications = {
+        "x-scheme-handler/terminal" = "kitty.desktop";
+    };
+
     stylix.targets.kitty.enable = true;
 
     programs.niri.settings.binds."Mod+T" = config.niri-lib.open {app = config.programs.kitty.package;};
