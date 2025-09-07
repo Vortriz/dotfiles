@@ -15,7 +15,7 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         niri-shell = {
-            url = "path:/home/vortriz/.config/quickshell/DankMaterialShell";
+            url = "/home/vortriz/.config/quickshell/DankMaterialShell";
             inputs.nixpkgs.follows = "nixpkgs";
         };
         # mcp-nixos.url = "github:utensils/mcp-nixos"; # wait for zed to support this

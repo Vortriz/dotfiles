@@ -1,7 +1,3 @@
-[dgop]
-fetch.git = "https://github.com/AvengeMedia/dgop"
-src.git = "https://github.com/AvengeMedia/dgop"
-
 [dunefetch]
 fetch.git = "https://github.com/datavorous/dunefetch"
 src.git = "https://github.com/datavorous/dunefetch"

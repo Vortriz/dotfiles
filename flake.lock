@@ -90,6 +90,48 @@
         "type": "github"
       }
     },
+    "dgop": {
+      "inputs": {
+        "nixpkgs": [
+          "niri-shell",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1755962344,
+        "narHash": "sha256-Who8Q9eZS2QTXasgTL4i9YtHkjPqAZven1znUI+nP6w=",
+        "owner": "AvengeMedia",
+        "repo": "dgop",
+        "rev": "4d3a0431b7d65008349c45952d53665e3aade0f7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "AvengeMedia",
+        "repo": "dgop",
+        "type": "github"
+      }
+    },
+    "dms-cli": {
+      "inputs": {
+        "nixpkgs": [
+          "niri-shell",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1757112511,
+        "narHash": "sha256-WE1cUTr53VJG06YAkpYG+HvdXp4fFyqZwXqsABOXYFY=",
+        "owner": "AvengeMedia",
+        "repo": "danklinux",
+        "rev": "563c7fdcba0e8c6ac0f4b3292308e8bcbb553da6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "AvengeMedia",
+        "repo": "danklinux",
+        "type": "github"
+      }
+    },
     "firefox-gnome-theme": {
       "flake": false,
       "locked": {
@@ -281,14 +323,16 @@
     },
     "niri-shell": {
       "inputs": {
+        "dgop": "dgop",
+        "dms-cli": "dms-cli",
         "nixpkgs": [
           "nixpkgs"
         ],
         "quickshell": "quickshell"
       },
       "locked": {
-        "lastModified": 1756731749,
-        "narHash": "sha256-ce5v+U+TostIeLJdA/W5udIFgehrd7uv7N9jXCIyxIs=",
+        "lastModified": 1757238562,
+        "narHash": "sha256-9Yl+zv9dnNRIU2WpW67NbXIcGFpkHUMyxXYO1pl+FA4=",
         "path": "/home/vortriz/.config/quickshell/DankMaterialShell",
         "type": "path"
       },
