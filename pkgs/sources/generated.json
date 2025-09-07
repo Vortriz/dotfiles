@@ -1,24 +1,4 @@
 {
-    "dgop": {
-        "cargoLocks": null,
-        "date": "2025-08-23",
-        "extract": null,
-        "name": "dgop",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "4d3a0431b7d65008349c45952d53665e3aade0f7",
-            "sha256": "sha256-Who8Q9eZS2QTXasgTL4i9YtHkjPqAZven1znUI+nP6w=",
-            "sparseCheckout": [],
-            "type": "git",
-            "url": "https://github.com/AvengeMedia/dgop"
-        },
-        "version": "4d3a0431b7d65008349c45952d53665e3aade0f7"
-    },
     "dunefetch": {
         "cargoLocks": null,
         "date": "2025-08-12",
