@@ -2,13 +2,14 @@
 
 <img src="/assets/screenshot.png" alt="screenshot">
 
-|              | Wayland                     |
-| ------------ | --------------------------- |
-| **Shell**    | fish                        |
-| **Terminal** | kitty                       |
-| **WM**       | niri                        |
-| **Launcher** | sherlock                    |
-| **Browser**  | firefox (with shyfox theme) |
+| Component         | Name                                                                                    |
+| ----------------- | --------------------------------------------------------------------------------------- |
+| **Shell**         | [fish](https://fishshell.com)                                                           |
+| **Terminal**      | [kitty](https://sw.kovidgoyal.net/kitty)                                                |
+| **WM**            | [niri](https://yalter.github.io/niri)                                                   |
+| **Launcher**      | [vicinae](https://docs.vicinae.com)                                                     |
+| **Browser**       | Firefox (with [ShyFox](https://github.com/Vortriz/ShyFox) theme)                        |
+| **Desktop Shell** | [Slightly modified version of DankMaterialShell](https://github.com/Vortriz/niri-shell) |
 
 # People
 
