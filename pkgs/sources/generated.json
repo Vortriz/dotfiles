@@ -21,7 +21,7 @@
     },
     "xdg-desktop-portal-termfilechooser": {
         "cargoLocks": null,
-        "date": "2025-08-01",
+        "date": "2025-09-12",
         "extract": null,
         "name": "xdg-desktop-portal-termfilechooser",
         "passthru": null,
@@ -31,12 +31,12 @@
             "fetchSubmodules": false,
             "leaveDotGit": false,
             "name": null,
-            "rev": "8217ad28bfd05c9bf8242cc357f36da0119a860a",
-            "sha256": "sha256-60gb23OCYBNCx9fLVGzmkuIaKgA1UxIypAHod9xKFIA=",
+            "rev": "51d5c151d129bce49528d33d9a635a2c50d1e33d",
+            "sha256": "sha256-IlPNNuQaGVW5QXcyA8cWiFJxwgXmviQoisDUWX9QP2s=",
             "sparseCheckout": [],
             "type": "git",
             "url": "https://github.com/hunkyburrito/xdg-desktop-portal-termfilechooser"
         },
-        "version": "8217ad28bfd05c9bf8242cc357f36da0119a860a"
+        "version": "51d5c151d129bce49528d33d9a635a2c50d1e33d"
     }
 }

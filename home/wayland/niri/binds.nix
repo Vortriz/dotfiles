@@ -6,7 +6,7 @@
 }:
 with config.lib.niri.actions; let
     inherit (lib) getExe;
-    inherit (config.niri-lib) spawn' run;
+    inherit (config.niri-lib) run;
 in {
     programs.niri.settings.binds =
         {
