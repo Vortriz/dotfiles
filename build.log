@@ -16748,3 +16748,30 @@ Removed packages:
 [R.]  #09  nvd          0.2.4
 [R.]  #10  xtrans       1.6.0
 Closure size: 3035 -> 3033 (2772 paths added, 2774 paths removed, delta -2, disk usage +6.8MiB).
+
+---
+
+17/09/25 06:52:01 PM IST
+<<< /nix/var/nix/profiles/system-114-link
+>>> /nix/var/nix/profiles/system-115-link
+Version changes:
+[C.]  #1  cairomm        1.18.0 -> 1.14.5, 1.18.0
+[C.]  #2  gtkmm          4.18.0 -> 3.24.10, 4.18.0
+[U*]  #3  niri-unstable  2025-09-14-e6a8ad3, 2025-09-14-e6a8ad3-doc -> 2025-09-16-08f5c6f, 2025-09-16-08f5c6f-doc
+[C.]  #4  pangomm        2.56.1 -> 2.46.4, 2.56.1
+Added packages:
+[A.]  #1  atkmm            2.28.4
+[A.]  #2  baobab           48.0, 48.0-fish-completions
+[A+]  #3  exfatprogs       1.2.9, 1.2.9_fish-completions
+[A.]  #4  gpart            0.3
+[A+]  #5  gparted          1.7.0
+[A.]  #6  plugins-d1c8baa  <none>
+[A.]  #7  xhost            1.0.10
+Removed packages:
+[R.]  #1  filelight         25.08.1, 25.08.1-fish-completions
+[R.]  #2  kirigami-addons   1.9.0
+[R-]  #3  kpmcore           25.08.1
+[R.]  #4  kquickcharts      6.17.0
+[R-]  #5  partitionmanager  25.08.1
+[R.]  #6  plugins-d7588f6   <none>
+Closure size: 3033 -> 3038 (49 paths added, 44 paths removed, delta +5, disk usage -3.6MiB).
