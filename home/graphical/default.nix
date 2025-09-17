@@ -2,11 +2,11 @@
     home.packages = with pkgs; [
         # keep-sorted start
         anydesk
+        baobab
         bottles
         celluloid
         diffpdf
         gnome-calculator
-        kdePackages.filelight
         obsidian
         pdfarranger
         qbittorrent

@@ -18,8 +18,9 @@
         asusctl
         boxbuddy # when nix is not nixin
         distrobox # when nix is not nixin
+        exfatprogs
+        gparted
         kdePackages.ksystemlog
-        kdePackages.partitionmanager
         linux-wifi-hotspot
         lm_sensors
         p7zip
