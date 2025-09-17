@@ -1,6 +1,5 @@
 {
     config,
-    inputs,
     outputs,
     ...
 }: let
@@ -28,7 +27,6 @@ in {
 
             # keep-sorted start
             # inputs.nur.overlays.default
-            inputs.vicinae.overlays.default
             # keep-sorted end
         ];
 
