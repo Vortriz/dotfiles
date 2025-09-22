@@ -8,6 +8,7 @@
     programs.zed-editor = rec {
         extensions = [
             # keep-sorted start
+            "astro"
             "julia"
             "just"
             "latex"
@@ -24,6 +25,7 @@
         extraPackages = with pkgs; [
             # keep-sorted start
             alejandra
+            astro-language-server
             kdePackages.qtdeclarative
             ltex-ls-plus
             nixd

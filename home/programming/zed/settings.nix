@@ -67,10 +67,12 @@ in {
         lsp =
             ([
                 # keep-sorted start
+                "astro-language-server"
                 "ltex-ls-plus"
                 "nixd"
                 "package-version-server"
                 "rust-analyzer"
+                "tailwindcss-language-server"
                 "texlab"
                 "tinymist"
                 # keep-sorted end
@@ -92,6 +94,16 @@ in {
                     path_lookup = true;
                     path = "${pkgs.kdePackages.qtdeclarative}/bin/qmlls";
                     arguments = ["-E"];
+                };
+                astro-language-server.binary = {
+                    path_lookup = true;
+                    path = lib.getExe pkgs.astro-language-server;
+                    arguments = ["--stdio"];
+                };
+                tailwindcss-language-server.binary = {
+                    path_lookup = true;
+                    path = lib.getExe pkgs.tailwindcss-language-server;
+                    arguments = ["--stdio"];
                 };
             };
         minimap = {
