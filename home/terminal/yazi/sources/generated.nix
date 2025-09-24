@@ -3,17 +3,17 @@
 {
   bunny = {
     pname = "bunny";
-    version = "bd8a767220e606f2c68c7ea7d67d1c0b97b7daf3";
+    version = "7137a44324235c0f04d4b73e5fdd6845c99db278";
     src = fetchgit {
       url = "https://github.com/stelcodes/bunny.yazi";
-      rev = "bd8a767220e606f2c68c7ea7d67d1c0b97b7daf3";
+      rev = "7137a44324235c0f04d4b73e5fdd6845c99db278";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-mdVCZMvoe9agrnX7aZeGf0oXGffE2Fhk9f1JNbir8+Q=";
+      sha256 = "sha256-xdRP8Y2ZadNFge7mVhfu2d8DoitknQmkxFV+NIsjsG4=";
     };
-    date = "2025-07-09";
+    date = "2025-09-18";
   };
   custom-shell = {
     pname = "custom-shell";
@@ -59,17 +59,17 @@
   };
   office = {
     pname = "office";
-    version = "33cc61af68b04be8b6a75d90bb36c9c1252de0fb";
+    version = "41ebef8be9dded98b5179e8af65be71b30a1ac4d";
     src = fetchgit {
       url = "https://github.com/macydnah/office.yazi";
-      rev = "33cc61af68b04be8b6a75d90bb36c9c1252de0fb";
+      rev = "41ebef8be9dded98b5179e8af65be71b30a1ac4d";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-/zFSyVzyJLvNINB5vD5RlOimdhQT0WrmjjDUIhNlyj4=";
+      sha256 = "sha256-QFto48D+Z8qHl7LHoDDprvr5mIJY8E7j37cUpRjKdNk=";
     };
-    date = "2025-07-27";
+    date = "2025-09-19";
   };
   official-plugins-monorepo = {
     pname = "official-plugins-monorepo";
