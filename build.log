@@ -16775,3 +16775,110 @@ Removed packages:
 [R-]  #5  partitionmanager  25.08.1
 [R.]  #6  plugins-d7588f6   <none>
 Closure size: 3033 -> 3038 (49 paths added, 44 paths removed, delta +5, disk usage -3.6MiB).
+
+---
+
+25/09/25 12:31:54 PM IST
+<<< /nix/var/nix/profiles/system-115-link
+>>> /nix/var/nix/profiles/system-117-link
+Version changes:
+[C.]  #01  abseil-cpp                                           20210324.2, 20250127.1 x2, 20250512.1 -> 20250127.1 x2, 20250512.1
+[U.]  #02  acpi-call                                            1.2.2-6.16.7 -> 1.2.2-6.16.8
+[U.]  #03  adw-gtk3                                             6.2, 6.2-fish-completions -> 6.3, 6.3-fish-completions
+[U.]  #04  attica                                               6.17.0 -> 6.18.0
+[U*]  #05  bind                                                 9.20.12-dnsutils, 9.20.12-host, 9.20.12-lib -> 9.20.13-dnsutils, 9.20.13-host, 9.20.13-lib
+[U.]  #06  breeze-icons                                         6.17.0 -> 6.18.0
+[U.]  #07  eza                                                  0.23.2, 0.23.2-fish-completions, 0.23.2-man -> 0.23.3, 0.23.3-fish-completions, 0.23.3-man
+[U.]  #08  firefox                                              142.0.1, 142.0.1-fish-completions -> 143.0, 143.0-fish-completions
+[U.]  #09  firefox-unwrapped                                    142.0.1 -> 143.0
+[U*]  #10  fish                                                 4.0.2, 4.0.2-doc, 4.0.2_fish-completions x2 -> 4.0.8, 4.0.8-doc, 4.0.8_fish-completions x2
+[U.]  #11  frameworkintegration                                 6.17.0 -> 6.18.0
+[U.]  #12  gnustep-libobjc                                      2.2.1 -> 2.3
+[U.]  #13  initrd-linux                                         6.16.7 -> 6.16.8
+[U.]  #14  intel-compute-runtime                                25.31.34666.3 -> 25.35.35096.9
+[U.]  #15  intel-graphics-compiler                              2.16.0 -> 2.18.5
+[U.]  #16  karchive                                             6.17.0 -> 6.18.0
+[U.]  #17  kauth                                                6.17.0 -> 6.18.0
+[U.]  #18  kbookmarks                                           6.17.0 -> 6.18.0
+[U.]  #19  kcmutils                                             6.17.0 -> 6.18.0
+[U.]  #20  kcodecs                                              6.17.0 -> 6.18.0
+[U.]  #21  kcolorscheme                                         6.17.0 -> 6.18.0
+[U.]  #22  kcompletion                                          6.17.0 -> 6.18.0
+[U.]  #23  kconfig                                              6.17.0 -> 6.18.0
+[U.]  #24  kconfigwidgets                                       6.17.0 -> 6.18.0
+[U.]  #25  kcoreaddons                                          6.17.0 -> 6.18.0
+[U.]  #26  kcrash                                               6.17.0 -> 6.18.0
+[U.]  #27  kdbusaddons                                          6.17.0 -> 6.18.0
+[U.]  #28  kdeclarative                                         6.17.0 -> 6.18.0
+[U.]  #29  kdoctools                                            6.17.0 -> 6.18.0
+[U.]  #30  kfilemetadata                                        6.17.0 -> 6.18.0
+[U.]  #31  kglobalaccel                                         6.17.0 -> 6.18.0
+[U.]  #32  kguiaddons                                           6.17.0 -> 6.18.0
+[U.]  #33  ki18n                                                6.17.0 -> 6.18.0
+[U.]  #34  kiconthemes                                          6.17.0 -> 6.18.0
+[U.]  #35  kimageformats                                        6.17.0 -> 6.18.0
+[U.]  #36  kio                                                  6.17.0 -> 6.18.0
+[U.]  #37  kirigami                                             6.17.0 -> 6.18.0
+[U.]  #38  kitemviews                                           6.17.0 -> 6.18.0
+[U.]  #39  kjobwidgets                                          6.17.0 -> 6.18.0
+[U.]  #40  knewstuff                                            6.17.0 -> 6.18.0
+[U.]  #41  knotifications                                       6.17.0 -> 6.18.0
+[U.]  #42  kpackage                                             6.17.0 -> 6.18.0
+[U.]  #43  kservice                                             6.17.0 -> 6.18.0
+[U.]  #44  ktextwidgets                                         6.17.0 -> 6.18.0
+[U.]  #45  kvazaar                                              2.3.1-lib -> 2.3.2-lib
+[U.]  #46  kwallet                                              6.17.0 -> 6.18.0
+[U.]  #47  kwidgetsaddons                                       6.17.0 -> 6.18.0
+[U.]  #48  kwindowsystem                                        6.17.0 -> 6.18.0
+[U.]  #49  kxmlgui                                              6.17.0 -> 6.18.0
+[U.]  #50  libcpuid                                             0.8.0 -> 0.8.1
+[U.]  #51  libphonenumber                                       9.0.13 -> 9.0.14
+[U.]  #52  linux                                                6.16.7, 6.16.7-modules x2, 6.16.7-modules-shrunk -> 6.16.8, 6.16.8-modules x2, 6.16.8-modules-shrunk
+[U.]  #53  linux-firmware                                       20250808-zstd -> 20250917-zstd
+[C.]  #54  llvm                                                 15.0.7-lib, 19.1.7-lib x2 -> 19.1.7-lib x2
+[U.]  #55  mesa                                                 25.2.2 x2 -> 25.2.3 x2
+[U*]  #56  niri-unstable                                        2025-09-16-08f5c6f, 2025-09-16-08f5c6f-doc -> 2025-09-24-e837e39, 2025-09-24-e837e39-doc
+[U.]  #57  nix-search-tv                                        2.2.0, 2.2.0-fish-completions -> 2.2.1, 2.2.1-fish-completions
+[U.]  #58  nixos-system-nixos                                   25.11.20250913.c23193b -> 25.11.20250921.554be64
+[U.]  #59  noto-fonts-color-emoji                               2.048 -> 2.051
+[C.]  #60  nss                                                  3.112.1 x2, 3.114.1 -> 3.112.1 x2, 3.115.1
+[U.]  #61  office.yazi                                          33cc61a -> 41ebef8
+[U.]  #62  onnxruntime                                          1.22.0 -> 1.22.2
+[U*]  #63  podman                                               5.6.0 -> 5.6.1
+[U*]  #64  podman-docker-compat                                 5.6.0 -> 5.6.1
+[C.]  #65  protobuf                                             21.12, 31.1, 32.0 -> 31.1, 32.0
+[U.]  #66  python3.13-debugpy                                   1.8.16 -> 1.8.17
+[U.]  #67  qqc2-desktop-style                                   6.17.0 -> 6.18.0
+[U.]  #68  roboto                                               3.011 -> 3.012
+[U.]  #69  sioyek                                               2.0.0-unstable-2025-08-08, 2.0.0-unstable-2025-08-08-fish-completions -> 2.0.0-unstable-2025-09-09, 2.0.0-unstable-2025-09-09-fish-completions
+[U.]  #70  smile                                                2.10.1, 2.10.1-fish-completions -> 2.10.2, 2.10.2-fish-completions
+[U.]  #71  solid                                                6.17.0 -> 6.18.0
+[U.]  #72  sonnet                                               6.17.0 -> 6.18.0
+[U.]  #73  syndication                                          6.17.0 -> 6.18.0
+[U.]  #74  tbb                                                  2021.12.0 -> 2022.2.0
+[U.]  #75  tinymist                                             0.13.24 -> 0.13.26
+[U.]  #76  toml-sort                                            0.24.2 -> 0.24.3
+[U.]  #77  vscode                                               1.104.0, 1.104.0-fish-completions -> 1.104.1, 1.104.1-fish-completions
+[U.]  #78  vscode-extension-jnoortheen-nix-ide                  0.4.22 -> 0.4.23
+[U.]  #79  vscode-extension-ms-vscode-remote-remote-containers  0.422.1 -> 0.427.0
+[U.]  #80  vscode-extension-myriad-dreamin-tinymist             0.13.24 -> 0.13.26
+[U.]  #81  x86_energy_perf_policy                               6.12.47 -> 6.12.48
+[U.]  #82  xapp                                                 2.8.12, 2.8.12-dev -> 2.8.13, 2.8.13-dev
+[U.]  #83  xdg-desktop-portal-termfilechooser-unstable          2025-09-12, 2025-09-12-fish-completions -> 2025-09-20, 2025-09-20-fish-completions
+[U.]  #84  xwayland-satellite-unstable                          2025-09-06-970728d -> 2025-09-22-0336854
+[U.]  #85  zed-editor                                           0.203.4 -> 0.204.3
+[U.]  #86  zed-editor-wrapped                                   0.203.4, 0.203.4-fish-completions -> 0.204.3, 0.204.3-fish-completions
+Added packages:
+[A.]  #1  astro-language-server        2.15.4
+[A.]  #2  bunny.yazi                   7137a44
+[A.]  #3  mimeapps.list                <none>
+[A.]  #4  tailwindcss-language-server  0.14.26
+Removed packages:
+[R.]  #1  SPIRV-LLVM-Translator     15.0.15
+[R.]  #2  bunny.yazi-bd8a767        <none>
+[R.]  #3  clang                     15.0.7-lib
+[R.]  #4  hm_juliaconfigstartup.jl  <none>
+[R.]  #5  hm_mimeapps.list          <none>
+[R.]  #6  initrd-fsinfo             <none>
+[R.]  #7  opencl-clang              15.0.3
+Closure size: 3038 -> 3032 (458 paths added, 464 paths removed, delta -6, disk usage -484.1MiB).
