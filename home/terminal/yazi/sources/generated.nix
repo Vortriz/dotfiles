@@ -31,17 +31,17 @@
   };
   hover-after-moved = {
     pname = "hover-after-moved";
-    version = "89420e5f049c400ef4d50e6f20aff21ae47239f5";
+    version = "76e496c4f22a7638598357ddf72dbdd0110f4228";
     src = fetchgit {
       url = "https://github.com/boydaihungst/hover-after-moved.yazi";
-      rev = "89420e5f049c400ef4d50e6f20aff21ae47239f5";
+      rev = "76e496c4f22a7638598357ddf72dbdd0110f4228";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-sifYpeepzxt1N2WJXxTDvKh7tH+QasgZXOfka6ZSrXE=";
+      sha256 = "sha256-TFVxC+zrmEWH42ciN/1NjfSeSGOxxLP+kcbuAnQtNTo=";
     };
-    date = "2025-08-12";
+    date = "2025-09-28";
   };
   mediainfo = {
     pname = "mediainfo";
@@ -115,17 +115,17 @@
   };
   restore = {
     pname = "restore";
-    version = "dc40509c03f1c33f1ef008330c6694effe674082";
+    version = "2161735f840e36974a6b4b0007c3e4184a085208";
     src = fetchgit {
       url = "https://github.com/boydaihungst/restore.yazi";
-      rev = "dc40509c03f1c33f1ef008330c6694effe674082";
+      rev = "2161735f840e36974a6b4b0007c3e4184a085208";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-Lkt1TB07UqvuTU1JdwfHBSyn7/MOdd+iJawCSrPwXhw=";
+      sha256 = "sha256-W3P7UhEtmv0JfcKUd+g/HBPy4ML8qgmgnOVaYKN0TSU=";
     };
-    date = "2025-08-28";
+    date = "2025-09-25";
   };
   starship = {
     pname = "starship";

@@ -3,7 +3,7 @@
 
     shyfox = pkgs.fetchzip {
         url = "https://github.com/Vortriz/ShyFox/archive/refs/heads/main.zip";
-        sha256 = "sha256-5GsZ9SORT+qaYhDY7EzI0DULzR68qzDJvW0mDKR5PSQ=";
+        sha256 = "sha256-alrK8s1B+ShX4yda27jPPvBZTIE0nYu9iQYAmtzQrZc=";
         stripRoot = true;
     };
     # For testing purposes
