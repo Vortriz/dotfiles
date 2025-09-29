@@ -36,6 +36,14 @@ in {
                     desc = "Play";
                 }
             ];
+
+            edit-pdf = [
+                {
+                    run = ''libreoffice "$@"'';
+                    orphan = true;
+                    desc = "Edit PDF";
+                }
+            ];
         };
 
         open = {
@@ -43,6 +51,13 @@ in {
                 {
                     mime = "video/*";
                     use = "play";
+                }
+            ];
+
+            append_rules = [
+                {
+                    mime = "application/pdf";
+                    use = "edit-pdf";
                 }
             ];
         };

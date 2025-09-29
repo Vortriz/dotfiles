@@ -55,7 +55,7 @@ in {
                 {app-id = "dev.zed.Zed";}
                 {app-id = "vesktop";}
                 {app-id = "nix-search-tv";}
-                {app-id = ''libreoffice-(calc|draw|impress|math|writer)'';}
+                {app-id = "^libreoffice-.*$";}
             ];
         }
         {
