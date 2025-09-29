@@ -16882,3 +16882,48 @@ Removed packages:
 [R.]  #6  initrd-fsinfo             <none>
 [R.]  #7  opencl-clang              15.0.3
 Closure size: 3038 -> 3032 (458 paths added, 464 paths removed, delta -6, disk usage -484.1MiB).
+
+---
+
+29/09/25 11:54:30 AM IST
+<<< /nix/var/nix/profiles/system-117-link
+>>> /nix/var/nix/profiles/system-119-link
+Version changes:
+[U.]  #01  anydesk                               7.0.2, 7.0.2-fish-completions -> 7.1.0, 7.1.0-fish-completions
+[U*]  #02  bcache-tools                          1.0.8, 1.0.8_fish-completions -> 1.1, 1.1_fish-completions
+[U.]  #03  cava                                  0.10.4, 0.10.4-fish-completions -> 0.10.6, 0.10.6-fish-completions
+[U.]  #04  electron                              37.4.0 -> 37.5.1
+[U.]  #05  electron-unwrapped                    37.4.0 -> 37.5.1
+[U.]  #06  fastfetch                             2.52.0, 2.52.0-fish-completions, 2.52.0-man -> 2.53.0, 2.53.0-fish-completions, 2.53.0-man
+[U.]  #07  freerdp                               3.17.0 -> 3.17.1
+[U.]  #08  gh                                    2.79.0, 2.79.0-fish-completions -> 2.80.0, 2.80.0-fish-completions
+[D.]  #09  hover-after-moved.yazi                89420e5 -> 76e496c
+[U.]  #10  nilfs-utils                           2.2.11 -> 2.2.12
+[U.]  #11  nixd                                  2.6.4 -> 2.7.0
+[U.]  #12  nixf                                  2.6.4 -> 2.7.0
+[U.]  #13  nixos-system-nixos                    25.11.20250921.554be64 -> 25.11.20250924.e643668
+[U.]  #14  nixt                                  2.6.4 -> 2.7.0
+[U.]  #15  passt                                 2025_08_05.309eefd -> 2025_09_11.6cbcccc
+[U.]  #16  python3.13-pyfiglet                   1.0.3 -> 1.0.4
+[U.]  #17  tevent                                0.17.0 x2 -> 0.17.1 x2
+[U.]  #18  uriparser                             0.9.8 -> 0.9.9
+[U.]  #19  vpl-gpu-rt                            25.3.2 -> 25.3.4
+[U.]  #20  vscode-extension-github-copilot       1.350.0 -> 1.372.0
+[U.]  #21  vscode-extension-github-copilot-chat  0.30.1 -> 0.31.0
+[U.]  #22  vscode-extension-ms-toolsai-jupyter   2025.7.0 -> 2025.8.0
+[U.]  #23  webkitgtk                             2.48.6+abi=4.1, 2.48.6+abi=6.0 -> 2.50.0+abi=4.1, 2.50.0+abi=6.0
+[U.]  #24  yt-dlp                                2025.09.05 -> 2025.09.23
+[U.]  #25  zed-editor                            0.204.3 -> 0.204.5
+[U.]  #26  zed-editor-wrapped                    0.204.3, 0.204.3-fish-completions -> 0.204.5, 0.204.5-fish-completions
+Added packages:
+[A.]  #1  nix-cmd       2.30.3
+[A.]  #2  nix-expr      2.30.3
+[A.]  #3  nix-fetchers  2.30.3
+[A.]  #4  nix-flake     2.30.3
+[A.]  #5  nix-main      2.30.3
+[A.]  #6  nix-store     2.30.3
+[A.]  #7  nix-util      2.30.3
+[A.]  #8  restore.yazi  2161735
+Removed packages:
+[R.]  #1  restore.yazi-dc40509  <none>
+Closure size: 3032 -> 3039 (210 paths added, 203 paths removed, delta +7, disk usage -86.7MiB).
