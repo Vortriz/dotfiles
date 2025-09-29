@@ -82,6 +82,7 @@ in {
             "Mod+Shift+Minus".action = set-window-height "-10%";
             "Mod+Shift+Equal".action = set-window-height "+10%";
 
+            "Mod+Shift+Q".action = spawn-sh "close-all";
             "Mod+Shift+P".action = power-off-monitors;
             "Mod+Shift+E".action = quit;
         }
