@@ -331,8 +331,8 @@
         "quickshell": "quickshell"
       },
       "locked": {
-        "lastModified": 1758112560,
-        "narHash": "sha256-2Nutvd5QZY5JW/2Hh+PTW337c8lSYoE4jJjXiGPvTdU=",
+        "lastModified": 1759250150,
+        "narHash": "sha256-1liHoIh/jRcEjt+Jd6A/J38aU+95gL9DwWcfBF/7ZdU=",
         "path": "/mnt/HOUSE/dev/niri-shell",
         "type": "path"
       },
