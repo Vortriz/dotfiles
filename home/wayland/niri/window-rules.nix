@@ -48,9 +48,9 @@ in {
                 {app-id = getName browser;}
                 {app-id = getName file-manager;}
                 {app-id = "org.kde.haruna";}
-                {app-id = "code";}
+                {app-id = "Code";}
                 {app-id = "obsidian";}
-                {title = ".*pdf";}
+                {app-id = "sioyek";}
                 {app-id = "Zotero";}
                 {app-id = "dev.zed.Zed";}
                 {app-id = "vesktop";}
@@ -79,7 +79,7 @@ in {
 
             matches = [
                 {app-id = getName terminal;}
-                {title = ".*pdf";}
+                {app-id = "sioyek";}
             ];
         }
         {
@@ -128,7 +128,7 @@ in {
 
             matches = [
                 {app-id = "obsidian";}
-                {title = ".*pdf";}
+                {app-id = "sioyek";}
                 {app-id = "Zotero";}
             ];
         }
@@ -148,7 +148,7 @@ in {
 
             matches = [
                 {app-id = "dev.zed.Zed";}
-                {app-id = "code";}
+                {app-id = "Code";}
             ];
         }
     ];
