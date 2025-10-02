@@ -1,5 +1,4 @@
 {
-    inputs,
     lib,
     pkgs,
     ...
@@ -20,21 +19,16 @@
         monospaceFontName = "Maple Mono Normal NF";
     };
 
-    config.defaults =
-        (with pkgs; {
-            # keep-sorted start
-            browser = firefox;
-            file-manager = yazi;
-            shell = fish;
-            terminal = kitty;
-            video-player = haruna;
-            wallpaper = swww;
-            # keep-sorted end
-        })
-        // (with inputs; {
-            # keep-sorted start
-            # keep-sorted end
-        });
+    config.defaults = with pkgs; {
+        # keep-sorted start
+        browser = firefox;
+        file-manager = yazi;
+        shell = fish;
+        terminal = kitty;
+        video-player = haruna;
+        wallpaper = swww;
+        # keep-sorted end
+    };
 
     # Let this here
     options = {

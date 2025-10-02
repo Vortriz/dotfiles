@@ -28,7 +28,6 @@ in
             description = "Neofetch + falling sand engine for your terminal";
             homepage = "https://github.com/datavorous/dunefetch";
             license = lib.licenses.mit;
-            maintainers = with lib.maintainers; [];
             mainProgram = "dunefetch";
         };
     }

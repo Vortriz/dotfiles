@@ -21,7 +21,7 @@
         inherit (config.lib.niri.actions) spawn-sh;
         inherit (osConfig.defaults) terminal;
     in {
-        niri-lib = rec {
+        niri-lib = {
             open = {
                 app,
                 args ? "",
