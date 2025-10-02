@@ -15,6 +15,20 @@
     };
     date = "2025-08-12";
   };
+  watershot = {
+    pname = "watershot";
+    version = "17225900e909a1d499f7534e4056cea7418a60d0";
+    src = fetchgit {
+      url = "https://github.com/Kirottu/watershot";
+      rev = "17225900e909a1d499f7534e4056cea7418a60d0";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sparseCheckout = [ ];
+      sha256 = "sha256-mnBBxFwpw4KBnioCF2RG0eHSjtgRnSDxxDuaYt+T5Uk=";
+    };
+    date = "2024-06-25";
+  };
   xdg-desktop-portal-termfilechooser = {
     pname = "xdg-desktop-portal-termfilechooser";
     version = "a0291aab4e026f575e5e8927e65f07d3c95dc16c";
