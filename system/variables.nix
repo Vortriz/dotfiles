@@ -28,7 +28,7 @@
             shell = fish;
             terminal = kitty;
             video-player = haruna;
-            wallpaper = swww-git;
+            wallpaper = swww;
             # keep-sorted end
         })
         // (with inputs; {

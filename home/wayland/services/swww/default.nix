@@ -6,7 +6,7 @@
 }: let
     inherit (osConfig.defaults) wallpaper;
 in {
-    home.packages = [pkgs.swww-git];
+    home.packages = [pkgs.swww];
 
     systemd.user.services.swww-workspace = {
         Install = {
