@@ -28,6 +28,9 @@
     };
 
     programs.niri.settings.binds = {
-        "Alt+Space" = config.niri-lib.open {app = inputs.vicinae.packages.${pkgs.system}.default;};
+        "Alt+Space" = config.niri-lib.open {
+            app = inputs.vicinae.packages.${pkgs.system}.default;
+            args = "toggle";
+        };
     };
 }
