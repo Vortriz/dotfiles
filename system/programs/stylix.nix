@@ -12,8 +12,6 @@ in {
         enable = true;
         autoEnable = false;
 
-        image = ../../assets/wallpapers/25.png;
-
         polarity = "dark";
 
         base16Scheme = {
