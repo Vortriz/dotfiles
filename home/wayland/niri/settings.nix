@@ -39,13 +39,6 @@ in {
             dwt = true;
         };
 
-        layer-rules = [
-            {
-                matches = [{namespace = "overview";}];
-                place-within-backdrop = true;
-            }
-        ];
-
         layout = {
             always-center-single-column = true;
             default-column-width.proportion = 0.5;
@@ -76,6 +69,10 @@ in {
             };
 
             scale = 1.5;
+        };
+
+        overview = {
+            zoom = 0.4;
         };
 
         prefer-no-csd = true;

@@ -25,9 +25,7 @@ in {
 
     stylix.targets.yazi.enable = true;
 
-    home.packages = with pkgs; [
-        exiftool
-    ];
+    home.packages = [pkgs.exiftool];
 
     programs.niri.settings.binds."Mod+E" = config.niri-lib.open-tui {
         app = lib.getExe yazi;

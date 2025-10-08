@@ -45,4 +45,11 @@ in {
             RestartSec = 10;
         };
     };
+
+    programs.niri.settings.layer-rules = [
+        {
+            matches = [{namespace = "overview";}];
+            place-within-backdrop = true;
+        }
+    ];
 }
