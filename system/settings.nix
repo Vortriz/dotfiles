@@ -130,7 +130,6 @@ in {
 
     time = {
         inherit timeZone;
-        hardwareClockInLocalTime = true;
     };
 
     virtualisation = {
