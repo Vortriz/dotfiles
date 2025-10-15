@@ -16,5 +16,11 @@
             enableKeybinds = true;
             enableSpawn = true;
         };
+
+        plugins = let
+            official = inputs.niri-shell.inputs.dms-plugins;
+        in {
+            DankBatteryAlerts.src = "${official}/DankBatteryAlerts";
+        };
     };
 }
