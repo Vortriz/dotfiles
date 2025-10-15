@@ -19,26 +19,6 @@
         },
         "version": "7adfd33406a556b7d096f11dc446570c81b17675"
     },
-    "watershot": {
-        "cargoLocks": null,
-        "date": "2024-06-25",
-        "extract": null,
-        "name": "watershot",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "rev": "17225900e909a1d499f7534e4056cea7418a60d0",
-            "sha256": "sha256-mnBBxFwpw4KBnioCF2RG0eHSjtgRnSDxxDuaYt+T5Uk=",
-            "sparseCheckout": [],
-            "type": "git",
-            "url": "https://github.com/Kirottu/watershot"
-        },
-        "version": "17225900e909a1d499f7534e4056cea7418a60d0"
-    },
     "xdg-desktop-portal-termfilechooser": {
         "cargoLocks": null,
         "date": "2025-09-20",

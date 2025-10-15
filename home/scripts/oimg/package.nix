@@ -9,13 +9,13 @@ pkgs.writers.writeFishBin "oimg" {
         "PATH"
         ":"
         "${lib.makeBinPath (with pkgs; [
-            watershot-git
+            flameshot
             imagemagick
             wl-clipboard
         ])}"
     ];
 } ''
-    watershot path /tmp/img.png
+    flameshot gui -p /tmp/img.png
     magick /tmp/img.png -negate -fuzz 20% -transparent black /tmp/img-processed.png && rm /tmp/img.png
     wl-copy < /tmp/img-processed.png && rm /tmp/img-processed.png
 ''
