@@ -21,17 +21,13 @@ in {
         auto_update = false;
         buffer_font_family = fontName;
         buffer_font_size = fontSize;
-        # context_servers = {
-        #     nixos = {
-        #         source =  "custom";
-        #         command = {
-        #             path = "mcp-nixos";
-        #             args = [];
-        #             env = {};
-        #         };
-        #         settings = {};
-        #     };
-        # };
+        context_servers = {
+            nixos = {
+                source = "custom";
+                command = lib.getExe pkgs.mcp-nixos;
+                args = [];
+            };
+        };
         cursor_shape = "bar";
         features.edit_prediction_provider = "copilot";
         git.inline_blame.enabled = false;
@@ -78,7 +74,6 @@ in {
             ]
             |> map (name: {
                 ${name}.binary = {
-                    path_lookup = true;
                     path = lib.getExe pkgs.${name};
                 };
             })
@@ -126,7 +121,6 @@ in {
             cursor_shape = "bar";
             toolbar.breadcrumbs = false;
         };
-        toolbar.title = true;
         ui_font_family = fontName;
         ui_font_size = fontSize;
         unnecessary_code_fade = 0.5;

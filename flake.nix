@@ -14,12 +14,14 @@
             url = "github:nix-community/home-manager";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+        niri = {
+            url = "github:sodiboo/niri-flake";
+            # inputs.niri-unstable.url = "github:YaLTeR/niri?ref=pull/1704/head";
+        };
         niri-shell = {
             url = "/mnt/HOUSE/dev/niri-shell";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        # mcp-nixos.url = "github:utensils/mcp-nixos"; # wait for zed to support this
-        niri.url = "github:sodiboo/niri-flake";
         nix-index-database = {
             url = "github:nix-community/nix-index-database";
             inputs.nixpkgs.follows = "nixpkgs";
