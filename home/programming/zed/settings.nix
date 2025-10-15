@@ -68,7 +68,6 @@ in {
             ([
                 # keep-sorted start
                 "astro-language-server"
-                "ltex-ls-plus"
                 "nixd"
                 "package-version-server"
                 "rust-analyzer"
@@ -85,26 +84,33 @@ in {
             })
             |> lib.mergeAttrsList)
             // {
-                ruff.binary = {
+                # keep-sorted start block=yes
+                astro-language-server.binary = {
                     path_lookup = true;
-                    path = lib.getExe pkgs.ruff;
-                    arguments = ["server"];
+                    path = lib.getExe pkgs.astro-language-server;
+                    arguments = ["--stdio"];
+                };
+                harper.binary = {
+                    path_lookup = true;
+                    path = lib.getExe pkgs.harper;
+                    arguments = ["--stdio"];
                 };
                 qml.binary = {
                     path_lookup = true;
                     path = "${pkgs.kdePackages.qtdeclarative}/bin/qmlls";
                     arguments = ["-E"];
                 };
-                astro-language-server.binary = {
+                ruff.binary = {
                     path_lookup = true;
-                    path = lib.getExe pkgs.astro-language-server;
-                    arguments = ["--stdio"];
+                    path = lib.getExe pkgs.ruff;
+                    arguments = ["server"];
                 };
                 tailwindcss-language-server.binary = {
                     path_lookup = true;
                     path = lib.getExe pkgs.tailwindcss-language-server;
                     arguments = ["--stdio"];
                 };
+                # keep-sorted end
             };
         minimap = {
             show = "always";

@@ -9,10 +9,10 @@
         extensions = [
             # keep-sorted start
             "astro"
+            "harper"
             "julia"
             "just"
             "latex"
-            "ltex"
             "nix"
             "qml"
             "ruff"
@@ -26,8 +26,8 @@
             # keep-sorted start
             alejandra
             astro-language-server
+            harper
             kdePackages.qtdeclarative
-            ltex-ls-plus
             nixd
             nodejs
             outputs.formatter.${system}
