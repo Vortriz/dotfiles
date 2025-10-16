@@ -1,7 +1,6 @@
 {
     config,
     inputs,
-    pkgs,
     ...
 }: {
     imports = [inputs.vicinae.homeManagerModules.default];
@@ -29,7 +28,7 @@
 
     programs.niri.settings.binds = {
         "Alt+Space" = config.niri-lib.open {
-            app = inputs.vicinae.packages.${pkgs.system}.default;
+            app = config.services.vicinae.package;
             args = "toggle";
         };
     };
