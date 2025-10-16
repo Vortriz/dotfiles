@@ -29,7 +29,7 @@
             harper
             kdePackages.qtdeclarative
             nixd
-            nodejs
+            nodejs_latest
             outputs.formatter.${system}
             package-version-server
             ruff

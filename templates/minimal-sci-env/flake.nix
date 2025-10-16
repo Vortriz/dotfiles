@@ -43,7 +43,7 @@
                         [python]
                         ++ (with pkgs; [
                             uv
-                            nodejs
+                            nodejs_latest
                             ruff
                         ])
                         ++ (with pkgs.python312Packages; [
