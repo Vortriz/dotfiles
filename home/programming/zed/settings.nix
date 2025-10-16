@@ -43,18 +43,12 @@ in {
             };
             Python = {
                 format_on_save = "on";
-                language_servers = ["pyright" "ruff" "!pylsp"];
+                language_servers = ["ruff" "ty" "!basedpyright"];
                 formatter = [
                     {
                         code_actions = {
                             "source.organizeImports.ruff" = true;
                             "source.fixAll.ruff" = true;
-                        };
-                    }
-                    {
-                        external = {
-                            command = "ruff";
-                            arguments = ["format" "--stdin-filename" "{buffer_path}"];
                         };
                     }
                 ];
@@ -81,27 +75,22 @@ in {
             // {
                 # keep-sorted start block=yes
                 astro-language-server.binary = {
-                    path_lookup = true;
                     path = lib.getExe pkgs.astro-language-server;
                     arguments = ["--stdio"];
                 };
                 harper.binary = {
-                    path_lookup = true;
                     path = lib.getExe pkgs.harper;
                     arguments = ["--stdio"];
                 };
                 qml.binary = {
-                    path_lookup = true;
                     path = "${pkgs.kdePackages.qtdeclarative}/bin/qmlls";
                     arguments = ["-E"];
                 };
                 ruff.binary = {
-                    path_lookup = true;
                     path = lib.getExe pkgs.ruff;
                     arguments = ["server"];
                 };
                 tailwindcss-language-server.binary = {
-                    path_lookup = true;
                     path = lib.getExe pkgs.tailwindcss-language-server;
                     arguments = ["--stdio"];
                 };
@@ -120,6 +109,7 @@ in {
             detect_venv.on.activate_script = "${lib.getName shell}";
             cursor_shape = "bar";
             toolbar.breadcrumbs = false;
+            line_height = "comfortable";
         };
         ui_font_family = fontName;
         ui_font_size = fontSize;
