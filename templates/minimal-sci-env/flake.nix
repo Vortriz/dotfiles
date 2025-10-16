@@ -84,14 +84,6 @@
                         }
                     ];
 
-                commands = lib.lists.optionals cfg.enablePython [
-                    {
-                        help = "Activate the Python virtual environment";
-                        name = "activate";
-                        command = "source .venv/bin/activate.fish";
-                    }
-                ];
-
                 devshell.startup.default.text = lib.strings.optionalString cfg.enablePython "unset PYTHONPATH";
             };
     };
