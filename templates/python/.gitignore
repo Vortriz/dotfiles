@@ -1,0 +1,8 @@
+# Nix
+.direnv
+result*
+
+# Python
+.venv
+**/__marimo__
+**/__pycache__

@@ -4,6 +4,11 @@
         description = "Minimal scientific env";
     };
 
+    python = {
+        path = ./python;
+        description = "Scientific dev environment with Python (via uv)";
+    };
+
     typst-presentation = {
         path = ./typst-presentation;
         description = "Typst presentation using custom Touying theme";
@@ -13,10 +18,5 @@
     rust = {
         path = ./rust;
         description = "Rust flake with rustup";
-    };
-
-    scientific-env = {
-        path = ./scientific-env;
-        description = "Scientific dev environment with Julia and Python (via uv)";
     };
 }
