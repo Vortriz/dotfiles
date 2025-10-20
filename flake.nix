@@ -3,12 +3,14 @@
 
     inputs = {
         nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+        systems.url = "github:nix-systems/x86_64-linux";
 
         # keep-sorted start block=yes
         agenix = {
             url = "github:ryantm/agenix";
             inputs.nixpkgs.follows = "nixpkgs";
             inputs.darwin.follows = "";
+            inputs.systems.follows = "systems";
         };
         home-manager = {
             url = "github:nix-community/home-manager";
@@ -40,7 +42,11 @@
             url = "github:cachix/git-hooks.nix";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        stylix.url = "github:nix-community/stylix";
+        stylix = {
+            url = "github:nix-community/stylix";
+            inputs.nixpkgs.follows = "nixpkgs";
+            inputs.systems.follows = "systems";
+        };
         treefmt-nix = {
             url = "github:numtide/treefmt-nix";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -52,14 +58,14 @@
     outputs = {
         self,
         nixpkgs,
+        systems,
         treefmt-nix,
         ...
     } @ inputs: let
         inherit (self) outputs;
         inherit (nixpkgs) lib legacyPackages;
 
-        systems = ["x86_64-linux"];
-        forAllSystems = f: (lib.genAttrs systems) (system: f legacyPackages.${system});
+        forAllSystems = f: (lib.genAttrs (import systems)) (system: f legacyPackages.${system});
         treefmtEval = forAllSystems (pkgs: treefmt-nix.lib.evalModule pkgs ./treefmt.nix);
     in {
         # Your custom packages, accessible through 'nix build', 'nix shell', etc
