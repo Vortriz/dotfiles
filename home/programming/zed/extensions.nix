@@ -15,7 +15,6 @@
             "latex"
             "nix"
             "qml"
-            "ruff"
             "scss"
             "typst"
             "vscode-icons"
