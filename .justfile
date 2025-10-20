@@ -53,11 +53,7 @@ profiles-path := "/nix/var/nix/profiles"
 
 [group('MAINTENANCE')]
 @gc:
-    nh clean all -k 5
-
-[group('MAINTENANCE')]
-@optimise:
-    nix store optimise -v
+    nh clean all -k 5 --optimise
 
 alias pf := prefetch
 
