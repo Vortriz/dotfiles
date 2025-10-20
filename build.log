@@ -17442,3 +17442,233 @@ Removed packages:
 [R.]  #11  watershot-unstable                       2024-06-25
 [R.]  #12  xcb-util-cursor                          0.1.5
 Closure size: 2823 -> 2878 (2838 paths added, 2783 paths removed, delta +55, disk usage -379.3MiB).
+
+---
+
+20/10/25 02:17:45 PM IST
+<<< /nix/var/nix/profiles/system-126-link
+>>> /nix/var/nix/profiles/system-127-link
+Version changes:
+[C.]  #001  abseil-cpp                 20250814.0 x2 -> 20250127.1, 20250814.0 x2
+[C*]  #002  acl                        2.3.2 x2, 2.3.2-bin, 2.3.2-doc -> 2.3.2 x3, 2.3.2-bin, 2.3.2-doc
+[U.]  #003  acpi-call                  1.2.2-6.17.2 -> 1.2.2-6.17.3
+[C.]  #004  at-spi2-core               2.56.2 x2, 2.56.2-dev -> 2.56.2 x3, 2.56.2-dev
+[C*]  #005  attr                       2.5.2 x2, 2.5.2-bin, 2.5.2-doc -> 2.5.2 x3, 2.5.2-bin, 2.5.2-doc
+[C.]  #006  audit                      4.1.2-unstable-2025-09-06-lib x2 -> 4.1.1-unstable-2025-08-01-lib, 4.1.2-unstable-2025-09-06-lib x2
+[C.]  #007  avahi                      0.8 x2 -> 0.8 x3
+[C.]  #008  bash                       5.3p3 x2 -> 5.3p3 x3
+[C*]  #009  bash-interactive           5.3p3 x3, 5.3p3-doc, 5.3p3-fish-completions, 5.3p3-man x2 -> 5.3p3 x4, 5.3p3-doc, 5.3p3-fish-completions, 5.3p3-man x2
+[U.]  #010  bootspec                   1.1.0 -> 2.0.0
+[C.]  #011  brotli                     1.1.0, 1.1.0-dev, 1.1.0-lib x2 -> 1.1.0, 1.1.0-dev, 1.1.0-lib x3
+[C*]  #012  bzip2                      1.0.8 x2, 1.0.8-bin, 1.0.8-dev, 1.0.8-man -> 1.0.8 x3, 1.0.8-bin, 1.0.8-dev, 1.0.8-man
+[C.]  #013  cairo                      1.18.4 x2, 1.18.4-dev -> 1.18.4 x3, 1.18.4-dev
+[C.]  #014  coreutils                  9.7 x2 -> 9.7 x3
+[C.]  #015  cracklib                   2.10.3 x2 -> 2.10.3 x3
+[C.]  #016  cryptsetup                 2.8.1 x2 -> 2.8.1 x3
+[C*]  #017  cups                       2.4.14 x2, 2.4.14-dev, 2.4.14-lib x2, 2.4.14-man -> 2.4.12, 2.4.12-lib, 2.4.14 x2, 2.4.14-dev, 2.4.14-lib x2, 2.4.14-man
+[C*]  #018  curl                       8.16.0 x2, 8.16.0-bin x2, 8.16.0-dev, 8.16.0-man -> 8.14.1, 8.16.0 x2, 8.16.0-bin x2, 8.16.0-dev, 8.16.0-man
+[C.]  #019  dav1d                      1.5.1 x2 -> 1.5.1 x3
+[C.]  #020  db                         4.8.30 x2, 5.3.28 x2 -> 4.8.30 x3, 5.3.28 x2
+[C*]  #021  dbus                       1, 1.14.10 x2, 1.14.10-dev, 1.14.10-doc, 1.14.10-lib x2, 1.14.10-man -> 1, 1.14.10 x3, 1.14.10-dev x2, 1.14.10-doc, 1.14.10-lib x3, 1.14.10-man
+[C*]  #022  dconf                      0.40.0, 0.40.0_fish-completions, 0.40.0-lib x2 -> 0.40.0, 0.40.0_fish-completions, 0.40.0-lib x3
+[C.]  #023  dejavu-fonts-minimal       2.37 x2 -> 2.37 x3
+[C.]  #024  dns-root-data              2025-04-14 x2 -> 2025-04-14 x3
+[C.]  #025  double-conversion          3.3.1 -> 3.3.1 x2
+[C.]  #026  duktape                    2.7.0 x2 -> 2.7.0 x3
+[C.]  #027  elfutils                   0.193 x2 -> 0.193 x3
+[C.]  #028  espanso                    <none>, 2.2-unstable-2024-05-14 x3 -> <none>, 2.3.0 x3
+[C.]  #029  expat                      2.7.2 x2, 2.7.2-dev -> 2.7.1, 2.7.1-dev, 2.7.2 x2, 2.7.2-dev
+[U.]  #030  fastfetch                  2.53.0, 2.53.0-fish-completions, 2.53.0-man -> 2.54.0, 2.54.0-fish-completions, 2.54.0-man
+[C*]  #031  fontconfig                 2.17.1 x2, 2.17.1-bin, 2.17.1-dev, 2.17.1_fish-completions, 2.17.1-lib x2 -> 2.16.2, 2.16.2-bin, 2.16.2-lib, 2.17.1 x2, 2.17.1-bin, 2.17.1-dev, 2.17.1_fish-completions, 2.17.1-lib x2
+[C.]  #032  freetype                   2.13.3 x2, 2.13.3-dev -> 2.13.3 x3, 2.13.3-dev
+[C.]  #033  fribidi                    1.0.16 x2, 1.0.16-dev -> 1.0.16 x3, 1.0.16-dev
+[C.]  #034  gcc                        14.3.0, 14.3.0-lib x3, 14.3.0-libgcc x3, 15.2.0-lib, 15.2.0-libgcc -> 14.3.0, 14.3.0-lib x4, 14.3.0-libgcc x4, 15.2.0-lib, 15.2.0-libgcc
+[C.]  #035  gd                         2.3.3 x2 -> 2.3.3 x3
+[C.]  #036  gdk-pixbuf                 2.42.12 x2, 2.42.12-dev -> 2.42.12 x3, 2.42.12-dev
+[C*]  #037  getent-glibc               2.40-66 x2 -> 2.40-66 x3
+[C.]  #038  gettext                    0.25.1 -> 0.25.1 x2
+[U.]  #039  gh                         2.81.0, 2.81.0-fish-completions -> 2.82.0, 2.82.0-fish-completions
+[C.]  #040  giflib                     5.2.2 x2 -> 5.2.2 x3
+[C.]  #041  glib                       2.84.4 x2, 2.84.4-bin x2, 2.84.4-dev, 2.84.4-fish-completions -> 2.84.4 x3, 2.84.4-bin x2, 2.84.4-dev, 2.84.4-fish-completions
+[C*]  #042  glibc                      2.40-66 x2, 2.40-66-bin x2, 2.40-66-dev, 2.40-66-getent x2 -> 2.40-66 x3, 2.40-66-bin x2, 2.40-66-dev, 2.40-66-getent x3
+[C.]  #043  gmp-with-cxx               6.3.0 x4, 6.3.0-dev -> 6.3.0 x6, 6.3.0-dev
+[C.]  #044  gnupg                      2.4.8 x3 -> 2.4.8 x4
+[C*]  #045  gnused                     4.9 x2, 4.9_fish-completions -> 4.9 x3, 4.9_fish-completions
+[C*]  #046  gnutar                     1.35 x2, 1.35_fish-completions -> 1.35 x3, 1.35_fish-completions
+[C.]  #047  gnutls                     3.8.10 x2, 3.8.10-bin, 3.8.10-man -> 3.8.10 x3, 3.8.10-bin, 3.8.10-man
+[C.]  #048  gobject-introspection      1.84.0 x2, 1.84.0-dev -> 1.84.0 x3, 1.84.0-dev
+[C.]  #049  graphite2                  1.3.14 x2, 1.3.14-dev -> 1.3.14 x3, 1.3.14-dev
+[D.]  #050  grpc-tools                 1.13.0 -> 1.12.4
+[C.]  #051  gsettings-desktop-schemas  48.0 x2 -> 48.0 x3
+[C.]  #052  gtest                      1.17.0 x2 -> 1.17.0 x3
+[C.]  #053  gtk+3                      3.24.49 x2, 3.24.49-dev -> 3.24.49 x3, 3.24.49-dev
+[C*]  #054  gzip                       1.14 x2, 1.14-man -> 1.14 x3, 1.14-man
+[C.]  #055  harfbuzz                   11.2.1 x2, 11.2.1-dev -> 11.2.1 x3, 11.2.1-dev
+[C.]  #056  hwdata                     0.399 x2 -> 0.398, 0.399 x2
+[U.]  #057  hyprgraphics               0.1.6 -> 0.2.0
+[U.]  #058  hyprutils                  0.9.0 -> 0.10.0
+[C.]  #059  icu4c                      75.1, 76.1 x2, 76.1-dev, 77.1 -> 75.1, 76.1 x3, 76.1-dev x2, 77.1
+[U.]  #060  imagemagick                7.1.2-6, 7.1.2-6-dev, 7.1.2-6-doc, 7.1.2-6-fish-completions -> 7.1.2-7, 7.1.2-7-dev, 7.1.2-7-doc, 7.1.2-7-fish-completions
+[U.]  #061  initrd-linux               6.17.2 -> 6.17.3
+[C.]  #062  iso-codes                  4.18.0 x2 -> 4.18.0 x3
+[C.]  #063  json-c                     0.18 x2 -> 0.18 x3
+[C.]  #064  json-glib                  1.10.8 x2 -> 1.10.6, 1.10.8 x2
+[C*]  #065  kbd                        2.9.0 x4 -> 2.8.0-unstable-2025-08-12 x2, 2.9.0 x4
+[C*]  #066  kexec-tools                2.0.31 x2, 2.0.31_fish-completions -> 2.0.31 x3, 2.0.31_fish-completions
+[C.]  #067  keyutils                   1.6.3-lib x2 -> 1.6.3-lib x3
+[U.]  #068  kio                        6.19.0 -> 6.19.1
+[C*]  #069  kmod                       31 x2, 31_fish-completions, 31-lib x2 -> 31 x3, 31_fish-completions, 31-lib x3
+[C.]  #070  krb5                       1.22.1, 1.22.1-dev, 1.22.1-lib x2 -> 1.22.1, 1.22.1-dev, 1.22.1-lib x3
+[U.]  #071  lcevcdec                   4.0.1-lib -> 4.0.2-lib
+[C.]  #072  lerc                       4.0.0 x2 -> 4.0.0 x3
+[C.]  #073  libXcomposite              0.4.6 x2, 0.4.6-dev -> 0.4.6 x3, 0.4.6-dev
+[C.]  #074  libXdamage                 1.1.6 x2, 1.1.6-dev -> 1.1.6 x3, 1.1.6-dev
+[C.]  #075  libXft                     2.3.9 x2, 2.3.9-dev -> 2.3.9 x3, 2.3.9-dev
+[C.]  #076  libXi                      1.8.2 x2, 1.8.2-dev, 1.8.2-man -> 1.8.2 x3, 1.8.2-dev, 1.8.2-man
+[C.]  #077  libXinerama                1.1.5 x2, 1.1.5-dev -> 1.1.5 x3, 1.1.5-dev
+[C.]  #078  libXtst                    1.2.5 x2 -> 1.2.5 x3
+[C.]  #079  libaom                     3.12.1 x2 -> 3.12.1 x3
+[C.]  #080  libapparmor                4.1.2 x2 -> 4.1.1, 4.1.2 x2
+[C.]  #081  libarchive                 3.8.1-lib x2 -> 3.8.1-lib x3
+[C.]  #082  libassuan                  3.0.2 x2 -> 3.0.2 x3
+[C.]  #083  libavif                    1.3.0 x2 -> 1.3.0 x3
+[C.]  #084  libb2                      0.98.1 -> 0.98.1 x2
+[C.]  #085  libbpf                     1.6.2 x2 -> 1.6.2 x3
+[C*]  #086  libcap                     2.76, 2.76-doc, 2.76-lib x4, 2.76-man -> 2.76, 2.76-doc, 2.76-lib x6, 2.76-man
+[C.]  #087  libcap-ng                  0.8.5 x2 -> 0.8.5 x3
+[C.]  #088  libcbor                    0.13.0 x2 -> 0.12.0, 0.13.0 x2
+[D.]  #089  libcerf                    3.2 -> 3.1
+[C.]  #090  libdaemon                  0.14 x2 -> 0.14 x3
+[C.]  #091  libdatrie                  2019-12-20-lib x2 -> 2019-12-20-lib x3
+[C.]  #092  libdeflate                 1.24 x2 -> 1.24 x3
+[C.]  #093  libdrm                     2.4.125 x2, 2.4.125-bin x2, 2.4.125-dev x2 -> 2.4.125 x3, 2.4.125-bin x2, 2.4.125-dev x2
+[C.]  #094  libepoxy                   1.5.10 x2 -> 1.5.10 x3
+[C.]  #095  libevent                   2.1.12 x2 -> 2.1.12 x3
+[C.]  #096  libffi                     3.5.2 x2, 3.5.2-dev -> 3.5.1, 3.5.2 x2, 3.5.2-dev
+[C.]  #097  libfido2                   1.16.0 x2 -> 1.16.0 x3
+[C.]  #098  libgcrypt                  1.11.2-bin, 1.11.2-lib x2 -> 1.11.1-lib, 1.11.2-bin, 1.11.2-lib x2
+[C.]  #099  libglvnd                   1.7.0 x2, 1.7.0-dev x2 -> 1.7.0 x3, 1.7.0-dev x2
+[C.]  #100  libgpg-error               1.55 x2 -> 1.55 x3
+[C.]  #101  libice                     1.1.2 x2, 1.1.2-dev -> 1.1.2 x3, 1.1.2-dev
+[C.]  #102  libjpeg-turbo              3.1.2 x2, 3.1.2-bin, 3.1.2-dev, 3.1.2-man -> 3.1.1, 3.1.2 x2, 3.1.2-bin, 3.1.2-dev, 3.1.2-man
+[C.]  #103  libmicrohttpd              1.0.2 x2 -> 1.0.2 x3
+[C.]  #104  libpaper                   1.1.29 x2 -> 1.1.29 x3
+[C.]  #105  libpciaccess               0.18.1 x2 -> 0.18.1 x3
+[U.]  #106  libphonenumber             9.0.15 -> 9.0.16
+[C.]  #107  libpng-apng                1.6.50 x2, 1.6.50-dev, 1.6.50-man -> 1.6.49, 1.6.50 x2, 1.6.50-dev, 1.6.50-man
+[C.]  #108  libpq                      17.6 -> 17.6 x2
+[C.]  #109  libproxy                   0.5.11 -> 0.5.10, 0.5.11
+[C.]  #110  libpsl                     0.21.5 x2, 0.21.5-dev -> 0.21.5 x3, 0.21.5-dev
+[C.]  #111  libpwquality               1.4.5-lib x2 -> 1.4.5-lib x3
+[D.]  #112  libqalculate               5.8.0 -> 5.7.0
+[U.]  #113  libreoffice                24.8.7.2, 24.8.7.2-wrapped, 24.8.7.2-wrapped-fish-completions -> 25.2.6.2, 25.2.6.2-wrapped, 25.2.6.2-wrapped-fish-completions
+[C.]  #114  libseccomp                 2.6.0-lib x2 -> 2.6.0-lib x3
+[C.]  #115  libsecret                  0.21.7 -> 0.21.7 x2
+[C.]  #116  libselinux                 3.8.1 x2 -> 3.8.1 x3
+[C.]  #117  libsm                      1.2.6 x2, 1.2.6-dev -> 1.2.6 x3, 1.2.6-dev
+[C.]  #118  libsoup                    3.6.5 x2 -> 3.6.5 x3
+[C.]  #119  libssh2                    1.11.1 x2, 1.11.1-dev -> 1.11.1 x3, 1.11.1-dev
+[C.]  #120  libtasn1                   4.20.0 x2 -> 4.20.0 x3
+[C.]  #121  libthai                    0.1.29 x2 -> 0.1.29 x3
+[C.]  #122  libtiff                    4.7.1 x2, 4.7.1-bin, 4.7.1-dev, 4.7.1-man -> 4.7.0, 4.7.1 x2, 4.7.1-bin, 4.7.1-dev, 4.7.1-man
+[C.]  #123  libtpms                    0.10.1 x2 -> 0.10.1 x3
+[C.]  #124  libusb                     1.0.29 x2 -> 1.0.29 x3
+[C.]  #125  libuv                      1.51.0 x2, 1.51.0-dev -> 1.51.0 x3, 1.51.0-dev x2
+[C.]  #126  libvmaf                    3.0.0 x2 -> 3.0.0 x3
+[C.]  #127  libwebp                    1.6.0 x4 -> 1.6.0 x6
+[C.]  #128  libx11                     1.8.12 x2, 1.8.12-dev, 1.8.12-man -> 1.8.12 x3, 1.8.12-dev, 1.8.12-man
+[C.]  #129  libxau                     1.0.12 x2, 1.0.12-dev -> 1.0.12 x3, 1.0.12-dev
+[C.]  #130  libxcb                     1.17.0 x2, 1.17.0-dev, 1.17.0-man -> 1.17.0 x3, 1.17.0-dev, 1.17.0-man
+[C.]  #131  libxcb-image               0.4.1 -> 0.4.1 x2
+[C.]  #132  libxcb-keysyms             0.4.1 x2 -> 0.4.1 x3
+[C.]  #133  libxcb-render-util         0.3.10 -> 0.3.10 x2
+[C.]  #134  libxcb-util                0.4.1 -> 0.4.1 x2
+[C.]  #135  libxcb-wm                  0.4.2 -> 0.4.2 x2
+[C.]  #136  libxcrypt                  4.4.38 x2, 4.4.38-man -> 4.4.38 x3, 4.4.38-man
+[C.]  #137  libxcursor                 1.2.3 x2, 1.2.3-dev -> 1.2.3 x3, 1.2.3-dev
+[C.]  #138  libxdmcp                   1.1.5 x2 -> 1.1.5 x3
+[C.]  #139  libxext                    1.3.6 x2, 1.3.6-dev, 1.3.6-man -> 1.3.6 x3, 1.3.6-dev, 1.3.6-man
+[C.]  #140  libxfixes                  6.0.1 x2, 6.0.1-dev -> 6.0.1 x3, 6.0.1-dev
+[C.]  #141  libxkbcommon               1.11.0 x2, 1.11.0-dev x2 -> 1.11.0 x3, 1.11.0-dev x2
+[C.]  #142  libxml2                    2.14.6 x2, 2.14.6-bin, 2.14.6-dev -> 2.14.5, 2.14.6 x2, 2.14.6-bin, 2.14.6-dev
+[C.]  #143  libxpm                     3.5.17 x2 -> 3.5.17 x3
+[C.]  #144  libxrandr                  1.5.4 x2, 1.5.4-dev -> 1.5.4 x3, 1.5.4-dev
+[C.]  #145  libxrender                 0.9.12 x2, 0.9.12-dev -> 0.9.12 x3, 0.9.12-dev
+[C.]  #146  libyuv                     1908 x2 -> 1908 x3
+[U.]  #147  linux                      6.17.2, 6.17.2-modules x2, 6.17.2-modules-shrunk -> 6.17.3, 6.17.3-modules x2, 6.17.3-modules-shrunk
+[C*]  #148  linux-pam                  1.7.1 x2, 1.7.1-doc -> 1.7.1 x3, 1.7.1-doc
+[C*]  #149  lvm2                       2.03.35, 2.03.35-bin, 2.03.35-lib x2 -> 2.03.33-lib, 2.03.35, 2.03.35-bin, 2.03.35-lib x2
+[C.]  #150  lz4                        1.10.0-lib x2 -> 1.10.0-lib x3
+[C.]  #151  lzo                        2.10 x2 -> 2.10 x3
+[C.]  #152  mariadb-connector-c        3.3.5 -> 3.3.5 x2
+[U.]  #153  mate-panel                 1.28.6 -> 1.28.7
+[C.]  #154  md4c                       0.5.2-lib -> 0.5.2-lib x2
+[U.]  #155  mesa                       25.2.4 x2 -> 25.2.5 x2
+[C.]  #156  minizip                    1.3.1 -> 1.3.1 x2
+[C.]  #157  mpfr                       4.2.2 x2 -> 4.2.2 x3
+[C.]  #158  mtdev                      1.1.7 -> 1.1.7 x2
+[C.]  #159  ncompress                  5.0 x2 -> 5.0 x3
+[C*]  #160  ncurses                    6.5 x2, 6.5-dev, 6.5-man -> 6.5 x3, 6.5-dev, 6.5-man
+[C.]  #161  nettle                     3.10.2 x2 -> 3.10.2 x3
+[C.]  #162  nghttp2                    1.67.1, 1.67.1-dev, 1.67.1-lib x2 -> 1.66.0-lib, 1.67.1, 1.67.1-dev, 1.67.1-lib x2
+[U*]  #163  niri-unstable              2025-10-15-2776005, 2025-10-15-2776005-doc -> 2025-10-19-c8eea8e, 2025-10-19-c8eea8e-doc
+[U.]  #164  nixos-system-nixos         25.11.20251015.544961d -> 25.11.20251019.5e2a59a
+[C.]  #165  nodejs                     22.19.0, 24.10.0 -> 22.19.0 x2, 24.10.0
+[C.]  #166  npth                       1.8 x2 -> 1.8 x3
+[C.]  #167  openssl                    3.5.2 x2, 3.5.2-bin, 3.5.2-dev -> 3.5.1, 3.5.1-bin, 3.5.1-dev, 3.5.2 x2, 3.5.2-bin, 3.5.2-dev
+[C.]  #168  p11-kit                    0.25.5 x2, 0.25.5-bin -> 0.25.5 x3, 0.25.5-bin
+[C.]  #169  pango                      1.56.3 x2, 1.56.3-bin, 1.56.3-dev -> 1.56.3 x3, 1.56.3-bin, 1.56.3-dev
+[C.]  #170  pcre2                      10.46 x2 -> 10.44, 10.46 x2
+[C.]  #171  pcsclite                   2.3.0-lib x2 -> 2.3.0-lib x3
+[C.]  #172  pixman                     0.46.4 x2 -> 0.46.2, 0.46.4 x2
+[C.]  #173  pkg-config                 0.29.2 -> 0.29.2 x2
+[C.]  #174  pkg-config-wrapper         0.29.2 -> 0.29.2 x2
+[C.]  #175  protobuf                   32.1 -> 32.0, 32.1
+[C.]  #176  publicsuffix-list          0-unstable-2025-08-28 x2 -> 0-unstable-2025-07-22, 0-unstable-2025-08-28 x2
+[U.]  #177  python3.13-aiostream       0.7.0 -> 0.7.1
+[C.]  #178  qrencode                   4.1.1 x2 -> 4.1.1 x3
+[C.]  #179  qt5compat                  6.9.2 -> 6.9.2 x2
+[C.]  #180  qtbase                     5.15.17, 5.15.17-bin, 6.9.2, 6.9.2-only-plugins-qml -> 5.15.17, 5.15.17-bin, 6.9.2 x2, 6.9.2-only-plugins-qml x2
+[C.]  #181  qtdeclarative              5.15.17, 5.15.17-bin, 6.9.2 -> 5.15.17, 5.15.17-bin, 6.9.2 x2
+[C.]  #182  qtshadertools              6.9.2 -> 6.9.2 x2
+[C.]  #183  qtsvg                      5.15.17, 5.15.17-bin, 6.9.2 -> 5.15.17, 5.15.17-bin, 6.9.2 x2
+[C.]  #184  qttools                    5.15.17, 5.15.17-bin, 6.9.2 -> 5.15.17, 5.15.17-bin, 6.9.2 x2
+[C.]  #185  qttranslations             5.15.17, 6.9.2 -> 5.15.17, 6.9.2 x2
+[C.]  #186  qtwayland                  5.15.17, 5.15.17-bin, 6.9.2, 6.9.2-only-plugins-qml -> 5.15.17, 5.15.17-bin, 6.9.2 x2, 6.9.2-only-plugins-qml x2
+[C.]  #187  readline                   8.3p1 x2 -> 8.3p1 x3
+[U.]  #188  ripgrep                    14.1.1 -> 15.0.0
+[U.]  #189  samba                      4.22.3 x2, 4.22.3-man -> 4.22.5 x2, 4.22.5-man
+[C.]  #190  sqlite                     3.50.4 x2, 3.50.4-bin, 3.50.4-dev -> 3.50.2, 3.50.2-bin, 3.50.2-dev, 3.50.4 x2, 3.50.4-bin, 3.50.4-dev
+[C*]  #191  systemd                    <none>, 257.9 x2 -> <none>, 257.8, 257.9 x2
+[C.]  #192  systemd-minimal            257.9 x2 -> 257.8, 257.9 x2
+[C.]  #193  systemd-minimal-libs       257.9 x2 -> 257.8, 257.9 x2
+[C.]  #194  tinysparql                 3.9.2 x2 -> 3.9.2 x3
+[C.]  #195  tpm2-tss                   4.1.3 x2 -> 4.1.3 x3
+[C.]  #196  treefmt                    <none>, 2.3.1 -> <none>, 2.4.0
+[C.]  #197  udev-rules                 <none> -> <none> x2
+[C.]  #198  unbound                    1.24.0-lib x2 -> 1.23.1-lib, 1.24.0-lib x2
+[C.]  #199  unixODBC                   2.3.12 -> 2.3.12 x2
+[C*]  #200  util-linux                 2.41.1-bin, 2.41.1-lastlog, 2.41.1-lib, 2.41.1-login, 2.41.1-mount, 2.41.1-swap -> 2.41.1-bin, 2.41.1-lastlog, 2.41.1-lib x2, 2.41.1-login, 2.41.1-mount, 2.41.1-swap
+[C.]  #201  util-linux-minimal         2.41.1-bin, 2.41.1-lib x2, 2.41.1-login x2, 2.41.1-mount x2, 2.41.1-swap x2 -> 2.41.1-bin, 2.41.1-lib x3, 2.41.1-login x3, 2.41.1-mount x3, 2.41.1-swap x3
+[U.]  #202  vscode                     1.105.0, 1.105.0-fish-completions -> 1.105.1, 1.105.1-fish-completions
+[C.]  #203  vulkan-loader              1.4.321.0 x2 -> 1.4.321.0 x3
+[C.]  #204  wayland                    1.24.0 x2, 1.24.0-dev x2 -> 1.24.0 x3, 1.24.0-dev x2
+[U.]  #205  x86_energy_perf_policy     6.12.52 -> 6.12.53
+[C.]  #206  xkeyboard-config           2.45 x2 -> 2.45 x3
+[C*]  #207  xz                         5.8.1 x2, 5.8.1-bin, 5.8.1-doc, 5.8.1-man -> 5.8.1 x3, 5.8.1-bin, 5.8.1-doc, 5.8.1-man
+[U.]  #208  yt-dlp                     2025.09.26 -> 2025.10.14
+[U.]  #209  zed-editor                 0.207.4 -> 0.208.5
+[U.]  #210  zed-editor-wrapped         0.207.4, 0.207.4-fish-completions -> 0.208.5, 0.208.5-fish-completions
+[C.]  #211  zlib                       1.3.1 x2, 1.3.1-dev -> 1.3.1 x3, 1.3.1-dev x2
+[C*]  #212  zstd                       1.5.7 x2, 1.5.7-bin, 1.5.7-dev -> 1.5.7 x3, 1.5.7-bin, 1.5.7-dev
+Added packages:
+[A.]  #1  extra-utils      <none>
+[A.]  #2  initrd-fsinfo    <none>
+[A.]  #3  keymap           <none>
+[A.]  #4  link-units       <none>
+[A.]  #5  plugins          9a52857
+[A.]  #6  stage            1-init.sh
+[A.]  #7  xcb-util-cursor  0.1.5
+Removed packages:
+[R.]  #1  plugins-d1c8baa  <none>
+Closure size: 2878 -> 3091 (506 paths added, 293 paths removed, delta +213, disk usage +794.4MiB).
