@@ -27,6 +27,7 @@
             astro-language-server
             harper
             kdePackages.qtdeclarative
+            nil
             nixd
             nodejs_latest
             outputs.formatter.${system}
@@ -36,6 +37,7 @@
             texlab
             tinymist
             tree-sitter-grammars.tree-sitter-scss
+            ty
             # keep-sorted end
         ];
 
