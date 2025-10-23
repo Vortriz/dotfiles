@@ -63,9 +63,9 @@ in {
             tab-indicator = {
                 enable = true;
                 hide-when-single-tab = true;
-                gap = -12;
+                gap = -16;
                 gaps-between-tabs = 4;
-                width = 6;
+                width = 10;
                 corner-radius = 3;
                 length.total-proportion = 0.15;
                 position = "top";
