@@ -6,8 +6,8 @@
 }: let
     ns =
         builtins.fetchurl {
-            url = "https://raw.githubusercontent.com/3timeslazy/nix-search-tv/refs/heads/main/nixpkgs.sh";
-            sha256 = "sha256:1z5jgi27yrisy3rwrba01kj2chpq68zdr5g5aalh5y5xd0rv0j3c";
+            url = "https://raw.githubusercontent.com/Vortriz/nix-search-tv/refs/heads/main/nixpkgs.sh";
+            sha256 = "sha256-VMfQFvvgAw8b58GA8H53K08wKv1Q0GsUKmgLJbTARDI=";
         }
         |> builtins.readFile
         |> pkgs.writeShellScriptBin "ns";

@@ -66,17 +66,13 @@ alias pf := prefetch
     ns
 
 [group('TOOLS')]
-@explore name:
-    yazi $(nix eval --raw nixpkgs#{{ name }})
-
-[group('TOOLS')]
 @repl:
     nix repl --expr \
     "let \
         flake = builtins.getFlake (toString ./.); \
-        nixpkgs = import <nixpkgs> {}; \
+        nixpkgs = flake.inputs.nixpkgs; \
     in \
-        {inherit flake;} // flake // builtins // nixpkgs // nixpkgs.lib // \
+        {inherit flake;} // builtins // nixpkgs // nixpkgs.lib // \
         flake.nixosConfigurations.nixos.config // flake.nixosConfigurations.nixos.config.home-manager.users"
 
 [group('TOOLS')]
