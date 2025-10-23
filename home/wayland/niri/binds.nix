@@ -7,6 +7,11 @@
 with config.lib.niri.actions; let
     inherit (lib) getExe;
     inherit (config.niri-lib) run;
+
+    scripts = lib.packagesFromDirectoryRecursive {
+        inherit (pkgs) callPackage;
+        directory = ./scripts;
+    };
 in {
     programs.niri.settings.binds =
         {
@@ -17,7 +22,7 @@ in {
                 hotkey-overlay.title = "Take screenshot of focused window";
             };
             "Ctrl+Shift+Print" = {
-                action.screenshot-screen = []; # [TODO] change after https://github.com/sodiboo/niri-flake/issues/944
+                action.screenshot-screen = []; # [MARK] waiting on https://github.com/sodiboo/niri-flake/issues/944
                 hotkey-overlay.title = "Take screenshot of focused display";
             };
 
@@ -27,21 +32,23 @@ in {
             };
 
             "Mod+Alt+W" = run {
-                cmd = "toggle-warp";
+                cmd = getExe scripts.toggle-warp;
             };
 
-            "Ctrl+Shift+O".action = spawn-sh "oimg";
+            # [MARK] waiting on https://github.com/YaLTeR/niri/issues/2664
+            "Ctrl+Shift+O".action = spawn-sh (getExe scripts.obsidian-img);
 
             "Mod+H" = run {
-                cmd = "cycle-rr";
+                cmd = getExe scripts.cycle-rr;
                 title = "Toggle refresh rate";
             };
             "Mod+Z" = run {
-                cmd = "cycle-scale";
+                cmd = getExe scripts.cycle-scale;
                 title = "Toggle display scale";
             };
 
             "Mod+Q".action = close-window;
+            "Mod+Shift+Q".action = spawn-sh (getExe scripts.close-all);
 
             "Alt+Right".action = focus-window-down;
             "Alt+Left".action = focus-window-up;
@@ -82,8 +89,7 @@ in {
             "Mod+Shift+Minus".action = set-window-height "-10%";
             "Mod+Shift+Equal".action = set-window-height "+10%";
 
-            "Mod+Shift+Q".action = spawn-sh "close-all";
-            "Mod+Shift+P".action = power-off-monitors;
+            "Mod+Shift+O".action = power-off-monitors;
             "Mod+Shift+E".action = quit;
         }
         // (builtins.genList (x: x + 1) 9
