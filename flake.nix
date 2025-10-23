@@ -109,7 +109,6 @@
                             fd
                             fish
                             git
-                            gitui
                             jaq
                             just
                             micro

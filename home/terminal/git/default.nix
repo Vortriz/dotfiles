@@ -10,4 +10,8 @@
             init.defaultBranch = "main";
         };
     };
+
+    programs.gitui.enable = true;
+
+    stylix.targets.gitui.enable = true;
 }
