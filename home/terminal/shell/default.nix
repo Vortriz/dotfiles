@@ -29,5 +29,10 @@
         sponge_allow_previously_successful = "false";
     };
 
-    stylix.targets.fish.enable = true;
+    stylix.targets = {
+        fish.enable = true;
+
+        bat.enable = true;
+        fzf.enable = true;
+    };
 }
