@@ -7,6 +7,7 @@
     inherit (osConfig.var) downloadsDir;
 in {
     programs.niri.settings = {
+        # keep-sorted start block=yes newline_separated=yes
         animations = {
             window-open.kind = {
                 easing = {
@@ -41,6 +42,13 @@ in {
             scroll-factor = 0.75;
             dwt = true;
         };
+
+        layer-rules = [
+            {
+                matches = [{namespace = "quickshell:notification";}];
+                block-out-from = "screencast";
+            }
+        ];
 
         layout = {
             always-center-single-column = true;
@@ -92,5 +100,6 @@ in {
             enable = true;
             path = lib.getExe pkgs.xwayland-satellite-unstable;
         };
+        # keep-sorted end
     };
 }

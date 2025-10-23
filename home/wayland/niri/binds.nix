@@ -63,8 +63,8 @@ in {
 
             "Mod+Ctrl+W".action = move-window-up-or-to-workspace-up;
             "Mod+Ctrl+S".action = move-window-down-or-to-workspace-down;
-            "Mod+Ctrl+A".action = move-column-left;
-            "Mod+Ctrl+D".action = move-column-right;
+            "Mod+Ctrl+A".action = move-column-left-or-to-monitor-left;
+            "Mod+Ctrl+D".action = move-column-right-or-to-monitor-right;
 
             "Mod+Shift+W".action = move-workspace-up;
             "Mod+Shift+S".action = move-workspace-down;
@@ -88,6 +88,15 @@ in {
 
             "Mod+Shift+Minus".action = set-window-height "-10%";
             "Mod+Shift+Equal".action = set-window-height "+10%";
+
+            "Mod+Shift+P" = run {
+                cmd = "${pkgs.wl-mirror}/bin/wl-mirror $(niri msg --json focused-output | ${getExe pkgs.jaq} -r .name)";
+                title = "Mirror focused output";
+            };
+            "Mod+Shift+C" = run {
+                cmd = "niri msg action set-dynamic-cast-window --id $(niri msg --json pick-window | ${getExe pkgs.jaq} .id)";
+                title = "Select dynamic cast target";
+            };
 
             "Mod+Shift+O".action = power-off-monitors;
             "Mod+Shift+E".action = quit;
