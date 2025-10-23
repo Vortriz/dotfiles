@@ -17672,3 +17672,39 @@ Added packages:
 Removed packages:
 [R.]  #1  plugins-d1c8baa  <none>
 Closure size: 2878 -> 3091 (506 paths added, 293 paths removed, delta +213, disk usage +794.4MiB).
+
+---
+
+23/10/25 10:56:15 PM IST
+<<< /nix/var/nix/profiles/system-127-link
+>>> /nix/var/nix/profiles/system-129-link
+Version changes:
+[C.]  #1  python3  3.11.14, 3.13.7 x2, 3.13.7-env x9 -> 3.11.14, 3.13.7 x2, 3.13.7-env x10
+[C.]  #2  source   <none> x4 -> <none> x3
+Added packages:
+[A.]  #01  blas                  3, 3-dev
+[A.]  #02  gitui                 0.27.0, 0.27.0-fish-completions
+[A.]  #03  gitui-key-config.ron  <none>
+[A.]  #04  gitui-theme.ron       <none>
+[A.]  #05  inotify-tools         4.23.9.0
+[A.]  #06  jaq                   2.3.0
+[A.]  #07  lapack                3, 3-dev
+[A.]  #08  nil                   2025-06-13
+[A.]  #09  nixfmt                1.1.0
+[A.]  #10  obsidian-img-process  <none>
+[A.]  #11  pipectl               0.5.1
+[A.]  #12  python3.13-numpy      2.3.2
+[A.]  #13  rofi                  2.0.0
+[A.]  #14  rofi-unwrapped        2.0.0
+[A.]  #15  slurp                 1.5.0
+[A.]  #16  ty                    0.0.1-alpha.23
+[A.]  #17  wl-mirror             0.18.3
+[A.]  #18  xcb-imdkit            1.0.9
+Removed packages:
+[R.]  #1  battery-fish-completions      <none>
+[R.]  #2  close-all-fish-completions    <none>
+[R.]  #3  cycle-rr-fish-completions     <none>
+[R.]  #4  cycle-scale-fish-completions  <none>
+[R.]  #5  oimg-fish-completions         <none>
+[R.]  #6  toggle-warp-fish-completions  <none>
+Closure size: 3091 -> 3106 (43 paths added, 28 paths removed, delta +15, disk usage +221.3MiB).
