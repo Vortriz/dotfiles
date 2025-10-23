@@ -21,11 +21,12 @@ in
             "${lib.makeBinPath [
                 oimg-process
                 pkgs.wl-clipboard
+                pkgs.inotify-tools
             ]}"
         ];
     } ''
         niri msg action screenshot --show-pointer false --path /tmp/img.png
-        sleep 5
+        inotifywait -q -e close_write /tmp/img.png
         obsidian-img-process
         wl-copy --type image/png < /tmp/img.png
     ''
