@@ -34,6 +34,7 @@ in {
             HelveticaNeueCyr
             SFMono
             font-awesome
+            maple-mono.variable
             nerd-fonts.fira-code
             nerd-fonts.jetbrains-mono
             roboto

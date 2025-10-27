@@ -1,5 +1,4 @@
 {
-    config,
     pkgs,
     osConfig,
     ...
@@ -7,7 +6,7 @@
     inherit (osConfig.var) downloadsDir;
 in {
     services.flameshot = {
-        enable = true;
+        enable = false;
 
         settings = {
             General = {
@@ -26,9 +25,9 @@ in {
 
     home.packages = [pkgs.grim];
 
-    programs.niri.settings.binds."Print" = config.niri-lib.open {
-        app = pkgs.flameshot;
-        args = "gui";
-        title = "Take screenshot with flameshot";
-    };
+    # programs.niri.settings.binds."Print" = config.niri-lib.open {
+    #     app = pkgs.flameshot;
+    #     args = "gui";
+    #     title = "Take screenshot with flameshot";
+    # };
 }
