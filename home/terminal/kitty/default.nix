@@ -15,9 +15,9 @@
         };
     };
 
-    xdg.mimeApps.defaultApplications = {
-        "x-scheme-handler/terminal" = "kitty.desktop";
-    };
+    xdg.mimeApps.defaultApplications = config.custom-lib.xdgAssociations "x-scheme-handler" "terminal" [
+        "kitty.desktop"
+    ];
 
     stylix.targets.kitty.enable = true;
 

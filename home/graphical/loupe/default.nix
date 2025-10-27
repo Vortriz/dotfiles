@@ -1,13 +1,26 @@
-{pkgs, ...}: {
+{
+    config,
+    pkgs,
+    ...
+}: {
     # image viewer
     home.packages = [pkgs.loupe];
 
-    xdg.mimeApps.defaultApplications = let
-        loupe = "org.gnome.Loupe.desktop";
-    in {
-        "image/jpeg" = loupe;
-        "image/jpg" = loupe;
-        "image/png" = loupe;
-        "image/tiff" = loupe;
-    };
+    xdg.mimeApps.defaultApplications = config.custom-lib.xdgAssociations "image" "org.gnome.Loupe.desktop" [
+        # keep-sorted start
+        "avif"
+        "bmp"
+        "gif"
+        "heic"
+        "heif"
+        "ico"
+        "jpeg"
+        "jpg"
+        "png"
+        "svg"
+        "tif"
+        "tiff"
+        "webp"
+        # keep-sorted end
+    ];
 }

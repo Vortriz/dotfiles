@@ -1,10 +1,12 @@
-{pkgs, ...}: {
+{
+    config,
+    pkgs,
+    ...
+}: {
     home.packages = [pkgs.telegram-desktop];
 
-    xdg.mimeApps.defaultApplications = let
-        telegram = "org.telegram.desktop.desktop";
-    in {
-        "x-scheme-handler/tg" = telegram;
-        "x-scheme-handler/tonsite" = telegram;
-    };
+    xdg.mimeApps.defaultApplications = config.custom-lib.xdgAssociations "x-scheme-handler" "org.telegram.desktop.desktop" [
+        "tg"
+        "tonsite"
+    ];
 }

@@ -1,12 +1,23 @@
-{pkgs, ...}: {
+{
+    config,
+    pkgs,
+    ...
+}: {
     home.packages = [pkgs.haruna];
 
-    xdg.mimeApps.defaultApplications = let
-        haruna = "org.kde.haruna.desktop";
-    in {
-        "video/mp4" = haruna;
-        "video/matroska" = haruna;
-        "video/MP2T" = haruna;
-        "video/msvideo" = haruna;
-    };
+    xdg.mimeApps.defaultApplications = config.custom-lib.xdgAssociations "video" "haruna" [
+        # keep-sorted start
+        "3gp"
+        "avi"
+        "flv"
+        "m4v"
+        "mkv"
+        "mov"
+        "mp4"
+        "ogv"
+        "ts"
+        "webm"
+        "wmv"
+        # keep-sorted end
+    ];
 }

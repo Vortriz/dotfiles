@@ -1,4 +1,4 @@
-{
+{config, ...}: {
     programs.sioyek = {
         enable = true;
 
@@ -31,7 +31,7 @@
         # keep-sorted end
     };
 
-    xdg.mimeApps.defaultApplications = {
-        "application/pdf" = "sioyek.desktop";
-    };
+    xdg.mimeApps.defaultApplications = config.custom-lib.xdgAssociations "application" "sioyek" [
+        "pdf"
+    ];
 }

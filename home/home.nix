@@ -7,7 +7,14 @@
     inherit (osConfig.var) username storageDir;
     inherit (config.xdg) configHome dataHome cacheHome;
 in {
-    imports = lib.filesystem.listFilesRecursive ./. |> lib.filter (f: baseNameOf f == "default.nix");
+    imports =
+        (
+            lib.filesystem.listFilesRecursive ./.
+            |> lib.filter (f: baseNameOf f == "default.nix")
+        )
+        ++ [
+            ./lib.nix
+        ];
 
     home = {
         inherit username;
