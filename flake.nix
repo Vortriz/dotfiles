@@ -46,6 +46,10 @@
             url = "github:cachix/git-hooks.nix";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+        quickshell = {
+            url = "git+https://git.outfoxxed.me/quickshell/quickshell";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
         stylix = {
             url = "github:nix-community/stylix";
             inputs.nixpkgs.follows = "nixpkgs";
