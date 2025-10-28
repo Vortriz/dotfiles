@@ -5,10 +5,7 @@
     ...
 }: let
     ns =
-        builtins.fetchurl {
-            url = "https://raw.githubusercontent.com/Vortriz/nix-search-tv/refs/heads/main/nixpkgs.sh";
-            sha256 = "sha256-VMfQFvvgAw8b58GA8H53K08wKv1Q0GsUKmgLJbTARDI=";
-        }
+        (pkgs.callPackages ./sources/generated.nix {}).ns.src
         |> builtins.readFile
         |> pkgs.writeShellScriptBin "ns";
 in {

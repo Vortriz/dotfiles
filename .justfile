@@ -78,3 +78,8 @@ alias pf := prefetch
 [group('TOOLS')]
 @debug-nur:
     nix flake update nur-vortriz
+
+@build-iso:
+    cp $(nix build .#nixosConfigurations.iso.config.system.build.isoImage --no-link --print-out-paths)/iso/* \
+        /mnt/HOUSE/downloads/compressed/ISO
+    echo "ISO built and copied!"

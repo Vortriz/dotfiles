@@ -158,6 +158,15 @@
                         ./system/configuration.nix
                     ];
                 };
+
+                iso = nixpkgs.lib.nixosSystem {
+                    specialArgs = {
+                        inherit inputs;
+                        inherit (self) outputs;
+                        system = "x86_64-linux";
+                    };
+                    modules = [./iso.nix];
+                };
             };
         };
 

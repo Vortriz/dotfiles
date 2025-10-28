@@ -1,0 +1,3 @@
+[ns]
+fetch.url = "https://raw.githubusercontent.com/Vortriz/nix-search-tv/refs/heads/main/nixpkgs.sh"
+src.git = "https://github.com/Vortriz/nix-search-tv"
