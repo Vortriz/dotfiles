@@ -51,6 +51,12 @@ profiles-path := "/nix/var/nix/profiles"
     git add -A
     git commit -m "chore: update inputs"
 
+[group('SYSTEM')]
+@build-iso:
+    cp $(nix build .#nixosConfigurations.iso.config.system.build.isoImage --no-link --print-out-paths)/iso/* \
+        /mnt/HOUSE/downloads/compressed/ISO
+    echo "ISO built and copied!"
+
 [group('MAINTENANCE')]
 @gc:
     nh clean all -k 5 --optimise
@@ -79,7 +85,8 @@ alias pf := prefetch
 @debug-nur:
     nix flake update nur-vortriz
 
-@build-iso:
-    cp $(nix build .#nixosConfigurations.iso.config.system.build.isoImage --no-link --print-out-paths)/iso/* \
-        /mnt/HOUSE/downloads/compressed/ISO
-    echo "ISO built and copied!"
+[group('TOOLS')]
+@diff:
+    nvd diff \
+    $(command rg -N '>>> ({{ profiles-path }}/system-[0-9]+-link)' --only-matching --replace '$1' build.log | tail -1) \
+    /run/current-system
