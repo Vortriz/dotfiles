@@ -12,6 +12,8 @@
             "mouse_map ctrl+left click" = "ungrabbed mouse_handle_click link";
             "map ctrl+shift+left" = "no_op";
             "map ctrl+shift+right" = "no_op";
+            "map ctrl+t" = "new_tab";
+            "map ctrl+w" = "close_tab";
         };
     };
 
