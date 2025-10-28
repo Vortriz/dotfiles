@@ -7,6 +7,7 @@
         celluloid
         diffpdf
         gnome-calculator
+        libreoffice
         obsidian
         pdfarranger
         qbittorrent
