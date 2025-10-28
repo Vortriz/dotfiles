@@ -7,7 +7,7 @@
 }: let
     inherit (osConfig.defaults) terminal;
 
-    yazi = config.programs.yazi.package;
+    yazi = config.programs.yazi.finalPackage;
 in {
     imports = [
         ./keymap.nix
