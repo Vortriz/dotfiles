@@ -13,11 +13,11 @@
             "julia"
             "just"
             "latex"
+            "modern-icons"
             "nix"
             "qml"
             "scss"
             "typst"
-            "vscode-icons"
             # keep-sorted end
         ];
 

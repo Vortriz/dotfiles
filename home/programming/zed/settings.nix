@@ -31,7 +31,7 @@ in {
         cursor_shape = "bar";
         features.edit_prediction_provider = "copilot";
         git.inline_blame.enabled = false;
-        icon_theme = "VSCode Icons (Dark)";
+        icon_theme = "Modern Icons (Dark)";
         languages = {
             Nix = {
                 format_on_save = "on";
