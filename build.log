@@ -17861,3 +17861,47 @@ Removed packages:
 [R.]  #13  link-units           <none>
 [R.]  #14  stage                1-init.sh
 Closure size: 3106 -> 3098 (2846 paths added, 2854 paths removed, delta -8, disk usage +26.3MiB).
+
+---
+
+30/10/25 11:25:53 AM IST
+<<< /nix/var/nix/profiles/system-130-link
+>>> /nix/var/nix/profiles/system-133-link
+Version changes:
+[U.]  #01  breeze                                    6.5.0 -> 6.5.1
+[U*]  #02  distrobox                                 1.8.1.2, 1.8.1.2_fish-completions -> 1.8.2.0, 1.8.2.0_fish-completions
+[U.]  #03  electron                                  38.2.2 -> 38.4.0
+[U.]  #04  electron-unwrapped                        38.2.2 -> 38.4.0
+[U.]  #05  fzf                                       0.66.0, 0.66.0-fish-completions, 0.66.0-man -> 0.66.1, 0.66.1-fish-completions, 0.66.1-man
+[C.]  #06  glow                                      2.1.1, 2.1.1-fish-completions -> 2.1.1
+[U.]  #07  imagemagick                               7.1.2-7, 7.1.2-7-dev, 7.1.2-7-doc, 7.1.2-7-fish-completions -> 7.1.2-8, 7.1.2-8-dev, 7.1.2-8-doc, 7.1.2-8-fish-completions
+[U.]  #08  kdecoration                               6.5.0 -> 6.5.1
+[U.]  #09  libdisplay-info                           0.2.0 -> 0.3.0
+[U.]  #10  magic-wormhole                            0.20.0-fish-completions -> 0.21.0-fish-completions
+[C.]  #11  mediainfo                                 25.09, 25.09-fish-completions -> 25.09
+[U*]  #12  niri-unstable                             2025-10-26-e6f3c53, 2025-10-26-e6f3c53-doc -> 2025-10-29-6e8fd15, 2025-10-29-6e8fd15-doc
+[U.]  #13  nixos-system-nixos                        25.11.20251025.6a08e6b -> 25.11.20251028.08dacfc
+[U.]  #14  packagekit-qt                             1.1.3 -> 1.1.4
+[U.]  #15  passt                                     2025_09_11.6cbcccc -> 2025_09_19.623dbf6
+[U.]  #16  perl5.40.0-Image-ExifTool                 13.25, 13.25-fish-completions -> 13.39, 13.39-fish-completions
+[U.]  #17  polkit-kde-agent                          1-6.5.0 -> 1-6.5.1
+[U.]  #18  poppler-glib                              25.07.0 x3 -> 25.10.0 x3
+[U.]  #19  poppler-qt5                               25.07.0 -> 25.10.0
+[U.]  #20  poppler-qt6                               25.07.0 -> 25.10.0
+[U.]  #21  poppler-utils                             25.07.0, 25.07.0-fish-completions -> 25.10.0
+[U.]  #22  python3.13-magic-wormhole                 0.20.0 -> 0.21.0
+[C.]  #23  ripdrag                                   0.4.10, 0.4.10-fish-completions -> 0.4.10
+[U.]  #24  starship                                  1.23.0, 1.23.0-fish-completions -> 1.24.0, 1.24.0-fish-completions
+[U.]  #25  tinymist                                  0.13.28 -> 0.13.30
+[C*]  #26  udisks                                    2.10.2, 2.10.2-fish-completions, 2.10.2-man -> 2.10.2
+[U*]  #27  upower                                    1.90.6, 1.90.6_fish-completions -> 1.90.10, 1.90.10_fish-completions
+[U.]  #28  vesktop                                   1.5.8, 1.5.8-fish-completions -> 1.6.0, 1.6.0-fish-completions
+[U.]  #29  vpl-gpu-rt                                25.3.4 -> 25.4.1
+[U.]  #30  vscode-extension-myriad-dreamin-tinymist  0.13.28 -> 0.13.30
+[U.]  #31  webp-pixbuf-loader                        0.2.6 -> 0.2.7
+[U.]  #32  xfsprogs                                  6.16.0, 6.16.0-bin -> 6.17.0, 6.17.0-bin
+[U.]  #33  xwayland                                  24.1.8 -> 24.1.9
+[U.]  #34  xwayland-satellite-unstable               2025-10-25-2dd40ec -> 2025-10-28-0728d59
+[U.]  #35  zed-editor                                0.209.5 -> 0.209.6
+[U.]  #36  zed-editor-wrapped                        0.209.5, 0.209.5-fish-completions -> 0.209.6, 0.209.6-fish-completions
+Closure size: 3098 -> 3092 (261 paths added, 267 paths removed, delta -6, disk usage +3.4MiB).
