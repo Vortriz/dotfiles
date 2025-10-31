@@ -41,7 +41,9 @@ in {
             };
 
             # [MARK] waiting on https://github.com/YaLTeR/niri/issues/2664
-            "Ctrl+Shift+O".action = spawn-sh (getExe scripts.obsidian-img);
+            "Ctrl+Shift+O" = run {
+                cmd = getExe scripts.obsidian-img;
+            };
 
             "Mod+H" = run {
                 cmd = getExe scripts.cycle-rr;
@@ -53,7 +55,9 @@ in {
             };
 
             "Mod+Q".action = close-window;
-            "Mod+Shift+Q".action = spawn-sh (getExe scripts.close-all);
+            "Mod+Shift+Q" = run {
+                cmd = getExe scripts.close-all;
+            };
 
             "Alt+Right".action = focus-window-down;
             "Alt+Left".action = focus-window-up;
