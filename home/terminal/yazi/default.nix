@@ -8,6 +8,7 @@
     inherit (osConfig.defaults) terminal;
 
     yazi = config.programs.yazi.finalPackage;
+    xdp-termfilechooser = pkgs.nur.repos.Vortriz.xdg-desktop-portal-termfilechooser-git;
 in {
     imports = [
         ./keymap.nix
@@ -34,14 +35,14 @@ in {
 
     xdg = {
         portal = {
-            extraPortals = [pkgs.xdg-desktop-portal-termfilechooser-git];
+            extraPortals = [xdp-termfilechooser];
 
             config.niri."org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
         };
 
         configFile."xdg-desktop-portal-termfilechooser/config".text = ''
             [filechooser]
-            cmd=${pkgs.xdg-desktop-portal-termfilechooser-git}/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh
+            cmd=${xdp-termfilechooser}/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh
             default_dir=$HOME
             env=TERMCMD=${lib.getName terminal}
         '';

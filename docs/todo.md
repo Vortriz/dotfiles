@@ -7,3 +7,7 @@
         - [ ] https://github.com/Erudition/zen-sidebery-mod
         - [ ] https://github.com/MrOtherGuy/fx-autoconfig
 - [ ] https://github.com/boydaihungst/gvfs.yazi
+
+# things to look out for (in future)
+
+- https://github.com/nix-community/nixos-cli

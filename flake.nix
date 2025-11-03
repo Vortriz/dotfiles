@@ -33,15 +33,10 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         nixos-hardware.url = "github:NixOS/nixos-hardware";
-        # nixos-cli.url = "github:nix-community/nixos-cli";
-        # nur = {
-        #     url = "github:nix-community/NUR";
-        #     inputs.nixpkgs.follows = "nixpkgs";
-        # };
-        # nur-vortriz = {
-        #     url = "path:/mnt/HOUSE/dev/nix/nur-packages";
-        #     inputs.nixpkgs.follows = "nixpkgs";
-        # };
+        nur = {
+            url = "github:nix-community/NUR";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
         pre-commit-hooks = {
             url = "github:cachix/git-hooks.nix";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -75,9 +70,6 @@
 
             treefmtEval = treefmt-nix.lib.evalModule pkgs ./treefmt.nix;
         in {
-            # Your custom packages, accessible through 'nix build', 'nix shell', etc
-            packages = import ./pkgs pkgs;
-
             # Formatter for your nix files, available through 'nix fmt'
             formatter = treefmtEval.config.build.wrapper;
 
@@ -174,12 +166,10 @@
     # nixConfig = {
     #     extra-substituters = [
     #         "https://niri.cachix.org"
-    #         "https://watersucks.cachix.org"
     #         "https://vicinae.cachix.org"
     #     ];
     #     extra-trusted-public-keys = [
     #         "niri.cachix.org-1:Wv0OmO7PsuocRKzfDoJ3mulSl7Z6oezYhGhR+3W2964="
-    #         "watersucks.cachix.org-1:6gadPC5R8iLWQ3EUtfu3GFrVY7X6I4Fwz/ihW25Jbv8="
     #         "vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc="
     #     ];
     # };

@@ -31,8 +31,6 @@ in {
                     "Open Sans"
                 ];
             })
-            HelveticaNeueCyr
-            SFMono
             font-awesome
             maple-mono.variable
             nerd-fonts.fira-code
@@ -41,6 +39,10 @@ in {
             source-sans-pro
             # keep-sorted end
         ]
+        ++ (with pkgs.nur.repos.Vortriz; [
+            HelveticaNeueCyr
+            SFMono
+        ])
         ++ [monospaceFont];
 
     hardware = {

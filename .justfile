@@ -3,6 +3,7 @@ set shell := ["fish", "-c"]
 export NH_FLAKE := `echo $PWD`
 export NIXPKGS_ALLOW_UNFREE := "1"
 profiles-path := "/nix/var/nix/profiles"
+system := `echo $system`
 
 @default:
     just --list
@@ -77,13 +78,10 @@ alias pf := prefetch
     "let \
         flake = builtins.getFlake (toString ./.); \
         nixpkgs = flake.inputs.nixpkgs; \
+        pkgs = nixpkgs.legacyPackages.{{ system }}; \
     in \
-        {inherit flake;} // builtins // nixpkgs // nixpkgs.lib // \
+        {inherit flake pkgs;} // builtins // nixpkgs.lib // \
         flake.nixosConfigurations.nixos.config // flake.nixosConfigurations.nixos.config.home-manager.users"
-
-[group('TOOLS')]
-@debug-nur:
-    nix flake update nur-vortriz
 
 [group('TOOLS')]
 @diff:

@@ -4,5 +4,5 @@
         settings = import ./config.nix;
     };
 
-    home.packages = [pkgs.dunefetch-git];
+    home.packages = [pkgs.nur.repos.Vortriz.dunefetch-git];
 }
