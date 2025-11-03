@@ -1,7 +1,7 @@
 {
     "ns": {
         "cargoLocks": null,
-        "date": "2025-10-23",
+        "date": "2025-10-31",
         "extract": null,
         "name": "ns",
         "passthru": null,
@@ -12,6 +12,6 @@
             "type": "url",
             "url": "https://raw.githubusercontent.com/Vortriz/nix-search-tv/refs/heads/main/nixpkgs.sh"
         },
-        "version": "5f8efd655b537790f5b5a109fcd0f67531ebd4a5"
+        "version": "19adb1f1fe0815721d54f7cf0c68663b7696ef3a"
     }
 }
