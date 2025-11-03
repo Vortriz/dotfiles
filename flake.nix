@@ -129,7 +129,7 @@
                         ])
                         ++ (with inputs; [
                             # keep-sorted start
-                            agenix.packages.${pkgs.system}.default
+                            agenix.packages.${pkgs.stdenv.hostPlatform.system}.default
                             # keep-sorted end
                         ])
                         ++ (with self.nixosConfigurations.nixos.config; [
