@@ -30,7 +30,7 @@
             tealdeer
             nix-search-tv
             (
-                (pkgs.callPackages home/terminal/nix-search-tv/sources/generated.nix {}).ns.src
+                (pkgs.callPackages home/sources/generated.nix {}).ns.src
                 |> builtins.readFile
                 |> pkgs.writeShellScriptBin "ns"
             )
