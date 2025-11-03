@@ -140,6 +140,7 @@ in {
                 {app-id = getName browser;}
                 {app-id = "com.github.th_ch.youtube_music";}
                 {app-id = "vesktop";}
+                {app-id = "org.telegram.desktop";}
             ];
         }
         {
