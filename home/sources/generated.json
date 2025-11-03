@@ -1,0 +1,32 @@
+{
+    "ns": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "ns",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": "nixpkgs.sh",
+            "sha256": "sha256-bD769ysDjt6KhIpLTrEDS+BP9rq4Nen2v4hKMemBMDs=",
+            "type": "url",
+            "url": "https://raw.githubusercontent.com/Vortriz/nix-search-tv/refs/heads/main/nixpkgs.sh"
+        },
+        "version": "latest"
+    },
+    "starship-nerd-font-symbols": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "starship-nerd-font-symbols",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": "nerd-font-symbols.toml",
+            "sha256": "sha256-MtAuCwg+6Ol0owyXrp1a+RtfKpSEBI68dikD95xmP/M=",
+            "type": "url",
+            "url": "https://starship.rs/presets/toml/nerd-font-symbols.toml"
+        },
+        "version": "latest"
+    }
+}

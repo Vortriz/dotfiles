@@ -5,7 +5,7 @@
     ...
 }: let
     ns =
-        (pkgs.callPackages ./sources/generated.nix {}).ns.src
+        (pkgs.callPackages ../../sources/generated.nix {}).ns.src
         |> builtins.readFile
         |> pkgs.writeShellScriptBin "ns";
 in {
