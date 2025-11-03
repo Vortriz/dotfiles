@@ -37,7 +37,7 @@ profiles-path := "/nix/var/nix/profiles"
     git commit -m "deployed $(nixos-rebuild list-generations --flake $NH_FLAKE --json | jaq '.[0].generation')"
 
 [group('SYSTEM')]
-@get-updates: check
+@get-updates:
     echo -e "Updating flake and fetchgit inputs...\n"
 
     nix flake update
