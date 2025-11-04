@@ -31,7 +31,7 @@
         # keep-sorted end
     };
 
-    xdg.mimeApps.defaultApplications = config.custom-lib.xdgAssociations "application" "sioyek" [
+    xdg.mimeApps.defaultApplications = config.custom-lib.xdgAssociations "application" "sioyek.desktop" [
         "pdf"
     ];
 }
