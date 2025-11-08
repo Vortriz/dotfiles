@@ -7,7 +7,7 @@
     src = fetchurl {
       url = "https://raw.githubusercontent.com/Vortriz/nix-search-tv/refs/heads/main/nixpkgs.sh";
       name = "nixpkgs.sh";
-      sha256 = "sha256-bD769ysDjt6KhIpLTrEDS+BP9rq4Nen2v4hKMemBMDs=";
+      sha256 = "sha256-IpVah9sYcapDEfOCm7zloHW1NpK6stZD7/7TDPbrkJs=";
     };
   };
   starship-nerd-font-symbols = {
