@@ -8,7 +8,7 @@
     inherit (osConfig.defaults) terminal;
 
     yazi = config.programs.yazi.finalPackage;
-    xdp-termfilechooser = pkgs.nur.repos.Vortriz.xdg-desktop-portal-termfilechooser-git;
+    xdp-termfilechooser = pkgs.nur.repos.Vortriz.xdg-desktop-portal-termfilechooser;
 in {
     imports = [
         ./keymap.nix

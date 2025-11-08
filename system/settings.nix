@@ -41,7 +41,7 @@ in {
         ]
         ++ (with pkgs.nur.repos.Vortriz; [
             HelveticaNeueCyr
-            SFMono
+            SFMono-Nerd-Font-Ligaturized
         ])
         ++ [monospaceFont];
 
