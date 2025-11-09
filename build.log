@@ -18132,3 +18132,52 @@ Removed packages:
 [R.]  #7  libXtst          1.2.5
 [R.]  #8  xcb-util-cursor  0.1.5
 Closure size: 3092 -> 2888 (229 paths added, 433 paths removed, delta -204, disk usage -827.4MiB).
+
+---
+
+09/11/25 12:14:21 PM IST
+<<< /nix/var/nix/profiles/system-135-link
+>>> /nix/var/nix/profiles/system-138-link
+Version changes:
+[U.]  #01  HelveticaNeueCyr                          1.0 -> 2025-11-06
+[U.]  #02  SDL_compat                                1.2.68 -> 1.2.70
+[U.]  #03  acpi-call                                 1.2.2-6.17.6 -> 1.2.2-6.17.7
+[C.]  #04  bottles                                   <none>, 51.24-bwrap, 51.24-fhsenv-profile, 51.24-fhsenv-rootfs, 51.24-init -> <none>, 51.25-bwrap, 51.25-fhsenv-profile, 51.25-fhsenv-rootfs, 51.25-init
+[U.]  #05  bottles-cli                               51.24-bwrap, 51.24-fhsenv-profile, 51.24-fhsenv-rootfs, 51.24-init -> 51.25-bwrap, 51.25-fhsenv-profile, 51.25-fhsenv-rootfs, 51.25-init
+[U.]  #06  bottles-unwrapped                         51.24 -> 51.25
+[U.]  #07  breeze                                    6.5.1 -> 6.5.2
+[U.]  #08  dankMaterialShell                         0.3.2+date=2025-11-03_dirty -> 0.4.2+date=2025-11-08_dirty
+[U.]  #09  dgop                                      0.1.7, 0.1.7-fish-completions -> 0.1.9, 0.1.9-fish-completions
+[U.]  #10  dms-cli                                   0.1.17, 0.1.17-fish-completions -> 0.4.1, 0.4.1-fish-completions
+[U.]  #11  gh                                        2.82.1, 2.82.1-fish-completions -> 2.83.0, 2.83.0-fish-completions
+[U.]  #12  harper                                    0.68.0 -> 0.70.0
+[U.]  #13  haruna                                    1.4.0, 1.4.0-fish-completions -> 1.6.0, 1.6.0-fish-completions
+[U.]  #14  initrd-linux                              6.17.6 -> 6.17.7
+[U.]  #15  kdecoration                               6.5.1 -> 6.5.2
+[U.]  #16  kitty                                     0.43.1, 0.43.1-fish-completions, 0.43.1-terminfo -> 0.44.0, 0.44.0-fish-completions, 0.44.0-terminfo
+[U.]  #17  lcevcdec                                  4.0.2-lib -> 4.0.3-lib
+[D.]  #18  libfprint-focaltech                       2808-a658-1.94.4 -> 2808-a658-alt-1.94.4
+[U.]  #19  libmateweather                            1.28.0 -> 1.28.1
+[U.]  #20  linux                                     6.17.6, 6.17.6-modules x2, 6.17.6-modules-shrunk -> 6.17.7, 6.17.7-modules x2, 6.17.7-modules-shrunk
+[U.]  #21  mediainfo.yazi                            2093ab7 -> 7543154
+[U*]  #22  niri-unstable                             2025-10-31-e257687, 2025-10-31-e257687-doc -> 2025-11-07-2144f9a, 2025-11-07-2144f9a-doc
+[U.]  #23  nixos-system-nixos                        25.11.20251031.2fb006b -> 25.11.20251105.ae814fd
+[U.]  #24  polkit-kde-agent                          1-6.5.1 -> 1-6.5.2
+[U.]  #25  python3.13-cyclopts                       4.1.0 -> 4.2.1
+[U.]  #26  ripdrag                                   0.4.10 -> 0.4.11
+[U.]  #27  ruff                                      0.14.2 -> 0.14.3
+[U.]  #28  rust-analyzer                             2025-10-27 -> 2025-10-28
+[U.]  #29  rust-analyzer-unwrapped                   2025-10-27 -> 2025-10-28
+[U.]  #30  tinymist                                  0.13.30 -> 0.14.0
+[U.]  #31  vesktop                                   1.6.0, 1.6.0-fish-completions -> 1.6.1, 1.6.1-fish-completions
+[U.]  #32  vscode-extension-myriad-dreamin-tinymist  0.13.30 -> 0.14.0
+[U.]  #33  x86_energy_perf_policy                    6.12.56 -> 6.12.57
+[U.]  #34  xwayland-satellite-unstable               2025-10-28-0728d59 -> 2025-11-07-3cd3edf
+Added packages:
+[A.]  #1  KDSingleApplication           1.2.0
+[A.]  #2  SFMono-Nerd-Font-Ligaturized  2023-07-01
+[A.]  #3  goldfish-unstable             2025-11-02, 2025-11-02-fish-completions
+Removed packages:
+[R.]  #1  SFMono                  1.0
+[R.]  #2  hm_vicinaevicinae.json  <none>
+Closure size: 2888 -> 2890 (230 paths added, 228 paths removed, delta +2, disk usage +79.9MiB).
