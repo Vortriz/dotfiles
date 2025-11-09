@@ -88,3 +88,11 @@ alias pf := prefetch
     nvd diff \
     $(command rg -N '>>> ({{ profiles-path }}/system-[0-9]+-link)' --only-matching --replace '$1' build.log | tail -1) \
     /run/current-system
+
+[group('TOOLS')]
+@nur-status:
+    if test $(git ls-remote https://github.com/Vortriz/nur-packages refs/heads/main | cut -f1) \
+    = $(curl -s https://raw.githubusercontent.com/nix-community/nur-combined/refs/heads/main/repos.json.lock | jaq -r .repos.Vortriz.rev); \
+        echo "NUR is up to date!"; \
+    else echo "NUR is not updated yet :("; \
+    end
