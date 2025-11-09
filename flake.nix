@@ -56,6 +56,12 @@
         };
         vicinae.url = "github:vicinaehq/vicinae";
         # keep-sorted end
+
+        # only for testing purposes
+        # nur-vortriz = {
+        #     url = "github:Vortriz/nur-packages";
+        #     inputs.nixpkgs.follows = "nixpkgs";
+        # };
     };
 
     outputs = {

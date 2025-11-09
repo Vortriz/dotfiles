@@ -4,6 +4,7 @@
     ...
 }: let
     inherit (config.var) username;
+    fprint-package = pkgs.nur.repos.Vortriz.libfprint-focaltech-2808-a658-alt;
 in {
     services = {
         # Services grouped by purpose
@@ -56,7 +57,7 @@ in {
         fprintd = {
             enable = true;
             package = pkgs.fprintd.override {
-                libfprint = pkgs.libfprint-focaltech-2808-a658;
+                libfprint = fprint-package;
             };
         };
 
@@ -109,7 +110,7 @@ in {
 
         speechd.enable = false;
 
-        udev.packages = [pkgs.libfprint-focaltech-2808-a658];
+        udev.packages = [fprint-package];
         # keep-sorted end
     };
 }
