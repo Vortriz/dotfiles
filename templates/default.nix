@@ -1,4 +1,9 @@
 {
+    julia = {
+        path = ./julia;
+        description = "Scientific dev environment with Julia";
+    };
+
     minimal-sci-env = {
         path = ./minimal-sci-env;
         description = "Minimal scientific env";
