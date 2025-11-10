@@ -16,3 +16,9 @@
 ## AVX2 support
 
 - override AVX2 flag for https://github.com/search?q=repo%3ANixOS%2Fnixpkgs+avx2Support&type=code&p=1
+
+## python env with uv
+
+### marimo
+
+- LSP - python-lsp-server, websockets

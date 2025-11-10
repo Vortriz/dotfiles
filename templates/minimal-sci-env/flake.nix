@@ -48,9 +48,6 @@
                                 uv
                                 nodejs_latest
                                 ruff
-                            ])
-                            ++ (with pkgs.python312Packages; [
-                                python-lsp-server
                             ]);
 
                         env = [
