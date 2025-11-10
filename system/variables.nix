@@ -21,12 +21,8 @@
 
     config.defaults = with pkgs; {
         # keep-sorted start
-        browser = firefox;
-        file-manager = yazi;
         shell = fish;
         terminal = kitty;
-        video-player = haruna;
-        wallpaper = swww;
         # keep-sorted end
     };
 

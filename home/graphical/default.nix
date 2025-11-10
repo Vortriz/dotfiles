@@ -11,7 +11,6 @@
         obsidian
         pdfarranger
         qbittorrent
-        smile
         vesktop
         warp
         wineWowPackages.stable

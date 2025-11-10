@@ -5,7 +5,7 @@
     ...
 }: let
     inherit (lib) getName;
-    inherit (osConfig.defaults) browser file-manager terminal;
+    inherit (osConfig.defaults) terminal;
     inherit (config.lib.stylix) colors;
 in {
     programs.niri.settings.window-rules = [
@@ -45,8 +45,8 @@ in {
             open-maximized = true;
 
             matches = [
-                {app-id = getName browser;}
-                {app-id = getName file-manager;}
+                {app-id = "firefox";}
+                {app-id = "yazi";}
                 {app-id = "org.kde.haruna";}
                 {app-id = "Code";}
                 {app-id = "obsidian";}
@@ -71,7 +71,6 @@ in {
                 {app-id = "io.missioncenter.MissionCenter";}
                 {app-id = "org.gnome.Calculator";}
                 {app-id = "it.catboy.ripdrag";}
-                {app-id = "it.mijorus.smile";}
             ];
         }
         {
@@ -109,12 +108,6 @@ in {
             border.active.color = colors.withHashtag.base0F;
         }
         {
-            matches = [{app-id = "it.mijorus.smile";}];
-
-            focus-ring.active.color = colors.withHashtag.base0A;
-            border.active.color = colors.withHashtag.base0A;
-        }
-        {
             matches = [{app-id = "com.github.th_ch.youtube_music";}];
 
             default-column-width.proportion = 0.7;
@@ -137,7 +130,7 @@ in {
             open-focused = true;
 
             matches = [
-                {app-id = getName browser;}
+                {app-id = "firefox";}
                 {app-id = "com.github.th_ch.youtube_music";}
                 {app-id = "vesktop";}
                 {app-id = "org.telegram.desktop";}

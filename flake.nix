@@ -59,7 +59,7 @@
 
         # only for testing purposes
         # nur-vortriz = {
-        #     url = "github:Vortriz/nur-packages";
+        #     url = "path:/mnt/HOUSE/dev/nix/nur-packages";
         #     inputs.nixpkgs.follows = "nixpkgs";
         # };
     };

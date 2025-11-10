@@ -1,7 +1,6 @@
 {
     config,
     lib,
-    osConfig,
     pkgs,
     ...
 }: {
@@ -19,7 +18,6 @@
 
     config = let
         inherit (config.lib.niri.actions) spawn-sh;
-        inherit (osConfig.defaults) terminal;
     in {
         niri-lib = {
             open = {
@@ -35,7 +33,7 @@
                 app,
                 app-id,
             }: {
-                action = spawn-sh "${lib.getExe terminal} -o confirm_os_window_close=0 --app-id=${app-id} ${app}";
+                action = spawn-sh "$xdg-terminal-exec -o confirm_os_window_close=0 --app-id=${app-id} ${app}";
                 hotkey-overlay.title = "Launch ${app-id}";
             };
 

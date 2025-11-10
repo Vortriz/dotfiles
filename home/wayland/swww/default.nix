@@ -1,11 +1,8 @@
 {
     config,
-    osConfig,
     pkgs,
     ...
-}: let
-    inherit (osConfig.defaults) wallpaper;
-in {
+}: {
     home.packages = [pkgs.swww];
 
     systemd.user.services.swww-workspace = {
@@ -21,7 +18,7 @@ in {
         };
 
         Service = {
-            ExecStart = "${wallpaper}/bin/swww-daemon --namespace workspace";
+            ExecStart = "${pkgs.swww}/bin/swww-daemon --namespace workspace";
             Restart = "always";
             RestartSec = 10;
         };
@@ -40,7 +37,7 @@ in {
         };
 
         Service = {
-            ExecStart = "${wallpaper}/bin/swww-daemon --namespace overview";
+            ExecStart = "${pkgs.swww}/bin/swww-daemon --namespace overview";
             Restart = "always";
             RestartSec = 10;
         };

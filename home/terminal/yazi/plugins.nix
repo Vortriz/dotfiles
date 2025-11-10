@@ -5,6 +5,10 @@
     ...
 }: let
     inherit (osConfig.defaults) shell;
+    inherit (lib) map;
+    inherit (lib.strings) getName;
+    inherit (lib.lists) concatLists;
+    inherit (lib.attrsets) listToAttrs cartesianProduct;
 in {
     programs.yazi = {
         plugins = let
@@ -43,17 +47,17 @@ in {
                 # keep-sorted end
             ];
         in
-            builtins.listToAttrs (map (name: {
+            listToAttrs (map (name: {
                 inherit name;
                 value = "${official-plugins-monorepo.src}/${name}.yazi";
             })
             official-plugins)
-            // builtins.listToAttrs (map (name: {
+            // listToAttrs (map (name: {
                 inherit name;
                 value = "${other-monorepo.src}/${name}.yazi";
             })
             other-monorepo-plugins)
-            // builtins.listToAttrs (map (name: {
+            // listToAttrs (map (name: {
                 inherit name;
                 value = plugins-src.${name}.src;
             })
@@ -76,18 +80,18 @@ in {
 
                     # office
                     {
-                        name = ["application/openxmlformats-officedocument.*" "application/oasis.opendocument.*" "application/ms-*" "application/msword" "*.docx"];
+                        name = ["application/{openxmlformats-officedocument.*,oasis.opendocument.*,ms-*,msword}"];
                         run = ["office"];
                     }
 
                     # ouch
                     {
-                        mime = ["application/*zip" "application/*tar" "application/*rar" "application/x-bzip2" "application/x-7z-compressed" "application/x-xz"];
+                        mime = ["application/{*zip,*tar,*rar,x-bzip2,x-7z-compressed,x-xz}"];
                         run = [''piper -- ouch list -tA "$1"''];
                     }
                 ]
-                |> map (lib.attrsets.cartesianProduct)
-                |> lib.lists.concatLists;
+                |> map cartesianProduct
+                |> concatLists;
 
             prepend_preloaders =
                 [
@@ -97,8 +101,8 @@ in {
                         run = ["mediainfo"];
                     }
                 ]
-                |> map (lib.attrsets.cartesianProduct)
-                |> lib.lists.concatLists;
+                |> map cartesianProduct
+                |> concatLists;
         };
 
         keymap.mgr.prepend_keymap = [
@@ -112,12 +116,12 @@ in {
             # custom-shell
             {
                 on = ["'" ";"];
-                run = "plugin custom-shell -- ${lib.getName shell} --interactive";
+                run = "plugin custom-shell -- ${getName shell} --interactive";
                 desc = "custom-shell as default, interactive";
             }
             {
                 on = ["'" ":"];
-                run = "plugin custom-shell -- ${lib.getName shell} --interactive --block";
+                run = "plugin custom-shell -- ${getName shell} --interactive --block";
                 desc = "custom-shell as default, interactive, block";
             }
 

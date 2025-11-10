@@ -1,10 +1,4 @@
 {
-    lib,
-    osConfig,
-    ...
-}: let
-    inherit (osConfig.defaults) video-player;
-in {
     programs.yazi.settings = {
         mgr = {
             show_hidden = true;
@@ -29,35 +23,44 @@ in {
                 }
             ];
 
-            play = [
-                {
-                    run = ''${lib.getName video-player} "$@"'';
-                    orphan = true;
-                    desc = "Play";
-                }
-            ];
-
-            edit-pdf = [
+            edit-doc = [
                 {
                     run = ''libreoffice "$@"'';
                     orphan = true;
-                    desc = "Edit PDF";
+                    desc = "Edit in LibreOffice";
+                }
+            ];
+
+            open-with-zed = [
+                {
+                    run = ''zeditor "$@"'';
+                    orphan = true;
+                    desc = "Open with Zed";
+                }
+            ];
+
+            send = [
+                {
+                    run = ''warp "$@"'';
+                    orphan = true;
+                    desc = "Send via Warp";
                 }
             ];
         };
 
         open = {
-            prepend_rules = [
-                {
-                    mime = "video/*";
-                    use = "play";
-                }
-            ];
-
             append_rules = [
                 {
                     mime = "application/pdf";
-                    use = "edit-pdf";
+                    use = "edit-doc";
+                }
+                {
+                    mime = "inode/directory";
+                    use = "open-with-zed";
+                }
+                {
+                    mime = "*";
+                    use = "send";
                 }
             ];
         };
