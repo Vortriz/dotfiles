@@ -73,19 +73,26 @@
                         devshell.startup.default.text = "unset PYTHONPATH";
                     };
 
-                julia = pkgs.devshell.mkShell {
-                    name = "julia";
-                    devshell.motd = "";
+                julia = let
+                    julia-pkg = pkgs.julia.withPackages ["LanguageServer"];
+                in
+                    pkgs.devshell.mkShell {
+                        name = "julia";
+                        devshell.motd = "";
 
-                    packages = [pkgs.julia];
+                        packages = [julia-pkg];
 
-                    env = [
-                        {
-                            name = "JULIA_NUM_THREADS";
-                            value = "auto";
-                        }
-                    ];
-                };
+                        env = [
+                            {
+                                name = "JULIA_NUM_THREADS";
+                                value = "auto";
+                            }
+                            {
+                                name = "julia";
+                                value = "${julia-pkg}/bin/julia";
+                            }
+                        ];
+                    };
 
                 typst = pkgs.devshell.mkShell {
                     name = "typst";
