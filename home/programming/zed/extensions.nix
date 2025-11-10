@@ -9,6 +9,7 @@
         extensions = [
             # keep-sorted start
             "astro"
+            "fish"
             "harper"
             "julia"
             "just"
@@ -35,7 +36,6 @@
             rust-analyzer
             texlab
             tinymist
-            tree-sitter-grammars.tree-sitter-scss
             ty
             # keep-sorted end
         ];

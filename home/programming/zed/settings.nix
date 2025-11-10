@@ -53,6 +53,7 @@ in {
                     language_servers = ["ruff" "ty" "!basedpyright"];
                 };
             };
+            load_direnv = "shell_hook";
             minimap = {
                 show = "always";
                 thumb = "always";
