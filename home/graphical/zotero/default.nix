@@ -3,15 +3,13 @@
     osConfig,
     pkgs,
     ...
-}: let
-    inherit (osConfig.var) storageDir;
-in {
+}: {
     programs.zotero = {
         enable = true;
 
         profiles.default = {
             settings = let
-                path = "${storageDir}/nonlinear-vault/03.resources/articles";
+                path = "${osConfig.var.storageDir}/nonlinear-vault/03.resources/articles";
                 bbt-citekey-format = "auth.lower + year";
             in {
                 # keep-sorted start

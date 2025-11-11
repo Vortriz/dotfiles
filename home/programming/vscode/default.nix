@@ -3,10 +3,7 @@
     osConfig,
     pkgs,
     ...
-}: let
-    inherit (osConfig.var) monospaceFontName;
-    inherit (osConfig.defaults) shell;
-in {
+}: {
     imports = [./extensions.nix];
 
     programs.vscode = {
@@ -24,10 +21,10 @@ in {
                     substitutions = [
                         "--subst-var-by"
                         "font-name"
-                        monospaceFontName
+                        osConfig.stylix.fonts.monospace.name
                         "--subst-var-by"
                         "shell"
-                        "${lib.getName shell}"
+                        "${lib.getName osConfig.defaults.shell}"
                     ];
                 }
                 |> builtins.readFile

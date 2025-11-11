@@ -4,10 +4,7 @@
     pkgs,
     ...
 }: let
-    inherit (osConfig.var) monospaceFontName;
-    inherit (osConfig.defaults) shell;
-
-    fontName = lib.mkForce monospaceFontName;
+    fontName = lib.mkForce osConfig.stylix.fonts.monospace.name;
     fontSize = lib.mkForce 18;
 in {
     programs.zed-editor = {
@@ -64,7 +61,7 @@ in {
                 git_status = true;
             };
             terminal = {
-                detect_venv.on.activate_script = "${lib.getName shell}";
+                detect_venv.on.activate_script = "${lib.getName osConfig.defaults.shell}";
                 cursor_shape = "bar";
                 toolbar.breadcrumbs = false;
                 line_height = "comfortable";

@@ -4,8 +4,6 @@
     osConfig,
     ...
 }: let
-    inherit (lib) getName;
-    inherit (osConfig.defaults) terminal;
     inherit (config.lib.stylix) colors;
 in {
     programs.niri.settings.window-rules = [
@@ -63,7 +61,7 @@ in {
             border = {
                 enable = true;
                 width = 2;
-                inactive.color = config.lib.stylix.colors.withHashtag.base03;
+                inactive.color = colors.withHashtag.base03;
             };
             shadow.enable = true;
 
@@ -77,7 +75,7 @@ in {
             default-column-display = "tabbed";
 
             matches = [
-                {app-id = getName terminal;}
+                {app-id = lib.getName osConfig.defaults.terminal;}
                 {app-id = "sioyek";}
             ];
         }

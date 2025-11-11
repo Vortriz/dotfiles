@@ -5,8 +5,6 @@
     pkgs,
     ...
 }: let
-    inherit (osConfig.var) dotfilesDir;
-
     battery-script = pkgs.writers.writeFishBin "battery" {} ''
         set battery_percentage (cat /sys/class/power_supply/BAT0/capacity)
         set battery_status (cat /sys/class/power_supply/BAT0/status)
@@ -33,7 +31,7 @@ in {
 
             # BACKGROUND
             background = {
-                path = "${dotfilesDir}/assets/wallpapers/19.png";
+                path = "${osConfig.var.dotfilesDir}/assets/wallpapers/19.png";
                 blur_passes = 2;
                 contrast = 1;
                 brightness = 0.5;

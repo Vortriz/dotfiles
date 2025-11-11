@@ -1,4 +1,4 @@
-{
+{osConfig, ...}: {
     programs.firefox.profiles.default.settings = {
         # keep-sorted start
         "app.normandy.api_url" = "";
@@ -28,6 +28,9 @@
         "experiments.manifest.uri" = "";
         "experiments.supported" = false;
         "extensions.activeThemeID" = "firefox-compact-dark@mozilla.org";
+        "font.name.monospace.x-western" = osConfig.stylix.fonts.monospace.name;
+        "font.name.sans-serif.x-western" = osConfig.stylix.fonts.sansSerif.name;
+        "font.name.serif.x-western" = osConfig.stylix.fonts.serif.name;
         "mousewheel.default.delta_multiplier_x" = 10;
         "mousewheel.default.delta_multiplier_y" = 20;
         "signon.rememberSignons" = false; # Don't prompt me, I use Bitwarden

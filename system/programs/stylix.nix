@@ -1,11 +1,8 @@
 {
-    config,
     inputs,
     pkgs,
     ...
-}: let
-    inherit (config.var) monospaceFont monospaceFontName;
-in {
+}: {
     imports = [inputs.stylix.nixosModules.stylix];
 
     stylix = {
@@ -34,7 +31,10 @@ in {
         };
 
         fonts = {
-            serif = config.stylix.fonts.sansSerif;
+            serif = {
+                package = pkgs.libertinus;
+                name = "Libertinus Serif";
+            };
 
             sansSerif = {
                 package = pkgs.google-fonts.override {fonts = ["Lato"];};
@@ -42,8 +42,8 @@ in {
             };
 
             monospace = {
-                package = monospaceFont;
-                name = monospaceFontName;
+                package = pkgs.maple-mono.Normal-NF-unhinted;
+                name = "Maple Mono Normal NF";
             };
 
             emoji = {

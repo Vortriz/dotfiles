@@ -4,7 +4,7 @@
     pkgs,
     ...
 }: let
-    inherit (config.var) defaultLocale extraLocale hostname monospaceFont timeZone;
+    inherit (config.var) defaultLocale extraLocale hostname timeZone;
 in {
     # keep-sorted start block=yes newline_separated=yes
     documentation = {
@@ -43,7 +43,7 @@ in {
             HelveticaNeueCyr
             SFMono-Nerd-Font-Ligaturized
         ])
-        ++ [monospaceFont];
+        ++ [config.stylix.fonts.monospace.package];
 
     hardware = {
         bluetooth = {

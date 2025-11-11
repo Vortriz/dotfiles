@@ -3,9 +3,7 @@
     osConfig,
     pkgs,
     ...
-}: let
-    inherit (osConfig.var) downloadsDir;
-in {
+}: {
     programs.niri.settings = {
         # keep-sorted start block=yes newline_separated=yes
         animations = {
@@ -88,7 +86,7 @@ in {
 
         prefer-no-csd = true;
 
-        screenshot-path = "${downloadsDir}/captures/linux/%Y-%m-%d (%H-%M-%S).png";
+        screenshot-path = "${osConfig.var.downloadsDir}/captures/linux/%Y-%m-%d (%H-%M-%S).png";
 
         workspaces = {
             "Acad" = {};

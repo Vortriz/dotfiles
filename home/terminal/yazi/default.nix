@@ -5,9 +5,7 @@
     osConfig,
     ...
 }: let
-    inherit (osConfig.defaults) terminal;
-
-    yazi = config.programs.yazi.finalPackage;
+    yazi-pkg = config.programs.yazi.finalPackage;
     xdp-termfilechooser = pkgs.nur.repos.Vortriz.xdg-desktop-portal-termfilechooser;
 in {
     imports = [
@@ -29,8 +27,8 @@ in {
     home.packages = [pkgs.exiftool];
 
     programs.niri.settings.binds."Mod+E" = config.niri-lib.open-tui {
-        app = lib.getExe yazi;
-        app-id = lib.getName yazi;
+        app = lib.getExe yazi-pkg;
+        app-id = lib.getName yazi-pkg;
     };
 
     xdg = {
@@ -44,7 +42,7 @@ in {
             [filechooser]
             cmd=${xdp-termfilechooser}/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh
             default_dir=$HOME
-            env=TERMCMD=${lib.getName terminal}
+            env=TERMCMD=${lib.getName osConfig.defaults.terminal}
         '';
     };
 }
