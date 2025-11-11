@@ -33,7 +33,7 @@
                 app,
                 app-id,
             }: {
-                action = spawn-sh "$xdg-terminal-exec -o confirm_os_window_close=0 --app-id=${app-id} ${app}";
+                action = spawn-sh "xdg-terminal-exec --app-id=${app-id} ${app}";
                 hotkey-overlay.title = "Launch ${app-id}";
             };
 
