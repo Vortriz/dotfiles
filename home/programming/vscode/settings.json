@@ -56,15 +56,8 @@
     "explorer.confirmDragAndDrop": false,
     "files.trimTrailingWhitespace": true,
     "git.confirmSync": false,
-    "github.copilot.enable": {
-        "rust": false,
-        "shellscript": false
-    },
-    "julia.enableTelemetry": true,
-    "julia.symbolCacheDownload": true,
     "nix.enableLanguageServer": true,
     "nix.serverPath": "nixd",
-    "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
     "terminal.integrated.defaultProfile.linux": "@shell@",
     "terminal.integrated.fontFamily": "'@font-name@'",
     "tinymist.formatterIndentSize": 4,
