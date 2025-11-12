@@ -38,7 +38,7 @@ in {
                     language_servers = ["nixd" "!nil"];
                     formatter.external = {
                         command = "nix";
-                        arguments = ["fmt"];
+                        arguments = ["fmt" "--" "--stdin" "{buffer_path}"];
                     };
                 };
                 Python = {

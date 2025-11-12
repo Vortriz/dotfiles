@@ -1,8 +1,6 @@
 {
-    outputs,
     pkgs,
     lib,
-    system,
     ...
 }: {
     programs.zed-editor = rec {
@@ -30,7 +28,6 @@
             kdePackages.qtdeclarative
             nixd
             nodejs_latest
-            outputs.formatter.${system}
             package-version-server
             ruff
             rust-analyzer
