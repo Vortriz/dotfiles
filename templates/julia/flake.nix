@@ -2,8 +2,10 @@
     description = "Minimal scientific env";
 
     inputs = {
-        nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+        # set your systems using: https://github.com/nix-systems/nix-systems?tab=readme-ov-file#available-system-flakes
         systems.url = "github:nix-systems/x86_64-linux";
+
+        nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
         flake-utils = {
             url = "github:numtide/flake-utils";
             inputs.systems.follows = "systems";
@@ -40,6 +42,10 @@
                     packages = [julia-pkg];
 
                     env = [
+                        {
+                            name = "JULIA_NUM_THREADS";
+                            value = "auto";
+                        }
                         {
                             name = "julia";
                             value = "${julia-pkg}/bin/julia";
