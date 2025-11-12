@@ -1,4 +1,9 @@
 {
+    defaultTemplate = {
+        path = ./default;
+        description = "A simple flake";
+    };
+
     julia = {
         path = ./julia;
         description = "Scientific dev environment with Julia";
