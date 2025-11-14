@@ -29,10 +29,7 @@ system := `echo $system`
     nh os switch {{ args }}
 
     echo -e "\n---\n\n$(date '+%x %X')" >> build.log
-    nvd diff \
-    $(command rg -N '>>> ({{ profiles-path }}/system-[0-9]+-link)' --only-matching --replace '$1' build.log | tail -1) \
-    $(command ls -d1v {{ profiles-path }}/system-*-link | tail -n 1) \
-    >> build.log
+    just diff >> build.log
 
     git add -A
     git commit -m "deployed $(nixos-rebuild list-generations --flake $NH_FLAKE --json | jaq '.[0].generation')"
@@ -85,7 +82,7 @@ alias pf := prefetch
 
 [group('TOOLS')]
 @diff:
-    nvd diff \
+    dix \
     $(command rg -N '>>> ({{ profiles-path }}/system-[0-9]+-link)' --only-matching --replace '$1' build.log | tail -1) \
     /run/current-system
 

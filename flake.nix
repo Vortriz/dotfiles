@@ -108,6 +108,7 @@
                     packages =
                         (with pkgs; [
                             # keep-sorted start
+                            dix
                             fd
                             fish
                             git
@@ -120,7 +121,6 @@
                             nix-prefetch-git
                             nix-prefetch-github
                             nom
-                            nvd
                             nvfetcher
                             ripgrep
                             # keep-sorted end
