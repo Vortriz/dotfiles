@@ -17,4 +17,16 @@
             enableSpawn = true;
         };
     };
+
+    programs.niri.settings.layer-rules = [
+        {
+            matches = [{namespace = "dms:blurwallpaper";}];
+            place-within-backdrop = true;
+        }
+    ];
+
+    # [TODO] test if this works
+    home.packages = with pkgs; [
+        wl-mirror
+    ];
 }
