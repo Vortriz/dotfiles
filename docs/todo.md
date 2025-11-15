@@ -7,6 +7,7 @@
         - [ ] https://github.com/Erudition/zen-sidebery-mod
         - [ ] https://github.com/MrOtherGuy/fx-autoconfig
 - [ ] https://github.com/boydaihungst/gvfs.yazi
+- [ ] try porting dl.py to rust (maybe not the libgen part hehe)
 
 # things to look out for (in future)
 

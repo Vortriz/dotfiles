@@ -42,7 +42,7 @@ def progress(dl):
     return
 
 
-def download(url, downloads_dir):
+def download(url, downloads_dir, args):
     downloads_base_path = f"{downloads_dir}/.tmp"
 
     categories = {
@@ -59,15 +59,21 @@ def download(url, downloads_dir):
     filename = dl.name
     ext = filename.split(".")[-1]
 
-    for category, exts in categories.items():
-        if ext in exts:
-            shutil.move(
-                f"{downloads_base_path}/{filename}",
-                f"{downloads_dir}/{category}/{filename}",
-            )
-            break
+    if "--here" in args:
+        shutil.move(
+            f"{downloads_base_path}/{filename}",
+            f"{os.getcwd()}/{filename}",
+        )
     else:
-        print("\033[96mDownloaded to .tmp. Sort the file!\033[0m")
+        for category, exts in categories.items():
+            if ext in exts:
+                shutil.move(
+                    f"{downloads_base_path}/{filename}",
+                    f"{downloads_dir}/{category}/{filename}",
+                )
+                break
+        else:
+            print("\n\033[96mDownloaded to .tmp. Sort the file!\033[0m")
 
     print(f"\nDownloaded:\n\033[1m{filename}\033[0m")
 
@@ -143,15 +149,16 @@ def download_torrent_from_libgen(page_url, downloads_dir):
 
 aria2 = aria2p.API(aria2p.Client(host="http://localhost", port=6800, secret=secret))
 
-if len(sys.argv) != 2:
-    print("Usage: dl <URL>")
+if len(sys.argv) == 1:
+    print("Usage: dl <URL> [--here]")
     sys.exit(1)
 
 url = sys.argv[1]
+args = sys.argv[2:]
 
 os.makedirs(f"{downloads_dir}/.tmp", exist_ok=True)
 
 if "libgen" in url:
-    download_torrent_from_libgen(url, downloads_dir)
+    download_torrent_from_libgen(url, downloads_dir, args)
 else:
-    download(url, downloads_dir)
+    download(url, downloads_dir, args)
