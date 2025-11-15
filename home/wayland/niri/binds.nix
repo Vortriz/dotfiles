@@ -40,7 +40,7 @@ in {
                 cmd = getExe scripts.toggle-warp;
             };
 
-            # [MARK] waiting on https://github.com/YaLTeR/niri/issues/2664
+            # [MARK] improve after https://github.com/YaLTeR/niri/issues/2664
             "Ctrl+Shift+O" = run {
                 cmd = getExe scripts.obsidian-img;
             };

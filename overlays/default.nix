@@ -3,8 +3,6 @@ _: {
     # https://nixos.wiki/wiki/Overlays
     modifications = _final: prev: {
         # keep-sorted start block=yes newline_separated=yes
-        flameshot = prev.flameshot.override {enableWlrSupport = true;};
-
         # https://discourse.nixos.org/t/request-for-libfprint-port-for-2808-a658/55474/32?u=vortriz
         fprintd = prev.fprintd.overrideAttrs (_: rec {
             version = "1.94.4";
