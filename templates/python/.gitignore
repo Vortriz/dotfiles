@@ -1,6 +1,6 @@
 # Nix
 .direnv/
-result*/
+result*
 
 # Python
 .venv
