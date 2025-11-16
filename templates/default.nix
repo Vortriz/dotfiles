@@ -7,16 +7,18 @@
     julia = {
         path = ./julia;
         description = "Scientific dev environment with Julia";
-    };
-
-    minimal-sci-env = {
-        path = ./minimal-sci-env;
-        description = "Minimal scientific env";
+        welcomeText = "Run `nvfetcher` once";
     };
 
     python = {
         path = ./python;
         description = "Scientific dev environment with Python (via uv)";
+    };
+
+    sci-env = {
+        path = ./sci-env;
+        description = "Scientific env";
+        welcomeText = "Run `nvfetcher` once (for using Julia)";
     };
 
     typst-presentation = {
