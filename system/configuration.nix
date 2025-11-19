@@ -28,10 +28,7 @@ in {
             inputs.nur.overlays.default
         ];
 
-        config = {
-            allowUnfree = true;
-            allowBroken = true;
-        };
+        config.allowUnfree = true;
     };
 
     nix = {
