@@ -25,7 +25,7 @@
             # inputs.niri-unstable.url = "github:YaLTeR/niri?ref=pull/1704/head";
         };
         niri-shell = {
-            url = "/mnt/HOUSE/dev/niri-shell";
+            url = "/mnt/HOUSE/dev/others/niri-shell";
             inputs.nixpkgs.follows = "nixpkgs";
         };
         nix-index-database = {

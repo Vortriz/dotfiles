@@ -10,7 +10,7 @@ require("bunny"):setup({
     { key = "n",          path = "/mnt/HOUSE/nonlinear-vault", desc = "nonlinear vault" },
     { key = "p",          path = "/mnt/HOUSE/personal",        desc = "personal"        },
     { key = "d",          path = "/mnt/HOUSE/downloads",       desc = "downloads"       },
-    { key = "1",          path = "/mnt/HOUSE/dev",             desc = "dev"             },
+    { key = "z",          path = "/mnt/HOUSE/dev",             desc = "dev"             },
     { key = ".",          path = "~/dotfiles",                 desc = "dotfiles"        },
     { key = "/",          path = "/",                          desc = "root"            },
     { key = "s",          path = "/nix/store",                 desc = "nix store"       },

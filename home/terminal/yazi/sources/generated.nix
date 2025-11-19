@@ -45,17 +45,17 @@
   };
   mediainfo = {
     pname = "mediainfo";
-    version = "482be55ca6975f18a35faddf158e743d2981fc07";
+    version = "1099409ca956282efe49dea8ab53f8be95feb72a";
     src = fetchgit {
       url = "https://github.com/boydaihungst/mediainfo.yazi";
-      rev = "482be55ca6975f18a35faddf158e743d2981fc07";
+      rev = "1099409ca956282efe49dea8ab53f8be95feb72a";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-wfHJXJjqll4rjvlZcHTCFFJLrpa2lflX6w9zrTCnCaA=";
+      sha256 = "sha256-K2SHIzmNtICgVchSPB1mtTboyvDPIq+hN3GEOR20hpk=";
     };
-    date = "2025-11-14";
+    date = "2025-11-15";
   };
   office = {
     pname = "office";

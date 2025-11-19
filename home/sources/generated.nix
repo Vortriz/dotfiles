@@ -16,7 +16,7 @@
     src = fetchurl {
       url = "https://starship.rs/presets/toml/nerd-font-symbols.toml";
       name = "nerd-font-symbols.toml";
-      sha256 = "sha256-MtAuCwg+6Ol0owyXrp1a+RtfKpSEBI68dikD95xmP/M=";
+      sha256 = "sha256-KssAxwGVYGGBMcH6Lwq1sllYwqrD95TfpcjydMtCceM=";
     };
   };
 }
