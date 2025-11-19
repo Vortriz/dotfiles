@@ -22,3 +22,7 @@
 ### marimo
 
 - LSP - python-lsp-server, websockets
+
+## obsidian
+
+- if stuck on "Loading cache" then delete folder inside `~/.config/obsidian/IndexedDB/`

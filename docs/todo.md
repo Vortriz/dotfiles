@@ -8,10 +8,15 @@
         - [ ] https://github.com/MrOtherGuy/fx-autoconfig
 - [ ] https://github.com/boydaihungst/gvfs.yazi
 - [ ] try porting dl.py to rust (maybe not the libgen part hehe)
+    - or keep it in python but make it into a tool. use [click](https://click.palletsprojects.com), ub-build etc
 - [ ] see how to install the dotfiles directly from the graphical iso
     - https://nixos.org/manual/nixos/stable/index.html#sec-installation-manual-installing
     - https://nixos.org/manual/nixos/stable/index.html#sec-installing-behind-proxy
     - https://nixos.wiki/wiki/NixOS_Installation_Guide
+- [ ] move niri config to hjem-rum
+- [ ] btrfs compression and impermanence
+    - https://saylesss88.github.io/Getting_Started_with_Nix_1.html
+    - https://wiki.nixos.org/wiki/Btrfs
 
 # things to look out for (in future)
 
