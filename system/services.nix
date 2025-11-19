@@ -113,4 +113,14 @@ in {
         udev.packages = [fprint-package];
         # keep-sorted end
     };
+
+    systemd.user.services.batteryd = {
+        enable = true;
+        wantedBy = ["graphical-session.target"];
+        serviceConfig = {
+            Restart = "on-failure";
+            RestartSec = 5;
+            ExecStart = pkgs.lib.getExe pkgs.nur.repos.Vortriz.batteryd;
+        };
+    };
 }
