@@ -41,6 +41,8 @@ in {
         NPM_CONFIG_TMP = "$XDG_RUNTIME_DIR/npm";
 
         RUSTUP_HOME = "${dataHome}/rustup";
+
+        EDITOR = lib.mkForce "micro";
     };
 
     systemd.user.targets.tray.Unit = {
