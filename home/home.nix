@@ -45,14 +45,6 @@ in {
         EDITOR = lib.mkForce "micro";
     };
 
-    systemd.user.targets.tray.Unit = {
-        Description = "Home Manager System Tray";
-        Requires = ["graphical-session-pre.target"];
-    };
-
-    # Nicely reload system units when changing configs
-    systemd.user.startServices = "sd-switch";
-
     # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
-    home.stateVersion = "24.11";
+    home.stateVersion = "25.11";
 }
