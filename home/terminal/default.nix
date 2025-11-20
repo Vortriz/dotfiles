@@ -6,6 +6,7 @@
         imagemagick
         just
         magic-wormhole
+        nur.repos.Vortriz.dl
         ookla-speedtest
         ouch
         pandoc

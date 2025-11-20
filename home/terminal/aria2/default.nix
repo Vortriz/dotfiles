@@ -1,6 +1,6 @@
 {
+    config,
     lib,
-    osConfig,
     pkgs,
     ...
 }: {
@@ -10,7 +10,7 @@
         settings = {
             # keep-sorted start
             console-log-level = "warn";
-            dir = "${osConfig.var.downloadsDir}/.tmp";
+            dir = "${config.xdg.cacheHome}/dl";
             max-concurrent-downloads = 4;
             max-connection-per-server = 8;
             split = 8;
