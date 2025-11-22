@@ -13,6 +13,7 @@ in {
         ./hardware-configuration.nix
         ./hm-module.nix
         ./nixos-hw.nix
+        ./plymouth.nix
         ./services.nix
         ./settings.nix
         ./variables.nix

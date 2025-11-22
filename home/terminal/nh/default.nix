@@ -5,7 +5,7 @@
         clean = {
             enable = true;
 
-            extraArgs = "--keep 5 --optimise --no-gcroots";
+            extraArgs = "--keep 4 --optimise --no-gcroots";
         };
     };
 }
