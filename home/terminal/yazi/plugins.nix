@@ -13,24 +13,10 @@ in {
     programs.yazi = {
         plugins = let
             plugins-src = pkgs.callPackages ./sources/generated.nix {};
-            inherit (plugins-src) official-plugins-monorepo other-monorepo;
-
-            official-plugins = [
-                # keep-sorted start
-                "jump-to-char"
-                "mount"
-                "piper"
-                "smart-enter"
-                "smart-filter"
-                "toggle-pane"
-                "zoom"
-                # keep-sorted end
-            ];
+            inherit (plugins-src) other-monorepo;
 
             other-monorepo-plugins = [
-                # keep-sorted start
                 "first-non-directory"
-                # keep-sorted end
             ];
 
             other-plugins = [
@@ -38,20 +24,29 @@ in {
                 "bunny"
                 "custom-shell"
                 "hover-after-moved"
-                "mediainfo"
                 "office"
-                "ouch"
-                "restore"
-                "starship"
                 "what-size"
                 # keep-sorted end
             ];
         in
-            listToAttrs (map (name: {
-                inherit name;
-                value = "${official-plugins-monorepo.src}/${name}.yazi";
-            })
-            official-plugins)
+            {
+                inherit
+                    (pkgs.yaziPlugins)
+                    # keep-sorted start
+                    # zoom # [MARK] wait for yazi to cut a new release
+                    jump-to-char
+                    mediainfo
+                    mount
+                    ouch
+                    piper
+                    restore
+                    smart-enter
+                    smart-filter
+                    starship
+                    toggle-pane
+                    # keep-sorted end
+                    ;
+            }
             // listToAttrs (map (name: {
                 inherit name;
                 value = "${other-monorepo.src}/${name}.yazi";

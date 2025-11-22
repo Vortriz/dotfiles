@@ -111,6 +111,11 @@ in {
             default-column-width.proportion = 0.7;
             default-window-height.proportion = 0.7;
         }
+        {
+            matches = [{app-id = "Espanso.SyncTool";}];
+
+            open-floating = true;
+        }
 
         # workspace rules
         {
