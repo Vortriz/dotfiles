@@ -65,6 +65,8 @@
                 length.total-proportion = 0.15;
                 position = "top";
             };
+
+            background-color = "#000000";
         };
 
         outputs."eDP-1" = {
