@@ -17,6 +17,8 @@
 - [ ] btrfs compression and impermanence
     - https://saylesss88.github.io/Getting_Started_with_Nix_1.html
     - https://wiki.nixos.org/wiki/Btrfs
+    - maybe preservation? https://github.com/nix-community/preservation
+- [ ] migrate yazi plugins to either nur or nixpkgs
 
 # things to look out for (in future)
 
