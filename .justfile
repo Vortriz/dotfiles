@@ -29,10 +29,10 @@ system := `echo $system`
     nh os switch {{ args }}
 
     echo -e "\n---\n\n$(date '+%x %X')" >> build.log
-    just diff >> build.log
+    just get-diff >> build.log
 
     git add -A
-    git commit -m "deployed $(nixos-rebuild list-generations --flake $NH_FLAKE --json | jaq '.[0].generation')"
+    git commit -m "deployed $(just _get-current-gen)"
 
 [group('SYSTEM')]
 @get-updates:
@@ -81,15 +81,21 @@ alias pf := prefetch
         flake.nixosConfigurations.nixos.config // flake.nixosConfigurations.nixos.config.home-manager.users"
 
 [group('TOOLS')]
-@diff:
+@get-diff:
     dix \
     $(command rg -N '>>> ({{ profiles-path }}/system-[0-9]+-link)' --only-matching --replace '$1' build.log | tail -1) \
-    $(nixos-rebuild list-generations --flake $NH_FLAKE --json | jaq '.[0].generation')
+    $(just _get-current-gen)
+
 
 [group('TOOLS')]
-@nur-status:
+@get-nur-status:
     if test $(git ls-remote https://github.com/Vortriz/nur-packages refs/heads/main | cut -f1) \
     = $(curl -s https://raw.githubusercontent.com/nix-community/nur-combined/refs/heads/main/repos.json.lock | jaq -r .repos.Vortriz.rev); \
         echo "NUR is up to date!"; \
     else echo "NUR is not updated yet :("; \
     end
+
+# Helpers
+
+@_get-current-gen:
+    nixos-rebuild list-generations --flake $NH_FLAKE --json | jaq '.[0].generation'
