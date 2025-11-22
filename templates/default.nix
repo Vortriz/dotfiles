@@ -15,10 +15,9 @@
         description = "Scientific dev environment with Python (via uv)";
     };
 
-    sci-env = {
-        path = ./sci-env;
+    minimal-sci-env = {
+        path = ./minimal-sci-env;
         description = "Scientific env";
-        welcomeText = "Run `nvfetcher` once (for using Julia)";
     };
 
     typst-presentation = {
