@@ -84,7 +84,7 @@ alias pf := prefetch
 @diff:
     dix \
     $(command rg -N '>>> ({{ profiles-path }}/system-[0-9]+-link)' --only-matching --replace '$1' build.log | tail -1) \
-    /run/current-system
+    $(nixos-rebuild list-generations --flake $NH_FLAKE --json | jaq '.[0].generation')
 
 [group('TOOLS')]
 @nur-status:
