@@ -73,17 +73,17 @@
   };
   official-plugins-monorepo = {
     pname = "official-plugins-monorepo";
-    version = "2301ff803a033cd16d16e62697474d6cb9a94711";
+    version = "eaf6920b7439fa7164a1c162a249c3c76dc0acd9";
     src = fetchgit {
       url = "https://github.com/yazi-rs/plugins";
-      rev = "2301ff803a033cd16d16e62697474d6cb9a94711";
+      rev = "eaf6920b7439fa7164a1c162a249c3c76dc0acd9";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-+lirIBXv3EvztE/1b3zHnQ9r5N3VWBCUuH3gZR52fE0=";
+      sha256 = "sha256-B6zhZfp3SEaiviIzosI2aD8fk+hQF0epOTKi1qm8V3E=";
     };
-    date = "2025-11-19";
+    date = "2025-11-25";
   };
   other-monorepo = {
     pname = "other-monorepo";
@@ -101,17 +101,17 @@
   };
   ouch = {
     pname = "ouch";
-    version = "0742fffea5229271164016bf96fb599d861972db";
+    version = "cfb91404d3d83bcf7bbf90d689d226699b0e4147";
     src = fetchgit {
       url = "https://github.com/ndtoan96/ouch.yazi";
-      rev = "0742fffea5229271164016bf96fb599d861972db";
+      rev = "cfb91404d3d83bcf7bbf90d689d226699b0e4147";
       fetchSubmodules = false;
       deepClone = false;
       leaveDotGit = false;
       sparseCheckout = [ ];
-      sha256 = "sha256-C0wG8NQ+zjAMfd+J39Uvs3K4U6e3Qpo1yLPm2xcsAaI=";
+      sha256 = "sha256-6TyKPsapXJMiSRFrKRfP/hamOiG6LfgbPp7flh5tKoo=";
     };
-    date = "2025-07-13";
+    date = "2025-11-26";
   };
   restore = {
     pname = "restore";
