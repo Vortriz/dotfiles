@@ -18609,3 +18609,112 @@ REMOVED
 
 SIZE: 19.8 GiB -> 19.8 GiB
 DIFF: 1.34 MiB
+
+---
+
+27/11/25 11:12:58 PM IST
+<<< /nix/store/za3pkv4rrcb9gyq0cj7hj5a4gif54vm4-nixos-system-nixos-25.11.20251117.89c2b23
+>>> /nix/store/lba76ds4g12b1gmvy7jqxp39js7rmar2-nixos-system-nixos-25.11.20251124.5ae3b07
+
+CHANGED
+[U.] at-spi2-core                                     2.58.0 ×2, 2.58.0-dev -> 2.58.1 ×2, 2.58.1-dev
+[U*] bluez                                            5.83 ×2, 5.83_fish-completions -> 5.84 ×2, 5.84_fish-completions
+[U.] breeze                                           6.5.2 -> 6.5.3
+[C*] curl                                             8.16.0 ×3, 8.16.0-bin ×2, 8.16.0-dev, 8.16.0-man -> 8.16.0, 8.17.0-bin ×2, 8.17.0-dev, 8.17.0-man, 8.17.0 ×2
+[C.] dav1d                                            1.5.1 ×3 -> 1.5.1, 1.5.2 ×2
+[C*] dconf                                            0.40.0, 0.40.0_fish-completions, 0.40.0-lib ×3 -> 0.49.0, 0.49.0_fish-completions, 0.40.0-lib, 0.49.0-lib ×2
+[U.] ddcutil                                          2.2.1, 2.2.1-fish-completions -> 2.2.3, 2.2.3-fish-completions
+[U.] electron                                         38.7.0 -> 38.7.1
+[U.] electron-unwrapped                               38.7.0 -> 38.7.1
+[U*] exfatprogs                                       1.2.9, 1.2.9_fish-completions -> 1.3.0, 1.3.0_fish-completions
+[U.] fastfetch                                        2.55.0, 2.55.0-fish-completions, 2.55.0-man -> 2.55.1, 2.55.1-fish-completions, 2.55.1-man
+[U.] firefox                                          145.0, 145.0-fish-completions -> 145.0.1, 145.0.1-fish-completions
+[U.] firefox-unwrapped                                145.0 -> 145.0.1
+[U.] fluidsynth                                       2.5.0 ×2 -> 2.5.1 ×2
+[U.] gdk-pixbuf                                       2.44.3 ×2, 2.44.3-dev -> 2.44.4 ×2, 2.44.4-dev
+[U.] gsettings-desktop-schemas                        49.0 ×2 -> 49.1 ×2
+[U.] gtk4                                             4.20.2 ×2 -> 4.20.3 ×2
+[C.] hwdata                                           0.400 ×3 -> 0.400, 0.401 ×2
+[U.] hyprgraphics                                     0.3.0 -> 0.4.0
+[U.] hyprlang                                         0.6.5 -> 0.6.6
+[U.] ibus                                             1.5.32 -> 1.5.33
+[U.] intel-compute-runtime                            25.40.35563.4 -> 25.44.36015.5
+[U.] intel-graphics-compiler                          2.20.3 -> 2.22.2
+[C.] iso-codes                                        4.18.0 ×3 -> 4.18.0, 4.19.0 ×2
+[U.] kdecoration                                      6.5.2 -> 6.5.3
+[U.] libadwaita                                       1.8.0 ×2 -> 1.8.1 ×2
+[C*] libcap                                           2.76, 2.76-doc, 2.76-lib ×6, 2.76-man -> 2.77, 2.77-doc, 2.76-lib ×2, 2.77-man, 2.77-lib ×4
+[C.] libdeflate                                       1.24 ×3 -> 1.24, 1.25 ×2
+[U.] libdrm                                           2.4.127 ×2, 2.4.127-bin ×2, 2.4.127-dev ×2 -> 2.4.128 ×2, 2.4.128-bin ×2, 2.4.128-dev ×2
+[U.] libphonenumber                                   9.0.18 -> 9.0.19
+[U*] libressl                                         4.2.0, 4.2.0_fish-completions, 4.2.0-nc -> 4.2.1, 4.2.1_fish-completions, 4.2.1-nc
+[U.] librsvg                                          2.61.2 ×2, 2.61.2-dev -> 2.61.3 ×2, 2.61.3-dev
+[U.] liburcu                                          0.15.3 -> 0.15.5
+[C.] libxcrypt                                        4.4.38 ×3, 4.4.38-man -> 4.4.38, 4.5.2-man, 4.5.2 ×2
+[U.] livekit-libwebrtc                                125-unstable-2025-03-24, 125-unstable-2025-03-24-dev -> 125-unstable-2025-07-25, 125-unstable-2025-07-25-dev
+[U.] mbedtls                                          3.6.4 ×2 -> 3.6.5 ×2
+[U.] mediainfo.yazi                                   25.5.31-unstable-2025-11-04 -> 25.5.31-unstable-2025-11-15
+[U*] nano                                             8.6, 8.6_fish-completions -> 8.7, 8.7_fish-completions
+[C.] ngtcp2                                           1.15.1 ×3, 1.15.1-dev -> 1.15.1, 1.17.0-dev, 1.17.0 ×2
+[U*] niri-unstable                                    2025-11-22-4e609f9, 2025-11-22-4e609f9-doc -> 2025-11-26-8370c53, 2025-11-26-8370c53-doc
+[U.] nixos-system-nixos                               25.11.20251117.89c2b23 -> 25.11.20251124.5ae3b07
+[U.] nspr                                             4.37 ×2 -> 4.38.2 ×2
+[U.] nss                                              3.117 -> 3.118.1
+[U.] polkit-kde-agent                                 1-6.5.2 -> 1-6.5.3
+[C.] protobuf                                         32.1, 33.0 -> 32.1 ×2
+[U.] python3.13-brotli                                1.1.0 -> 1.2.0
+[U.] python3.13-pikepdf                               10.0.0 -> 10.0.2
+[U.] python3.13-protobuf                              6.33.0 -> 6.33.1
+[U.] python3.13-pygobject                             3.54.3, 3.54.3-dev -> 3.54.5, 3.54.5-dev
+[U.] qbittorrent                                      5.1.3, 5.1.3-fish-completions -> 5.1.4, 5.1.4-fish-completions
+[U.] qt3d                                             6.10.0 -> 6.10.1
+[C.] qt5compat                                        6.10.0 ×2 -> 6.10.0, 6.10.1
+[C.] qtbase                                           6.10.0 ×2, 6.10.0-only-plugins-qml ×2 -> 6.10.0, 6.10.0-only-plugins-qml, 6.10.1, 6.10.1-only-plugins-qml
+[C.] qtdeclarative                                    6.10.0 ×2 -> 6.10.0, 6.10.1
+[U.] qtimageformats                                   6.10.0 -> 6.10.1
+[U.] qtmultimedia                                     6.10.0, 6.10.0-fish-completions -> 6.10.1, 6.10.1-fish-completions
+[U.] qtquick3d                                        6.10.0 -> 6.10.1
+[C.] qtshadertools                                    6.10.0 ×2 -> 6.10.0, 6.10.1
+[U.] qtspeech                                         6.10.0 -> 6.10.1
+[C.] qtsvg                                            6.10.0 ×2 -> 6.10.0, 6.10.1
+[C.] qttools                                          6.10.0 ×2 -> 6.10.0, 6.10.1
+[C.] qttranslations                                   6.10.0 ×2 -> 6.10.0, 6.10.1
+[C.] qtwayland                                        6.10.0 ×2, 6.10.0-only-plugins-qml ×2 -> 6.10.0, 6.10.0-only-plugins-qml, 6.10.1, 6.10.1-only-plugins-qml
+[U.] ruff                                             0.14.4 -> 0.14.5
+[U.] sioyek                                           2.0.0-unstable-2025-10-10, 2.0.0-unstable-2025-10-10-fish-completions -> 2.0.0-unstable-2025-11-14, 2.0.0-unstable-2025-11-14-fish-completions
+[U.] sord                                             0.16.18 ×2 -> 0.16.20 ×2
+[U.] spidermonkey                                     140.4.0 -> 140.5.0
+[U.] sratom                                           0.6.18 ×2 -> 0.6.20 ×2
+[U*] systemd                                          258.1 ×2 -> 258.2 ×2
+[U.] systemd-minimal                                  258.1 ×2 -> 258.2 ×2
+[U.] systemd-minimal-libs                             258.1 ×2 -> 258.2 ×2
+[U.] telegram-desktop                                 6.3.0, 6.3.0-fish-completions -> 6.3.1, 6.3.1-fish-completions
+[U.] tinymist                                         0.14.0 -> 0.14.2
+[U.] ty                                               0.0.1-alpha.26 -> 0.0.1-alpha.27
+[U.] vscode                                           1.106.0, 1.106.0-fish-completions -> 1.106.2, 1.106.2-fish-completions
+[U.] vscode-extension-gemini-cli-vscode-ide-companion 0.15.3 -> 0.17.1
+[U.] vscode-extension-myriad-dreamin-tinymist         0.14.0 -> 0.14.2
+[U.] webkitgtk                                        2.50.1+abi=4.1, 2.50.1+abi=6.0 -> 2.50.2+abi=4.1, 2.50.2+abi=6.0
+[U.] xdg-desktop-portal-termfilechooser               1.2.1-unstable-2025-11-11, 1.2.1-unstable-2025-11-11-fish-completions -> 1.2.1-unstable-2025-11-25, 1.2.1-unstable-2025-11-25-fish-completions
+[U.] xdg-terminal-exec                                0.13.3, 0.13.3-fish-completions -> 0.14.0, 0.14.0-fish-completions
+[C.] xkeyboard-config                                 2.45 ×3 -> 2.45, 2.46 ×2
+[U.] zed-editor                                       0.212.6 -> 0.213.3
+[U.] zed-editor-wrapped                               0.212.6, 0.212.6-fish-completions -> 0.213.3, 0.213.3-fish-completions
+
+ADDED
+[A.] X-Reload-Triggers-polkit                         <none>
+[A.] rt5677-firmware                                  4.16-10-zstd
+[A.] rtl8192su-firmware                               0-unstable-2016-10-05-zstd
+[A.] rtl8761b-firmware-rtk1395-zstd                   <none>
+
+REMOVED
+[R.] mpv                                              0.40.0-dev, 0.40.0-doc, 0.40.0-man
+[R.] mpv-with-scripts                                 0.40.0
+[R.] rt5677-firmware-zstd                             <none>
+[R.] rtl8192su                                        0-unstable-2016-10-05-zstd
+[R.] rtl8761b-firmware-zstd                           <none>
+[R.] unit-initrd-find-nixos-closure.service           <none>
+[R.] unit-script-initrd-find-nixos-closure-start      <none>
+
+SIZE: 19.8 GiB -> 19.7 GiB
+DIFF: -34.7 MiB
