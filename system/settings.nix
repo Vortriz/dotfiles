@@ -115,16 +115,7 @@ in {
             owner = "root";
             group = "root";
             source = lib.getExe (
-                pkgs.espanso-wayland.overrideAttrs (old: {
-                    patchPhase =
-                        old.patchPhase or ""
-                        + ''
-                            substituteInPlace espanso/src/cli/daemon/mod.rs \
-                                --replace-fail \
-                                  'std::env::current_exe().expect("unable to obtain espanso executable location");' \
-                                  'std::ffi::OsString::from("/run/wrappers/bin/espanso");'
-                        '';
-                })
+                pkgs.espanso-wayland.override {securityWrapperPath = config.security.wrapperDir;}
             );
         };
     };

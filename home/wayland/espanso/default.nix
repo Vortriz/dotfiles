@@ -1,5 +1,6 @@
 {
     lib,
+    osConfig,
     pkgs,
     ...
 }: {
@@ -37,7 +38,7 @@
             Description = "Espanso daemon";
         };
         Service = {
-            ExecStart = "/run/wrappers/bin/espanso daemon";
+            ExecStart = "${osConfig.security.wrapperDir}/espanso daemon";
             Restart = "on-failure";
         };
         Install = {
