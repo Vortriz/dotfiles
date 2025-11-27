@@ -54,6 +54,7 @@
         ]
     },
     "explorer.confirmDragAndDrop": false,
+    "extensions.autoUpdate": false,
     "files.trimTrailingWhitespace": true,
     "git.confirmSync": false,
     "nix.enableLanguageServer": true,

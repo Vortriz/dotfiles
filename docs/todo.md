@@ -13,7 +13,7 @@
     - https://nixos.org/manual/nixos/stable/index.html#sec-installation-manual-installing
     - https://nixos.org/manual/nixos/stable/index.html#sec-installing-behind-proxy
     - https://nixos.wiki/wiki/NixOS_Installation_Guide
-- [ ] move niri config to hjem-rum
+- [ ] ~~move niri config to hjem-rum~~ nah
 - [ ] btrfs compression and impermanence
     - https://saylesss88.github.io/Getting_Started_with_Nix_1.html
     - https://wiki.nixos.org/wiki/Btrfs
