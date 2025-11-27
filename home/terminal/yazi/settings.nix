@@ -49,6 +49,13 @@
         };
 
         open = {
+            prepend_rules = [
+                {
+                    mime = "video/*";
+                    use = "open";
+                }
+            ];
+
             append_rules = [
                 {
                     mime = "application/pdf";
