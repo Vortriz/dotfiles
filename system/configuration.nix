@@ -27,6 +27,7 @@ in {
             outputs.overlays.modifications
 
             inputs.nur.overlays.default
+            inputs.quickshell.overlays.default
         ];
 
         config.allowUnfree = true;

@@ -10,7 +10,6 @@
 
     programs.dankMaterialShell = {
         enable = true;
-        quickshell.package = inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
         niri = {
             enableKeybinds = true;
