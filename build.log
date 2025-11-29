@@ -18718,3 +18718,35 @@ REMOVED
 
 SIZE: 19.8 GiB -> 19.7 GiB
 DIFF: -34.7 MiB
+
+---
+
+29/11/25 01:20:49 PM IST
+<<< /nix/store/lba76ds4g12b1gmvy7jqxp39js7rmar2-nixos-system-nixos-25.11.20251124.5ae3b07
+>>> /nix/store/wg0cggisbjh4a13479jzdmxdv6san9sz-nixos-system-nixos-25.11.20251124.5ae3b07
+
+CHANGED
+[U.] dankMaterialShell  0.6.2+date=2025-11-22_dirty -> 0.6.2+date=2025-11-28_dirty
+[U.] dmsCli             0.6.2+date=2025-11-22_dirty, 0.6.2+date=2025-11-22_dirty-fish-completions -> 0.6.2+date=2025-11-28_dirty, 0.6.2+date=2025-11-28_dirty-fish-completions
+[D.] gcc                14.3.0-lib ×4, 14.3.0-libgcc ×4 -> 14.3.0-lib ×3, 14.3.0-libgcc ×3
+[D.] wayland            1.24.0-dev ×2 -> 1.24.0-dev
+[D.] wayland-protocols  1.45 ×2 -> 1.45
+
+ADDED
+[A.] gnome-characters   49.1, 49.1-fish-completions
+[A+] gnome-disk-utility 46.1, 46.1_fish-completions
+
+REMOVED
+[R.] atkmm              2.28.4
+[R.] cairomm            1.14.5
+[R.] gpart              0.3
+[R-] gparted            1.7.0
+[R.] gtkmm              3.24.10
+[R.] libxkbcommon       1.11.0-dev ×2
+[R.] pangomm            2.46.4
+[R.] wayland-scanner    1.24.0 ×2
+[R.] wine-wow           10.0, 10.0-fish-completions
+[R.] xhost              1.0.10
+
+SIZE: 19.7 GiB -> 19.1 GiB
+DIFF: -694 MiB
