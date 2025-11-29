@@ -7,13 +7,13 @@
         celluloid
         diffpdf
         gnome-calculator
+        gnome-characters
         libreoffice
         obsidian
         pdfarranger
         qbittorrent
         vesktop
         warp
-        wineWowPackages.stable
         winetricks
         youtube-music
         # keep-sorted end

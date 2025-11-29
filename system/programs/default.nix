@@ -11,6 +11,8 @@
     programs = {
         # the default shell
         fish.enable = true;
+
+        gnome-disks.enable = true;
     };
 
     environment.systemPackages = with pkgs; [
@@ -19,7 +21,6 @@
         boxbuddy # when nix is not nixin
         distrobox # when nix is not nixin
         exfatprogs
-        gparted
         kdePackages.ksystemlog
         linux-wifi-hotspot
         lm_sensors
