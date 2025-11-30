@@ -36,6 +36,7 @@
         agenix = {
             url = "github:ryantm/agenix";
             inputs.nixpkgs.follows = "nixpkgs";
+            inputs.home-manager.follows = "home-manager";
             inputs.darwin.follows = "";
             inputs.systems.follows = "systems";
         };
@@ -63,6 +64,7 @@
         nur = {
             url = "github:nix-community/NUR";
             inputs.nixpkgs.follows = "nixpkgs";
+            inputs.flake-parts.follows = "flake-parts";
         };
         quickshell = {
             url = "git+https://git.outfoxxed.me/quickshell/quickshell";
@@ -72,6 +74,7 @@
             url = "github:nix-community/stylix";
             inputs.nixpkgs.follows = "nixpkgs";
             inputs.systems.follows = "systems";
+            inputs.flake-parts.follows = "flake-parts";
         };
         treefmt-nix = {
             url = "github:numtide/treefmt-nix";
@@ -81,10 +84,10 @@
         # keep-sorted end
 
         # only for testing purposes
-        nur-vortriz = {
-            url = "path:/mnt/HOUSE/dev/others/nur-packages";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
+        # nur-vortriz = {
+        #     url = "path:/mnt/HOUSE/dev/others/nur-packages";
+        #     inputs.nixpkgs.follows = "nixpkgs";
+        # };
     };
 
     # Enable at the time of fresh deployment
