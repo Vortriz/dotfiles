@@ -37,12 +37,7 @@ system := `echo $system`
 [group('SYSTEM')]
 @get-updates:
     echo -e "Updating flake and fetchgit inputs...\n"
-
-    nix flake update
-    for i in $(command fd sources.toml); \
-        set o $(echo $i | sed 's/.toml//'); \
-        nvfetcher -c $i -o $o; \
-    end
+    nvfetcher
 
 [group('SYSTEM')]
 @update: get-updates
