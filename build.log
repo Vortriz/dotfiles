@@ -18750,3 +18750,158 @@ REMOVED
 
 SIZE: 19.7 GiB -> 19.1 GiB
 DIFF: -694 MiB
+
+---
+
+01/12/25 02:17:25 AM IST
+<<< /nix/store/wg0cggisbjh4a13479jzdmxdv6san9sz-nixos-system-nixos-25.11.20251124.5ae3b07
+>>> /nix/store/lx49f8wb04vv8wfw3hdgd90jychsrnhb-nixos-system-sagittarius-26.05.20251127.2fad6ea
+
+CHANGED
+[U*] acl                                                    2.3.2-doc -> 2.3.2-man
+[U.] acpi-call                                              1.2.2-6.17.8 -> 1.2.2-6.17.9
+[U*] attr                                                   2.5.2-doc -> 2.5.2-man
+[D.] boehm-gc                                               8.2.8 ×2 -> 8.2.8
+[U.] firefox                                                145.0.1, 145.0.1-fish-completions -> 145.0.2, 145.0.2-fish-completions
+[U.] firefox-unwrapped                                      145.0.1 -> 145.0.2
+[U.] hyprutils                                              0.10.2 -> 0.10.3
+[U.] initrd-linux                                           6.17.8 -> 6.17.9
+[U.] lcevcdec                                               4.0.3-lib -> 4.0.4-lib
+[U.] libtraceevent                                          1.8.5 -> 1.8.6
+[U.] libwacom                                               2.16.1 -> 2.17.0
+[U.] linux                                                  6.17.8, 6.17.8-modules ×2, 6.17.8-modules-shrunk -> 6.17.9, 6.17.9-modules ×2, 6.17.9-modules-shrunk
+[U.] linux-firmware                                         20251111-zstd -> 20251125-zstd
+[U*] linux-pam                                              1.7.1-doc -> 1.7.1-man
+[U*] lm-sensors                                             3.6.2-doc -> 3.6.2-man
+[U.] man-cache                                              <none> -> <none> ×2
+[C*] niri-unstable                                          2025-11-26-8370c53, 2025-11-26-8370c53-doc -> 2025-11-30-311ca6b
+[U*] nix                                                    2.31.2-doc -> 2.31.2-man
+[U.] nix-manual                                             2.31.2 -> 2.31.2-man
+[U*] nixos-rebuild-ng                                       25.11, 25.11_fish-completions -> 26.05, 26.05_fish-completions
+[U*] ntfs3g                                                 2022.10.3-doc -> 2022.10.3-man
+[U.] obsidian                                               1.10.3, 1.10.3-fish-completions -> 1.10.6, 1.10.6-fish-completions
+[U*] p7zip                                                  17.06-doc -> 17.06-man
+[U*] pipewire                                               1.4.9-doc -> 1.4.9-man
+[U.] python3.13-cyclopts                                    4.2.3 -> 4.2.5
+[U.] python3.13-dbus-fast                                   2.46.3 -> 3.1.2
+[U.] rclone                                                 1.71.2, 1.71.2-fish-completions, 1.71.2-man -> 1.72.0, 1.72.0-fish-completions, 1.72.0-man
+[U.] ruff                                                   0.14.5 -> 0.14.6
+[U.] source                                                 <none> ×3 -> <none> ×8
+[U.] tinymist                                               0.14.2 -> 0.14.4
+[U.] unit-emergency.service                                 <none> -> <none> ×2
+[U.] unit-plymouth-halt.service                             <none> -> <none> ×2
+[U.] unit-plymouth-kexec.service                            <none> -> <none> ×2
+[U.] unit-plymouth-poweroff.service                         <none> -> <none> ×2
+[U.] unit-plymouth-quit-wait.service                        <none> -> <none> ×2
+[U.] unit-plymouth-quit.service                             <none> -> <none> ×2
+[U.] unit-plymouth-read-write.service                       <none> -> <none> ×2
+[U.] unit-plymouth-reboot.service                           <none> -> <none> ×2
+[U.] unit-plymouth-start.service                            <none> -> <none> ×2
+[U.] unit-rescue.service                                    <none> -> <none> ×2
+[U.] unit-systemd-tmpfiles-setup.service                    <none> -> <none> ×2
+[U.] vscode-extension-charliermarsh-ruff                    2025.28.0 -> 2025.30.0
+[U.] vscode-extension-myriad-dreamin-tinymist               0.14.2 -> 0.14.4
+[U.] x86_energy_perf_policy                                 6.12.58 -> 6.12.59
+[U.] xwayland-satellite-unstable                            2025-11-21-f379ff5 -> 2025-11-28-b362a38
+[U.] zed-editor                                             0.213.3 -> 0.214.5
+[U.] zed-editor-wrapped                                     0.213.3, 0.213.3-fish-completions -> 0.214.5, 0.214.5-fish-completions
+
+ADDED
+[A.] ShyFox-de69fb6                                         <none>
+[A.] autopair.fish                                          <none>
+[A.] b43-firmware                                           5.100.138-zstd, 6.30.163.46-zstd
+[A*] bind                                                   9.20.15-man
+[A-] boxbuddy                                               2.5.3-fish-completions
+[A.] broadcom-bt-firmware                                   12.0.1.1012-zstd
+[A.] bunny-yazi                                             1.3.2-unstable-2025-09-18
+[A.] colored-man-pages.fish                                 <none>
+[A.] custom-shell-yazi                                      0-unstable-2025-06-07
+[A*] e2fsprogs                                              1.47.3-man
+[A.] etc-man_db.conf                                        <none>
+[A.] facetimehd-calibration                                 5.1.5769-zstd
+[A.] facetimehd-firmware                                    1.43_5-zstd
+[A.] fish-bd.fish                                           <none>
+[A*] fuse                                                   2.9.9-man, 3.17.4-man
+[A.] fzf.fish.fish                                          <none>
+[A.] hover-after-moved-yazi                                 0-unstable-2025-09-28
+[A.] initrd-fstab                                           <none>
+[A.] initrd-system.conf                                     <none>
+[A.] initrd-units                                           <none>
+[A.] intel-ocl                                              5.0-63503
+[A*] iptables                                               1.8.11-man
+[A*] kbd                                                    2.9.0-man
+[A*] libressl                                               4.2.1-man
+[A*] lvm2                                                   2.03.35-man
+[A+] man-db                                                 2.13.1_fish-completions
+[A.] ncurses-abi5-compat                                    6.5
+[A.] nh-unwrapped                                           4.2.0
+[A+] nixos-configuration-reference-manpage                  <none>
+[A.] nixos-configuration-reference-manpage_fish-completions <none>
+[A.] nixos-system-sagittarius                               26.05.20251127.2fad6ea
+[A.] office-yazi                                            0-unstable-2025-09-20
+[A*] openssh                                                10.2p1-man
+[A*] podman                                                 5.7.0-man
+[A.] puffer.fish                                            <none>
+[A.] sponge.fish                                            <none>
+[A*] strace                                                 6.17-man
+[A*] systemd                                                258.2-man
+[A*] udisks                                                 2.10.2-man
+[A.] unit-initrd-find-nixos-closure.service                 <none>
+[A.] unit-initrd-nixos-activation.service                   <none>
+[A.] unit-initrd-parse-etc.service                          <none>
+[A.] unit-initrd-switch-root.service                        <none>
+[A.] unit-initrd.target                                     <none>
+[A.] unit-panic-on-fail.service                             <none>
+[A.] unit-plymouth-switch-root-initramfs.service            <none>
+[A.] unit-plymouth-switch-root.service                      <none>
+[A.] unit-script-initrd-find-nixos-closure-start            <none>
+[A.] unit-script-plymouth-start-pre-start                   <none>
+[A.] unit-sysroot-run.mount                                 <none>
+[A.] unit-systemd-tmpfiles-setup-sysroot.service            <none>
+[A*] util-linux                                             2.41.2-man
+[A.] what-size-yazi                                         0-unstable-2025-06-19
+[A.] xow_dongle-firmware                                    0-unstable-2025-04-22-zstd
+[A*] zstd                                                   1.5.7-man
+
+REMOVED
+[R*] bash-interactive                                       5.3p3-doc
+[R.] bat                                                    0.26.0, 0.26.0-fish-completions
+[R.] bunny.yazi                                             7137a44
+[R.] custom-shell.yazi-b04213d                              <none>
+[R*] dbus                                                   1.14.10-doc
+[R-] distrobox                                              1.8.2.0_fish-completions
+[R.] fd                                                     10.3.0-fish-completions
+[R.] fishplugin-autopair                                    1.0.4, 1.0.4-fish-completions
+[R.] fishplugin-colored-man-pages                           0-unstable-2022-04-30, 0-unstable-2022-04-30-fish-completions
+[R.] fishplugin-fish-bd                                     1.3.3, 1.3.3-fish-completions
+[R.] fishplugin-fzf.fish                                    10.3, 10.3-fish-completions
+[R.] fishplugin-puffer                                      1.0.0, 1.0.0-fish-completions
+[R.] fishplugin-sponge                                      1.1.0, 1.1.0-fish-completions
+[R-] fprintd                                                1.94.4_fish-completions, 1.94.4 ×2
+[R.] gpm-unstable                                           2020-06-17
+[R.] hm_.zoterozoterodefault.keep                           <none>
+[R.] hm_.zoterozoterodefaultuser.js                         <none>
+[R.] hm_.zoterozoteroprofiles.ini                           <none>
+[R.] hover-after-moved.yazi                                 76e496c
+[R*] libcap                                                 2.77-doc
+[R.] libfprint                                              1.94.9
+[R.] libfprint-focaltech                                    2808-a658-alt-1.94.4
+[R*] networkmanager                                         1.54.1-doc
+[R-] nixos-help                                             <none> ×2
+[R-] nixos-manual-html                                      <none>
+[R.] nixos-manual.desktop                                   <none>
+[R.] nixos-system-nixos                                     25.11.20251124.5ae3b07
+[R.] office.yazi                                            41ebef8
+[R.] unit-fprintd.service                                   <none>
+[R.] w3m                                                    0.5.5
+[R.] what-size.yazi-d896656                                 <none>
+[R*] wireplumber                                            0.5.12-doc
+[R*] xz                                                     5.8.1-doc
+[R.] yazi-plugins-ca18a2c                                   <none>
+[R.] zotero                                                 7.0.27, 7.0.27-fish-completions
+[R.] zotero-better-bibtex                                   7.0.35
+[R.] zotero-scipdf                                          1.3.0
+[R.] zotero-zotmoov                                         1.2.21
+
+SIZE: 19.1 GiB -> 18.9 GiB
+DIFF: -151 MiB
