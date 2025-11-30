@@ -11,8 +11,8 @@
 | **Browser**       | Firefox (with [ShyFox](https://github.com/Vortriz/ShyFox) theme)                        |
 | **Desktop Shell** | [Slightly modified version of DankMaterialShell](https://github.com/Vortriz/niri-shell) |
 
-# People
+# Acknowledgements
 
-I am thankful to a lot of people, including but not limited to:
+I am thankful to a lot of people, whose configs I have ~stolen~ borrowed and others whose work made my config more efficient. These include (but not limited to):
 
-Misterio77, vimjoyer, sodiboo ... (more as I remember)
+Misterio77, vimjoyer, sodiboo, quasigod, vic, drupol, ... (more as I remember)
