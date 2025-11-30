@@ -1,0 +1,10 @@
+{
+    unify.home = {
+        programs.eza = {
+            enable = true;
+
+            icons = "auto";
+            extraOptions = ["--group-directories-first" "--header"];
+        };
+    };
+}

@@ -18,15 +18,15 @@ system := `echo $system`
 
 [group('SYSTEM')]
 @test *args:
-    nh os test {{ args }}
+    nh os test -H sagittarius {{ args }}
 
 [group('SYSTEM')]
 @switch *args:
-    nh os switch {{ args }}
+    nh os switch -H sagittarius {{ args }}
 
 [group('SYSTEM')]
 @deploy *args: check
-    nh os switch {{ args }}
+    nh os switch -H sagittarius {{ args }}
 
     echo -e "\n---\n\n$(date '+%x %X')" >> build.log
     just get-diff >> build.log

@@ -1,9 +1,0 @@
-[ns]
-fetch.url = "https://raw.githubusercontent.com/Vortriz/nix-search-tv/refs/heads/main/nixpkgs.sh"
-src.manual = "latest"
-url.name = "nixpkgs.sh"
-
-[starship-nerd-font-symbols]
-fetch.url = "https://starship.rs/presets/toml/nerd-font-symbols.toml"
-src.manual = "latest"
-url.name = "nerd-font-symbols.toml"
