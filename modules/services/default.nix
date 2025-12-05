@@ -6,8 +6,6 @@
                 enableUserService = true;
             };
 
-            preload.enable = true;
-
             printing.enable = true;
 
             speechd.enable = false;
