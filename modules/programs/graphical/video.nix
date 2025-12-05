@@ -4,7 +4,11 @@
         pkgs,
         ...
     }: {
-        home.packages = [pkgs.haruna];
+        home.packages = with pkgs; [
+            haruna
+            celluloid
+            ffmpeg-full
+        ];
 
         xdg.mimeApps.defaultApplications = lib'.xdgAssociations "video" "haruna" [
             # keep-sorted start

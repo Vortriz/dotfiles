@@ -5,7 +5,10 @@
         ...
     }: {
         # image viewer
-        home.packages = [pkgs.loupe];
+        home.packages = with pkgs; [
+            loupe
+            imagemagick
+        ];
 
         xdg.mimeApps.defaultApplications = lib'.xdgAssociations "image" "org.gnome.Loupe.desktop" [
             # keep-sorted start

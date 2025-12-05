@@ -9,8 +9,7 @@
 
         shyfox = (pkgs.callPackages ../../../../_sources/generated.nix {}).shyfox.src;
     in {
-        programs.firefox.profiles.default.extraConfig = builtins.readFile "${shyfox}/user.js";
-
         home.file."${baseDir}/chrome".source = "${shyfox}/chrome";
+        programs.firefox.profiles.default.extraConfig = builtins.readFile "${shyfox}/user.js";
     };
 }

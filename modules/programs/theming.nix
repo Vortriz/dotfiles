@@ -63,10 +63,8 @@
                 autoEnable = false;
 
                 targets = {
-                    # keep-sorted start
                     gtk.enable = true;
                     kde.enable = false; # doesnt work for qt6 for now
-                    # keep-sorted end
                 };
             };
 
@@ -74,6 +72,15 @@
                 package = pkgs.bibata-cursors;
                 name = "Bibata-Modern-Classic";
                 size = 24;
+            };
+
+            gtk = {
+                enable = true;
+
+                iconTheme = {
+                    package = pkgs.adwaita-icon-theme;
+                    name = "Adwaita";
+                };
             };
         };
     };

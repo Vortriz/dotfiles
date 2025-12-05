@@ -1,10 +1,18 @@
 {
-    unify.home = {pkgs, ...}: {
-        programs.micro = {
-            enable = true;
-            package = pkgs.micro-full;
+    unify = {
+        home = {pkgs, ...}: {
+            programs.micro = {
+                enable = true;
+                package = pkgs.micro-full;
+            };
+
+            stylix.targets.micro.enable = true;
         };
 
-        stylix.targets.micro.enable = true;
+        nixos = {lib, ...}: {
+            environment.variables = {
+                EDITOR = lib.mkForce "micro";
+            };
+        };
     };
 }

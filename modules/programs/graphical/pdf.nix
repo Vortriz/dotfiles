@@ -1,5 +1,14 @@
 {
-    unify.home = {lib', ...}: {
+    unify.home = {
+        lib',
+        pkgs,
+        ...
+    }: {
+        home.packages = with pkgs; [
+            diffpdf
+            pdfarranger
+        ];
+
         programs.sioyek = {
             enable = true;
 

@@ -1,5 +1,5 @@
 {
-    unify.nixos = {
+    unify.nixos = {pkgs, ...}: {
         services = {
             # Auto mounting
             udisks2.enable = true;
@@ -8,5 +8,10 @@
         };
 
         programs.gnome-disks.enable = true;
+
+        environment.systemPackages = with pkgs; [
+            exfatprogs
+            baobab
+        ];
     };
 }

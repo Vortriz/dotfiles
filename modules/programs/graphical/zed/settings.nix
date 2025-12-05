@@ -24,7 +24,6 @@
                 buffer_font_size = fontSize;
                 context_servers = {
                     nixos = {
-                        source = "custom";
                         command = lib.getExe pkgs.mcp-nixos;
                         args = [];
                     };

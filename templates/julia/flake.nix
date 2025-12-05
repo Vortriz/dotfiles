@@ -33,7 +33,7 @@
                 # so there is no need to include other Julia packages here.
                 juliaEnv = pkgs.julia-bin.withPackages.override
                 {
-                    augmentedRegistry = (pkgs.callPackage ./__sources/generated.nix {}).registry.src;
+                    augmentedRegistry = (pkgs.callPackage ./_sources/generated.nix {}).registry.src;
                 }
                 [
                     "Pluto"

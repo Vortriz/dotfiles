@@ -15,7 +15,7 @@
         ];
 
         programs.niri.settings.binds."Mod+P" = {
-            action = config.lib.niri.actions.spawn-sh "ns";
+            action = config.lib.niri.actions.spawn-sh "xdg-terminal-exec --app-id=nix-search-tv ${pkgs.lib.getExe ns}";
             hotkey-overlay.title = "Open nix-search-tv";
         };
     };

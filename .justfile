@@ -37,6 +37,7 @@ system := `echo $system`
 [group('SYSTEM')]
 @get-updates:
     echo -e "Updating flake and fetchgit inputs...\n"
+    nix flake update
     nvfetcher
 
 [group('SYSTEM')]

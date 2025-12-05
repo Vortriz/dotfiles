@@ -31,7 +31,7 @@
 
                 # BACKGROUND
                 background = {
-                    path = builtins.toString ../../assets/wallpapers/19.png;
+                    path = builtins.toString ../../../assets/wallpapers/19.png;
                     blur_passes = 2;
                     contrast = 1;
                     brightness = 0.5;
