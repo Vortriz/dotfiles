@@ -334,8 +334,8 @@
         ]
       },
       "locked": {
-        "lastModified": 1765617738,
-        "narHash": "sha256-RwE4DkpQVAKGbeZiA7Pnx+Q5b5M854MZR4XML0JaXew=",
+        "lastModified": 1765623642,
+        "narHash": "sha256-LPQiu3HpqmXSi55VhO+M9JAT0nN99afzguQe4h60sFQ=",
         "path": "/mnt/HOUSE/dev/others/niri-shell",
         "type": "path"
       },

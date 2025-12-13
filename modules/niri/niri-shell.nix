@@ -11,6 +11,9 @@
                 inputs.quickshell.overlays.default
             ];
 
+            # to use dms-greet
+            systemd.user.services.niri-flake-polkit.enable = false;
+
             programs.dankMaterialShell.greeter = {
                 enable = true;
                 compositor.name = "niri";
