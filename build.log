@@ -18905,3 +18905,193 @@ REMOVED
 
 SIZE: 19.1 GiB -> 18.9 GiB
 DIFF: -151 MiB
+
+---
+
+13/12/25 06:29:37 PM IST
+<<< /nix/store/58d7h38g5qcy6l6jbhp7cqqkc0yispk6-nixos-system-sagittarius-26.05.20251202.418468a
+>>> /nix/store/0rywv7grl304b5nw4lh5jyaxp9m2r9yg-nixos-system-sagittarius-26.05.20251211.2fbfb1d
+
+CHANGED
+[U.] SDL_compat                                       1.2.70 -> 1.2.72
+[U.] apache-httpd                                     2.4.65 -> 2.4.66
+[U.] astro-language-server                            2.16.1 -> 2.16.2
+[U.] breeze                                           6.5.3 -> 6.5.4
+[U.] cni-plugins                                      1.8.0 -> 1.9.0
+[U.] dgop                                             0.1.9, 0.1.9-fish-completions -> 0.1.11, 0.1.11-fish-completions
+[U.] fastfetch                                        2.55.1, 2.55.1-fish-completions, 2.55.1-man -> 2.56.0, 2.56.0-fish-completions, 2.56.0-man
+[U.] firefox                                          145.0.2, 145.0.2-fish-completions -> 146.0, 146.0-fish-completions
+[U.] firefox-unwrapped                                145.0.2 -> 146.0
+[U*] gamescope                                        3.16.17 -> 3.16.18
+[U.] gh                                               2.83.1, 2.83.1-fish-completions -> 2.83.2, 2.83.2-fish-completions
+[U.] gst-plugins-rs                                   0.14.2 -> 0.14.4
+[U.] harper                                           1.0.0 -> 1.1.0
+[U.] hyprlang                                         0.6.6 -> 0.6.7
+[U.] kdecoration                                      6.5.3 -> 6.5.4
+[U.] kdegraphics-mobipocket                           25.08.3 -> 25.12.0
+[U*] ksystemlog                                       25.08.3 -> 25.12.0
+[U.] libbytesize                                      2.11 -> 2.12
+[U.] libgit2                                          1.9.1-lib -> 1.9.2-lib
+[U.] matugen                                          3.0.0, 3.0.0-fish-completions -> 3.1.0, 3.1.0-fish-completions
+[U.] mediainfo.yazi                                   25.5.31-unstable-2025-11-15 -> 25.5.31-unstable-2025-12-04
+[U.] mesa                                             25.3.0 ×2 -> 25.3.1 ×2
+[U.] netavark                                         1.17.0 -> 1.17.1
+[U*] niri-unstable                                    2025-12-02-f874b2f -> 2025-12-12-c22d835
+[C*] nix                                              2.31.2 ×2, 2.31.2-man -> 2.31.2+1 ×2, 2.31.2+1-man
+[U.] nix-cmd                                          2.31.2 -> 2.31.2+1
+[U.] nix-expr                                         2.31.2 -> 2.31.2+1
+[U.] nix-fetchers                                     2.31.2 -> 2.31.2+1
+[U.] nix-flake                                        2.31.2 -> 2.31.2+1
+[U.] nix-main                                         2.31.2 -> 2.31.2+1
+[U.] nix-manual                                       2.31.2-man -> 2.31.2+1-man
+[U.] nix-store                                        2.31.2 -> 2.31.2+1
+[U.] nix-util                                         2.31.2 -> 2.31.2+1
+[U*] nixos-icons                                      0-unstable-2024-04-10 -> 0-unstable-2025-06-28
+[U.] nixos-system-sagittarius                         26.05.20251202.418468a -> 26.05.20251211.2fbfb1d
+[U.] nodejs                                           24.11.1 -> 25.2.1
+[U.] nss                                              3.118.1 -> 3.119.1
+[U.] nuspell                                          5.1.6-lib -> 5.1.7-lib
+[U.] pavucontrol                                      6.1, 6.1-fish-completions -> 6.2, 6.2-fish-completions
+[U.] python3.13-authlib                               1.6.3 -> 1.6.5
+[U.] python3.13-yt-dlp-ejs                            0.3.1 -> 0.3.2
+[U.] restore.yazi                                     25.5.31-unstable-2025-09-25 -> 25.5.31-unstable-2025-12-04
+[U.] roboto                                           3.012 -> 3.014
+[U.] ruff                                             0.14.7 -> 0.14.8
+[U.] rust-analyzer                                    2025-10-28 -> 2025-12-08
+[U.] rust-analyzer-unwrapped                          2025-10-28 -> 2025-12-08
+[U.] samba                                            4.22.5 ×2, 4.22.5-man -> 4.22.6 ×2, 4.22.6-man
+[U.] sioyek                                           2.0.0-unstable-2025-11-14, 2.0.0-unstable-2025-11-14-fish-completions -> 2.0.0-unstable-2025-12-05, 2.0.0-unstable-2025-12-05-fish-completions
+[U.] starship.yazi                                    25.4.8-unstable-2025-07-08 -> 25.4.8-unstable-2025-12-03
+[U*] strace                                           6.17, 6.17-man -> 6.18, 6.18-man
+[U.] telegram-desktop                                 6.3.1, 6.3.1-fish-completions -> 6.3.4, 6.3.4-fish-completions
+[U.] ty                                               0.0.1-alpha.29 -> 0.0.1-alpha.32
+[D.] unit-emergency.service                           <none> ×2 -> <none>
+[D.] unit-plymouth-halt.service                       <none> ×2 -> <none>
+[D.] unit-plymouth-poweroff.service                   <none> ×2 -> <none>
+[D.] unit-plymouth-quit-wait.service                  <none> ×2 -> <none>
+[D.] unit-plymouth-quit.service                       <none> ×2 -> <none>
+[D.] unit-plymouth-read-write.service                 <none> ×2 -> <none>
+[D.] unit-plymouth-start.service                      <none> ×2 -> <none>
+[D.] unit-rescue.service                              <none> ×2 -> <none>
+[U.] vscode-extension-charliermarsh-ruff              2025.30.0 -> 2025.32.0
+[U.] vscode-extension-gemini-cli-vscode-ide-companion 0.18.4 -> 0.19.3
+[C.] webkitgtk                                        2.50.2+abi=4.1, 2.50.2+abi=6.0 -> 2.50.3+abi=4.1
+[U.] x86_energy_perf_policy                           6.12.60 -> 6.12.61
+[U.] xwayland-satellite-unstable                      2025-12-03-1b918e2 -> 2025-12-10-f0ad674
+[U.] yt-dlp                                           2025.11.12 -> 2025.12.08
+[U.] zed-editor                                       0.214.7 -> 0.216.0
+[U.] zed-editor-wrapped                               0.214.7, 0.214.7-fish-completions -> 0.216.0, 0.216.0-fish-completions
+
+ADDED
+[A.] 10-dmsgreeter.conf                               <none>
+[A.] dms-greeter                                      <none> ×2
+[A.] dms-shell                                        1.2-unstable+date=2025-12-13_dirty, 1.2-unstable+date=2025-12-13_dirty-fish-completions
+[A.] dms.service                                      <none>
+[A+] fprintd                                          1.94.4, 1.94.4_fish-completions, 1.94.5
+[A.] greetd                                           0.10.3
+[A.] greetd.pam                                       <none>
+[A.] greetd.toml                                      <none>
+[A.] hm_.zoterozoterodefault.keep                     <none>
+[A.] hm_.zoterozoterodefaultuser.js                   <none>
+[A.] hm_.zoterozoteroprofiles.ini                     <none>
+[A.] img-process                                      <none>
+[A.] initrd-bin-env                                   <none>
+[A.] initrd-udev-rules                                <none>
+[A.] libfprint                                        1.94.9
+[A.] libfprint-focaltech                              2808-a658-alt-1.94.4
+[A.] nix-output-monitor                               2.1.8-fish-completions
+[A.] nix-your-shell                                   1.4.6, 1.4.6-fish-completions
+[A*] podman-docker-compat                             5.7.0-man
+[A.] settings.json                                    <none>
+[A.] unit-autovt-tty1.service-disabled                <none>
+[A.] unit-fprintd.service                             <none>
+[A.] unit-greetd.service                              <none>
+[A.] unit-niri-flake-polkit.service-disabled          <none>
+[A.] unit-script-greetd-pre-start                     <none>
+[A.] zotero                                           7.0.30, 7.0.30-fish-completions
+[A.] zotero-better-bibtex                             7.0.68
+[A.] zotero-scipdf                                    1.3.0
+[A.] zotero-zotmoov                                   1.2.25
+
+REMOVED
+[R.] SDL2_ttf                                         2.24.0
+[R.] Xresources-Xft                                   <none>
+[R-] accountsservice                                  23.13.9
+[R.] appstream-glib                                   0.8.2
+[R.] ayatana-ido                                      0.10.4
+[R.] boost                                            1.87.0-dev
+[R.] check-dconf-db                                   <none>
+[R.] cliphist                                         0.7.0, 0.7.0-fish-completions
+[R.] colord-gtk                                       0.3.1 ×2
+[R.] custom.conf                                      <none>
+[R.] dankMaterialShell                                0.6.2+date=2025-12-05_dirty, 0.6.2+date=2025-12-05_dirty-fish-completions
+[R.] dconf-system-config                              <none>
+[R.] ddcutil                                          2.2.3-fish-completions
+[R.] dmsCli                                           0.6.2+date=2025-12-05_dirty, 0.6.2+date=2025-12-05_dirty-fish-completions
+[R.] evolution-data-server                            3.58.2
+[R.] fira-code                                        6.2-fish-completions
+[R.] freerdp                                          3.18.0
+[R-] gdm                                              <none>, 49.2
+[R.] gdm-autologin.pam                                <none>
+[R.] gdm-fingerprint.pam                              <none>
+[R.] gdm-launch-environment.pam                       <none>
+[R.] gdm-password.pam                                 <none>
+[R.] gdm.pam                                          <none>
+[R.] gnome-bluetooth                                  47.1
+[R.] gnome-clocks                                     49.0
+[R.] gnome-color-manager                              3.32.0
+[R.] gnome-control-center                             49.2.2
+[R.] gnome-remote-desktop                             49.1
+[R.] gnome-session                                    49.2
+[R.] gnome-shell                                      49.2
+[R.] gsound                                           1.0.3
+[R.] hyprpicker                                       0.4.5, 0.4.5-fish-completions
+[R.] ibus                                             1.5.33
+[R.] initrd-fstab                                     <none>
+[R.] initrd-system.conf                               <none>
+[R.] initrd-units                                     <none>
+[R.] inotify-tools                                    4.25.9.0
+[R.] inter                                            4.1-fish-completions
+[R.] libayatana-appindicator                          0.5.92
+[R.] libayatana-indicator                             0.9.4
+[R.] libglycin                                        2.0.7
+[R.] libnma                                           1.10.6 ×2
+[R.] libphonenumber                                   9.0.19
+[R.] libseccomp                                       2.6.0, 2.6.0-dev
+[R.] material-symbols                                 4.0.0-unstable-2025-09-18-fish-completions
+[R.] mcpp                                             2.7.2.2
+[R.] mission-center                                   1.0.2, 1.0.2-fish-completions
+[R.] mutter                                           49.2
+[R.] network-manager-applet                           1.36.0
+[R.] nixos-init                                       0.1.0
+[R.] obsidian-img-process                             <none>
+[R.] polkit-kde-agent                                 1-6.5.3
+[R.] python3.13-argcomplete                           3.6.2
+[R.] qt5ct                                            1.9, 1.9-fish-completions
+[R.] qt6ct                                            0.11, 0.11-fish-completions
+[R.] qtmultimedia                                     6.10.1-fish-completions
+[R.] tecla                                            49.0
+[R.] unit-accounts-daemon.service                     <none>
+[R.] unit-display-manager.service                     <none>
+[R.] unit-initrd-find-nixos-closure.service           <none>
+[R.] unit-initrd-nixos-activation.service             <none>
+[R.] unit-initrd-parse-etc.service                    <none>
+[R.] unit-initrd-switch-root.service                  <none>
+[R.] unit-initrd.target                               <none>
+[R.] unit-niri-flake-polkit.service                   <none>
+[R.] unit-panic-on-fail.service                       <none>
+[R.] unit-plymouth-switch-root-initramfs.service      <none>
+[R.] unit-plymouth-switch-root.service                <none>
+[R.] unit-script-display-manager-start                <none>
+[R.] unit-script-initrd-find-nixos-closure-start      <none>
+[R.] unit-script-plymouth-start-pre-start             <none>
+[R.] unit-systemd-tmpfiles-setup-sysroot.service      <none>
+[R.] unzip                                            6.0
+[R.] uriparser                                        0.9.9
+[R.] vte                                              0.82.2
+[R.] xorg-server                                      21.1.20
+[R.] xrdb                                             1.2.2
+[R.] xsession-wrapper                                 <none>
+
+SIZE: 18.8 GiB -> 18.5 GiB
+DIFF: -367 MiB
