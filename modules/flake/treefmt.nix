@@ -13,7 +13,6 @@
                 alejandra.enable = true;
                 deadnix.enable = true;
                 statix.enable = true;
-                toml-sort.enable = true;
                 prettier.enable = true;
                 keep-sorted.enable = true;
             };
