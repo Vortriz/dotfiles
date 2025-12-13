@@ -55,6 +55,7 @@
         niri-shell = {
             url = "/mnt/HOUSE/dev/others/niri-shell";
             inputs.nixpkgs.follows = "nixpkgs";
+            inputs.quickshell.follows = "quickshell";
         };
         nix-index-database = {
             url = "github:nix-community/nix-index-database";

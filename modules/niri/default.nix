@@ -10,8 +10,6 @@
             };
 
             niri-flake.cache.enable = false;
-
-            services.displayManager.gdm.enable = true;
         };
 
         home = {pkgs, ...}: {

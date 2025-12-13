@@ -62,9 +62,10 @@ _: {
                 shadow.enable = true;
 
                 matches = [
-                    {app-id = "io.missioncenter.MissionCenter";}
                     {app-id = "org.gnome.Calculator";}
                     {app-id = "it.catboy.ripdrag";}
+                    {app-id = "zenity";}
+                    {title = "System Monitor";}
                 ];
             }
             {
@@ -87,10 +88,10 @@ _: {
 
             # specific window rules
             {
-                matches = [{app-id = "io.missioncenter.MissionCenter";}];
+                matches = [{title = "System Monitor";}];
 
                 default-window-height.proportion = 0.6;
-                default-column-width.proportion = 0.75;
+                default-column-width.proportion = 0.6;
 
                 focus-ring.active.color = colors.withHashtag.base0E;
                 border.active.color = colors.withHashtag.base0E;

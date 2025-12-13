@@ -18,29 +18,7 @@
                 {
                     "Mod+Shift+Slash".action = show-hotkey-overlay;
 
-                    "Print" = {
-                        action.screenshot = [];
-                        hotkey-overlay.title = "Take screenshot";
-                    };
-
-                    "Ctrl+Print" = {
-                        action.screenshot-window = [];
-                        hotkey-overlay.title = "Take screenshot of focused window";
-                    };
-                    "Ctrl+Shift+Print" = {
-                        action.screenshot-screen = []; # [MARK] waiting on https://github.com/sodiboo/niri-flake/issues/944
-                        hotkey-overlay.title = "Take screenshot of focused display";
-                    };
-
-                    "Mod+C" = {
-                        action = spawn-sh "${getExe pkgs.zenity} --color-selection --title 'Color picker' --color $(${getExe pkgs.hyprpicker} -an)";
-                        hotkey-overlay.title = "Open color picker";
-                    };
-
                     "Mod+Alt+W".action = spawn-sh (getExe scripts.toggle-warp);
-
-                    # [MARK] improve after https://github.com/YaLTeR/niri/issues/2664
-                    "Ctrl+Shift+O".action = spawn-sh (getExe scripts.obsidian-img);
 
                     "Mod+H" = {
                         action = spawn-sh (getExe scripts.cycle-rr);
