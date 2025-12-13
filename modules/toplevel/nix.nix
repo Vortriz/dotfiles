@@ -45,6 +45,7 @@
         };
 
         home = {
+            # nh
             programs.nh = {
                 enable = true;
 
@@ -55,16 +56,24 @@
                 };
             };
 
+            # nix-index
             imports = [inputs.nix-index-database.homeModules.nix-index];
 
             programs.nix-index.enable = true;
             programs.nix-index-database.comma.enable = true;
 
+            # direnv
             programs.direnv = {
                 enable = true;
                 nix-direnv.enable = true;
 
                 silent = true;
+            };
+
+            # nix-your-shell
+            programs.nix-your-shell = {
+                enable = true;
+                nix-output-monitor.enable = true;
             };
         };
     };
