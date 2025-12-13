@@ -66,6 +66,12 @@
             inputs.nixpkgs.follows = "nixpkgs";
             inputs.flake-parts.follows = "flake-parts";
         };
+        nur-vortriz = {
+            url = "path:/mnt/HOUSE/dev/others/nur-packages";
+            inputs.nixpkgs.follows = "nixpkgs";
+            inputs.systems.follows = "systems";
+            inputs.flake-parts.follows = "flake-parts";
+        };
         quickshell = {
             url = "git+https://git.outfoxxed.me/quickshell/quickshell";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -82,12 +88,6 @@
         };
         vicinae.url = "github:vicinaehq/vicinae";
         # keep-sorted end
-
-        # only for testing purposes
-        # nur-vortriz = {
-        #     url = "path:/mnt/HOUSE/dev/others/nur-packages";
-        #     inputs.nixpkgs.follows = "nixpkgs";
-        # };
     };
 
     # Enable at the time of fresh deployment

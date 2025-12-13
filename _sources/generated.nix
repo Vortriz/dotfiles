@@ -75,4 +75,40 @@
       sha256 = "sha256-KssAxwGVYGGBMcH6Lwq1sllYwqrD95TfpcjydMtCceM=";
     };
   };
+  zotero-better-bibtex = {
+    pname = "zotero-better-bibtex";
+    version = "7.0.68";
+    src = fetchurl {
+      url = "https://github.com/retorquere/zotero-better-bibtex/releases/download/v7.0.68/zotero-better-bibtex-7.0.68.xpi";
+      sha256 = "sha256-Nr6tSqeMqvmMl52crlPTegyquVbT1Y6nnve+muvEKT8=";
+    };
+    addonId = "better-bibtex@iris-advies.com";
+    license = "mit";
+    homepage = "https://github.com/retorquere/zotero-better-bibtex";
+    description = "Make Zotero effective for us LaTeX holdouts";
+  };
+  zotero-scipdf = {
+    pname = "zotero-scipdf";
+    version = "1.3.0";
+    src = fetchurl {
+      url = "https://github.com/syt2/zotero-scipdf/releases/download/V1.3.0/sci-pdf.xpi";
+      sha256 = "sha256-Z0OVtN7JHmvfE0hZ6rQ6VUgLFJPF3hnewJn/iQ+Ma8c=";
+    };
+    addonId = "scipdf@ytshen.com";
+    license = "agpl3Plus";
+    homepage = "https://github.com/syt2/zotero-scipdf";
+    description = "Download PDF from Sci-Hub automatically (For Zotero7)";
+  };
+  zotero-zotmoov = {
+    pname = "zotero-zotmoov";
+    version = "1.2.25";
+    src = fetchurl {
+      url = "https://github.com/wileyyugioh/zotmoov/releases/download/1.2.25/zotmoov-1.2.25-fx.xpi";
+      sha256 = "sha256-WnmKB5bR09KpR8KuLCK6rC8Ur2n6+Uw26CaeNzJUj1g=";
+    };
+    addonId = "zotmoov@wileyy.com";
+    license = "gpl3Only";
+    homepage = "https://github.com/wileyyugioh/zotmoov";
+    description = "Mooves attachments and links them";
+  };
 }

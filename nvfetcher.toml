@@ -1,3 +1,5 @@
+# espanso plugins
+
 [actually-all-emojis-spaces]
 fetch.git = "https://github.com/jobiewong/espanso-emojis"
 src.git = "https://github.com/jobiewong/espanso-emojis"
@@ -10,16 +12,53 @@ src.git = "https://github.com/anthonygraignic/espanso-package-lower-upper"
 fetch.git = "https://github.com/jpmvferreira/espanso-mega-pack"
 src.git = "https://github.com/jpmvferreira/espanso-mega-pack"
 
+# nix-search-tv
 [ns]
 fetch.url = "https://raw.githubusercontent.com/Vortriz/nix-search-tv/refs/heads/main/nixpkgs.sh"
 src.manual = "latest"
 url.name = "nixpkgs.sh"
 
+# firefox theme
 [shyfox]
 fetch.git = "https://github.com/Vortriz/ShyFox"
 src.git = "https://github.com/Vortriz/ShyFox"
 
+# starship symbols
 [starship-nerd-font-symbols]
 fetch.url = "https://starship.rs/presets/toml/nerd-font-symbols.toml"
 src.manual = "latest"
 url.name = "nerd-font-symbols.toml"
+
+# zotero plugins
+[zotero-better-bibtex]
+fetch.url = "https://github.com/retorquere/zotero-better-bibtex/releases/download/v$ver/zotero-better-bibtex-$ver.xpi"
+
+[zotero-better-bibtex.passthru]
+addonId = "better-bibtex@iris-advies.com"
+description = "Make Zotero effective for us LaTeX holdouts"
+homepage = "https://github.com/retorquere/zotero-better-bibtex"
+license = "mit"
+src.github_tag = "retorquere/zotero-better-bibtex"
+src.prefix = "v"
+src.exclude_regex = "v6.7.267"
+
+[zotero-scipdf]
+fetch.url = "https://github.com/syt2/zotero-scipdf/releases/download/V$ver/sci-pdf.xpi"
+
+[zotero-scipdf.passthru]
+addonId = "scipdf@ytshen.com"
+description = "Download PDF from Sci-Hub automatically (For Zotero7)"
+homepage = "https://github.com/syt2/zotero-scipdf"
+license = "agpl3Plus"
+src.github = "syt2/zotero-scipdf"
+src.prefix = "V"
+
+[zotero-zotmoov]
+fetch.url = "https://github.com/wileyyugioh/zotmoov/releases/download/$ver/zotmoov-$ver-fx.xpi"
+
+[zotero-zotmoov.passthru]
+addonId = "zotmoov@wileyy.com"
+description = "Mooves attachments and links them"
+homepage = "https://github.com/wileyyugioh/zotmoov"
+license = "gpl3Only"
+src.github = "wileyyugioh/zotmoov"

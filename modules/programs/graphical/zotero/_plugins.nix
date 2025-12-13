@@ -36,7 +36,7 @@
                 license = lib.licenses.${license};
             };
         };
-    addonSources = import ./_sources/generated.nix {
+    addonSources = import ../../../../_sources/generated.nix {
         inherit fetchgit fetchurl fetchFromGitHub dockerTools;
     };
 in

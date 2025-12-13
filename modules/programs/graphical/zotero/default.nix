@@ -1,17 +1,17 @@
 {inputs, ...}: {
     unify.home = {
         lib,
-        config,
+        hostConfig,
         pkgs,
         ...
     }: {
-        imports = [inputs.nur.repos.Vortriz.homeModules.zotero];
+        imports = [inputs.nur-vortriz.homeModules.zotero];
         programs.zotero = {
             enable = true;
 
             profiles.default = {
                 settings = let
-                    path = "${config.dirs.storage}/nonlinear-vault/03.resources/articles";
+                    path = "${hostConfig.dirs.storage}/nonlinear-vault/03.resources/articles";
                     bbt-citekey-format = "auth.lower + year";
                 in {
                     # keep-sorted start
@@ -27,7 +27,7 @@
                     # keep-sorted end
                 };
 
-                extensions = with pkgs.callPackages ./plugins.nix {}; [
+                extensions = with pkgs.callPackages ./_plugins.nix {}; [
                     # keep-sorted start
                     zotero-better-bibtex
                     zotero-scipdf
