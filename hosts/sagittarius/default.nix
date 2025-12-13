@@ -60,7 +60,7 @@
 
             services = {
                 fprintd = {
-                    enable = false;
+                    enable = true;
                     package = pkgs.nur.repos.Vortriz.fprintd.override {
                         libfprint = fprintPkg;
                     };
