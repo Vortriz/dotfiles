@@ -1,7 +1,7 @@
 {
     args = {
         lib' = {
-            xdgAssociations = type: program: list:
+            xdgAssociations = program: type: list:
                 builtins.listToAttrs (map (e: {
                     name = "${type}/${e}";
                     value = program;

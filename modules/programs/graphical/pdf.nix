@@ -1,6 +1,6 @@
 {
     unify.home = {
-        lib',
+        config,
         pkgs,
         ...
     }: {
@@ -41,8 +41,6 @@
             # keep-sorted end
         };
 
-        xdg.mimeApps.defaultApplications = lib'.xdgAssociations "application" "sioyek.desktop" [
-            "pdf"
-        ];
+        xdg.mimeApps.defaultApplicationPackages = [config.programs.sioyek.package];
     };
 }
