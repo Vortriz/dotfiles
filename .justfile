@@ -74,7 +74,7 @@ alias pf := prefetch
         pkgs = nixpkgs.legacyPackages.{{ system }}; \
     in \
         {inherit flake pkgs;} // builtins // nixpkgs.lib // \
-        flake.nixosConfigurations.nixos.config // flake.nixosConfigurations.nixos.config.home-manager.users"
+        flake.nixosConfigurations.sagittarius.config // flake.nixosConfigurations.sagittarius.config.home-manager.users"
 
 [group('TOOLS')]
 @get-diff:
