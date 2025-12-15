@@ -25,7 +25,6 @@
                     nix-melt
                     nix-prefetch-git
                     nix-prefetch-github
-                    nvfetcher
                     ripgrep
                     # keep-sorted end
                 ])

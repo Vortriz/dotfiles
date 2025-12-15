@@ -38,7 +38,6 @@ system := `echo $system`
 @get-updates:
     echo -e "Updating flake and fetchgit inputs...\n"
     nix flake update
-    nvfetcher
 
 [group('SYSTEM')]
 @update: get-updates
@@ -81,7 +80,6 @@ alias pf := prefetch
     dix \
     $(command rg --no-line-number --only-matching --replace '$1' ">>> (\S+\-nixos\-system\-nixos\-\S+)" build.log | tail -1) \
     {{ profiles-path }}/system-$(command just _get-current-gen)-link
-
 
 [group('TOOLS')]
 @get-nur-status:
