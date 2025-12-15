@@ -1,10 +1,10 @@
-{
-    unify.home = {pkgs, ...}: {
+{inputs, ...}: {
+    unify.home = {
         programs.starship = {
             enable = true;
 
             settings =
-                (pkgs.callPackages ../../../_sources/generated.nix {}).starship-nerd-font-symbols.src
+                inputs.starship-nerd-font-symbols
                 |> builtins.readFile
                 |> builtins.fromTOML;
         };

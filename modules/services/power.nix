@@ -45,7 +45,7 @@
             serviceConfig = {
                 Restart = "on-failure";
                 RestartSec = 5;
-                ExecStart = pkgs.lib.getExe pkgs.nur.repos.Vortriz.batteryd;
+                ExecStart = pkgs.lib.getExe pkgs.batteryd;
             };
         };
     };

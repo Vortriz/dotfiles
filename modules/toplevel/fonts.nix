@@ -24,7 +24,8 @@
                 source-sans-pro
                 # keep-sorted end
             ]
-            ++ (with pkgs.nur.repos.Vortriz; [
+            # from nur
+            ++ (with pkgs; [
                 HelveticaNeueCyr
                 SFMono-Nerd-Font-Ligaturized
             ])

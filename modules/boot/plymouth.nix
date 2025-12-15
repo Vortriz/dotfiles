@@ -4,7 +4,7 @@
             plymouth = {
                 enable = true;
                 theme = "nixos";
-                themePackages = [pkgs.nur.repos.Vortriz.nixos-boot-plymouth-theme];
+                themePackages = [pkgs.nixos-boot-plymouth-theme];
             };
 
             # max resolution so that loader graphics look good

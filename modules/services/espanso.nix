@@ -18,6 +18,7 @@
 
         home = {
             lib,
+            osConfig,
             pkgs,
             ...
         }: {
@@ -39,15 +40,15 @@
                 ];
             };
 
+            # plugins
             xdg.configFile = let
                 baseDir = "espanso/match/packages";
-                packages-src = pkgs.callPackages ../../_sources/generated.nix {};
             in {
-                "${baseDir}/greek-letters-improved".source = "${packages-src.mega-pack.src}/greek-letters-improved";
-                "${baseDir}/math-symbols".source = "${packages-src.mega-pack.src}/math-symbols";
-                "${baseDir}/super-sub-scripts".source = "${packages-src.mega-pack.src}/super-sub-scripts";
-                "${baseDir}/actually-all-emojis-spaces".source = "${packages-src.actually-all-emojis-spaces.src}/espanso_package/actually-all-emojis-spaces/0.3.0";
-                "${baseDir}/lower-upper".source = "${packages-src.lower-upper.src}/0.1.0";
+                "${baseDir}/greek-letters-improved".source = pkgs.espanso-greek-letters-improved;
+                "${baseDir}/math-symbols".source = pkgs.espanso-math-symbols;
+                "${baseDir}/super-sub-scripts".source = pkgs.espanso-super-sub-scripts;
+                "${baseDir}/actually-all-emojis-spaces".source = pkgs.espanso-actually-all-emojis-spaces;
+                "${baseDir}/lower-upper".source = pkgs.espanso-lower-upper;
             };
 
             systemd.user.services.espanso = lib.mkForce {
@@ -55,8 +56,7 @@
                     Description = "Espanso daemon";
                 };
                 Service = {
-                    # ExecStart = "${config.security.wrapperDir}/espanso daemon";
-                    ExecStart = "/run/wrapper/bin/espanso daemon";
+                    ExecStart = "${osConfig.security.wrapperDir}/espanso daemon";
                     Restart = "on-failure";
                 };
                 Install = {

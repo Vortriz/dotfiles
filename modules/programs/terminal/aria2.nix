@@ -10,7 +10,7 @@
             pkgs,
             ...
         }: {
-            home.packages = [pkgs.nur.repos.Vortriz.dl];
+            home.packages = [pkgs.dl];
 
             programs.aria2 = {
                 enable = true;

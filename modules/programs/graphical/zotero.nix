@@ -27,7 +27,7 @@
                     # keep-sorted end
                 };
 
-                extensions = with pkgs.callPackages ./_plugins.nix {}; [
+                extensions = with pkgs; [
                     # keep-sorted start
                     zotero-better-bibtex
                     zotero-scipdf

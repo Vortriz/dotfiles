@@ -11,7 +11,7 @@
             pkgs,
             ...
         }: let
-            fprintPkg = pkgs.nur.repos.Vortriz.libfprint-focaltech-2808-a658-alt;
+            fprintPkg = pkgs.libfprint-focaltech-2808-a658-alt;
         in {
             imports = [
                 inputs.nixos-hardware.nixosModules.common-cpu-intel
@@ -61,7 +61,7 @@
             services = {
                 fprintd = {
                     enable = true;
-                    package = pkgs.nur.repos.Vortriz.fprintd.override {
+                    package = pkgs.fprintd.override {
                         libfprint = fprintPkg;
                     };
                 };

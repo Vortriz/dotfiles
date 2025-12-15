@@ -1,11 +1,11 @@
-{
+{inputs, ...}: {
     unify.home = {
         config,
         pkgs,
         ...
     }: let
         ns =
-            (pkgs.callPackages ../../../_sources/generated.nix {}).ns.src
+            inputs.nix-search-tv-script
             |> builtins.readFile
             |> pkgs.writeShellScriptBin "ns";
     in {

@@ -4,7 +4,7 @@
         pkgs,
         ...
     }: let
-        xdp-termfilechooser = pkgs.nur.repos.Vortriz.xdg-desktop-portal-termfilechooser;
+        xdp-termfilechooser = pkgs.xdg-desktop-portal-termfilechooser;
     in {
         programs.yazi = {
             enable = true;

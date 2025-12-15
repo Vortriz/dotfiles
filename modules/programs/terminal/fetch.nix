@@ -120,6 +120,6 @@
             };
         };
 
-        home.packages = [pkgs.nur.repos.Vortriz.dunefetch];
+        home.packages = [pkgs.dunefetch];
     };
 }

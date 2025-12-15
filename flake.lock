@@ -334,8 +334,8 @@
         ]
       },
       "locked": {
-        "lastModified": 1765623642,
-        "narHash": "sha256-LPQiu3HpqmXSi55VhO+M9JAT0nN99afzguQe4h60sFQ=",
+        "lastModified": 1765693888,
+        "narHash": "sha256-ziCLavwb8gjz+TAepPiaiV7Mu0fZnoSYVNFLIrIcK+c=",
         "path": "/mnt/HOUSE/dev/others/niri-shell",
         "type": "path"
       },
@@ -395,6 +395,18 @@
         "owner": "nix-community",
         "repo": "nix-index-database",
         "type": "github"
+      }
+    },
+    "nix-search-tv-script": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-Hu2t0BUTKWlaw/wivaA3eFP05o/LhJanBdWNl8dIGis=",
+        "type": "file",
+        "url": "https://raw.githubusercontent.com/Vortriz/nix-search-tv/refs/heads/main/nixpkgs.sh"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://raw.githubusercontent.com/Vortriz/nix-search-tv/refs/heads/main/nixpkgs.sh"
       }
     },
     "nixos-hardware": {
@@ -494,18 +506,20 @@
     "nur": {
       "inputs": {
         "flake-parts": [
+          "stylix",
           "flake-parts"
         ],
         "nixpkgs": [
+          "stylix",
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1765618403,
-        "narHash": "sha256-qW/jTAo4j1EnCe0avrDfL+kKzenjOs7YWphV1oz/wu0=",
+        "lastModified": 1764773531,
+        "narHash": "sha256-mCBl7MD1WZ7yCG6bR9MmpPO2VydpNkWFgnslJRIT1YU=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "1003d297304079e34fd9d2ef3b932fe111fcabd4",
+        "rev": "1d9616689e98beded059ad0384b9951e967a17fa",
         "type": "github"
       },
       "original": {
@@ -529,39 +543,14 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1765607021,
-        "narHash": "sha256-kVFzSBx6I9u9ASNGI5HLNeME9KoKpp7ItVP6YQ96W9Q=",
+        "lastModified": 1765825989,
+        "narHash": "sha256-X+tj4hQxMO4lR4zKm8EEpkMWd+Xf5TXQMXoTI02MlSk=",
         "path": "/mnt/HOUSE/dev/others/nur-packages",
         "type": "path"
       },
       "original": {
         "path": "/mnt/HOUSE/dev/others/nur-packages",
         "type": "path"
-      }
-    },
-    "nur_2": {
-      "inputs": {
-        "flake-parts": [
-          "stylix",
-          "flake-parts"
-        ],
-        "nixpkgs": [
-          "stylix",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1764773531,
-        "narHash": "sha256-mCBl7MD1WZ7yCG6bR9MmpPO2VydpNkWFgnslJRIT1YU=",
-        "owner": "nix-community",
-        "repo": "NUR",
-        "rev": "1d9616689e98beded059ad0384b9951e967a17fa",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-community",
-        "repo": "NUR",
-        "type": "github"
       }
     },
     "quickshell": {
@@ -594,16 +583,46 @@
         "niri": "niri",
         "niri-shell": "niri-shell",
         "nix-index-database": "nix-index-database",
+        "nix-search-tv-script": "nix-search-tv-script",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_2",
-        "nur": "nur",
         "nur-vortriz": "nur-vortriz",
         "quickshell": "quickshell",
+        "shyfox": "shyfox",
+        "starship-nerd-font-symbols": "starship-nerd-font-symbols",
         "stylix": "stylix",
         "systems": "systems",
         "treefmt-nix": "treefmt-nix_2",
         "unify": "unify",
         "vicinae": "vicinae"
+      }
+    },
+    "shyfox": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1759125930,
+        "narHash": "sha256-alrK8s1B+ShX4yda27jPPvBZTIE0nYu9iQYAmtzQrZc=",
+        "owner": "Vortriz",
+        "repo": "ShyFox",
+        "rev": "de69fb6b272cf4a0b4044fc02fe27286eb4675a0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Vortriz",
+        "repo": "ShyFox",
+        "type": "github"
+      }
+    },
+    "starship-nerd-font-symbols": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-7mYpHYSgmVfrkl+EbRbX3Xych0eOt7VR5JF3M607j8I=",
+        "type": "file",
+        "url": "https://starship.rs/presets/toml/nerd-font-symbols.toml"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://starship.rs/presets/toml/nerd-font-symbols.toml"
       }
     },
     "stylix": {
@@ -620,7 +639,7 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "nur": "nur_2",
+        "nur": "nur",
         "systems": [
           "systems"
         ],

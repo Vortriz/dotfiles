@@ -62,11 +62,6 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         nixos-hardware.url = "github:NixOS/nixos-hardware";
-        nur = {
-            url = "github:nix-community/NUR";
-            inputs.nixpkgs.follows = "nixpkgs";
-            inputs.flake-parts.follows = "flake-parts";
-        };
         nur-vortriz = {
             url = "path:/mnt/HOUSE/dev/others/nur-packages";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -88,6 +83,24 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         vicinae.url = "github:vicinaehq/vicinae";
+        # keep-sorted end
+
+        # keep-sorted start block=yes
+        nix-search-tv-script = {
+            url = "https://raw.githubusercontent.com/Vortriz/nix-search-tv/refs/heads/main/nixpkgs.sh";
+            flake = false;
+            type = "file";
+        };
+        shyfox = {
+            url = "github:Vortriz/ShyFox";
+            # url = "/mnt/HOUSE/dev/others/ShyFox";
+            flake = false;
+        };
+        starship-nerd-font-symbols = {
+            url = "https://starship.rs/presets/toml/nerd-font-symbols.toml";
+            flake = false;
+            type = "file";
+        };
         # keep-sorted end
     };
 

@@ -29,12 +29,13 @@
                         # keep-sorted end
                         ;
                 }
-                // (with pkgs.nur.repos.Vortriz; {
-                    bunny = bunny-yazi;
-                    custom-shell = custom-shell-yazi;
-                    hover-after-moved = hover-after-moved-yazi;
-                    office = office-yazi;
-                    what-size = what-size-yazi;
+                # from nur
+                // (with pkgs; {
+                    bunny = yazi-bunny;
+                    custom-shell = yazi-custom-shell;
+                    hover-after-moved = yazi-hover-after-moved;
+                    office = yazi-office;
+                    what-size = yazi-what-size;
                 });
 
             settings.plugin = {
