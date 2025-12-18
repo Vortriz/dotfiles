@@ -1,4 +1,4 @@
-{
+{inputs, ...}: {
     unify = {
         nixos = {
             config,
@@ -6,6 +6,8 @@
             pkgs,
             ...
         }: {
+            nixpkgs.overlays = [inputs.nur-vortriz.overlays.espansoPackages];
+
             security.wrappers.espanso = {
                 capabilities = "cap_dac_override+p";
                 owner = "root";
@@ -18,8 +20,8 @@
 
         home = {
             lib,
-            osConfig,
             pkgs,
+            osConfig,
             ...
         }: {
             services.espanso = {
@@ -41,15 +43,18 @@
             };
 
             # plugins
-            xdg.configFile = let
-                baseDir = "espanso/match/packages";
-            in {
-                "${baseDir}/greek-letters-improved".source = pkgs.espanso-greek-letters-improved;
-                "${baseDir}/math-symbols".source = pkgs.espanso-math-symbols;
-                "${baseDir}/super-sub-scripts".source = pkgs.espanso-super-sub-scripts;
-                "${baseDir}/actually-all-emojis-spaces".source = pkgs.espanso-actually-all-emojis-spaces;
-                "${baseDir}/lower-upper".source = pkgs.espanso-lower-upper;
-            };
+            xdg.configFile = lib.attrsets.listToAttrs (map (
+                name: {
+                    name = "espanso/match/packages/${name}";
+                    value.source = pkgs.espansoPackages.${name};
+                }
+            ) [
+                "greek-letters-improved"
+                "math-symbols"
+                "super-sub-scripts"
+                "actually-all-emojis-spaces"
+                "lower-upper"
+            ]);
 
             systemd.user.services.espanso = lib.mkForce {
                 Unit = {

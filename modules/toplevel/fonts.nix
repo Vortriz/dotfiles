@@ -1,9 +1,11 @@
-{
+{inputs, ...}: {
     unify.nixos = {
         config,
         pkgs,
         ...
     }: {
+        nixpkgs.overlays = [inputs.nur-vortriz.overlays.fonts];
+
         fonts.packages = with pkgs;
             [
                 # keep-sorted start block=yes
@@ -25,7 +27,7 @@
                 # keep-sorted end
             ]
             # from nur
-            ++ (with pkgs; [
+            ++ (with pkgs.fonts; [
                 HelveticaNeueCyr
                 SFMono-Nerd-Font-Ligaturized
             ])
