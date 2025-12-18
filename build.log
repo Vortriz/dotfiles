@@ -19095,3 +19095,121 @@ REMOVED
 
 SIZE: 18.8 GiB -> 18.5 GiB
 DIFF: -367 MiB
+<<< /nix/var/nix/profiles/system-167-link/
+>>> /nix/store/5kw8svnbghsi6qrg3my3za5jhfn8l7qg-nixos-system-sagittarius-26.05.20251215.1306659
+
+CHANGED
+[U.] acpi-call                                        1.2.2-6.18 -> 1.2.2-6.18.1
+[U.] attica                                           6.20.0 -> 6.21.0
+[U*] bind                                             9.20.15-dnsutils, 9.20.15-host, 9.20.15-lib, 9.20.15-man -> 9.20.16-dnsutils, 9.20.16-host, 9.20.16-lib, 9.20.16-man
+[U.] breeze-icons                                     6.20.0 -> 6.21.0
+[U.] cinnamon-desktop                                 6.4.2 -> 6.6.0
+[U.] cinnamon-translations                            6.4.2 -> 6.6.0
+[U.] dms-shell                                        1.2-unstable+date=2025-12-13_dirty, 1.2-unstable+date=2025-12-13_dirty-fish-completions -> 1.2-unstable+date=2025-12-14_dirty, 1.2-unstable+date=2025-12-14_dirty-fish-completions
+[U.] folder-color-switcher                            1.6.8 -> 1.6.9
+[U.] frameworkintegration                             6.20.0 -> 6.21.0
+[U.] harper                                           1.1.0 -> 1.2.0
+[U.] hyprutils                                        0.10.4 -> 0.11.0
+[U.] initrd-linux                                     6.18 -> 6.18.1
+[U.] karchive                                         6.20.0 -> 6.21.0
+[U.] kauth                                            6.20.0 -> 6.21.0
+[U.] kbookmarks                                       6.20.0 -> 6.21.0
+[U.] kcmutils                                         6.20.0 -> 6.21.0
+[U.] kcodecs                                          6.20.0 -> 6.21.0
+[U.] kcolorscheme                                     6.20.0 -> 6.21.0
+[U.] kcompletion                                      6.20.0 -> 6.21.0
+[U.] kconfig                                          6.20.0 -> 6.21.0
+[U.] kconfigwidgets                                   6.20.0 -> 6.21.0
+[U.] kcoreaddons                                      6.20.0 -> 6.21.0
+[U.] kcrash                                           6.20.0 -> 6.21.0
+[U.] kdbusaddons                                      6.20.0 -> 6.21.0
+[U.] kdeclarative                                     6.20.0 -> 6.21.0
+[U.] kdoctools                                        6.20.0 -> 6.21.0
+[U.] kfilemetadata                                    6.20.0 -> 6.21.0
+[U.] kglobalaccel                                     6.20.0 -> 6.21.0
+[U.] kguiaddons                                       6.20.0 -> 6.21.0
+[U.] ki18n                                            6.20.0 -> 6.21.0
+[U.] kiconthemes                                      6.20.0 -> 6.21.0
+[U.] kimageformats                                    6.20.0 -> 6.21.0
+[U.] kio                                              6.20.0 -> 6.21.0
+[U.] kirigami                                         6.20.0 -> 6.21.0
+[U.] kitemmodels                                      6.20.0 -> 6.21.0
+[U.] kitemviews                                       6.20.0 -> 6.21.0
+[U.] kjobwidgets                                      6.20.0 -> 6.21.0
+[U.] knewstuff                                        6.20.0 -> 6.21.0
+[U.] knotifications                                   6.20.0 -> 6.21.0
+[U.] kpackage                                         6.20.0 -> 6.21.0
+[U.] kservice                                         6.20.0 -> 6.21.0
+[U.] ktextwidgets                                     6.20.0 -> 6.21.0
+[U.] kwallet                                          6.20.0 -> 6.21.0
+[U.] kwidgetsaddons                                   6.20.0 -> 6.21.0
+[U.] kwindowsystem                                    6.20.0 -> 6.21.0
+[U.] kxmlgui                                          6.20.0 -> 6.21.0
+[U.] libXNVCtrl                                       580.105.08 -> 580.119.02
+[U.] linux                                            6.18, 6.18-modules ×2, 6.18-modules-shrunk -> 6.18.1, 6.18.1-modules ×2, 6.18.1-modules-shrunk
+[U.] nemo                                             6.4.5 -> 6.6.1
+[U.] nemo-emblems                                     6.4.0 -> 6.6.0
+[U.] nemo-fileroller                                  6.4.0 -> 6.6.0
+[U.] nemo-python                                      6.4.0 -> 6.6.0
+[U.] nemo-with-extensions                             6.4.5, 6.4.5-fish-completions -> 6.6.1, 6.6.1-fish-completions
+[U*] niri-unstable                                    2025-12-12-c22d835 -> 2025-12-18-f85cb5c
+[U.] nixos-system-sagittarius                         26.05.20251211.2fbfb1d -> 26.05.20251215.1306659
+[U.] python3.13-python-xapp                           3.0.0 -> 3.0.1
+[U.] qqc2-desktop-style                               6.20.0 -> 6.21.0
+[U.] rclone                                           1.72.0, 1.72.0-fish-completions, 1.72.0-man -> 1.72.1, 1.72.1-fish-completions, 1.72.1-man
+[U.] ruff                                             0.14.8 -> 0.14.9
+[U.] solid                                            6.20.0 -> 6.21.0
+[U.] sonnet                                           6.20.0 -> 6.21.0
+[U.] source                                           <none> ×8 -> <none> ×9
+[U.] syndication                                      6.20.0 -> 6.21.0
+[U.] ty                                               0.0.1-alpha.32 -> 0.0.1-alpha.34
+[D.] unit-plymouth-kexec.service                      <none> ×2 -> <none>
+[D.] unit-systemd-tmpfiles-setup.service              <none> ×2 -> <none>
+[U.] vscode                                           1.106.3, 1.106.3-fish-completions -> 1.107.0, 1.107.0-fish-completions
+[U.] vscode-extension-James-Yu-latex-workshop         10.11.3 -> 10.12.0
+[U.] vscode-extension-gemini-cli-vscode-ide-companion 0.19.3 -> 0.20.0
+[U.] x86_energy_perf_policy                           6.12.61 -> 6.12.62
+[U.] xwayland-satellite-unstable                      2025-12-10-f0ad674 -> 2025-12-17-979eab2
+[U.] zed-editor                                       0.216.0 -> 0.216.1
+[U.] zed-editor-wrapped                               0.216.0, 0.216.0-fish-completions -> 0.216.1, 0.216.1-fish-completions
+
+ADDED
+[A.] Better-BibTeX-for-Zotero                         7.0.68
+[A.] SciPDF-For-Zotero                                1.3.0
+[A.] ZotMoov                                          1.2.25
+[A.] actually-all-emojis-spaces                       1.3-unstable-2023-06-22
+[A.] bunny.yazi                                       1.3.2
+[A.] custom-shell.yazi                                0-unstable-2025-06-07
+[A+] fresh                                            0.1.44-unstable-2025-12-16
+[A.] greek-letters-improved                           0-unstable-2025-06-25
+[A.] hover-after-moved.yazi                           0-unstable-2025-09-28
+[A.] lower-upper                                      0-unstable-2021-11-04
+[A.] math-symbols                                     0-unstable-2025-06-25
+[A.] office.yazi                                      0-unstable-2025-09-20
+[A.] pick-color                                       <none>
+[A.] plymouth-initrd-plugins                          <none>
+[A.] super-sub-scripts                                0-unstable-2025-06-25
+[A.] what-size.yazi                                   0-unstable-2025-06-19
+[A.] xapp-symbolic-icons                              1.0.6
+
+REMOVED
+[R.] ShyFox-de69fb6                                   <none>
+[R.] bunny-yazi                                       1.3.2-unstable-2025-09-18
+[R.] custom-shell-yazi                                0-unstable-2025-06-07
+[R.] espanso-emojis                                   88ba2b7
+[R.] espanso-mega-pack-abb8e9f                        <none>
+[R.] espanso-package-lower-upper                      9ed3737
+[R.] hover-after-moved-yazi                           0-unstable-2025-09-28
+[R.] initrd-bin-env                                   <none>
+[R.] initrd-udev-rules                                <none>
+[R.] micro                                            2.0.14, 2.0.14-man
+[R.] micro-settings                                   <none>
+[R.] micro-wrapped                                    2.0.14, 2.0.14-fish-completions, 2.0.14-man
+[R.] office-yazi                                      0-unstable-2025-09-20
+[R.] what-size-yazi                                   0-unstable-2025-06-19
+[R.] zotero-better-bibtex                             7.0.68
+[R.] zotero-scipdf                                    1.3.0
+[R.] zotero-zotmoov                                   1.2.25
+
+SIZE: 18.5 GiB -> 18.6 GiB
+DIFF: 136 MiB

@@ -11,8 +11,6 @@
             extraLocales = ["en_US.UTF-8/UTF-8"];
         };
 
-        system.rebuild.enableNg = true;
-
         # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
         system.stateVersion = "25.11";
     };

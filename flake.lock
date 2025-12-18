@@ -543,8 +543,8 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1765973552,
-        "narHash": "sha256-5En+IBwBUVpQY9QI6N4NnffIXe3rjkMvW/C3LRP7QLw=",
+        "lastModified": 1766083275,
+        "narHash": "sha256-m7cRJE9UMOk92FzfnIibiKzWTNZFhH0jqJN66rSxLbE=",
         "path": "/mnt/HOUSE/dev/others/nur-packages",
         "type": "path"
       },
