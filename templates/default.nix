@@ -1,5 +1,5 @@
 {
-    defaultTemplate = {
+    default = {
         path = ./default;
         description = "A simple flake";
     };

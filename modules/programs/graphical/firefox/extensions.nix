@@ -27,9 +27,9 @@
             (extension "raindropio" "jid0-adyhmvsP91nUO8pRv0Mn2VKeB84@jetpack")
             (extension "sponsorblock" "sponsorBlocker@ajay.app")
             (extension "tabliss" "extension@tabliss.io")
-            (extension "userchrome-toggle-extended" "userchrome-toggle-extended@n2ezr.ru")
             (extensionPriv "sidebery" "{3c078156-979c-498b-8990-85f7987dd929}")
             (extensionPriv "ublock-origin" "uBlock0@raymondhill.net")
+            (extensionPriv "userchrome-toggle-extended" "userchrome-toggle-extended@n2ezr.ru")
             # keep-sorted end
         ];
     };
