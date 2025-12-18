@@ -36,7 +36,7 @@ system := `echo $system`
 
 [group('SYSTEM')]
 @get-updates:
-    echo -e "Updating flake and fetchgit inputs...\n"
+    echo -e "Updating flake...\n"
     nix flake update
 
 [group('SYSTEM')]
@@ -80,14 +80,6 @@ alias pf := prefetch
     dix \
     $(command rg --no-line-number --only-matching --replace '$1' ">>> (\S+\-nixos\-system\-nixos\-\S+)" build.log | tail -1) \
     {{ profiles-path }}/system-$(command just _get-current-gen)-link
-
-[group('TOOLS')]
-@get-nur-status:
-    if test $(git ls-remote https://github.com/Vortriz/nur-packages refs/heads/main | cut -f1) \
-    = $(curl -s https://raw.githubusercontent.com/nix-community/nur-combined/refs/heads/main/repos.json.lock | jaq -r .repos.Vortriz.rev); \
-        echo "NUR is up to date!"; \
-    else echo "NUR is not updated yet :("; \
-    end
 
 # Helpers
 
