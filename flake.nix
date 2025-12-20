@@ -63,7 +63,7 @@
         };
         nixos-hardware.url = "github:NixOS/nixos-hardware";
         nur-vortriz = {
-            url = "path:/mnt/HOUSE/dev/others/nur-packages";
+            url = "/mnt/HOUSE/dev/others/nur-packages";
             inputs.nixpkgs.follows = "nixpkgs";
             inputs.systems.follows = "systems";
             inputs.flake-parts.follows = "flake-parts";

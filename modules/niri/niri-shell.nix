@@ -14,7 +14,7 @@
             # to use dms-greet
             systemd.user.services.niri-flake-polkit.enable = false;
 
-            programs.dankMaterialShell.greeter = {
+            programs.dank-material-shell.greeter = {
                 enable = true;
                 compositor.name = "niri";
 
@@ -44,11 +44,11 @@
 
         home = {pkgs, ...}: {
             imports = [
-                inputs.niri-shell.homeModules.dankMaterialShell.default
-                inputs.niri-shell.homeModules.dankMaterialShell.niri
+                inputs.niri-shell.homeModules.dank-material-shell
+                inputs.niri-shell.homeModules.niri
             ];
 
-            programs.dankMaterialShell = {
+            programs.dank-material-shell = {
                 enable = true;
 
                 niri = {

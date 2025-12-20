@@ -334,8 +334,8 @@
         ]
       },
       "locked": {
-        "lastModified": 1765693888,
-        "narHash": "sha256-ziCLavwb8gjz+TAepPiaiV7Mu0fZnoSYVNFLIrIcK+c=",
+        "lastModified": 1766225393,
+        "narHash": "sha256-DeebQi6IOAUFQ54FO8GtCwaAfNVaDu/hsNhSXnCKSn0=",
         "path": "/mnt/HOUSE/dev/others/niri-shell",
         "type": "path"
       },
@@ -543,8 +543,8 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1766083275,
-        "narHash": "sha256-m7cRJE9UMOk92FzfnIibiKzWTNZFhH0jqJN66rSxLbE=",
+        "lastModified": 1766092389,
+        "narHash": "sha256-WumMbCZcff78Ni3J85l9BCV5GIi7b/xUU2h0IdkKryo=",
         "path": "/mnt/HOUSE/dev/others/nur-packages",
         "type": "path"
       },
