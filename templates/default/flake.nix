@@ -4,33 +4,30 @@
     inputs = {
         nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
         systems.url = "github:nix-systems/x86_64-linux";
-        flake-utils = {
-            url = "github:numtide/flake-utils";
-            inputs.systems.follows = "systems";
-        };
     };
 
     outputs = {
         nixpkgs,
-        flake-utils,
+        systems,
         ...
-    }:
-        flake-utils.lib.eachDefaultSystem (
-            system: let
-                pkgs = nixpkgs.legacyPackages.${system};
-            in {
-                formatter = pkgs.treefmt.withConfig {
-                    runtimeInputs = [pkgs.nixfmt];
-                    settings.formatter.nixfmt = {
-                        command = "nixfmt";
-                        includes = ["*.nix"];
-                        options = ["--indent=4"];
-                    };
+    }: let
+        inherit (nixpkgs) lib;
+        pkgsFor = lib.genAttrs systems (system: import nixpkgs {inherit system;});
+        forEachSystem = f: lib.genAttrs systems (system: f pkgsFor.${system});
+    in {
+        formatter = forEachSystem (pkgs:
+            pkgs.treefmt.withConfig {
+                runtimeInputs = [pkgs.nixfmt];
+                settings.formatter.nixfmt = {
+                    command = "nixfmt";
+                    includes = ["*.nix"];
+                    options = ["--indent=4"];
                 };
+            });
 
-                devShells.default = pkgs.mkShell {
-                    packages = [];
-                };
-            }
-        );
+        devShells.default = forEachSystem (pkgs:
+            pkgs.mkShell {
+                packages = [];
+            });
+    };
 }
