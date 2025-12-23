@@ -28,7 +28,14 @@
                 overlays = [devshell.overlays.default];
             };
         in {
-            formatter = pkgs.alejandra;
+            formatter = pkgs.treefmt.withConfig {
+                runtimeInputs = [pkgs.nixfmt];
+                settings.formatter.nixfmt = {
+                    command = "nixfmt";
+                    includes = ["*.nix"];
+                    options = ["--indent=4"];
+                };
+            };
 
             # Impurely using uv to manage virtual environments
             devShell = let
