@@ -2,11 +2,15 @@
     unify = {
         nixos = {
             nixpkgs.overlays = [inputs.nur-vortriz.overlays.yaziPlugins];
+
+            # gvfs
+            services.gvfs.enable = true;
         };
 
         home = {
             lib,
             pkgs,
+            hostConfig,
             ...
         }: let
             inherit (lib) map;
@@ -21,7 +25,6 @@
                             # keep-sorted start
                             jump-to-char
                             mediainfo
-                            mount
                             ouch
                             piper
                             restore
@@ -40,6 +43,9 @@
                             # keep-sorted start
                             bunny
                             custom-shell
+                            enhance-piper
+                            file-extra-metadata
+                            gvfs
                             hover-after-moved
                             office
                             what-size
@@ -50,10 +56,16 @@
                 settings.plugin = {
                     prepend_previewers =
                         [
-                            # glow/piper markdown
+                            # glow/enhance-piper
                             {
                                 name = ["*.md"];
-                                run = [''piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"''];
+                                run = [''enhance-piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"''];
+                            }
+
+                            # gvfs
+                            {
+                                name = ["/run/user/1000/gvfs/**/*" "/run/media/${hostConfig.username}/**/*"];
+                                run = ["noop"];
                             }
 
                             # mediainfo
@@ -64,14 +76,14 @@
 
                             # office
                             {
-                                name = ["application/{openxmlformats-officedocument.*,oasis.opendocument.*,ms-*,msword}"];
+                                mime = ["application/{openxmlformats-officedocument.*,oasis.opendocument.*,ms-*,msword}"];
                                 run = ["office"];
                             }
 
-                            # ouch
+                            # ouch/enhance-piper
                             {
                                 mime = ["application/{*zip,*tar,*rar,x-bzip2,x-7z-compressed,x-xz}"];
-                                run = [''piper -- ouch list -tA "$1"''];
+                                run = [''enhance-piper -- ouch list -tA "$1"''];
                             }
                         ]
                         |> map cartesianProduct
@@ -79,6 +91,12 @@
 
                     prepend_preloaders =
                         [
+                            # gvfs
+                            {
+                                name = ["/run/user/1000/gvfs/**/*" "/run/media/${hostConfig.username}/**/*"];
+                                run = ["noop"];
+                            }
+
                             # mediainfo
                             {
                                 mime = ["{audio,video,image}/*" "application/subrip"];
@@ -87,6 +105,14 @@
                         ]
                         |> map cartesianProduct
                         |> concatLists;
+
+                    prepend_spotters = [
+                        # file-extra-metadata
+                        {
+                            name = "*";
+                            run = "file-extra-metadata";
+                        }
+                    ];
                 };
 
                 keymap.mgr.prepend_keymap = [
@@ -123,18 +149,28 @@
                         desc = "Jumps to the first file";
                     }
 
+                    # gvfs
+                    {
+                        on = ["M" "m"];
+                        run = "plugin gvfs -- select-then-mount --jump";
+                        desc = "Select device to mount and jump to its mount point";
+                    }
+                    {
+                        on = ["M" "u"];
+                        run = "plugin gvfs -- select-then-unmount --eject";
+                        desc = "Select device then eject";
+                    }
+                    {
+                        on = ["M" "U"];
+                        run = "plugin gvfs -- select-then-unmount --eject --force";
+                        desc = "Select device then force to eject/unmount";
+                    }
+
                     # jump-to-char
                     {
                         on = "f";
                         run = "plugin jump-to-char";
                         desc = "Jump to char";
-                    }
-
-                    # mount
-                    {
-                        on = "M";
-                        run = "plugin mount";
-                        desc = "Mount";
                     }
 
                     # ouch
@@ -195,6 +231,7 @@
                 extraPackages = with pkgs; [
                     # keep-sorted start
                     ffmpeg-full # mediainfo-yazi
+                    glib # gvfs-yazi
                     glow # glow-yazi
                     imagemagick # zoom
                     libreoffice # office
@@ -203,7 +240,6 @@
                     poppler-utils # office
                     ripdrag # drag and drop
                     trash-cli # restore-yazi
-                    udisks # mount-yazi
                     # keep-sorted end
                 ];
             };

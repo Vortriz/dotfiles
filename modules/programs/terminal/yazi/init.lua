@@ -37,6 +37,9 @@ require("starship"):setup({
 -- hover-after-moved
 require("hover-after-moved"):setup()
 
+-- gvfs
+require("gvfs"):setup()
+
 -- custom: move tabs back to header
 function Tabs.height() return 0 end
 

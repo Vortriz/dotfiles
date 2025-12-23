@@ -3,7 +3,6 @@
         services = {
             # Auto mounting
             udisks2.enable = true;
-            gvfs.enable = true;
             devmon.enable = true;
         };
 
