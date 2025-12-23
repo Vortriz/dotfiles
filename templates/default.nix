@@ -24,10 +24,4 @@
         path = ./typst-presentation;
         description = "Typst presentation using custom Touying theme";
     };
-
-    # taken from https://nixos.wiki/wiki/Rust#Installation_via_rustup
-    rust = {
-        path = ./rust;
-        description = "Rust flake with rustup";
-    };
 }
