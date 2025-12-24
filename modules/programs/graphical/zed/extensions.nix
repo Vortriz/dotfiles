@@ -16,6 +16,7 @@
                 "modern-icons"
                 "nix"
                 "qml"
+                "quarto"
                 "scss"
                 "typst"
                 # keep-sorted end
