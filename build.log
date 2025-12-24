@@ -19213,3 +19213,113 @@ REMOVED
 
 SIZE: 18.5 GiB -> 18.6 GiB
 DIFF: 136 MiB
+
+---
+
+25/12/25 01:00:40 AM IST
+<<< /nix/store/5kw8svnbghsi6qrg3my3za5jhfn8l7qg-nixos-system-sagittarius-26.05.20251215.1306659
+>>> /nix/store/yhgnjhgsymhp3cxlwd75da032l279xvk-nixos-system-sagittarius-26.05.20251221.a653104
+
+CHANGED
+[U.] Better-BibTeX-for-Zotero                         7.0.68 -> 7.0.70
+[U.] aardvark-dns                                     1.16.0 -> 1.17.0
+[U.] acpi-call                                        1.2.2-6.18.1 -> 1.2.2-6.18.2
+[U*] asusctl                                          6.1.17 -> 6.2.0
+[U.] cinnamon-desktop                                 6.6.0 -> 6.6.1
+[U.] cinnamon-translations                            6.6.0 -> 6.6.1
+[U.] dms-shell                                        1.2-unstable+date=2025-12-14_dirty, 1.2-unstable+date=2025-12-14_dirty-fish-completions -> 1.2-unstable+date=2025-12-24_dirty, 1.2-unstable+date=2025-12-24_dirty-fish-completions
+[U*] exfatprogs                                       1.3.0, 1.3.0_fish-completions -> 1.3.1, 1.3.1_fish-completions
+[U.] fastfetch                                        2.56.0, 2.56.0-fish-completions, 2.56.0-man -> 2.56.1, 2.56.1-fish-completions, 2.56.1-man
+[U.] firefox                                          146.0, 146.0-fish-completions -> 146.0.1, 146.0.1-fish-completions
+[U.] firefox-unwrapped                                146.0 -> 146.0.1
+[U.] folder-color-switcher                            1.6.9 -> 1.7.0
+[U.] gcc                                              15.2.0-lib, 15.2.0-libgcc -> 15.2.0-lib ×2, 15.2.0-libgcc ×2
+[U.] gitui                                            0.27.0, 0.27.0-fish-completions -> 0.28.0, 0.28.0-fish-completions
+[U.] initrd-linux                                     6.18.1 -> 6.18.2
+[U.] intel-compute-runtime                            25.44.36015.5 -> 25.44.36015.8
+[U.] intel-gmmlib                                     22.8.2 ×2 -> 22.9.0 ×2
+[U.] intel-graphics-compiler                          2.22.2 -> 2.24.8
+[U.] linux                                            6.18.1, 6.18.1-modules ×2, 6.18.1-modules-shrunk -> 6.18.2, 6.18.2-modules ×2, 6.18.2-modules-shrunk
+[U.] mate-menus                                       1.28.0 -> 1.28.1
+[U.] mesa                                             25.3.1 ×2 -> 25.3.2 ×2
+[U.] nemo                                             6.6.1 -> 6.6.2
+[U.] nemo-with-extensions                             6.6.1, 6.6.1-fish-completions -> 6.6.2, 6.6.2-fish-completions
+[U*] networkmanager                                   1.54.1 ×2, 1.54.1-fish-completions, 1.54.1-man -> 1.54.3 ×2, 1.54.3-fish-completions, 1.54.3-man
+[U*] niri-unstable                                    2025-12-18-f85cb5c -> 2025-12-23-4d29541
+[U.] nixos-system-sagittarius                         26.05.20251215.1306659 -> 26.05.20251221.a653104
+[U.] osinfo-db                                        20250606 -> 20251212
+[U.] python3.13-cyclopts                              4.2.5 -> 4.3.0
+[U.] rust-analyzer                                    2025-12-08 -> 2025-12-15
+[U.] rust-analyzer-unwrapped                          2025-12-08 -> 2025-12-15
+[U.] sioyek                                           2.0.0-unstable-2025-12-05, 2.0.0-unstable-2025-12-05-fish-completions -> 2.0.0-unstable-2025-12-11, 2.0.0-unstable-2025-12-11-fish-completions
+[U*] sudo-rs                                          0.2.10, 0.2.10_fish-completions -> 0.2.11, 0.2.11_fish-completions
+[U.] ty                                               0.0.1-alpha.34 -> 0.0.5
+[U.] unit-plymouth-halt.service                       <none> -> <none> ×2
+[U.] unit-plymouth-kexec.service                      <none> -> <none> ×2
+[U.] vicinae                                          <none> -> 0.17.2, 0.17.2-fish-completions
+[U.] vscode                                           1.107.0, 1.107.0-fish-completions -> 1.107.1, 1.107.1-fish-completions
+[U.] vscode-extension-gemini-cli-vscode-ide-companion 0.20.0 -> 0.21.1
+[U.] webkitgtk                                        2.50.3+abi=4.1 -> 2.50.4+abi=4.1
+[U.] x86_energy_perf_policy                           6.12.62 -> 6.12.63
+[U.] xapp                                             3.2.0, 3.2.0-dev -> 3.2.1, 3.2.1-dev
+[U.] xwayland-satellite-unstable                      2025-12-17-979eab2 -> 2025-12-22-0dde7ca
+[U.] zed-editor                                       0.216.1 -> 0.217.3
+[U.] zed-editor-wrapped                               0.216.1, 0.216.1-fish-completions -> 0.217.3, 0.217.3-fish-completions
+
+ADDED
+[A.] HelveticaNeueCyr-unstable                        2025-11-06
+[A.] SFMono-Nerd-Font-Ligaturized-unstable            2023-07-01
+[A.] actually-all-emojis-spaces-unstable              2023-06-22
+[A.] batteryd-unstable                                2025-07-04
+[A.] bunny.yazi-unstable                              2025-09-18
+[A.] custom-shell.yazi-unstable                       2025-06-07
+[A.] dl-unstable                                      2025-12-19, 2025-12-19-fish-completions
+[A.] dunefetch-unstable                               2025-08-12, 2025-08-12-fish-completions
+[A.] enhance-piper.yazi-unstable                      2025-12-04
+[A.] file-extra-metadata.yazi-unstable                2025-12-04
+[A+] fresh-unstable                                   2025-12-24
+[A.] greek-letters-improved-unstable                  2025-06-25
+[A.] gvfs.yazi-unstable                               2025-12-21
+[A.] hover-after-moved.yazi-unstable                  2025-09-28
+[A.] lower-upper-unstable                             2021-11-04
+[A.] math-symbols-unstable                            2025-06-25
+[A.] nixos-boot-plymouth-theme-unstable               2025-06-20
+[A.] office.yazi-unstable                             2025-09-19
+[A.] plymouth-initrd-themes                           <none>
+[A.] super-sub-scripts-unstable                       2025-06-25
+[A.] usbutils                                         018, 018-man
+[A.] what-size.yazi-unstable                          2025-06-19
+[A.] xdg-desktop-portal-termfilechooser-unstable      2025-12-18, 2025-12-18-fish-completions
+
+REMOVED
+[R.] HelveticaNeueCyr                                 0-unstable-2025-11-06
+[R.] SFMono-Nerd-Font-Ligaturized                     0-unstable-2023-07-02
+[R.] actually-all-emojis-spaces                       1.3-unstable-2023-06-22
+[R.] batteryd                                         0-unstable-2025-07-04
+[R.] bunny.yazi                                       1.3.2
+[R.] custom-shell.yazi                                0-unstable-2025-06-07
+[R.] dl                                               0-unstable-2025-11-19, 0-unstable-2025-11-19-fish-completions
+[R.] dunefetch                                        0-unstable-2025-08-12, 0-unstable-2025-08-12-fish-completions
+[R-] fresh                                            0.1.44-unstable-2025-12-16
+[R.] greek-letters-improved                           0-unstable-2025-06-25
+[R.] grpc-tools                                       1.13.0
+[R.] hover-after-moved.yazi                           0-unstable-2025-09-28
+[R.] lower-upper                                      0-unstable-2021-11-04
+[R.] math-symbols                                     0-unstable-2025-06-25
+[R.] minizip-ng                                       4.0.9
+[R.] mount.yazi                                       25.5.31-unstable-2025-10-13
+[R.] nixos-boot-plymouth-theme                        1.0
+[R.] office.yazi                                      0-unstable-2025-09-20
+[R.] plymouth-initrd-plugins                          <none>
+[R.] qt5compat                                        6.10.0
+[R.] qtshadertools                                    6.10.0
+[R.] qttools                                          6.10.0
+[R.] super-sub-scripts                                0-unstable-2025-06-25
+[R.] unit-script-initrd-nixos-activation-start        <none>
+[R.] unit-sysroot-run.mount                           <none>
+[R.] vicinae-fish-completions                         <none>
+[R.] what-size.yazi                                   0-unstable-2025-06-19
+[R.] xdg-desktop-portal-termfilechooser               1.2.1-unstable-2025-11-25, 1.2.1-unstable-2025-11-25-fish-completions
+
+SIZE: 18.6 GiB -> 18.5 GiB
+DIFF: -103 MiB
