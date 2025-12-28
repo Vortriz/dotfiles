@@ -1,3 +1,7 @@
 # Nix
 .direnv/
 result*
+
+# Julia
+Project.toml
+Manifest.toml

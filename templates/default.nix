@@ -7,7 +7,6 @@
     julia = {
         path = ./julia;
         description = "Scientific dev environment with Julia";
-        welcomeText = "Run `nix run nixpkgs#nvfetcher` once";
     };
 
     python = {

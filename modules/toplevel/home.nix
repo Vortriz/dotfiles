@@ -38,8 +38,6 @@
 
                     GTK2_RC_FILES = lib.mkForce "${configHome}/gtk-2.0/gtkrc";
 
-                    JULIA_DEPOT_PATH = "${dataHome}/julia:$JULIA_DEPOT_PATH";
-
                     NPM_CONFIG_INIT_MODULE = "${configHome}/npm/config/npm-init.js";
                     NPM_CONFIG_CACHE = "${cacheHome}/npm";
                     NPM_CONFIG_TMP = "$XDG_RUNTIME_DIR/npm";
