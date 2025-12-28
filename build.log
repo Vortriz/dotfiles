@@ -19323,3 +19323,104 @@ REMOVED
 
 SIZE: 18.6 GiB -> 18.5 GiB
 DIFF: -103 MiB
+
+---
+
+29/12/25 12:56:40 AM IST
+<<< /nix/store/2mcavr4hmkqlsjw73y491gnhf5akwyln-nixos-system-sagittarius-26.05.20251221.a653104
+>>> /nix/store/fkln615q4glk348yg0l8vmyls0xib2a9-nixos-system-sagittarius-26.05.20251225.3e2499d
+
+CHANGED
+[U.] SciPDF-For-Zotero                           1.3.0 -> 8.0.1
+[U.] deno                                        2.5.6 -> 2.6.3
+[U.] dgop                                        0.1.11, 0.1.11-fish-completions -> 0.1.12, 0.1.12-fish-completions
+[U.] dms-shell                                   1.2-unstable+date=2025-12-24_dirty, 1.2-unstable+date=2025-12-24_dirty-fish-completions -> 1.2-unstable+date=2025-12-28_dirty, 1.2-unstable+date=2025-12-28_dirty-fish-completions
+[U*] fprintd                                     1.94.4 -> 1.94.4 ×2
+[U*] fresh-unstable                              2025-12-24 -> 2025-12-28
+[U*] gamescope                                   3.16.18 -> 3.16.19
+[U.] haruna                                      1.6.0, 1.6.0-fish-completions -> 1.7.0, 1.7.0-fish-completions
+[U.] hover-after-moved.yazi-unstable             2025-09-28 -> 2025-12-26
+[U.] just                                        1.43.1, 1.43.1-fish-completions, 1.43.1-man -> 1.45.0, 1.45.0-fish-completions, 1.45.0-man
+[D.] linux-firmware                              20251125-zstd -> 20251125-unstable-2025-12-18-zstd
+[U.] mpv                                         0.40.0 -> 0.41.0
+[U*] niri-unstable                               2025-12-23-4d29541 -> 2025-12-26-b5640d5
+[U.] nixd                                        2.7.0 -> 2.8.0
+[U.] nixf                                        2.7.0 -> 2.8.0
+[U.] nixos-system-sagittarius                    26.05.20251221.a653104 -> 26.05.20251225.3e2499d
+[U.] nixt                                        2.7.0 -> 2.8.0
+[U.] python3                                     3.13.9-env ×9 -> 3.13.9-env ×10
+[U.] python3.13-curl-cffi                        0.14.0b2 -> 0.14.0
+[U.] python3.13-cyclopts                         4.3.0 -> 4.4.0
+[U.] sdl3                                        3.2.26-lib ×2 -> 3.2.26-lib ×3
+[U.] sioyek                                      2.0.0-unstable-2025-12-11, 2.0.0-unstable-2025-12-11-fish-completions -> 2.0.0-unstable-2025-12-19, 2.0.0-unstable-2025-12-19-fish-completions
+[U.] ty                                          0.0.5 -> 0.0.6
+[U.] unit-emergency.service                      <none> -> <none> ×2
+[D.] unit-plymouth-kexec.service                 <none> ×2 -> <none>
+[U.] vicinae                                     0.17.2, 0.17.2-fish-completions -> 0.17.3, 0.17.3-fish-completions
+[U*] wireplumber                                 0.5.12, 0.5.12_fish-completions -> 0.5.13, 0.5.13_fish-completions
+[U.] xdg-desktop-portal-termfilechooser-unstable 2025-12-18, 2025-12-18-fish-completions -> 2025-12-25, 2025-12-25-fish-completions
+[U.] xdg-terminal-exec                           0.14.0, 0.14.0-fish-completions -> 0.14.1, 0.14.1-fish-completions
+
+ADDED
+[A.] Xresources-Xft                              <none>
+[A+] accountsservice                             23.13.9
+[A.] ayatana-ido                                 0.10.4
+[A.] boost                                       1.87.0-dev
+[A.] check-dconf-db                              <none>
+[A.] colord-gtk                                  0.3.1 ×2
+[A.] custom.conf                                 <none>
+[A.] dconf-system-config                         <none>
+[A.] desktops                                    <none>
+[A.] etc-X11-xorg.conf.d                         00-keyboard.conf
+[A.] evolution-data-server                       3.58.2
+[A.] freerdp                                     3.20.0
+[A+] gdm                                         <none>, 49.2
+[A.] gdm-autologin.pam                           <none>
+[A.] gdm-fingerprint.pam                         <none>
+[A.] gdm-launch-environment.pam                  <none>
+[A.] gdm-password.pam                            <none>
+[A.] gnome-bluetooth                             47.1
+[A.] gnome-clocks                                49.0
+[A.] gnome-color-manager                         3.32.0
+[A.] gnome-control-center                        49.2.2
+[A.] gnome-remote-desktop                        49.1
+[A.] gnome-session                               49.2
+[A.] gnome-shell                                 49.2
+[A.] gsound                                      1.0.3
+[A.] ibus                                        1.5.33
+[A.] initrd-bin-env                              <none>
+[A.] libayatana-appindicator                     0.5.92
+[A.] libayatana-indicator                        0.9.4
+[A.] libglycin                                   2.0.7
+[A.] libnma                                      1.10.6 ×2
+[A.] libphonenumber                              9.0.21
+[A.] libseccomp                                  2.6.0, 2.6.0-dev
+[A.] mcpp                                        2.7.2.2
+[A.] mutter                                      49.2
+[A.] network-manager-applet                      1.36.0
+[A.] nixos-init                                  0.1.0
+[A.] plutosvg                                    0.0.7
+[A.] plutovg                                     1.3.2
+[A.] python3.13-argcomplete                      3.6.2
+[A.] sdl3-ttf                                    3.2.2
+[A.] steam.desktop                               <none>
+[A.] tecla                                       49.0
+[A.] unit-accounts-daemon.service                <none>
+[A.] unit-display-manager.service                <none>
+[A.] unit-initrd-switch-root.service             <none>
+[A.] unit-plymouth-switch-root.service           <none>
+[A.] unit-script-display-manager-start           <none>
+[A.] unit-script-initrd-nixos-activation-start   <none>
+[A.] unzip                                       6.0
+[A.] uriparser                                   0.9.9
+[A.] vte                                         0.82.2
+[A.] webkitgtk                                   2.50.4+abi=6.0
+[A.] xorg-server                                 21.1.20
+[A.] xrdb                                        1.2.2
+[A.] xsession-wrapper                            <none>
+
+REMOVED
+[R.] settings.json                               <none>
+
+SIZE: 18.5 GiB -> 19.1 GiB
+DIFF: 636 MiB
