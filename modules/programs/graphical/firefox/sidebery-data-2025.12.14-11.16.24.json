@@ -397,12 +397,7 @@
         ],
         "tabsPanel": [
             {
-                "opts": [
-                    "undoRmTab",
-                    "muteAllAudibleTabs",
-                    "reloadTabs",
-                    "discardTabs"
-                ]
+                "opts": ["undoRmTab", "muteAllAudibleTabs", "reloadTabs", "discardTabs"]
             },
             "separator-7",
             "selectAllTabs",

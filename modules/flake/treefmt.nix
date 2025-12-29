@@ -6,14 +6,22 @@
     perSystem = {
         treefmt.config = {
             # Used to find the project root
-            # inherit (config.flake-root) projectRootFile;
             projectRootFile = "LICENSE";
 
             programs = {
                 alejandra.enable = true;
                 deadnix.enable = true;
                 statix.enable = true;
-                prettier.enable = true;
+                biome = {
+                    enable = true;
+                    settings = {
+                        formatter = {
+                            indentStyle = "space";
+                            indentWidth = 4;
+                            lineWidth = 100;
+                        };
+                    };
+                };
                 keep-sorted.enable = true;
             };
 
@@ -28,8 +36,6 @@
                     deadnix.priority = 1;
 
                     statix.priority = 2;
-
-                    prettier.options = ["--tab-width" "4"];
                 };
             };
         };
