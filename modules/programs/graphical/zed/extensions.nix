@@ -13,6 +13,7 @@
                 "julia"
                 "just"
                 "latex"
+                "lua"
                 "modern-icons"
                 "nix"
                 "qml"
@@ -28,8 +29,8 @@
                 astro-language-server
                 harper
                 kdePackages.qtdeclarative
+                lua-language-server
                 nixd
-                nodejs_latest
                 package-version-server
                 ruff
                 rust-analyzer
@@ -45,6 +46,7 @@
                 lsp =
                     ([
                         # keep-sorted start
+                        "lua-language-server"
                         "nixd"
                         "package-version-server"
                         "rust-analyzer"

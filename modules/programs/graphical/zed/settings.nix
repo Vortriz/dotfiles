@@ -55,6 +55,10 @@
                     show = "always";
                     thumb = "always";
                 };
+                node = {
+                    path = lib.getExe pkgs.nodejs_latest;
+                    npm_path = "${pkgs.nodejs_latest}/bin/npm";
+                };
                 tab_size = 4;
                 tabs = {
                     file_icons = true;
