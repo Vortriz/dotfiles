@@ -22,6 +22,7 @@
 
                 niri = {
                     enableKeybinds = true;
+                    includes.enable = false;
                 };
 
                 systemd.enable = true;
