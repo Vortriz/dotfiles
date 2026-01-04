@@ -19424,3 +19424,349 @@ REMOVED
 
 SIZE: 18.5 GiB -> 19.1 GiB
 DIFF: 636 MiB
+
+---
+
+04/01/26 06:00:32 PM IST
+<<< /nix/store/fkln615q4glk348yg0l8vmyls0xib2a9-nixos-system-sagittarius-26.05.20251225.3e2499d
+>>> /nix/store/q6r24r0rgbk02iqzgp3kaja6lc5i6qab-nixos-system-sagittarius-26.05.20260102.fb7944c
+
+CHANGED
+[U.] Better-BibTeX-for-Zotero                         7.0.70 -> 7.0.71
+[U.] acpi-call                                        1.2.2-6.18.2 -> 1.2.2-6.18.3
+[U.] age                                              1.2.1 -> 1.3.1
+[U.] at-spi2-core                                     2.58.1 ×2, 2.58.1-dev -> 2.58.2 ×2, 2.58.2-dev
+[U*] bind                                             9.20.16-dnsutils, 9.20.16-host, 9.20.16-lib, 9.20.16-man -> 9.20.17-dnsutils, 9.20.17-host, 9.20.17-lib, 9.20.17-man
+[U.] bottles-unwrapped                                60.1 -> 60.1 ×2
+[C.] brotli                                           1.1.0, 1.1.0-dev, 1.1.0-lib ×3 -> 1.2.0, 1.2.0-dev, 1.1.0-lib, 1.2.0-lib ×2
+[U.] busybox                                          1.36.1 -> 1.37.0
+[D.] c-ares                                           1.34.5 ×3, 1.34.5-dev -> 1.34.5 ×2
+[C*] cups                                             2.4.14 ×3, 2.4.14-dev, 2.4.14-lib ×3, 2.4.14-man -> 2.4.14, 2.4.16-dev, 2.4.14-lib, 2.4.16-man, 2.4.16-lib ×2, 2.4.16 ×2
+[U.] dms-shell                                        1.2-unstable+date=2025-12-28_dirty, 1.2-unstable+date=2025-12-28_dirty-fish-completions -> 1.2-unstable+date=2026-01-04_dirty, 1.2-unstable+date=2026-01-04_dirty-fish-completions
+[U.] ell                                              0.80 ×2 -> 0.81 ×2
+[U.] enhance-piper.yazi-unstable                      2025-12-04 -> 2026-01-01
+[U.] file-extra-metadata.yazi-unstable                2025-12-04 -> 2026-01-01
+[U*] fish                                             4.2.1, 4.2.1-doc, 4.2.1_fish-completions, 4.2.1-fish-completions -> 4.3.2, 4.3.2-doc, 4.3.2_fish-completions, 4.3.2-fish-completions
+[U.] fishplugin-foreign-env                           0-unstable-2020-02-09 -> 0-unstable-2023-08-23
+[U.] frei0r-plugins                                   2.5.0 -> 2.5.1
+[U*] fresh-unstable                                   2025-12-28 -> 2026-01-04
+[U.] fuse-overlayfs                                   1.15 -> 1.16
+[C.] gcc                                              14.3.0-lib ×3, 14.3.0, 15.2.0-lib ×2, 15.2.0-libgcc ×2, 14.3.0-libgcc ×3 -> 14.3.0-lib, 14.3.0-libgcc, 15.2.0-lib ×4, 15.2.0-libgcc ×4
+[U.] gfortran                                         14.3.0-lib, 14.3.0-libgcc -> 15.2.0-lib, 15.2.0-libgcc
+[U.] git                                              2.51.2, 2.51.2-doc, 2.51.2-fish-completions -> 2.52.0, 2.52.0-doc, 2.52.0-fish-completions
+[U.] glib                                             2.86.1 ×2, 2.86.1-bin ×2, 2.86.1-dev, 2.86.1-fish-completions -> 2.86.3 ×2, 2.86.3-bin ×2, 2.86.3-dev, 2.86.3-fish-completions
+[U.] gnome-remote-desktop                             49.1 -> 49.2
+[C.] gnutls                                           3.8.10 ×3, 3.8.10-bin, 3.8.10-man -> 3.8.10, 3.8.11-bin, 3.8.11-man, 3.8.11 ×2
+[U.] gpgme                                            1.24.3 -> 2.0.1
+[U.] gspell                                           1.14.0 -> 1.14.2
+[U.] gvfs.yazi-unstable                               2025-12-21 -> 2025-12-29
+[C.] harfbuzz                                         12.1.0 ×3, 12.1.0-dev -> 12.1.0, 12.2.0-dev, 12.2.0 ×2
+[U.] harfbuzz-icu                                     12.1.0 -> 12.2.0
+[U.] harper                                           1.2.0 -> 1.3.0
+[U.] hwdata                                           0.401 ×2 -> 0.402 ×2
+[U.] hyprgraphics                                     0.4.0 -> 0.5.0
+[U.] imagemagick                                      7.1.2-8, 7.1.2-8-dev, 7.1.2-8-doc, 7.1.2-8-fish-completions -> 7.1.2-11, 7.1.2-11-dev, 7.1.2-11-doc, 7.1.2-11-fish-completions
+[U.] initrd-linux                                     6.18.2 -> 6.18.3
+[U*] iproute2                                         6.17.0, 6.17.0_fish-completions -> 6.18.0, 6.18.0_fish-completions
+[U.] kitty                                            0.44.0, 0.44.0-fish-completions, 0.44.0-terminfo -> 0.45.0, 0.45.0-fish-completions, 0.45.0-terminfo
+[U.] libadwaita                                       1.8.1 ×2 -> 1.8.2 ×2
+[U.] libarchive                                       3.8.2-lib ×2 -> 3.8.4-lib ×2
+[U.] libbluray                                        1.3.4 ×2 -> 1.4.0 ×2
+[U.] libcamera                                        0.5.2 ×2 -> 0.6.0 ×2
+[U.] libdrm                                           2.4.128 ×2, 2.4.128-bin ×2, 2.4.128-dev ×2 -> 2.4.129 ×2, 2.4.129-bin ×2, 2.4.129-dev ×2
+[U.] libdvdread                                       6.1.3 ×2 -> 7.0.1 ×2
+[U.] libgphoto2                                       2.5.32 ×2 -> 2.5.33 ×2
+[U.] libgsf                                           1.14.53 -> 1.14.54
+[U.] libimagequant                                    4.4.0 -> 4.4.1
+[C.] libjpeg-turbo                                    3.1.2 ×3, 3.1.2-bin, 3.1.2-dev, 3.1.2-man -> 3.1.2, 3.1.3-bin, 3.1.3-dev, 3.1.3-man, 3.1.3 ×2
+[D.] libmpc                                           1.3.1 ×2 -> 1.3.1
+[U.] libnftnl                                         1.3.0 ×2 -> 1.3.1 ×2
+[U.] libpng                                           1.6.50 -> 1.6.52
+[C.] libpng-apng                                      1.6.50 ×3, 1.6.50-dev, 1.6.50-man -> 1.6.50, 1.6.52-dev, 1.6.52-man, 1.6.52 ×2
+[U.] libvpl                                           2.15.0 -> 2.16.0
+[U.] libwacom                                         2.16.1 -> 2.17.0
+[U.] libxslt                                          1.1.43 ×2, 1.1.43-bin -> 1.1.45 ×2, 1.1.45-bin
+[U.] linux                                            6.18.2, 6.18.2-modules ×2, 6.18.2-modules-shrunk -> 6.18.3, 6.18.3-modules ×2, 6.18.3-modules-shrunk
+[U.] llvm                                             21.1.2-lib ×2 -> 21.1.7-lib ×2
+[U.] localsearch                                      3.10.1 -> 3.10.2
+[C*] lvm2                                             2.03.35, 2.03.35-bin, 2.03.35-lib ×3, 2.03.35-man -> 2.03.37, 2.03.37-bin, 2.03.35-lib, 2.03.37-man, 2.03.37-lib ×2
+[U.] mcpp                                             2.7.2.2 -> 2.7.2.3
+[U.] mesa                                             25.3.2 ×2 -> 25.3.3 ×2
+[D.] mpfr                                             4.2.2 ×3 -> 4.2.2 ×2
+[U.] neon                                             0.35.0 ×2 -> 0.36.0 ×2
+[U.] nftables                                         1.1.5 ×2 -> 1.1.6 ×2
+[C.] nghttp3                                          1.12.0 ×3, 1.12.0-dev -> 1.12.0, 1.13.1-dev, 1.13.1 ×2
+[U.] ngtcp2                                           1.17.0 ×2, 1.17.0-dev -> 1.18.0 ×2, 1.18.0-dev
+[U*] nix                                              2.31.2+1 ×2, 2.31.2+1-man -> 2.31.2+2 ×2, 2.31.2+2-man
+[U.] nix-cmd                                          2.30.3, 2.31.2+1 -> 2.30.3+1, 2.31.2+2
+[U.] nix-expr                                         2.30.3, 2.31.2+1 -> 2.30.3+1, 2.31.2+2
+[U.] nix-fetchers                                     2.30.3, 2.31.2+1 -> 2.30.3+1, 2.31.2+2
+[U.] nix-flake                                        2.30.3, 2.31.2+1 -> 2.30.3+1, 2.31.2+2
+[U.] nix-main                                         2.30.3, 2.31.2+1 -> 2.30.3+1, 2.31.2+2
+[U.] nix-manual                                       2.31.2+1-man -> 2.31.2+2-man
+[U.] nix-store                                        2.30.3, 2.31.2+1 -> 2.30.3+1, 2.31.2+2
+[U.] nix-util                                         2.30.3, 2.31.2+1 -> 2.30.3+1, 2.31.2+2
+[U.] nixd                                             2.8.0 -> 2.8.1
+[U.] nixf                                             2.8.0 -> 2.8.1
+[U.] nixos-system-sagittarius                         26.05.20251225.3e2499d -> 26.05.20260102.fb7944c
+[U.] nixt                                             2.8.0 -> 2.8.1
+[U.] nodejs                                           22.21.1 -> 24.12.0
+[U.] nss-cacert                                       3.115, 3.115-p11kit -> 3.117, 3.117-p11kit
+[U*] perl                                             5.40.0 ×2, 5.40.0-env ×3, 5.40.0-man -> 5.42.0 ×2, 5.42.0-env ×3, 5.42.0-man
+[U.] publicsuffix-list                                0-unstable-2025-10-08 ×2 -> 0-unstable-2025-11-14 ×2
+[U.] python3                                          3.13.9 ×2, 3.13.9-env ×10 -> 3.13.11 ×2, 3.13.11-env ×10
+[U.] python3.13-attrs                                 25.3.0 -> 25.4.0
+[U.] python3.13-backports-zstd                        1.0.0 -> 1.1.0
+[U.] python3.13-cattrs                                25.1.1 -> 25.3.0
+[U.] python3.13-click                                 8.2.1 -> 8.3.1
+[U.] python3.13-cryptography                          46.0.2 -> 46.0.3
+[U.] python3.13-debugpy                               1.8.17 -> 1.8.19
+[U.] python3.13-freezegun                             1.5.4 -> 1.5.5
+[U.] python3.13-incremental                           24.7.2 -> 24.11.0
+[U.] python3.13-markdown                              3.9.0 ×2 -> 3.10.0 ×2
+[U.] python3.13-numpy                                 2.3.4 -> 2.3.5
+[U.] python3.13-orjson                                3.11.3 -> 3.11.4
+[U.] python3.13-parso                                 0.8.4 -> 0.8.5
+[U.] python3.13-propcache                             0.3.2 -> 0.4.1
+[U.] python3.13-protobuf                              6.33.1 -> 6.33.2
+[U.] python3.13-psutil                                7.1.2 -> 7.1.3
+[U.] python3.13-urllib3                               2.5.0 -> 2.6.0
+[U.] python3.13-zope-interface                        7.2 -> 8.0.1
+[U.] ruff                                             0.14.9 -> 0.14.10
+[U.] rust-analyzer                                    2025-12-15 -> 2025-12-29
+[U.] rust-analyzer-unwrapped                          2025-12-15 -> 2025-12-29
+[U.] sdl2-compat                                      2.32.58 ×2 -> 2.32.60 ×2
+[U.] sdl3                                             3.2.26-lib ×3 -> 3.2.28-lib ×3
+[U.] shine                                            3.1.01 -> 3.1.1-unstable-2023-01-01
+[U.] spdlog                                           1.15.3 ×2 -> 1.16.0 ×2
+[U.] spidermonkey                                     140.5.0 -> 140.6.0
+[C.] sqlite                                           3.50.4 ×3, 3.50.4-bin ×2, 3.50.4-dev ×2 -> 3.50.4, 3.50.4-bin, 3.50.4-dev, 3.51.1-bin, 3.51.1-dev, 3.51.1 ×2
+[U.] starship                                         1.24.1, 1.24.1-fish-completions -> 1.24.2, 1.24.2-fish-completions
+[U.] texlab                                           5.24.0 -> 5.25.1
+[U*] tlp                                              1.8.0, 1.8.0_fish-completions -> 1.9.0, 1.9.0_fish-completions
+[U.] ty                                               0.0.6 -> 0.0.8
+[U.] unbound                                          1.24.1-lib ×2 -> 1.24.2-lib ×2
+[D.] unit-emergency.service                           <none> ×2 -> <none>
+[D.] unit-plymouth-halt.service                       <none> ×2 -> <none>
+[D.] unit-plymouth-reboot.service                     <none> ×2 -> <none>
+[U.] uriparser                                        0.9.9 -> 1.0.0
+[U.] vicinae                                          0.17.3, 0.17.3-fish-completions -> 0.18.0, 0.18.0-fish-completions
+[U.] vscode-extension-gemini-cli-vscode-ide-companion 0.21.1 -> 0.22.5
+[U.] vscode-extension-jnoortheen-nix-ide              0.5.0 -> 0.5.5
+[C.] vulkan-loader                                    1.4.328.0 ×3 -> 1.4.328.0, 1.4.335.0 ×2
+[U.] wayland-protocols                                1.45 -> 1.46
+[U.] what-size.yazi-unstable                          2025-06-19 -> 2026-01-03
+[U.] xapp-symbolic-icons                              1.0.6 -> 1.0.7
+[U.] xdpyinfo                                         1.3.4 -> 1.4.0
+[C.] xgcc                                             14.3.0-libgcc ×3 -> 14.3.0-libgcc, 15.2.0-libgcc ×2
+[U.] xkbcomp                                          1.4.7 -> 1.5.0
+[U.] yazi                                             25.5.31 ×2, 25.5.31-fish-completions -> 25.12.29 ×2, 25.12.29-fish-completions
+
+ADDED
+[A.] X-Restart-Triggers-wpa_supplicant                <none>
+[A.] curl-impersonate                                 1.2.0
+[A.] etc-wpa_supplicant-nixos.conf                    <none>
+[A.] gpgmepp                                          2.0.0
+[A+] iw                                               6.17-man
+[A.] lua-language-server                              3.16.1
+[A+] niri                                             25.11
+[A.] pear-desktop                                     3.11.0, 3.11.0-fish-completions
+[A.] perl5.42.0-Archive-Zip                           1.68
+[A.] perl5.42.0-Authen-SASL                           2.1900
+[A.] perl5.42.0-CGI                                   4.59
+[A.] perl5.42.0-CGI-Fast                              2.16
+[A.] perl5.42.0-Clone                                 0.46 ×2
+[A.] perl5.42.0-Compress-Raw-Bzip2                    2.206
+[A.] perl5.42.0-Compress-Raw-Lzma                     2.206
+[A.] perl5.42.0-Compress-Raw-Zlib                     2.206
+[A.] perl5.42.0-Config-IniFiles                       3.000003
+[A.] perl5.42.0-Cpanel-JSON-XS                        4.37
+[A.] perl5.42.0-Crypt-URandom                         0.54
+[A.] perl5.42.0-Digest-HMAC                           1.05
+[A.] perl5.42.0-Encode-Locale                         1.05 ×2
+[A.] perl5.42.0-FCGI                                  0.82
+[A.] perl5.42.0-FCGI-ProcManager                      0.28
+[A.] perl5.42.0-File-BaseDir                          0.09 ×2
+[A.] perl5.42.0-File-DesktopEntry                     0.22 ×2
+[A.] perl5.42.0-File-Listing                          6.16 ×2
+[A.] perl5.42.0-File-MimeInfo                         0.33 ×2
+[A.] perl5.42.0-File-Slurp                            9999.32
+[A.] perl5.42.0-File-Slurper                          0.014
+[A.] perl5.42.0-Getopt-Long                           2.58
+[A.] perl5.42.0-HTML-Parser                           3.81 ×2
+[A.] perl5.42.0-HTML-TagCloud                         0.38
+[A.] perl5.42.0-HTML-Tagset                           3.20 ×2
+[A.] perl5.42.0-HTTP-CookieJar                        0.014 ×2
+[A.] perl5.42.0-HTTP-Cookies                          6.10 ×2
+[A.] perl5.42.0-HTTP-Daemon                           6.16 ×2
+[A.] perl5.42.0-HTTP-Date                             6.06 ×2
+[A.] perl5.42.0-HTTP-Message                          6.45 ×2
+[A.] perl5.42.0-HTTP-Negotiate                        6.01 ×2
+[A.] perl5.42.0-IO-Compress                           2.206
+[A.] perl5.42.0-IO-Compress-Brotli                    0.019
+[A.] perl5.42.0-IO-HTML                               1.004 ×2
+[A.] perl5.42.0-IO-Socket-SSL                         2.083
+[A.] perl5.42.0-IO-Stringy                            2.113
+[A.] perl5.42.0-IPC-System-Simple                     1.30 ×2
+[A.] perl5.42.0-Image-ExifTool                        13.39, 13.39-fish-completions
+[A.] perl5.42.0-JSON                                  4.10
+[A.] perl5.42.0-LWP-MediaTypes                        6.04 ×2
+[A.] perl5.42.0-Mozilla-CA                            20230821
+[A.] perl5.42.0-Net-DBus                              1.2.0 ×2
+[A.] perl5.42.0-Net-HTTP                              6.23 ×2
+[A.] perl5.42.0-Net-SMTP-SSL                          1.04
+[A.] perl5.42.0-Net-SSLeay                            1.92
+[A.] perl5.42.0-SUPER                                 1.20190531
+[A.] perl5.42.0-Sub-Identify                          0.14
+[A.] perl5.42.0-TermReadKey                           2.38
+[A.] perl5.42.0-Test-Fatal                            0.017 ×2
+[A.] perl5.42.0-Test-MockModule                       0.177.0
+[A.] perl5.42.0-Test-Needs                            0.002010 ×2
+[A.] perl5.42.0-Test-RequiresInternet                 0.05 ×2
+[A.] perl5.42.0-TimeDate                              2.33 ×2
+[A.] perl5.42.0-Try-Tiny                              0.31 ×2
+[A.] perl5.42.0-URI                                   5.21 ×2
+[A.] perl5.42.0-WWW-RobotRules                        6.02 ×2
+[A.] perl5.42.0-X11-Protocol                          0.56 ×2
+[A.] perl5.42.0-XML-Parser                            2.46 ×2
+[A.] perl5.42.0-XML-Twig                              3.52 ×2
+[A.] perl5.42.0-libnet                                3.15
+[A.] perl5.42.0-libwww-perl                           6.72 ×2
+[A.] switch-inhibitors                                <none>
+[A.] unit-script-wpa_supplicant-start                 <none>
+[A.] unit-wpa_supplicant.service                      <none>
+[A+] wireless-tools                                   30.pre9, 30.pre9_fish-completions
+
+REMOVED
+[R.] curl-impersonate-chrome                          1.2.0
+[R.] flock                                            0.4.0
+[R.] gmp                                              6.3.0
+[R.] hostapd                                          2.11
+[R.] initrd-bin-env                                   <none>
+[R.] isl                                              0.20
+[R.] libdisplay-info                                  0.2.0
+[R-] linux-wifi-hotspot                               4.7.2
+[R.] mcp-nixos                                        1.0.3
+[R-] niri-unstable                                    2025-12-26-b5640d5
+[R.] nixos-init                                       0.1.0
+[R.] perl5.40.0-Archive-Zip                           1.68
+[R.] perl5.40.0-Authen-SASL                           2.1900
+[R.] perl5.40.0-CGI                                   4.59
+[R.] perl5.40.0-CGI-Fast                              2.16
+[R.] perl5.40.0-Clone                                 0.46 ×2
+[R.] perl5.40.0-Compress-Raw-Bzip2                    2.206
+[R.] perl5.40.0-Compress-Raw-Lzma                     2.206
+[R.] perl5.40.0-Compress-Raw-Zlib                     2.206
+[R.] perl5.40.0-Config-IniFiles                       3.000003
+[R.] perl5.40.0-Cpanel-JSON-XS                        4.37
+[R.] perl5.40.0-Crypt-URandom                         0.54
+[R.] perl5.40.0-Digest-HMAC                           1.05
+[R.] perl5.40.0-Encode-Locale                         1.05 ×2
+[R.] perl5.40.0-FCGI                                  0.82
+[R.] perl5.40.0-FCGI-ProcManager                      0.28
+[R.] perl5.40.0-File-BaseDir                          0.09 ×2
+[R.] perl5.40.0-File-DesktopEntry                     0.22 ×2
+[R.] perl5.40.0-File-Listing                          6.16 ×2
+[R.] perl5.40.0-File-MimeInfo                         0.33 ×2
+[R.] perl5.40.0-File-Slurp                            9999.32
+[R.] perl5.40.0-File-Slurper                          0.014
+[R.] perl5.40.0-Getopt-Long                           2.58
+[R.] perl5.40.0-HTML-Parser                           3.81 ×2
+[R.] perl5.40.0-HTML-TagCloud                         0.38
+[R.] perl5.40.0-HTML-Tagset                           3.20 ×2
+[R.] perl5.40.0-HTTP-CookieJar                        0.014 ×2
+[R.] perl5.40.0-HTTP-Cookies                          6.10 ×2
+[R.] perl5.40.0-HTTP-Daemon                           6.16 ×2
+[R.] perl5.40.0-HTTP-Date                             6.06 ×2
+[R.] perl5.40.0-HTTP-Message                          6.45 ×2
+[R.] perl5.40.0-HTTP-Negotiate                        6.01 ×2
+[R.] perl5.40.0-IO-Compress                           2.206
+[R.] perl5.40.0-IO-Compress-Brotli                    0.019
+[R.] perl5.40.0-IO-HTML                               1.004 ×2
+[R.] perl5.40.0-IO-Socket-SSL                         2.083
+[R.] perl5.40.0-IO-Stringy                            2.113
+[R.] perl5.40.0-IPC-System-Simple                     1.30 ×2
+[R.] perl5.40.0-Image-ExifTool                        13.39, 13.39-fish-completions
+[R.] perl5.40.0-JSON                                  4.10
+[R.] perl5.40.0-LWP-MediaTypes                        6.04 ×2
+[R.] perl5.40.0-Mozilla-CA                            20230821
+[R.] perl5.40.0-Net-DBus                              1.2.0 ×2
+[R.] perl5.40.0-Net-HTTP                              6.23 ×2
+[R.] perl5.40.0-Net-SMTP-SSL                          1.04
+[R.] perl5.40.0-Net-SSLeay                            1.92
+[R.] perl5.40.0-SUPER                                 1.20190531
+[R.] perl5.40.0-Sub-Identify                          0.14
+[R.] perl5.40.0-TermReadKey                           2.38
+[R.] perl5.40.0-Test-Fatal                            0.017 ×2
+[R.] perl5.40.0-Test-MockModule                       0.177.0
+[R.] perl5.40.0-Test-Needs                            0.002010 ×2
+[R.] perl5.40.0-Test-RequiresInternet                 0.05 ×2
+[R.] perl5.40.0-TimeDate                              2.33 ×2
+[R.] perl5.40.0-Try-Tiny                              0.31 ×2
+[R.] perl5.40.0-URI                                   5.21 ×2
+[R.] perl5.40.0-WWW-RobotRules                        6.02 ×2
+[R.] perl5.40.0-X11-Protocol                          0.56 ×2
+[R.] perl5.40.0-XML-Parser                            2.46 ×2
+[R.] perl5.40.0-XML-Twig                              3.52 ×2
+[R.] perl5.40.0-libnet                                3.15
+[R.] perl5.40.0-libwww-perl                           6.72 ×2
+[R*] pipewire                                         1.4.9-dev
+[R.] plymouth-initrd-themes                           <none>
+[R.] python3.13-annotated-types                       0.7.0
+[R.] python3.13-anyio                                 4.11.0
+[R.] python3.13-authlib                               1.6.5
+[R.] python3.13-beautifulsoup4                        4.13.4
+[R.] python3.13-cyclopts                              4.4.0
+[R.] python3.13-docstring-parser                      0.16
+[R.] python3.13-docutils                              0.21.2
+[R.] python3.13-email-validator                       2.2.0
+[R.] python3.13-exceptiongroup                        1.3.0
+[R.] python3.13-fastmcp                               2.12.5
+[R.] python3.13-h11                                   0.16.0
+[R.] python3.13-httpcore                              1.0.9
+[R.] python3.13-httpx                                 0.28.1
+[R.] python3.13-httpx-sse                             0.4.3
+[R.] python3.13-isodate                               0.7.2
+[R.] python3.13-jsonpath-ng                           1.7.0
+[R.] python3.13-jsonschema                            4.25.0
+[R.] python3.13-jsonschema-path                       0.3.4
+[R.] python3.13-jsonschema-specifications             2025.4.1
+[R.] python3.13-lazy-object-proxy                     1.11.0
+[R.] python3.13-markdown-it-py                        3.0.0
+[R.] python3.13-mcp                                   1.15.0
+[R.] python3.13-mdurl                                 0.1.2
+[R.] python3.13-more-itertools                        10.7.0
+[R.] python3.13-openapi-core                          0.19.5
+[R.] python3.13-openapi-pydantic                      0.5.1
+[R.] python3.13-openapi-schema-validator              0.6.3
+[R.] python3.13-openapi-spec-validator                0.7.2
+[R.] python3.13-parse                                 1.20.2
+[R.] python3.13-pathable                              0.4.4
+[R.] python3.13-ply                                   3.11
+[R.] python3.13-pydantic                              2.11.7
+[R.] python3.13-pydantic-core                         2.33.2
+[R.] python3.13-pydantic-settings                     2.10.1
+[R.] python3.13-pygments                              2.19.2
+[R.] python3.13-python-dotenv                         1.1.1
+[R.] python3.13-python-multipart                      0.0.20
+[R.] python3.13-referencing                           0.36.2
+[R.] python3.13-rfc3339-validator                     0.1.4
+[R.] python3.13-rich                                  14.1.0
+[R.] python3.13-rich-rst                              1.3.1
+[R.] python3.13-rpds-py                               0.25.0
+[R.] python3.13-sniffio                               1.3.1
+[R.] python3.13-soupsieve                             2.7
+[R.] python3.13-sse-starlette                         3.0.3
+[R.] python3.13-starlette                             0.47.2
+[R.] python3.13-typing-inspection                     0.4.2
+[R.] python3.13-uvicorn                               0.35.0
+[R.] python3.13-werkzeug                              3.1.3
+[R.] qtwayland                                        6.10.1-only-plugins-qml
+[R.] unit-initrd-switch-root.service                  <none>
+[R.] unit-plymouth-switch-root.service                <none>
+[R.] unit-script-initrd-nixos-activation-start        <none>
+[R.] vesktop                                          1.6.1, 1.6.1-fish-completions
+[R.] youtube-music                                    3.11.0, 3.11.0-fish-completions
+
+SIZE: 19.1 GiB -> 18.6 GiB
+DIFF: -487 MiB
