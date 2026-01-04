@@ -43,11 +43,7 @@
                         };
                     };
                     Python = {
-                        format_on_save = "on";
-                        code_actions_on_format = {
-                            "source.organizeImports.ruff" = true;
-                            "source.fixAll.ruff" = true;
-                        };
+                        format_on_save = "off";
                         language_servers = ["ruff" "ty" "!basedpyright"];
                     };
                 };
