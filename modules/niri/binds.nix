@@ -29,6 +29,19 @@
                         hotkey-overlay.title = "Toggle display scale";
                     };
 
+                    "Print" = {
+                        action.screenshot = [];
+                        hotkey-overlay.title = "Take screenshot";
+                    };
+                    "Ctrl+Print" = {
+                        action.screenshot-window = [];
+                        hotkey-overlay.title = "Take screenshot of focused window";
+                    };
+                    "Ctrl+Shift+Print" = {
+                        action.screenshot-screen = [];
+                        hotkey-overlay.title = "Take screenshot of focused display";
+                    };
+
                     "Mod+Q".action = close-window;
                     "Mod+Shift+Q".action = spawn-sh (getExe scripts.close-all);
 
