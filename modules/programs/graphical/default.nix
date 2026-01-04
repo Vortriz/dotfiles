@@ -2,16 +2,16 @@
     unify.home = {pkgs, ...}: {
         home.packages = with pkgs; [
             # keep-sorted start
+            (bottles.override {removeWarningPopup = true;})
             anydesk
-            bottles
             gnome-calculator
             gnome-characters
             libreoffice
             obsidian
             pavucontrol
+            pear-desktop
             qbittorrent
             warp
-            youtube-music
             # keep-sorted end
         ];
     };

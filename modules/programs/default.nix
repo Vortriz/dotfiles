@@ -5,7 +5,7 @@
                 # keep-sorted start
                 asusctl
                 kdePackages.ksystemlog
-                linux-wifi-hotspot
+                # linux-wifi-hotspot # [FIXME] incorrect fetchpatch hash
                 lm_sensors
                 p7zip
                 pciutils

@@ -22,12 +22,13 @@
                 auto_update = false;
                 buffer_font_family = fontName;
                 buffer_font_size = fontSize;
-                context_servers = {
-                    nixos = {
-                        command = lib.getExe pkgs.mcp-nixos;
-                        args = [];
-                    };
-                };
+                # [MARK] wait for https://github.com/NixOS/nixpkgs/pull/475389
+                # context_servers = {
+                #     nixos = {
+                #         command = lib.getExe pkgs.mcp-nixos;
+                #         args = [];
+                #     };
+                # };
                 cursor_shape = "bar";
                 features.edit_prediction_provider = "copilot";
                 git.inline_blame.enabled = false;

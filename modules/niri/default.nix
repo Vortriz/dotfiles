@@ -6,7 +6,7 @@
 
             programs.niri = {
                 enable = true;
-                package = pkgs.niri-unstable;
+                package = pkgs.niri;
             };
 
             niri-flake.cache.enable = false;
