@@ -18,9 +18,4 @@
         path = ./minimal-sci-env;
         description = "Scientific env";
     };
-
-    typst-presentation = {
-        path = ./typst-presentation;
-        description = "Typst presentation using custom Touying theme";
-    };
 }
