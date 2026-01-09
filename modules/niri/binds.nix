@@ -18,7 +18,10 @@
                 {
                     "Mod+Shift+Slash".action = show-hotkey-overlay;
 
-                    "Mod+Alt+W".action = spawn-sh (getExe scripts.toggle-warp);
+                    "Mod+Alt+W" = {
+                        action = spawn-sh (getExe scripts.toggle-warp);
+                        hotkey-overlay.title = "Toggle Cloudflare Warp";
+                    };
 
                     "Mod+H" = {
                         action = spawn-sh (getExe scripts.cycle-rr);
@@ -43,7 +46,10 @@
                     };
 
                     "Mod+Q".action = close-window;
-                    "Mod+Shift+Q".action = spawn-sh (getExe scripts.close-all);
+                    "Mod+Shift+Q" = {
+                        action = spawn-sh (getExe scripts.close-all);
+                        hotkey-overlay.title = "Close all windows";
+                    };
 
                     "Alt+Right".action = focus-window-down;
                     "Alt+Left".action = focus-window-up;
