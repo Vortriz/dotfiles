@@ -3,58 +3,39 @@
         programs.firefox.profiles.default.search = {
             force = true;
             default = "google";
-            order = ["searxng" "google" "mynixos" "github"];
+            order = ["nix" "google" "github" "noogle"];
 
-            engines = let
-                engine = args: {
-                    icon = "${args.icon}";
-                    updateInterval = 24 * 60 * 60 * 1000;
-                    definedAliases = ["@${args.alias}"];
-                    urls = [
-                        {
-                            template = "${args.surl}";
-                            params = [
-                                {
-                                    name = "q";
-                                    value = "{searchTerms}";
-                                }
-                            ];
-                        }
-                    ];
-                };
-            in {
+            engines = {
                 # keep-sorted start block=yes newline_separated=yes
                 "amazondotcom-us".metaData.hidden = true;
 
                 "bing".metaData.hidden = true;
 
-                "github" = engine rec {
-                    url = "https://github.com";
-                    icon = "${url}/favicon.ico";
-                    alias = "gh";
-                    surl = "${url}/search";
+                "bookmarks".metaData.hidden = true;
+
+                "ddg".metaData.hidden = true;
+
+                "github" = {
+                    urls = [{template = "https://github.com/search?q={searchTerms}&type=code";}];
+                    icon = "https://github.com/favicon.ico";
+                    definedAliases = ["@gh"];
                 };
 
-                "google" = engine rec {
-                    url = "htttps://google.com";
-                    icon = "${url}/favicon.ico";
-                    alias = "google";
-                    surl = "${url}/search";
+                "nix" = {
+                    urls = [{template = "https://github.com/search?q=lang%3Anix+{searchTerms}&type=code";}];
+                    icon = "https://nixos.org/favicon.ico";
+                    definedAliases = ["@nix"];
                 };
 
-                "mynixos" = engine rec {
-                    url = "https://mynixos.com";
-                    icon = "${url}/favicon.ico";
-                    alias = "nix";
-                    surl = "${url}/search";
+                "noogle" = {
+                    urls = [{template = "https://noogle.dev/q?term={searchTerms}";}];
+                    icon = "https://noogle.dev/favicon.png";
+                    definedAliases = ["@ng"];
                 };
 
-                "searxng" = engine rec {
-                    url = "https://search.bus-hit.me";
-                    icon = "${url}/favicon.ico";
-                    alias = "xng";
-                    surl = "${url}/search";
-                };
+                "perplexity".metaData.hidden = true;
+
+                "wikipedia".metaData.hidden = true;
                 # keep-sorted end
             };
         };
