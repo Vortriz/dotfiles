@@ -19826,3 +19826,93 @@ REMOVED
 
 SIZE: 18.6 GiB -> 19.1 GiB
 DIFF: 510 MiB
+
+---
+
+15/01/26 12:37:31 AM IST
+<<< /nix/store/ccq495lyf21bl6mc9yq5szsxfq1pwwkk-nixos-system-sagittarius-26.05.20260107.5912c17
+>>> /nix/store/30dqn4dzjrdrckqbxdv6bnrbjz3nzn7b-nixos-system-sagittarius-26.05.20260111.ffbc9f8
+
+CHANGED
+[U.] MapleMono-Variable                               7.6 -> 7.9
+[U.] MapleMonoNormal-NF-unhinted                      7.6, 7.6-fish-completions -> 7.9, 7.9-fish-completions
+[U.] acpi-call                                        1.2.2-6.18.3 -> 1.2.2-6.18.4
+[U.] attica                                           6.21.0 -> 6.22.0
+[U.] breeze-icons                                     6.21.0 -> 6.22.0
+[U.] cinnamon-desktop                                 6.6.1 -> 6.6.2
+[U.] cinnamon-translations                            6.6.1 -> 6.6.2
+[U*] fish                                             4.3.2, 4.3.2-doc, 4.3.2_fish-completions, 4.3.2-fish-completions -> 4.3.3, 4.3.3-doc, 4.3.3_fish-completions, 4.3.3-fish-completions
+[U.] folder-color-switcher                            1.7.0 -> 1.7.1
+[U.] frameworkintegration                             6.21.0 -> 6.22.0
+[U*] fresh                                            0.1.67 -> 0.1.75
+[U.] harper                                           1.3.0 -> 1.4.0
+[U.] initrd-linux                                     6.18.3 -> 6.18.4
+[U.] just                                             1.45.0, 1.45.0-fish-completions, 1.45.0-man -> 1.46.0, 1.46.0-fish-completions, 1.46.0-man
+[U.] karchive                                         6.21.0 -> 6.22.0
+[U.] kauth                                            6.21.0 -> 6.22.0
+[U.] kbookmarks                                       6.21.0 -> 6.22.0
+[U.] kcmutils                                         6.21.0 -> 6.22.0
+[U.] kcodecs                                          6.21.0 -> 6.22.0
+[U.] kcolorscheme                                     6.21.0 -> 6.22.0
+[U.] kcompletion                                      6.21.0 -> 6.22.0
+[U.] kconfig                                          6.21.0 -> 6.22.0
+[U.] kconfigwidgets                                   6.21.0 -> 6.22.0
+[U.] kcoreaddons                                      6.21.0 -> 6.22.0
+[U.] kcrash                                           6.21.0 -> 6.22.0
+[U.] kdbusaddons                                      6.21.0 -> 6.22.0
+[U.] kdeclarative                                     6.21.0 -> 6.22.0
+[U.] kdegraphics-mobipocket                           25.12.0 -> 25.12.1
+[U.] kdoctools                                        6.21.0 -> 6.22.0
+[U.] kfilemetadata                                    6.21.0 -> 6.22.0
+[U.] kglobalaccel                                     6.21.0 -> 6.22.0
+[U.] kguiaddons                                       6.21.0 -> 6.22.0
+[U.] ki18n                                            6.21.0 -> 6.22.0
+[U.] kiconthemes                                      6.21.0 -> 6.22.0
+[U.] kimageformats                                    6.21.0 -> 6.22.0
+[U.] kio                                              6.21.0 -> 6.22.0
+[U.] kirigami                                         6.21.0 -> 6.22.0
+[U.] kitemmodels                                      6.21.0 -> 6.22.0
+[U.] kitemviews                                       6.21.0 -> 6.22.0
+[U.] kjobwidgets                                      6.21.0 -> 6.22.0
+[U.] knewstuff                                        6.21.0 -> 6.22.0
+[U.] knotifications                                   6.21.0 -> 6.22.0
+[U.] kpackage                                         6.21.0 -> 6.22.0
+[U.] kservice                                         6.21.0 -> 6.22.0
+[U*] ksystemlog                                       25.12.0 -> 25.12.1
+[U.] ktextwidgets                                     6.21.0 -> 6.22.0
+[U.] kwallet                                          6.21.0 -> 6.22.0
+[U.] kwidgetsaddons                                   6.21.0 -> 6.22.0
+[U.] kwindowsystem                                    6.21.0 -> 6.22.0
+[U.] kxmlgui                                          6.21.0 -> 6.22.0
+[U.] linux                                            6.18.3, 6.18.3-modules ×2, 6.18.3-modules-shrunk -> 6.18.4, 6.18.4-modules ×2, 6.18.4-modules-shrunk
+[U.] linux-firmware                                   20251125-unstable-2025-12-18-zstd -> 20260110-zstd
+[U.] nemo                                             6.6.2 -> 6.6.3
+[U.] nemo-with-extensions                             6.6.2, 6.6.2-fish-completions -> 6.6.3, 6.6.3-fish-completions
+[U*] niri-unstable                                    2026-01-07-10df9f4 -> 2026-01-12-3672e79
+[U.] nixos-system-sagittarius                         26.05.20260107.5912c17 -> 26.05.20260111.ffbc9f8
+[U.] nss                                              3.119.1, <others> -> 3.120, <others>
+[U.] piper.yazi                                       25.5.31-unstable-2025-06-21 -> 25.9.15-unstable-2025-12-31
+[U.] qqc2-desktop-style                               6.21.0 -> 6.22.0
+[U.] restore.yazi                                     25.5.31-unstable-2025-12-04 -> 25.5.31-unstable-2026-01-06
+[U.] smart-filter.yazi                                25.5.31-unstable-2025-07-23 -> 25.12.29-unstable-2025-12-29
+[U.] solid                                            6.21.0 -> 6.22.0
+[U.] sonnet                                           6.21.0 -> 6.22.0
+[U.] syndication                                      6.21.0 -> 6.22.0
+[U.] telegram-desktop                                 6.3.4, 6.3.4-fish-completions -> 6.4.1, 6.4.1-fish-completions
+[U.] tinymist                                         0.14.6 -> 0.14.8
+[U*] tlp                                              1.9.0, 1.9.0_fish-completions -> 1.9.1, 1.9.1_fish-completions
+[U.] ty                                               0.0.9 -> 0.0.11
+[U.] vicinae                                          0.18.2, 0.18.2-fish-completions -> 0.18.3, 0.18.3-fish-completions
+[U.] vscode-extension-gemini-cli-vscode-ide-companion 0.22.5 -> 0.23.0
+[U.] vscode-extension-myriad-dreamin-tinymist         0.14.6 -> 0.14.8
+[U.] x86_energy_perf_policy                           6.12.63 -> 6.12.64
+[U.] xapp                                             3.2.1, 3.2.1-dev -> 3.2.2, 3.2.2-dev
+[U.] xwayland-satellite-unstable                      2026-01-07-74cf1a9 -> 2026-01-11-72245e1
+[U.] zed-editor                                       0.217.4 -> 0.218.6
+[U.] zed-editor-wrapped                               0.217.4, 0.217.4-fish-completions -> 0.218.6, 0.218.6-fish-completions
+
+ADDED
+[A.] hm-session-vars.fish-fish-completions            <none>
+
+SIZE: 19.1 GiB -> 19.1 GiB
+DIFF: 15.6 MiB
