@@ -19916,3 +19916,55 @@ ADDED
 
 SIZE: 19.1 GiB -> 19.1 GiB
 DIFF: 15.6 MiB
+
+---
+
+18/01/26 07:42:48 PM IST
+<<< /nix/store/30dqn4dzjrdrckqbxdv6bnrbjz3nzn7b-nixos-system-sagittarius-26.05.20260111.ffbc9f8
+>>> /nix/store/q78gknq7g0bmz8ic1g0akjkv95hcwykv-nixos-system-sagittarius-26.05.20260116.e4bae1b
+
+CHANGED
+[U.] acpi-call                                1.2.2-6.18.4 -> 1.2.2-6.18.5
+[C.] boost                                    1.87.0-dev, <others> -> <others>
+[U.] breeze                                   6.5.4 -> 6.5.5
+[U.] conmon                                   2.1.13 -> 2.2.0
+[U.] deno                                     2.6.3 -> 2.6.4
+[U.] fastfetch                                2.56.1, 2.56.1-fish-completions, 2.56.1-man -> 2.57.1, 2.57.1-fish-completions, 2.57.1-man
+[U.] firefox                                  146.0.1, 146.0.1-fish-completions -> 147.0, 147.0-fish-completions
+[U.] firefox-unwrapped                        146.0.1 -> 147.0
+[U.] gh                                       2.83.2, 2.83.2-fish-completions -> 2.85.0, 2.85.0-fish-completions
+[U.] gnome-control-center                     49.2.2 -> 49.3
+[U.] harper                                   1.4.0 -> 1.4.1
+[C.] icu4c                                    <others> -> 78.1, <others>
+[U.] initrd-linux                             6.18.4 -> 6.18.5
+[U.] intel-compute-runtime                    25.48.36300.8 -> 26.01.36711.4
+[U.] kdecoration                              6.5.4 -> 6.5.5
+[U.] libmateweather                           1.28.1 -> 1.28.2
+[U.] libmediainfo                             25.09 -> 25.10
+[U.] libphonenumber                           9.0.21 -> 9.0.22
+[U.] linux                                    6.18.4, 6.18.4-modules ×2, 6.18.4-modules-shrunk -> 6.18.5, 6.18.5-modules ×2, 6.18.5-modules-shrunk
+[U.] mediainfo.yazi                           25.5.31-unstable-2026-01-01 -> 25.5.31-unstable-2026-01-07
+[U.] nautilus                                 49.2 -> 49.3
+[U*] niri-unstable                            2026-01-12-3672e79 -> 2026-01-17-d7184a0
+[U.] nix-search-tv                            2.2.3, 2.2.3-fish-completions -> 2.2.4, 2.2.4-fish-completions
+[U.] nixd                                     2.8.1 -> 2.8.2
+[U.] nixf                                     2.8.1 -> 2.8.2
+[U.] nixos-system-sagittarius                 26.05.20260111.ffbc9f8 -> 26.05.20260116.e4bae1b
+[U.] nixt                                     2.8.1 -> 2.8.2
+[U.] nodejs                                   25.2.1, <others> -> 25.3.0, <others>
+[U.] ouch.yazi                                0-unstable-2025-11-25 -> 0-unstable-2026-01-09
+[U.] polkit-kde-agent                         1-6.5.4 -> 1-6.5.5
+[U.] python3.13-python-xapp                   3.0.1 -> 3.0.2
+[U.] ruff                                     0.14.10 -> 0.14.11
+[U.] rust-analyzer                            2025-12-29 -> 2026-01-05
+[U.] rust-analyzer-unwrapped                  2025-12-29 -> 2026-01-05
+[U.] sdbus-cpp                                2.1.0 -> 2.2.1
+[U.] ty                                       0.0.11 -> 0.0.12
+[U.] vscode                                   1.107.1, 1.107.1-fish-completions -> 1.108.0, 1.108.0-fish-completions
+[U.] vscode-extension-James-Yu-latex-workshop 10.12.0 -> 10.12.2
+[U.] x86_energy_perf_policy                   6.12.64 -> 6.12.65
+[U.] zed-editor                               0.218.6 -> 0.219.4
+[U.] zed-editor-wrapped                       0.218.6, 0.218.6-fish-completions -> 0.219.4, 0.219.4-fish-completions
+
+SIZE: 19.1 GiB -> 19.0 GiB
+DIFF: -101 MiB
