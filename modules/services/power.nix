@@ -1,5 +1,9 @@
 {
-    unify.nixos = {pkgs, ...}: {
+    unify.nixos = {
+        lib,
+        pkgs,
+        ...
+    }: {
         services = {
             power-profiles-daemon.enable = false; # to prevent conflict with TLP
 
@@ -45,7 +49,7 @@
             serviceConfig = {
                 Restart = "on-failure";
                 RestartSec = 5;
-                ExecStart = pkgs.lib.getExe pkgs.batteryd;
+                ExecStart = lib.getExe pkgs.batteryd;
             };
         };
     };

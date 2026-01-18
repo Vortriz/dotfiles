@@ -1,6 +1,7 @@
 {
     unify.home = {
         config,
+        lib,
         pkgs,
         ...
     }: {
@@ -28,7 +29,7 @@
 
         programs.niri.settings.binds = {
             "Mod+T" = {
-                action = config.lib.niri.actions.spawn-sh (pkgs.lib.getExe pkgs.kitty);
+                action = config.lib.niri.actions.spawn-sh (lib.getExe pkgs.kitty);
                 hotkey-overlay.title = "Open Kitty Terminal";
             };
         };

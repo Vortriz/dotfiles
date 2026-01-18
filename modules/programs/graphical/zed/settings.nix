@@ -22,13 +22,12 @@
                 auto_update = false;
                 buffer_font_family = fontName;
                 buffer_font_size = fontSize;
-                # [MARK] wait for https://github.com/NixOS/nixpkgs/pull/475389
-                # context_servers = {
-                #     nixos = {
-                #         command = lib.getExe pkgs.mcp-nixos;
-                #         args = [];
-                #     };
-                # };
+                context_servers = {
+                    nixos = {
+                        command = lib.getExe pkgs.mcp-nixos;
+                        args = [];
+                    };
+                };
                 cursor_shape = "bar";
                 features.edit_prediction_provider = "copilot";
                 git.inline_blame.enabled = false;
@@ -54,7 +53,7 @@
                 };
                 node = {
                     path = lib.getExe pkgs.nodejs_latest;
-                    npm_path = "${pkgs.nodejs_latest}/bin/npm";
+                    npm_path = lib.getExe' pkgs.nodejs_latest "npm";
                 };
                 tab_size = 4;
                 tabs = {

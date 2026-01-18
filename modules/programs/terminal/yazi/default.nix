@@ -1,6 +1,7 @@
 {
     unify.home = {
         config,
+        lib,
         pkgs,
         ...
     }: let
@@ -19,7 +20,7 @@
         home.packages = [pkgs.exiftool];
 
         programs.niri.settings.binds."Mod+E" = {
-            action = config.lib.niri.actions.spawn-sh "xdg-terminal-exec --app-id=yazi ${pkgs.lib.getExe config.programs.yazi.finalPackage}";
+            action = config.lib.niri.actions.spawn-sh "xdg-terminal-exec --app-id=yazi ${lib.getExe config.programs.yazi.finalPackage}";
             hotkey-overlay.title = "Launch Yazi";
         };
 

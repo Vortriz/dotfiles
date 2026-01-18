@@ -67,12 +67,12 @@
                             path = lib.getExe pkgs.astro-language-server;
                             arguments = ["--stdio"];
                         };
-                        harper.binary = {
+                        harper-ls.binary = {
                             path = lib.getExe pkgs.harper;
                             arguments = ["--stdio"];
                         };
-                        qml.binary = {
-                            path = "${pkgs.kdePackages.qtdeclarative}/bin/qmlls";
+                        qmljs.binary = {
+                            path = lib.getExe' pkgs.kdePackages.qtdeclarative "qmlls";
                             arguments = ["-E"];
                         };
                         ruff.binary = {
@@ -82,10 +82,6 @@
                         tailwindcss-language-server.binary = {
                             path = lib.getExe pkgs.tailwindcss-language-server;
                             arguments = ["--stdio"];
-                        };
-                        ty.binary = {
-                            path = lib.getExe pkgs.ty;
-                            arguments = ["server"];
                         };
                         # keep-sorted end
                     };

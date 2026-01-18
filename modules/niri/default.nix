@@ -1,4 +1,5 @@
 {inputs, ...}: {
+    # [MARK] fix everything after https://github.com/sodiboo/niri-flake/pull/1548 is merged
     unify = {
         nixos = {pkgs, ...}: {
             imports = [inputs.niri.nixosModules.niri];

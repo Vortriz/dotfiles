@@ -90,10 +90,6 @@
                     "Mod+Shift+Minus".action = set-window-height "-10%";
                     "Mod+Shift+Equal".action = set-window-height "+10%";
 
-                    # "Mod+Shift+P" = {
-                    #     action = spawn-sh "${pkgs.wl-mirror}/bin/wl-mirror $(niri msg --json focused-output | ${getExe pkgs.jaq} -r .name)";
-                    #     hotkey-overlay.title = "Mirror focused output";
-                    # };
                     "Mod+Shift+C" = {
                         action = spawn-sh "niri msg action set-dynamic-cast-window --id $(niri msg --json pick-window | ${getExe pkgs.jaq} .id)";
                         hotkey-overlay.title = "Select dynamic cast target";
@@ -105,7 +101,7 @@
                 // (builtins.genList (x: x + 1) 9
                 |> map (x: {
                     "Mod+${toString x}".action = focus-workspace x;
-                    # "Mod+Ctrl+${toString x}".action = move-column-to-workspace x; # [TODO] niri-flake is borked atm
+                    # "Mod+Ctrl+${toString x}".action = move-column-to-workspace x; # [MARK] niri-flake is borked atm
                 })
                 |> lib.attrsets.mergeAttrsList);
         };

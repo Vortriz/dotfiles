@@ -22,7 +22,7 @@
                 {
                     context = "Editor && edit_prediction";
                     bindings = {
-                        ctrl-right = "editor::AcceptPartialEditPrediction";
+                        ctrl-right = "editor::AcceptNextWordEditPrediction";
                     };
                 }
                 {

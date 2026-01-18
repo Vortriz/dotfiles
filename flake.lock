@@ -312,8 +312,8 @@
         ]
       },
       "locked": {
-        "lastModified": 1767525809,
-        "narHash": "sha256-xjiKptqPy3t2tw/EfeT8+fpUUT5+bZwZiKWy3YnTZhE=",
+        "lastModified": 1768756744,
+        "narHash": "sha256-2JvWfA6/lcHl7pA4MQmufOApg5oWoRCjUGWVhBRRfrs=",
         "path": "/mnt/HOUSE/dev/others/niri-shell",
         "type": "path"
       },
@@ -521,14 +521,17 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1768657470,
-        "narHash": "sha256-OZhN6Ke6xWMwqbE0n5KDlUZRF99DJxw+jpBd8avP+k8=",
-        "path": "/mnt/HOUSE/dev/others/nur-packages",
-        "type": "path"
+        "lastModified": 1768759927,
+        "narHash": "sha256-M7Kmto2/5K0reVJwsrzV4Wu8WXyxvMkCX7TxQUHmzNk=",
+        "owner": "Vortriz",
+        "repo": "nur-packages",
+        "rev": "bfb466d0a9ce7e437f9e68b79c6cbd29f3968bae",
+        "type": "github"
       },
       "original": {
-        "path": "/mnt/HOUSE/dev/others/nur-packages",
-        "type": "path"
+        "owner": "Vortriz",
+        "repo": "nur-packages",
+        "type": "github"
       }
     },
     "quickshell": {

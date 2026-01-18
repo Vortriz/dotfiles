@@ -32,7 +32,7 @@
                             smart-filter
                             starship
                             toggle-pane
-                            # zoom # [MARK] wait for yazi to cut a new release
+                            # zoom # [MARK] wait for nixpkgs to add it
                             # keep-sorted end
                             ;
                     }
