@@ -6,6 +6,7 @@
 | ----------------- | --------------------------------------------------------------------------------------- |
 | **Shell**         | [fish](https://fishshell.com)                                                           |
 | **Terminal**      | [kitty](https://sw.kovidgoyal.net/kitty)                                                |
+| **Editor**        | [zed](https://zed.dev)                                                                  |
 | **WM**            | [niri](https://yalter.github.io/niri)                                                   |
 | **Launcher**      | [vicinae](https://docs.vicinae.com)                                                     |
 | **Browser**       | Firefox (with [ShyFox](https://github.com/Vortriz/ShyFox) theme)                        |
