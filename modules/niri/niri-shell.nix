@@ -35,7 +35,6 @@
                 }
             ];
 
-            # [TODO] test if this works
             home.packages = with pkgs; [
                 wl-mirror
             ];
