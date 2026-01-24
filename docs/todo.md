@@ -6,7 +6,6 @@
     - [ ] sideberry
         - [ ] https://github.com/Erudition/zen-sidebery-mod
         - [ ] https://github.com/MrOtherGuy/fx-autoconfig
-- [ ] https://github.com/boydaihungst/gvfs.yazi
 - [ ] see how to install the dotfiles directly from the graphical iso
     - https://nixos.org/manual/nixos/stable/index.html#sec-installation-manual-installing
     - https://nixos.org/manual/nixos/stable/index.html#sec-installing-behind-proxy
