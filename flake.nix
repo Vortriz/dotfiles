@@ -33,13 +33,6 @@
         };
 
         # keep-sorted start block=yes
-        agenix = {
-            url = "github:ryantm/agenix";
-            inputs.nixpkgs.follows = "nixpkgs";
-            inputs.home-manager.follows = "home-manager";
-            inputs.darwin.follows = "";
-            inputs.systems.follows = "systems";
-        };
         git-hooks = {
             url = "github:cachix/git-hooks.nix";
             inputs.nixpkgs.follows = "nixpkgs";
