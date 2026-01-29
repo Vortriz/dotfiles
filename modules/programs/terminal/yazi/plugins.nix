@@ -58,13 +58,13 @@
                         [
                             # glow/enhance-piper
                             {
-                                name = ["*.md"];
+                                url = ["*.md"];
                                 run = [''enhance-piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"''];
                             }
 
                             # gvfs
                             {
-                                name = ["/run/user/1000/gvfs/**/*" "/run/media/${hostConfig.username}/**/*"];
+                                url = ["/run/user/1000/gvfs/**/*" "/run/media/${hostConfig.username}/**/*"];
                                 run = ["noop"];
                             }
 
@@ -93,7 +93,7 @@
                         [
                             # gvfs
                             {
-                                name = ["/run/user/1000/gvfs/**/*" "/run/media/${hostConfig.username}/**/*"];
+                                url = ["/run/user/1000/gvfs/**/*" "/run/media/${hostConfig.username}/**/*"];
                                 run = ["noop"];
                             }
 
@@ -109,7 +109,7 @@
                     prepend_spotters = [
                         # file-extra-metadata
                         {
-                            name = "*";
+                            url = "*";
                             run = "file-extra-metadata";
                         }
                     ];
@@ -138,7 +138,7 @@
                     # drag and drop
                     {
                         on = "<C-n>";
-                        run = ''shell 'ripdrag "$@" -anx 2>/dev/null &' --confirm'';
+                        run = ''shell 'ripdrag %s -anx 2>/dev/null &' --confirm'';
                         desc = "Drag and drop";
                     }
 
@@ -216,16 +216,16 @@
                     }
 
                     # zoom
-                    {
-                        on = "+";
-                        run = "plugin zoom 1";
-                        desc = "Zoom in hovered file";
-                    }
-                    {
-                        on = "-";
-                        run = "plugin zoom -1";
-                        desc = "Zoom out hovered file";
-                    }
+                    # {
+                    #     on = "+";
+                    #     run = "plugin zoom 1";
+                    #     desc = "Zoom in hovered file";
+                    # }
+                    # {
+                    #     on = "-";
+                    #     run = "plugin zoom -1";
+                    #     desc = "Zoom out hovered file";
+                    # }
                 ];
 
                 extraPackages = with pkgs; [

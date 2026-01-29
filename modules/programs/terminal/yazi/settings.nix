@@ -11,38 +11,26 @@
                 max_height = 1000;
             };
 
-            confirm = {
-                overwrite = true;
-            };
-
             opener = {
-                open = [
-                    {
-                        run = ''xdg-open "$@"'';
-                        orphan = true;
-                        desc = "Open";
-                    }
-                ];
-
                 edit-doc = [
                     {
-                        run = ''libreoffice "$@"'';
+                        run = "libreoffice %s";
                         orphan = true;
                         desc = "Edit in LibreOffice";
                     }
                 ];
 
-                open-with-zed = [
+                edit-with-zed = [
                     {
-                        run = ''zeditor "$@"'';
+                        run = "zeditor %s";
                         orphan = true;
-                        desc = "Open with Zed";
+                        desc = "Edit with Zed";
                     }
                 ];
 
                 send = [
                     {
-                        run = ''warp "$@"'';
+                        run = "warp %s";
                         orphan = true;
                         desc = "Send via Warp";
                     }
@@ -52,23 +40,24 @@
             open = {
                 prepend_rules = [
                     {
-                        mime = "video/*";
-                        use = "open";
+                        mime = "text/*";
+                        use = ["edit" "edit-with-zed" "open" "reveal" "send"];
                     }
-                ];
-
-                append_rules = [
+                    {
+                        mime = "inode/empty";
+                        use = ["edit" "edit-with-zed" "open" "reveal" "send"];
+                    }
                     {
                         mime = "application/pdf";
-                        use = "edit-doc";
+                        use = ["open" "reveal" "edit-doc" "send"];
                     }
                     {
-                        mime = "inode/directory";
-                        use = "open-with-zed";
+                        mime = "folder/local";
+                        use = ["open" "reveal" "edit-with-zed" "send"];
                     }
                     {
-                        mime = "*";
-                        use = "send";
+                        url = "*";
+                        use = ["open" "reveal" "send"];
                     }
                 ];
             };
