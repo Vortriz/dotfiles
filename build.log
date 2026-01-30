@@ -20116,3 +20116,172 @@ REMOVED
 
 SIZE: 19.0 GiB -> 19.2 GiB
 DIFF: 138 MiB
+
+---
+
+30/01/26 03:27:21 PM IST
+<<< /nix/store/xb4rqrills7l7fy54p3fdkghmjbvg812-nixos-system-sagittarius-26.05.20260121.88d3861
+>>> /nix/store/g89s9d8kyfdgxznnqkms9as1sinf5503-nixos-system-sagittarius-26.05.20260126.bfc1b8a
+
+CHANGED
+[U.] ZotMoov                                     1.2.25 -> 1.2.26
+[C.] abseil-cpp                                  <others> -> 20250814.1-dev, <others>
+[U.] acpi-call                                   1.2.2-6.18.6 -> 1.2.2-6.18.7
+[U.] alsa-lib                                    1.2.14 ×2 -> 1.2.15.1 ×2
+[U.] alsa-ucm-conf                               1.2.14 ×2 -> 1.2.15.1 ×2
+[U.] bash                                        5.3p3 ×3 -> 5.3p3, 5.3p9
+[U*] bash-interactive                            5.3p3 ×4, 5.3p3-fish-completions, 5.3p3-man ×2 -> 5.3p3, 5.3p9-fish-completions, 5.3p9-man ×2, 5.3p9
+[C.] bottles                                     <none>, <others> -> 60.1, 60.1-fish-completions, <others>
+[U*] btrfs-progs                                 6.17.1_fish-completions, <others> -> 6.17.1-man, <others>
+[U.] c-ares                                      1.34.5 ×2 -> 1.34.6 ×2, 1.34.6-dev
+[U.] coreutils                                   9.8 ×3 -> 9.8, 9.9
+[U*] coreutils-full                              9.8, 9.8_fish-completions -> 9.9, 9.9_fish-completions
+[U.] cryptsetup                                  2.8.1 ×3 -> 2.8.1, 2.8.3
+[U.] dav1d                                       1.5.2 ×2, <others> -> 1.5.3 ×2, <others>
+[U.] deno                                        2.6.4 -> 2.6.5
+[U.] distrobox                                   1.8.2.2 -> 1.8.2.3
+[U.] ed                                          1.22.2 -> 1.22.4
+[U.] electron                                    38.7.1 -> 38.7.2
+[U.] electron-unwrapped                          38.7.1 -> 38.7.2
+[U*] exfatprogs                                  1.3.1_fish-completions, <others> -> 1.3.1-man, <others>
+[C.] f2fs-tools                                  <others> -> 1.16.0-lib, <others>
+[C.] ffmpeg                                      6.1.3-data, 6.1.3-lib, 7.1.2-data, 7.1.2-lib, 8.0-bin, 8.0-data ×2, 8.0-lib ×2 -> 6.1.4-data, 6.1.4-lib, 7.1.3-data, 7.1.3-lib, 8.0.1-bin, 8.0.1-data ×2, 8.0.1-lib ×2
+[D.] ffmpeg-full                                 8.0-bin, 8.0-data, 8.0-fish-completions, 8.0-lib, 8.0-man -> 8.0.1-bin, 8.0.1-data, 8.0.1-fish-completions, 8.0.1-lib, 8.0.1-man
+[D.] ffmpeg-headless                             8.0-bin, 8.0-data ×2, 8.0-lib ×2 -> 8.0.1-bin, 8.0.1-data ×2, 8.0.1-lib ×2
+[U.] fluidsynth                                  2.5.1 ×2 -> 2.5.2 ×2
+[U.] fmt                                         12.0.0 ×2 -> 12.1.0 ×2
+[U*] fresh                                       0.1.77 -> 0.1.88
+[U.] gdb                                         16.3 -> 17.1
+[U*] getent-glibc                                2.40-66 ×3 -> 2.40-66, 2.42-47
+[U.] gh                                          2.85.0, 2.85.0-fish-completions -> 2.86.0, 2.86.0-fish-completions
+[U*] glibc                                       2.40-66 ×3, 2.40-66-bin ×2, 2.40-66-dev, 2.40-66-getent ×3 -> 2.40-66, 2.42-47-bin ×2, 2.42-47-dev, 2.40-66-getent, 2.42-47, 2.42-47-getent
+[U.] glibc-iconv                                 2.40 -> 2.42
+[U*] glibc-locales                               2.40-66 ×2 -> 2.42-47 ×2
+[U.] glibc-multi                                 2.40-66, 2.40-66-bin -> 2.42-47, 2.42-47-bin
+[U.] gnome-shell                                 49.2 -> 49.3
+[U.] gvfs.yazi-unstable                          2026-01-17 -> 2026-01-26
+[U.] harfbuzz                                    12.2.0 ×2, 12.2.0-dev, <others> -> 12.3.0 ×2, 12.3.0-dev, <others>
+[U.] harfbuzz-icu                                12.2.0 -> 12.3.0
+[C+] hostname-hostname-debian                    <others> -> 3.25_fish-completions, <others>
+[U.] hwdata                                      0.402 ×2, <others> -> 0.403 ×2, <others>
+[U.] imagemagick                                 7.1.2-11, 7.1.2-11-dev, 7.1.2-11-doc, 7.1.2-11-fish-completions -> 7.1.2-12, 7.1.2-12-dev, 7.1.2-12-doc, 7.1.2-12-fish-completions
+[U.] initrd-linux                                6.18.6 -> 6.18.7
+[C-] iw                                          6.17-man, <others> -> <others>
+[U*] less                                        679, 679-man -> 685, 685-man
+[U.] libadwaita                                  1.8.2 ×2 -> 1.8.3 ×2
+[U.] libapparmor                                 4.1.2 ×3 -> 4.1.2, 4.1.3
+[U.] libcdio                                     2.2.0-lib ×2 -> 2.3.0-lib ×2
+[U.] libdecor                                    0.2.4 ×2 -> 0.2.5 ×2
+[U.] libdrm                                      2.4.129 ×2, 2.4.129-bin ×2, 2.4.129-dev ×2, <others> -> 2.4.131 ×2, 2.4.131-bin ×2, 2.4.131-dev ×2, <others>
+[U.] libmpg123                                   1.33.3 ×2 -> 1.33.4 ×2
+[U.] libnl                                       3.11.0 ×2 -> 3.12.0 ×2
+[U.] libopenmpt                                  0.8.3 ×2 -> 0.8.4 ×2
+[U.] libpcap                                     1.10.5, 1.10.5-lib ×2 -> 1.10.6, 1.10.6-lib ×2
+[U.] libpng                                      1.6.52 -> 1.6.53
+[U.] libpng-apng                                 1.6.52 ×2, 1.6.52-dev, 1.6.52-man, <others> -> 1.6.53 ×2, 1.6.53-dev, 1.6.53-man, <others>
+[U.] libraw                                      0.21.4, 0.21.4-dev, 0.21.4-lib -> 0.21.5b, 0.21.5b-dev, 0.21.5b-lib
+[U.] libsodium                                   1.0.20 ×2 -> 1.0.20-unstable-2025-12-31 ×2
+[U.] libtasn1                                    4.20.0 ×3 -> 4.20.0, 4.21.0
+[U.] libthai                                     0.1.29 ×3 -> 0.1.29, 0.1.30
+[U.] libtpms                                     0.10.1 ×3 -> 0.10.1, 0.10.2
+[U.] liburing                                    2.12 ×2 -> 2.13 ×2
+[U.] libva                                       2.22.0 ×2 -> 2.23.0 ×2
+[U.] libva-minimal                               2.22.0 ×2 -> 2.23.0 ×2
+[U.] lilv                                        0.24.26 ×2 -> 0.26.0 ×2
+[U.] linux                                       6.18.6, 6.18.6-modules ×2, 6.18.6-modules-shrunk -> 6.18.7, 6.18.7-modules ×2, 6.18.7-modules-shrunk
+[U.] linux-headers                               6.16.7 -> 6.18
+[U.] linux-headers-static                        6.16.7 -> 6.18
+[C.] llhttp                                      <others> -> 9.3.0-dev, <others>
+[U.] llvm                                        21.1.7-lib ×2 -> 21.1.8-lib ×2
+[U.] lua-language-server                         3.17.0 -> 3.17.1
+[U*] lvm2                                        2.03.37, 2.03.37-bin, 2.03.37-lib ×2, 2.03.37-man, <others> -> 2.03.38, 2.03.38-bin, 2.03.38-lib ×2, 2.03.38-man, <others>
+[U.] mediainfo.yazi                              25.5.31-unstable-2026-01-07 -> 25.5.31-unstable-2026-01-24
+[U.] mesa                                        25.3.3 ×2 -> 25.3.4 ×2
+[U.] mpg123                                      1.33.3 ×2, 1.33.3-man -> 1.33.4 ×2, 1.33.4-man
+[C*] mtools                                      <others> -> 4.0.49-man, <others>
+[U.] mutter                                      49.2 -> 49.3
+[U*] nano                                        8.7_fish-completions, <others> -> 8.7-man, <others>
+[U*] ncurses                                     6.5 ×3, 6.5-dev, 6.5-man -> 6.5, 6.6-dev, 6.6-man, 6.6
+[U.] ncurses-abi5-compat                         6.5 -> 6.6
+[U.] net-snmp                                    5.9.4 ×2, 5.9.4-lib ×2 -> 5.9.5.2 ×2, 5.9.5.2-lib ×2
+[U*] niri-unstable                               2026-01-17-d7184a0 -> 2026-01-28-f30db16
+[U.] nixos-system-sagittarius                    26.05.20260121.88d3861 -> 26.05.20260126.bfc1b8a
+[U.] nodejs                                      24.12.0, <others> -> 24.13.0, <others>
+[U.] nss-cacert                                  3.117, 3.117-p11kit -> 3.119.1, 3.119.1-p11kit
+[U.] obsidian                                    1.10.6, 1.10.6-fish-completions -> 1.11.5, 1.11.5-fish-completions
+[U.] piper.yazi                                  25.9.15-unstable-2025-12-31 -> 26.1.22-unstable-2026-01-24
+[U*] polkit                                      126 ×2, 126-bin, 126-dev, 126_fish-completions, <others> -> 127 ×2, 127-bin, 127-dev, 127_fish-completions, <others>
+[U.] publicsuffix-list                           0-unstable-2025-11-14 ×2, <others> -> 0-unstable-2025-12-28 ×2, <others>
+[U.] python3.13-aiodns                           3.5.0 -> 3.6.1
+[U.] python3.13-aiohttp                          3.13.2 -> 3.13.3
+[U.] python3.13-anyio                            4.12.0 -> 4.12.1
+[U.] python3.13-backports-zstd                   1.1.0 -> 1.3.0
+[U.] python3.13-charset-normalizer               3.4.3 -> 3.4.4
+[U.] python3.13-cyclopts                         4.4.1 -> 4.5.1
+[U.] python3.13-fastmcp                          2.14.3 -> 2.14.4
+[U.] python3.13-markdown-it-py                   3.0.0 -> 4.0.0
+[U.] python3.13-pikepdf                          10.0.2 -> 10.1.0
+[U.] python3.13-pillow                           12.0.0 -> 12.1.0
+[U.] python3.13-protobuf                         6.33.2 -> 6.33.3
+[U.] python3.13-pynacl                           1.6.0 -> 1.6.2
+[U.] python3.13-typer                            0.19.2 -> 0.21.0
+[U.] python3.13-typer-slim                       0.19.2 -> 0.21.0
+[U.] python3.13-yarl                             1.22.0 -> 1.23.0
+[U.] readline                                    8.3p1 ×3 -> 8.3p1, 8.3p3
+[U.] ruff                                        0.14.13 -> 0.14.14
+[U.] rust-analyzer                               2026-01-12 -> 2026-01-19
+[U.] rust-analyzer-unwrapped                     2026-01-12 -> 2026-01-19
+[U.] sdl2-compat                                 2.32.60 ×2 -> 2.32.62 ×2
+[U.] sdl3                                        3.2.28-lib ×3 -> 3.4.0-lib ×3
+[U.] serd                                        0.32.4 ×2 -> 0.32.6 ×2
+[U.] shaderc                                     2025.3-lib -> 2025.5-lib
+[U.] sqlite                                      3.51.1 ×2, 3.51.1-bin, 3.51.1-dev, <others> -> 3.51.2 ×2, 3.51.2-bin, 3.51.2-dev, <others>
+[U*] systemd                                     258.2 ×2, 258.2-man, <others> -> 258.3 ×2, 258.3-man, <others>
+[U.] systemd-minimal                             258.2 ×2, <others> -> 258.3 ×2, <others>
+[U.] systemd-minimal-libs                        258.2 ×2, <others> -> 258.3 ×2, <others>
+[U.] tinymist                                    0.14.8 -> 0.14.10
+[U.] tzdata                                      2025b ×2 -> 2025c ×2
+[U*] upower                                      1.90.10, 1.90.10_fish-completions -> 1.91.0, 1.91.0_fish-completions
+[U*] util-linux                                  2.41.2-bin, 2.41.2-lastlog, 2.41.2-lib ×2, 2.41.2-login, 2.41.2-man, 2.41.2-mount, 2.41.2-swap -> 2.41.3-bin, 2.41.3-lastlog, 2.41.2-lib, 2.41.3-login, 2.41.3-man, 2.41.3-mount, 2.41.3-swap, 2.41.3-lib
+[U.] util-linux-minimal                          2.41.2-bin, 2.41.2-lib ×3, 2.41.2-login ×3, 2.41.2-mount ×3, 2.41.2-swap ×3 -> 2.41.3-bin, 2.41.2-lib, 2.41.2-login, 2.41.2-mount, 2.41.2-swap, 2.41.3-lib, 2.41.3-login, 2.41.3-mount, 2.41.3-swap
+[U.] vesktop                                     1.6.3, 1.6.3-fish-completions -> 1.6.4, 1.6.4-fish-completions
+[U.] vicinae                                     0.19.1, 0.19.1-fish-completions -> 0.19.3, 0.19.3-fish-completions
+[U.] vscode-extension-myriad-dreamin-tinymist    0.14.8 -> 0.14.10
+[U.] wayland-protocols                           1.46 -> 1.47
+[U.] x86_energy_perf_policy                      6.12.66 -> 6.12.67
+[U.] xauth                                       1.1.4 -> 1.1.5
+[U.] xdg-desktop-portal-termfilechooser-unstable 2026-01-21, 2026-01-21-fish-completions -> 2026-01-24, 2026-01-24-fish-completions
+[U.] xdg-user-dirs                               0.18 ×2 -> 0.19 ×2
+[U.] xorg-server                                 21.1.20 -> 21.1.21
+[U.] xorgproto                                   2024.1 ×2 -> 2025.1 ×2
+[U.] xwayland-satellite-unstable                 2026-01-24-7af39ce -> 2026-01-25-cf14278
+[U*] xz                                          5.8.1 ×3, 5.8.1-bin, 5.8.1-man -> 5.8.1, 5.8.2-bin, 5.8.2-man, 5.8.2
+[U.] yazi                                        26.1.4 ×2, 26.1.4-fish-completions -> 26.1.22 ×2, 26.1.22-fish-completions
+[U.] zed-editor                                  0.219.4 -> 0.220.6
+[U.] zed-editor-wrapped                          0.219.4, 0.219.4-fish-completions -> 0.220.6, 0.220.6-fish-completions
+[U.] zlib-ng                                     2.2.5 -> 2.3.2
+
+ADDED
+[A.] ada                                         3.4.1
+[A.] glslang                                     16.1.0
+[A.] initrd-nixos.conf                           <none>
+[A.] nixos-init                                  0.1.0
+[A.] python3.13-jsonref                          1.1.0
+[A.] simdjson                                    4.2.4
+[A.] simdutf                                     6.5.0, 8.0.0
+[A.] unit-initrd-find-nixos-closure.service      <none>
+[A.] unit-panic-on-fail.service                  <none>
+[A.] unit-polkit-agent-helper.socket             <none>
+[A.] unit-script-initrd-find-nixos-closure-start <none>
+[A.] uvwasi                                      0.0.23
+
+REMOVED
+[R.] age                                         1.3.1
+[R.] bottles-fish-completions                    <none>
+[R.] plymouth-initrd-themes                      <none>
+[R.] rclone.age                                  <none>
+[R.] security-wrapper-polkit-agent-helper        1-x86_64-unknown-linux-musl
+[R-] wireless-tools                              30.pre9, 30.pre9_fish-completions
+
+SIZE: 19.2 GiB -> 19.1 GiB
+DIFF: -44.2 MiB
