@@ -14,6 +14,7 @@ _: {
                     bottom-left = r;
                     bottom-right = r;
                 };
+                draw-border-with-background = false;
             }
             {
                 matches = [
