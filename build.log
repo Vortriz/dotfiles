@@ -20285,3 +20285,17 @@ REMOVED
 
 SIZE: 19.2 GiB -> 19.1 GiB
 DIFF: -44.2 MiB
+
+---
+
+01/02/26 02:12:33 PM IST
+<<< /nix/store/g89s9d8kyfdgxznnqkms9as1sinf5503-nixos-system-sagittarius-26.05.20260126.bfc1b8a
+>>> /nix/store/6f3v8ig6aw42b7dr1zr00ygh9cxa75hs-nixos-system-sagittarius-26.05.20260126.bfc1b8a
+
+CHANGED
+[U.] SciPDF-For-Zotero           8.0.2 -> 8.0.3
+[D.] dms-shell                   1.4-unstable+date=2026-01-24_dirty, 1.4-unstable+date=2026-01-24_dirty-fish-completions -> 1.4-beta+date=2026-01-31_dirty, 1.4-beta+date=2026-01-31_dirty-fish-completions
+[U.] xwayland-satellite-unstable 2026-01-25-cf14278 -> 2026-01-29-37ec78e
+
+SIZE: 19.1 GiB -> 19.1 GiB
+DIFF: 1.30 MiB
