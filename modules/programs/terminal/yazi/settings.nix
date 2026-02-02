@@ -52,6 +52,10 @@
                         use = ["open" "reveal" "edit-doc" "send"];
                     }
                     {
+                        mime = "application/{*zip,*tar,*rar,x-bzip2,x-7z-compressed,x-xz}";
+                        use = ["extract" "reveal" "send"];
+                    }
+                    {
                         mime = "folder/local";
                         use = ["open" "reveal" "edit-with-zed" "send"];
                     }

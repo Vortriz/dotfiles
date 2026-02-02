@@ -13,7 +13,6 @@
             hostConfig,
             ...
         }: let
-            inherit (lib) map;
             inherit (lib.lists) concatLists;
             inherit (lib.attrsets) cartesianProduct;
         in {
