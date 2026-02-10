@@ -20299,3 +20299,127 @@ CHANGED
 
 SIZE: 19.1 GiB -> 19.1 GiB
 DIFF: 1.30 MiB
+
+---
+
+10/02/26 03:51:00 PM IST
+<<< /nix/store/6f3v8ig6aw42b7dr1zr00ygh9cxa75hs-nixos-system-sagittarius-26.05.20260126.bfc1b8a
+>>> /nix/store/n3npvvbq4rv56ls5lgfi65gx4c0ndp9q-nixos-system-sagittarius-26.05.20260208.d6c7193
+
+CHANGED
+[U.] SDL_compat                                       1.2.72 -> 1.2.74
+[U.] acpi-call                                        1.2.2-6.18.7 -> 1.2.2-6.18.9
+[U.] anydesk                                          7.1.0, 7.1.0-fish-completions -> 7.1.3, 7.1.3-fish-completions
+[U*] asusctl                                          6.3.1 -> 6.3.2
+[U*] bind                                             9.20.17-dnsutils, 9.20.17-host, 9.20.17-lib, 9.20.17-man -> 9.20.18-dnsutils, 9.20.18-host, 9.20.18-lib, 9.20.18-man
+[U.] bottles                                          60.1, 60.1-bwrap, 60.1-fhsenv-profile, 60.1-fhsenv-rootfs, 60.1-fish-completions, 60.1-init -> 61.1, 61.1-bwrap, 61.1-fhsenv-profile, 61.1-fhsenv-rootfs, 61.1-fish-completions, 61.1-init
+[U.] bottles-cli                                      60.1-bwrap, 60.1-fhsenv-profile, 60.1-fhsenv-rootfs, 60.1-init -> 61.1-bwrap, 61.1-fhsenv-profile, 61.1-fhsenv-rootfs, 61.1-init
+[U.] bottles-unwrapped                                60.1 ×2 -> 61.1 ×2
+[U.] colord                                           1.4.6 -> 1.4.8
+[U.] curl-impersonate                                 1.2.0 -> 1.4.2
+[U.] ddcutil                                          2.2.3 -> 2.2.5
+[U.] deno                                             2.6.5 -> 2.6.6
+[U.] dgop                                             0.1.13, 0.1.13-fish-completions -> 0.2.0, 0.2.0-fish-completions
+[U.] dhcpcd                                           10.2.4 ×2 -> 10.3.0 ×2
+[U.] distrobox                                        1.8.2.3 -> 1.8.2.4
+[U.] dms-shell                                        1.4-beta+date=2026-01-31_dirty, 1.4-beta+date=2026-01-31_dirty-fish-completions -> 1.4-beta+date=2026-02-10_dirty, 1.4-beta+date=2026-02-10_dirty-fish-completions
+[U*] dosfstools                                       4.2_fish-completions, <others> -> 4.2-man, <others>
+[U.] electron                                         38.7.2 -> 38.8.0, 40.1.0
+[U.] electron-unwrapped                               38.7.2 -> 38.8.0, 40.1.0
+[U.] evolution-data-server                            3.58.2 -> 3.58.3
+[U.] firefox                                          147.0.1, 147.0.1-fish-completions -> 147.0.3, 147.0.3-fish-completions
+[U.] firefox-unwrapped                                147.0.1 -> 147.0.3
+[U*] fish                                             4.3.3, 4.3.3-doc, 4.3.3_fish-completions, 4.3.3-fish-completions -> 4.4.0, 4.4.0-doc, 4.4.0_fish-completions, 4.4.0-fish-completions
+[U.] freerdp                                          3.21.0 -> 3.22.0
+[U*] fresh                                            0.1.88 -> 0.1.99
+[U.] gnome-control-center                             49.3 -> 49.4
+[U*] gvfs                                             1.58.0 ×2 -> 1.58.1 ×2
+[U.] harper                                           1.4.1 -> 1.6.0
+[U.] haruna                                           1.7.0, 1.7.0-fish-completions -> 1.7.1, 1.7.1-fish-completions
+[C.] icu4c                                            78.1, <others> -> <others>
+[U.] initrd-linux                                     6.18.7 -> 6.18.9
+[U.] inxi                                             3.3.39-1 -> 3.3.40-1
+[U*] iputils                                          20250605_fish-completions, <others> -> 20250605-man, <others>
+[U.] kdegraphics-mobipocket                           25.12.1 -> 25.12.2
+[U*] ksystemlog                                       25.12.1 -> 25.12.2
+[U.] libcloudproviders                                0.3.6 -> 0.4.0
+[U.] libmediainfo                                     25.10 -> 26.01
+[U.] libmsgraph                                       0.3.3 -> 0.3.4
+[U.] libnvme                                          1.15 -> 1.16.1
+[U.] libphonenumber                                   9.0.22 -> 9.0.23
+[C.] libseccomp                                       2.6.0, 2.6.0-dev, <others> -> <others>
+[U.] libwacom                                         2.17.0 -> 2.18.0
+[U.] linux                                            6.18.7, 6.18.7-modules ×2, 6.18.7-modules-shrunk -> 6.18.9, 6.18.9-modules ×2, 6.18.9-modules-shrunk
+[U.] marco                                            1.28.1 -> 1.28.2
+[U.] mcp-nixos                                        2.1.0 -> 2.1.1
+[U.] mediainfo                                        25.09 -> 25.10
+[U.] mediainfo.yazi                                   25.5.31-unstable-2026-01-24 -> 25.5.31-unstable-2026-01-27
+[U.] mesa                                             25.3.4 ×2 -> 25.3.5 ×2
+[C*] nano                                             8.7, 8.7-man -> 8.7.1, 8.7.1-man
+[U.] netavark                                         1.17.1 -> 1.17.2
+[U*] niri-unstable                                    2026-01-28-f30db16 -> 2026-02-10-6d5c5f1
+[U.] nix-your-shell                                   1.4.7, 1.4.7-fish-completions -> 1.4.8, 1.4.8-fish-completions
+[U.] nixd                                             2.8.2 -> 2.9.0
+[U.] nixf                                             2.8.2 -> 2.9.0
+[U.] nixos-system-sagittarius                         26.05.20260126.bfc1b8a -> 26.05.20260208.d6c7193
+[U.] nixt                                             2.8.2 -> 2.9.0
+[U.] nodejs                                           25.4.0, <others> -> 25.6.0, <others>
+[C.] ookla-speedtest                                  <others> -> 1.2.0-man, <others>
+[U.] opencv                                           4.12.0 -> 4.13.0
+[U.] ostree                                           2025.2 -> 2025.7
+[U.] pdfarranger                                      1.12.1, 1.12.1-fish-completions -> 1.13.0, 1.13.0-fish-completions
+[U*] podman                                           5.7.0, 5.7.0-man -> 5.7.1, 5.7.1-man
+[U*] podman-docker-compat                             5.7.0, 5.7.0-man -> 5.7.1, 5.7.1-man
+[U.] python3.13-fastmcp                               2.14.4 -> 2.14.5
+[U.] python3.13-mcp                                   1.25.0 -> 1.26.0
+[U.] python3.13-patool                                4.0.1 -> 4.0.4
+[U.] python3.13-pydocket                              0.16.6 -> 0.17.1
+[U.] python3.13-pygls                                 2.0.0 -> 2.0.1
+[U.] python3.13-urwid                                 3.0.3 -> 3.0.4
+[U.] python3.13-yt-dlp-ejs                            0.3.2 -> 0.4.0
+[U.] rclone                                           1.72.1, 1.72.1-fish-completions, 1.72.1-man -> 1.73.0, 1.73.0-fish-completions, 1.73.0-man
+[U.] ruff                                             0.14.14 -> 0.15.0
+[U.] rust-analyzer                                    2026-01-19 -> 2026-02-02
+[U.] rust-analyzer-unwrapped                          2026-01-19 -> 2026-02-02
+[U.] samba                                            4.22.6 ×2, 4.22.6-man -> 4.22.7 ×2, 4.22.7-man
+[U.] sioyek                                           2.0.0-unstable-2025-12-19, 2.0.0-unstable-2025-12-19-fish-completions -> 2.0.0-unstable-2026-02-04, 2.0.0-unstable-2026-02-04-fish-completions
+[U*] steam-run                                        <none> ×2 -> <none>, 1.0.0.85, 1.0.0.85-bwrap, 1.0.0.85-fhsenv-profile, 1.0.0.85-fhsenv-rootfs, 1.0.0.85-init
+[U.] tdb                                              1.4.14 ×2 -> 1.4.15 ×2
+[U.] thin-provisioning-tools                          1.3.0 -> 1.3.1
+[U.] ty                                               0.0.13 -> 0.0.15
+[U.] uavs3d                                           1.1-unstable-2023-02-23 -> 1.1-unstable-2025-12-13
+[U.] vicinae                                          0.19.3, 0.19.3-fish-completions -> 0.19.7, 0.19.7-fish-completions
+[U.] vscode                                           1.108.1, 1.108.1-fish-completions -> 1.109.0, 1.109.0-fish-completions
+[U.] vscode-extension-charliermarsh-ruff              2026.34.0 -> 2026.36.0
+[U.] vscode-extension-gemini-cli-vscode-ide-companion 0.23.0 -> 0.26.0
+[U.] vvenc                                            1.13.1-lib -> 1.14.0-lib
+[U.] wl-mirror                                        0.18.3, 0.18.3-fish-completions -> 0.18.4, 0.18.4-fish-completions
+[U.] x86_energy_perf_policy                           6.12.67 -> 6.12.69
+[C.] xdg-user-dirs                                    <others> -> 0.19-fish-completions, <others>
+[U.] xwayland-satellite-unstable                      2026-01-29-37ec78e -> 2026-02-08-86f5bd5
+[U.] yt-dlp                                           2025.12.08 -> 2026.02.04
+[U.] zed-editor                                       0.220.6 -> 0.221.5
+[U.] zed-editor-wrapped                               0.220.6, 0.220.6-fish-completions -> 0.221.5, 0.221.5-fish-completions
+[U.] zoxide                                           0.9.8, 0.9.8-fish-completions -> 0.9.9, 0.9.9-fish-completions
+
+ADDED
+[A.] initrd-bin-env                                   <none>
+[A.] lief                                             0.17.0
+[A.] python3.13-yara-python                           4.5.4
+[A.] xone-dongle-firmware                             0-unstable-2025-12-18-zstd
+[A.] yara                                             4.5.5
+
+REMOVED
+[R.] initrd-nixos.conf                                <none>
+[R.] nixos-init                                       0.1.0
+[R.] steam-run-bwrap                                  <none>
+[R.] steam-run-fhsenv-profile                         <none>
+[R.] steam-run-fhsenv-rootfs                          <none>
+[R.] steam-run-init                                   <none>
+[R.] unit-initrd-find-nixos-closure.service           <none>
+[R.] unit-panic-on-fail.service                       <none>
+[R.] unit-script-initrd-find-nixos-closure-start      <none>
+[R.] xow_dongle-firmware                              0-unstable-2025-04-22-zstd
+
+SIZE: 19.1 GiB -> 19.4 GiB
+DIFF: 259 MiB
