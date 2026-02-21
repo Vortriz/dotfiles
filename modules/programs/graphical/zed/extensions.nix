@@ -19,6 +19,7 @@
                 "qml"
                 "quarto"
                 "scss"
+                "svelte"
                 "typst"
                 # keep-sorted end
             ];
@@ -26,17 +27,7 @@
             extraPackages = with pkgs; [
                 # keep-sorted start
                 alejandra
-                astro-language-server
-                harper
                 kdePackages.qtdeclarative
-                lua-language-server
-                nixd
-                package-version-server
-                ruff
-                rust-analyzer
-                texlab
-                tinymist
-                ty
                 # keep-sorted end
             ];
 
@@ -50,9 +41,11 @@
                         "nixd"
                         "package-version-server"
                         "rust-analyzer"
+                        "svelte-language-server"
                         "tailwindcss-language-server"
                         "texlab"
                         "tinymist"
+                        "ty"
                         # keep-sorted end
                     ]
                     |> map (name: {
@@ -82,6 +75,10 @@
                         tailwindcss-language-server.binary = {
                             path = lib.getExe pkgs.tailwindcss-language-server;
                             arguments = ["--stdio"];
+                        };
+                        ty.binary = {
+                            path = lib.getExe pkgs.ty;
+                            arguments = ["server"];
                         };
                         # keep-sorted end
                     };
