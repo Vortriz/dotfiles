@@ -43,7 +43,7 @@
         };
         niri = {
             url = "github:sodiboo/niri-flake";
-            # inputs.niri-unstable.url = "github:YaLTeR/niri?ref=pull/1704/head";
+            # inputs.niri-unstable.url = "github:YaLTeR/niri/wip/branch";
         };
         niri-shell = {
             url = "/mnt/HOUSE/dev/others/niri-shell";

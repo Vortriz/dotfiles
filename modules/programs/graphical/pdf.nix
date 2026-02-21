@@ -31,7 +31,7 @@
                 "should_launch_new_window" = "1";
                 "show_doc_path" = "1";
                 "single_click_selects_words" = "1";
-                "startup_commands" = "toggle_horizontal_scroll_lock";
+                "startup_commands" = ["toggle_horizontal_scroll_lock"];
                 "status_bar_color" = "1 1 1";
                 "status_bar_font_size" = "14";
                 "status_bar_text_color" = "0 0 0";
