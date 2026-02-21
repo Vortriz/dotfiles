@@ -20466,3 +20466,131 @@ REMOVED
 
 SIZE: 19.4 GiB -> 19.4 GiB
 DIFF: 38.2 MiB
+
+---
+
+21/02/26 11:04:57 AM IST
+<<< /nix/store/jzacwspx1lhbf68gvq55db72gargpwnh-nixos-system-sagittarius-26.05.20260211.ec7c70d
+>>> /nix/store/g1ib1vpr9gv6m94a8hsfjq4ygr1nyw37-nixos-system-sagittarius-26.05.20260217.0182a36
+
+CHANGED
+[U.] Better-BibTeX-for-Zotero                         7.0.76 -> 8.0.20
+[U.] acpi-call                                        1.2.2-6.19 -> 1.2.2-6.19.2
+[U.] attica                                           6.22.0 -> 6.23.0
+[U.] breeze                                           6.5.5 -> 6.6.0
+[U.] breeze-icons                                     6.22.0 -> 6.23.0
+[U.] conmon                                           2.2.0 -> 2.2.1
+[U.] curl-impersonate                                 1.4.2 -> 1.4.3
+[U.] deno                                             2.6.6 -> 2.6.9
+[U.] electron                                         38.8.0, 40.1.0 -> 38.8.1, 40.3.0
+[U.] electron-unwrapped                               38.8.0, 40.1.0 -> 38.8.1, 40.3.0
+[U.] fastfetch                                        2.58.0, 2.58.0-fish-completions, 2.58.0-man -> 2.59.0, 2.59.0-fish-completions, 2.59.0-man
+[U.] file-extra-metadata.yazi-unstable                2026-01-07 -> 2026-02-16
+[U.] firefox                                          147.0.3, 147.0.3-fish-completions -> 147.0.4, 147.0.4-fish-completions
+[U.] firefox-unwrapped                                147.0.3 -> 147.0.4
+[U.] frameworkintegration                             6.22.0 -> 6.23.0
+[U*] fresh                                            0.2.1 -> 0.2.3
+[U*] gamescope                                        3.16.19, <others> -> 3.16.20, <others>
+[U.] glycin-loaders                                   2.0.7 -> 2.0.8
+[U.] gnome-desktop                                    44.4 -> 44.5
+[U.] gnome-online-accounts                            3.56.3 -> 3.56.4
+[U.] gnome-shell                                      49.3 -> 49.4
+[U.] gvfs.yazi-unstable                               2026-01-26 -> 2026-02-16
+[U.] harper                                           1.6.0 -> 1.7.0
+[U.] hover-after-moved.yazi-unstable                  2026-01-06 -> 2026-02-16
+[U.] initrd-linux                                     6.19 -> 6.19.2
+[U.] karchive                                         6.22.0 -> 6.23.0
+[U.] kauth                                            6.22.0 -> 6.23.0
+[U.] kbookmarks                                       6.22.0 -> 6.23.0
+[U.] kcmutils                                         6.22.0 -> 6.23.0
+[U.] kcodecs                                          6.22.0 -> 6.23.0
+[U.] kcolorscheme                                     6.22.0 -> 6.23.0
+[U.] kcompletion                                      6.22.0 -> 6.23.0
+[U.] kconfig                                          6.22.0 -> 6.23.0
+[U.] kconfigwidgets                                   6.22.0 -> 6.23.0
+[U.] kcoreaddons                                      6.22.0 -> 6.23.0
+[U.] kcrash                                           6.22.0 -> 6.23.0
+[U.] kdbusaddons                                      6.22.0 -> 6.23.0
+[U.] kdeclarative                                     6.22.0 -> 6.23.0
+[U.] kdecoration                                      6.5.5 -> 6.6.0
+[U.] kdoctools                                        6.22.0 -> 6.23.0
+[U.] kfilemetadata                                    6.22.0 -> 6.23.0
+[U.] kglobalaccel                                     6.22.0 -> 6.23.0
+[U.] kguiaddons                                       6.22.1 -> 6.23.0
+[U.] ki18n                                            6.22.0 -> 6.23.0
+[U.] kiconthemes                                      6.22.0 -> 6.23.0
+[U.] kimageformats                                    6.22.0 -> 6.23.0
+[U.] kio                                              6.22.0 -> 6.23.0
+[U.] kirigami                                         6.22.0 -> 6.23.0
+[U.] kitemmodels                                      6.22.0 -> 6.23.0
+[U.] kitemviews                                       6.22.0 -> 6.23.0
+[U.] kjobwidgets                                      6.22.0 -> 6.23.0
+[U.] knewstuff                                        6.22.0 -> 6.23.0
+[U.] knotifications                                   6.22.0 -> 6.23.0
+[U.] kpackage                                         6.22.0 -> 6.23.0
+[U.] kservice                                         6.22.0 -> 6.23.0
+[U.] ktextwidgets                                     6.22.0 -> 6.23.0
+[U.] kwallet                                          6.22.0 -> 6.23.0
+[U.] kwidgetsaddons                                   6.22.0 -> 6.23.0
+[U.] kwindowsystem                                    6.22.0 -> 6.23.0
+[U.] kxmlgui                                          6.22.0 -> 6.23.0
+[U.] lcevcdec                                         4.0.4-lib -> 4.0.5-lib
+[U.] libglycin                                        2.0.7 -> 2.0.8
+[U.] libphonenumber                                   9.0.23 -> 9.0.24
+[C.] linux                                            6.19, 6.19-modules ×2, 6.19-modules-shrunk -> 6.19.2, 6.19.2-modules ×2
+[U.] mediainfo                                        25.10 -> 26.01
+[U.] mediainfo.yazi                                   25.5.31-unstable-2026-01-27 -> 25.5.31-unstable-2026-02-12
+[U.] mutter                                           49.3 -> 49.4
+[U.] nautilus                                         49.3 -> 49.4
+[U*] networkmanager                                   1.54.3 ×2, 1.54.3-fish-completions, 1.54.3-man -> 1.56.0 ×2, 1.56.0-fish-completions, 1.56.0-man
+[U*] niri-unstable                                    2026-02-13-c1146c0 -> 2026-02-17-a2a5291
+[U.] nix-index                                        0.1.9 -> 0.1.9-unstable-2026-02-05
+[U.] nix-index-with-full-db                           0.1.9, 0.1.9-fish-completions -> 0.1.9-unstable-2026-02-05, 0.1.9-unstable-2026-02-05-fish-completions
+[U.] nixos-system-sagittarius                         26.05.20260211.ec7c70d -> 26.05.20260217.0182a36
+[U.] nss                                              3.120, <others> -> 3.120.1, <others>
+[U*] podman                                           5.7.1, 5.7.1-man -> 5.8.0, 5.8.0-man
+[U*] podman-docker-compat                             5.7.1, 5.7.1-man -> 5.8.0, 5.8.0-man
+[U.] polkit-kde-agent                                 1-6.5.5 -> 1-6.6.0
+[U.] python3.13-cyclopts                              4.5.1 -> 4.5.2
+[U.] python3.13-dbus-fast                             3.1.2 -> 4.0.0
+[U.] qqc2-desktop-style                               6.22.0 -> 6.23.0
+[U.] ruff                                             0.15.0 -> 0.15.1
+[U.] rust-analyzer                                    2026-02-09 -> 2026-02-16
+[U.] rust-analyzer-unwrapped                          2026-02-09 -> 2026-02-16
+[U.] solid                                            6.22.0 -> 6.23.0
+[U.] sonnet                                           6.22.0 -> 6.23.0
+[U*] strace                                           6.18, 6.18-man -> 6.19, 6.19-man
+[U.] syndication                                      6.22.0 -> 6.23.0
+[U.] telegram-desktop                                 6.4.1, 6.4.1-fish-completions -> 6.5.1, 6.5.1-fish-completions
+[U.] ty                                               0.0.16 -> 0.0.17
+[U*] upower                                           1.91.0, 1.91.0_fish-completions -> 1.91.1, 1.91.1_fish-completions
+[U.] vesktop                                          1.6.4, 1.6.4-fish-completions -> 1.6.5, 1.6.5-fish-completions
+[U.] vicinae                                          0.19.7, 0.19.7-fish-completions -> 0.19.9, 0.19.9-fish-completions
+[U.] vscode                                           1.109.0, 1.109.0-fish-completions -> 1.109.2, 1.109.2-fish-completions
+[U.] vscode-extension-gemini-cli-vscode-ide-companion 0.27.3 -> 0.28.2
+[U.] vscode-extension-github-copilot-chat             0.33.1 -> 0.37.6
+[U.] webkitgtk                                        2.50.4+abi=4.1, 2.50.4+abi=6.0 -> 2.50.5+abi=4.1, 2.50.5+abi=6.0
+[U.] wireless-regdb                                   2025.10.07-zstd -> 2026.02.04-zstd
+[U.] wl-mirror                                        0.18.4, 0.18.4-fish-completions -> 0.18.5, 0.18.5-fish-completions
+[U.] x86_energy_perf_policy                           6.18.10 -> 6.18.12
+[U.] zed-editor                                       0.221.5 -> 0.223.3
+[U.] zed-editor-wrapped                               0.221.5, 0.221.5-fish-completions -> 0.223.3, 0.223.3-fish-completions
+[U.] zotero                                           7.0.30, 7.0.30-fish-completions -> 8.0.2, 8.0.2-fish-completions
+
+ADDED
+[A.] nixos-init                                       0.1.0
+[A.] svelte-language-server                           0.17.25
+[A.] systemd-generator-environment.json               <none>
+[A.] unit-post-boot.service                           <none>
+[A.] unit-script-post-boot-start                      <none>
+[A.] xwayland-satellite                               0.8.1
+
+REMOVED
+[R.] gvproxy                                          0.8.7
+[R.] initrd-fstab                                     <none>
+[R.] initrd-passwd                                    <none>
+[R.] initrd-system.conf                               <none>
+[R.] xwayland-satellite-unstable                      2026-02-08-86f5bd5
+
+SIZE: 19.4 GiB -> 19.5 GiB
+DIFF: 144 MiB
