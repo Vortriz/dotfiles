@@ -11,6 +11,7 @@
             ouch
             pandoc
             rclone
+            s-tui
             surge
             trash-cli
             wl-clipboard
