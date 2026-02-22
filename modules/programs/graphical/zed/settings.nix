@@ -15,7 +15,7 @@
                 # keep-sorted start block=yes
                 agent = {
                     default_model = {
-                        provider = "copilot_chat";
+                        provider = "copilot";
                         model = "gpt-4.1";
                     };
                 };
@@ -29,7 +29,7 @@
                     };
                 };
                 cursor_shape = "bar";
-                features.edit_prediction_provider = "copilot";
+                edit_predictions.provider = "copilot";
                 git.inline_blame.enabled = false;
                 icon_theme = "Modern Icons (Dark)";
                 languages = {
