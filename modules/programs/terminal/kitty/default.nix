@@ -1,6 +1,5 @@
 {
     unify.home = {
-        config,
         lib,
         pkgs,
         ...
@@ -27,10 +26,10 @@
 
         stylix.targets.kitty.enable = true;
 
-        programs.niri.settings.binds = {
+        wayland.windowManager.niri.settings.binds = {
             "Mod+T" = {
-                action = config.lib.niri.actions.spawn-sh (lib.getExe pkgs.kitty);
-                hotkey-overlay.title = "Open Kitty Terminal";
+                spawn-sh = "${lib.getExe pkgs.kitty}";
+                _props.hotkey-overlay-title = "Open Kitty Terminal";
             };
         };
     };

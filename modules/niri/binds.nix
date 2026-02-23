@@ -1,108 +1,106 @@
 {
     unify.home = {
-        config,
         lib,
         pkgs,
         ...
-    }:
-        with config.lib.niri.actions; let
-            inherit (lib) getExe;
-            inherit (config.lib.niri.actions) spawn-sh;
+    }: let
+        inherit (lib) getExe;
 
-            scripts = lib.packagesFromDirectoryRecursive {
-                inherit (pkgs) callPackage;
-                directory = ../../scripts;
-            };
-        in {
-            programs.niri.settings.binds =
-                {
-                    "Mod+Shift+Slash".action = show-hotkey-overlay;
-
-                    "Mod+Alt+W" = {
-                        action = spawn-sh (getExe scripts.toggle-warp);
-                        hotkey-overlay.title = "Toggle Cloudflare Warp";
-                    };
-
-                    "Mod+H" = {
-                        action = spawn-sh (getExe scripts.cycle-rr);
-                        hotkey-overlay.title = "Toggle refresh rate";
-                    };
-                    "Mod+Z" = {
-                        action = spawn-sh (getExe scripts.cycle-scale);
-                        hotkey-overlay.title = "Toggle display scale";
-                    };
-
-                    "Print" = {
-                        action.screenshot = [];
-                        hotkey-overlay.title = "Take screenshot";
-                    };
-                    "Ctrl+Print" = {
-                        action.screenshot-window = [];
-                        hotkey-overlay.title = "Take screenshot of focused window";
-                    };
-                    "Ctrl+Shift+Print" = {
-                        action.screenshot-screen = [];
-                        hotkey-overlay.title = "Take screenshot of focused display";
-                    };
-
-                    "Mod+Q".action = close-window;
-                    "Mod+Shift+Q" = {
-                        action = spawn-sh (getExe scripts.close-all);
-                        hotkey-overlay.title = "Close all windows";
-                    };
-
-                    "Alt+Right".action = focus-window-down;
-                    "Alt+Left".action = focus-window-up;
-
-                    "Mod+Tab".action = focus-workspace-previous;
-                    "Mod+Shift+Tab".action = focus-column-right-or-first;
-
-                    "Mod+W".action = focus-workspace-up;
-                    "Mod+S".action = focus-workspace-down;
-                    "Mod+A".action = focus-column-left;
-                    "Mod+D".action = focus-column-right;
-
-                    "Mod+Ctrl+W".action = move-window-up-or-to-workspace-up;
-                    "Mod+Ctrl+S".action = move-window-down-or-to-workspace-down;
-                    "Mod+Ctrl+A".action = move-column-left-or-to-monitor-left;
-                    "Mod+Ctrl+D".action = move-column-right-or-to-monitor-right;
-
-                    "Mod+Shift+W".action = move-workspace-up;
-                    "Mod+Shift+S".action = move-workspace-down;
-
-                    "Mod+Up".action = toggle-window-floating;
-                    "Mod+Shift+T".action = toggle-column-tabbed-display;
-
-                    "Mod+BracketLeft".action = consume-or-expel-window-left;
-                    "Mod+BracketRight".action = consume-or-expel-window-right;
-
-                    "Mod+R".action = switch-preset-column-width;
-                    "Mod+Shift+R".action = switch-preset-window-height;
-                    "Mod+F".action = maximize-column;
-                    "Mod+Shift+F" = {
-                        action = fullscreen-window;
-                        hotkey-overlay.title = "Fullscreen Window";
-                    };
-
-                    "Mod+Minus".action = set-column-width "-10%";
-                    "Mod+Equal".action = set-column-width "+10%";
-
-                    "Mod+Shift+Minus".action = set-window-height "-10%";
-                    "Mod+Shift+Equal".action = set-window-height "+10%";
-
-                    "Mod+Shift+C" = {
-                        action = spawn-sh "niri msg action set-dynamic-cast-window --id $(niri msg --json pick-window | ${getExe pkgs.jaq} .id)";
-                        hotkey-overlay.title = "Select dynamic cast target";
-                    };
-
-                    "Mod+Shift+O".action = power-off-monitors;
-                    "Mod+Shift+E".action = quit;
-                }
-                // (builtins.genList (x: x + 1) 9
-                |> map (x: {
-                    "Mod+${toString x}".action = focus-workspace x;
-                    # "Mod+Ctrl+${toString x}".action = move-column-to-workspace x; # [MARK] niri-flake is borked atm
-                })
-                |> lib.attrsets.mergeAttrsList);
+        scripts = lib.packagesFromDirectoryRecursive {
+            inherit (pkgs) callPackage;
+            directory = ../../scripts;
         };
+    in {
+        wayland.windowManager.niri.settings.binds =
+            {
+                "Mod+Shift+Slash".show-hotkey-overlay = [];
+
+                "Mod+Alt+W" = {
+                    spawn-sh = getExe scripts.toggle-warp;
+                    _props.hotkey-overlay-title = "Toggle Cloudflare Warp";
+                };
+
+                "Mod+H" = {
+                    spawn-sh = getExe scripts.cycle-rr;
+                    _props.hotkey-overlay-title = "Toggle refresh rate";
+                };
+                "Mod+Z" = {
+                    spawn-sh = getExe scripts.cycle-scale;
+                    _props.hotkey-overlay-title = "Toggle display scale";
+                };
+
+                "Print" = {
+                    screenshot = [];
+                    _props.hotkey-overlay-title = "Take screenshot";
+                };
+                "Ctrl+Print" = {
+                    screenshot-window = [];
+                    _props.hotkey-overlay-title = "Take screenshot of focused window";
+                };
+                "Ctrl+Shift+Print" = {
+                    screenshot-screen = [];
+                    _props.hotkey-overlay-title = "Take screenshot of focused display";
+                };
+                "Ctrl+Shift+O".spawn-sh = getExe scripts.obsidian-image;
+
+                "Mod+Q".close-window = [];
+                "Mod+Shift+Q" = {
+                    spawn-sh = getExe scripts.close-all;
+                    _props.hotkey-overlay-title = "Close all windows";
+                };
+
+                "Alt+Right".focus-window-down = [];
+                "Alt+Left".focus-window-up = [];
+
+                "Mod+Tab".focus-workspace-previous = [];
+                "Mod+Shift+Tab".focus-column-right-or-first = [];
+
+                "Mod+W".focus-workspace-up = [];
+                "Mod+S".focus-workspace-down = [];
+                "Mod+A".focus-column-left = [];
+                "Mod+D".focus-column-right = [];
+
+                "Mod+Ctrl+W".move-window-up-or-to-workspace-up = [];
+                "Mod+Ctrl+S".move-window-down-or-to-workspace-down = [];
+                "Mod+Ctrl+A".move-column-left-or-to-monitor-left = [];
+                "Mod+Ctrl+D".move-column-right-or-to-monitor-right = [];
+
+                "Mod+Shift+W".move-workspace-up = [];
+                "Mod+Shift+S".move-workspace-down = [];
+
+                "Mod+Up".toggle-window-floating = [];
+                "Mod+Shift+T".toggle-column-tabbed-display = [];
+
+                "Mod+BracketLeft".consume-or-expel-window-left = [];
+                "Mod+BracketRight".consume-or-expel-window-right = [];
+
+                "Mod+R".switch-preset-column-width = [];
+                "Mod+Shift+R".switch-preset-window-height = [];
+                "Mod+F".maximize-column = [];
+                "Mod+Shift+F" = {
+                    fullscreen-window = [];
+                    _props.hotkey-overlay-title = "Fullscreen Window";
+                };
+
+                "Mod+Minus".set-column-width = "-10%";
+                "Mod+Equal".set-column-width = "+10%";
+
+                "Mod+Shift+Minus".set-window-height = "-10%";
+                "Mod+Shift+Equal".set-window-height = "+10%";
+
+                "Mod+Shift+C" = {
+                    spawn-sh = "niri msg action set-dynamic-cast-window --id $(niri msg --json pick-window | ${getExe pkgs.jaq} .id)";
+                    _props.hotkey-overlay-title = "Select dynamic cast target";
+                };
+
+                "Mod+Shift+O".power-off-monitors = [];
+                "Mod+Shift+E".quit = [];
+            }
+            // (builtins.genList (x: x + 1) 9
+            |> map (x: {
+                "Mod+${toString x}".focus-workspace = x;
+                "Mod+Ctrl+${toString x}".move-column-to-workspace = x;
+            })
+            |> lib.attrsets.mergeAttrsList);
+    };
 }

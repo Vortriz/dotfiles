@@ -26,8 +26,8 @@
                 };
             };
 
-            programs.niri.settings.spawn-at-startup = [
-                {command = [(lib.getExe pkgs.aria2) "--enable-rpc" "--rpc-listen-all"];}
+            wayland.windowManager.niri.settings.spawn-sh-at-startup = [
+                ["${lib.getExe pkgs.aria2} --enable-rpc --rpc-listen-all"]
             ];
         };
     };

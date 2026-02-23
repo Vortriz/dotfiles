@@ -1,19 +1,23 @@
 {inputs, ...}: {
-    # [MARK] fix everything after https://github.com/sodiboo/niri-flake/pull/1548 is merged
     unify = {
         nixos = {pkgs, ...}: {
-            imports = [inputs.niri.nixosModules.niri];
-            nixpkgs.overlays = [inputs.niri.overlays.niri];
+            imports = [inputs.niri.nixosModules.default];
+            nixpkgs.overlays = [inputs.niri.overlays.niri-nix];
 
             programs.niri = {
                 enable = true;
                 package = pkgs.niri-unstable;
             };
-
-            niri-flake.cache.enable = false;
         };
 
         home = {pkgs, ...}: {
+            imports = [inputs.niri.homeModules.default];
+
+            wayland.windowManager.niri = {
+                enable = true;
+                package = pkgs.niri-unstable;
+            };
+
             xdg.portal = {
                 enable = true;
                 config.niri = {

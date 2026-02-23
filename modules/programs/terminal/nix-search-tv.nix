@@ -1,6 +1,5 @@
 {inputs, ...}: {
     unify.home = {
-        config,
         lib,
         pkgs,
         ...
@@ -15,9 +14,9 @@
             ns
         ];
 
-        programs.niri.settings.binds."Mod+P" = {
-            action = config.lib.niri.actions.spawn-sh "xdg-terminal-exec --app-id=nix-search-tv ${lib.getExe ns}";
-            hotkey-overlay.title = "Open nix-search-tv";
+        wayland.windowManager.niri.settings.binds."Mod+P" = {
+            spawn-sh = "xdg-terminal-exec --app-id=nix-search-tv ${lib.getExe ns}";
+            _props.hotkey-overlay-title = "Open nix-search-tv";
         };
     };
 }

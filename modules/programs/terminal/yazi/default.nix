@@ -19,9 +19,9 @@
 
         home.packages = [pkgs.exiftool];
 
-        programs.niri.settings.binds."Mod+E" = {
-            action = config.lib.niri.actions.spawn-sh "xdg-terminal-exec --app-id=yazi ${lib.getExe config.programs.yazi.finalPackage}";
-            hotkey-overlay.title = "Launch Yazi";
+        wayland.windowManager.niri.settings.binds."Mod+E" = {
+            spawn-sh = "xdg-terminal-exec --app-id=yazi ${lib.getExe config.programs.yazi.finalPackage}";
+            _props.hotkey-overlay-title = "Launch Yazi";
         };
 
         xdg = {

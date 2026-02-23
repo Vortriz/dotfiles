@@ -2,35 +2,24 @@ _: {
     unify.home = {config, ...}: let
         inherit (config.lib.stylix) colors;
     in {
-        programs.niri.settings.window-rules = [
+        wayland.windowManager.niri.settings.window-rule = [
             # general rules
             {
                 clip-to-geometry = true;
-                geometry-corner-radius = let
-                    r = 12.0;
-                in {
-                    top-left = r;
-                    top-right = r;
-                    bottom-left = r;
-                    bottom-right = r;
-                };
+                geometry-corner-radius = 12.0;
                 draw-border-with-background = false;
             }
             {
-                matches = [
-                    {is-window-cast-target = true;}
-                ];
+                match._props.is-window-cast-target = true;
 
-                focus-ring.enable = false;
-
+                focus-ring.off = [];
                 border = {
-                    enable = true;
+                    on = [];
                     width = 2;
-                    active.color = "#85e89d";
+                    active-color = "#85e89d";
                 };
-
                 shadow = {
-                    enable = true;
+                    on = [];
                     color = "#85e89d70";
                 };
             }
@@ -39,78 +28,78 @@ _: {
             {
                 open-maximized = true;
 
-                matches = [
-                    {app-id = "firefox";}
-                    {app-id = "yazi";}
-                    {app-id = "org.kde.haruna";}
-                    {app-id = "Code";}
-                    {app-id = "obsidian";}
-                    {app-id = "sioyek";}
-                    {app-id = "Zotero";}
-                    {app-id = "dev.zed.Zed";}
-                    {app-id = "vesktop";}
-                    {app-id = "nix-search-tv";}
-                    {app-id = "^libreoffice-.*$";}
+                _children = [
+                    {match._props.app-id = "firefox";}
+                    {match._props.app-id = "yazi";}
+                    {match._props.app-id = "org.kde.haruna";}
+                    {match._props.app-id = "Code";}
+                    {match._props.app-id = "obsidian";}
+                    {match._props.app-id = "sioyek";}
+                    {match._props.app-id = "Zotero";}
+                    {match._props.app-id = "dev.zed.Zed";}
+                    {match._props.app-id = "vesktop";}
+                    {match._props.app-id = "nix-search-tv";}
+                    {match._props.app-id = "^libreoffice-.*$";}
                 ];
             }
             {
                 open-floating = true;
                 border = {
-                    enable = true;
+                    on = [];
                     width = 2;
-                    inactive.color = colors.withHashtag.base03;
+                    inactive-color = colors.withHashtag.base03;
                 };
-                shadow.enable = true;
+                shadow.on = [];
 
-                matches = [
-                    {app-id = "org.gnome.Calculator";}
-                    {app-id = "it.catboy.ripdrag";}
-                    {app-id = "zenity";}
-                    {title = "System Monitor";}
+                _children = [
+                    {match._props.app-id = "org.gnome.Calculator";}
+                    {match._props.app-id = "it.catboy.ripdrag";}
+                    {match._props.app-id = "zenity";}
+                    {match._props.title = "System Monitor";}
                 ];
             }
             {
                 default-column-display = "tabbed";
 
-                matches = [
-                    {app-id = "kitty";}
-                    {app-id = "sioyek";}
+                _children = [
+                    {match._props.app-id = "kitty";}
+                    {match._props.app-id = "sioyek";}
                 ];
             }
             {
                 scroll-factor = 0.4;
 
-                matches = [
-                    {app-id = "obsidian";}
-                    {app-id = "com.github.th_ch.youtube_music";}
-                    {app-id = "vesktop";}
+                _children = [
+                    {match._props.app-id = "obsidian";}
+                    {match._props.app-id = "com.github.th_ch.youtube_music";}
+                    {match._props.app-id = "vesktop";}
                 ];
             }
 
             # specific window rules
             {
-                matches = [{title = "System Monitor";}];
+                _children = [{match._props.title = "System Monitor";}];
 
                 default-window-height.proportion = 0.6;
                 default-column-width.proportion = 0.6;
 
-                focus-ring.active.color = colors.withHashtag.base0E;
-                border.active.color = colors.withHashtag.base0E;
+                focus-ring.active-color = colors.withHashtag.base0E;
+                border.active-color = colors.withHashtag.base0E;
             }
             {
-                matches = [{app-id = "it.catboy.ripdrag";}];
+                _children = [{match._props.app-id = "it.catboy.ripdrag";}];
 
-                focus-ring.active.color = colors.withHashtag.base0F;
-                border.active.color = colors.withHashtag.base0F;
+                focus-ring.active-color = colors.withHashtag.base0F;
+                border.active-color = colors.withHashtag.base0F;
             }
             {
-                matches = [{app-id = "com.github.th_ch.youtube_music";}];
+                _children = [{match._props.app-id = "com.github.th_ch.youtube_music";}];
 
                 default-column-width.proportion = 0.7;
                 default-window-height.proportion = 0.7;
             }
             {
-                matches = [{app-id = "Espanso.SyncTool";}];
+                _children = [{match._props.app-id = "Espanso.SyncTool";}];
 
                 open-floating = true;
             }
@@ -120,30 +109,30 @@ _: {
                 open-on-workspace = "Acad";
                 open-focused = true;
 
-                matches = [
-                    {app-id = "obsidian";}
-                    {app-id = "sioyek";}
-                    {app-id = "Zotero";}
+                _children = [
+                    {match._props.app-id = "obsidian";}
+                    {match._props.app-id = "sioyek";}
+                    {match._props.app-id = "Zotero";}
                 ];
             }
             {
                 open-on-workspace = "Browse";
                 open-focused = true;
 
-                matches = [
-                    {app-id = "firefox";}
-                    {app-id = "com.github.th_ch.youtube_music";}
-                    {app-id = "vesktop";}
-                    {app-id = "org.telegram.desktop";}
+                _children = [
+                    {match._props.app-id = "firefox";}
+                    {match._props.app-id = "com.github.th_ch.youtube_music";}
+                    {match._props.app-id = "vesktop";}
+                    {match._props.app-id = "org.telegram.desktop";}
                 ];
             }
             {
                 open-on-workspace = "Code";
                 open-focused = true;
 
-                matches = [
-                    {app-id = "dev.zed.Zed";}
-                    {app-id = "Code";}
+                _children = [
+                    {match._props.app-id = "dev.zed.Zed";}
+                    {match._props.app-id = "Code";}
                 ];
             }
         ];

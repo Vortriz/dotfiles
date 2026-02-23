@@ -42,7 +42,7 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         niri = {
-            url = "github:sodiboo/niri-flake";
+            url = "git+https://codeberg.org/bananad3v/niri-nix";
             # inputs.niri-unstable.url = "github:YaLTeR/niri/wip/branch";
         };
         niri-shell = {

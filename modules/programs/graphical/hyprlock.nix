@@ -1,6 +1,5 @@
 {
     unify.home = {
-        config,
         lib,
         pkgs,
         ...
@@ -105,9 +104,9 @@
             };
         };
 
-        programs.niri.settings.binds."Mod+L" = {
-            action = config.lib.niri.actions.spawn-sh "niri msg action do-screen-transition && ${lib.getExe pkgs.hyprlock} --immediate";
-            hotkey-overlay.title = "Lock screen";
+        wayland.windowManager.niri.settings.binds."Mod+L" = {
+            spawn-sh = "niri msg action do-screen-transition && ${lib.getExe pkgs.hyprlock} --immediate";
+            _props.hotkey-overlay-title = "Lock screen";
         };
     };
 }

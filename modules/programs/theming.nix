@@ -28,6 +28,11 @@
                     base0F = "85e89d"; # Deprecated, open/close embedded tags
                 };
 
+                opacity = {
+                    applications = 0.75;
+                    terminal = 0.75;
+                };
+
                 fonts = {
                     serif = {
                         package = pkgs.libertinus;

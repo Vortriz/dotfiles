@@ -5,22 +5,18 @@
         pkgs,
         ...
     }: {
-        programs.niri.settings = {
+        wayland.windowManager.niri.settings = {
             # keep-sorted start block=yes newline_separated=yes
             animations = {
-                window-open.kind = {
-                    easing = {
-                        curve = "ease-out-expo";
-                        duration-ms = 250;
-                    };
+                window-open = {
+                    duration-ms = 250;
+                    curve = "ease-out-expo";
                 };
-                window-close.kind = {
-                    easing = {
-                        curve = "ease-out-quad";
-                        duration-ms = 250;
-                    };
+                window-close = {
+                    duration-ms = 250;
+                    curve = "ease-out-quad";
                 };
-                exit-confirmation-open-close.enable = false;
+                exit-confirmation-open-close.off = [];
             };
 
             environment = {
@@ -29,75 +25,73 @@
             };
 
             hotkey-overlay = {
-                skip-at-startup = true;
-                hide-not-bound = true;
+                skip-at-startup = [];
+                hide-not-bound = [];
             };
 
-            input.touchpad = {
-                tap-button-map = "left-right-middle";
-                scroll-factor = 0.75;
-                dwt = true;
+            input = {
+                touchpad = {
+                    dwt = [];
+                    tap = [];
+                    natural-scroll = [];
+                    tap-button-map = "left-right-middle";
+                    scroll-factor = 0.75;
+                };
+                keyboard = {
+                    repeat-delay = 600;
+                    repeat-rate = 25;
+                };
             };
 
-            layer-rules = [
+            layer-rule = [
                 {
-                    matches = [{namespace = "quickshell:notification";}];
+                    match._props.namespace = "quickshell:notification";
                     block-out-from = "screencast";
                 }
             ];
 
             layout = {
-                always-center-single-column = true;
-                default-column-width.proportion = 0.5;
-                focus-ring = {
-                    enable = true;
-                    width = 2;
-                };
-
                 struts.top = -8;
+                background-color = "#000000";
+
+                always-center-single-column = [];
+                default-column-width.proportion = 0.5;
+
+                focus-ring.width = 2;
+                border.off = [];
 
                 tab-indicator = {
-                    enable = true;
-                    hide-when-single-tab = true;
+                    hide-when-single-tab = [];
                     gap = -16;
                     gaps-between-tabs = 4;
                     width = 10;
                     corner-radius = 3;
-                    length.total-proportion = 0.15;
+                    length._props.total-proportion = 0.15;
                     position = "top";
                 };
-
-                background-color = "#000000";
             };
 
-            outputs."eDP-1" = {
-                mode = {
-                    height = 1800;
-                    width = 2880;
-                    refresh = 60.001;
-                };
+            output = [
+                {
+                    _args = ["eDP-1"];
+                    mode = "2880x1800@60.001";
+                    scale = 1.5;
+                }
+            ];
 
-                scale = 1.5;
-            };
+            overview.zoom = 0.4;
 
-            overview = {
-                zoom = 0.4;
-            };
-
-            prefer-no-csd = true;
+            prefer-no-csd = [];
 
             screenshot-path = "${hostConfig.dirs.downloads}/captures/linux/%Y-%m-%d (%H-%M-%S).png";
 
-            workspaces = {
-                "Acad" = {};
-                "Browse" = {};
-                "Code" = {};
-            };
+            workspace = [
+                {_args = ["Acad"];}
+                {_args = ["Browse"];}
+                {_args = ["Code"];}
+            ];
 
-            xwayland-satellite = {
-                enable = true;
-                path = lib.getExe pkgs.xwayland-satellite-unstable;
-            };
+            xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite-unstable;
             # keep-sorted end
         };
     };
