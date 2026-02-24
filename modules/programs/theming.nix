@@ -29,8 +29,8 @@
                 };
 
                 opacity = {
-                    applications = 0.75;
-                    terminal = 0.75;
+                    applications = 0.9;
+                    terminal = 0.9;
                 };
 
                 fonts = {

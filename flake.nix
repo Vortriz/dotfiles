@@ -43,7 +43,7 @@
         };
         niri = {
             url = "git+https://codeberg.org/bananad3v/niri-nix";
-            # inputs.niri-unstable.url = "github:YaLTeR/niri/wip/branch";
+            inputs.niri-unstable.url = "github:YaLTeR/niri/wip/branch";
         };
         niri-shell = {
             url = "/mnt/HOUSE/dev/others/niri-shell";

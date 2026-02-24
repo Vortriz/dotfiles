@@ -61,11 +61,11 @@
                         _props.allow-when-locked = true;
                     };
                     "XF86MonBrightnessUp" = {
-                        spawn-sh = "dms ipc brightness increment 5 ";
+                        spawn-sh = "dms ipc brightness increment 5 \"\"";
                         _props.allow-when-locked = true;
                     };
                     "XF86MonBrightnessDown" = {
-                        spawn-sh = "dms ipc brightness decrement 5 ";
+                        spawn-sh = "dms ipc brightness decrement 5 \"\"";
                         _props.allow-when-locked = true;
                     };
                     "Mod+Alt+N" = {

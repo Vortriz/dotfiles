@@ -19,6 +19,11 @@
                 exit-confirmation-open-close.off = [];
             };
 
+            blur = {
+                on = [];
+                passes = 4;
+            };
+
             environment = {
                 # for electron apps
                 NIXOS_OZONE_WL = "1";

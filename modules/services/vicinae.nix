@@ -17,11 +17,22 @@
             };
         };
 
-        wayland.windowManager.niri.settings.binds = {
-            "Alt+Space" = {
+        wayland.windowManager.niri.settings = {
+            binds."Alt+Space" = {
                 spawn-sh = "${lib.getExe config.services.vicinae.package} toggle";
                 _props.hotkey-overlay-title = "Toggle Vicinae";
             };
+
+            layer-rule = [
+                {
+                    match._props.namespace = "vicinae";
+
+                    background-effect = {
+                        blur = true;
+                        xray = false;
+                    };
+                }
+            ];
         };
     };
 }

@@ -75,6 +75,19 @@
                     {match._props.app-id = "vesktop";}
                 ];
             }
+            {
+                background-effect = {
+                    blur = true;
+                    xray = false;
+                };
+
+                _children = [
+                    {match._props.app-id = "kitty";}
+                    {match._props.app-id = "yazi";}
+                    {match._props.app-id = "nix-search-tv";}
+                    {match._props.title = "Vicinae Settings";}
+                ];
+            }
 
             # specific window rules
             {

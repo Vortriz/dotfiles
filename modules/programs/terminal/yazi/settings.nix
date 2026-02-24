@@ -48,6 +48,10 @@
                         use = ["edit" "edit-with-zed" "open" "reveal" "send"];
                     }
                     {
+                        mime = "application/json";
+                        use = ["open" "edit" "edit-with-zed" "reveal" "send"];
+                    }
+                    {
                         mime = "application/pdf";
                         use = ["open" "reveal" "edit-doc" "send"];
                     }
