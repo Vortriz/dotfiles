@@ -1,4 +1,4 @@
-_: {
+{
     unify.home = {config, ...}: let
         inherit (config.lib.stylix) colors;
     in {

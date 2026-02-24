@@ -1,5 +1,5 @@
 {
-    unify.nixos = _: {
+    unify.nixos = {
         documentation = {
             doc.enable = false;
             info.enable = false;
