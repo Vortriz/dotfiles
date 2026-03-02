@@ -20627,3 +20627,253 @@ REMOVED
 
 SIZE: 19.5 GiB -> 19.1 GiB
 DIFF: -496 MiB
+
+---
+
+03/03/26 01:04:13 AM IST
+<<< /nix/store/xfby0kxff58nvb2fdwajk6jg3qaxmxkz-nixos-system-sagittarius-26.05.20260217.0182a36
+>>> /nix/store/ri8z10i3r4pwpn656zddybjbb41vy835-nixos-system-sagittarius-26.05.20260302.cf59864
+
+CHANGED
+[U.] 7zz                                              25.01 -> 26.00
+[U.] Better-BibTeX-for-Zotero                         8.0.25 -> 8.0.41
+[U.] SciPDF-For-Zotero                                8.0.3 -> 8.0.4
+[U.] acpi-call                                        1.2.2-6.19.2 -> 1.2.2-6.19.5
+[U.] ada                                              3.4.1 -> 3.4.2
+[U.] appstream                                        1.0.4 ×2 -> 1.1.2 ×2
+[U.] appstream-qt                                     1.0.4 -> 1.1.2
+[U*] asusctl                                          6.3.2 -> 6.3.3
+[U.] at-spi2-core                                     2.58.2 ×2, 2.58.2-dev, <others> -> 2.58.3 ×2, 2.58.3-dev, <others>
+[U.] boost                                            1.87.0 -> 1.89.0
+[U.] bottles                                          61.1, 61.1-bwrap, 61.1-fhsenv-profile, 61.1-fhsenv-rootfs, 61.1-fish-completions, 61.1-init -> 62.0, 62.0-bwrap, 62.0-fhsenv-profile, 62.0-fhsenv-rootfs, 62.0-fish-completions, 62.0-init
+[U.] bottles-cli                                      61.1-bwrap, 61.1-fhsenv-profile, 61.1-fhsenv-rootfs, 61.1-init -> 62.0-bwrap, 62.0-fhsenv-profile, 62.0-fhsenv-rootfs, 62.0-init
+[U.] bottles-unwrapped                                61.1 ×2 -> 62.0 ×2
+[U.] breeze                                           6.6.0 -> 6.6.1
+[U*] btrfs-progs                                      6.17.1, 6.17.1-man -> 6.19, 6.19-man
+[U.] coreutils                                        9.9 ×2, <others> -> 9.10 ×2, <others>
+[U*] coreutils-full                                   9.9, 9.9_fish-completions -> 9.10, 9.10_fish-completions
+[U.] cryptsetup                                       2.8.3 ×2, <others> -> 2.8.4 ×2, <others>
+[U*] curl                                             8.17.0 ×2, 8.17.0-bin ×2, 8.17.0-dev, 8.17.0-man, <others> -> 8.18.0 ×2, 8.18.0-bin ×2, 8.18.0-dev, 8.18.0-man, <others>
+[U*] dbus                                             1.14.10 ×3, 1.14.10-dev ×2, 1.14.10-lib ×3, 1.14.10-man, <others> -> 1.14.10, 1.14.10-dev, 1.14.10-lib, 1.16.2-man, 1.16.2, 1.16.2-dev, 1.16.2-lib, <others>
+[D.] ddcutil                                          2.2.5 -> 2.2.3
+[U.] deno                                             2.6.9 -> 2.6.10
+[U.] dms-shell                                        1.5-beta+date=2026-02-23_dirty, 1.5-beta+date=2026-02-23_dirty-fish-completions -> 1.5-beta+date=2026-03-02_dirty, 1.5-beta+date=2026-03-02_dirty-fish-completions
+[U.] electron                                         38.8.1, 40.3.0 -> 38.8.4, 40.6.1
+[U.] electron-unwrapped                               38.8.1, 40.3.0 -> 38.8.4, 40.6.1
+[U.] expat                                            2.7.3 ×3, 2.7.3-dev ×2 -> 2.7.3, 2.7.3-dev, 2.7.4, 2.7.4-dev
+[U.] firefox                                          147.0.4, 147.0.4-fish-completions -> 148.0, 148.0-fish-completions
+[U.] firefox-unwrapped                                147.0.4 -> 148.0
+[U*] fish                                             4.4.0, 4.4.0-doc, 4.4.0_fish-completions, 4.4.0-fish-completions -> 4.5.0, 4.5.0-doc, 4.5.0_fish-completions, 4.5.0-fish-completions
+[U.] flatpak                                          1.16.2 -> 1.16.3
+[U.] freerdp                                          3.22.0 -> 3.23.0
+[U*] fresh                                            0.2.3 -> 0.2.11
+[U.] fzf                                              0.67.0, 0.67.0-fish-completions, 0.67.0-man -> 0.68.0, 0.68.0-fish-completions, 0.68.0-man
+[U.] gdk-pixbuf                                       2.44.4 ×2, 2.44.4-dev, <others> -> 2.44.5 ×2, 2.44.5-dev, <others>
+[U*] getent-glibc                                     2.42-47 ×2, <others> -> 2.42-51 ×2, <others>
+[U.] gettext                                          0.25.1 ×2 -> 0.25.1, 0.26
+[U.] gh                                               2.86.0, 2.86.0-fish-completions -> 2.87.3, 2.87.3-fish-completions
+[U.] git                                              2.52.0, 2.52.0-doc, 2.52.0-fish-completions -> 2.53.0, 2.53.0-doc, 2.53.0-fish-completions
+[U*] glibc                                            2.42-47 ×2, 2.42-47-bin ×2, 2.42-47-dev, 2.42-47-getent ×2, <others> -> 2.42-51 ×2, 2.42-51-bin ×2, 2.42-51-dev, 2.42-51-getent ×2, <others>
+[U*] glibc-locales                                    2.42-47 ×2 -> 2.42-51 ×2
+[U.] glibc-multi                                      2.42-47, 2.42-47-bin -> 2.42-51, 2.42-51-bin
+[U.] glslang                                          16.1.0 -> 16.2.0
+[U.] gnupg                                            2.4.8 ×4 -> 2.4.8, 2.4.9
+[U.] gnutls                                           3.8.11 ×2, 3.8.11-bin, 3.8.11-man, <others> -> 3.8.12 ×2, 3.8.12-bin, 3.8.12-man, <others>
+[U.] harper                                           1.7.0 -> 1.8.0
+[U.] hwdata                                           0.403 ×2, <others> -> 0.404 ×2, <others>
+[U.] iana-etc                                         20250505 -> 20251215
+[U.] imagemagick                                      7.1.2-12, 7.1.2-12-dev, 7.1.2-12-doc, 7.1.2-12-fish-completions -> 7.1.2-13, 7.1.2-13-dev, 7.1.2-13-doc, 7.1.2-13-fish-completions
+[U.] initrd-linux                                     6.19.2 -> 6.19.5
+[U.] intel-graphics-compiler                          2.24.8 -> 2.27.10
+[U.] iso-codes                                        4.19.0 ×2, <others> -> 4.20.1 ×2, <others>
+[U.] jansson                                          2.14.1 ×2 -> 2.15.0 ×2
+[U.] kdecoration                                      6.6.0 -> 6.6.1
+[U*] kmod                                             31_fish-completions, <others> -> 31-man, <others>
+[U.] lcms2                                            2.17 ×2, 2.17-bin, 2.17-dev -> 2.18 ×2, 2.18-bin, 2.18-dev
+[U*] less                                             685, 685-man -> 691, 691-man
+[U.] libXNVCtrl                                       580.126.09, <others> -> 580.126.18, <others>
+[U.] libadwaita                                       1.8.3 ×2 -> 1.8.4 ×2
+[U.] libblake3                                        1.8.2 -> 1.8.3
+[U.] libbpf                                           1.6.2 ×3 -> 1.6.2, 1.6.3
+[U.] libcamera                                        0.6.0 ×2 -> 0.7.0 ×2
+[U.] libcap-ng                                        0.8.5 ×3 -> 0.8.5, 0.9
+[U.] libhwy                                           1.0.7 -> 1.3.0
+[U.] libjxl                                           0.11.1, 0.11.1-dev -> 0.11.2, 0.11.2-dev
+[U.] liblqr                                           1-0.4.2, 1-0.4.2-dev -> 1-0.4.3, 1-0.4.3-dev
+[U.] libmbim                                          1.32.0 ×2 -> 1.34.0 ×2
+[U.] libnotify                                        0.8.7 -> 0.8.8
+[U.] libopus                                          1.5.2 ×2 -> 1.6.1 ×2
+[U.] libpng                                           1.6.53 -> 1.6.55
+[U.] libpng-apng                                      1.6.53 ×2, 1.6.53-dev, 1.6.53-man, <others> -> 1.6.55 ×2, 1.6.55-dev, 1.6.55-man, <others>
+[U.] libproxy                                         0.5.11 ×2 -> 0.5.11, 0.5.12
+[U.] libraqm                                          0.10.3 -> 0.10.4
+[U.] libsodium                                        1.0.20-unstable-2025-12-31 ×2 -> 1.0.21-unstable-2026-01-22 ×2
+[U.] liburcu                                          0.15.5 -> 0.15.6
+[U.] libxcomposite                                    0.4.6 ×3, 0.4.6-dev -> 0.4.6, 0.4.7-dev, 0.4.7
+[U.] libxdamage                                       1.1.6 ×3, 1.1.6-dev -> 1.1.6, 1.1.7-dev, 1.1.7
+[U.] libxext                                          1.3.6 ×3, 1.3.6-dev, 1.3.6-man -> 1.3.6, 1.3.7-dev, 1.3.7-man, 1.3.7
+[U.] libxinerama                                      1.1.5 ×3, 1.1.5-dev -> 1.1.5, 1.1.6-dev, 1.1.6
+[U.] libxmlb                                          0.3.24-lib ×2 -> 0.3.25-lib ×2
+[U.] libxmu                                           1.2.1 ×2 -> 1.3.1 ×2
+[U.] libxpm                                           3.5.17 ×3 -> 3.5.17, 3.5.18
+[U.] libxrandr                                        1.5.4 ×3, 1.5.4-dev -> 1.5.4, 1.5.5-dev, 1.5.5
+[U.] libxxf86vm                                       1.1.6 ×2 -> 1.1.7 ×2
+[U.] lilv                                             0.26.0 ×2 -> 0.26.2 ×2
+[U.] linux                                            6.19.2, 6.19.2-modules ×2 -> 6.19.5, 6.19.5-modules ×2
+[U.] linux-firmware                                   20260110-zstd -> 20260221-zstd
+[U.] linux-headers                                    6.18 -> 6.18.7
+[U.] linux-headers-static                             6.18 -> 6.18.7
+[U.] lmdb                                             0.9.33 -> 0.9.35
+[U.] mcp-nixos                                        2.1.1 -> 2.2.0
+[U.] mediainfo.yazi                                   25.5.31-unstable-2026-02-12 -> 25.5.31-unstable-2026-02-22
+[U.] mesa                                             26.0.0 ×2 -> 26.0.1 ×2
+[U*] mkpasswd                                         5.6.5, 5.6.5-man -> 5.6.6, 5.6.6-man
+[U*] modemmanager                                     1.24.0 ×2, 1.24.0_fish-completions -> 1.24.2 ×2, 1.24.2_fish-completions
+[U.] mupdf                                            1.26.10 ×2, 1.26.10-bin ×2 -> 1.27.0 ×2, 1.27.0-bin ×2
+[U.] nemo                                             6.6.3 -> 6.6.4
+[U.] nemo-with-extensions                             6.6.3, 6.6.3-fish-completions -> 6.6.4, 6.6.4-fish-completions
+[U.] nghttp3                                          1.13.1 ×2, 1.13.1-dev, <others> -> 1.14.0 ×2, 1.14.0-dev, <others>
+[U.] ngtcp2                                           1.18.0 ×2, 1.18.0-dev, <others> -> 1.19.0 ×2, 1.19.0-dev, <others>
+[U.] nh                                               4.2.0, 4.2.0-fish-completions -> 4.3.0, 4.3.0-fish-completions
+[U.] nh-unwrapped                                     4.2.0 -> 4.3.0
+[U.] nix-search-tv                                    2.2.6, 2.2.6-fish-completions -> 2.2.7, 2.2.7-fish-completions
+[U.] nixos-system-sagittarius                         26.05.20260217.0182a36 -> 26.05.20260302.cf59864
+[U.] nodejs                                           25.6.1, <others> -> 25.7.0, <others>
+[U.] nss                                              3.120.1, <others> -> 3.121, <others>
+[U.] openapv                                          0.2.0.4 ×2 -> 0.2.1.0 ×2
+[U.] openjdk-minimal-jre                              21.0.9+10 -> 21.0.10+7
+[U.] openssl                                          3.6.0 ×3, 3.6.0-bin ×2, 3.6.0-dev ×2 -> 3.6.0, 3.6.0-bin, 3.6.0-dev, 3.6.1, 3.6.1-bin, 3.6.1-dev
+[U.] p11-kit                                          0.25.10 ×2, 0.25.10-bin, <others> -> 0.26.1 ×2, 0.26.1-bin, <others>
+[U.] pcsclite                                         2.3.0-lib ×3 -> 2.3.0-lib, 2.4.1-lib
+[U.] perl5.42.0-Image-ExifTool                        13.39, 13.39-fish-completions -> 13.52, 13.52-fish-completions
+[U*] pipewire                                         1.4.9 ×2, 1.4.9-man -> 1.4.10 ×2, 1.4.10-man
+[U*] procps                                           4.0.4 ×2, 4.0.4_fish-completions -> 4.0.6 ×2, 4.0.6_fish-completions
+[U.] protobuf                                         32.1 ×3 -> 32.1, 33.5
+[U.] ps-procps                                        4.0.4 -> 4.0.6
+[U.] publicsuffix-list                                0-unstable-2025-12-28 ×2, <others> -> 0-unstable-2026-01-25 ×2, <others>
+[U.] python3                                          3.13.11 ×2, 3.13.11-env ×9 -> 3.13.12 ×2, 3.13.12-env ×9
+[U.] python3.13-aiodns                                3.6.1 -> 4.0.0
+[U.] python3.13-argcomplete                           3.6.2 -> 3.6.3
+[U.] python3.13-authlib                               1.6.5 -> 1.6.6
+[U.] python3.13-cachetools                            6.2.2 -> 6.2.4
+[U.] python3.13-certifi                               2025.07.14 -> 2026.01.04
+[U.] python3.13-cryptography                          46.0.3 -> 46.0.4
+[U.] python3.13-cyclopts                              4.5.2 -> 4.5.4
+[U.] python3.13-debugpy                               1.8.19 -> 1.8.20
+[U.] python3.13-deprecated                            1.2.18 -> 1.3.1
+[U.] python3.13-docutils                              0.21.2 -> 0.22.4
+[U.] python3.13-email-validator                       2.2.0 -> 2.3.0
+[U.] python3.13-exceptiongroup                        1.3.0 -> 1.3.1
+[U.] python3.13-frozenlist                            1.7.0 -> 1.8.0
+[U.] python3.13-humanize                              4.12.3 -> 4.15.0
+[U.] python3.13-img2pdf                               0.6.1 -> 0.6.3
+[U.] python3.13-importlib-metadata                    8.7.0 -> 8.7.1
+[U.] python3.13-jaraco-context                        6.0.1 -> 6.1.0
+[U.] python3.13-jaraco-functools                      4.2.1 -> 4.4.0
+[U.] python3.13-jsonschema                            4.25.0 -> 4.26.0
+[U.] python3.13-jsonschema-specifications             2025.4.1 -> 2025.9.1
+[U.] python3.13-markdown                              3.10.0 ×2 -> 3.10.1 ×2
+[U.] python3.13-more-itertools                        10.7.0 -> 10.8.0
+[U.] python3.13-multidict                             6.7.0 -> 6.7.1
+[U.] python3.13-numpy                                 2.3.5 -> 2.4.2
+[U.] python3.13-orjson                                3.11.4 -> 3.11.5
+[U.] python3.13-pikepdf                               10.1.0 -> 10.3.0
+[U.] python3.13-platformdirs                          4.5.0 -> 4.5.1
+[U.] python3.13-prometheus-client                     0.22.1 -> 0.24.1
+[U.] python3.13-protobuf                              6.33.3 -> 6.33.5
+[U.] python3.13-psutil                                7.1.3 -> 7.2.1
+[U.] python3.13-pyasn1                                0.6.1 -> 0.6.2
+[U.] python3.13-pycairo                               1.28.0 -> 1.29.0
+[U.] python3.13-pycares                               4.9.0 -> 5.0.1
+[U.] python3.13-pycparser                             2.23 -> 3.00
+[U.] python3.13-pydantic                              2.12.4 -> 2.12.5
+[U.] python3.13-pydantic-settings                     2.10.1 -> 2.12.0
+[U.] python3.13-pyopenssl                             25.1.0, 25.1.0-dev -> 25.3.0, 25.3.0-dev
+[U.] python3.13-python-json-logger                    3.3.0 -> 4.0.0
+[U.] python3.13-python-multipart                      0.0.20 -> 0.0.21
+[U.] python3.13-redis                                 6.2.0 -> 7.1.0
+[U.] python3.13-referencing                           0.36.2 -> 0.37.0
+[U.] python3.13-rich-rst                              1.3.1 -> 1.3.2
+[U.] python3.13-rpds-py                               0.28.0 -> 0.30.0
+[U.] python3.13-secretstorage                         3.3.3 -> 3.5.0
+[U.] python3.13-setuptools                            80.9.0 -> 80.10.1
+[U.] python3.13-soupsieve                             2.7 -> 2.8.3
+[U.] python3.13-sse-starlette                         3.0.3 -> 3.2.0
+[U.] python3.13-starlette                             0.50.0 -> 0.52.1
+[U.] python3.13-typer                                 0.21.0 -> 0.24.0
+[U.] python3.13-tzdata                                2025.2 -> 2025.3
+[U.] python3.13-urllib3                               2.6.0 -> 2.6.3
+[U.] python3.13-urwid                                 3.0.4 -> 3.0.5
+[U.] python3.13-uvicorn                               0.38.0 -> 0.40.0
+[U.] python3.13-wcwidth                               0.2.13 -> 0.4.0
+[U.] python3.13-websocket-client                      1.8.0 -> 1.9.0
+[U.] python3.13-websockets                            15.0.1 -> 16.0
+[U.] python3.13-yt-dlp-ejs                            0.4.0 -> 0.5.0
+[U.] python3.13-zipp                                  3.23.0 -> 3.23.1
+[U.] python3.13-zope-interface                        8.0.1 -> 8.2
+[U.] qt3d                                             6.10.1 -> 6.10.2
+[U.] qt5compat                                        6.10.1 -> 6.10.2
+[U.] qtbase                                           6.10.1, 6.10.1-only-plugins-qml, <others> -> 6.10.2, 6.10.2-only-plugins-qml, <others>
+[U.] qtdeclarative                                    6.10.1, <others> -> 6.10.2, <others>
+[U.] qtimageformats                                   6.10.1 -> 6.10.2
+[U.] qtmultimedia                                     6.10.1 -> 6.10.2
+[U.] qtquick3d                                        6.10.1 -> 6.10.2
+[U.] qtshadertools                                    6.10.1 -> 6.10.2
+[U.] qtspeech                                         6.10.1 -> 6.10.2
+[U.] qtsvg                                            6.10.1, <others> -> 6.10.2, <others>
+[U.] qttools                                          6.10.1, <others> -> 6.10.2, <others>
+[U.] qttranslations                                   6.10.1, <others> -> 6.10.2, <others>
+[U.] qtwayland                                        6.10.1, <others> -> 6.10.2, <others>
+[U.] rclone                                           1.73.0, 1.73.0-fish-completions, 1.73.0-man -> 1.73.1, 1.73.1-fish-completions, 1.73.1-man
+[U.] ruff                                             0.15.1 -> 0.15.3
+[U.] s2n-tls                                          1.5.27 -> 1.6.4
+[U.] sdl2-compat                                      2.32.62 ×2 -> 2.32.64 ×2
+[U.] shaderc                                          2025.5-lib -> 2026.1-lib
+[U*] shadow                                           4.18.0, 4.18.0-man, 4.18.0-su -> 4.19.3, 4.19.3-man, 4.19.3-su
+[U.] sioyek                                           2.0.0-unstable-2026-02-04, 2.0.0-unstable-2026-02-04-fish-completions -> 2.0.0-unstable-2026-02-21, 2.0.0-unstable-2026-02-21-fish-completions
+[U.] spdlog                                           1.16.0 ×2 -> 1.17.0 ×2
+[U.] spidermonkey                                     140.6.0 -> 140.7.0
+[U*] systemd                                          258.3 ×2, 258.3-man, <others> -> 259 ×2, 259-man, <others>
+[U.] systemd-minimal                                  258.3 ×2, <others> -> 259 ×2, <others>
+[U.] systemd-minimal-libs                             258.3 ×2, <others> -> 259 ×2, <others>
+[U.] talloc                                           2.4.3 ×2 -> 2.4.4 ×2
+[U.] ty                                               0.0.17 -> 0.0.19
+[U*] udisks                                           2.11.0, 2.11.0-man -> 2.11.1, 2.11.1-man
+[U.] usbutils                                         018, 018-man -> 019, 019-man
+[U.] vicinae                                          0.19.9, 0.19.9-fish-completions -> 0.20.2, 0.20.2-fish-completions
+[U.] vscode                                           1.109.2, 1.109.2-fish-completions -> 1.109.5, 1.109.5-fish-completions
+[U.] vscode-extension-gemini-cli-vscode-ide-companion 0.28.2 -> 0.30.0
+[U.] vulkan-loader                                    1.4.335.0 ×2, <others> -> 1.4.341.0 ×2, <others>
+[U.] wxwidgets                                        3.2.8.1 -> 3.2.9
+[U.] x86_energy_perf_policy                           6.18.12 -> 6.18.15
+[U.] xwayland-satellite-unstable                      2026-02-15-536bd32 -> 2026-02-22-33c344f
+[U.] yt-dlp                                           2026.02.04 -> 2026.02.21
+[U.] zed-editor                                       0.223.3 -> 0.224.11
+[U.] zed-editor-wrapped                               0.223.3, 0.223.3-fish-completions -> 0.224.11, 0.224.11-fish-completions
+[C.] zlib                                             <others> -> 1.3.1-static, <others>
+[U.] zlib-ng                                          2.3.2 -> 2.3.3
+
+ADDED
+[A.] expand-response-params                           <none>
+[A.] ipw2200-firmware                                 3.1-zstd
+[A.] libfyaml                                         0.9.4
+[A.] man-paths                                        <none>
+[A.] nodejs-slim                                      24.13.0, 24.13.0-corepack, 24.13.0-npm, 25.7.0, 25.7.0-npm
+[A.] python3.13-annotated-doc                         0.0.4
+[A.] python3.13-asgiref                               3.11.0
+[A.] syntax-highlighting                              6.19.0
+[A.] unit-mandb.service                               <none>
+[A.] unit-script-mandb-start                          <none>
+[A.] unit-systemd-hostnamed.service                   <none>
+[A.] unit-systemd-localed.service                     <none>
+
+REMOVED
+[R.] intel2200BGFirmware                              3.1-zstd
+[R.] python3.13-async-timeout                         5.0.1
+[R.] python3.13-sniffio                               1.3.1
+[R.] python3.13-typer-slim                            0.21.0
+[R.] surge                                            0.5.5, 0.5.5-fish-completions
+[R.] unit-asusd-user.service                          <none>
+
+SIZE: 19.1 GiB -> 19.0 GiB
+DIFF: -17.3 MiB
