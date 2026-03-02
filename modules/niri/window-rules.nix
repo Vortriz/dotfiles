@@ -82,6 +82,7 @@
                 };
 
                 _children = [
+                    {match._props.app-id = "firefox";}
                     {match._props.app-id = "kitty";}
                     {match._props.app-id = "yazi";}
                     {match._props.app-id = "nix-search-tv";}
