@@ -1,10 +1,7 @@
 {
     unify.nixos = {
         services = {
-            asusd = {
-                enable = true;
-                enableUserService = true;
-            };
+            asusd.enable = true;
 
             printing.enable = true;
 
