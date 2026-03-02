@@ -12,7 +12,6 @@
             pandoc
             rclone
             s-tui
-            surge
             trash-cli
             wl-clipboard
             # keep-sorted end
