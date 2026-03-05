@@ -20877,3 +20877,124 @@ REMOVED
 
 SIZE: 19.1 GiB -> 19.0 GiB
 DIFF: -17.3 MiB
+
+---
+
+05/03/26 01:51:31 PM IST
+<<< /nix/store/ri8z10i3r4pwpn656zddybjbb41vy835-nixos-system-sagittarius-26.05.20260302.cf59864
+>>> /nix/store/ar7hbmkj7jngbk6ja8f9r2jyq5fg0n9i-nixos-system-sagittarius-26.05.20260304.80bdc1e
+
+CHANGED
+[U.] Better-BibTeX-for-Zotero               8.0.41 -> 9.0.2
+[C.] at-spi2-core                           2.56.2, <others> -> <others>
+[C.] bash                                   5.3p3, <others> -> <others>
+[C*] bash-interactive                       5.3p3, <others> -> <others>
+[U.] breeze                                 6.6.1 -> 6.6.2
+[C.] brotli                                 1.1.0-lib, <others> -> <others>
+[U*] cloudflare-warp                        2025.10.186.0 -> 2026.1.150.0
+[C.] coreutils                              9.8, <others> -> <others>
+[C.] cryptsetup                             2.8.1, <others> -> <others>
+[C*] cups                                   2.4.14, 2.4.14-lib, <others> -> <others>
+[C*] curl                                   8.16.0, <others> -> <others>
+[C.] dav1d                                  1.5.1, <others> -> <others>
+[C*] dbus                                   1.14.10, 1.14.10-dev, 1.14.10-lib, <others> -> <others>
+[C*] dconf                                  0.40.0-lib, <others> -> <others>
+[C.] distrobox                              <others> -> 1.8.2.4-fish-completions, <others>
+[C.] elfutils                               0.193, <others> -> <others>
+[U.] exiv2                                  0.28.7, 0.28.7-lib -> 0.28.8, 0.28.8-lib
+[C.] expat                                  2.7.3, 2.7.3-dev, <others> -> <others>
+[U.] fzf                                    0.68.0, 0.68.0-fish-completions, 0.68.0-man -> 0.70.0, 0.70.0-fish-completions, 0.70.0-man
+[D.] gcc                                    15.2.0-lib ×4, 15.2.0-libgcc ×4, 14.3.0-lib, 14.3.0-libgcc -> 15.2.0-lib ×3, 15.2.0-libgcc ×3
+[C.] gdk-pixbuf                             2.42.12, <others> -> <others>
+[C*] getent-glibc                           2.40-66, <others> -> <others>
+[C.] gettext                                0.25.1, <others> -> <others>
+[C.] glib                                   2.84.4, <others> -> <others>
+[C*] glibc                                  2.40-66, 2.40-66-getent, <others> -> <others>
+[C.] gnupg                                  2.4.8, <others> -> <others>
+[U.] gnuplot                                6.0.3 -> 6.0.4
+[C.] gnutls                                 3.8.10, <others> -> <others>
+[C.] gobject-introspection                  1.84.0, <others> -> <others>
+[C.] gsettings-desktop-schemas              48.0, <others> -> <others>
+[C.] gtk+3                                  3.24.49, <others> -> <others>
+[C.] harfbuzz                               12.1.0, <others> -> <others>
+[U.] harper                                 1.8.0 -> 1.9.0
+[C.] hwdata                                 0.400, <others> -> <others>
+[U.] intel-media-driver                     25.3.4 ×2 -> 26.1.2 ×2
+[C.] iso-codes                              4.18.0, <others> -> <others>
+[U.] kdecoration                            6.6.1 -> 6.6.2
+[C*] kexec-tools                            2.0.31, <others> -> <others>
+[U.] layer-shell-qt                         6.5.1 -> 6.6.2
+[C.] libapparmor                            4.1.2, <others> -> <others>
+[C.] libarchive                             3.8.1-lib, <others> -> <others>
+[C.] libbpf                                 1.6.2, <others> -> <others>
+[C*] libcap                                 2.76-lib, <others> -> <others>
+[C.] libcap-ng                              0.8.5, <others> -> <others>
+[C.] libdeflate                             1.24, <others> -> <others>
+[C.] libdrm                                 2.4.126, 2.4.126-bin, 2.4.126-dev, <others> -> <others>
+[U.] libfprint                              1.94.9 -> 1.94.10
+[C.] libjpeg-turbo                          3.1.2, <others> -> <others>
+[U.] libphonenumber                         9.0.24 -> 9.0.25
+[C.] libpng-apng                            1.6.50, <others> -> <others>
+[C.] libpq                                  18.0, <others> -> <others>
+[C.] libproxy                               0.5.11, <others> -> <others>
+[U.] libqalculate                           5.8.1 -> 5.9.0
+[C.] libtasn1                               4.20.0, <others> -> <others>
+[C.] libthai                                0.1.29, <others> -> <others>
+[C.] libtpms                                0.10.1, <others> -> <others>
+[C.] libunistring                           1.4, <others> -> <others>
+[C.] libxcomposite                          0.4.6, <others> -> <others>
+[C.] libxcrypt                              4.4.38, <others> -> <others>
+[C.] libxdamage                             1.1.6, <others> -> <others>
+[C.] libxext                                1.3.6, <others> -> <others>
+[C.] libxinerama                            1.1.5, <others> -> <others>
+[C.] libxml2                                2.15.0, <others> -> <others>
+[C.] libxpm                                 3.5.17, <others> -> <others>
+[C.] libxrandr                              1.5.4, <others> -> <others>
+[C*] lvm2                                   2.03.35-lib, <others> -> <others>
+[U.] matugen                                3.1.0, 3.1.0-fish-completions -> 4.0.0, 4.0.0-fish-completions
+[C*] ncurses                                6.5, <others> -> <others>
+[C.] nghttp3                                1.12.0, <others> -> <others>
+[C.] ngtcp2                                 1.15.1, <others> -> <others>
+[U*] niri-unstable                          2026-02-22-734d86e, 2026-02-22-734d86e-fish-completions -> 2026-03-03-c837d94, 2026-03-03-c837d94-fish-completions
+[U.] nix-your-shell                         1.4.8, 1.4.8-fish-completions -> 1.4.9, 1.4.9-fish-completions
+[U.] nixos-system-sagittarius               26.05.20260302.cf59864 -> 26.05.20260304.80bdc1e
+[C.] nodejs                                 25.7.0, 22.20.0, <others> -> 25.8.0, <others>
+[U.] nodejs-slim                            25.7.0, 25.7.0-npm, <others> -> 25.8.0, 25.8.0-npm, <others>
+[U.] obsidian                               1.11.5, 1.11.5-fish-completions -> 1.12.4, 1.12.4-fish-completions
+[C.] openssl                                3.6.0, 3.6.0-bin, 3.6.0-dev, <others> -> <others>
+[C.] p11-kit                                0.25.9, <others> -> <others>
+[C.] pango                                  1.56.4, <others> -> <others>
+[C.] pcsclite                               2.3.0-lib, <others> -> <others>
+[C.] protobuf                               32.1, <others> -> <others>
+[C.] publicsuffix-list                      0-unstable-2025-08-28, <others> -> <others>
+[C.] qtbase                                 6.10.0, 6.10.0-only-plugins-qml, <others> -> <others>
+[C.] qtdeclarative                          6.10.0, <others> -> <others>
+[C.] qtsvg                                  6.10.0, <others> -> <others>
+[C.] qttranslations                         6.10.0, <others> -> <others>
+[C.] qtwayland                              6.10.0, 6.10.0-only-plugins-qml, <others> -> <others>
+[C.] readline                               8.3p1, <others> -> <others>
+[C.] sqlite                                 3.50.4, 3.50.4-bin, 3.50.4-dev, <others> -> <others>
+[U.] syntax-highlighting                    6.19.0 -> 6.23.0
+[C*] systemd                                258, <others> -> <others>
+[C.] systemd-minimal                        258, <others> -> <others>
+[C.] systemd-minimal-libs                   258, <others> -> <others>
+[U.] telegram-desktop                       6.5.1, 6.5.1-fish-completions -> 6.6.1, 6.6.1-fish-completions
+[C.] tinysparql                             3.9.2, <others> -> <others>
+[U.] ty                                     0.0.19 -> 0.0.20
+[C.] unbound                                1.24.0-lib, <others> -> <others>
+[C*] util-linux                             2.41.2-lib, <others> -> <others>
+[C.] util-linux-minimal                     2.41.2-lib, 2.41.2-login, 2.41.2-mount, 2.41.2-swap, <others> -> <others>
+[U.] vscode-extension-ritwickdey-liveserver 5.7.9 -> 5.7.10
+[C.] vulkan-loader                          1.4.328.0, <others> -> <others>
+[C.] xgcc                                   14.3.0-libgcc, <others> -> <others>
+[C.] xkeyboard-config                       2.45, <others> -> <others>
+[C*] xz                                     5.8.1, <others> -> <others>
+[U.] zed-editor                             0.224.11 -> 0.225.13
+[U.] zed-editor-wrapped                     0.224.11, 0.224.11-fish-completions -> 0.225.13, 0.225.13-fish-completions
+
+ADDED
+[A.] cpptrace                               1.0.4
+[A.] libdwarf                               2.2.0-lib
+
+SIZE: 19.0 GiB -> 18.2 GiB
+DIFF: -858 MiB
