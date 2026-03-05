@@ -32,7 +32,7 @@
                     {match._props.app-id = "firefox";}
                     {match._props.app-id = "yazi";}
                     {match._props.app-id = "org.kde.haruna";}
-                    {match._props.app-id = "Code";}
+                    {match._props.app-id = "code";}
                     {match._props.app-id = "obsidian";}
                     {match._props.app-id = "sioyek";}
                     {match._props.app-id = "Zotero";}
