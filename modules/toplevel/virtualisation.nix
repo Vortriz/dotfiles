@@ -18,6 +18,8 @@
         };
         home = {pkgs, ...}: {
             home.packages = [pkgs.boxbuddy];
+
+            programs.distrobox.enable = true;
         };
     };
 }
