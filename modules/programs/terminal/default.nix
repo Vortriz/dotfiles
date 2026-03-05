@@ -4,6 +4,7 @@
             # keep-sorted start
             android-tools
             brightnessctl
+            doi2bib3
             fzf
             just
             magic-wormhole
