@@ -57,6 +57,10 @@
     "extensions.autoUpdate": false,
     "files.trimTrailingWhitespace": true,
     "git.confirmSync": false,
+    "github.copilot.enable": {
+        "*": true,
+        "markdown": true
+    },
     "nix.enableLanguageServer": true,
     "nix.serverPath": "nixd",
     "terminal.integrated.defaultProfile.linux": "@shell@",
