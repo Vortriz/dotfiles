@@ -29,6 +29,8 @@
                 NIXOS_OZONE_WL = "1";
             };
 
+            gestures.hot-corners.bottom-right = [];
+
             hotkey-overlay = {
                 skip-at-startup = [];
                 hide-not-bound = [];
