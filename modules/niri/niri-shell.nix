@@ -72,10 +72,6 @@
                         spawn-sh = "dms ipc night toggle";
                         _props.hotkey-overlay-title = "Toggle Night Mode";
                     };
-                    "Mod+V" = {
-                        spawn-sh = "dms ipc clipboard toggle";
-                        _props.hotkey-overlay-title = "Toggle Clipboard Manager";
-                    };
 
                     "Mod+C" = {
                         spawn-sh = lib.getExe (
