@@ -5,6 +5,7 @@
             android-tools
             brightnessctl
             fzf
+            gemini-cli
             just
             libnotify
             magic-wormhole
