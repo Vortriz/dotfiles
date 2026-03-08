@@ -19,18 +19,8 @@
                     # Add myself to the trusted users
                     trusted-users = [hostConfig.username];
 
-                    # Add extra Caches
-                    substituters = [
-                        "https://niri-nix.cachix.org"
-                        "https://vicinae.cachix.org?priority=10"
-                    ];
-                    trusted-public-keys = [
-                        "niri-nix.cachix.org-1:SvFtqpDcf7Sm1SMJdby1/+Y+6f3Yt3/3PMcSTKPJNJ0="
-                        "vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc="
-                    ];
-
                     # Provide system architecture to nix
-                    system-features = ["nixos-test" "benchmark" "big-parallel" "kvm"] ++ ["gccarch-alderlake"];
+                    system-features = ["nixos-test" "benchmark" "big-parallel" "kvm"];
 
                     warn-dirty = false;
                 };

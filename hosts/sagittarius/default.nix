@@ -58,6 +58,8 @@
                 intelgpu.driver = "xe";
             };
 
+            nix.settings.system-features = ["gccarch-alderlake"];
+
             services = {
                 fprintd = {
                     enable = true;
