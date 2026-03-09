@@ -20998,3 +20998,23 @@ ADDED
 
 SIZE: 19.0 GiB -> 18.2 GiB
 DIFF: -858 MiB
+
+---
+
+09/03/26 12:41:29 PM IST
+<<< /nix/store/ar7hbmkj7jngbk6ja8f9r2jyq5fg0n9i-nixos-system-sagittarius-26.05.20260304.80bdc1e
+>>> /nix/store/0anqgzhmpq26iwib4ism28p8is51jl49-nixos-system-sagittarius-26.05.20260304.80bdc1e
+
+CHANGED
+[C.] libnotify               <others> -> 0.8.8-fish-completions, 0.8.8-man, <others>
+[C.] nodejs                  <others> -> 22.22.0, <others>
+[C.] nodejs-slim             <others> -> 22.22.0, 22.22.0-corepack, 22.22.0-npm, <others>
+
+ADDED
+[A.] doi2bib3                0.6.0, 0.6.0-fish-completions
+[A.] gemini-cli              0.30.0, 0.30.0-fish-completions
+[A.] python3.13-bibtexparser 1.4.4
+[A.] python3.13-pyparsing    3.3.2
+
+SIZE: 18.2 GiB -> 18.7 GiB
+DIFF: 483 MiB
