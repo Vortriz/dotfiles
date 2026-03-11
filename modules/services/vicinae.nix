@@ -1,63 +1,67 @@
 {inputs, ...}: {
-    unify.home = {
-        config,
-        lib,
-        pkgs,
-        ...
-    }: {
-        imports = [inputs.vicinae.homeManagerModules.default];
-
-        nix.settings = {
-            substituters = ["https://vicinae.cachix.org"];
-            trusted-public-keys = ["vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc="];
+    unify = {
+        nixos = {
+            nix.settings = {
+                substituters = ["https://vicinae.cachix.org"];
+                trusted-public-keys = ["vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc="];
+            };
         };
 
-        services.vicinae = {
-            enable = true;
-            package = inputs.vicinae.packages.${pkgs.stdenv.hostPlatform.system}.default;
+        home = {
+            config,
+            lib,
+            pkgs,
+            ...
+        }: {
+            imports = [inputs.vicinae.homeManagerModules.default];
 
-            systemd = {
+            services.vicinae = {
                 enable = true;
-                autoStart = true;
-            };
-        };
+                package = inputs.vicinae.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
-        home.packages = with pkgs; [doi2bib3];
-
-        xdg.dataFile = {
-            "vicinae/scripts/doi2bib3.fish" = {
-                source = ../../scripts/doi2bib3/script.fish;
-                executable = true;
-            };
-
-            "vicinae/scripts/dl.fish" = {
-                source = ../../scripts/dl/script.fish;
-                executable = true;
-            };
-        };
-
-        wayland.windowManager.niri.settings = {
-            binds = {
-                "Alt+Space" = {
-                    spawn-sh = "${lib.getExe config.services.vicinae.package} toggle";
-                    _props.hotkey-overlay-title = "Toggle Vicinae";
-                };
-                "Mod+V" = {
-                    spawn-sh = "vicinae deeplink vicinae://extensions/vicinae/clipboard/history";
-                    _props.hotkey-overlay-title = "Show Clipboard History";
+                systemd = {
+                    enable = true;
+                    autoStart = true;
                 };
             };
 
-            layer-rule = [
-                {
-                    match._props.namespace = "vicinae";
+            home.packages = with pkgs; [doi2bib3];
 
-                    background-effect = {
-                        blur = true;
-                        xray = false;
+            xdg.dataFile = {
+                "vicinae/scripts/doi2bib3.fish" = {
+                    source = ../../scripts/doi2bib3/script.fish;
+                    executable = true;
+                };
+
+                "vicinae/scripts/dl.fish" = {
+                    source = ../../scripts/dl/script.fish;
+                    executable = true;
+                };
+            };
+
+            wayland.windowManager.niri.settings = {
+                binds = {
+                    "Alt+Space" = {
+                        spawn-sh = "${lib.getExe config.services.vicinae.package} toggle";
+                        _props.hotkey-overlay-title = "Toggle Vicinae";
                     };
-                }
-            ];
+                    "Mod+V" = {
+                        spawn-sh = "vicinae deeplink vicinae://extensions/vicinae/clipboard/history";
+                        _props.hotkey-overlay-title = "Show Clipboard History";
+                    };
+                };
+
+                layer-rule = [
+                    {
+                        match._props.namespace = "vicinae";
+
+                        background-effect = {
+                            blur = true;
+                            xray = false;
+                        };
+                    }
+                ];
+            };
         };
     };
 }
