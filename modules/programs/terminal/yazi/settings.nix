@@ -64,6 +64,10 @@
                         use = ["open" "reveal" "edit-with-zed" "send"];
                     }
                     {
+                        mime = "vfs/{absent,stale}";
+                        use = ["download"];
+                    }
+                    {
                         url = "*";
                         use = ["open" "reveal" "send"];
                     }
