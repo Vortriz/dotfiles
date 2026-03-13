@@ -11,6 +11,7 @@
             pavucontrol
             pear-desktop
             qbittorrent
+            syncplay
             warp
             # keep-sorted end
         ];
