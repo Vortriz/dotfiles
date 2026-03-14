@@ -39,7 +39,7 @@
 
             # Impurely using uv to manage virtual environments
             devShell = let
-                python-pkg = pkgs.python312;
+                python-pkg = pkgs.python313;
             in
                 pkgs.devshell.mkShell
                 {
