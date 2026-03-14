@@ -146,7 +146,7 @@
 
                 _children = [
                     {match._props.app-id = "dev.zed.Zed";}
-                    {match._props.app-id = "Code";}
+                    {match._props.app-id = "code";}
                 ];
             }
         ];
