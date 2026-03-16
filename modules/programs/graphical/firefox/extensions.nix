@@ -1,21 +1,6 @@
 {
-    unify.home = let
-        extension = shortId: extensionId: {
-            name = extensionId;
-            value = {
-                install_url = "https://addons.mozilla.org/en-US/firefox/downloads/latest/${shortId}/latest.xpi";
-                installation_mode = "normal_installed";
-            };
-        };
-
-        extensionPriv = shortId: extensionId: {
-            name = extensionId;
-            value = {
-                install_url = "https://addons.mozilla.org/en-US/firefox/downloads/latest/${shortId}/latest.xpi";
-                installation_mode = "normal_installed";
-                private_browsing = true;
-            };
-        };
+    unify.home = {lib', ...}: let
+        inherit (lib') extension extensionPriv;
     in {
         programs.firefox.policies.ExtensionSettings = builtins.listToAttrs [
             # find in source page by `byGUID`
