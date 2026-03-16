@@ -98,15 +98,14 @@
         # keep-sorted end
     };
 
-    # Enable at the time of fresh deployment
-    # nixConfig = {
-    #     extra-substituters = [
-    #         "https://niri.cachix.org"
-    #         "https://vicinae.cachix.org"
-    #     ];
-    #     extra-trusted-public-keys = [
-    #         "niri.cachix.org-1:Wv0OmO7PsuocRKzfDoJ3mulSl7Z6oezYhGhR+3W2964="
-    #         "vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc="
-    #     ];
-    # };
+    nixConfig = {
+        extra-substituters = [
+            "https://niri-nix.cachix.org"
+            "https://vicinae.cachix.org"
+        ];
+        extra-trusted-public-keys = [
+            "niri-nix.cachix.org-1:SvFtqpDcf7Sm1SMJdby1/+Y+6f3Yt3/3PMcSTKPJNJ0="
+            "vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc="
+        ];
+    };
 }
