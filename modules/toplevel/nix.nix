@@ -28,6 +28,9 @@
 
                 registry.nixpkgs.flake = inputs.nixpkgs;
 
+                # To make sure that old nix commands use the same nixpkgs as the flake
+                nixPath = ["nixpkgs=flake:nixpkgs"];
+
                 # Opinionated: make flake registry and nix path match flake inputs (add more inputs if needed)
                 # registry = lib.mapAttrs (_: flake: {inherit flake;}) flakeInputs;
                 # nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
