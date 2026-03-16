@@ -9,6 +9,7 @@
             libreoffice
             obsidian
             pavucontrol
+            pdfpc
             pear-desktop
             qbittorrent
             syncplay
