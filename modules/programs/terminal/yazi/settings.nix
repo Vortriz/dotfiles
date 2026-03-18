@@ -14,9 +14,9 @@
             opener = {
                 edit-doc = [
                     {
-                        run = "libreoffice %s";
+                        run = "onlyoffice-desktopeditors %s";
                         orphan = true;
-                        desc = "Edit in LibreOffice";
+                        desc = "Edit in OnlyOffice";
                     }
                 ];
 

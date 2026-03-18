@@ -40,6 +40,7 @@
                     {match._props.app-id = "vesktop";}
                     {match._props.app-id = "nix-search-tv";}
                     {match._props.app-id = "^libreoffice-.*$";}
+                    {match._props.app-id = "ONLYOFFICE";}
                 ];
             }
             {

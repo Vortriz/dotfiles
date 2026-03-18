@@ -8,6 +8,7 @@
             gnome-characters
             libreoffice
             obsidian
+            onlyoffice-desktopeditors
             pavucontrol
             pdfpc
             pear-desktop
