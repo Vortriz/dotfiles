@@ -51,8 +51,8 @@ system := `echo $system`
     echo "ISO built and copied!"
 
 [group('MAINTENANCE')]
-@gc:
-    nh clean all -k 4 --optimise
+@gc *args:
+    nh clean all -k 4 --optimise {{ args }}
 
 alias pf := prefetch
 
