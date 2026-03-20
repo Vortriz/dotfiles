@@ -44,12 +44,6 @@ system := `echo $system`
     git add -A
     git commit -m "chore: update inputs"
 
-[group('SYSTEM')]
-@build-iso:
-    cp $(nix build .#nixosConfigurations.iso.config.system.build.isoImage --no-link --print-out-paths)/iso/* \
-        /mnt/HOUSE/downloads/compressed/ISO
-    echo "ISO built and copied!"
-
 [group('MAINTENANCE')]
 @gc *args:
     nh clean all -k 4 --optimise {{ args }}
