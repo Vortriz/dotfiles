@@ -11,6 +11,11 @@
                 run = "cd sftp://cluster/rishi";
                 desc = "Go to cluster";
             }
+            {
+                on = ["g" "p"];
+                run = "cd sftp://parambrahma/rishi";
+                desc = "Go to parambrahma";
+            }
         ];
     };
 }
