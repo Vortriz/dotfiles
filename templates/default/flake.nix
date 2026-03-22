@@ -12,8 +12,8 @@
         ...
     }: let
         inherit (nixpkgs) lib;
-        pkgsFor = lib.genAttrs systems (system: import nixpkgs {inherit system;});
-        forEachSystem = f: lib.genAttrs systems (system: f pkgsFor.${system});
+        pkgsFor = lib.genAttrs (import systems) (system: import nixpkgs {inherit system;});
+        forEachSystem = f: lib.genAttrs (import systems) (system: f pkgsFor.${system});
     in {
         formatter = forEachSystem (pkgs:
             pkgs.treefmt.withConfig {
@@ -25,9 +25,10 @@
                 };
             });
 
-        devShells.default = forEachSystem (pkgs:
-            pkgs.mkShell {
-                packages = [];
-            });
+        devShells = forEachSystem (pkgs: {
+            default = pkgs.mkShell {
+                packages = with pkgs; [];
+            };
+        });
     };
 }
