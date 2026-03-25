@@ -66,6 +66,10 @@
             url = "git+https://git.outfoxxed.me/quickshell/quickshell";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+        silentSDDM = {
+            url = "github:uiriansan/SilentSDDM";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
         stylix = {
             url = "github:nix-community/stylix";
             inputs.nixpkgs.follows = "nixpkgs";

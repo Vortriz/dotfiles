@@ -341,8 +341,8 @@
         ]
       },
       "locked": {
-        "lastModified": 1773388832,
-        "narHash": "sha256-qvy1AfVCgl0n5uQzLqO4Tq2aWN9e6rAwlbWSoEzVnu8=",
+        "lastModified": 1774348074,
+        "narHash": "sha256-qk+T+TqDN8RRsnOQwLgNGJN1nQ4LYXGKS7giQGMhxx8=",
         "path": "/mnt/HOUSE/dev/others/niri-shell",
         "type": "path"
       },
@@ -582,6 +582,7 @@
         "nur-vortriz": "nur-vortriz",
         "quickshell": "quickshell",
         "shyfox": "shyfox",
+        "silentSDDM": "silentSDDM",
         "starship-nerd-font-symbols": "starship-nerd-font-symbols",
         "stylix": "stylix",
         "systems": "systems",
@@ -603,6 +604,26 @@
       "original": {
         "owner": "Vortriz",
         "repo": "ShyFox",
+        "type": "github"
+      }
+    },
+    "silentSDDM": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1771956684,
+        "narHash": "sha256-+EtzmEzGA2xqwIvKrP0euYaOzrmTQWEWAiWV+k2WBEM=",
+        "owner": "uiriansan",
+        "repo": "SilentSDDM",
+        "rev": "34f82e1fb8412fff78b82a0dcce763492b36054c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "uiriansan",
+        "repo": "SilentSDDM",
         "type": "github"
       }
     },

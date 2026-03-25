@@ -1,45 +1,9 @@
 {inputs, ...}: {
     unify = {
         nixos = {
-            homeConfig,
-            pkgs,
-            ...
-        }: {
             nixpkgs.overlays = [
                 inputs.quickshell.overlays.default
             ];
-
-            imports = [
-                inputs.niri-shell.nixosModules.greeter
-            ];
-
-            services.displayManager.gdm.enable = true;
-
-            programs.dank-material-shell.greeter = {
-                enable = false;
-                compositor.name = "niri";
-
-                configFiles = [
-                    "/etc/dms-greeter/settings.json"
-                    "${homeConfig.xdg.stateHome}/DankMaterialShell/session.json"
-                    "${homeConfig.xdg.cacheHome}/DankMaterialShell/dms-colors.json"
-                ];
-
-                logs.save = true;
-            };
-            environment.etc."dms-greeter/settings.json".source = pkgs.writers.writeJSON "settings.json" {
-                weatherEnabled = false;
-                currentThemeName = "blue";
-                matugenScheme = "scheme-tonal-spot";
-                iconTheme = "System Default";
-                fontFamily = homeConfig.stylix.fonts.monospace.name;
-                fontWeight = 400;
-                fontScale = 1;
-                cornerRadius = 12;
-                widgetBackgroundColor = "sch";
-                surfaceBase = "s";
-                animationSpeed = 2;
-            };
         };
 
         home = {
