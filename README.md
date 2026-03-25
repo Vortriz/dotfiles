@@ -11,6 +11,7 @@
 | **Launcher**      | [vicinae](https://docs.vicinae.com)                                                     |
 | **Browser**       | Firefox (with [ShyFox](https://github.com/Vortriz/ShyFox) theme)                        |
 | **Desktop Shell** | [Slightly modified version of DankMaterialShell](https://github.com/Vortriz/niri-shell) |
+| **Font**          | [Maple Mono](https://github.com/subframe7536/maple-font)                                |
 
 # Acknowledgements
 
