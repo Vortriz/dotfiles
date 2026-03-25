@@ -21192,3 +21192,224 @@ REMOVED
 
 SIZE: 18.7 GiB -> 21.0 GiB
 DIFF: 2.34 GiB
+
+---
+
+25/03/26 01:03:23 PM IST
+<<< /nix/var/nix/profiles/system-204-link/
+>>> /nix/store/0ai5siy4grynmnqj5ibd8fc5g4hxjrqz-nixos-system-sagittarius-26.05.20260321.6c9a78c
+
+CHANGED
+[U.] abseil-cpp                                           20250814.1 ×2, <others> -> 20250814.1, 20260107.1, 20260107.1-dev, <others>
+[U.] acpi-call                                            1.2.2-6.19.8 -> 1.2.2-6.19.9
+[C.] ada                                                  <others> -> 3.4.3, <others>
+[U.] alsa-lib                                             1.2.15.1 ×2 -> 1.2.15.3 ×2
+[U.] alsa-ucm-conf                                        1.2.15.1 ×2 -> 1.2.15.3 ×2
+[U*] asusctl                                              6.3.4 -> 6.3.5
+[U.] boehm-gc                                             8.2.8 -> 8.2.12
+[U.] dms-shell                                            1.5-beta+date=2026-03-13_dirty, 1.5-beta+date=2026-03-13_dirty-fish-completions -> 1.5-beta+date=2026-03-24_dirty, 1.5-beta+date=2026-03-24_dirty-fish-completions
+[U.] double-conversion                                    3.3.1 -> 3.3.1 ×2, 3.3.1-dev
+[U.] ed                                                   1.22.4 -> 1.22.5
+[U.] electron                                             38.8.4, <others> -> 41.0.2, <others>
+[U.] electron-unwrapped                                   38.8.4, <others> -> 41.0.2, <others>
+[U.] ell                                                  0.81 ×2 -> 0.82 ×2
+[U.] fluidsynth                                           2.5.2 ×2 -> 2.5.3 ×2
+[U.] freerdp                                              3.23.0 -> 3.24.1
+[U.] gemini-cli                                           0.33.0, 0.33.0-fish-completions -> 0.34.0, 0.34.0-fish-completions
+[C.] gst-libav                                            <others> -> 1.26.5-dev, <others>
+[C.] gst-plugins-bad                                      <others> -> 1.26.5-dev, <others>
+[C.] gst-plugins-base                                     <others> -> 1.26.5-dev, <others>
+[C.] gst-plugins-good                                     <others> -> 1.26.5-dev, <others>
+[C.] gstreamer                                            <others> -> 1.26.5-dev, <others>
+[U.] gvfs.yazi-unstable                                   2026-02-16 -> 2026-03-24
+[C+] hicolor-icon-theme                                   <others> -> 0.18-dev, <others>
+[C.] hunspell                                             <others> -> 1.7.2-bin, 1.7.2-dev, <others>
+[U.] hwdata                                               0.404 ×2 -> 0.404, 0.405
+[U.] hwloc                                                2.12.2-lib -> 2.13.0-lib
+[U.] imagemagick                                          7.1.2-13, 7.1.2-13-dev, 7.1.2-13-doc, 7.1.2-13-fish-completions -> 7.1.2-17, 7.1.2-17-dev, 7.1.2-17-doc, 7.1.2-17-fish-completions
+[U.] initrd-linux                                         6.19.8 -> 6.19.9
+[U.] intel-graphics-compiler                              2.28.4 -> 2.30.1
+[U*] iproute2                                             6.18.0, 6.18.0_fish-completions -> 6.19.0, 6.19.0_fish-completions
+[U*] iptables                                             1.8.11 ×2, 1.8.11-lib ×2, 1.8.11-man -> 1.8.12 ×2, 1.8.12-lib ×2, 1.8.12-man
+[U.] just                                                 1.46.0, 1.46.0-fish-completions, 1.46.0-man -> 1.47.1, 1.47.1-fish-completions, 1.47.1-man
+[U.] kitty                                                0.46.0, 0.46.0-fish-completions, 0.46.0-terminfo -> 0.46.1, 0.46.1-fish-completions, 0.46.1-terminfo
+[C.] layer-shell-qt                                       <others> -> 6.6.3, <others>
+[U*] less                                                 691, 691-man -> 692, 692-man
+[U.] libbluray                                            1.4.0 ×2 -> 1.4.1 ×2
+[U.] libdatrie                                            2019-12-20-lib ×2 -> 2019-12-20-lib ×3, 2019-12-20, 2019-12-20-bin, 2019-12-20-dev
+[C.] libdisplay-info                                      <others> -> 0.2.0, <others>
+[U.] libepoxy                                             1.5.10 ×2 -> 1.5.10 ×3, 1.5.10-dev
+[U.] libfyaml                                             0.9.4 ×2 -> 0.9.5 ×2
+[U.] libgpg-error                                         1.55 ×2 -> 1.55, 1.58
+[U.] libheif                                              1.20.2, 1.20.2-bin, 1.20.2-dev, 1.20.2-lib -> 1.21.2, 1.21.2-bin, 1.21.2-dev, 1.21.2-lib
+[C.] libpq                                                <others> -> 18.2, <others>
+[U.] libproxy                                             0.5.12 -> 0.5.12 ×2, 0.5.12-dev
+[U.] librsvg                                              2.61.3 ×2, 2.61.3-dev -> 2.61.4 ×2, 2.61.4-dev
+[U.] libselinux                                           3.8.1 ×2 -> 3.8.1, 3.10, 3.10-bin, 3.10-dev
+[U.] libsepol                                             3.8.1 -> 3.10, 3.10-bin, 3.10-dev
+[U.] libsodium                                            1.0.21-unstable-2026-01-22 ×2 -> 1.0.21-unstable-2026-02-11 ×2
+[U.] libsoup                                              3.6.5 ×2 -> 3.6.5, 3.6.6
+[U.] libthai                                              0.1.30 ×2 -> 0.1.30 ×3, 0.1.30-dev
+[C.] liburcu                                              <others> -> 0.15.6-dev, <others>
+[U.] liburing                                             2.13 ×2 -> 2.14 ×2
+[U.] libuv                                                1.51.0 ×2, <others> -> 1.51.0, 1.52.0, 1.52.0-dev, <others>
+[U.] libvpx                                               1.15.2 ×2 -> 1.16.0 ×2
+[U.] libx11                                               1.8.12 ×2, 1.8.12-dev, 1.8.12-man -> 1.8.12, 1.8.13-dev, 1.8.13-man, 1.8.13
+[U.] libxcb-cursor                                        0.1.6 -> 0.1.6 ×2, 0.1.6-dev
+[U.] libxcb-image                                         0.4.1 -> 0.4.1 ×2, 0.4.1-dev
+[U.] libxcb-keysyms                                       0.4.1 ×2 -> 0.4.1 ×3, 0.4.1-dev
+[U.] libxcb-render-util                                   0.3.10 -> 0.3.10 ×2, 0.3.10-dev
+[U.] libxcb-util                                          0.4.1 -> 0.4.1 ×2, 0.4.1-dev
+[U.] libxcb-wm                                            0.4.2 -> 0.4.2 ×2, 0.4.2-dev
+[U.] libxdmcp                                             1.1.5 ×2 -> 1.1.5 ×3, 1.1.5-dev
+[U.] libxkbcommon                                         1.11.0 ×2 -> 1.11.0, 1.13.1, 1.13.1-dev
+[C.] libxslt                                              <others> -> 1.1.45-dev, <others>
+[U.] linux                                                6.19.8, 6.19.8-modules ×2 -> 6.19.9, 6.19.9-modules ×2
+[C.] llhttp                                               <others> -> 9.3.1, 9.3.1-dev, <others>
+[C.] lttng-ust                                            <others> -> 2.14.0-bin, 2.14.0-dev, <others>
+[U*] lvm2                                                 2.03.38-lib ×2, <others> -> 2.03.38-lib ×3, 2.03.38-scripts, <others>
+[U.] md4c                                                 0.5.2-lib -> 0.5.2-lib ×2, 0.5.2, 0.5.2-dev
+[U.] mediainfo.yazi                                       26.1.22-unstable-2026-03-08 -> 26.1.22-unstable-2026-03-17
+[U.] mesa                                                 26.0.2 ×2 -> 26.0.3 ×2
+[C.] minizip                                              <others> -> 1.3.2, <others>
+[U*] niri-unstable                                        2026-03-17-17577e7, 2026-03-17-17577e7-fish-completions -> 2026-03-22-d06dd4b, 2026-03-22-d06dd4b-fish-completions
+[U.] nixos-system-sagittarius                             26.05.20260318.b40629e -> 26.05.20260321.6c9a78c
+[C.] nodejs                                               <others> -> 24.14.0, <others>
+[C.] nodejs-slim                                          <others> -> 24.14.0, 24.14.0-corepack, 24.14.0-npm, <others>
+[U.] nss                                                  3.112.2 ×2, <others> -> 3.112.3 ×2, <others>
+[U.] nss-cacert                                           3.119.1, 3.119.1-p11kit -> 3.121, 3.121-p11kit
+[U.] openapv                                              0.2.1.0 ×2 -> 0.2.1.1 ×2
+[U.] openblas                                             0.3.30 -> 0.3.31
+[U*] pciutils                                             3.14.0_fish-completions, <others> -> 3.14.0-man, <others>
+[U.] pcre2                                                10.46 ×2 -> 10.46 ×3, 10.46-bin, 10.46-dev
+[U.] perl5.42.0-Crypt-URandom                             0.54 -> 0.55
+[U*] pipewire                                             1.4.10 ×2, 1.4.10-man -> 1.6.2 ×2, 1.6.2-man, 1.6.2-dev
+[C.] protobuf                                             <others> -> 34.0, <others>
+[U.] publicsuffix-list                                    0-unstable-2026-01-25 ×2 -> 0-unstable-2026-01-25, 0-unstable-2026-03-02
+[U.] python3.13-cryptography                              46.0.4 -> 46.0.5
+[U.] python3.13-markdown                                  3.10.1 ×2 -> 3.10.2 ×2
+[U.] python3.13-pillow                                    12.1.0 -> 12.1.1
+[U.] python3.13-protobuf                                  6.33.5 -> 7.34.0
+[U.] python3.13-pyjwt                                     2.10.1 -> 2.11.0
+[U.] python3.13-pytz                                      2025.2 -> 2026.1.post1
+[U.] python3.13-redis                                     7.1.0 -> 7.2.1
+[U.] python3.13-rich                                      14.2.0 -> 14.3.3
+[U.] python3.13-yt-dlp-ejs                                0.7.0 -> 0.8.0
+[U.] qpdf                                                 12.2.0-lib -> 12.3.2-lib
+[U.] qtbase                                               6.10.2, 6.10.2-only-plugins-qml, <others> -> 6.10.2 ×2, 6.10.2-only-plugins-qml ×2, 6.10.2-dev, <others>
+[U.] qtdeclarative                                        6.10.2, <others> -> 6.10.2 ×2, 6.10.2-dev, <others>
+[C.] qtmultimedia                                         <others> -> 6.10.2-dev, <others>
+[C.] qtquick3d                                            <others> -> 6.10.2-dev, <others>
+[C.] qtshadertools                                        <others> -> 6.10.2-dev, <others>
+[U.] qtsvg                                                6.10.2, <others> -> 6.10.2 ×2, 6.10.2-dev, <others>
+[U.] resvg                                                0.46.0 -> 0.47.0
+[U.] ruff                                                 0.15.5 -> 0.15.6
+[U.] sbc                                                  2.1 ×2 -> 2.2 ×2
+[U.] sdl3                                                 3.4.0-lib ×3 -> 3.4.2-lib ×3
+[U*] shadow                                               4.19.3, 4.19.3-man, 4.19.3-su -> 4.19.4, 4.19.4-man, 4.19.4-su
+[C.] simdjson                                             <others> -> 4.3.1, <others>
+[U*] sof-firmware                                         2025.05.1, 2025.05.1-zstd -> 2025.12.2, 2025.12.2-zstd
+[U.] spidermonkey                                         140.7.0 -> 140.7.1
+[C*] systemd                                              259 ×2, 259-man, <others> -> 259, 259.3 ×2, 259.3-dev, 259.3-man, <others>
+[U.] systemd-minimal                                      259 ×2 -> 259, 259.3
+[U.] systemd-minimal-libs                                 259 ×2 -> 259, 259.3, 259.3-dev
+[U.] ty                                                   0.0.23 -> 0.0.24
+[U.] tzdata                                               2025c ×2 -> 2026a ×2
+[U*] util-linux                                           2.41.3-lib, <others> -> 2.41.3-lib ×2, 2.41.3, 2.41.3-dev, <others>
+[U.] vicinae                                              0.20.7, 0.20.7-fish-completions -> 0.20.8, 0.20.8-fish-completions
+[U.] vscode-extension-gemini-cli-vscode-ide-companion     0.33.0 -> 0.34.0
+[U.] vscode-extension-nefrob-vscode-just-syntax           0.9.0 -> 0.9.1
+[U.] vscode-extension-shd101wyy-markdown-preview-enhanced 0.8.20 -> 0.8.21
+[U.] vulkan-loader                                        1.4.341.0 ×2 -> 1.4.341.0 ×3, 1.4.341.0-dev
+[U.] wavpack                                              5.8.1 ×2 -> 5.9.0 ×2
+[C.] webkitgtk                                            2.50.6+abi=6.0, <others> -> <others>
+[U*] which                                                2.23_fish-completions, <others> -> 2.23-man, <others>
+[U.] x86_energy_perf_policy                               6.18.18 -> 6.18.19
+[U.] xdg-desktop-portal-termfilechooser-unstable          2026-01-24, 2026-01-24-fish-completions -> 2026-03-22, 2026-03-22-fish-completions
+[C.] xdg-user-dirs                                        <others> -> 0.19-lib, 0.19-man, <others>
+[U.] xkeyboard-config                                     2.46 ×2 -> 2.46, 2.47
+[U.] yt-dlp                                               2026.03.13 -> 2026.03.17
+[U.] zlib                                                 1.3.1 ×2, 1.3.1-static ×2, <others> -> 1.3.1, 1.3.1-static, 1.3.2, 1.3.2-dev, 1.3.2-static, <others>
+
+ADDED
+[A.] aml                                                  0.3.0
+[A.] cdparanoia-iii                                       10.2
+[A.] fix-qt-builtin-paths.sh                              <none>
+[A.] fix-qt-module-paths.sh                               <none>
+[A.] gstreamer-vaapi                                      1.26.5, 1.26.5-dev
+[A.] hanken-grotesk                                       0-unstable-2024-01-30
+[A.] inter                                                4.1
+[A.] lato                                                 2.0, 2.0-fish-completions
+[A.] libldac-dec                                          0.0.2-unstable-2024-11-12
+[A.] lksctp-tools                                         1.0.21
+[A.] lndir                                                1.0.5
+[A.] mariadb-connector-odbc                               3.2.6
+[A.] neatvnc                                              0.9.5
+[A.] open-sans                                            1.11
+[A.] overpass                                             3.0.5
+[A.] profile.png                                          <none>
+[A.] psqlodbc                                             17.00.0007
+[A.] qtlanguageserver                                     6.10.2, 6.10.2-dev
+[A.] qtvirtualkeyboard                                    6.10.2, 6.10.2-dev
+[A.] rubik                                                2.200
+[A.] sddm-autologin.pam                                   <none>
+[A.] sddm-greeter.pam                                     <none>
+[A.] sddm-unwrapped                                       0.21.0, 0.21.0-man
+[A+] sddm-wrapped                                         <none>
+[A+] sddm-wrapped-man                                     <none>
+[A.] sddm.conf                                            <none>
+[A.] sddm.pam                                             <none>
+[A+] silent-unknown                                       <none>
+[A.] sqlite-connector-odbc                                0.99991
+[A+] test-sddm-silent                                     <none>
+[A.] unixobcd                                             2.3.12
+[A.] vulkan-headers                                       1.4.341.0
+[A.] wayland-scanner                                      1.24.0, 1.24.0-bin, 1.24.0-dev
+[A.] weston                                               15.0.0
+[A.] weston.ini                                           <none>
+
+REMOVED
+[R.] Xresources-Xft                                       <none>
+[R-] accountsservice                                      23.13.9
+[R.] ayatana-ido                                          0.10.4
+[R.] cdparanoia-III                                       10.2
+[R.] check-dconf-db                                       <none>
+[R.] colord-gtk                                           0.3.1
+[R.] custom.conf                                          <none>
+[R.] dconf-system-config                                  <none>
+[R.] evolution-data-server                                3.58.3
+[R-] gdm                                                  49.2, <none>
+[R.] gdm-autologin.pam                                    <none>
+[R.] gdm-fingerprint.pam                                  <none>
+[R.] gdm-launch-environment.pam                           <none>
+[R.] gdm-password.pam                                     <none>
+[R.] gnome-bluetooth                                      47.1
+[R.] gnome-clocks                                         49.0
+[R.] gnome-color-manager                                  3.32.0
+[R.] gnome-control-center                                 49.5
+[R.] gnome-remote-desktop                                 49.2
+[R.] gnome-session                                        49.2
+[R.] gnome-shell                                          49.4
+[R.] google-fonts-unstable                                2024-06-21, 2024-06-21-fish-completions
+[R.] gsound                                               1.0.3
+[R.] ibus                                                 1.5.33
+[R.] libayatana-appindicator                              0.5.92
+[R.] libayatana-indicator                                 0.9.4
+[R.] libglycin                                            2.0.8
+[R.] libnma                                               1.10.6
+[R.] libphonenumber                                       9.0.26
+[R.] mcpp                                                 2.7.2.3
+[R.] mutter                                               49.4
+[R.] network-manager-applet                               1.36.0
+[R.] python3.13-argcomplete                               3.6.3
+[R.] settings.json                                        <none>
+[R.] tecla                                                49.0
+[R.] unit-accounts-daemon.service                         <none>
+[R.] unzip                                                6.0
+[R.] vte                                                  0.82.3
+[R.] xorg-server                                          21.1.21
+[R.] xrdb                                                 1.2.2
+[R.] xsession-wrapper                                     <none>
+
+SIZE: 21.0 GiB -> 21.6 GiB
+DIFF: 584 MiB
