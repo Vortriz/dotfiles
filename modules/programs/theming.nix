@@ -62,7 +62,11 @@
             };
         };
 
-        home = {pkgs, ...}: {
+        home = {
+            config,
+            pkgs,
+            ...
+        }: {
             stylix = {
                 enable = true;
                 autoEnable = false;
@@ -81,6 +85,9 @@
 
             gtk = {
                 enable = true;
+
+                # [TODO] remove when https://github.com/nix-community/stylix/issues/2250 is resolved
+                gtk4.theme = config.gtk.theme;
 
                 iconTheme = {
                     package = pkgs.adwaita-icon-theme;

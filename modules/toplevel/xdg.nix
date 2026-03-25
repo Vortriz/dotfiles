@@ -14,6 +14,7 @@
 
                 userDirs = {
                     enable = true;
+                    setSessionVariables = true;
 
                     download = downloads;
                     pictures = "${downloads}/media";
