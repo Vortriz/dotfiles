@@ -14,12 +14,21 @@
             # Required for Plymouth to work properly
             initrd.systemd.enable = true;
 
+            # Enable "Silent boot"
+            consoleLogLevel = 3;
+            initrd.verbose = false;
+
             # Kernel parameters for clean boot
             kernelParams = [
                 "quiet"
+                "systemd.show_status=auto"
                 "splash"
                 "plymouth.ignore-serial-consoles"
+                # "plymouth.enable=0" "disablehooks=plymouth"
+                # "plymouth.debug"
             ];
+
+            loader.timeout = 0;
         };
     };
 }
