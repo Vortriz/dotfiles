@@ -1,21 +1,19 @@
 {
     description = "Vortriz's NixOS configuration";
 
-    outputs = {
-        flake-parts,
-        import-tree,
-        ...
-    } @ inputs:
+    outputs = {flake-parts, ...} @ inputs: let
+        inherit (inputs.nixpkgs.lib.fileset) toList fileFilter;
+        inherit (inputs.nixpkgs.lib.strings) hasPrefix;
+        import-tree = path:
+            fileFilter (file: file.hasExt "nix" && !(hasPrefix "_" file.name)) path |> toList;
+        import-mutiple-trees = paths: (map import-tree paths) |> builtins.concatLists;
+    in
         flake-parts.lib.mkFlake {inherit inputs;} {
             systems = import inputs.systems;
 
-            imports = [
-                inputs.unify.flakeModule
-                (import-tree [
-                    ./hosts
-                    ./modules
-                ])
-            ];
+            imports =
+                [inputs.unify.flakeModule]
+                ++ (import-mutiple-trees [./hosts ./modules]);
 
             flake.templates = import ./templates;
         };
@@ -24,7 +22,6 @@
         nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
         systems.url = "github:nix-systems/x86_64-linux";
         flake-parts.url = "github:hercules-ci/flake-parts";
-        import-tree.url = "github:vic/import-tree";
         unify = {
             url = "git+https://codeberg.org/quasigod/unify";
             inputs.nixpkgs.follows = "nixpkgs";
