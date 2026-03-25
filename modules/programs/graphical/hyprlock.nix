@@ -1,5 +1,6 @@
 {
     unify.home = {
+        config,
         lib,
         pkgs,
         ...
@@ -25,17 +26,15 @@
         programs.hyprlock = {
             enable = true;
 
-            settings = {
+            settings = let
+                font_family = config.stylix.fonts.monospace.name;
+            in {
                 auth.fingerprint.enabled = true;
 
                 # BACKGROUND
                 background = {
-                    path = builtins.toString ../../../assets/wallpapers/19.png;
-                    blur_passes = 2;
-                    contrast = 1;
-                    brightness = 0.5;
-                    vibrancy = 0.2;
-                    vibrancy_darkness = 0.2;
+                    path = toString ../../../assets/wallpapers/34.png;
+                    blur_passes = 1;
                 };
 
                 # GENERAL
@@ -54,7 +53,7 @@
                         dots_center = true;
                         outer_color = "rgba(0, 0, 0, 0)";
                         inner_color = "rgba(0, 0, 0, 0.2)";
-                        font_family = "JetBrainsMono NFM";
+                        inherit font_family;
                         font_color = "rgb(255, 255, 255)";
                         fade_on_empty = false;
                         rounding = -1;
@@ -73,7 +72,7 @@
                         text = ''cmd[update:1000] date +"%A, %B %d"'';
                         color = "rgba(242, 243, 244, 0.75)";
                         font_size = 16;
-                        font_family = "JetBrainsMono NFM";
+                        inherit font_family;
                         position = "0, 150";
                         halign = "center";
                         valign = "center";
@@ -84,7 +83,7 @@
                         text = ''cmd[update:1000] date +"%I:%M"'';
                         color = "rgba(242, 243, 244, 0.75)";
                         font_size = 128;
-                        font_family = "JetBrainsMono NFM Extrabold";
+                        font_family = font_family + " Extrabold";
                         position = "0, 50";
                         halign = "center";
                         valign = "center";
@@ -95,7 +94,7 @@
                         text = "cmd[update:1000] ${lib.getExe battery-script}";
                         color = "rgba(255, 255, 255, 0.4)";
                         font_size = 18;
-                        font_family = "JetBrainsMono NFM Extrabold";
+                        font_family = font_family + " ExtraBold";
                         position = "-10, 0";
                         halign = "right";
                         valign = "bottom";
