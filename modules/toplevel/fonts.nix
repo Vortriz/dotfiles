@@ -9,20 +9,16 @@
         fonts.packages = with pkgs;
             [
                 # keep-sorted start block=yes
-                (google-fonts.override {
-                    fonts = [
-                        "Inter"
-                        "Overpass"
-                        "Rubik"
-                        "Hanken Grotesk"
-                        "Open Sans"
-                    ];
-                })
                 font-awesome
+                hanken-grotesk
+                inter
                 maple-mono.variable
                 nerd-fonts.fira-code
                 nerd-fonts.jetbrains-mono
+                open-sans
+                overpass
                 roboto
+                rubik
                 source-sans-pro
                 # keep-sorted end
             ]

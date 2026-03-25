@@ -40,7 +40,7 @@
                     };
 
                     sansSerif = {
-                        package = pkgs.google-fonts.override {fonts = ["Lato"];};
+                        package = pkgs.lato;
                         name = "Lato";
                     };
 
