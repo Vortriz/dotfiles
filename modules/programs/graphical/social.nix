@@ -7,7 +7,11 @@
         programs.vesktop = {
             enable = true;
 
-            settings.checkUpdates = false;
+            settings = {
+                checkUpdates = false;
+                minimizeToTray = false;
+                tray = false;
+            };
             vencord.settings = {
                 autoUpdate = false;
                 autoUpdateNotification = false;
