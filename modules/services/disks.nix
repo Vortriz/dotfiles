@@ -11,6 +11,7 @@
         environment.systemPackages = with pkgs; [
             exfatprogs
             baobab
+            kdePackages.partitionmanager
         ];
     };
 }
