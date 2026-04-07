@@ -10,6 +10,9 @@
                 polarity = "dark";
 
                 base16Scheme = {
+                    scheme = "custom";
+                    author = "vortriz";
+                    variant = "dark";
                     base00 = "0d1117"; # Default bg
                     base01 = "161b22"; # Lighter bg (status bar, line number, folding mks)
                     base02 = "282e37"; # Selection bg
