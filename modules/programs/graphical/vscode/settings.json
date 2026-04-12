@@ -4,7 +4,8 @@
         "editor.tabSize": 4
     },
     "[typst]": {
-        "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+        "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+        "editor.tabSize": 4
     },
     "diffEditor.ignoreTrimWhitespace": false,
     "direnv.restart.automatic": true,
