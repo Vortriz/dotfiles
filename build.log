@@ -21515,3 +21515,116 @@ REMOVED
 
 SIZE: 21.6 GiB -> 21.7 GiB
 DIFF: 120 MiB
+
+---
+
+12/04/26 03:46:47 PM IST
+<<< /nix/store/yycf9ibwwjm84ixkbag22rfj6vzhrfmz-nixos-system-sagittarius-26.05.20260401.6201e20
+>>> /nix/store/flh66nw1ajsdgh4mksayl86mpapsamfs-nixos-system-sagittarius-26.05.20260409.4c1018d
+
+CHANGED
+[U.] Better-BibTeX-for-Zotero                         9.0.10 -> 9.0.12
+[U.] SDL_compat                                       1.2.74 -> 1.2.76
+[U.] aardvark-dns                                     1.17.0 -> 1.17.1
+[U.] acpi-call                                        1.2.2-6.19.10 -> 1.2.2-6.19.11
+[U.] astro-language-server                            2.16.3 -> 2.16.6
+[U*] asusctl                                          6.3.5 -> 6.3.6
+[U*] bind                                             9.20.18-dnsutils, 9.20.18-host, 9.20.18-lib, 9.20.18-man -> 9.20.22-dnsutils, 9.20.22-host, 9.20.22-lib, 9.20.22-man
+[C.] boost                                            <others> -> 1.88.0, <others>
+[U.] bottles                                          62.0, 62.0-bwrap, 62.0-fhsenv-profile, 62.0-fhsenv-rootfs, 62.0-fish-completions, 62.0-init -> 63.2, 63.2-bwrap, 63.2-fhsenv-profile, 63.2-fhsenv-rootfs, 63.2-fish-completions, 63.2-init
+[U.] bottles-cli                                      62.0-bwrap, 62.0-fhsenv-profile, 62.0-fhsenv-rootfs, 62.0-init -> 63.2-bwrap, 63.2-fhsenv-profile, 63.2-fhsenv-rootfs, 63.2-init
+[U.] bottles-unwrapped                                62.0 ×2 -> 63.2 ×2
+[U.] breeze                                           6.6.3 -> 6.6.4
+[U.] deno                                             2.7.4 -> 2.7.9
+[U.] dhcpcd                                           10.3.0 ×2 -> 10.3.1 ×2
+[C.] electron                                         <others> -> 39.8.2, <others>
+[C.] electron-unwrapped                               <others> -> 39.8.2, <others>
+[U.] enhance-piper.yazi-unstable                      2026-01-01 -> 2026-04-09
+[C.] firefox                                          149.0, 149.0-fish-completions -> 149.0.2, 149.0.2-fish-completions
+[U.] firefox-unwrapped                                149.0 -> 149.0.2
+[U.] flatpak                                          1.16.3 -> 1.16.4
+[U*] fresh                                            0.2.18 -> 0.2.21
+[U.] fzf                                              0.70.0, 0.70.0-fish-completions, 0.70.0-man -> 0.71.0, 0.71.0-fish-completions, 0.71.0-man
+[U.] gemini-cli                                       0.35.3, 0.35.3-fish-completions -> 0.36.0, 0.36.0-fish-completions
+[U.] gtk-layer-shell                                  0.10.0 -> 0.10.1
+[U.] hyprutils                                        0.11.1 -> 0.12.0
+[U.] initrd-linux                                     6.19.10 -> 6.19.11
+[U.] just                                             1.48.1, 1.48.1-fish-completions, 1.48.1-man -> 1.49.0, 1.49.0-fish-completions, 1.49.0-man
+[U.] kdecoration                                      6.6.3 -> 6.6.4
+[U.] layer-shell-qt                                   6.6.3, <others> -> 6.6.4, <others>
+[U.] libblake3                                        1.8.3 -> 1.8.4
+[U.] libetonyek                                       0.1.12 -> 0.1.13
+[U.] libreoffice                                      25.2.6.2, 25.2.6.2-wrapped, 25.2.6.2-wrapped-fish-completions -> 25.8.5.2, 25.8.5.2-wrapped, 25.8.5.2-wrapped-fish-completions
+[U.] libtorrent-rasterbar                             2.0.11 -> 2.0.12
+[U.] linux                                            6.19.10, 6.19.10-modules ×2 -> 6.19.11, 6.19.11-modules ×2
+[U.] lowdown                                          2.0.4-lib -> 3.0.1-lib
+[U.] lua-language-server                              3.17.1 -> 3.18.0
+[U.] mediainfo.yazi                                   26.1.22-unstable-2026-03-24 -> 26.1.22-unstable-2026-03-31
+[U.] mesa                                             26.0.3 ×2 -> 26.0.4 ×2
+[U*] niri-unstable                                    2026-04-05-e0db6df, 2026-04-05-e0db6df-fish-completions -> 2026-04-12-8cc8756, 2026-04-12-8cc8756-fish-completions
+[U*] nix                                              2.31.3 ×2, 2.31.3-man -> 2.31.4 ×2, 2.31.4-man
+[U.] nix-cmd                                          2.30.3+1, 2.31.3 -> 2.30.4+1, 2.31.4
+[U.] nix-expr                                         2.30.3+1, 2.31.3 -> 2.30.4+1, 2.31.4
+[U.] nix-fetchers                                     2.30.3+1, 2.31.3 -> 2.30.4+1, 2.31.4
+[U.] nix-flake                                        2.30.3+1, 2.31.3 -> 2.30.4+1, 2.31.4
+[U.] nix-main                                         2.30.3+1, 2.31.3 -> 2.30.4+1, 2.31.4
+[U.] nix-manual                                       2.31.3-man -> 2.31.4-man
+[U.] nix-store                                        2.30.3+1, 2.31.3 -> 2.30.4+1, 2.31.4
+[U.] nix-util                                         2.30.3+1, 2.31.3 -> 2.30.4+1, 2.31.4
+[U.] nixos-system-sagittarius                         26.05.20260401.6201e20 -> 26.05.20260409.4c1018d
+[U.] nodejs                                           25.8.2, <others> -> 25.9.0, <others>
+[U.] nodejs-slim                                      25.8.2, 25.8.2-npm, <others> -> 25.9.0, 25.9.0-npm, <others>
+[U.] python3.13-cyclopts                              4.10.0 -> 4.10.1
+[U.] rclone                                           1.73.3, 1.73.3-fish-completions, 1.73.3-man -> 1.73.4, 1.73.4-fish-completions, 1.73.4-man
+[U.] restore.yazi                                     25.5.31-unstable-2026-01-06 -> 25.5.31-unstable-2026-04-04
+[U.] ruff                                             0.15.7 -> 0.15.9
+[U.] runc                                             1.4.1 -> 1.4.2
+[U.] rust-analyzer                                    2026-03-23 -> 2026-03-30
+[U.] rust-analyzer-unwrapped                          2026-03-23 -> 2026-03-30
+[U.] seatd                                            0.9.2 -> 0.9.3
+[U.] surge                                            0.7.8, 0.7.8-fish-completions -> 0.8.0, 0.8.0-fish-completions
+[U.] tinymist                                         0.14.14 -> 0.14.16
+[U.] ty                                               0.0.26 -> 0.0.29
+[U.] vicinae                                          0.20.11, 0.20.11-fish-completions -> 0.20.12, 0.20.12-fish-completions
+[U.] vscode                                           1.113.0, 1.113.0-fish-completions -> 1.114.0, 1.114.0-fish-completions
+[U.] vscode-extension-gemini-cli-vscode-ide-companion 0.35.3 -> 0.36.0
+[U.] vscode-extension-github-copilot-chat             0.40.1 -> 0.42.0
+[U.] vscode-extension-ms-vsliveshare-vsliveshare      1.0.5959 -> 1.1.119
+[U.] vscode-extension-myriad-dreamin-tinymist         0.14.14 -> 0.14.16
+[U.] vscode-extension-nefrob-vscode-just-syntax       0.10.0 -> 0.10.1
+[U.] whisper-cpp                                      1.8.3 -> 1.8.4
+[U.] x86_energy_perf_policy                           6.18.20 -> 6.18.21
+[U*] xdg-desktop-portal                               1.20.3, 1.20.3-fish-completions -> 1.20.4, 1.20.4-fish-completions
+[U.] zed-editor                                       0.229.0 -> 0.230.1
+[U.] zed-editor-wrapped                               0.229.0, 0.229.0-fish-completions -> 0.230.1, 0.230.1-fish-completions
+[U.] zotero                                           8.0.3, 8.0.3-fish-completions -> 8.0.5, 8.0.5-fish-completions
+
+ADDED
+[A.] libixion                                         0.20.0
+[A.] libkrun                                          1.17.4
+[A.] libkrunfw                                        5.3.0
+[A.] liborcus                                         0.20.1
+[A.] unit-network-local-commands.service              <none>
+[A.] unit-network.target                              <none>
+[A.] unit-networking-scripted.target                  <none>
+[A.] unit-polkit-agent-helper-.service                <none>
+[A.] unit-script-network-local-commands-start         <none>
+[A.] unit-script-post-boot-pre-stop                   <none>
+[A.] unit-script-sleep-actions-pre-stop               <none>
+[A.] unit-script-sleep-actions-start                  <none>
+[A.] unit-sleep-actions.service                       <none>
+
+REMOVED
+[R.] unit-network-local-commands.service-disabled     <none>
+[R.] unit-network-setup.service                       <none>
+[R.] unit-post-resume.service                         <none>
+[R.] unit-post-resume.target                          <none>
+[R.] unit-pre-shutdown.service                        <none>
+[R.] unit-pre-sleep.service                           <none>
+[R.] unit-script-network-setup-start                  <none>
+[R.] unit-script-post-resume-start                    <none>
+[R.] unit-script-pre-shutdown-start                   <none>
+[R.] unit-script-pre-sleep-start                      <none>
+
+SIZE: 21.7 GiB -> 22.1 GiB
+DIFF: 399 MiB
