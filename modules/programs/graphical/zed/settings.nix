@@ -70,6 +70,7 @@
                 ui_font_size = fontSize;
                 unnecessary_code_fade = 0.5;
                 use_smartcase_search = true;
+                theme = "Custom Dark";
                 # keep-sorted end
             };
         };
