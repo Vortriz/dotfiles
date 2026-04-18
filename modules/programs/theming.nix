@@ -19,16 +19,16 @@
                     base03 = "899296"; # Comments, invisibles, line hl
                     base04 = "c6cdd5"; # Dark fg (status bars)
                     base05 = "ecf2f8"; # Default fg (caret, delimiters, Operators)
-                    base06 = "d3dbe3"; # Light fg (not often used)
-                    base07 = "dde5ed"; # Light bg (not often used)
-                    base08 = "f2f7ff"; # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
-                    base09 = "ffab70"; # Integers, Boolean, Constants, XML Attributes, Markup Link Url
-                    base0A = "ffdf5d"; # Classes, Markup Bold, Search Text Background
-                    base0B = "a5d6ff"; # Strings, Inherited Class, Markup Code, Diff Inserted
-                    base0C = "89dceb"; # Support, regex, escape chars
-                    base0D = "6ab1f0"; # Function, methods, headings
-                    base0E = "f38ba8"; # Keywords
-                    base0F = "85e89d"; # Deprecated, open/close embedded tags
+                    base06 = "dde5ed"; # Light fg (not often used)
+                    base07 = "f2f7ff"; # Light bg (not often used)
+                    base08 = "fdfffd"; # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
+                    base09 = "ffba7e"; # Integers, Boolean, Constants, XML Attributes, Markup Link Url
+                    base0A = "fff091"; # Classes, Markup Bold, Search Text Background
+                    base0B = "c5e1c3"; # Strings, Inherited Class, Markup Code, Diff Inserted
+                    base0C = "8feddb"; # Support, regex, escape chars
+                    base0D = "80c9ff"; # Function, methods, headings
+                    base0E = "fac0ff"; # Keywords
+                    base0F = "dfbdff"; # Deprecated, open/close embedded tags
                 };
 
                 opacity = {
