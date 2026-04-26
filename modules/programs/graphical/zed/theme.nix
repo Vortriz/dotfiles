@@ -13,7 +13,7 @@
                         name = "Custom Dark";
                         appearance = "dark";
                         style = {
-                            "border" = base02;
+                            "border" = "#596067"; # midpoint between base02 and base03
                             "border.variant" = base01;
                             "border.focused" = base0D;
                             "border.selected" = base02;
@@ -23,12 +23,12 @@
                             "surface.background" = "${base01}b3";
                             "background" = "${base00}e6";
                             "element.background" = "${base01}b3";
-                            "element.hover" = "${base02}cc";
+                            "element.hover" = "${base02}df";
                             "element.active" = "${base02}e6";
                             "element.selected" = "${base02}e6";
                             "element.disabled" = base01;
                             "drop_target.background" = "${base03}80";
-                            "ghost_element.background" = transparent;
+                            "ghost_element.background" = base01;
                             "ghost_element.hover" = base02;
                             "ghost_element.active" = base02;
                             "ghost_element.selected" = base02;
