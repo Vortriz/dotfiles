@@ -1,10 +1,11 @@
 {inputs, ...}: {
     unify.home = let
-        baseDir = ".mozilla/firefox/default";
-
         inherit (inputs) shyfox;
     in {
-        home.file."${baseDir}/chrome".source = "${shyfox}/chrome";
+        xdg.configFile."mozilla/firefox/default/chrome" = {
+            source = "${shyfox}/chrome";
+            recursive = true;
+        };
         programs.firefox.profiles.default.extraConfig = builtins.readFile "${shyfox}/user.js";
     };
 }
