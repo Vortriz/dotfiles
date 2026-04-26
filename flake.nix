@@ -38,15 +38,12 @@
             url = "github:nix-community/home-manager";
             inputs.nixpkgs.follows = "nixpkgs";
         };
-        niri = {
-            url = "git+https://codeberg.org/bananad3v/niri-nix";
-            inputs.niri-unstable.url = "github:YaLTeR/niri/wip/branch";
-        };
         niri-shell = {
             url = "/mnt/HOUSE/dev/others/niri-shell";
             inputs.nixpkgs.follows = "nixpkgs";
             inputs.quickshell.follows = "quickshell";
         };
+        niri.url = "git+https://codeberg.org/bananad3v/niri-nix";
         nix-index-database = {
             url = "github:nix-community/nix-index-database";
             inputs.nixpkgs.follows = "nixpkgs";

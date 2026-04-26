@@ -22,12 +22,12 @@
                 auto_update = false;
                 buffer_font_family = fontName;
                 buffer_font_size = fontSize;
-                context_servers = {
-                    nixos = {
-                        command = lib.getExe pkgs.mcp-nixos;
-                        args = [];
-                    };
-                };
+                # context_servers = {
+                #     nixos = {
+                #         command = lib.getExe pkgs.mcp-nixos;
+                #         args = [];
+                #     };
+                # };
                 cursor_shape = "bar";
                 edit_predictions.provider = "copilot";
                 git.inline_blame.enabled = false;
