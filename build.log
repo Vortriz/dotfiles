@@ -21628,3 +21628,467 @@ REMOVED
 
 SIZE: 21.7 GiB -> 22.1 GiB
 DIFF: 399 MiB
+
+---
+
+26/04/26 03:23:56 PM IST
+<<< /nix/store/flh66nw1ajsdgh4mksayl86mpapsamfs-nixos-system-sagittarius-26.05.20260409.4c1018d
+>>> /nix/store/blvjb14kq8ndi2yqcnvf15afzvkghs17-nixos-system-sagittarius-26.05.20260422.0726a0e
+
+CHANGED
+[U.] Better-BibTeX-for-Zotero                                             9.0.12 -> 9.0.19
+[U.] KDSingleApplication                                                  1.2.0 -> 1.2.1
+[U.] acpi-call                                                            1.2.2-6.19.11 -> 1.2.2-7.0.1
+[U.] ada                                                                  3.4.3, <others> -> 3.4.4, <others>
+[U.] adw-gtk3                                                             6.4, 6.4-fish-completions -> 6.5, 6.5-fish-completions
+[U.] aspell                                                               0.60.8.1 -> 0.60.8.2
+[U.] assimp                                                               6.0.2-lib -> 6.0.4-lib
+[U*] asusctl                                                              6.3.6 -> 6.3.7
+[U.] attica                                                               6.24.0 -> 6.25.0
+[U.] binutils                                                             2.44, 2.44-lib -> 2.46, 2.46-lib
+[U.] binutils-wrapper                                                     2.44 -> 2.46
+[U*] bluez                                                                5.84 ×2, 5.84_fish-completions -> 5.86 ×2, 5.86_fish-completions
+[U.] breeze-icons                                                         6.24.0 -> 6.25.0
+[U.] bubblewrap                                                           0.11.0 -> 0.11.1
+[U.] cryptsetup                                                           2.8.4 ×3 -> 2.8.4, 2.8.6
+[U*] curl                                                                 8.18.0 ×3, 8.18.0-bin ×2, 8.18.0-dev, 8.18.0-man -> 8.18.0, 8.19.0-bin, 8.19.0 ×2, 8.19.0-man
+[U.] curl-impersonate                                                     1.5.1 -> 1.5.2
+[U.] dash                                                                 0.5.13.1 -> 0.5.13.2
+[U.] deno                                                                 2.7.9 -> 2.7.12
+[C.] djvulibre                                                            3.5.29-bin, 3.5.29-dev, <others> -> <others>
+[U.] dms-shell                                                            1.5-beta+date=2026-04-06_dirty, 1.5-beta+date=2026-04-06_dirty-fish-completions -> 1.5-beta+date=2026-04-25_dirty, 1.5-beta+date=2026-04-25_dirty-fish-completions
+[U.] doi2bib3                                                             0.7.0, 0.7.0-fish-completions -> 0.8.0, 0.8.0-fish-completions
+[U.] electron                                                             39.8.2, 40.8.2, 41.0.2 -> 39.8.7, 40.8.5, 41.2.0
+[U.] electron-unwrapped                                                   39.8.2, 40.8.2, 41.0.2 -> 39.8.7, 40.8.5, 41.2.0
+[U.] ell                                                                  0.82 ×2 -> 0.83 ×2
+[U.] ethtool                                                              6.15 ×2 -> 6.19 ×2
+[U.] expat                                                                2.7.4 ×3, 2.7.4-dev -> 2.7.4, 2.7.5-dev, 2.7.5
+[U.] fastfetch                                                            2.61.0, 2.61.0-fish-completions, 2.61.0-man -> 2.62.0, 2.62.0-fish-completions, 2.62.0-man
+[D.] ffmpeg                                                               8.0.1-data ×2, 8.0.1-lib ×2, 8.0.1-bin, <others> -> 8.0.1-data, 8.0.1-lib, <others>
+[C.] fftw-double                                                          3.3.10-dev, <others> -> <others>
+[C.] file                                                                 5.45-dev, <others> -> <others>
+[U.] file-extra-metadata.yazi-unstable                                    2026-02-16 -> 2026-04-22
+[U.] firefox                                                              149.0.2, 149.0.2-fish-completions -> 150.0, 150.0-fish-completions
+[U.] firefox-unwrapped                                                    149.0.2 -> 150.0
+[U.] flatpak                                                              1.16.4 -> 1.16.6
+[U.] frameworkintegration                                                 6.24.0 -> 6.25.0
+[U.] freeglut-mupdf                                                       3.0.0-r13ae6aa2c2f9a7b4266fc2e6116c876237f40477 -> 3.0.0-rd5e2256d571b3ef66fb60716c99e35e9d3e570a2
+[U.] freetype                                                             2.13.3 ×3, 2.13.3-dev -> 2.13.3, 2.14.2-dev, 2.14.2
+[U*] fresh                                                                0.2.21 -> 0.2.25
+[U*] gamescope                                                            3.16.22, <others> -> 3.16.23, <others>
+[U*] gawk                                                                 5.3.2 ×2, 5.3.2-man -> 5.4.0, 5.4.0-man
+[U.] gemini-cli                                                           0.36.0, 0.36.0-fish-completions -> 0.38.2, 0.38.2-fish-completions
+[U*] getent-glibc                                                         2.42-51 ×2 -> 2.42-51, 2.42-61
+[U.] gettext                                                              0.26 ×2 -> 0.26, 1.0
+[U.] gh                                                                   2.89.0, 2.89.0-fish-completions -> 2.90.0, 2.90.0-fish-completions
+[U*] glibc                                                                2.42-51 ×3, 2.42-51-bin ×2, 2.42-51-dev, 2.42-51-getent ×2 -> 2.42-51, 2.42-61-bin ×2, 2.42-61-dev, 2.42-51-getent, 2.42-61, 2.42-61-getent
+[U*] glibc-locales                                                        2.42-51 ×2 -> 2.42-61 ×2
+[U.] glibc-multi                                                          2.42-51, 2.42-51-bin -> 2.42-61, 2.42-61-bin
+[U.] glow                                                                 2.1.1 -> 2.1.2
+[U.] gnum4                                                                1.4.20 ×2 -> 1.4.21 ×2
+[C.] gnutls                                                               3.8.12-bin, 3.8.12-man, <others> -> <others>
+[U.] groff                                                                1.23.0 -> 1.24.1
+[U.] gsm                                                                  1.0.23 ×2 -> 1.0.24
+[U.] gst-libav                                                            1.26.5 ×2, 1.26.5-dev -> 1.26.11, 1.26.11-dev
+[U.] gst-plugins-bad                                                      1.26.5 ×2, 1.26.5-dev -> 1.26.11, 1.26.11-dev
+[U.] gst-plugins-base                                                     1.26.5 ×2, 1.26.5-dev -> 1.26.11 ×2, 1.26.11-dev
+[U.] gst-plugins-good                                                     1.26.5 ×3, 1.26.5-dev -> 1.26.11 ×2, 1.26.11-dev
+[U.] gst-plugins-ugly                                                     1.26.5 ×2 -> 1.26.11
+[U.] gstreamer                                                            1.26.5 ×2, 1.26.5-bin, 1.26.5-dev -> 1.26.11 ×2, 1.26.11-bin, 1.26.11-dev
+[U.] gstreamer-vaapi                                                      1.26.5, 1.26.5-dev -> 1.26.11, 1.26.11-dev
+[C.] gtest                                                                <others> -> 1.17.0-dev, <others>
+[U.] gtk+3                                                                3.24.51 ×3, 3.24.51-dev -> 3.24.51, 3.24.52-dev, 3.24.52
+[U.] harper                                                               1.12.0 -> 2.0.0
+[U.] hwdata                                                               0.405 ×2, <others> -> 0.406 ×2, <others>
+[U.] hyprlock                                                             0.9.3, 0.9.3-fish-completions -> 0.9.5, 0.9.5-fish-completions
+[C.] imagemagick                                                          7.1.2-17, 7.1.2-17-fish-completions, 7.1.2-17-dev, 7.1.2-17-doc -> 7.1.2-19, 7.1.2-19-fish-completions
+[U.] imath                                                                3.2.1 ×2 -> 3.2.2
+[U.] initrd-linux                                                         6.19.11 -> 7.0.1
+[U*] iptables                                                             1.8.12 ×2, 1.8.12-lib ×2, 1.8.12-man -> 1.8.13 ×2, 1.8.13-lib ×2, 1.8.13-man
+[U.] jasper                                                               4.2.8-lib -> 4.2.9-lib
+[U.] just                                                                 1.49.0, 1.49.0-fish-completions, 1.49.0-man -> 1.50.0, 1.50.0-fish-completions, 1.50.0-man
+[U.] karchive                                                             6.24.0 -> 6.25.0
+[U.] kauth                                                                6.24.0 -> 6.25.0
+[U.] kbookmarks                                                           6.24.0 -> 6.25.0
+[U.] kcmutils                                                             6.24.0 -> 6.25.0
+[U.] kcodecs                                                              6.24.0 -> 6.25.0
+[U.] kcolorscheme                                                         6.24.0 -> 6.25.0
+[U.] kcompletion                                                          6.24.0 -> 6.25.0
+[U.] kconfig                                                              6.24.0 -> 6.25.0
+[U.] kconfigwidgets                                                       6.24.0 -> 6.25.0
+[U.] kcoreaddons                                                          6.24.0 -> 6.25.0
+[U.] kcrash                                                               6.24.0 -> 6.25.0
+[U.] kdbusaddons                                                          6.24.0 -> 6.25.0
+[U.] kdeclarative                                                         6.24.0 -> 6.25.0
+[U.] kdegraphics-mobipocket                                               25.12.3 -> 26.04.0
+[U.] kdoctools                                                            6.24.0 -> 6.25.0
+[U.] kfilemetadata                                                        6.24.0 -> 6.25.0
+[U.] kglobalaccel                                                         6.24.0 -> 6.25.0
+[U.] kguiaddons                                                           6.24.0 -> 6.25.0
+[U.] ki18n                                                                6.24.0 -> 6.25.0
+[U.] kiconthemes                                                          6.24.0 -> 6.25.0
+[U.] kimageformats                                                        6.24.0 -> 6.25.0
+[U.] kio                                                                  6.24.0 -> 6.25.0
+[U.] kirigami                                                             6.24.0 -> 6.25.0
+[U.] kitemmodels                                                          6.24.0 -> 6.25.0
+[U.] kitemviews                                                           6.24.0 -> 6.25.0
+[U.] kjobwidgets                                                          6.24.0 -> 6.25.0
+[U.] knewstuff                                                            6.24.0 -> 6.25.0
+[U.] knotifications                                                       6.24.0 -> 6.25.0
+[U.] kpackage                                                             6.24.0 -> 6.25.0
+[U*] kpmcore                                                              25.12.3 -> 26.04.0
+[C.] krb5                                                                 1.22.1, 1.22.1-dev, <others> -> <others>
+[U.] kservice                                                             6.24.0 -> 6.25.0
+[U*] ksystemlog                                                           25.12.3 -> 26.04.0
+[U.] ktextwidgets                                                         6.24.0 -> 6.25.0
+[U.] kwallet                                                              6.24.0 -> 6.25.0
+[U.] kwidgetsaddons                                                       6.24.0 -> 6.25.0
+[U.] kwindowsystem                                                        6.24.0 -> 6.25.0
+[U.] kxmlgui                                                              6.24.0 -> 6.25.0
+[C.] lcms2                                                                2.18-bin, 2.18-dev, <others> -> <others>
+[U.] ldns                                                                 1.8.4 -> 1.9.0
+[U.] lerc                                                                 4.0.0 ×3 -> 4.0.0, 4.1.0
+[U.] libadwaita                                                           1.8.4 ×2 -> 1.8.5.1
+[U.] libapparmor                                                          4.1.3 ×3 -> 4.1.3, 4.1.7
+[U.] libarchive                                                           3.8.4-lib ×3 -> 3.8.4-lib, 3.8.6-lib
+[U.] libavif                                                              1.3.0 ×3 -> 1.3.0, 1.4.1
+[U.] libcap-ng                                                            0.9 ×3 -> 0.9, 0.9.2
+[U.] libde265                                                             1.0.16 ×2 -> 1.0.18
+[U.] libevdev                                                             1.13.4 -> 1.13.6
+[U.] libfontenc                                                           1.1.8 -> 1.1.9
+[U.] libfyaml                                                             0.9.5 ×2 -> 0.9.6
+[C.] libgcrypt                                                            1.11.2-bin, <others> -> <others>
+[U.] libgpg-error                                                         1.58 ×2, <others> -> 1.59 ×2, <others>
+[C.] libheif                                                              1.21.2, 1.21.2-bin, 1.21.2-dev, <others> -> <others>
+[C.] libidn2                                                              2.3.8-bin, 2.3.8-dev, <others> -> <others>
+[U.] libipt                                                               2.1.2 -> 2.2
+[U.] libjpeg-turbo                                                        3.1.3 ×3, 3.1.3-bin, 3.1.3-dev, 3.1.3-man -> 3.1.3, 3.1.4-bin, 3.1.4-dev, 3.1.4 ×2
+[C.] libjxl                                                               0.11.2-dev, <others> -> <others>
+[C.] liblqr                                                               1-0.4.3-dev, <others> -> <others>
+[U.] libmpc                                                               1.3.1 ×2 -> 1.4.0 ×2
+[U.] libnetfilter_conntrack                                               1.1.0 ×2 -> 1.1.1 ×2
+[U.] libopenmpt                                                           0.8.4 ×2 -> 0.8.6 ×2
+[C.] libpcap                                                              1.10.6, <others> -> <others>
+[U.] libpciaccess                                                         0.18.1 ×3 -> 0.18.1, 0.19
+[U.] libpng                                                               1.6.55 -> 1.6.56
+[U.] libpng-apng                                                          1.6.55 ×3, 1.6.55-dev, 1.6.55-man -> 1.6.55, 1.6.56-dev, 1.6.56 ×2
+[C.] libpsl                                                               0.21.5-dev, <others> -> <others>
+[U.] libqmi                                                               1.36.0 ×2 -> 1.38.0 ×2
+[C.] libraw                                                               0.21.5b-lib, 0.21.5b, 0.21.5b-dev -> 0.22.0-lib
+[U.] libsodium                                                            1.0.21-unstable-2026-02-11 ×2 -> 1.0.21-unstable-2026-03-29
+[U.] libsrtp                                                              2.7.0 ×2 -> 2.8.0
+[U.] libssh                                                               0.11.3 ×2 -> 0.12.0 ×2
+[C.] libssh2                                                              1.11.1-dev, <others> -> <others>
+[C.] libtiff                                                              4.7.1-man, <others> -> <others>
+[U.] libunistring                                                         1.4.1 ×3 -> 1.4.1, 1.4.2
+[U.] libuv                                                                1.52.0 ×2, 1.52.0-dev, <others> -> 1.52.1 ×2, 1.52.1-dev, <others>
+[C.] libx11                                                               1.8.13-man, <others> -> <others>
+[C.] libxcb                                                               1.17.0-man, <others> -> <others>
+[C.] libxext                                                              1.3.7-man, <others> -> <others>
+[C.] libxi                                                                1.8.2-man, <others> -> <others>
+[D.] libxt                                                                1.3.1 ×2, 1.3.1-dev -> 1.3.1
+[U.] lilv                                                                 0.26.2 ×2 -> 0.26.4 ×2
+[U.] linux                                                                6.19.11, 6.19.11-modules ×2 -> 7.0.1, 7.0.1-modules ×2
+[U.] linux-firmware                                                       20260309-zstd -> 20260410-zstd
+[U.] lua-language-server                                                  3.18.0 -> 3.18.1
+[U.] mediainfo.yazi                                                       26.1.22-unstable-2026-03-31 -> 26.1.22-unstable-2026-04-10
+[U.] mesa                                                                 26.0.4 ×2 -> 26.0.5 ×2
+[U.] mesa-libgbm                                                          25.1.0 ×3 -> 25.1.0, 26.0.3
+[C.] mpg123                                                               1.33.4-man, <others> -> <others>
+[U.] mupdf                                                                1.27.0, 1.27.0-bin -> 1.27.2, 1.27.2-bin
+[U.] neon                                                                 0.36.0 ×2 -> 0.37.1
+[U.] nghttp2                                                              1.67.1 ×3, 1.67.1-dev ×3, 1.67.1-lib ×5 -> 1.67.1, 1.67.1-dev, 1.67.1-lib ×2, 1.68.1, 1.68.1-dev, 1.68.1-lib
+[U.] nghttp3                                                              1.14.0 ×3, 1.14.0-dev ×2 -> 1.14.0, 1.14.0-dev, 1.15.0, 1.15.0-dev
+[U.] ngtcp2                                                               1.19.0 ×3, 1.19.0-dev ×2 -> 1.19.0, 1.19.0-dev, 1.22.0, 1.22.0-dev
+[U.] nh                                                                   4.3.0, 4.3.0-fish-completions -> 4.3.1, 4.3.1-fish-completions
+[U.] nh-unwrapped                                                         4.3.0 -> 4.3.1
+[U*] niri-unstable                                                        2026-04-12-8cc8756, 2026-04-12-8cc8756-fish-completions -> 2026-04-24-9438f59, 2026-04-24-9438f59-fish-completions
+[U*] nix                                                                  2.31.4 ×2, 2.31.4-man -> 2.34.6 ×2, 2.34.6-man
+[U.] nix-cmd                                                              2.31.4, <others> -> 2.34.6, <others>
+[U.] nix-expr                                                             2.31.4, <others> -> 2.34.6, <others>
+[U.] nix-fetchers                                                         2.31.4, <others> -> 2.34.6, <others>
+[U.] nix-flake                                                            2.31.4, <others> -> 2.34.6, <others>
+[U.] nix-main                                                             2.31.4, <others> -> 2.34.6, <others>
+[U.] nix-manual                                                           2.31.4-man -> 2.34.6-man
+[U.] nix-store                                                            2.31.4, <others> -> 2.34.6, <others>
+[U.] nix-util                                                             2.31.4, <others> -> 2.34.6, <others>
+[U.] nixos-system-sagittarius                                             26.05.20260409.4c1018d -> 26.05.20260422.0726a0e
+[U.] nodejs                                                               24.14.0, <others> -> 24.14.1, <others>
+[U.] nodejs-slim                                                          24.14.0, 24.14.0-corepack, 24.14.0-npm, <others> -> 24.14.1, 24.14.1-corepack, 24.14.1-npm, <others>
+[U.] nss                                                                  3.112.3 ×2, 3.122 -> 3.112.3, 3.123
+[U.] openapv                                                              0.2.1.1 ×2 -> 0.2.1.2 ×2
+[U.] openblas                                                             0.3.31 -> 0.3.32
+[C.] openexr                                                              3.3.5 ×2, 3.3.5-bin, 3.3.5-dev -> 3.3.8
+[C.] openjpeg                                                             2.5.4-dev, <others> -> <others>
+[C.] openldap                                                             2.6.9 ×2, 2.6.9-man -> 2.6.13
+[U*] openssh                                                              10.2p1, 10.2p1-man -> 10.3p1, 10.3p1-man
+[U.] ostree                                                               2025.7 -> 2026.1
+[U.] p11-kit                                                              0.26.1 ×3, 0.26.1-bin -> 0.26.1, 0.26.2-bin, 0.26.2
+[U.] parted                                                               3.6 -> 3.7
+[U*] partitionmanager                                                     25.12.3 -> 26.04.0
+[U*] pipewire                                                             1.6.2 ×2, 1.6.2-dev, 1.6.2-man -> 1.6.3 ×2, 1.6.3-dev, 1.6.3-man
+[U.] polkit-qt                                                            1-0.200.0 -> 1-0.201.1
+[U.] protobuf                                                             34.0 -> 34.1
+[U.] psqlodbc                                                             17.00.0007 -> 17.00.0008
+[U.] publicsuffix-list                                                    0-unstable-2026-03-02 ×2, <others> -> 0-unstable-2026-03-26 ×2, <others>
+[U.] pyside6                                                              6.10.0 -> 6.11.0
+[U.] python3.13-aiohttp                                                   3.13.3 -> 3.13.4
+[U.] python3.13-cryptography                                              46.0.5 -> 46.0.6
+[U.] python3.13-importlib-metadata                                        8.7.1 -> 9.0.0
+[U.] python3.13-numpy                                                     2.4.2 -> 2.4.4
+[U.] python3.13-pikepdf                                                   10.3.0 -> 10.5.1
+[U.] python3.13-pillow                                                    12.1.1 -> 12.2.0
+[U.] python3.13-protobuf                                                  7.34.0 -> 7.34.1
+[U.] python3.13-psutil                                                    7.2.1 -> 7.2.2
+[U.] python3.13-requests                                                  2.32.5 -> 2.33.1
+[U.] python3.13-tzdata                                                    2025.3 -> 2026.1
+[U.] python3.13-wcwidth                                                   0.4.0 -> 0.6.0
+[U.] qqc2-desktop-style                                                   6.24.0 -> 6.25.0
+[U.] qt3d                                                                 6.10.2 -> 6.11.0
+[U.] qt5compat                                                            6.10.2 -> 6.11.0
+[U.] qtbase                                                               6.10.2 ×2, 6.10.2-dev, 6.10.2-only-plugins-qml ×2, <others> -> 6.10.2, 6.11.0-dev, 6.10.2-only-plugins-qml, 6.11.0, 6.11.0-only-plugins-qml, <others>
+[U.] qtcharts                                                             6.10.2 -> 6.11.0
+[U.] qtconnectivity                                                       6.10.2 -> 6.11.0
+[U.] qtdatavis3d                                                          6.10.2 -> 6.11.0
+[U.] qtdeclarative                                                        6.10.2 ×2, 6.10.2-dev, <others> -> 6.10.2, 6.11.0-dev, 6.11.0, <others>
+[U.] qtgraphs                                                             6.10.2 -> 6.11.0
+[U.] qthttpserver                                                         6.10.2 -> 6.11.0
+[U.] qtimageformats                                                       6.10.2 -> 6.11.0
+[U.] qtlanguageserver                                                     6.10.2, 6.10.2-dev -> 6.11.0, 6.11.0-dev
+[U.] qtlocation                                                           6.10.2 -> 6.11.0
+[U.] qtmultimedia                                                         6.10.2, 6.10.2-dev -> 6.11.0, 6.11.0-dev
+[U.] qtnetworkauth                                                        6.10.2 -> 6.11.0
+[U.] qtpositioning                                                        6.10.2 -> 6.11.0
+[U.] qtquick3d                                                            6.10.2, 6.10.2-dev -> 6.11.0, 6.11.0-dev
+[U.] qtremoteobjects                                                      6.10.2 -> 6.11.0
+[U.] qtscxml                                                              6.10.2 -> 6.11.0
+[U.] qtsensors                                                            6.10.2 -> 6.11.0
+[U.] qtserialbus                                                          6.10.2 -> 6.11.0
+[U.] qtserialport                                                         6.10.2 -> 6.11.0
+[U.] qtshadertools                                                        6.10.2, 6.10.2-dev -> 6.11.0, 6.11.0-dev
+[U.] qtspeech                                                             6.10.2 -> 6.11.0
+[U.] qtsvg                                                                6.10.2 ×2, 6.10.2-dev, <others> -> 6.10.2, 6.11.0-dev, 6.11.0, <others>
+[U.] qttools                                                              6.10.2, <others> -> 6.11.0, <others>
+[U.] qttranslations                                                       6.10.2 ×2, <others> -> 6.10.2, 6.11.0, <others>
+[U.] qtvirtualkeyboard                                                    6.10.2, 6.10.2-dev -> 6.11.0, 6.11.0-dev
+[U.] qtwayland                                                            6.10.2 ×2, <others> -> 6.10.2, 6.11.0, <others>
+[U.] qtwebchannel                                                         6.10.2 -> 6.11.0
+[U.] qtwebengine                                                          6.10.2 -> 6.11.0
+[U.] qtwebsockets                                                         6.10.2 -> 6.11.0
+[U.] qtwebview                                                            6.10.2 -> 6.11.0
+[U.] rclone                                                               1.73.4, 1.73.4-fish-completions, 1.73.4-man -> 1.73.5, 1.73.5-fish-completions, 1.73.5-man
+[U.] ripdrag                                                              0.4.11 -> 0.4.12
+[U.] ruff                                                                 0.15.9 -> 0.15.11
+[U.] rust-analyzer                                                        2026-03-30 -> 2026-04-13
+[U.] rust-analyzer-unwrapped                                              2026-03-30 -> 2026-04-13
+[U.] s2n-tls                                                              1.6.4 -> 1.7.2
+[C.] samba                                                                4.22.7 ×2, 4.22.7-man -> 4.23.5
+[D.] sane-backends                                                        1.4.0 ×2, 1.4.0-man -> 1.4.0
+[U.] sdl2-compat                                                          2.32.64 ×2 -> 2.32.66
+[U.] serd                                                                 0.32.6 ×2 -> 0.32.8 ×2
+[U.] shiboken6                                                            6.10.0 -> 6.11.0
+[U.] simdjson                                                             4.3.1, <others> -> 4.6.0, <others>
+[U.] simdutf                                                              8.0.0 ×2, <others> -> 8.0.0, 8.1.0, <others>
+[U.] sioyek                                                               2.0.0-unstable-2026-03-13, 2.0.0-unstable-2026-03-13-fish-completions -> 2.0.0-unstable-2026-04-08, 2.0.0-unstable-2026-04-08-fish-completions
+[U.] solid                                                                6.24.0 -> 6.25.0
+[U.] sonnet                                                               6.24.0 -> 6.25.0
+[U.] soundtouch                                                           2.4.0 ×2 -> 2.4.1
+[U.] spidermonkey                                                         140.7.1 -> 140.9.0
+[U.] sratom                                                               0.6.20 ×2 -> 0.6.22 ×2
+[U.] surge                                                                0.8.0, 0.8.0-fish-completions -> 0.8.3, 0.8.3-fish-completions
+[U.] svelte-language-server                                               0.17.25 -> 0.17.30
+[U.] syndication                                                          6.24.0 -> 6.25.0
+[U*] systemd                                                              259.3 ×2, 259.3-dev, 259.3-man, <others> -> 260.1 ×2, 260.1-dev, 260.1-man, <others>
+[U.] systemd-minimal                                                      259.3 ×2, <others> -> 260.1 ×2, <others>
+[U.] systemd-minimal-libs                                                 259.3 ×2, 259.3-dev, <others> -> 260.1 ×2, 260.1-dev, <others>
+[U.] taglib                                                               2.1.1 ×2 -> 2.2.1
+[U.] telegram-desktop                                                     6.6.2, 6.6.2-fish-completions -> 6.7.5, 6.7.5-fish-completions
+[U*] time                                                                 1.9 -> 1.10
+[U.] ty                                                                   0.0.29 -> 0.0.32
+[U*] util-linux                                                           2.41.3, 2.41.3-bin, 2.41.3-dev, 2.41.3-lastlog, 2.41.3-lib ×2, 2.41.3-login, 2.41.3-man, 2.41.3-mount, 2.41.3-swap -> 2.42, 2.42-bin, 2.42-dev, 2.42-lastlog, 2.41.3-lib, 2.42-login, 2.42-man, 2.42-mount, 2.42-swap, 2.42-lib
+[U.] util-linux-minimal                                                   2.41.3-bin, 2.41.3-lib ×3, 2.41.3-login ×3, 2.41.3-mount ×3, 2.41.3-swap ×3 -> 2.42-bin, 2.41.3-lib, 2.41.3-login, 2.41.3-mount, 2.41.3-swap, 2.42, 2.42-lib, 2.42-login, 2.42-mount, 2.42-swap
+[U.] vicinae                                                              0.20.12, 0.20.12-fish-completions -> 0.20.13, 0.20.13-fish-completions
+[U.] vscode                                                               1.114.0, 1.114.0-fish-completions -> 1.116.0, 1.116.0-fish-completions
+[U.] vscode-extension-James-Yu-latex-workshop                             10.13.1 -> 10.14.1
+[U.] vscode-extension-charliermarsh-ruff                                  2026.38.0 -> 2026.40.0
+[U.] vscode-extension-gemini-cli-vscode-ide-companion                     0.36.0 -> 0.38.2
+[U.] vscode-extension-github-copilot-chat                                 0.42.0 -> 0.44.1
+[U.] vscode-extension-ms-vsliveshare-vsliveshare                          1.1.119 -> 1.1.122
+[U.] vscode-extension-shd101wyy-markdown-preview-enhanced                 0.8.22 -> 0.8.24
+[C.] wayland                                                              1.24.0-man, <others> -> <others>
+[U.] wayland-protocols                                                    1.47 -> 1.48
+[U.] webkitgtk                                                            2.52.1+abi=4.1 -> 2.52.3+abi=4.1
+[U.] x86_energy_perf_policy                                               6.18.21 -> 6.18.24
+[U.] xfsprogs                                                             6.17.0, 6.17.0-bin -> 6.19.0, 6.19.0-bin
+[U.] xwayland                                                             24.1.9 -> 24.1.10
+[U*] xz                                                                   5.8.2 ×3, 5.8.2-bin, 5.8.2-man -> 5.8.2, 5.8.3-bin, 5.8.3-man, 5.8.3
+[U.] zed-editor                                                           0.230.1 -> 0.232.3
+[U.] zed-editor-wrapped                                                   0.230.1, 0.230.1-fish-completions -> 0.232.3, 0.232.3-fish-completions
+[U.] zenity                                                               4.2.1 ×2 -> 4.2.2
+[U.] zotero                                                               8.0.5, 8.0.5-fish-completions -> 9.0.0, 9.0.0-fish-completions
+
+ADDED
+[A.] X-Restart-Triggers-dbus-broker                                       <none>
+[A.] c-dvar                                                               1.2.0
+[A.] c-ini                                                                1.1.0
+[A.] c-rbtree                                                             3.2.0
+[A.] c-shquote                                                            1.1.0
+[A.] c-utf8                                                               1.1.0
+[A.] config.kdl                                                           <none>
+[A+] dbus-broker                                                          37
+[A.] empty-inhibitors                                                     <none>
+[A.] getconf-glibc                                                        2.42-61
+[A.] hdrhistogram_c                                                       0.11.9
+[A.] hm_homevortriz.configmozillafirefoxdefault.keep                      <none>
+[A.] hm_homevortriz.configmozillafirefoxdefaultuser.js                    <none>
+[A.] hm_homevortriz.configmozillafirefoxprofiles.ini                      <none>
+[A.] hm_kittydiff.conf                                                    <none>
+[A.] libultrahdr                                                          1.4.0
+[A.] nbytes                                                               0.1.4
+[A.] nix-nswrapper                                                        2.34.6
+[A.] pipewire-ladspa-plugins                                              <none>
+[A.] shiboken6-generator                                                  6.11.0
+[A.] unit-blueman-applet.service                                          <none>
+[A.] unit-dbus-broker.service                                             <none>
+[A.] unit-modprobe-.service                                               <none>
+[A.] unit-network-local-commands.service-disabled                         <none>
+[A.] unit-network-setup.service                                           <none>
+[A.] unit-script-network-setup-start                                      <none>
+[A.] unit-sshd-vsock-.service                                             <none>
+[A.] unit-sshd-vsock.socket                                               <none>
+[A.] unixodbc                                                             2.3.14
+[A.] xxhash                                                               0.8.3
+[A.] zed-theme-custom                                                     <none>
+
+REMOVED
+[R.] SDL_compat                                                           1.2.76
+[R.] SDL_net                                                              1.2.8-unstable-2026-03-17
+[R.] SDL_sound                                                            1.0.3
+[R.] X-Restart-Triggers-dbus                                              <none>
+[R.] alsa-plugins                                                         1.2.12
+[R.] bottles                                                              63.2, 63.2-bwrap, 63.2-fhsenv-profile, 63.2-fhsenv-rootfs, 63.2-fish-completions, 63.2-init
+[R.] bottles-cli                                                          63.2-bwrap, 63.2-fhsenv-profile, 63.2-fhsenv-rootfs, 63.2-init
+[R.] bottles-unwrapped                                                    63.2
+[R.] cabextract                                                           1.11
+[R.] dosbox                                                               0.74-3
+[R.] gamemode                                                             1.8.2, 1.8.2-dev, 1.8.2-lib
+[R.] glfw                                                                 3.4
+[R.] gnustep-base                                                         1.29.0-lib
+[R.] gnustep-libobjc                                                      2.3
+[R.] gnustep-make                                                         2.9.3
+[R.] hm_.mozillafirefoxdefault.keep                                       <none>
+[R.] hm_.mozillafirefoxdefaultuser.js                                     <none>
+[R.] hm_.mozillafirefoxprofiles.ini                                       <none>
+[R.] hm_niriconfig.kdl                                                    <none>
+[R.] icoextract                                                           0.2.0
+[R.] libXNVCtrl                                                           390.157, 595.58.03
+[R.] libhwy                                                               1.3.0
+[R.] libldac-dec                                                          0.0.2-unstable-2024-11-12
+[R.] libmikmod                                                            3.3.13
+[R.] libportal                                                            0.9.1
+[R.] libpthread-stubs                                                     0.5
+[R.] libxaw                                                               1.0.16
+[R.] libxxf86dga                                                          1.1.6
+[R.] lzip                                                                 1.25
+[R.] mangohud                                                             0.8.2
+[R.] mcp-nixos                                                            2.3.0
+[R.] pandoc                                                               3.7.0.2-data
+[R.] python3.13-annotated-doc                                             0.0.4
+[R.] python3.13-annotated-types                                           0.7.0
+[R.] python3.13-anyio                                                     4.12.1
+[R.] python3.13-asgiref                                                   3.11.0
+[R.] python3.13-authlib                                                   1.6.9
+[R.] python3.13-beartype                                                  0.22.9
+[R.] python3.13-beautifulsoup4                                            4.14.3
+[R.] python3.13-cachetools                                                6.2.4
+[R.] python3.13-chardet                                                   5.2.0
+[R.] python3.13-cloudpickle                                               3.1.2
+[R.] python3.13-cyclopts                                                  4.10.1
+[R.] python3.13-diskcache                                                 5.6.3
+[R.] python3.13-docstring-parser                                          0.17.0
+[R.] python3.13-docutils                                                  0.22.4
+[R.] python3.13-email-validator                                           2.3.0
+[R.] python3.13-exceptiongroup                                            1.3.1
+[R.] python3.13-fakeredis                                                 2.33.0
+[R.] python3.13-fastmcp                                                   2.14.5
+[R.] python3.13-fvs                                                       0.3.4
+[R.] python3.13-h11                                                       0.16.0
+[R.] python3.13-httpcore                                                  1.0.9
+[R.] python3.13-httpx                                                     0.28.1
+[R.] python3.13-httpx-sse                                                 0.4.3
+[R.] python3.13-jaraco-classes                                            3.4.0
+[R.] python3.13-jaraco-context                                            6.1.0
+[R.] python3.13-jaraco-functools                                          4.4.0
+[R.] python3.13-jsonpath-ng                                               1.7.0
+[R.] python3.13-jsonref                                                   1.1.0
+[R.] python3.13-jsonschema                                                4.26.0
+[R.] python3.13-jsonschema-path                                           0.3.4
+[R.] python3.13-jsonschema-specifications                                 2025.9.1
+[R.] python3.13-keyring                                                   25.7.0
+[R.] python3.13-lupa                                                      2.6
+[R.] python3.13-markdown-it-py                                            4.0.0
+[R.] python3.13-mcp                                                       1.26.0
+[R.] python3.13-mdurl                                                     0.1.2
+[R.] python3.13-more-itertools                                            10.8.0
+[R.] python3.13-openapi-pydantic                                          0.5.1
+[R.] python3.13-opentelemetry-api                                         1.34.0
+[R.] python3.13-opentelemetry-exporter-prometheus                         0.55b0
+[R.] python3.13-opentelemetry-instrumentation                             0.55b0
+[R.] python3.13-opentelemetry-sdk                                         1.34.0
+[R.] python3.13-opentelemetry-semantic-conventions                        0.55b0
+[R.] python3.13-orjson                                                    3.11.5
+[R.] python3.13-pathable                                                  0.4.4
+[R.] python3.13-pathvalidate                                              3.3.1
+[R.] python3.13-patool                                                    4.0.4
+[R.] python3.13-pefile                                                    2024.8.26
+[R.] python3.13-ply                                                       3.11
+[R.] python3.13-prometheus-client                                         0.24.1
+[R.] python3.13-py-key-value-aio                                          0.3.0
+[R.] python3.13-py-key-value-shared                                       0.3.0
+[R.] python3.13-pycurl                                                    7.45.6
+[R.] python3.13-pydantic                                                  2.12.5
+[R.] python3.13-pydantic-core                                             2.41.5
+[R.] python3.13-pydantic-settings                                         2.12.0
+[R.] python3.13-pydocket                                                  0.17.1
+[R.] python3.13-pygments                                                  2.19.2
+[R.] python3.13-pyjwt                                                     2.11.0
+[R.] python3.13-python-dotenv                                             1.2.1
+[R.] python3.13-python-json-logger                                        4.0.0
+[R.] python3.13-python-multipart                                          0.0.21
+[R.] python3.13-pyyaml                                                    6.0.3
+[R.] python3.13-redis                                                     7.2.1
+[R.] python3.13-referencing                                               0.37.0
+[R.] python3.13-rich                                                      14.3.3
+[R.] python3.13-rich-rst                                                  1.3.2
+[R.] python3.13-rpds-py                                                   0.30.0
+[R.] python3.13-shellingham                                               1.5.4
+[R.] python3.13-sortedcontainers                                          2.4.0
+[R.] python3.13-soupsieve                                                 2.8.3
+[R.] python3.13-sse-starlette                                             3.2.0
+[R.] python3.13-starlette                                                 0.52.1
+[R.] python3.13-typer                                                     0.24.0
+[R.] python3.13-typing-inspection                                         0.4.2
+[R.] python3.13-uvicorn                                                   0.40.0
+[R.] python3.13-yara-python                                               4.5.4
+[R.] sbin-ldconfig                                                        <none>
+[R.] security-wrapper-dbus-daemon-launch-helper-x86_64-unknown-linux-musl <none>
+[R.] spdlog                                                               1.17.0
+[R.] unar                                                                 1.10.8
+[R.] unit-autovt-.service                                                 <none>
+[R.] unit-network-local-commands.service                                  <none>
+[R.] unit-network.target                                                  <none>
+[R.] unit-networking-scripted.target                                      <none>
+[R.] unit-script-network-local-commands-start                             <none>
+[R.] unit-systemd-udev-settle.service                                     <none>
+[R.] unixobcd                                                             2.3.12
+[R.] vkbasalt                                                             0.3.2.10
+[R.] vkbasalt-cli                                                         3.1.1
+[R.] vmtouch                                                              1.3.1
+[R.] xdpyinfo                                                             1.4.0
+[R.] xxHash                                                               0.8.3
+[R.] yara                                                                 4.5.5
+[R.] zip                                                                  3.0
+[R.] zpaq                                                                 7.15
+
+SIZE: 22.1 GiB -> 21.7 GiB
+DIFF: -450 MiB
