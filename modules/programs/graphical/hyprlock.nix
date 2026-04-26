@@ -38,10 +38,7 @@
                 };
 
                 # GENERAL
-                general = {
-                    hide_cursor = false;
-                    disable_loading_bar = true;
-                };
+                general.hide_cursor = false;
 
                 # INPUT FIELD
                 input-field = [
@@ -104,7 +101,7 @@
         };
 
         wayland.windowManager.niri.settings.binds."Mod+L" = {
-            spawn-sh = "niri msg action do-screen-transition && ${lib.getExe pkgs.hyprlock} --immediate";
+            spawn-sh = "niri msg action do-screen-transition && ${lib.getExe pkgs.hyprlock} --grace 0";
             _props.hotkey-overlay-title = "Lock screen";
         };
     };
