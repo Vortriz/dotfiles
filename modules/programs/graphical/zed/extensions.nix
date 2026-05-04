@@ -39,6 +39,7 @@
                     ([
                         # keep-sorted start
                         "lua-language-server"
+                        "nil"
                         "nixd"
                         "package-version-server"
                         "rust-analyzer"

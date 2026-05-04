@@ -18,24 +18,28 @@
                         provider = "copilot";
                         model = "gpt-4.1";
                     };
+                    dock = "right";
+                    sidebar_side = "right";
                 };
+                agent_servers.gemini.type = "registry";
                 auto_update = false;
                 buffer_font_family = fontName;
                 buffer_font_size = fontSize;
-                # context_servers = {
-                #     nixos = {
-                #         command = lib.getExe pkgs.mcp-nixos;
-                #         args = [];
-                #     };
-                # };
+                context_servers = {
+                    nixos = {
+                        command = lib.getExe pkgs.mcp-nixos;
+                        args = [];
+                    };
+                };
                 cursor_shape = "bar";
                 edit_predictions.provider = "copilot";
                 git.inline_blame.enabled = false;
+                git_panel.dock = "left";
                 icon_theme = "Modern Icons (Dark)";
                 languages = {
                     Nix = {
                         format_on_save = "on";
-                        language_servers = ["nixd" "!nil"];
+                        language_servers = ["nixd" "nil"];
                         formatter.external = {
                             command = "nix";
                             arguments = ["fmt" "--" "--stdin" "{buffer_path}"];
@@ -71,6 +75,8 @@
                 unnecessary_code_fade = 0.5;
                 use_smartcase_search = true;
                 theme = "Custom Dark";
+                project_panel.dock = "left";
+                outline_panel.dock = "left";
                 # keep-sorted end
             };
         };
