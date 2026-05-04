@@ -20,6 +20,7 @@
                 "quarto"
                 "scss"
                 "svelte"
+                "toml"
                 "typst"
                 # keep-sorted end
             ];
