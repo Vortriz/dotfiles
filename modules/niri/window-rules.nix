@@ -88,6 +88,7 @@
                     {match._props.app-id = "yazi";}
                     {match._props.app-id = "nix-search-tv";}
                     {match._props.title = "Vicinae Settings";}
+                    {match._props.app-id = "dev.zed.Zed";}
                 ];
             }
 
