@@ -14,7 +14,6 @@
                 "just"
                 "latex"
                 "lua"
-                "modern-icons"
                 "nix"
                 "qml"
                 "quarto"
@@ -38,6 +37,7 @@
                 lsp =
                     ([
                         # keep-sorted start
+                        "just-lsp"
                         "lua-language-server"
                         "nil"
                         "nixd"
@@ -73,6 +73,10 @@
                         ruff.binary = {
                             path = lib.getExe pkgs.ruff;
                             arguments = ["server"];
+                        };
+                        tombi.binary = {
+                            path = lib.getExe pkgs.tombi;
+                            arguments = ["lsp"];
                         };
                         tailwindcss-language-server.binary = {
                             path = lib.getExe pkgs.tailwindcss-language-server;

@@ -93,6 +93,11 @@
             flake = false;
             type = "file";
         };
+        # [MARK] symlinking via xdg.dataHome isn't working
+        # zed-modern-icons = {
+        #     url = "github:Vortriz/zed-modern-icons";
+        #     flake = false;
+        # };
         # keep-sorted end
     };
 
