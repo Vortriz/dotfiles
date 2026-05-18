@@ -22267,3 +22267,178 @@ ADDED
 
 SIZE: 21.7 GiB -> 21.9 GiB
 DIFF: 135 MiB
+
+---
+
+18/05/26 12:30:55 PM IST
+<<< /nix/store/xw3p6wb1r77qmg1lss1n9qqx089vznk8-nixos-system-sagittarius-26.05.20260505.549bd84
+>>> /nix/store/8ar969dlkch9f7z633h7dg0699qbp7nv-nixos-system-sagittarius-26.05.20260515.d233902
+
+CHANGED
+[U.] Better-BibTeX-for-Zotero                             9.0.23 -> 9.0.24
+[U.] ZotMoov                                              1.2.28 -> 1.2.29
+[U.] acpi-call                                            1.2.2-7.0.3 -> 1.2.2-7.0.8
+[C.] alsa-lib                                             <others> -> 1.2.15.3-dev, <others>
+[U.] anydesk                                              7.1.3, 7.1.3-fish-completions -> 8.0.2, 8.0.2-fish-completions
+[U.] apache-httpd                                         2.4.66 -> 2.4.67
+[U.] attica                                               6.25.0 -> 6.26.0
+[U.] breeze                                               6.6.4 -> 6.6.5
+[U.] breeze-icons                                         6.25.0 -> 6.26.0
+[C*] curl                                                 <others> -> 8.19.0-dev, <others>
+[U.] curl-impersonate                                     1.5.5 -> 1.5.6
+[U.] distrobox                                            1.8.2.4, 1.8.2.4-fish-completions -> 1.8.2.5, 1.8.2.5-fish-completions
+[U.] dnsmasq                                              2.92 ×2 -> 2.92rel2 ×2
+[U.] fastfetch                                            2.62.1, 2.62.1-fish-completions, 2.62.1-man -> 2.63.1, 2.63.1-fish-completions, 2.63.1-man
+[U.] firefox                                              150.0.1, 150.0.1-fish-completions -> 150.0.3, 150.0.3-fish-completions
+[U.] firefox-unwrapped                                    150.0.1 -> 150.0.3
+[U*] fish                                                 4.6.0, 4.6.0-doc, 4.6.0_fish-completions, 4.6.0-fish-completions -> 4.7.1, 4.7.1-doc, 4.7.1_fish-completions, 4.7.1-fish-completions
+[U.] frameworkintegration                                 6.25.0 -> 6.26.0
+[U.] freerdp                                              3.24.2 -> 3.26.0
+[U*] fresh                                                0.3.2 -> 0.3.5
+[U.] gemini-cli                                           0.40.1, 0.40.1-fish-completions -> 0.41.2, 0.41.2-fish-completions
+[U.] hyprgraphics                                         0.5.0 -> 0.5.1
+[U.] hyprutils                                            0.13.0 -> 0.13.1
+[U.] initrd-linux                                         7.0.3 -> 7.0.8
+[U.] intel-compute-runtime                                26.14.37833.4 -> 26.18.38308.1
+[U.] intel-graphics-compiler                              2.30.1 -> 2.34.4
+[D.] jump-to-char.yazi                                    25.5.31-unstable-2025-06-18 -> 0-unstable-2025-06-18
+[U.] just                                                 1.50.0, 1.50.0-fish-completions, 1.50.0-man -> 1.51.0, 1.51.0-fish-completions, 1.51.0-man
+[U.] karchive                                             6.25.0 -> 6.26.0
+[U.] kauth                                                6.25.0 -> 6.26.0
+[U.] kbookmarks                                           6.25.0 -> 6.26.0
+[U.] kcmutils                                             6.25.0 -> 6.26.0
+[U.] kcodecs                                              6.25.0 -> 6.26.0
+[U.] kcolorscheme                                         6.25.0 -> 6.26.0
+[U.] kcompletion                                          6.25.0 -> 6.26.0
+[U.] kconfig                                              6.25.0 -> 6.26.0
+[U.] kconfigwidgets                                       6.25.0 -> 6.26.0
+[U.] kcoreaddons                                          6.25.0 -> 6.26.0
+[U.] kcrash                                               6.25.0 -> 6.26.0
+[U.] kdbusaddons                                          6.25.0 -> 6.26.0
+[U.] kdeclarative                                         6.25.0 -> 6.26.0
+[U.] kdecoration                                          6.6.4 -> 6.6.5
+[U.] kdegraphics-mobipocket                               26.04.0 -> 26.04.1
+[U.] kdoctools                                            6.25.0 -> 6.26.0
+[U.] kfilemetadata                                        6.25.0 -> 6.26.0
+[U.] kglobalaccel                                         6.25.0 -> 6.26.0
+[U.] kguiaddons                                           6.25.0 -> 6.26.0
+[U.] ki18n                                                6.25.0 -> 6.26.0
+[U.] kiconthemes                                          6.25.0 -> 6.26.0
+[U.] kimageformats                                        6.25.0 -> 6.26.0
+[U.] kio                                                  6.25.0 -> 6.26.0
+[U.] kirigami                                             6.25.0 -> 6.26.0
+[U.] kitemmodels                                          6.25.0 -> 6.26.0
+[U.] kitemviews                                           6.25.0 -> 6.26.0
+[U.] kjobwidgets                                          6.25.0 -> 6.26.0
+[U.] knewstuff                                            6.25.0 -> 6.26.0
+[U.] knotifications                                       6.25.0 -> 6.26.0
+[U.] kpackage                                             6.25.0 -> 6.26.0
+[U*] kpmcore                                              26.04.0 -> 26.04.1
+[C.] krb5                                                 <others> -> 1.22.1, 1.22.1-dev, <others>
+[U.] kservice                                             6.25.0 -> 6.26.0
+[U*] ksystemlog                                           26.04.0 -> 26.04.1
+[U.] ktextwidgets                                         6.25.0 -> 6.26.0
+[U.] kwallet                                              6.25.0 -> 6.26.0
+[U.] kwidgetsaddons                                       6.25.0 -> 6.26.0
+[U.] kwindowsystem                                        6.25.0 -> 6.26.0
+[U.] kxmlgui                                              6.25.0 -> 6.26.0
+[U.] layer-shell-qt                                       6.6.4, <others> -> 6.6.5, <others>
+[C.] lcms2                                                <others> -> 2.18-bin, 2.18-dev, <others>
+[U.] libgit2                                              1.9.2-lib -> 1.9.3-lib
+[C.] libidn2                                              <others> -> 2.3.8-bin, 2.3.8-dev, <others>
+[U.] libinput                                             1.29.2 -> 1.31.1, 1.31.1-bin, 1.31.1-dev
+[U.] libplacebo                                           7.351.0 -> 7.360.1
+[C.] libpsl                                               <others> -> 0.21.5-dev, <others>
+[C.] libraw                                               <others> -> 0.22.0, 0.22.0-dev, <others>
+[C.] libssh2                                              <others> -> 1.11.1-dev, <others>
+[U.] linux                                                7.0.3, 7.0.3-modules ×2 -> 7.0.8, 7.0.8-modules ×2
+[U.] magic-wormhole                                       0.23.0-fish-completions -> 0.24.0-fish-completions
+[D.] mediainfo.yazi                                       26.1.22-unstable-2026-04-10 -> 0-unstable-2026-04-10
+[U.] mesa                                                 26.0.6 ×2 -> 26.1.0 ×2
+[U*] niri-unstable                                        2026-05-05-5665403, 2026-05-05-5665403-fish-completions -> 2026-05-15-cd5ac3e, 2026-05-15-cd5ac3e-fish-completions
+[C.] nix-cmd                                              2.30.5+1, <others> -> <others>
+[C.] nix-expr                                             2.30.5+1, <others> -> <others>
+[C.] nix-fetchers                                         2.30.5+1, <others> -> <others>
+[C.] nix-flake                                            2.30.5+1, <others> -> <others>
+[C.] nix-main                                             2.30.5+1, <others> -> <others>
+[C.] nix-store                                            2.30.5+1, <others> -> <others>
+[C.] nix-util                                             2.30.5+1, <others> -> <others>
+[U.] nixd                                                 2.9.0 -> 2.9.1
+[U.] nixf                                                 2.9.0 -> 2.9.1
+[U.] nixos-system-sagittarius                             26.05.20260505.549bd84 -> 26.05.20260515.d233902
+[U.] nixt                                                 2.9.0 -> 2.9.1
+[U.] nodejs                                               22.22.2, <others> -> 22.22.3, <others>
+[U.] nodejs-slim                                          22.22.2, 22.22.2-corepack, 22.22.2-npm, <others> -> 22.22.3, 22.22.3-corepack, 22.22.3-npm, <others>
+[C.] nspr                                                 <others> -> 4.38.2-dev, <others>
+[C.] nss                                                  <others> -> 3.112.3-dev, <others>
+[C.] openjpeg                                             <others> -> 2.5.4-dev, <others>
+[U.] ouch                                                 0.6.1, 0.6.1-fish-completions -> 0.7.1, 0.7.1-fish-completions
+[U*] partitionmanager                                     26.04.0 -> 26.04.1
+[U.] perl5.42.0-Image-ExifTool                            13.52, 13.52-fish-completions -> 13.58, 13.58-fish-completions
+[D.] piper.yazi                                           26.1.22-unstable-2026-01-24 -> 0-unstable-2026-01-24
+[C.] poppler-glib                                         <others> -> 25.10.0-dev, <others>
+[U.] python3.13-caio                                      0.10.0 -> 0.10.1
+[U.] python3.13-dbus-fast                                 4.0.0 -> 4.0.4
+[U.] python3.13-magic-wormhole                            0.23.0 -> 0.24.0
+[U.] python3.13-uncalled-for                              0.3.1 -> 0.3.2
+[U.] qbittorrent                                          5.1.4, 5.1.4-fish-completions -> 5.2.0, 5.2.0-fish-completions
+[U.] qqc2-desktop-style                                   6.25.0 -> 6.26.0
+[U.] rclone                                               1.74.0, 1.74.0-fish-completions, 1.74.0-man -> 1.74.1, 1.74.1-fish-completions, 1.74.1-man
+[D.] restore.yazi                                         25.5.31-unstable-2026-04-04 -> 0-unstable-2026-04-04
+[U.] ruff                                                 0.15.12 -> 0.15.13
+[C.] sdl2-compat                                          <others> -> 2.32.66-dev, <others>
+[D.] smart-enter.yazi                                     25.5.31-unstable-2025-06-18 -> 0-unstable-2025-06-18
+[D.] smart-filter.yazi                                    25.12.29-unstable-2025-12-29 -> 0-unstable-2025-12-29
+[U.] solid                                                6.25.0 -> 6.26.0
+[U.] sonnet                                               6.25.0 -> 6.26.0
+[D.] starship.yazi                                        25.4.8-unstable-2026-03-22 -> 0-unstable-2026-03-22
+[U.] surge                                                0.8.3, 0.8.3-fish-completions -> 0.8.6, 0.8.6-fish-completions
+[U.] syndication                                          6.25.0 -> 6.26.0
+[U.] telegram-desktop                                     6.7.6, 6.7.6-fish-completions -> 6.8.1, 6.8.1-fish-completions
+[U.] tinymist                                             0.14.16 -> 0.14.18
+[D.] toggle-pane.yazi                                     25.5.31-unstable-2025-06-18 -> 0-unstable-2026-05-07
+[U.] tombi                                                0.9.24 -> 0.10.4
+[U.] ty                                                   0.0.34 -> 0.0.36
+[U.] uriparser                                            1.0.1 -> 1.0.2
+[U.] vicinae                                              0.20.15, 0.20.15-fish-completions -> 0.21.0, 0.21.0-fish-completions
+[U.] vscode                                               1.116.0, 1.116.0-fish-completions -> 1.119.0, 1.119.0-fish-completions
+[U.] vscode-extension-James-Yu-latex-workshop             10.14.1 -> 10.15.2
+[U.] vscode-extension-gemini-cli-vscode-ide-companion     0.40.1 -> 0.41.2
+[U.] vscode-extension-github-copilot-chat                 0.44.2 -> 0.45.1
+[U.] vscode-extension-jnoortheen-nix-ide                  0.5.5 -> 0.5.9
+[U.] vscode-extension-myriad-dreamin-tinymist             0.14.16 -> 0.14.18
+[U.] vscode-extension-shd101wyy-markdown-preview-enhanced 0.8.24 -> 0.8.25
+[U.] x86_energy_perf_policy                               6.18.26 -> 6.18.31
+[U.] zed-editor                                           1.0.0 -> 1.2.5
+[U.] zed-editor-wrapped                                   1.0.0, 1.0.0-fish-completions -> 1.2.5, 1.2.5-fish-completions
+
+ADDED
+[A.] bullet                                               3.25
+[A.] doxygen                                              1.16.1
+[A.] efl                                                  1.28.1
+[A.] gnome-icon-theme                                     3.12.0
+[A.] gtk+                                                 2.24.33
+[A.] gtk-engine-murrine                                   0.98.2
+[A.] humanity-icon-theme                                  0.6.16
+[A.] libspectre                                           0.2.12
+[A.] mint-x-icons                                         1.7.5
+[A.] python3.13-libevdev                                  0.13.1
+[A.] python3.13-pyudev                                    0.24.4
+[A.] spdlog                                               1.17.0
+[A.] ubuntu-themes                                        24.04
+[A.] unit-network-local-commands.service                  <none>
+[A.] unit-network.target                                  <none>
+[A.] unit-networking-scripted.target                      <none>
+[A.] unit-niri.service                                    <none>
+[A.] unit-script-network-local-commands-start             <none>
+
+REMOVED
+[R.] aws-sdk-cpp                                          1.11.647
+[R-] supergfxctl                                          5.2.7
+[R.] unit-network-local-commands.service-disabled         <none>
+[R.] unit-network-setup.service                           <none>
+[R.] unit-script-network-setup-start                      <none>
+[R.] unit-supergfxd.service                               <none>
+
+SIZE: 21.9 GiB -> 22.2 GiB
+DIFF: 381 MiB
