@@ -32,7 +32,7 @@
                     _props.hotkey-overlay-title = "Toggle Vicinae";
                 };
                 "Mod+V" = {
-                    spawn-sh = "vicinae deeplink vicinae://extensions/vicinae/clipboard/history";
+                    spawn-sh = "vicinae deeplink vicinae://launch/clipboard/history";
                     _props.hotkey-overlay-title = "Show Clipboard History";
                 };
             };
