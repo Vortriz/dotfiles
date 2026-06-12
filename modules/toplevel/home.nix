@@ -45,7 +45,7 @@
                     RUSTUP_HOME = "${dataHome}/rustup";
                 };
 
-                stateVersion = "25.11";
+                stateVersion = "26.05";
             };
         };
     };

@@ -41,7 +41,6 @@
         niri-shell = {
             url = "/mnt/HOUSE/dev/others/niri-shell";
             inputs.nixpkgs.follows = "nixpkgs";
-            inputs.quickshell.follows = "quickshell";
         };
         niri.url = "git+https://codeberg.org/bananad3v/niri-nix";
         nix-index-database = {

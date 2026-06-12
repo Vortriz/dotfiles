@@ -45,7 +45,6 @@
                             enhance-piper
                             file-extra-metadata
                             gvfs
-                            hover-after-moved
                             office
                             what-size
                             # keep-sorted end
