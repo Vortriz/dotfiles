@@ -3,6 +3,7 @@
         home.packages = with pkgs; [
             # keep-sorted start
             android-tools
+            antigravity-cli
             brightnessctl
             fzf
             gemini-cli
