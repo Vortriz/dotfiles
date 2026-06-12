@@ -6,12 +6,7 @@
     }: let
         inherit (lib') xdgAssociations;
     in {
-        programs.firefox = {
-            enable = true;
-
-            # [MARK] remove when switching to home.stateVersion 26.05
-            configPath = "${config.xdg.configHome}/mozilla/firefox";
-        };
+        programs.firefox.enable = true;
 
         xdg.mimeApps = {
             defaultApplicationPackages = [config.programs.firefox.finalPackage];
