@@ -1,11 +1,5 @@
 {inputs, ...}: {
     unify = {
-        nixos = {
-            nixpkgs.overlays = [
-                inputs.quickshell.overlays.default
-            ];
-        };
-
         home = {
             lib,
             pkgs,

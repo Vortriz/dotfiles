@@ -30,6 +30,7 @@
         };
 
         # keep-sorted start block=yes
+
         git-hooks = {
             url = "github:cachix/git-hooks.nix";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -54,10 +55,6 @@
             inputs.nixpkgs.follows = "nixpkgs";
             inputs.systems.follows = "systems";
             inputs.flake-parts.follows = "flake-parts";
-        };
-        quickshell = {
-            url = "git+https://git.outfoxxed.me/quickshell/quickshell";
-            inputs.nixpkgs.follows = "nixpkgs";
         };
         silentSDDM = {
             url = "github:uiriansan/SilentSDDM";
