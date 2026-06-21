@@ -22767,3 +22767,168 @@ REMOVED
 PATHS: 3047 -> 3037 (+2774, -2784)
 SIZE: 22.2 GiB -> 22.5 GiB
 DIFF: 298 MiB
+
+---
+
+21/06/26 06:13:36 PM IST
+<<< /nix/store/kilshvzy7rb0rxfa6hdfl7klwl5lvmmz-nixos-system-sagittarius-26.11.20260610.9ae611a
+>>> /nix/store/n5lgq0i55584fblkqsfwljvx7g59rcmq-nixos-system-sagittarius-26.11.20260616.567a49d
+
+CHANGED
+[U.] Better-BibTeX-for-Zotero                             9.0.27 -> 9.0.30, +9.75 KiB
+[U.] acpi-call                                            1.2.2-7.0.12 -> 1.2.2-7.1
+[D.] alsa-lib                                             1.2.15.3-dev, <unchanged> -> <unchanged>, -507 KiB
+[U.] aml                                                  0.3.0 -> 1.0.0, +18.4 KiB
+[U.] apache-httpd                                         2.4.67 -> 2.4.68
+[U.] attica                                               6.26.0 -> 6.27.0
+[U.] breeze-icons                                         6.26.0 -> 6.27.0, -162 KiB
+[U.] cni-plugins                                          1.9.0 -> 1.9.1, +99.3 KiB
+[C.] comma                                                +10.2 KiB
+[D*] curl                                                 8.20.0-dev, <unchanged> -> <unchanged>, -275 KiB
+[U.] deno                                                 2.8.2 -> 2.8.3, +963 KiB
+[U.] discount                                             3.0.1.2 -> 3.0.1.3
+[U.] dnsmasq                                              2.92rel2 ×2 -> 2.93 ×2, +29.7 KiB
+[U.] electron                                             40.10.2, 41.7.1 -> 40.10.3, 41.7.2
+[U.] electron-unwrapped                                   40.10.2, 41.7.1 -> 40.10.3, 41.7.2, +12.0 KiB
+[U.] fc                                                   <unchanged> -> 53-user-aliases.conf, <unchanged>
+[U.] firefox                                              151.0.4-fish-completions, 151.0.4 -> 152.0-fish-completions, 152.0, -199 KiB
+[U.] firefox-unwrapped                                    151.0.4 -> 152.0, +3.73 MiB
+[U.] frameworkintegration                                 6.26.0 -> 6.27.0
+[U.] gemini-cli                                           0.43.0-fish-completions, 0.43.0 -> 0.44.1-fish-completions, 0.44.1, -440 KiB
+[U.] gh                                                   2.93.0-fish-completions, 2.93.0 -> 2.94.0-fish-completions, 2.94.0, +340 KiB
+[U.] harper                                               2.4.0 -> 2.5.0, +133 KiB
+[C.] haruna                                               +190 KiB
+[C.] home-configuration-reference-manpage                 +16.2 KiB
+[C.] index-x86_64-linux                                   -15.7 MiB
+[C.] index-x86_64-linux-small                             -186 KiB
+[U.] initrd-linux                                         7.0.12 -> 7.1, +23.1 KiB
+[U.] jaq                                                  3.0.0 -> 3.1.0, +9.68 KiB
+[U.] karchive                                             6.26.0 -> 6.27.0
+[U.] kauth                                                6.26.0 -> 6.27.0, +18.2 KiB
+[U.] kbookmarks                                           6.26.0 -> 6.27.0
+[U.] kcmutils                                             6.26.0 -> 6.27.0, +8.30 KiB
+[U.] kcodecs                                              6.26.0 -> 6.27.0
+[U.] kcolorscheme                                         6.26.0 -> 6.27.0
+[U.] kcompletion                                          6.26.0 -> 6.27.0
+[U.] kconfig                                              6.26.0 -> 6.27.0, +20.9 KiB
+[U.] kconfigwidgets                                       6.26.0 -> 6.27.0
+[U.] kcoreaddons                                          6.26.0 -> 6.27.0, +97.0 KiB
+[U.] kcrash                                               6.26.0 -> 6.27.0
+[U.] kdbusaddons                                          6.26.0 -> 6.27.0
+[U.] kdeclarative                                         6.26.0 -> 6.27.0, -13.1 KiB
+[U.] kdoctools                                            6.26.0 -> 6.27.0
+[U.] kfilemetadata                                        6.26.0 -> 6.27.0
+[U.] kglobalaccel                                         6.26.0 -> 6.27.0
+[U.] kguiaddons                                           6.26.0 -> 6.27.0, +42.3 KiB
+[U.] ki18n                                                6.26.0 -> 6.27.0
+[U.] kiconthemes                                          6.26.0 -> 6.27.0
+[U.] kimageformats                                        6.26.0 -> 6.27.0, +111 KiB
+[U.] kio                                                  6.26.0 -> 6.27.0, +197 KiB
+[U.] kirigami                                             6.26.0 -> 6.27.0, +183 KiB
+[U.] kitemmodels                                          6.26.0 -> 6.27.0
+[U.] kitemviews                                           6.26.0 -> 6.27.0
+[U.] kitty                                                0.47.2-fish-completions, 0.47.2-terminfo, 0.47.2 -> 0.47.4-fish-completions, 0.47.4-terminfo, 0.47.4, +559 KiB
+[U.] kjobwidgets                                          6.26.0 -> 6.27.0
+[U.] knewstuff                                            6.26.0 -> 6.27.0
+[U.] knotifications                                       6.26.0 -> 6.27.0
+[U.] kpackage                                             6.26.0 -> 6.27.0
+[D.] krb5                                                 1.22.1-dev, 1.22.1, <unchanged> -> <unchanged>, -2.02 MiB
+[U.] kservice                                             6.26.0 -> 6.27.0
+[U.] ktextwidgets                                         6.26.0 -> 6.27.0
+[U.] kwallet                                              6.26.0 -> 6.27.0, +29.3 KiB
+[U.] kwidgetsaddons                                       6.26.0 -> 6.27.0, +12.5 KiB
+[U.] kwindowsystem                                        6.26.0 -> 6.27.0
+[U.] kxmlgui                                              6.26.0 -> 6.27.0, +35.4 KiB
+[D.] lcms2                                                2.18-bin, 2.18-dev, <unchanged> -> <unchanged>, -343 KiB
+[D.] libidn2                                              2.3.8-bin, 2.3.8-dev, <unchanged> -> <unchanged>, -53.2 KiB
+[D.] libinput                                             1.31.3-bin, 1.31.3-dev, <unchanged> -> <unchanged>, -1.36 MiB
+[U.] libkrun                                              1.17.4 -> 1.18.1, +772 KiB
+[U.] libkrunfw                                            5.3.0 -> 5.5.0, +128 KiB
+[U.] libnfs                                               5.0.2 -> 5.0.3, +27.2 KiB
+[D.] libpsl                                               0.21.5-dev, <unchanged> -> <unchanged>
+[D.] libraw                                               0.22.1-dev, 0.22.1, <unchanged> -> <unchanged>, -342 KiB
+[C.] libreoffice                                          -488 KiB
+[U.] libsigc++                                            3.6.0, <unchanged> -> 3.8.1, <unchanged>
+[D.] libssh2                                              1.11.1-dev, <unchanged> -> <unchanged>, -83.6 KiB
+[U.] linux                                                7.0.12-modules ×2, 7.0.12 -> 7.1-modules ×2, 7.1, +1.35 MiB
+[C.] man-cache                                            +12.0 KiB
+[U.] mediainfo.yazi                                       0-unstable-2026-06-03 -> 0-unstable-2026-06-06
+[U.] neatvnc                                              0.9.6 -> 1.0.0, +44.2 KiB
+[D*] nixos-firewall-tool                                  <none> -> 26.11
+[U.] nixos-system-sagittarius                             26.11.20260610.9ae611a -> 26.11.20260616.567a49d
+[D.] nspr                                                 4.39-dev, <unchanged> -> <unchanged>, -571 KiB
+[C.] nss                                                  3.124, 3.112.5-dev, <unchanged> -> 3.125, <unchanged>, -1.36 MiB
+[D.] openjpeg                                             2.5.4-dev, <unchanged> -> <unchanged>, -79.1 KiB
+[U.] oxygen-icons                                         6.2.0 -> 6.27.0
+[D.] poppler-glib                                         25.10.0-dev, <unchanged> -> <unchanged>, -1.68 MiB
+[C.] python3                                              3.13.13-env ×9, <unchanged> -> 3.13.13-env ×8, <unchanged>, -223 KiB
+[U.] python3.13-curl-cffi                                 0.14.0 -> 0.15.0, +204 KiB
+[U.] python3.13-cyclopts                                  4.17.0 -> 4.18.0, +16.8 KiB
+[U.] python3.13-s-tui                                     1.3.0-fish-completions, 1.3.0 -> 1.4.0-fish-completions, 1.4.0, +184 KiB
+[U.] python3.13-zipstream-ng                              1.9.0 -> 1.9.2
+[U.] qqc2-desktop-style                                   6.26.0 -> 6.27.0
+[U.] ruff                                                 0.15.16 -> 0.15.17, +514 KiB
+[D.] sdl2-compat                                          2.32.68-dev, <unchanged> -> <unchanged>, -2.43 MiB
+[U.] solid                                                6.26.0 -> 6.27.0, +22.3 KiB
+[U.] sonnet                                               6.26.0 -> 6.27.0, +15.6 KiB
+[C.] source                                               +824 KiB
+[U.] starship.yazi                                        0-unstable-2026-03-22 -> 0-unstable-2026-06-14
+[U.] syndication                                          6.26.0 -> 6.27.0
+[U.] telegram-desktop                                     6.8.1-fish-completions, 6.8.1 -> 6.8.2-fish-completions, 6.8.2, +74.4 KiB
+[U.] tinymist                                             0.14.21 -> 0.14.25, +8.48 MiB
+[U.] tombi                                                1.1.2 -> 1.1.3
+[U.] ty                                                   0.0.46 -> 0.0.49, +99.0 KiB
+[U.] vicinae                                              0.21.6-configured-fish-completions, 0.21.6-configured, 0.21.6 -> 0.21.7-configured-fish-completions, 0.21.7-configured, 0.21.7, +514 KiB
+[U.] vscode                                               1.123.0-fish-completions, 1.123.0 -> 1.124.2-fish-completions, 1.124.2, +6.41 MiB
+[U.] vscode-extension-gemini-cli-vscode-ide-companion     0.43.0 -> 0.44.1, -266 KiB
+[U.] vscode-extension-github-copilot-chat                 0.45.1 -> 0.48.1, +19.2 KiB
+[U.] vscode-extension-myriad-dreamin-tinymist             0.14.21 -> 0.14.25, -213 KiB
+[U.] vscode-extension-nefrob-vscode-just-syntax           0.10.1 -> 0.10.2
+[U.] vscode-extension-shd101wyy-markdown-preview-enhanced 0.8.27 -> 0.8.30, +1.61 MiB
+[U.] weston                                               15.0.0 -> 15.0.1
+[U.] xdg-desktop-portal-termfilechooser-unstable          2026-06-09-fish-completions, 2026-06-09 -> 2026-06-13-fish-completions, 2026-06-13
+[U.] xfsprogs                                             6.19.0-bin, 6.19.0 -> 7.0.1-bin, 7.0.1, +157 KiB
+[C.] xwayland-satellite-unstable                          -8.12 KiB
+[C.] yazi                                                 +47.6 KiB
+[U.] yt-dlp                                               2026.03.17 -> 2026.06.09, -2.36 MiB
+[U.] zed-editor                                           1.5.4 -> 1.6.3, +3.38 MiB
+[U.] zed-editor-wrapped                                   1.5.4-fish-completions, 1.5.4 -> 1.6.3-fish-completions, 1.6.3
+[U.] zotero                                               9.0.4-fish-completions, 9.0.4 -> 9.0.5-fish-completions, 9.0.5, +44.5 KiB
+
+ADDED
+[A.] antigravity-cli                                      1.0.8-fish-completions, 1.0.8, +161 MiB
+[A.] hm_.configmozillafirefoxdefault.keep                 <none>
+[A.] hm_.configmozillafirefoxdefaultuser.js               <none>
+[A.] hm_.configmozillafirefoxprofiles.ini                 <none>
+[A.] hm_hmfontconfigdefaultfonts.xml                      <none>
+[A.] hm_hmfontconfigfonts.xml                             <none>
+[A.] libfreehand                                          0.1.3, +6.03 MiB
+[A.] networkmanager.conf                                  <none>
+[A.] quickshell                                           0.3.0-fish-completions, 0.3.0, +11.1 MiB
+
+REMOVED
+[R.] bootspec                                             2.0.0, -1.89 MiB
+[R.] bullet                                               3.25, -31.1 MiB
+[R.] doxygen                                              1.16.1, -29.3 MiB
+[R.] efl                                                  1.28.1, -78.3 MiB
+[R.] gnome-icon-theme                                     3.12.0, -11.2 MiB
+[R.] gtk+                                                 2.24.33, -27.1 MiB
+[R.] gtk-engine-murrine                                   0.98.2, -310 KiB
+[R.] hm_fontconfigconf.d10hmfonts.conf                    <none>
+[R.] hm_fontconfigconf.d52hmdefaultfonts.conf             <none>
+[R.] hm_homevortriz.configmozillafirefoxdefault.keep      <none>
+[R.] hm_homevortriz.configmozillafirefoxdefaultuser.js    <none>
+[R.] hm_homevortriz.configmozillafirefoxprofiles.ini      <none>
+[R.] humanity-icon-theme                                  0.6.16, -23.9 MiB
+[R.] libspectre                                           0.2.12, -108 KiB
+[R.] mint-x-icons                                         1.7.6, -109 MiB
+[R.] python3.13-libevdev                                  0.13.1, -363 KiB
+[R.] python3.13-pyudev                                    0.24.4, -530 KiB
+[R.] quickshell-wrapped                                   0.3.0-fish-completions, 0.3.0, -11.1 MiB
+[R.] security-wrapper-pkexec-x86_64-unknown-linux-musl    <none>, -70.0 KiB
+[R.] spdlog                                               1.17.0, -661 KiB
+[R.] ubuntu-themes                                        24.04, -38.9 MiB
+
+PATHS: 3037 -> 3007 (+346, -376)
+SIZE: 22.5 GiB -> 22.3 GiB
+DIFF: -185 MiB
