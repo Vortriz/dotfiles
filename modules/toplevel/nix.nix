@@ -10,7 +10,7 @@
 
             nix = {
                 gc.automatic = false; # because nh
-                optimise.automatic = true;
+                optimise.automatic = false; # because nh
 
                 settings = {
                     # Enable flakes and new 'nix' command
@@ -45,7 +45,7 @@
                 clean = {
                     enable = true;
 
-                    extraArgs = "--keep 4 --optimise --no-gcroots";
+                    extraArgs = "--keep 4 --keep-one --cross-filesystems --optimise";
                 };
             };
 

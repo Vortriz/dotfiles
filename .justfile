@@ -46,7 +46,7 @@ system := `echo $system`
 
 [group('MAINTENANCE')]
 @gc *args:
-    nh clean all -k 4 --optimise {{ args }}
+    nh clean all --keep 1 --keep-one --cross-filesystems --optimise {{ args }}
 
 alias pf := prefetch
 
