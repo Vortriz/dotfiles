@@ -7,7 +7,7 @@
     }: {
         imports = [inputs.vicinae.homeManagerModules.default];
 
-        services.vicinae = {
+        programs.vicinae = {
             enable = true;
             package = inputs.vicinae.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
@@ -28,7 +28,7 @@
         wayland.windowManager.niri.settings = {
             binds = {
                 "Alt+Space" = {
-                    spawn-sh = "${lib.getExe config.services.vicinae.package} toggle";
+                    spawn-sh = "${lib.getExe config.programs.vicinae.package} toggle";
                     _props.hotkey-overlay-title = "Toggle Vicinae";
                 };
                 "Mod+V" = {
