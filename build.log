@@ -23168,3 +23168,22 @@ REMOVED
 PATHS: 3007 -> 3019 (+2754, -2742)
 SIZE: 22.3 GiB -> 22.7 GiB
 DIFF: +412 MiB
+
+---
+
+20/07/26 07:54:57 PM IST
+<<< /nix/store/m9kgx0g2fjz2sv1h81qnqpz87h01gadm-nixos-system-sagittarius-26.11.20260705.d407951
+>>> /nix/store/9hva177frb6br4fnqdqjpgv9l4714lck-nixos-system-sagittarius-26.11.20260705.d407951
+
+CHANGED
+[U.] libpcap                 <unchanged> -> 1.10.6, <unchanged>, +299 KiB
+
+ADDED
+[A+] cloudflare-warp         2026.3.846.0, +146 MiB
+
+REMOVED
+[R.] unit-nix-optimise.timer <none>
+
+PATHS: 3019 -> 3020 (+26, -25)
+SIZE: 22.7 GiB -> 22.9 GiB
+DIFF: +146 MiB
