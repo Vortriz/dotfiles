@@ -76,7 +76,7 @@
 
                     _children = [
                         { match._props.app-id = "obsidian"; }
-                        { match._props.app-id = "com.github.th_ch.youtube_music"; }
+                        { match._props.app-id = "com.github.th-ch.youtube-music"; }
                         { match._props.app-id = "vesktop"; }
                     ];
                 }
@@ -113,7 +113,7 @@
                     border.active-color = colors.withHashtag.base0F;
                 }
                 {
-                    _children = [ { match._props.app-id = "com.github.th_ch.youtube_music"; } ];
+                    _children = [ { match._props.app-id = "com.github.th-ch.youtube-music"; } ];
 
                     default-column-width.proportion = 0.7;
                     default-window-height.proportion = 0.7;
@@ -141,7 +141,7 @@
 
                     _children = [
                         { match._props.app-id = "firefox"; }
-                        { match._props.app-id = "com.github.th_ch.youtube_music"; }
+                        { match._props.app-id = "com.github.th-ch.youtube-music"; }
                         { match._props.app-id = "vesktop"; }
                         { match._props.app-id = "org.telegram.desktop"; }
                     ];
