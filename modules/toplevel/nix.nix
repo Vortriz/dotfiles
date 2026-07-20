@@ -1,6 +1,6 @@
-{inputs, ...}: {
+{ inputs, ... }: {
     unify = {
-        nixos = {hostConfig, ...}: {
+        nixos = { hostConfig, ... }: {
             nixpkgs = {
                 config.allowUnfree = true;
                 overlays = [
@@ -17,10 +17,15 @@
                     experimental-features = "nix-command flakes pipe-operators";
 
                     # Add myself to the trusted users
-                    trusted-users = [hostConfig.username];
+                    trusted-users = [ hostConfig.username ];
 
                     # Provide system architecture to nix
-                    system-features = ["nixos-test" "benchmark" "big-parallel" "kvm"];
+                    system-features = [
+                        "nixos-test"
+                        "benchmark"
+                        "big-parallel"
+                        "kvm"
+                    ];
 
                     warn-dirty = false;
                 };
@@ -29,7 +34,7 @@
                 registry.nixpkgs.flake = inputs.nixpkgs;
 
                 # To make sure that old nix commands use the same nixpkgs as the flake
-                nixPath = ["nixpkgs=flake:nixpkgs"];
+                nixPath = [ "nixpkgs=flake:nixpkgs" ];
 
                 # Opinionated: make flake registry and nix path match flake inputs (add more inputs if needed)
                 # registry = lib.mapAttrs (_: flake: {inherit flake;}) flakeInputs;
@@ -50,7 +55,7 @@
             };
 
             # nix-index
-            imports = [inputs.nix-index-database.homeModules.nix-index];
+            imports = [ inputs.nix-index-database.homeModules.nix-index ];
 
             programs.nix-index.enable = true;
             programs.nix-index-database.comma.enable = true;

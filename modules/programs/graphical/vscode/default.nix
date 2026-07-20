@@ -1,43 +1,45 @@
 {
-    unify.home = {
-        config,
-        pkgs,
-        ...
-    }: {
-        programs.vscode = {
-            enable = true;
+    unify.home =
+        {
+            config,
+            pkgs,
+            ...
+        }:
+        {
+            programs.vscode = {
+                enable = true;
 
-            mutableExtensionsDir = true;
+                mutableExtensionsDir = true;
 
-            profiles.default = {
-                enableUpdateCheck = false;
-                enableExtensionUpdateCheck = false;
+                profiles.default = {
+                    enableUpdateCheck = false;
+                    enableExtensionUpdateCheck = false;
 
-                userSettings =
-                    pkgs.substitute {
-                        src = ./settings.json;
-                        substitutions = [
-                            "--subst-var-by"
-                            "font-name"
-                            config.stylix.fonts.monospace.name
-                            "--subst-var-by"
-                            "shell"
-                            "fish"
-                        ];
-                    }
-                    |> builtins.readFile
-                    |> builtins.fromJSON;
+                    userSettings =
+                        pkgs.substitute {
+                            src = ./settings.json;
+                            substitutions = [
+                                "--subst-var-by"
+                                "font-name"
+                                config.stylix.fonts.monospace.name
+                                "--subst-var-by"
+                                "shell"
+                                "fish"
+                            ];
+                        }
+                        |> builtins.readFile
+                        |> builtins.fromJSON;
+                };
+            };
+
+            home.file.".vscode/argv.json".text = builtins.toJSON {
+                enable-crash-reporter = false;
+                password-store = "gnome-libsecret";
+            };
+
+            stylix.targets.vscode = {
+                enable = true;
+                profileNames = [ "default" ];
             };
         };
-
-        home.file.".vscode/argv.json".text = builtins.toJSON {
-            enable-crash-reporter = false;
-            password-store = "gnome-libsecret";
-        };
-
-        stylix.targets.vscode = {
-            enable = true;
-            profileNames = ["default"];
-        };
-    };
 }

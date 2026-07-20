@@ -1,5 +1,5 @@
 {
-    unify.home = {pkgs, ...}: {
+    unify.home = { pkgs, ... }: {
         programs.vscode.profiles.default.extensions = with pkgs.vscode-extensions; [
             # language packs et al
 

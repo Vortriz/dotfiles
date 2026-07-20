@@ -1,6 +1,8 @@
-{lib, ...}: let
+{ lib, ... }:
+let
     inherit (lib) mkOption types;
-in {
+in
+{
     unify.options = {
         dirs = {
             storage = mkOption {

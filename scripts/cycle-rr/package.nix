@@ -1,7 +1,9 @@
-{pkgs, ...}:
+{ pkgs, ... }:
 pkgs.writers.writePython3Bin "cycle-rr" {
-    libraries = [pkgs.python3Packages.desktop-notifier];
+    libraries = [ pkgs.python3Packages.desktop-notifier ];
 
-    flakeIgnore = ["F401" "E501"];
-}
-./cycle-rr.py
+    flakeIgnore = [
+        "F401"
+        "E501"
+    ];
+} ./cycle-rr.py

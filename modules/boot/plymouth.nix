@@ -1,10 +1,10 @@
 {
-    unify.nixos = {pkgs, ...}: {
+    unify.nixos = { pkgs, ... }: {
         boot = {
             plymouth = {
                 enable = true;
                 theme = "nixos";
-                themePackages = [pkgs.nixos-boot-plymouth-theme];
+                themePackages = [ pkgs.nixos-boot-plymouth-theme ];
             };
 
             # max resolution so that loader graphics look good

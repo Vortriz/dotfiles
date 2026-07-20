@@ -1,26 +1,32 @@
 {
     unify = {
         nixos = {
-            environment.pathsToLink = ["/share/xdg-desktop-portal" "/share/applications"];
+            environment.pathsToLink = [
+                "/share/xdg-desktop-portal"
+                "/share/applications"
+            ];
         };
 
-        home = {hostConfig, ...}: let
-            inherit (hostConfig.dirs) downloads;
-        in {
-            xdg = {
-                enable = true;
-                # For setting default applications
-                mimeApps.enable = true;
-
-                userDirs = {
+        home =
+            { hostConfig, ... }:
+            let
+                inherit (hostConfig.dirs) downloads;
+            in
+            {
+                xdg = {
                     enable = true;
-                    setSessionVariables = true;
+                    # For setting default applications
+                    mimeApps.enable = true;
 
-                    download = downloads;
-                    pictures = "${downloads}/media";
-                    videos = "${downloads}/media";
+                    userDirs = {
+                        enable = true;
+                        setSessionVariables = true;
+
+                        download = downloads;
+                        pictures = "${downloads}/media";
+                        videos = "${downloads}/media";
+                    };
                 };
             };
-        };
     };
 }

@@ -1,8 +1,8 @@
-{inputs, ...}: {
+{ inputs, ... }: {
     unify = {
-        nixos = {pkgs, ...}: {
-            imports = [inputs.niri.nixosModules.default];
-            nixpkgs.overlays = [inputs.niri.overlays.niri-nix];
+        nixos = { pkgs, ... }: {
+            imports = [ inputs.niri.nixosModules.default ];
+            nixpkgs.overlays = [ inputs.niri.overlays.niri-nix ];
 
             programs.niri = {
                 enable = true;
@@ -10,8 +10,8 @@
             };
         };
 
-        home = {pkgs, ...}: {
-            imports = [inputs.niri.homeModules.default];
+        home = { pkgs, ... }: {
+            imports = [ inputs.niri.homeModules.default ];
 
             wayland.windowManager.niri = {
                 enable = true;
@@ -21,7 +21,10 @@
             xdg.portal = {
                 enable = true;
                 config.niri = {
-                    default = ["gnome" "gtk"];
+                    default = [
+                        "gnome"
+                        "gtk"
+                    ];
                     "org.freedesktop.impl.portal.Access" = "gtk";
                     "org.freedesktop.impl.portal.ScreenCast" = "gnome";
                     "org.freedesktop.impl.portal.Secret" = "gnome-keyring";

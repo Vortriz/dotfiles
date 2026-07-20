@@ -41,35 +41,71 @@
                 prepend_rules = [
                     {
                         mime = "text/*";
-                        use = ["edit" "edit-with-zed" "open" "reveal" "send"];
+                        use = [
+                            "edit"
+                            "edit-with-zed"
+                            "open"
+                            "reveal"
+                            "send"
+                        ];
                     }
                     {
                         mime = "inode/empty";
-                        use = ["edit" "edit-with-zed" "open" "reveal" "send"];
+                        use = [
+                            "edit"
+                            "edit-with-zed"
+                            "open"
+                            "reveal"
+                            "send"
+                        ];
                     }
                     {
                         mime = "application/json";
-                        use = ["open" "edit" "edit-with-zed" "reveal" "send"];
+                        use = [
+                            "open"
+                            "edit"
+                            "edit-with-zed"
+                            "reveal"
+                            "send"
+                        ];
                     }
                     {
                         mime = "application/pdf";
-                        use = ["open" "reveal" "edit-doc" "send"];
+                        use = [
+                            "open"
+                            "reveal"
+                            "edit-doc"
+                            "send"
+                        ];
                     }
                     {
                         mime = "application/{*zip,*tar,*rar,x-bzip2,x-7z-compressed,x-xz}";
-                        use = ["extract" "reveal" "send"];
+                        use = [
+                            "extract"
+                            "reveal"
+                            "send"
+                        ];
                     }
                     {
                         mime = "folder/local";
-                        use = ["open" "reveal" "edit-with-zed" "send"];
+                        use = [
+                            "open"
+                            "reveal"
+                            "edit-with-zed"
+                            "send"
+                        ];
                     }
                     {
                         mime = "vfs/{absent,stale}";
-                        use = ["download"];
+                        use = [ "download" ];
                     }
                     {
                         url = "*";
-                        use = ["open" "reveal" "send"];
+                        use = [
+                            "open"
+                            "reveal"
+                            "send"
+                        ];
                     }
                 ];
             };

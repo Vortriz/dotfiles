@@ -1,10 +1,10 @@
 {
-    unify.nixos = {hostConfig, ...}: {
+    unify.nixos = { hostConfig, ... }: {
         services.openssh = {
             enable = true;
 
             settings = {
-                AllowUsers = [hostConfig.username];
+                AllowUsers = [ hostConfig.username ];
                 # Opinionated: forbid root login through SSH.
                 PermitRootLogin = "no";
                 # Opinionated: use keys only.

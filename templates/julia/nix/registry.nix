@@ -1,4 +1,4 @@
-{fetchFromGitHub}:
+{ fetchFromGitHub }:
 fetchFromGitHub {
     owner = "codedownio";
     repo = "General";

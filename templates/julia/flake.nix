@@ -23,8 +23,9 @@
         };
     };
 
-    outputs = {flake-parts, ...} @ inputs:
-        flake-parts.lib.mkFlake {inherit inputs;} {
+    outputs =
+        { flake-parts, ... }@inputs:
+        flake-parts.lib.mkFlake { inherit inputs; } {
             systems = import inputs.systems;
 
             imports = [
@@ -32,116 +33,121 @@
                 inputs.treefmt-nix.flakeModule
             ];
 
-            perSystem = {
-                lib,
-                pkgs,
-                system,
-                ...
-            }: let
-                juliaEnv = pkgs.julia.withPackages.override
+            perSystem =
                 {
-                    augmentedRegistry = pkgs.callPackage ./nix/registry.nix {};
-                }
-                [
-                    "ArgParse"
-                    "Pluto"
-                    "LanguageServer"
-                    "JuliaFormatter"
-                ];
+                    lib,
+                    pkgs,
+                    system,
+                    ...
+                }:
+                let
+                    juliaEnv =
+                        pkgs.julia.withPackages.override
+                            {
+                                augmentedRegistry = pkgs.callPackage ./nix/registry.nix { };
+                            }
+                            [
+                                "ArgParse"
+                                "Pluto"
+                                "LanguageServer"
+                                "JuliaFormatter"
+                            ];
 
-                julia = lib.getExe juliaEnv;
-            in {
-                treefmt = {
-                    programs = {
-                        deadnix.enable = true;
-                        statix.enable = true;
-                        nixfmt = {
-                            enable = true;
-                            indent = 4;
+                    julia = lib.getExe juliaEnv;
+                in
+                {
+                    treefmt = {
+                        programs = {
+                            deadnix.enable = true;
+                            statix.enable = true;
+                            nixfmt = {
+                                enable = true;
+                                indent = 4;
+                            };
+                        };
+
+                        settings.formatter = {
+                            jlfmt = {
+                                priority = 1;
+                                command = julia;
+                                options = [ "${./nix/fmt.jl}" ];
+                                includes = [ "*.jl" ];
+                            };
                         };
                     };
 
-                    settings.formatter = {
-                        jlfmt = {
-                            priority = 1;
-                            command = julia;
-                            options = ["${./nix/fmt.jl}"];
-                            includes = ["*.jl"];
+                    packages = {
+                        default = juliaEnv;
+                    };
+
+                    devshells.default = {
+                        devshell = {
+                            motd = "";
+                            name = "pluto-julia";
                         };
-                    };
-                };
 
-                packages = {
-                    default = juliaEnv;
-                };
+                        commands = [
+                            {
+                                name = "create";
+                                category = "[julia]";
+                                help = "Create Pluto notebook and run it";
+                                command = lib.getExe (
+                                    pkgs.writeScriptBin "create" ''
+                                        if [ -z "$1" ]; then
+                                            ${julia} ${./nix/create.jl} --help
+                                        else
+                                            ${julia} ${./nix/create.jl} "$1"
+                                        fi
+                                    ''
+                                );
+                            }
+                            {
+                                name = "pluto";
+                                category = "[julia]";
+                                help = "Launch Pluto";
+                                command = ''
+                                    ${julia} -e "import Pluto; Pluto.run()"
+                                '';
+                            }
+                            {
+                                name = "update-registry";
+                                category = "[julia]";
+                                help = "Update the Julia package registry used in this environment";
+                                command = lib.getExe (
+                                    pkgs.writers.writePython3Bin "update-registry" {
+                                        libraries = [ inputs.nima.packages.${system}.default ];
+                                    } ./nix/update.py
+                                );
+                            }
+                        ];
 
-                devshells.default = {
-                    devshell = {
-                        motd = "";
-                        name = "pluto-julia";
-                    };
+                        env = [
+                            {
+                                name = "JULIA_NUM_THREADS";
+                                value = "auto";
+                            }
+                            {
+                                name = "julia";
+                                value = julia;
+                            }
+                        ];
 
-                    commands = [
-                        {
-                            name = "create";
-                            category = "[julia]";
-                            help = "Create Pluto notebook and run it";
-                            command = lib.getExe (
-                                pkgs.writeScriptBin "create" ''
-                                    if [ -z "$1" ]; then
-                                        ${julia} ${./nix/create.jl} --help
-                                    else
-                                        ${julia} ${./nix/create.jl} "$1"
-                                    fi
-                                ''
-                            );
-                        }
-                        {
-                            name = "pluto";
-                            category = "[julia]";
-                            help = "Launch Pluto";
-                            command = ''
-                                ${julia} -e "import Pluto; Pluto.run()"
+                        packages = [
+                            juliaEnv
+                            pkgs.nix-prefetch-git
+                        ];
+
+                        devshell.startup.default.text =
+                            let
+                                projectPath = "${juliaEnv.projectAndDepot.outPath}/project";
+                            in
+                            ''
+                                rm -f Project.toml
+                                ln -sf ${projectPath}/Project.toml $PRJ_ROOT/
+                                rm -f Manifest.toml
+                                ln -sf ${projectPath}/Manifest.toml $PRJ_ROOT/
                             '';
-                        }
-                        {
-                            name = "update-registry";
-                            category = "[julia]";
-                            help = "Update the Julia package registry used in this environment";
-                            command = lib.getExe (
-                                pkgs.writers.writePython3Bin "update-registry" {
-                                    libraries = [inputs.nima.packages.${system}.default];
-                                }
-                                ./nix/update.py
-                            );
-                        }
-                    ];
-
-                    env = [
-                        {
-                            name = "JULIA_NUM_THREADS";
-                            value = "auto";
-                        }
-                        {
-                            name = "julia";
-                            value = julia;
-                        }
-                    ];
-
-                    packages = [
-                        juliaEnv
-                        pkgs.nix-prefetch-git
-                    ];
-
-                    devshell.startup.default.text = let
-                        projectPath = "${juliaEnv.projectAndDepot.outPath}/project";
-                    in ''
-                        rm -f Project.toml
-                        ln -sf ${projectPath}/Project.toml $PRJ_ROOT/
-                        rm -f Manifest.toml
-                        ln -sf ${projectPath}/Manifest.toml $PRJ_ROOT/
-                    '';
+                    };
                 };
-            };
         };
 }

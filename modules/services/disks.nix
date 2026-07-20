@@ -1,5 +1,5 @@
 {
-    unify.nixos = {pkgs, ...}: {
+    unify.nixos = { pkgs, ... }: {
         services = {
             # Auto mounting
             udisks2.enable = true;

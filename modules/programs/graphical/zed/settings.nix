@@ -1,84 +1,99 @@
 {
-    unify.home = {
-        lib,
-        config,
-        pkgs,
-        ...
-    }: let
-        fontName = lib.mkForce config.stylix.fonts.monospace.name;
-        fontSize = lib.mkForce 18;
-    in {
-        programs.zed-editor = {
-            mutableUserSettings = false;
+    unify.home =
+        {
+            lib,
+            config,
+            pkgs,
+            ...
+        }:
+        let
+            fontName = lib.mkForce config.stylix.fonts.monospace.name;
+            fontSize = lib.mkForce 18;
+        in
+        {
+            programs.zed-editor = {
+                mutableUserSettings = false;
 
-            userSettings = {
-                # keep-sorted start block=yes
-                agent = {
-                    default_model = {
-                        provider = "copilot";
-                        model = "gpt-4.1";
+                userSettings = {
+                    # keep-sorted start block=yes
+                    agent = {
+                        default_model = {
+                            provider = "copilot";
+                            model = "gpt-4.1";
+                        };
+                        dock = "right";
+                        sidebar_side = "right";
                     };
-                    dock = "right";
-                    sidebar_side = "right";
-                };
-                agent_servers.gemini.type = "registry";
-                auto_update = false;
-                buffer_font_family = fontName;
-                buffer_font_size = fontSize;
-                context_servers = {
-                    nixos = {
-                        command = lib.getExe pkgs.mcp-nixos;
-                        args = [];
-                    };
-                };
-                cursor_shape = "bar";
-                edit_predictions.provider = "copilot";
-                git.inline_blame.enabled = false;
-                git_panel.dock = "left";
-                icon_theme = "Modern Icons (Dark)";
-                languages = {
-                    Nix = {
-                        format_on_save = "on";
-                        language_servers = ["nixd" "nil"];
-                        formatter.external = {
-                            command = "nix";
-                            arguments = ["fmt" "--" "--stdin" "{buffer_path}"];
+                    agent_servers.gemini.type = "registry";
+                    auto_update = false;
+                    buffer_font_family = fontName;
+                    buffer_font_size = fontSize;
+                    context_servers = {
+                        nixos = {
+                            command = lib.getExe pkgs.mcp-nixos;
+                            args = [ ];
                         };
                     };
-                    Python = {
-                        format_on_save = "off";
-                        language_servers = ["ruff" "ty" "!basedpyright"];
-                    };
-                };
-                load_direnv = "direct";
-                minimap = {
-                    show = "always";
-                    thumb = "always";
-                };
-                node = {
-                    path = lib.getExe pkgs.nodejs_latest;
-                    npm_path = lib.getExe' pkgs.nodejs_latest "npm";
-                };
-                tab_size = 4;
-                tabs = {
-                    file_icons = true;
-                    git_status = true;
-                };
-                terminal = {
-                    detect_venv.on.activate_script = "fish";
                     cursor_shape = "bar";
-                    toolbar.breadcrumbs = false;
-                    line_height = "comfortable";
+                    edit_predictions.provider = "copilot";
+                    git.inline_blame.enabled = false;
+                    git_panel.dock = "left";
+                    icon_theme = "Modern Icons (Dark)";
+                    languages = {
+                        Nix = {
+                            format_on_save = "on";
+                            language_servers = [
+                                "nixd"
+                                "nil"
+                            ];
+                            formatter.external = {
+                                command = "nix";
+                                arguments = [
+                                    "fmt"
+                                    "--"
+                                    "--stdin"
+                                    "{buffer_path}"
+                                ];
+                            };
+                        };
+                        Python = {
+                            format_on_save = "off";
+                            language_servers = [
+                                "ruff"
+                                "ty"
+                                "!basedpyright"
+                            ];
+                        };
+                    };
+                    load_direnv = "direct";
+                    minimap = {
+                        show = "always";
+                        thumb = "always";
+                    };
+                    node = {
+                        path = lib.getExe pkgs.nodejs_latest;
+                        npm_path = lib.getExe' pkgs.nodejs_latest "npm";
+                    };
+                    tab_size = 4;
+                    tabs = {
+                        file_icons = true;
+                        git_status = true;
+                    };
+                    terminal = {
+                        detect_venv.on.activate_script = "fish";
+                        cursor_shape = "bar";
+                        toolbar.breadcrumbs = false;
+                        line_height = "comfortable";
+                    };
+                    ui_font_family = fontName;
+                    ui_font_size = fontSize;
+                    unnecessary_code_fade = 0.5;
+                    use_smartcase_search = true;
+                    theme = "Custom Dark";
+                    project_panel.dock = "left";
+                    outline_panel.dock = "left";
+                    # keep-sorted end
                 };
-                ui_font_family = fontName;
-                ui_font_size = fontSize;
-                unnecessary_code_fade = 0.5;
-                use_smartcase_search = true;
-                theme = "Custom Dark";
-                project_panel.dock = "left";
-                outline_panel.dock = "left";
-                # keep-sorted end
             };
         };
-    };
 }

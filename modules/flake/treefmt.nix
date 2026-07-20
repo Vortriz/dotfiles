@@ -1,4 +1,4 @@
-{inputs, ...}: {
+{ inputs, ... }: {
     imports = [
         inputs.treefmt-nix.flakeModule
     ];
@@ -9,7 +9,10 @@
             projectRootFile = "LICENSE";
 
             programs = {
-                alejandra.enable = true;
+                nixfmt = {
+                    enable = true;
+                    indent = 4;
+                };
                 deadnix.enable = true;
                 statix.enable = true;
                 biome = {
@@ -28,14 +31,9 @@
             settings = {
                 formatter = {
                     # nix
-                    alejandra = {
-                        options = ["--threads" "16"];
-                        priority = 3;
-                    };
-
                     deadnix.priority = 1;
-
                     statix.priority = 2;
+                    nixfmt.priority = 3;
                 };
             };
         };

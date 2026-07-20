@@ -1,6 +1,6 @@
 {
     unify = {
-        nixos = {pkgs, ...}: {
+        nixos = { pkgs, ... }: {
             environment.systemPackages = with pkgs; [
                 # keep-sorted start
                 asusctl

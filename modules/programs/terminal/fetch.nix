@@ -1,5 +1,5 @@
 {
-    unify.home = {pkgs, ...}: {
+    unify.home = { pkgs, ... }: {
         programs.fastfetch = {
             enable = true;
             settings = {
@@ -120,6 +120,6 @@
             };
         };
 
-        home.packages = [pkgs.dunefetch];
+        home.packages = [ pkgs.dunefetch ];
     };
 }

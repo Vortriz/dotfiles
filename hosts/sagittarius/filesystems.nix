@@ -14,7 +14,7 @@
             fileSystems."/mnt/HOUSE" = {
                 device = "/dev/disk/by-label/HOUSE";
                 fsType = "btrfs";
-                options = ["rw"];
+                options = [ "rw" ];
             };
 
             swapDevices = [

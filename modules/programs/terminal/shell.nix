@@ -1,30 +1,38 @@
 {
     unify = {
-        nixos = {
-            hostConfig,
-            pkgs,
-            ...
-        }: {
-            programs.fish.enable = true;
+        nixos =
+            {
+                hostConfig,
+                pkgs,
+                ...
+            }:
+            {
+                programs.fish.enable = true;
 
-            users.users.${hostConfig.username}.shell = pkgs.fish;
-        };
+                users.users.${hostConfig.username}.shell = pkgs.fish;
+            };
 
-        home = {pkgs, ...}: {
+        home = { pkgs, ... }: {
             programs.fish = {
                 enable = true;
 
-                plugins = map (plugin: {
-                    name = plugin.pname;
-                    inherit (plugin) src;
-                }) (with pkgs.fishPlugins; [
-                    autopair
-                    colored-man-pages
-                    fish-bd
-                    fzf-fish
-                    puffer
-                    sponge
-                ]);
+                plugins =
+                    map
+                        (plugin: {
+                            name = plugin.pname;
+                            inherit (plugin) src;
+                        })
+                        (
+                            with pkgs.fishPlugins;
+                            [
+                                autopair
+                                colored-man-pages
+                                fish-bd
+                                fzf-fish
+                                puffer
+                                sponge
+                            ]
+                        );
             };
 
             home.sessionVariables = {

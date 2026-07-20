@@ -2,7 +2,8 @@
     lib,
     pkgs,
     ...
-}: let
+}:
+let
     img-process = pkgs.writers.writePython3Bin "img-process" {
         libraries = with pkgs.python3Packages; [
             pillow
@@ -13,10 +14,9 @@
             "F401"
             "E501"
         ];
-    }
-    ./process.py;
+    } ./process.py;
 in
-    pkgs.writers.writeFishBin "oimg"
+pkgs.writers.writeFishBin "oimg"
     {
         makeWrapperArgs = [
             "--prefix"

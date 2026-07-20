@@ -1,13 +1,13 @@
-{inputs, ...}: {
+{ inputs, ... }: {
     imports = [
         inputs.git-hooks.flakeModule
     ];
 
-    perSystem = {self', ...}: {
+    perSystem = { self', ... }: {
         pre-commit.settings.hooks = {
             flake-checker = {
                 enable = true;
-                after = ["treefmt-nix"];
+                after = [ "treefmt-nix" ];
             };
             treefmt = {
                 enable = true;

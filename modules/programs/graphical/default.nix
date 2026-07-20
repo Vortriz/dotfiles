@@ -1,5 +1,5 @@
 {
-    unify.home = {pkgs, ...}: {
+    unify.home = { pkgs, ... }: {
         home.packages = with pkgs; [
             # keep-sorted start
             # (bottles.override {removeWarningPopup = true;})

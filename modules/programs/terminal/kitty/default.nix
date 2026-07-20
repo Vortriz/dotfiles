@@ -1,46 +1,50 @@
 {
-    unify.home = {
-        lib,
-        lib',
-        pkgs,
-        ...
-    }: let
-        inherit (lib') xdgAssociations;
-    in {
-        programs.kitty = {
-            enable = true;
-
-            settings = {
-                window_padding_width = 8;
-                confirm_os_window_close = 0;
-                "mouse_map left click" = "ungrabbed mouse_handle_click prompt";
-                "mouse_map ctrl+left click" = "ungrabbed mouse_handle_click link";
-                "map ctrl+shift+left" = "no_op";
-                "map ctrl+shift+right" = "no_op";
-                "map ctrl+t" = "new_tab";
-                "map ctrl+w" = "close_tab";
-            };
-        };
-
-        xdg.terminal-exec = {
-            enable = true;
-            settings.default = ["kitty.desktop"];
-        };
-
-        xdg.mimeApps.associations.added = let
-            terminal = "kitty.desktop";
+    unify.home =
+        {
+            lib,
+            lib',
+            pkgs,
+            ...
+        }:
+        let
+            inherit (lib') xdgAssociations;
         in
-            xdgAssociations terminal "x-scheme-handler" [
-                "terminal"
-            ];
+        {
+            programs.kitty = {
+                enable = true;
 
-        stylix.targets.kitty.enable = true;
+                settings = {
+                    window_padding_width = 8;
+                    confirm_os_window_close = 0;
+                    "mouse_map left click" = "ungrabbed mouse_handle_click prompt";
+                    "mouse_map ctrl+left click" = "ungrabbed mouse_handle_click link";
+                    "map ctrl+shift+left" = "no_op";
+                    "map ctrl+shift+right" = "no_op";
+                    "map ctrl+t" = "new_tab";
+                    "map ctrl+w" = "close_tab";
+                };
+            };
 
-        wayland.windowManager.niri.settings.binds = {
-            "Mod+T" = {
-                spawn-sh = "${lib.getExe pkgs.kitty}";
-                _props.hotkey-overlay-title = "Open Kitty Terminal";
+            xdg.terminal-exec = {
+                enable = true;
+                settings.default = [ "kitty.desktop" ];
+            };
+
+            xdg.mimeApps.associations.added =
+                let
+                    terminal = "kitty.desktop";
+                in
+                xdgAssociations terminal "x-scheme-handler" [
+                    "terminal"
+                ];
+
+            stylix.targets.kitty.enable = true;
+
+            wayland.windowManager.niri.settings.binds = {
+                "Mod+T" = {
+                    spawn-sh = "${lib.getExe pkgs.kitty}";
+                    _props.hotkey-overlay-title = "Open Kitty Terminal";
+                };
             };
         };
-    };
 }

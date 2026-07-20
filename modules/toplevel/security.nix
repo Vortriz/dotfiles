@@ -6,7 +6,7 @@
 
             pam.services = {
                 login.enableGnomeKeyring = true;
-                hyprlock = {};
+                hyprlock = { };
             };
 
             # oxidizing sudo

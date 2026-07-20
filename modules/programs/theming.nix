@@ -1,7 +1,7 @@
-{inputs, ...}: {
+{ inputs, ... }: {
     unify = {
-        nixos = {pkgs, ...}: {
-            imports = [inputs.stylix.nixosModules.stylix];
+        nixos = { pkgs, ... }: {
+            imports = [ inputs.stylix.nixosModules.stylix ];
 
             stylix = {
                 enable = true;
@@ -65,7 +65,7 @@
             };
         };
 
-        home = {pkgs, ...}: {
+        home = { pkgs, ... }: {
             stylix = {
                 enable = true;
                 autoEnable = false;
