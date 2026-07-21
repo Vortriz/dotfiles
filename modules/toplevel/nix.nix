@@ -1,6 +1,6 @@
 { inputs, ... }: {
     unify = {
-        nixos = { hostConfig, ... }: {
+        nixos = { hostConfig, pkgs, ... }: {
             nixpkgs = {
                 config.allowUnfree = true;
                 overlays = [
@@ -9,6 +9,8 @@
             };
 
             nix = {
+                package = pkgs.nixVersions.latest;
+
                 gc.automatic = false; # because nh
                 optimise.automatic = false; # because nh
 
