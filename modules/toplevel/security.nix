@@ -12,6 +12,9 @@
             # oxidizing sudo
             sudo-rs.enable = true;
             sudo.enable = false;
+
+            # to make wihotspot work
+            polkit.enablePkexecWrapper = true;
         };
     };
 }
