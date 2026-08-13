@@ -55,7 +55,7 @@
         ]
     },
     "explorer.confirmDragAndDrop": false,
-    "extensions.autoUpdate": false,
+    "extensions.autoUpdate": "off",
     "files.trimTrailingWhitespace": true,
     "git.confirmSync": false,
     "github.copilot.enable": {
