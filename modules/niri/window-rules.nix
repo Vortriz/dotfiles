@@ -36,7 +36,7 @@
                         { match._props.app-id = "yazi"; }
                         { match._props.app-id = "org.kde.haruna"; }
                         { match._props.app-id = "code"; }
-                        { match._props.app-id = "obsidian"; }
+                        { match._props.app-id = "md.Obsidian"; }
                         { match._props.app-id = "sioyek"; }
                         { match._props.app-id = "Zotero"; }
                         { match._props.app-id = "dev.zed.Zed"; }
@@ -75,7 +75,7 @@
                     scroll-factor = 0.4;
 
                     _children = [
-                        { match._props.app-id = "obsidian"; }
+                        { match._props.app-id = "md.Obsidian"; }
                         { match._props.app-id = "com.github.th-ch.youtube-music"; }
                         { match._props.app-id = "vesktop"; }
                     ];
@@ -130,7 +130,7 @@
                     open-focused = true;
 
                     _children = [
-                        { match._props.app-id = "obsidian"; }
+                        { match._props.app-id = "md.Obsidian"; }
                         { match._props.app-id = "sioyek"; }
                         { match._props.app-id = "Zotero"; }
                     ];
