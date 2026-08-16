@@ -12,6 +12,7 @@
                 with pkgs;
                 [
                     # keep-sorted start block=yes
+                    corefonts
                     font-awesome
                     hanken-grotesk
                     inter
