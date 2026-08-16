@@ -32,7 +32,7 @@
                             smart-filter
                             starship
                             toggle-pane
-                            # zoom # [MARK] wait for nixpkgs to add it
+                            zoom
                             # keep-sorted end
                             ;
                     }
@@ -241,16 +241,16 @@
                         }
 
                         # zoom
-                        # {
-                        #     on = "+";
-                        #     run = "plugin zoom 1";
-                        #     desc = "Zoom in hovered file";
-                        # }
-                        # {
-                        #     on = "-";
-                        #     run = "plugin zoom -1";
-                        #     desc = "Zoom out hovered file";
-                        # }
+                        {
+                            on = "+";
+                            run = "plugin zoom 1";
+                            desc = "Zoom in hovered file";
+                        }
+                        {
+                            on = "-";
+                            run = "plugin zoom -1";
+                            desc = "Zoom out hovered file";
+                        }
                     ];
 
                     extraPackages = with pkgs; [

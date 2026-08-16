@@ -7,8 +7,8 @@
             };
 
             preview = {
-                max_width = 1000;
-                max_height = 1000;
+                max_width = 2000;
+                max_height = 2000;
             };
 
             opener = {
