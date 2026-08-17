@@ -23595,3 +23595,240 @@ REMOVED
 PATHS: 3006 -> 3005 (+2732, -2733)
 SIZE: 24.6 GiB -> 24.2 GiB
 DIFF: -401 MiB
+
+---
+
+18/08/26 02:14:45 AM IST
+<<< /nix/store/jlx4ck2yx85sxyi5q893f90a3gljjs2z-nixos-system-sagittarius-26.11.20260802.6438090
+>>> /nix/store/0v14xizn2hhgi8qjk62mp8xd47rz6dq0-nixos-system-sagittarius-26.11.20260816.e5bdc4a
+
+CHANGED
+[U.] Better-BibTeX-for-Zotero                         9.0.47 -> 9.0.55
+[U.] ZotMoov                                          1.2.29 -> 1.2.32
+[U.] aardvark-dns                                     2.0.0 -> 2.1.0, -22.6 KiB
+[C.] abseil-cpp                                       20260107.1 ×2, <unchanged> -> 20260107.1 ×3, <unchanged>, +3.35 MiB
+[U.] acpi-call                                        1.2.2-7.1.5 -> 1.2.2-7.1.8
+[U.] antigravity-cli                                  1.1.8-fish-completions, 1.1.8 -> 1.1.13-fish-completions, 1.1.13, +15.9 MiB
+[C.] apache-httpd                                     +20.6 KiB
+[C.] assimp                                           +12.1 KiB
+[C.] astro-language-server                            +65.6 KiB
+[C*] asusctl                                          -14.3 KiB
+[U.] at-spi2-core                                     2.60.4-dev, 2.60.4, <unchanged> -> 2.60.6-dev, 2.60.6, <unchanged>
+[U.] attica                                           6.28.0 -> 6.29.0
+[U.] audit                                            4.2-lib ×2, <unchanged> -> 4.2.1-lib ×2, <unchanged>
+[U.] bcachefs-tools                                   1.38.8 -> 1.39.1, +1.05 MiB
+[U*] bluez                                            5.86_fish-completions, 5.86 ×2 -> 5.87_fish-completions, 5.87 ×2, -1.10 MiB
+[U.] breeze                                           6.7.3 -> 6.7.4
+[U.] breeze-icons                                     6.28.0 -> 6.29.0, +9.98 KiB
+[C.] colord                                           +32.0 KiB
+[U.] custom-shell.yazi-unstable                       2026-07-11 -> 2026-08-07, +19.8 KiB
+[C.] deno                                             -8.11 KiB
+[U.] doi2bib3                                         1.4.0-fish-completions, 1.4.0 -> 1.6.0-fish-completions, 1.6.0, +39.5 KiB
+[U*] exfatprogs                                       1.4.2-man, 1.4.2 -> 1.4.3-man, 1.4.3
+[U.] fastfetch                                        2.66.0-fish-completions, 2.66.0-man, 2.66.0 -> 2.67.0-fish-completions, 2.67.0-man, 2.67.0
+[U.] fastfetch-unwrapped                              2.66.0-man, 2.66.0 -> 2.67.0-man, 2.67.0, -41.2 KiB
+[C.] fc-cache                                         +176 KiB
+[U.] ffmpeg                                           7.1.5-data, 7.1.5-lib, 8.1.2-bin, <unchanged> -> 9.0-data, 9.0-lib, 9.0-bin, <unchanged>, +5.44 MiB
+[U.] ffmpeg-full                                      8.1.2-bin, 8.1.2-data, 8.1.2-fish-completions, 8.1.2-lib, 8.1.2-man -> 9.0-bin, 9.0-data, 9.0-fish-completions, 9.0-lib, 9.0-man, +170 KiB
+[U.] ffmpeg-headless                                  8.1.2-bin, 8.1.2-data ×2, 8.1.2-lib ×2 -> 9.0-bin, 9.0-data ×2, 9.0-lib ×2, 8.1.2-data, 8.1.2-lib, +34.3 MiB
+[U.] file-extra-metadata.yazi-unstable                2026-07-13 -> 2026-08-09
+[U.] firefox                                          153.0.1-fish-completions, 153.0.1 -> 153.0.4-fish-completions, 153.0.4
+[U.] firefox-unwrapped                                153.0.1 -> 153.0.4, +119 KiB
+[C.] firmware                                         +19.9 KiB
+[U.] flatpak                                          1.18.0 -> 1.18.1, +35.0 KiB
+[U.] fmt                                              12.1.0 -> 12.2.0, +13.6 KiB
+[U.] frameworkintegration                             6.28.0 -> 6.29.0
+[U.] frei0r-plugins                                   2.5.1 -> 3.2.1, +3.24 MiB
+[U*] fresh                                            0.4.5 -> 0.4.6, +459 KiB
+[U.] gcc                                              16.1.0-lib, 16.1.0-libgcc, <unchanged> -> 16.2.0-lib, 16.2.0-libgcc, <unchanged>
+[U.] gdk-pixbuf                                       2.44.6-dev, 2.44.6, <unchanged> -> 2.44.7-dev, 2.44.7, <unchanged>, +30.7 KiB
+[U.] gexiv2                                           0.16.0 -> 0.16.2
+[U.] gjs                                              1.88.0 -> 1.88.1
+[U.] glib                                             2.88.1-bin, 2.88.1-dev, 2.88.1-fish-completions, 2.88.1 ×2, <unchanged> -> 2.88.3-bin, 2.88.3-dev, 2.88.3-fish-completions, 2.88.3 ×2, <unchanged>, +59.3 KiB
+[U.] glibmm                                           2.88.0, <unchanged> -> 2.88.1, <unchanged>
+[U.] glow                                             2.1.2 -> 3.0.0, +698 KiB
+[U.] glslang                                          16.3.0 -> 16.4.0, +280 KiB
+[U.] glycin-loaders                                   2.1.1 -> 2.1.5
+[C.] gnome-settings-daemon                            -68.8 KiB
+[C.] gst-plugins-base                                 -75.2 KiB
+[U*] gvfs                                             1.60.1 ×2 -> 1.60.2 ×2, +9.66 KiB
+[U.] gvfs.yazi-unstable                               2026-07-23 -> 2026-08-09
+[U.] harper                                           2.7.0 -> 2.8.0, -6.59 MiB
+[C.] home-configuration-reference-manpage             +19.4 KiB
+[U.] hwdata                                           0.409 ×2, <unchanged> -> 0.410 ×2, <unchanged>, +71.4 KiB
+[C.] hyprlock                                         +8.91 KiB
+[U.] hyprutils                                        0.14.0 -> 0.14.1, +49.7 KiB
+[C.] index-x86_64-linux                               +4.48 MiB
+[C.] index-x86_64-linux-small                         +33.5 KiB
+[U.] initrd-linux                                     7.1.5 -> 7.1.8, +65.3 KiB
+[U.] intel-gmmlib                                     22.10.0 ×2 -> 22.10.1 ×2
+[C.] intel-graphics-compiler                          +46.8 KiB
+[U.] intel-media-driver                               26.1.6 ×2 -> 26.2.4 ×2, +2.09 MiB
+[C*] iputils                                          20250605 ×2, <unchanged> -> 20250605, <unchanged>, -694 KiB
+[U.] jaq                                              3.1.0 -> 3.1.1, +112 KiB
+[U.] just                                             1.57.0-fish-completions, 1.57.0-man, 1.57.0 -> 1.58.0-fish-completions, 1.58.0-man, 1.58.0
+[U.] just-lsp                                         0.5.1 -> 0.6.1, +125 KiB
+[U.] karchive                                         6.28.0 -> 6.29.0, +25.0 KiB
+[U.] kauth                                            6.28.0 -> 6.29.0
+[U.] kbookmarks                                       6.28.0 -> 6.29.0
+[U.] kcmutils                                         6.28.0 -> 6.29.0, +8.74 KiB
+[U.] kcodecs                                          6.28.0 -> 6.29.0, +204 KiB
+[U.] kcolorscheme                                     6.28.0 -> 6.29.0
+[U.] kcompletion                                      6.28.0 -> 6.29.0
+[U.] kconfig                                          6.28.0 -> 6.29.0, +23.2 KiB
+[U.] kconfigwidgets                                   6.28.0 -> 6.29.0
+[U.] kcoreaddons                                      6.28.0 -> 6.29.0, +28.5 KiB
+[U.] kcrash                                           6.28.0 -> 6.29.0
+[U.] kdbusaddons                                      6.28.0 -> 6.29.0
+[U.] kdeclarative                                     6.28.0 -> 6.29.0
+[U.] kdecoration                                      6.7.3 -> 6.7.4
+[U.] kdoctools                                        6.28.0 -> 6.29.0
+[U.] kfilemetadata                                    6.28.0 -> 6.29.0
+[U.] kglobalaccel                                     6.28.0 -> 6.29.0
+[U.] kguiaddons                                       6.28.0 -> 6.29.0
+[U.] ki18n                                            6.28.0 -> 6.29.0, +8.34 KiB
+[U.] kiconthemes                                      6.28.0 -> 6.29.0
+[U.] kimageformats                                    6.28.0 -> 6.29.0, +52.7 KiB
+[U.] kio                                              6.28.0 -> 6.29.0, +76.0 KiB
+[U.] kirigami                                         6.28.0 -> 6.29.0
+[U.] kitemmodels                                      6.28.0 -> 6.29.0
+[U.] kitemviews                                       6.28.0 -> 6.29.0
+[C.] kitty                                            +55.2 KiB
+[U.] kjobwidgets                                      6.28.0 -> 6.29.0
+[U.] knewstuff                                        6.28.0 -> 6.29.0, +11.5 KiB
+[U.] knotifications                                   6.28.0 -> 6.29.0, -55.5 KiB
+[U.] kpackage                                         6.28.0 -> 6.29.0
+[U.] kservice                                         6.28.0 -> 6.29.0
+[U.] ktextwidgets                                     6.28.0 -> 6.29.0
+[U.] kwallet                                          6.28.0 -> 6.29.0, -23.9 KiB
+[U.] kwidgetsaddons                                   6.28.0 -> 6.29.0, +13.4 KiB
+[U.] kwindowsystem                                    6.28.0 -> 6.29.0
+[U.] kxmlgui                                          6.28.0 -> 6.29.0
+[U.] layer-shell-qt                                   6.7.3, <unchanged> -> 6.7.4, <unchanged>
+[U.] lcevcdec                                         4.2.0-lib -> 4.2.1-lib, +23.7 KiB
+[U.] lerc                                             4.1.1-dev, 4.1.1 ×2, <unchanged> -> 4.2.0-dev, 4.2.0 ×2, <unchanged>
+[U.] libadwaita                                       1.9.2 -> 1.9.3
+[D.] libdisplay-info                                  0.2.0, <unchanged> -> <unchanged>, -384 KiB
+[U.] libfprint                                        1.94.10 -> 1.94.100, +4.40 MiB
+[U.] libglycin                                        2.1.1 -> 2.1.5
+[U.] libglycin-gtk4                                   2.1.1 -> 2.1.5
+[U.] libmpg123                                        1.33.6 ×2 -> 1.33.7 ×2
+[U.] libraqm                                          0.10.5 -> 0.11.0, +12.3 KiB
+[U.] libssh                                           0.12.1 ×2 -> 0.12.2 ×2
+[U.] libtraceevent                                    1.9 -> 1.9.0
+[U.] libva                                            2.24.0 ×2 -> 2.24.1 ×2
+[U.] libva-minimal                                    2.24.0 ×2 -> 2.24.1 ×2
+[U.] libxfont_2                                       2.0.8 -> 2.0.9, -54.3 KiB
+[U.] linux                                            7.1.5-modules ×2, 7.1.5 -> 7.1.8-modules ×2, 7.1.8, -18.0 KiB
+[U.] linux-firmware                                   20260622-zstd -> 20260810-zstd, +12.1 MiB
+[U.] llhttp                                           9.4.2-dev, 9.4.2, <unchanged> -> 9.4.3-dev, 9.4.3, <unchanged>
+[U.] lua-language-server                              3.18.2 -> 3.19.1, +70.0 KiB
+[U.] mcp-nixos                                        2.4.3 -> 3.0.0, +90.3 KiB
+[U.] mesa                                             26.1.6 ×2 -> 26.2.0 ×2, +15.1 MiB
+[C*] modemmanager                                     -9.72 KiB
+[U.] mpg123                                           1.33.6 ×2 -> 1.33.7 ×2
+[U*] nano                                             9.1-man, 9.1 -> 9.2-man, 9.2, +9.40 KiB
+[U.] nerd-fonts-fira-code                             3.4.0+6.2 -> 3.5.0+6.2, +1.15 MiB
+[U.] nerd-fonts-jetbrains-mono                        3.4.0+2.304 -> 3.5.0+2.304, +5.86 MiB
+[U*] networkmanager                                   1.56.0-fish-completions, 1.56.0-man, 1.56.0 ×2 -> 1.58.0-fish-completions, 1.58.0-man, 1.58.0 ×2, +4.62 MiB
+[U*] niri-unstable                                    2026-08-02-feb3e43-fish-completions, 2026-08-02-feb3e43 -> 2026-08-14-6062844-fish-completions, 2026-08-14-6062844, +1.22 MiB
+[U*] nix                                              2.35.1-man, 2.35.1 ×2, <unchanged> -> 2.35.2-man, 2.35.2 ×2, <unchanged>
+[U.] nix-cmd                                          2.35.1, <unchanged> -> 2.35.2, <unchanged>
+[U.] nix-direnv                                       3.1.2 -> 3.2.0
+[U.] nix-expr                                         2.35.1, <unchanged> -> 2.35.2, <unchanged>
+[U.] nix-fetchers                                     2.35.1, <unchanged> -> 2.35.2, <unchanged>
+[U.] nix-flake                                        2.35.1, <unchanged> -> 2.35.2, <unchanged>
+[U.] nix-main                                         2.35.1, <unchanged> -> 2.35.2, <unchanged>
+[U.] nix-manual                                       2.35.1-man -> 2.35.2-man
+[U.] nix-nswrapper                                    2.35.1, <unchanged> -> 2.35.2, <unchanged>
+[U.] nix-store                                        2.35.1, <unchanged> -> 2.35.2, <unchanged>
+[U.] nix-util                                         2.35.1, <unchanged> -> 2.35.2, <unchanged>
+[C*] nixos-configuration-reference-manpage            +13.4 KiB
+[U.] nixos-system-sagittarius                         26.11.20260802.6438090 -> 26.11.20260816.e5bdc4a
+[C.] nodejs                                           24.18.1, 26.5.1, 22.23.2, <unchanged> -> 24.19.0, 26.7.0, <unchanged>, -840 KiB
+[C.] nodejs-slim                                      24.18.1-corepack, 24.18.1-npm, 24.18.1, 26.5.1-npm, 26.5.1, 22.23.2-corepack, 22.23.2-npm, 22.23.2, <unchanged> -> 24.19.0-corepack, 24.19.0-npm, 24.19.0, 26.7.0-npm, 26.7.0, <unchanged>, -94.5 MiB
+[U.] nss                                              3.126, <unchanged> -> 3.127, <unchanged>
+[C.] onlyoffice-desktopeditors                        -10.5 KiB
+[U.] openvino                                         2026.2.1-lib -> 2026.3.0-lib, +3.24 MiB
+[U.] oxygen-icons                                     6.28.0 -> 6.29.0, +1.02 MiB
+[C.] pandoc-cli                                       -52.0 KiB
+[U.] pangomm                                          2.56.1 -> 2.56.2
+[C*] perl                                             5.42.0-env ×3, <unchanged> -> 5.42.0-env ×4, <unchanged>, +642 KiB
+[U.] piper.yazi                                       0-unstable-2026-07-05 -> 0-unstable-2026-08-02
+[U.] publicsuffix-list                                0-unstable-2026-06-24 ×2, <unchanged> -> 0-unstable-2026-07-25 ×2, <unchanged>
+[U.] python3                                          3.14.6-env ×9, 3.14.6 ×2 -> 3.14.7-env ×9, 3.14.7 ×2, +1.02 MiB
+[U.] python3.14-cryptography                          49.0.0 -> 50.0.0, +88.3 KiB
+[U.] python3.14-cyclopts                              4.20.0 -> 4.22.5, +47.1 KiB
+[U.] python3.14-fastmcp                               3.3.1 -> 3.4.7
+[U.] python3.14-fastmcp-slim                          3.3.1 -> 3.4.7, +378 KiB
+[U.] python3.14-icalendar                             7.2.0 -> 7.2.2, +22.3 KiB
+[U.] python3.14-mcp                                   1.27.1 -> 1.29.0, +71.7 KiB
+[U.] python3.14-mutagen                               1.47.0 -> 1.48.1, +11.3 KiB
+[U.] qqc2-desktop-style                               6.28.0 -> 6.29.0, +19.8 KiB
+[U.] rclone                                           1.74.4-fish-completions, 1.74.4-man, 1.74.4 -> 1.75.0-fish-completions, 1.75.0-man, 1.75.0, +7.90 MiB
+[U.] resvg                                            0.47.0 -> 0.48.1, +10.2 MiB
+[U.] ruff                                             0.16.1 -> 0.16.2, -50.6 KiB
+[U.] samba                                            4.23.8 -> 4.23.10, +26.7 KiB
+[U*] shadow                                           4.19.4-man, 4.19.4-su, 4.19.4 -> 4.20.0-man, 4.20.0-su, 4.20.0, -213 KiB
+[U.] simdjson                                         4.6.4, <unchanged> -> 4.6.5, <unchanged>
+[U.] sioyek                                           2.0.0-unstable-2026-07-21-fish-completions, 2.0.0-unstable-2026-07-21 -> 2.0.0-unstable-2026-08-05-fish-completions, 2.0.0-unstable-2026-08-05, +20.0 KiB
+[U.] solid                                            6.28.0 -> 6.29.0
+[U.] sonnet                                           6.28.0 -> 6.29.0
+[C.] source                                           +886 KiB
+[C.] starship                                         +167 KiB
+[C*] steam                                            +115 KiB
+[C*] steam-run                                        +120 KiB
+[C.] strip.sh                                         <none> -> <none> ×2
+[U.] svelte-language-server                           0.18.0 -> 0.18.3, +30.4 MiB
+[U.] syncplay                                         1.7.5-fish-completions, 1.7.5 -> 1.7.6-fish-completions, 1.7.6
+[U.] syndication                                      6.28.0 -> 6.29.0
+[C.] system-path                                      -8.81 KiB
+[C*] systemd                                          261.1 ×3, <unchanged> -> 261.1 ×2, <unchanged>, -62.1 MiB
+[U.] temporal_capi                                    0.2.4 -> 0.2.6
+[U.] tombi                                            1.2.5 -> 1.2.7, +167 KiB
+[U.] tpm2-tss                                         4.1.3 ×3 -> 4.2.0 ×2, 4.1.3, +248 KiB
+[U.] ty                                               0.0.65 -> 0.0.70, +149 KiB
+[U.] uavs3d                                           1.1-unstable-2025-12-13 -> 1.2
+[U*] udisks                                           2.11.1-man, 2.11.1 -> 2.11.2-man, 2.11.2
+[U.] unifont                                          <unchanged> -> 17.0.05-bin, 17.0.05-man, <unchanged>, +32.8 MiB
+[U*] upower                                           1.91.2_fish-completions, 1.91.2 -> 1.91.3_fish-completions, 1.91.3
+[U.] vicinae                                          0.24.0-configured-fish-completions, 0.24.0-configured, 0.24.0 -> 0.26.3-configured-fish-completions, 0.26.3-configured, 0.26.3, +1.11 MiB
+[U.] vscode                                           1.130.0-fish-completions, 1.130.0 -> 1.132.0-fish-completions, 1.132.0, -108 MiB
+[U.] vscode-extension-James-Yu-latex-workshop         10.16.1 -> 10.18.0, +244 KiB
+[U.] vscode-extension-charliermarsh-ruff              2026.68.0 -> 2026.70.0, +10.5 KiB
+[U.] vulkan-headers                                   1.4.350.0 -> 1.4.357.0, +884 KiB
+[U.] vulkan-loader                                    1.4.350.0-dev, 1.4.350.0 ×2, <unchanged> -> 1.4.357.0-dev, 1.4.357.0 ×2, <unchanged>, +17.4 KiB
+[U.] weston                                           15.0.1 -> 16.0.0, -125 KiB
+[U.] what-size.yazi-unstable                          2026-01-05 -> 2026-08-01
+[U.] whisper-cpp                                      1.8.7 -> 1.9.2, +1.76 MiB
+[U.] wildmidi                                         0.4.6 -> 0.5.0, +109 KiB
+[U.] x86_energy_perf_policy                           6.18.41 -> 6.18.44
+[U.] xdg-terminal-exec                                0.14.2-fish-completions, 0.14.2 -> 0.14.3-fish-completions, 0.14.3
+[U.] xevd                                             0.5.0-lib -> 0.7.0-lib
+[U.] xeve                                             0.5.1-lib -> 0.7.0-lib
+[U.] xwayland-satellite-unstable                      2026-07-22-8d135d3 -> 2026-08-08-3bc915f
+[U.] yazi                                             26.5.6-fish-completions, 26.5.6 ×2 -> 26.8.15-fish-completions, 26.8.15 ×2, +11.7 MiB
+[U.] zed-editor                                       1.13.1 -> 1.15.0, +5.72 MiB
+[U.] zed-editor-wrapped                               1.13.1-fish-completions, 1.13.1 -> 1.15.0-fish-completions, 1.15.0
+[C.] zotero                                           -136 KiB
+[U.] zxing-cpp                                        3.0.2 -> 3.1.1, +586 KiB
+
+ADDED
+[A.] corefonts                                        1, +5.38 MiB
+[A.] gavl                                             2.0.1, +11.2 MiB
+[A.] perl5.42.0-GD                                    2.86, +314 KiB
+[A.] starship.yazi-unstable                           2026-08-17, +16.4 KiB
+[A.] unit-systemd-boot-random-seed.service            <none>
+[A.] zoom.yazi                                        0-unstable-2026-06-20
+
+REMOVED
+[R.] celt                                             0.11.3, -181 KiB
+[R.] gemini-cli                                       0.47.0-fish-completions, 0.47.0, -50.1 MiB
+[R.] starship.yazi                                    0-unstable-2026-06-14, -16.1 KiB
+[R.] tremor-unstable                                  2018-03-16 ×2, -263 KiB
+[R.] unit-niri.service                                <none>
+[R.] vscode-extension-gemini-cli-vscode-ide-companion 0.47.0, -6.69 MiB
+
+PATHS: 3005 -> 3003 (+2730, -2732)
+SIZE: 24.2 GiB -> 24.1 GiB
+DIFF: -85.7 MiB
