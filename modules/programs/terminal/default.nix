@@ -6,7 +6,6 @@
             antigravity-cli
             brightnessctl
             fzf
-            gemini-cli
             just
             libnotify
             magic-wormhole
