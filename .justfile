@@ -26,13 +26,13 @@ system := `echo $system`
 
 [group('SYSTEM')]
 @deploy *args: check
-    nh os switch -H sagittarius -d always {{ args }}
+    nh os boot -H sagittarius -d always {{ args }}
 
     echo -e "\n---\n\n$(date '+%x %X')" >> build.log
     just get-diff >> build.log
 
     git add -A
-    git commit -m "deployed $(just _get-current-gen)"
+    git commit -m "deployed $(just _get-latest-gen)"
 
 [group('SYSTEM')]
 @get-updates:
@@ -73,9 +73,9 @@ alias pf := prefetch
 @get-diff:
     dix \
     $(command rg --no-line-number --only-matching --replace '$1' ">>> (\S+\-nixos\-system\-sagittarius\-\S+)" build.log | tail -1) \
-    {{ profiles-path }}/system-$(command just _get-current-gen)-link
+    {{ profiles-path }}/system-$(command just _get-latest-gen)-link
 
 # Helpers
 
-@_get-current-gen:
+@_get-latest-gen:
     nixos-rebuild list-generations --flake $NH_FLAKE --json | jaq '.[0].generation'
