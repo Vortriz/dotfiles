@@ -30,7 +30,6 @@
                             restore
                             smart-enter
                             smart-filter
-                            starship
                             toggle-pane
                             zoom
                             # keep-sorted end
@@ -46,6 +45,7 @@
                             file-extra-metadata
                             gvfs
                             office
+                            starship
                             what-size
                             # keep-sorted end
                             ;

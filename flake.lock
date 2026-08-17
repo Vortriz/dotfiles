@@ -483,11 +483,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1786929543,
-        "narHash": "sha256-+5a+QFv31Paj78akRZXsshJK+y+41h23aA46vrdoTbY=",
+        "lastModified": 1786998788,
+        "narHash": "sha256-2gmzCqDK5eLxpzsnTR4WBEK8EKWayILZB3yayyAUvio=",
         "owner": "Vortriz",
         "repo": "nur-packages",
-        "rev": "94d35a630f7744f8cac0400c48aca7dc7288568b",
+        "rev": "c25bf8ac90c2599f4f7a89e7314393d6cc82e903",
         "type": "github"
       },
       "original": {
