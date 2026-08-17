@@ -20,7 +20,6 @@
             # misc
 
             # keep-sorted start
-            Google.gemini-cli-vscode-ide-companion
             donjayamanne.githistory
             github.copilot
             github.copilot-chat
