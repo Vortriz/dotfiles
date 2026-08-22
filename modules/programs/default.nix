@@ -3,7 +3,6 @@
         nixos = { pkgs, ... }: {
             environment.systemPackages = with pkgs; [
                 # keep-sorted start
-                asusctl
                 kdePackages.ksystemlog
                 linux-wifi-hotspot
                 lm_sensors
