@@ -23832,3 +23832,109 @@ REMOVED
 PATHS: 3005 -> 3003 (+2730, -2732)
 SIZE: 24.2 GiB -> 24.1 GiB
 DIFF: -85.7 MiB
+
+---
+
+23/08/26 02:11:05 AM IST
+<<< /nix/store/0v14xizn2hhgi8qjk62mp8xd47rz6dq0-nixos-system-sagittarius-26.11.20260816.e5bdc4a
+>>> /nix/store/jfvbi85r7a45rd9gh7c2dln3hakbbpdq-nixos-system-sagittarius-26.11.20260822.2c423e0
+
+CHANGED
+[U.] Better-BibTeX-for-Zotero            9.0.55 -> 9.0.57, +325 KiB
+[U.] SciPDF-For-Zotero                   8.0.4 -> 8.1.0
+[U.] acpi-call                           1.2.2-7.1.8 -> 1.2.2-7.2
+[U*] asusctl                             6.3.8 -> 6.4.0, +22.3 MiB
+[U.] bcachefs-tools                      1.39.1 -> 1.39.2, -9.64 KiB
+[U.] cava                                0.10.7-fish-completions, 0.10.7 -> 1.0.0-fish-completions, 1.0.0, +17.2 KiB
+[U.] curl-impersonate                    1.5.6 -> 2.1.0, +6.86 MiB
+[C.] deno                                -112 MiB
+[C.] electron                            41.10.3, 42.7.1, 43.2.0 -> 42.9.3, 43.4.1
+[C.] electron-unwrapped                  41.10.3, 42.7.1, 43.2.0 -> 42.9.3, 43.4.1, -310 MiB
+[U.] fastfetch                           2.67.0-fish-completions, 2.67.0-man, 2.67.0 -> 2.67.1-fish-completions, 2.67.1-man, 2.67.1
+[U.] fastfetch-unwrapped                 2.67.0-man, 2.67.0 -> 2.67.1-man, 2.67.1
+[C.] fc-cache                            -16.9 KiB
+[U.] firefox                             153.0.4-fish-completions, 153.0.4 -> 154.0-fish-completions, 154.0
+[U.] firefox-unwrapped                   153.0.4 -> 154.0, +4.92 MiB
+[U.] frei0r-plugins                      3.2.1 -> 3.2.3
+[U.] fzf                                 0.74.2-fish-completions, 0.74.2-man, 0.74.2 -> 0.74.3-fish-completions, 0.74.3-man, 0.74.3, +20.2 KiB
+[U.] gh                                  2.97.0-fish-completions, 2.97.0 -> 2.98.0-fish-completions, 2.98.0, +223 KiB
+[U.] initrd-linux                        7.1.8 -> 7.2, +33.6 KiB
+[U.] intel-compute-runtime               26.27.39122.11 -> 26.31.39395.13, +69.8 KiB
+[U.] intel-graphics-compiler             2.38.2 -> 2.40.13, +11.5 MiB
+[U.] just-lsp                            0.6.1 -> 0.6.2
+[U.] kdegraphics-mobipocket              26.04.3 -> 26.08.0
+[U*] kpmcore                             26.04.3 -> 26.08.0, +85.4 KiB
+[U*] ksystemlog                          26.04.3 -> 26.08.0, +16.2 KiB
+[U.] libgit2                             1.9.4-lib -> 1.9.7-lib
+[U.] liborcus                            0.20.1 -> 0.21.0, -30.4 KiB
+[U.] libreoffice                         25.8.5.2-wrapped-fish-completions, 25.8.5.2-wrapped, 25.8.5.2 -> 26.2.5.2-wrapped-fish-completions, 26.2.5.2-wrapped, 26.2.5.2, +4.81 MiB
+[C.] libxml2                             2.15.3 ×2, <unchanged> -> 2.15.3 ×3, <unchanged>, +1.39 MiB
+[U.] linux                               7.1.8-modules ×2, 7.1.8 -> 7.2-modules ×2, 7.2, +1.33 MiB
+[U.] matugen                             4.1.0-fish-completions, 4.1.0 -> 4.2.0-fish-completions, 4.2.0, +87.9 KiB
+[U.] mcp-nixos                           3.0.0 -> 3.0.1, +43.7 KiB
+[U.] mesa                                26.2.0 ×2 -> 26.2.1 ×2, +74.6 KiB
+[U*] niri-unstable                       2026-08-14-6062844-fish-completions, 2026-08-14-6062844 -> 2026-08-21-dd75865-fish-completions, 2026-08-21-dd75865
+[U.] nix-search-tv                       2.2.8-fish-completions, 2.2.8 -> 2.2.9-fish-completions, 2.2.9
+[U.] nixos-system-sagittarius            26.11.20260816.e5bdc4a -> 26.11.20260822.2c423e0
+[U*] openssh                             10.4p1-man, 10.4p1 -> 10.5p1-man, 10.5p1, +12.7 KiB
+[U.] osinfo-db                           20251212 -> 20260812, +350 KiB
+[U.] ouch.yazi                           0-unstable-2026-03-03 -> 0.7.1
+[U*] partitionmanager                    26.04.3 -> 26.08.0, +52.6 KiB
+[U.] piper.yazi                          0-unstable-2026-08-02 -> 0-unstable-2026-08-18
+[U*] podman                              5.8.4-man, 5.8.4 -> 5.8.6-man, 5.8.6
+[U*] podman-docker-compat                5.8.4-man, 5.8.4 -> 5.8.6-man, 5.8.6
+[U.] python3.14-aiofile                  3.8.6 -> 3.12.3, +23.5 KiB
+[U.] python3.14-caio                     0.10.1 -> 0.12.3, +70.8 KiB
+[U.] python3.14-curl-cffi                0.15.0 -> 0.16.0, +299 KiB
+[U.] python3.14-cyclopts                 4.22.5 -> 4.23.0
+[C.] python3.14-fastmcp-slim             +27.8 KiB
+[U.] python3.14-griffelib                2.1.0 -> 2.2.0, +62.0 KiB
+[U.] python3.14-py-key-value-aio         0.3.0 -> 0.4.5, +395 KiB
+[U.] python3.14-uncalled-for             0.3.2 -> 0.4.0, +42.4 KiB
+[U.] python3.14-zipstream-ng             1.9.2 -> 1.9.3
+[U.] roboto                              3.015 -> 3.016, +57.0 KiB
+[U.] ruff                                0.16.2 -> 0.16.3, -217 KiB
+[U.] rust-analyzer                       2026-06-15 -> 2026-08-03
+[U.] rust-analyzer-unwrapped             2026-06-15 -> 2026-08-03, -1.50 MiB
+[U.] sioyek                              2.0.0-unstable-2026-08-05-fish-completions, 2.0.0-unstable-2026-08-05 -> 2.0.0-unstable-2026-08-17-fish-completions, 2.0.0-unstable-2026-08-17, +83.6 KiB
+[C.] source                              +304 KiB
+[U.] svelte-language-server              0.18.3 -> 0.18.4, -1.10 MiB
+[U.] tailwindcss-language-server         0.14.29 -> 0.16.0, +9.18 MiB
+[U*] tlp                                 1.9.1_fish-completions, 1.9.1 -> 1.10.2_fish-completions, 1.10.2, -29.2 KiB
+[U.] toggle-pane.yazi                    0-unstable-2026-06-26 -> 0-unstable-2026-08-18
+[U.] tombi                               1.2.7 -> 1.4.0, -495 KiB
+[U.] ty                                  0.0.70 -> 0.0.73, +482 KiB
+[C.] unifont                             -22.6 MiB
+[C.] vicinae                             +8.31 KiB
+[U.] vscode                              1.132.0-fish-completions, 1.132.0 -> 1.133.0-fish-completions, 1.133.0, -4.66 MiB
+[U.] vscode-extension-charliermarsh-ruff 2026.70.0 -> 2026.72.0
+[U.] webkitgtk                           2.52.5+abi=4.1 -> 2.52.6+abi=4.1, +37.9 KiB
+[U.] x86_energy_perf_policy              6.18.44 -> 6.18.45
+[U.] yt-dlp                              2026.07.04 -> 2026.08.19, +15.1 KiB
+[U.] zed-editor                          1.15.0 -> 1.16.1, +1.61 MiB
+[U.] zed-editor-wrapped                  1.15.0-fish-completions, 1.15.0 -> 1.16.1-fish-completions, 1.16.1
+
+ADDED
+[A.] antlr-runtime-cpp                   4.13.2, +4.10 MiB
+[A.] python3.14-afdko                    5.0.1, +10.6 MiB
+[A.] python3.14-booleanoperations        0.10.0, +209 KiB
+[A.] python3.14-defcon                   0.12.2, +2.52 MiB
+[A.] python3.14-fontmath                 0.9.4, +555 KiB
+[A.] python3.14-fontparts                1.0.0, +4.77 MiB
+[A.] python3.14-fontpens                 0.4.0, +242 KiB
+[A.] python3.14-fonttools                4.63.0, +15.0 MiB
+[A.] python3.14-mutatormath              3.0.1, +362 KiB
+[A.] python3.14-pyclipper                1.4.0, +377 KiB
+[A.] python3.14-ufonormalizer            0.6.2, +195 KiB
+[A.] python3.14-ufoprocessor             1.14.1, +466 KiB
+[A.] python3.14-unicodedata2             17.0.1, +1.42 MiB
+[A.] python3.14-zopfli                   0.4.0, +68.4 KiB
+[A.] zopfli                              1.0.3-lib, +353 KiB
+
+REMOVED
+[R.] getty                               <none> ×2
+[R.] python3.14-py-key-value-shared      0.3.0, -291 KiB
+
+PATHS: 3003 -> 3014 (+338, -327)
+SIZE: 24.1 GiB -> 23.8 GiB
+DIFF: -345 MiB
