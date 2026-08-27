@@ -2,13 +2,9 @@
     unify.home =
         {
             lib,
-            lib',
             pkgs,
             ...
         }:
-        let
-            inherit (lib') xdgAssociations;
-        in
         {
             programs.kitty = {
                 enable = true;
@@ -30,13 +26,14 @@
                 settings.default = [ "kitty.desktop" ];
             };
 
-            xdg.mimeApps.associations.added =
+            xdg.mimeApps.defaultApplications =
                 let
                     terminal = "kitty.desktop";
                 in
-                xdgAssociations terminal "x-scheme-handler" [
-                    "terminal"
-                ];
+                lib.attrsets.genAttrs [
+                    "x-scheme-handler/terminal"
+                    "inode/directory"
+                ] (_: terminal);
 
             stylix.targets.kitty.enable = true;
 

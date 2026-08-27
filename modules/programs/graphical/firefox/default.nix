@@ -1,13 +1,10 @@
 {
     unify.home =
         {
-            lib',
+            lib,
             config,
             ...
         }:
-        let
-            inherit (lib') xdgAssociations;
-        in
         {
             programs.firefox.enable = true;
 
@@ -18,16 +15,12 @@
                     let
                         browser = "firefox.desktop";
                     in
-                    (xdgAssociations browser "application" [
-                        "json"
-                    ])
-                    // (xdgAssociations browser "text" [
-                        "html"
-                        "xhtml"
-                    ])
-                    // (xdgAssociations browser "x-scheme-handler" [
-                        "mailto"
-                    ]);
+                    lib.attrsets.genAttrs [
+                        "application/json"
+                        "text/html"
+                        "text/xhtml"
+                        "x-scheme-handler/mailto"
+                    ] (_: browser);
             };
 
             home.sessionVariables.BROWSER = "firefox";
