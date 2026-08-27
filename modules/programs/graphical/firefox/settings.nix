@@ -36,6 +36,7 @@
                 "font.name.monospace.x-western" = fonts.monospace.name;
                 "font.name.sans-serif.x-western" = fonts.sansSerif.name;
                 "font.name.serif.x-western" = fonts.serif.name;
+                "image.jxl.enabled" = true;
                 "mousewheel.default.delta_multiplier_x" = 10;
                 "mousewheel.default.delta_multiplier_y" = 20;
                 "signon.rememberSignons" = false; # Don't prompt me, I use Bitwarden
