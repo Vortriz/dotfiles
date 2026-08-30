@@ -68,6 +68,22 @@
         "type": "github"
       }
     },
+    "dank-qml-common": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1787923805,
+        "narHash": "sha256-FsuEOpMvju7LTmX/FRq7W/8XcnHUiYg1r89Eq8SUf3M=",
+        "owner": "AvengeMedia",
+        "repo": "dank-qml-common",
+        "rev": "c4fe77d5bec10d606d0e4336a309582b893e799d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "AvengeMedia",
+        "repo": "dank-qml-common",
+        "type": "github"
+      }
+    },
     "devshell": {
       "inputs": {
         "nixpkgs": [
@@ -253,14 +269,15 @@
     },
     "niri-shell": {
       "inputs": {
+        "dank-qml-common": "dank-qml-common",
         "flake-compat": "flake-compat_2",
         "nixpkgs": [
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1783260951,
-        "narHash": "sha256-ygBOEo7yKvv7YZ1bYU9mLM9eADCiitSPlfq+hB9yXAI=",
+        "lastModified": 1788092815,
+        "narHash": "sha256-SQ1DavIKfKMyoFzGL56T8Q7jukIG+i7uOGs7vFOdo6M=",
         "path": "/mnt/HOUSE/dev/others/niri-shell",
         "type": "path"
       },
