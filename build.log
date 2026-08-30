@@ -23938,3 +23938,19 @@ REMOVED
 PATHS: 3003 -> 3014 (+338, -327)
 SIZE: 24.1 GiB -> 23.8 GiB
 DIFF: -345 MiB
+
+---
+
+30/08/26 07:00:50 PM IST
+<<< /nix/store/lvxszyc1gbwkjxdppxqkkl2vh9i9zgy8-nixos-system-sagittarius-26.11.20260822.2c423e0
+>>> /nix/store/wgdnijbikjya2xnm632jaz7643xs2zj1-nixos-system-sagittarius-26.11.20260822.2c423e0
+
+CHANGED
+[U.] dms-shell 1.5-beta+date=2026-07-05_dirty-fish-completions, 1.5-beta+date=2026-07-05_dirty -> 1.6-beta+date=2026-08-30_dirty-fish-completions, 1.6-beta+date=2026-08-30_dirty, -42.8 MiB
+
+REMOVED
+[R.] dgop      0.2.3-fish-completions, 0.2.3, -9.36 MiB
+
+PATHS: 3014 -> 3012 (+18, -20)
+SIZE: 23.8 GiB -> 23.7 GiB
+DIFF: -52.2 MiB
