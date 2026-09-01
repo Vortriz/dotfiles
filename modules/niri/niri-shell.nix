@@ -18,7 +18,8 @@
 
                 wayland.windowManager.niri.settings = {
                     include = [
-                        "dms/wpblur.kdl"
+                        { _args = [ "dms/wpblur.kdl" ]; }
+                        { _args = [ "dms/layout.kdl" ]; }
                     ];
 
                     binds = {
