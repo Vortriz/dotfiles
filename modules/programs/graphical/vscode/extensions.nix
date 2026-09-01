@@ -21,6 +21,7 @@
 
             # keep-sorted start
             donjayamanne.githistory
+            elijah-potter.harper
             github.copilot
             github.copilot-chat
             jock.svg
