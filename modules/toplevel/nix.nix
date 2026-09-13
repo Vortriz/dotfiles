@@ -16,7 +16,11 @@
 
                 settings = {
                     # Enable flakes and new 'nix' command
-                    experimental-features = "nix-command flakes pipe-operators";
+                    experimental-features = [
+                        "nix-command"
+                        "flakes"
+                        "pipe-operators"
+                    ];
 
                     # Add myself to the trusted users
                     trusted-users = [ hostConfig.username ];
