@@ -24543,3 +24543,17 @@ REMOVED
 PATHS: 3012 -> 3026 (+2998, -2984)
 SIZE: 23.7 GiB -> 22.5 GiB
 DIFF: -1.23 GiB
+
+---
+
+13/09/26 02:20:07 PM IST
+<<< /nix/store/gvhjd3qr9cn421nka3r2m705cv44d08s-nixos-system-sagittarius-26.11.20260911.eaad089
+>>> /nix/store/gxgmmkjm64dh2lhy0mbbx5jvf9z5ipwx-nixos-system-sagittarius-26.11.20260911.eaad089
+
+ADDED
+[A.] lsof                         4.99.7, +272 KiB
+[A.] unit-cloudflare-warp.service <none>
+
+PATHS: 3026 -> 3028 (+33, -31)
+SIZE: 22.5 GiB -> 22.5 GiB
+DIFF: +275 KiB
