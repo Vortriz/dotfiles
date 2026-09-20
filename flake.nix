@@ -25,7 +25,7 @@
         };
 
     inputs = {
-        nixpkgs.url = "https://channels.nixos.org/nixos-unstable/nixexprs.tar.zst";
+        nixpkgs.url = "github:NixOS/nixpkgs/ef34387ddd751e1ab8857adf4676492d32eb24ec";
         systems.url = "github:nix-systems/x86_64-linux";
         flake-parts.url = "github:hercules-ci/flake-parts";
         unify = {

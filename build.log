@@ -24844,3 +24844,62 @@ ADDED
 PATHS: 3028 -> 2784 (+302, -546)
 SIZE: 22.5 GiB -> 21.5 GiB
 DIFF: -969 MiB
+
+---
+
+20/09/26 05:25:22 PM IST
+<<< /nix/store/k03wnfglgji7zsh8hj849n73nx5jgsi4-nixos-system-sagittarius-26.11.20260919.20b1ddd
+>>> /nix/store/0pz2hfs55naf9sqh07szb9xqzdz8lmq4-nixos-system-sagittarius-26.11.20260913.ef34387
+
+CHANGED
+[D.] acpi-call                             1.2.2-7.2.6 -> 1.2.2-7.2.5
+[C.] astro-language-server                 +343 KiB
+[D*] asusctl                               6.5.0 -> 6.4.0, +3.01 MiB
+[D.] bcachefs-tools                        1.39.6 -> 1.39.5
+[C-] command-not-found                     <none> ×2 -> <none>
+[D.] firefox                               156.0-fish-completions, 156.0 -> 155.0.1-fish-completions, 155.0.1
+[D.] firefox-unwrapped                     156.0 -> 155.0.1, -1.65 MiB
+[D.] harper                                2.11.0 -> 2.10.0, -102 KiB
+[D.] hyprutils                             0.14.2 -> 0.14.1, -105 KiB
+[D.] initrd-linux                          7.2.6 -> 7.2.5, -71.9 KiB
+[D.] just-lsp                              0.8.0 -> 0.7.1, -39.1 KiB
+[D.] libhwy                                1.4.0-contrib, 1.4.0-dev, <unchanged> -> <unchanged>, -12.0 MiB
+[D.] libreoffice                           26.8.0.3-wrapped-fish-completions, 26.8.0.3-wrapped, 26.8.0.3 -> 26.2.5.2-wrapped-fish-completions, 26.2.5.2-wrapped, 26.2.5.2, -8.51 MiB
+[C.] lief                                  +3.46 MiB
+[D.] linux                                 7.2.6-modules ×2, 7.2.6 -> 7.2.5-modules ×2, 7.2.5
+[D.] linux-firmware                        20260916-zstd -> 20260910-zstd, -11.0 MiB
+[D.] mesa                                  26.2.3 ×2 -> 26.2.2 ×2, -18.0 KiB
+[D*] networkmanager                        1.58.1-fish-completions, 1.58.1-man, 1.58.1 ×2 -> 1.58.0-fish-completions, 1.58.0-man, 1.58.0 ×2, -12.4 KiB
+[C*] nix                                   -455 KiB
+[D.] nixos-system-sagittarius              26.11.20260919.20b1ddd -> 26.11.20260913.ef34387
+[D.] nodejs                                26.9.0, <unchanged> -> 26.8.2, <unchanged>, -148 KiB
+[D.] nodejs-slim                           26.9.0-npm, 26.9.0, <unchanged> -> 26.8.2-npm, 26.8.2, <unchanged>, -7.05 MiB
+[C*] perl                                  5.42.3-env ×5, <unchanged> -> 5.42.3-env ×4, <unchanged>, -699 KiB
+[D.] python3.14-aiostream                  0.7.2 -> 0.7.1
+[D.] python3.14-cyclopts                   4.25.3 -> 4.25.0, -9.40 KiB
+[D.] ripdrag                               0.4.13 -> 0.4.12
+[D.] ruff                                  0.16.7 -> 0.16.6, -64.7 KiB
+[C.] source                                -15.9 MiB
+[D.] telegram-desktop                      7.2.8-fish-completions, 7.2.8 -> 7.1.5-fish-completions, 7.1.5
+[D.] trash-cli                             0.26.9.14-fish-completions, 0.26.9.14 -> 0.24.5.26-fish-completions, 0.24.5.26, -41.2 KiB
+[D*] upower                                1.91.4_fish-completions, 1.91.4 -> 1.91.3_fish-completions, 1.91.3
+[D.] vscode                                1.137.0-fish-completions, 1.137.0 -> 1.136.1-fish-completions, 1.136.1, +46.8 MiB
+[D.] vscode-extension-charliermarsh-ruff   2026.82.0 -> 2026.78.0
+[D.] vscode-extension-elijah-potter-harper 2.11.0 -> 2.10.0
+[D.] x86_energy_perf_policy                6.18.52 -> 6.18.51
+[D.] xmlsec                                1.3.12 -> 1.3.7, +2.05 MiB
+[D.] zed-editor                            1.20.1 -> 1.19.2, +33.4 MiB
+[D.] zed-editor-wrapped                    1.20.1-fish-completions, 1.20.1 -> 1.19.2-fish-completions, 1.19.2
+[D.] zotero                                10.0.2-fish-completions, 10.0.2 -> 10.0.1-fish-completions, 10.0.1, -68.6 KiB
+
+REMOVED
+[R.] perl5.42.3-DBD-SQLite                 1.74, -427 KiB
+[R.] perl5.42.3-DBI                        1.653, -2.04 MiB
+[R.] perl5.42.3-String-ShellQuote          1.04, -16.1 KiB
+[R.] programs.sqlite                       <none>, -16.2 MiB
+[R.] tlottie                               0-unstable-2026-09-11, -1.20 MiB
+[R.] unit-script-cups-post-start           <none>
+
+PATHS: 2784 -> 2774 (+239, -249)
+SIZE: 21.5 GiB -> 21.6 GiB
+DIFF: +11.2 MiB
