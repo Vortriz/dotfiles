@@ -24903,3 +24903,96 @@ REMOVED
 PATHS: 2784 -> 2774 (+239, -249)
 SIZE: 21.5 GiB -> 21.6 GiB
 DIFF: +11.2 MiB
+
+---
+
+29/09/26 07:21:05 PM IST
+<<< /nix/store/0pz2hfs55naf9sqh07szb9xqzdz8lmq4-nixos-system-sagittarius-26.11.20260913.ef34387
+>>> /nix/store/f8zlx4hlcw61plwx3izm74sf1fpq673a-nixos-system-sagittarius-26.11.20260928.7a0f122
+
+CHANGED
+[U.] acpi-call                                            1.2.2-7.2.5 -> 1.2.2-7.2.8
+[U.] antigravity-cli                                      1.2.3-fish-completions, 1.2.3 -> 1.2.9-fish-completions, 1.2.9, +3.14 MiB
+[C.] astro-language-server                                -343 KiB
+[U*] asusctl                                              6.4.0 -> 6.5.0, -3.01 MiB
+[U.] bcachefs-tools                                       1.39.5 -> 1.39.6
+[U*] bind                                                 9.20.26-dnsutils, 9.20.26-host, 9.20.26-lib, 9.20.26-man -> 9.20.29-dnsutils, 9.20.29-host, 9.20.29-lib, 9.20.29-man, +8.05 KiB
+[C.] comma                                                +8.84 KiB
+[U.] crun                                                 1.29.1 -> 1.30, +41.7 KiB
+[U.] firefox                                              155.0.1-fish-completions, 155.0.1 -> 156.0.1-fish-completions, 156.0.1
+[U.] firefox-unwrapped                                    155.0.1 -> 156.0.1, +1.48 MiB
+[U.] freerdp                                              3.31.1 -> 3.32.0, +227 KiB
+[U*] gamescope                                            3.16.28, <unchanged> -> 3.16.29, <unchanged>, +11.7 KiB
+[U.] gh                                                   2.100.0-fish-completions, 2.100.0 -> 2.101.0-fish-completions, 2.101.0, -212 KiB
+[U.] harper                                               2.10.0 -> 2.11.0, +102 KiB
+[C.] home-configuration-reference-manpage                 +26.5 KiB
+[U.] hostapd                                              2.11 -> 2.12, +108 KiB
+[U.] hyprutils                                            0.14.1 -> 0.14.2, +105 KiB
+[C.] index-x86_64-linux                                   +1.11 MiB
+[U.] initrd-linux                                         7.2.5 -> 7.2.8, +80.3 KiB
+[U.] just-lsp                                             0.7.1 -> 0.9.0, +191 KiB
+[U.] kitty                                                0.48.2-fish-completions, 0.48.2-terminfo, 0.48.2 -> 0.49.0-fish-completions, 0.49.0-terminfo, 0.49.0, +10.5 MiB
+[U.] lcevcdec                                             4.2.1-lib -> 4.2.2-lib
+[U.] libcerf                                              3.6 -> 3.8, +131 KiB
+[U.] libdwarf                                             2.3.2-lib -> 2.3.3-lib
+[U.] libhwy                                               <unchanged> -> 1.4.0-contrib, 1.4.0-dev, <unchanged>, +12.0 MiB
+[U.] libreoffice                                          26.2.5.2-wrapped-fish-completions, 26.2.5.2-wrapped, 26.2.5.2 -> 26.8.0.3-wrapped-fish-completions, 26.8.0.3-wrapped, 26.8.0.3, +8.52 MiB
+[C.] lief                                                 -3.41 MiB
+[U.] linux                                                7.2.5-modules ×2, 7.2.5 -> 7.2.8-modules ×2, 7.2.8, +18.8 KiB
+[U.] linux-firmware                                       20260910-zstd -> 20260916-zstd, +11.0 MiB
+[U.] mesa                                                 26.2.2 ×2 -> 26.2.3 ×2, +18.0 KiB
+[U.] neatvnc                                              1.0.1 -> 1.0.2
+[U*] networkmanager                                       1.58.0-fish-completions, 1.58.0-man, 1.58.0 ×2 -> 1.58.1-fish-completions, 1.58.1-man, 1.58.1 ×2, +12.4 KiB
+[U*] niri-unstable                                        2026-09-19-62c230a-fish-completions, 2026-09-19-62c230a -> 2026-09-25-1f03391-fish-completions, 2026-09-25-1f03391
+[C*] nix                                                  +455 KiB
+[U.] nixos-system-sagittarius                             26.11.20260913.ef34387 -> 26.11.20260928.7a0f122
+[U.] nodejs                                               26.8.2, <unchanged> -> 26.10.0, <unchanged>, +239 KiB
+[U.] nodejs-slim                                          26.8.2-npm, 26.8.2, <unchanged> -> 26.10.0-npm, 26.10.0, <unchanged>, +7.17 MiB
+[U.] nsncd                                                1.5.2 -> 1.5.3, +23.5 KiB
+[U.] ntfs3g                                               2026.7.7 -> 2026.9.18
+[C.] numen                                                +44.2 KiB
+[U.] openvino                                             2026.3.1-lib -> 2026.4.0-lib, +4.42 MiB
+[U.] ouch                                                 0.8.1-fish-completions, 0.8.1 -> 0.8.3-fish-completions, 0.8.3
+[U.] parted                                               3.7 -> 3.8, +181 KiB
+[U.] piper.yazi                                           0-unstable-2026-09-01 -> 0-unstable-2026-09-18
+[U*] podman                                               5.8.6-man, 5.8.6 -> 5.8.7-man, 5.8.7, +128 KiB
+[U*] podman-docker-compat                                 5.8.6-man, 5.8.6 -> 5.8.7-man, 5.8.7
+[U.] python3.14-aiostream                                 0.7.1 -> 0.7.2
+[U.] python3.14-cyclopts                                  4.25.0 -> 4.25.3, +9.40 KiB
+[U.] ripdrag                                              0.4.12 -> 0.4.13
+[U.] ruff                                                 0.16.6 -> 0.16.8, -130 KiB
+[U.] rust-analyzer                                        2026-08-03 -> 2026-09-21
+[U.] rust-analyzer-unwrapped                              2026-08-03 -> 2026-09-21, -662 KiB
+[C.] source                                               -5.94 MiB
+[U.] telegram-desktop                                     7.1.5-fish-completions, 7.1.5 -> 7.2.8-fish-completions, 7.2.8
+[U.] trash-cli                                            0.24.5.26-fish-completions, 0.24.5.26 -> 0.26.9.14-fish-completions, 0.26.9.14, +41.2 KiB
+[U.] ty                                                   0.0.80 -> 0.0.84, +1.01 MiB
+[U*] upower                                               1.91.3_fish-completions, 1.91.3 -> 1.91.4_fish-completions, 1.91.4
+[C.] vicinae                                              +649 KiB
+[U.] vscode                                               1.136.1-fish-completions, 1.136.1 -> 1.139.1-fish-completions, 1.139.1, -79.3 MiB
+[U.] vscode-extension-James-Yu-latex-workshop             10.18.0 -> 10.19.0, +55.9 KiB
+[U.] vscode-extension-charliermarsh-ruff                  2026.78.0 -> 2026.82.0
+[U.] vscode-extension-elijah-potter-harper                2.10.0 -> 2.11.0
+[U.] vscode-extension-shd101wyy-markdown-preview-enhanced 0.8.35 -> 0.8.36, +13.9 MiB
+[U*] wpa_supplicant                                       2.11 -> 2.12, +186 KiB
+[U.] x86_energy_perf_policy                               6.18.51 -> 6.18.54
+[U.] xdg-desktop-portal-termfilechooser-unstable          2026-06-13-fish-completions, 2026-06-13 -> 2026-09-23-fish-completions, 2026-09-23
+[U.] xmlsec                                               1.3.7 -> 1.3.12, -2.05 MiB
+[U.] xwayland-satellite-unstable                          2026-09-09-add2795 -> 2026-09-25-63cdf17
+[U.] zed-editor                                           1.19.2 -> 1.21.0, -30.6 MiB
+[U.] zed-editor-wrapped                                   1.19.2-fish-completions, 1.19.2 -> 1.21.0-fish-completions, 1.21.0
+[U.] zoom.yazi                                            0-unstable-2026-09-09 -> 0-unstable-2026-09-18
+[U.] zotero                                               10.0.1-fish-completions, 10.0.1 -> 10.0.2-fish-completions, 10.0.2, +32.4 KiB
+
+ADDED
+[A.] shader-slang                                         2026.18, +66.8 MiB
+[A.] tlottie                                              0-unstable-2026-09-11, +1.20 MiB
+[A.] unit-script-cups-post-start                          <none>
+[A.] unit-systemd-bless-boot.service                      <none>
+
+REMOVED
+[R.] polkit-gnome                                         0.105, -378 KiB
+
+PATHS: 2774 -> 2779 (+360, -355)
+SIZE: 21.6 GiB -> 21.6 GiB
+DIFF: +19.4 MiB
