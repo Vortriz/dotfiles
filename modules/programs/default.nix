@@ -13,6 +13,8 @@
                 util-linux
                 # keep-sorted end
             ];
+
+            programs.kde-pim.enable = false;
         };
     };
 }

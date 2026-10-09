@@ -15,7 +15,7 @@
                 imports = [ inputs.nur-vortriz.homeModules.zotero ];
 
                 programs.zotero = {
-                    enable = true;
+                    enable = false;
 
                     profiles.default = {
                         settings =
