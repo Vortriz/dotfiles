@@ -64,6 +64,33 @@
                                 "!basedpyright"
                             ];
                         };
+                        JavaScript = {
+                            language_servers = [
+                                "deno"
+                                "!typescript-language-server"
+                                "!vtsls"
+                                "!eslint"
+                            ];
+                            formatter = "language_server";
+                        };
+                        TypeScript = {
+                            language_servers = [
+                                "deno"
+                                "!typescript-language-server"
+                                "!vtsls"
+                                "!eslint"
+                            ];
+                            formatter = "language_server";
+                        };
+                        TSX = {
+                            language_servers = [
+                                "deno"
+                                "!typescript-language-server"
+                                "!vtsls"
+                                "!eslint"
+                            ];
+                            formatter = "language_server";
+                        };
                     };
                     load_direnv = "direct";
                     minimap = {

@@ -10,6 +10,7 @@
                 extensions = [
                     # keep-sorted start
                     "astro"
+                    "deno"
                     "fish"
                     "harper"
                     "julia"
@@ -86,6 +87,10 @@
                             ty.binary = {
                                 path = lib.getExe pkgs.ty;
                                 arguments = [ "server" ];
+                            };
+                            deno.binary = {
+                                path = lib.getExe pkgs.deno;
+                                arguments = [ "lsp" ];
                             };
                             # keep-sorted end
                         };
