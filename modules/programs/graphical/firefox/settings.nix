@@ -14,6 +14,7 @@
                 "browser.aboutConfig.showWarning" = false; # I know what I'm doing
                 "browser.crashReports.unsubmittedCheck.autoSubmit2" = false; # don't submit backlogged reports
                 "browser.download.useDownloadDir" = false; # Ask where to save stuff
+                "browser.nova.enabled" = false;
                 "browser.ping-centre.telemetry" = false;
                 "browser.startup.page" = 3; # Resume previous session on startup
                 "browser.tabs.crashReporting.sendReport" = false;
@@ -39,6 +40,7 @@
                 "image.jxl.enabled" = true;
                 "mousewheel.default.delta_multiplier_x" = 10;
                 "mousewheel.default.delta_multiplier_y" = 20;
+                "sidebar.revamp" = false;
                 "signon.rememberSignons" = false; # Don't prompt me, I use Bitwarden
                 "toolkit.coverage.endpoint.base" = "";
                 "toolkit.coverage.opt-out" = true;
