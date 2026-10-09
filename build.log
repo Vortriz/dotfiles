@@ -25762,3 +25762,48 @@ REMOVED
 PATHS: 2779 -> 3017 (+2726, -2488)
 SIZE: 21.6 GiB -> 22.1 GiB
 DIFF: +555 MiB
+
+---
+
+09/10/26 11:40:43 AM IST
+<<< /nix/store/4m9wrh6gknvhqx7m5p7wjg3c6dk55ylc-nixos-system-sagittarius-26.11.20261008.e7439b6
+>>> /nix/store/0ad7qwb1vbszwqwsiv0xla38nhngkw4c-nixos-system-sagittarius-26.11.20261008.e7439b6
+
+CHANGED
+[C.] lua                     5.4.7, <unchanged> -> 5.4.7 ×2, <unchanged>, +1.42 MiB
+[C.] sdl3                    3.4.16-lib -> 3.4.16-lib ×2, +4.81 MiB
+
+ADDED
+[A.] aml                     1.0.0, +58.1 KiB
+[A.] freerdp                 3.32.1, +11.9 MiB
+[A.] neatvnc                 1.0.3, +368 KiB
+[A.] plutosvg                0.0.8, +76.2 KiB
+[A.] plutovg                 1.3.3, +484 KiB
+[A.] sdl3-ttf                3.2.2, +321 KiB
+[A.] uriparser               1.0.2, +304 KiB
+[A.] weston                  16.0.0, +8.15 MiB
+[A.] weston.ini              <none>
+
+REMOVED
+[R.] aurorae                 6.7.5, -1.04 MiB
+[R.] kglobalacceld           6.7.5, -634 KiB
+[R.] kholidays               6.30.0, -1.25 MiB
+[R.] kidletime               6.30.0, -340 KiB
+[R.] knighttime              6.7.5, -298 KiB
+[R.] kparts                  6.30.0, -586 KiB
+[R.] kpipewire               6.7.5, -758 KiB
+[R.] krunner                 6.30.0, -561 KiB
+[R.] kscreenlocker           6.7.5, -1.50 MiB
+[R.] ksvg                    6.30.0, -701 KiB
+[R.] kwayland                6.7.5, -1.48 MiB
+[R.] kwin                    6.7.5, -41.8 MiB
+[R.] libkscreen              6.7.5, -1.81 MiB
+[R.] libplasma               6.7.5, -8.56 MiB
+[R.] libqaccessibilityclient 0.6.0, -445 KiB
+[R.] milou                   6.7.5, -534 KiB
+[R.] plasma-activities       6.7.5, -770 KiB
+[R.] qqc2-breeze-style       6.7.5, -4.37 MiB
+
+PATHS: 3017 -> 3010 (+39, -46)
+SIZE: 22.1 GiB -> 22.1 GiB
+DIFF: -39.5 MiB
