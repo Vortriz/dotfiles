@@ -14,6 +14,10 @@
             {
                 enable = true;
                 theme = "default";
+                wayland = {
+                    enable = true;
+                    compositor = "weston";
+                };
                 backgrounds.vortriz = base + /wallpapers/${wallpaper};
                 profileIcons.vortriz = base + /profile.png;
                 settings = {
