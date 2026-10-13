@@ -16,12 +16,6 @@
                 systemd = {
                     enable = true;
                     autoStart = true;
-
-                    # [MARK] remove after https://github.com/vicinaehq/vicinae/pull/2055
-                    environment = {
-                        USE_LAYER_SHELL = 1;
-                        QSG_RHI_BACKEND = "vulkan";
-                    };
                 };
             };
 
