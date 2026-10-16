@@ -44,7 +44,7 @@
                 # Impurely using uv to manage virtual environments
                 devShell =
                     let
-                        python-pkg = pkgs.python313;
+                        python-pkg = pkgs.python3;
                     in
                     pkgs.devshell.mkShell {
                         name = "python";

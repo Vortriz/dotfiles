@@ -32,7 +32,7 @@
                     overlays = [ devshell.overlays.default ];
                 };
 
-                python-pkg = pkgs.python313;
+                python-pkg = pkgs.python3;
 
                 # Pluto manages environment for each notebook independently,
                 # so there is no need to include other Julia packages here.
