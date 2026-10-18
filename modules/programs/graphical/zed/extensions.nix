@@ -24,6 +24,7 @@
                     "svelte"
                     "toml"
                     "typst"
+                    "xml"
                     # keep-sorted end
                 ];
 
