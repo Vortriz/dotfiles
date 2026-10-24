@@ -11,12 +11,8 @@
             # (RIP boot entry chooser)
             loader.systemd-boot.consoleMode = "max";
 
-            # Required for Plymouth to work properly
-            initrd.systemd.enable = true;
-
             # Enable "Silent boot"
             consoleLogLevel = 3;
-            initrd.verbose = false;
 
             # Kernel parameters for clean boot
             kernelParams = [

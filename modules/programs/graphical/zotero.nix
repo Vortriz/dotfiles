@@ -2,6 +2,10 @@
     unify = {
         nixos = {
             nixpkgs.overlays = [ inputs.nur-vortriz.overlays.zoteroAddons ];
+
+            nixpkgs.config.permittedInsecurePackages = [
+                "firefox-esr-140-bin-unwrapped-140.17.0esr"
+            ];
         };
 
         home =
@@ -15,7 +19,7 @@
                 imports = [ inputs.nur-vortriz.homeModules.zotero ];
 
                 programs.zotero = {
-                    enable = false;
+                    enable = true;
 
                     profiles.default = {
                         settings =
