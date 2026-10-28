@@ -71,9 +71,9 @@ alias pf := prefetch
 
 [group('TOOLS')]
 @get-diff:
-    dix \
+    dix diff --min-size-delta=10MB \
     $(command rg --no-line-number --only-matching --replace '$1' ">>> (\S+\-nixos\-system\-sagittarius\-\S+)" build.log | tail -1) \
-    {{ profiles-path }}/system-$(command just _get-latest-gen)-link
+    {{ profiles-path }}/system
 
 # Helpers
 
