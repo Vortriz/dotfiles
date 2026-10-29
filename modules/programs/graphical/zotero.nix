@@ -24,7 +24,7 @@
                     profiles.default = {
                         settings =
                             let
-                                path = "${hostConfig.dirs.storage}/nonlinear-vault/03.resources/articles";
+                                path = "${hostConfig.dirs.storage}/nonlinear-vault/00.literature/articles";
                                 bbt-citekey-format = "creators(n = 1, name = \"%(f)s%(g)s\").condense + year + shorttitle(2,2)";
                             in
                             {
