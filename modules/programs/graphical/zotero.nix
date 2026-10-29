@@ -25,7 +25,7 @@
                         settings =
                             let
                                 path = "${hostConfig.dirs.storage}/nonlinear-vault/03.resources/articles";
-                                bbt-citekey-format = "auth.lower + year";
+                                bbt-citekey-format = "creators(n = 1, name = \"%(f)s%(g)s\").condense + year + shorttitle(2,2)";
                             in
                             {
                                 # keep-sorted start
