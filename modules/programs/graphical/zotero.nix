@@ -46,6 +46,7 @@
                             # keep-sorted start
                             zotero-better-bibtex
                             zotero-scipdf
+                            zotlit
                             zotmoov
                             # keep-sorted end
                         ];
