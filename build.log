@@ -26779,3 +26779,41 @@ PATHS: 2954 -> 3003 (+259, -210)
 SIZE: 23.1 GiB -> 22.8 GiB (-329 MiB)
 
 NOTE: 7 hidden (--full to show)
+
+---
+
+30/10/26 01:39:36 PM IST
+<<< /nix/store/8rqcvxi359kb0qh1nfaa1zp3cvaw35lr-nixos-system-sagittarius-26.11.20261027.31ecbac
+>>> /nix/store/ly59mpwq3mvwwz1mawz30yxrwdfdcv5m-nixos-system-sagittarius-26.11.20261027.31ecbac
+
+CHANGED (6)
+[U.] ZotMoov                                     1.2.32 -> 1.2.34
+[U.] bunny.yazi-unstable                         2026-03-08 -> 2026-10-20
+[U.] dms-shell                                   1.6-beta+date=2026-10-11_dirty, 1.6-beta+date=2026-10-11_dirty-fish-completions -> 2.0.0+date=2026-10-20_9b41329, 2.0.0+date=2026-10-20_9b41329-fish-completions, +10.4 MiB
+[U.] doi2bib3                                    1.7.0, 1.7.0-fish-completions -> 1.7.1, 1.7.1-fish-completions, +9.98 KiB
+[U.] xdg-desktop-portal-termfilechooser-unstable 2026-09-23, 2026-09-23-fish-completions -> 2026-10-24, 2026-10-24-fish-completions, +8.20 KiB
+[U.] xwayland-satellite                          0.8.3-unstable-2026-10-27 -> 0.8.3-unstable-2026-10-28
+
+ADDED (6)
+[A.] ZotLit                                      2.1.4, +36.0 KiB
+[A.] bat                                         0.26.1, +6.46 MiB
+[A.] hm_autostartnixdatifier.desktop             <none>
+[A.] inotify-tools                               4.26.270, +11.7 MiB
+[A.] nixdatifier                                 2.2.2, 2.2.2-fish-completions, +4.86 MiB
+[A.] yafg.yazi                                   0-unstable-2026-10-05, +44.6 KiB
+
+REMOVED (9)
+[R.] atomicparsley                               20240608.083822.1ed9031, -378 KiB
+[R.] celluloid                                   0.30, 0.30-fish-completions, -1.44 MiB
+[R.] curl-impersonate                            2.1.1, -14.6 MiB
+[R.] python3.14-curl-cffi                        0.16.3, -1.53 MiB
+[R.] python3.14-mutagen                          1.48.1, -2.32 MiB
+[R.] python3.14-pycryptodomex                    3.23.0, -9.57 MiB
+[R.] python3.14-yt-dlp-ejs                       0.8.0, -173 KiB
+[R.] ripdrag                                     0.4.13, -1.19 MiB
+[R.] yt-dlp                                      2026.10.21, -32.3 MiB
+
+PATHS: 3003 -> 3000 (+43, -46)
+SIZE: 22.8 GiB -> 22.8 GiB (-29.7 MiB)
+
+NOTE: 2 hidden (--full to show)
