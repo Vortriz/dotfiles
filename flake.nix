@@ -37,16 +37,16 @@
 
         # keep-sorted start block=yes
 
+        dux-shell = {
+            url = "github:duxlabs-dev/dux-shell/stable";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
         git-hooks = {
             url = "github:cachix/git-hooks.nix";
             inputs.nixpkgs.follows = "nixpkgs";
         };
         home-manager = {
             url = "github:nix-community/home-manager";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-        niri-shell = {
-            url = "/mnt/HOUSE/dev/others/niri-shell";
             inputs.nixpkgs.follows = "nixpkgs";
         };
         niri.url = "git+https://codeberg.org/bananad3v/niri-nix";
