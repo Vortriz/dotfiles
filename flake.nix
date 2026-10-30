@@ -54,6 +54,10 @@
             url = "github:nix-community/nix-index-database";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+        nixdatifier = {
+            url = "github:Muddyblack/nixdatifier";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
         nixos-hardware.url = "github:NixOS/nixos-hardware";
         nur-vortriz = {
             url = "github:Vortriz/nur-packages";
