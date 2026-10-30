@@ -31,6 +31,7 @@
                             smart-enter
                             smart-filter
                             toggle-pane
+                            yafg
                             zoom
                             # keep-sorted end
                             ;
@@ -151,13 +152,6 @@
                             desc = "custom-shell as default, interactive, block";
                         }
 
-                        # drag and drop
-                        {
-                            on = "<C-n>";
-                            run = "shell 'ripdrag %s -anx 2>/dev/null &' --confirm";
-                            desc = "Drag and drop";
-                        }
-
                         # first-non-directory
                         {
                             on = "G";
@@ -240,6 +234,13 @@
                             desc = "Calc size of selection or cwd";
                         }
 
+                        # yafg
+                        {
+                            on = "<S-s>";
+                            run = "plugin yafg";
+                            desc = "Search files interactively by content via ripgrep";
+                        }
+
                         # zoom
                         {
                             on = "+";
@@ -255,7 +256,9 @@
 
                     extraPackages = with pkgs; [
                         # keep-sorted start
+                        bat # yafg
                         ffmpeg-full # mediainfo-yazi
+                        fzf # yafg
                         glib # gvfs-yazi
                         glow # glow-yazi
                         imagemagick # zoom
@@ -263,7 +266,7 @@
                         mediainfo # mediainfo-yazi
                         ouch # ouch-yazi
                         poppler-utils # office
-                        ripdrag # drag and drop
+                        ripgrep # yafg
                         trash-cli # restore-yazi
                         # keep-sorted end
                     ];

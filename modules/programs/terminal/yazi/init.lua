@@ -37,6 +37,12 @@ require("starship"):setup({
 -- gvfs
 require("gvfs"):setup()
 
+-- yafg
+require("yafg"):setup({
+  -- toggle_mode_key = "alt-t",          -- fzf key to switch ripgrep/fzf mode (default: "ctrl-t")
+  editor = "fresh",                   -- Editor command (default: "hx")
+})
+
 -- custom: move tabs back to header
 function Tabs.height() return 0 end
 
