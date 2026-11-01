@@ -26817,3 +26817,45 @@ PATHS: 3003 -> 3000 (+43, -46)
 SIZE: 22.8 GiB -> 22.8 GiB (-29.7 MiB)
 
 NOTE: 2 hidden (--full to show)
+
+---
+
+01/11/26 05:25:17 PM IST
+<<< /nix/store/ly59mpwq3mvwwz1mawz30yxrwdfdcv5m-nixos-system-sagittarius-26.11.20261027.31ecbac
+>>> /nix/store/z39hk06wmncym0winncfzrffvivvq0px-nixos-system-sagittarius-26.11.20261030.1c89083
+
+CHANGED (26)
+[U.] Better-BibTeX-for-Zotero              9.0.71 -> 9.0.74, -174 KiB
+[U.] ZotLit                                2.1.4 -> 2.2.0
+[C.] astro-language-server                 -503 MiB
+[U.] breeze                                6.8.1 -> 6.8.2
+[U.] deno                                  2.9.7 -> 2.9.8
+[U.] firefox                               158.0.1, 158.0.1-fish-completions -> 159.0, 159.0-fish-completions
+[U.] firefox-unwrapped                     158.0.1 -> 159.0, +658 KiB
+[U.] gh                                    2.103.2, 2.103.2-fish-completions -> 2.103.3, 2.103.3-fish-completions
+[U.] harper                                2.13.0 -> 3.0.0, +1.26 MiB
+[U.] hyprutils                             0.14.2 -> 0.14.3, +9.28 KiB
+[U.] kdecoration                           6.8.1 -> 6.8.2
+[U.] layer-shell-qt                        6.8.1, <unchanged> -> 6.8.2, <unchanged>
+[U.] libtracefs                            1.8.3 -> 1.8.4
+[U.] mesa                                  26.2.5 ×2 -> 26.2.6 ×2, +179 KiB
+[U.] mpvqt                                 1.1.1 -> 1.2.1, +53.7 KiB
+[U*] niri                                  26.04-unstable-2026-10-27, 26.04-unstable-2026-10-27-fish-completions -> 26.04-unstable-2026-10-31, 26.04-unstable-2026-10-31-fish-completions, +126 KiB
+[U.] nixos-system-sagittarius              26.11.20261027.31ecbac -> 26.11.20261030.1c89083
+[U.] nodejs                                26.12.1, <unchanged> -> 26.13.0, <unchanged>
+[U.] nodejs-slim                           26.12.1, 26.12.1-npm, <unchanged> -> 26.13.0, 26.13.0-npm, <unchanged>
+[U.] rust-analyzer                         2026-10-19 -> 2026-10-26
+[U.] rust-analyzer-unwrapped               2026-10-19 -> 2026-10-26, +77.5 KiB
+[U.] vscode                                1.142.0, 1.142.0-fish-completions -> 1.144.0, 1.144.0-fish-completions, +58.7 MiB
+[U.] vscode-extension-elijah-potter-harper 2.13.0 -> 3.0.0
+[U.] xdg-terminal-exec                     0.14.3, 0.14.3-fish-completions -> 0.14.4, 0.14.4-fish-completions
+[U.] zed-editor                            1.25.3 -> 1.26.2, +4.32 MiB
+[U.] zed-editor-wrapped                    1.25.3, 1.25.3-fish-completions -> 1.26.2, 1.26.2-fish-completions
+
+ADDED (1)
+[A.] aws-lc                                5.12.0, +5.07 MiB
+
+PATHS: 3000 -> 3001 (+175, -174)
+SIZE: 22.8 GiB -> 22.3 GiB (-434 MiB)
+
+NOTE: 5 hidden (--full to show)
