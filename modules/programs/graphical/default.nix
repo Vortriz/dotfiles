@@ -7,7 +7,6 @@
             gnome-calculator
             gnome-characters
             libreoffice
-            obsidian
             onlyoffice-desktopeditors
             pavucontrol
             pdfpc
