@@ -26859,3 +26859,48 @@ PATHS: 3000 -> 3001 (+175, -174)
 SIZE: 22.8 GiB -> 22.3 GiB (-434 MiB)
 
 NOTE: 5 hidden (--full to show)
+
+---
+
+05/11/26 11:29:49 AM IST
+<<< /nix/store/z39hk06wmncym0winncfzrffvivvq0px-nixos-system-sagittarius-26.11.20261030.1c89083
+>>> /nix/store/yjhm5m1anyr97dz4i9dfms0c8ijbqanx-nixos-system-sagittarius-26.11.20261103.1d06008
+
+CHANGED (32)
+[U.] Better-BibTeX-for-Zotero 9.0.74 -> 9.0.77, -28.0 KiB
+[U.] ZotLit                   2.2.0 -> 2.2.1
+[U.] acpi-call                1.2.2-7.3 -> 1.2.2-7.3.1
+[U.] dms-shell                2.0.0+date=2026-10-20_9b41329, 2.0.0+date=2026-10-20_9b41329-fish-completions -> 2.1.0+date=2026-11-04_7627111, 2.1.0+date=2026-11-04_7627111-fish-completions, +1.58 MiB
+[U.] firefox                  159.0, 159.0-fish-completions -> 159.0.1, 159.0.1-fish-completions
+[U.] firefox-unwrapped        159.0 -> 159.0.1, +266 KiB
+[U*] fresh                    0.5.3 -> 0.5.4, +294 KiB
+[U.] haruna                   1.8.1, 1.8.1-fish-completions -> 1.9.0, 1.9.0-fish-completions, +1.01 MiB
+[U.] hyprlock                 0.9.6, 0.9.6-fish-completions -> 0.9.7, 0.9.7-fish-completions
+[U.] initrd-linux             7.3 -> 7.3.1, +31.9 KiB
+[U.] just                     1.58.0, 1.58.0-fish-completions, 1.58.0-man -> 1.59.0, 1.59.0-fish-completions, 1.59.0-man, +130 KiB
+[U.] just-lsp                 0.10.0 -> 0.11.0, +274 KiB
+[U.] libkrun                  1.19.5 -> 1.19.7
+[U.] libraw                   0.22.2-lib -> 0.22.3-lib
+[U.] linux                    7.3, 7.3-modules ×2 -> 7.3.1, 7.3.1-modules ×2, +11.3 KiB
+[U.] llama-cpp                0.7.0, 0.7.0-dev -> 0.8.0, 0.8.0-dev, +1.63 MiB
+[U.] neatvnc                  1.0.3 -> 1.0.4
+[U.] nix-search-tv            2.2.9, 2.2.9-fish-completions -> 2.2.10, 2.2.10-fish-completions
+[U.] nixd                     2.9.3 -> 2.9.4
+[U.] nixf                     2.9.3 -> 2.9.4
+[U.] nixos-system-sagittarius 26.11.20261030.1c89083 -> 26.11.20261103.1d06008
+[U.] nixt                     2.9.3 -> 2.9.4
+[U.] ruff                     0.17.2 -> 0.17.3, +27.8 KiB
+[U.] sioyek                   2.0.0-unstable-2026-09-24, 2.0.0-unstable-2026-09-24-fish-completions -> 2.0.0-unstable-2026-10-31, 2.0.0-unstable-2026-10-31-fish-completions
+[U.] squashfuse               0.6.3 -> 0.6.5
+[U.] tevent                   0.17.1 -> 0.17.2
+[U.] ty                       0.0.91 -> 0.0.95, +981 KiB
+[U*] wireplumber              0.5.18, 0.5.18_fish-completions -> 0.5.19, 0.5.19_fish-completions, +21.4 KiB
+[U.] x86_energy_perf_policy   6.18.59 -> 6.18.60
+[U.] xapp-symbolic-icons      1.1.0 -> 1.1.1
+[U.] xfsprogs                 7.1.1, 7.1.1-bin -> 7.2.1, 7.2.1-bin, +135 KiB
+[U.] zotero                   10.0.4, 10.0.4-fish-completions -> 10.0.6, 10.0.6-fish-completions
+
+PATHS: 3001 -> 3001 (+286, -286)
+SIZE: 22.3 GiB -> 22.3 GiB (+6.36 MiB)
+
+NOTE: 6 hidden (--full to show)
