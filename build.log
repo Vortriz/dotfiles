@@ -26904,3 +26904,32 @@ PATHS: 3001 -> 3001 (+286, -286)
 SIZE: 22.3 GiB -> 22.3 GiB (+6.36 MiB)
 
 NOTE: 6 hidden (--full to show)
+
+---
+
+07/11/26 04:38:06 PM IST
+<<< /nix/store/yjhm5m1anyr97dz4i9dfms0c8ijbqanx-nixos-system-sagittarius-26.11.20261103.1d06008
+>>> /nix/store/sj4gr5d5giyn23ca6nv5w3dl5cj46xfc-nixos-system-sagittarius-26.11.20261105.f9a75f4
+
+CHANGED (13)
+[U.] dms-shell                                2.1.0+date=2026-11-04_7627111, 2.1.0+date=2026-11-04_7627111-fish-completions -> 2.1.1+date=2026-11-06_a9a7e14, 2.1.1+date=2026-11-06_a9a7e14-fish-completions, +90.5 KiB
+[U.] fd                                       10.5.0 -> 10.5.1, +102 KiB
+[U.] fftw-double                              <unchanged> -> 3.3.11-dev, <unchanged>, +211 KiB
+[U.] kitty                                    0.49.2, 0.49.2-fish-completions, 0.49.2-terminfo -> 0.50.0, 0.50.0-fish-completions, 0.50.0-terminfo, +4.66 MiB
+[U.] libsamplerate                            <unchanged> -> 0.2.2-dev, <unchanged>
+[U*] niri                                     26.04-unstable-2026-10-31, 26.04-unstable-2026-10-31-fish-completions -> 26.04-unstable-2026-11-06, 26.04-unstable-2026-11-06-fish-completions, -78.7 KiB
+[U.] nixos-system-sagittarius                 26.11.20261103.1d06008 -> 26.11.20261105.f9a75f4
+[U.] python3.14-cyclopts                      4.25.3 -> 5.3.3, +611 KiB
+[U.] samba                                    4.23.10 -> 4.25.1, +734 KiB
+[U.] telegram-desktop                         7.3.2, 7.3.2-fish-completions -> 7.3.3, 7.3.3-fish-completions, +277 KiB
+[U.] tinymist                                 0.15.10 -> 0.15.12
+[U.] vscode-extension-myriad-dreamin-tinymist 0.15.10 -> 0.15.12, +16.3 KiB
+[U.] xwayland-satellite                       0.8.3-unstable-2026-10-28 -> 0.8.3-unstable-2026-11-05
+
+REMOVED (1)
+[R.] hm_homevortriz.gtkrc2.0                  <none>
+
+PATHS: 3001 -> 3002 (+127, -126)
+SIZE: 22.3 GiB -> 22.3 GiB (+6.68 MiB)
+
+NOTE: 3 hidden (--full to show)
