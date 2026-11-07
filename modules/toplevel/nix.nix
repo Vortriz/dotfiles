@@ -1,52 +1,60 @@
 { inputs, ... }: {
     unify = {
-        nixos = { hostConfig, pkgs, ... }: {
-            nixpkgs = {
-                config.allowUnfree = true;
-                overlays = [
-                    inputs.nur-vortriz.overlays.default
-                ];
-            };
-
-            nix = {
-                package = pkgs.nixVersions.latest;
-
-                gc.automatic = false; # because nh
-                optimise.automatic = false; # because nh
-
-                settings = {
-                    # Enable flakes and new 'nix' command
-                    experimental-features = [
-                        "nix-command"
-                        "flakes"
-                        "pipe-operators"
+        nixos =
+            {
+                hostConfig,
+                pkgs,
+                ...
+            }:
+            {
+                nixpkgs = {
+                    config.allowUnfree = true;
+                    overlays = [
+                        inputs.nur-vortriz.overlays.default
                     ];
-
-                    # Add myself to the trusted users
-                    trusted-users = [ hostConfig.username ];
-
-                    # Provide system architecture to nix
-                    system-features = [
-                        "nixos-test"
-                        "benchmark"
-                        "big-parallel"
-                        "kvm"
-                    ];
-
-                    warn-dirty = false;
                 };
-                channel.enable = false;
 
-                registry.nixpkgs.flake = inputs.nixpkgs;
+                nix = {
+                    package = pkgs.nixVersions.latest;
 
-                # To make sure that old nix commands use the same nixpkgs as the flake
-                nixPath = [ "nixpkgs=flake:nixpkgs" ];
+                    gc.automatic = false; # because nh
+                    optimise.automatic = false; # because nh
 
-                # Opinionated: make flake registry and nix path match flake inputs (add more inputs if needed)
-                # registry = lib.mapAttrs (_: flake: {inherit flake;}) flakeInputs;
-                # nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
+                    settings = {
+                        # Enable flakes and new 'nix' command
+                        experimental-features = [
+                            "nix-command"
+                            "flakes"
+                            "pipe-operators"
+                        ];
+
+                        # Add myself to the trusted users
+                        trusted-users = [ hostConfig.username ];
+
+                        # Provide system architecture to nix
+                        system-features = [
+                            "nixos-test"
+                            "benchmark"
+                            "big-parallel"
+                            "kvm"
+                        ];
+
+                        warn-dirty = false;
+
+                        use-xdg-base-directories = true;
+                    };
+                    channel.enable = false;
+
+                    registry.nixpkgs.flake = inputs.nixpkgs;
+
+                    # To make sure that old nix commands use the same nixpkgs as the flake
+                    nixPath = [ "nixpkgs=flake:nixpkgs" ];
+
+                    # Opinionated: make flake registry and nix path match flake inputs (add more inputs if needed)
+                    # registry = lib.mapAttrs (_: flake: {inherit flake;}) flakeInputs;
+                    # nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
+                };
             };
-        };
 
         home = {
             # nh

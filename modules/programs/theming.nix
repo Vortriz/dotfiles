@@ -85,6 +85,7 @@
 
             gtk = {
                 enable = true;
+                gtk2.enable = false;
 
                 iconTheme = {
                     package = pkgs.adwaita-icon-theme;
