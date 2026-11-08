@@ -27182,3 +27182,12 @@ PATHS: 3002 -> 2729 (+2701, -2974)
 SIZE: 22.3 GiB -> 21.3 GiB (-1.06 GiB)
 
 NOTE: 237 hidden (--full to show)
+
+---
+
+09/11/26 12:02:28 AM IST
+<<< /nix/store/6kn5j44vcll7r4j6f1smbcsgy8nn9wg0-nixos-system-sagittarius-26.11.20261107.f4a03c0
+>>> /nix/store/ncnl860syrixld3qs5gy37wbzvzmbfai-nixos-system-sagittarius-26.11.20261107.f4a03c0
+
+PATHS: 2729 -> 2729 (+10, -10)
+SIZE: 21.3 GiB -> 21.3 GiB (-72 bytes)
