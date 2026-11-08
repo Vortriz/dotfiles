@@ -337,6 +337,26 @@
         "type": "github"
       }
     },
+    "nixos-plymouth": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1788006886,
+        "narHash": "sha256-HA8AwVrJrqIFyt3g1idRkTYPwrgLyWAj7PuN9VSMhKo=",
+        "owner": "qboileau",
+        "repo": "nixos-load-plymouth",
+        "rev": "a328a6289cfd7d02bd09eb4f197b66a0d3493e36",
+        "type": "github"
+      },
+      "original": {
+        "owner": "qboileau",
+        "repo": "nixos-load-plymouth",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 315532800,
@@ -484,6 +504,7 @@
         "nix-search-tv-script": "nix-search-tv-script",
         "nixdatifier": "nixdatifier",
         "nixos-hardware": "nixos-hardware",
+        "nixos-plymouth": "nixos-plymouth",
         "nixpkgs": "nixpkgs_3",
         "shyfox": "shyfox",
         "silentSDDM": "silentSDDM",

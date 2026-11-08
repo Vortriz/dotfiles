@@ -59,6 +59,10 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         nixos-hardware.url = "github:NixOS/nixos-hardware";
+        nixos-plymouth = {
+            url = "github:qboileau/nixos-load-plymouth";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
         silentSDDM = {
             url = "github:uiriansan/SilentSDDM";
             inputs.nixpkgs.follows = "nixpkgs";

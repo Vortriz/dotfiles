@@ -1,10 +1,12 @@
-{
+{ inputs, ... }: {
     unify.nixos = { pkgs, ... }: {
         boot = {
             plymouth = {
                 enable = true;
-                theme = "nixos";
-                themePackages = [ pkgs.nixos-boot-plymouth-theme ];
+                theme = "nixos-loading-spin";
+                themePackages = [
+                    inputs.nixos-plymouth.packages.${pkgs.stdenv.hostPlatform.system}.nixos-loading-spin
+                ];
             };
 
             # max resolution so that loader graphics look good
