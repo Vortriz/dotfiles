@@ -2,11 +2,15 @@
     unify.nixos = { pkgs, ... }: {
         boot = {
             plymouth = {
-                enable = true;
+                enable = false;
                 theme = "nixos-loading-spin";
                 themePackages = [
                     inputs.nixos-plymouth.packages.${pkgs.stdenv.hostPlatform.system}.nixos-loading-spin
                 ];
+                extraConfig = ''
+                    [Daemon]
+                    DeviceScale=an-integer-scaling-factor
+                '';
             };
 
             # max resolution so that loader graphics look good
@@ -19,11 +23,9 @@
             # Kernel parameters for clean boot
             kernelParams = [
                 "quiet"
-                "systemd.show_status=auto"
                 "splash"
-                "plymouth.ignore-serial-consoles"
-                # "plymouth.enable=0" "disablehooks=plymouth"
-                # "plymouth.debug"
+                "rd.udev.log_level=3"
+                "rd.systemd.show_status=auto"
             ];
 
             loader.timeout = 0;
