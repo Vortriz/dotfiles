@@ -37,7 +37,7 @@ system := `echo $system`
 [group('SYSTEM')]
 @get-updates:
     echo -e "Updating flake...\n"
-    nix flake update
+    tack update
 
 [group('SYSTEM')]
 @update: get-updates

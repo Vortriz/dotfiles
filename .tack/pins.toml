@@ -1,0 +1,122 @@
+[shorturls]
+gh = "github:{path}"
+vz = "github:Vortriz/{path}"
+
+# all_follow maps input names at every depth to the top-level pin they follow
+# opt out per-input with exclude_follow, scope with flake: or tack:
+[all_follow]
+nixpkgs = ["nixpkgs", "nixpkgs-lib"]
+home-manager = "home-manager"
+systems = "systems"
+treefmt-nix = "treefmt-nix"
+flake-parts = "flake-parts"
+
+# recursively omit selected upstream inputs from every top-level pin
+[omit_inputs]
+names = ["flake-compat", "nix-darwin", "tack"]
+
+[groups.cached]
+exclude_follow = ["nixpkgs"]
+
+# inputs.<name> fields
+#   url             required, shorturl ok, ?rev=<sha> pins an exact commit
+#   type            flake (default), fetch, or fixed, overrides [tack] type
+#   flake           legacy false means type = "fetch"
+#   follows         { child = "pin" } immediate-input override map
+#   exclude_follow  all_follow names to skip, flake:/tack: scoped or *
+#   omit_inputs     upstream input names to omit recursively for this pin
+#   keep_inputs     omitted input names to allow recursively for this pin
+#   dir             subdir holding flake.nix
+#   submodules      fetch git submodules
+#   unpack          fixed-only tarball or file
+#   fetch_mode      fetch-only "eval" (default) or "build" to defer fetching to build time
+#   signers         names from [signers], one of whom must have signed the locked commit
+#   patches         patch urls or files relative to this dir, applied in order
+#   tag             follow the newest tag like "v{version}", where {version} is numbers
+#                   joined by `.` `-` or `_`, so non-numeric tags like "v2.1-rc1" are
+#                   skipped, needs a github, gitlab or network git url with
+#                   no ref or rev, not file://, or for a fixed pin a release
+#                   download url naming the asset with {tag} or {version}. a trailing
+#                   * matches anything after, like a build hash in "b{version}-*". a
+#                   named placeholder like {commit} matches letters and digits and can
+#                   also be used in the url
+#   tags_from       fixed-only repo url or http(s) page to read tag's tags from, for an
+#                   asset that isn't a release download
+[inputs]
+
+# Core
+[inputs.nixpkgs]
+url = "github:NixOS/nixpkgs/nixos-unstable"
+
+[inputs.systems]
+url = "github:nix-systems/x86_64-linux"
+
+[inputs.flake-parts]
+url = "github:hercules-ci/flake-parts"
+
+[inputs.unify]
+url = "git+https://codeberg.org/quasigod/unify"
+
+[inputs.home-manager]
+url = "github:nix-community/home-manager"
+
+
+# Other
+[inputs.dux-shell]
+url = "github:duxlabs-dev/dux-shell/stable"
+
+[inputs.git-hooks]
+url = "github:cachix/git-hooks.nix"
+
+[inputs.niri]
+url = "git+https://codeberg.org/bananad3v/niri-nix"
+group = "cached"
+
+[inputs.nix-index-database]
+url = "github:nix-community/nix-index-database"
+
+[inputs.nixdatifier]
+url = "github:Muddyblack/nixdatifier"
+
+[inputs.nixos-hardware]
+url = "github:NixOS/nixos-hardware"
+
+[inputs.nixos-plymouth]
+url = "github:qboileau/nixos-load-plymouth"
+frozen = "a328a6289cfd7d02bd09eb4f197b66a0d3493e36"
+
+[inputs.silentSDDM]
+url = "github:uiriansan/SilentSDDM"
+
+[inputs.stylix]
+url = "github:nix-community/stylix"
+
+[inputs.tack]
+url = "github:manic-systems/tack"
+group = "cached"
+
+[inputs.treefmt-nix]
+url = "github:numtide/treefmt-nix"
+
+[inputs.vicinae]
+url = "github:vicinaehq/vicinae"
+group = "cached"
+
+[inputs.vpkgs]
+url = "github:Vortriz/vpkgs"
+
+
+# Non-flake
+[inputs.nix-search-tv-script]
+url = "https://raw.githubusercontent.com/Vortriz/nix-search-tv/refs/heads/main/nixpkgs.sh"
+type = "fixed"
+unpack = "file"
+
+[inputs.starship-nerd-font-symbols]
+url = "https://starship.rs/presets/toml/nerd-font-symbols.toml"
+type = "fixed"
+unpack = "file"
+
+[inputs.shyfox]
+url = "github:Vortriz/ShyFox"
+type = "fetch"

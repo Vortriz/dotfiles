@@ -2,120 +2,49 @@
     description = "Vortriz's NixOS configuration";
 
     outputs =
-        { flake-parts, ... }@inputs:
+        { self, ... }@args:
         let
+            inputs = (import ./.tack) { overrides = args.tackOverrides or { }; };
+            self' = self // {
+                inherit inputs;
+            };
+
             inherit (inputs.nixpkgs.lib.fileset) toList fileFilter;
             inherit (inputs.nixpkgs.lib.strings) hasPrefix;
+
             import-tree =
                 path: fileFilter (file: file.hasExt "nix" && !(hasPrefix "_" file.name)) path |> toList;
             import-mutiple-trees = paths: (map import-tree paths) |> builtins.concatLists;
         in
-        flake-parts.lib.mkFlake { inherit inputs; } {
-            systems = import inputs.systems;
+        inputs.flake-parts.lib.mkFlake
+            {
+                inherit inputs;
+                self = self';
+            }
+            {
+                systems = import inputs.systems;
 
-            imports = [
-                inputs.unify.flakeModule
-            ]
-            ++ (import-mutiple-trees [
-                ./hosts
-                ./modules
-            ]);
+                imports = [
+                    inputs.unify.flakeModule
+                ]
+                ++ (import-mutiple-trees [
+                    ./hosts
+                    ./modules
+                ]);
 
-            flake.templates = import ./templates;
-        };
-
-    inputs = {
-        nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-        systems.url = "github:nix-systems/x86_64-linux";
-        flake-parts.url = "github:hercules-ci/flake-parts";
-        unify = {
-            url = "git+https://codeberg.org/quasigod/unify";
-            inputs.nixpkgs.follows = "nixpkgs";
-            inputs.flake-parts.follows = "flake-parts";
-            inputs.home-manager.follows = "home-manager";
-        };
-
-        # keep-sorted start block=yes
-
-        dux-shell = {
-            url = "github:duxlabs-dev/dux-shell/stable";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-        git-hooks = {
-            url = "github:cachix/git-hooks.nix";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-        home-manager = {
-            url = "github:nix-community/home-manager";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-        niri.url = "git+https://codeberg.org/bananad3v/niri-nix";
-        nix-index-database = {
-            url = "github:nix-community/nix-index-database";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-        nixdatifier = {
-            url = "github:Muddyblack/nixdatifier";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-        nixos-hardware.url = "github:NixOS/nixos-hardware";
-        nixos-plymouth = {
-            url = "github:qboileau/nixos-load-plymouth";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-        silentSDDM = {
-            url = "github:uiriansan/SilentSDDM";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-        stylix = {
-            url = "github:nix-community/stylix";
-            inputs.nixpkgs.follows = "nixpkgs";
-            inputs.systems.follows = "systems";
-            inputs.flake-parts.follows = "flake-parts";
-        };
-        treefmt-nix = {
-            url = "github:numtide/treefmt-nix";
-            inputs.nixpkgs.follows = "nixpkgs";
-        };
-        vicinae.url = "github:vicinaehq/vicinae";
-        vpkgs = {
-            # url = "github:Vortriz/nur-packages";
-            url = "/mnt/HOUSE/dev/others/vpkgs";
-        };
-        # keep-sorted end
-
-        # keep-sorted start block=yes
-        nix-search-tv-script = {
-            url = "https://raw.githubusercontent.com/Vortriz/nix-search-tv/refs/heads/main/nixpkgs.sh";
-            flake = false;
-            type = "file";
-        };
-        shyfox = {
-            url = "github:Vortriz/ShyFox";
-            # url = "/mnt/HOUSE/dev/others/ShyFox";
-            flake = false;
-        };
-        starship-nerd-font-symbols = {
-            url = "https://starship.rs/presets/toml/nerd-font-symbols.toml";
-            flake = false;
-            type = "file";
-        };
-        # [MARK] symlinking via xdg.dataHome isn't working
-        # zed-modern-icons = {
-        #     url = "github:Vortriz/zed-modern-icons";
-        #     flake = false;
-        # };
-        # keep-sorted end
-    };
+                flake.templates = import ./templates;
+            };
 
     nixConfig = {
         extra-substituters = [
             "https://niri-nix.cachix.org"
             "https://vicinae.cachix.org"
+            "https://cache.manic.systems"
         ];
         extra-trusted-public-keys = [
             "niri-nix.cachix.org-1:SvFtqpDcf7Sm1SMJdby1/+Y+6f3Yt3/3PMcSTKPJNJ0="
             "vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc="
+            "cache.manic.systems-1:s6OZanN8Us8vRi0jVivP3qlMn0cYHBjBALKrNe5nH8s="
         ];
     };
 }

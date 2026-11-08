@@ -1,0 +1,193 @@
+{
+  "$declared": {
+    "dux-shell": "github:duxlabs-dev/dux-shell/stable",
+    "flake-parts": "github:hercules-ci/flake-parts",
+    "git-hooks": "github:cachix/git-hooks.nix",
+    "home-manager": "github:nix-community/home-manager",
+    "niri": "git+https://codeberg.org/bananad3v/niri-nix",
+    "nix-index-database": "github:nix-community/nix-index-database",
+    "nix-search-tv-script": "https://raw.githubusercontent.com/Vortriz/nix-search-tv/refs/heads/main/nixpkgs.sh",
+    "nixdatifier": "github:Muddyblack/nixdatifier",
+    "nixos-hardware": "github:NixOS/nixos-hardware",
+    "nixos-plymouth": "github:qboileau/nixos-load-plymouth",
+    "nixpkgs": "github:NixOS/nixpkgs/nixos-unstable",
+    "shyfox": "github:Vortriz/ShyFox",
+    "silentSDDM": "github:uiriansan/SilentSDDM",
+    "starship-nerd-font-symbols": "https://starship.rs/presets/toml/nerd-font-symbols.toml",
+    "stylix": "github:nix-community/stylix",
+    "systems": "github:nix-systems/x86_64-linux",
+    "tack": "github:manic-systems/tack",
+    "treefmt-nix": "github:numtide/treefmt-nix",
+    "unify": "git+https://codeberg.org/quasigod/unify",
+    "vicinae": "github:vicinaehq/vicinae",
+    "vpkgs": "github:Vortriz/vpkgs"
+  },
+  "dux-shell": {
+    "type": "github",
+    "owner": "duxlabs-dev",
+    "repo": "dux-shell",
+    "rev": "43255a46ea01e9d0de1fe8ce9897c0d71566b2a8",
+    "narHash": "sha256-D8Ps69xp345EKBDqgznn5kDeb2UEOtNX5+wChMKGBDo=",
+    "lastModified": 1794152448
+  },
+  "flake-parts": {
+    "type": "github",
+    "owner": "hercules-ci",
+    "repo": "flake-parts",
+    "rev": "ea2630b7470978622c7689a1ff75d2b389175399",
+    "narHash": "sha256-V1h85lUaJBQoHFrB2vpXZOE0Ju1MYSnIpsehoVZYlDo=",
+    "lastModified": 1793576659
+  },
+  "git-hooks": {
+    "type": "github",
+    "owner": "cachix",
+    "repo": "git-hooks.nix",
+    "rev": "204b6977e00caac19e2313015a598543ca7be150",
+    "narHash": "sha256-Zb/0L3soxrkfcrywpfp0J++0WFLB3tzh0Xtx9up+VNc=",
+    "lastModified": 1793686154
+  },
+  "home-manager": {
+    "type": "github",
+    "owner": "nix-community",
+    "repo": "home-manager",
+    "rev": "2c0c1f01521469cf0271180c453c79782d53c2f6",
+    "narHash": "sha256-7OoWDsYO9teiPxl0QdlS5lYE20Pue8/5mpscSL32FUA=",
+    "lastModified": 1793979366
+  },
+  "niri": {
+    "type": "git",
+    "url": "https://codeberg.org/bananad3v/niri-nix",
+    "ref": "HEAD",
+    "rev": "2bf797ee5a2fa16b5699b9dc582350654d342b72",
+    "narHash": "sha256-tp8aArbo2blNkTbKw27/fWFO2gLtgRqJT+2lXyXAkxw=",
+    "lastModified": 1794096592
+  },
+  "nix-index-database": {
+    "type": "github",
+    "owner": "nix-community",
+    "repo": "nix-index-database",
+    "rev": "af9249ca33bc2efaae5d071e4c67ddef19dcb681",
+    "narHash": "sha256-iGNtQnUZsi+v6/4NbtYr+dsmASa6GkzXtUcTpE8F3mE=",
+    "lastModified": 1794132860
+  },
+  "nix-search-tv-script": {
+    "type": "fixed",
+    "url": "https://raw.githubusercontent.com/Vortriz/nix-search-tv/refs/heads/main/nixpkgs.sh",
+    "sha256": "sha256-3Mw3HI9lQQ+/cEHmqey3Rux2VVXGvpSSAvptuav7474=",
+    "unpack": "file"
+  },
+  "nixdatifier": {
+    "type": "github",
+    "owner": "Muddyblack",
+    "repo": "nixdatifier",
+    "rev": "621d83b90bf238aec2814daaeab69d1919c595ab",
+    "narHash": "sha256-+voAIg2AbGRzxqhrwCbxtozf5Sdc5bokwfBWYvSumQk=",
+    "lastModified": 1794151921
+  },
+  "nixos-hardware": {
+    "type": "github",
+    "owner": "NixOS",
+    "repo": "nixos-hardware",
+    "rev": "1a8ff4f57ffe1f732beaa1db842247a381ea471d",
+    "narHash": "sha256-mJok3uMK0awq2MPKdSnvTxm3UD89KD3LclQzASgtY1s=",
+    "lastModified": 1794051415
+  },
+  "nixos-plymouth": {
+    "type": "github",
+    "owner": "qboileau",
+    "repo": "nixos-load-plymouth",
+    "rev": "a328a6289cfd7d02bd09eb4f197b66a0d3493e36",
+    "narHash": "sha256-HA8AwVrJrqIFyt3g1idRkTYPwrgLyWAj7PuN9VSMhKo=",
+    "lastModified": 1788006886
+  },
+  "nixpkgs": {
+    "type": "github",
+    "owner": "NixOS",
+    "repo": "nixpkgs",
+    "rev": "f4a03c008967841f2a0b3cb7c436fc6fc31671f6",
+    "narHash": "sha256-ziZn2PvCJE5JEEpqTdxXwJpPB+L3YqoCpTAMCzyaP3U=",
+    "lastModified": 1794042290
+  },
+  "shyfox": {
+    "type": "github",
+    "owner": "Vortriz",
+    "repo": "ShyFox",
+    "rev": "b71fc94d394c4fcdec0e9c069e320f26f1adb830",
+    "narHash": "sha256-wNzyzZlPsYTbQTpUMUlUdQU7ul7Nh6P/PImoAEAHAwU=",
+    "lastModified": 1790489163,
+    "archive": {
+      "hash": "sha256-cYiyM3Lxx7rlZ0ALFIGNty3WAtLRUGNYTZOq/bMc1Mg=",
+      "outHash": "sha256-ecDeBjfj+G7FGlRyTaIRjOwteN7Qc2eebMV4eCIWbwc="
+    }
+  },
+  "silentSDDM": {
+    "type": "github",
+    "owner": "uiriansan",
+    "repo": "SilentSDDM",
+    "rev": "d179078e88cde18195b82841d3e879949b06faa8",
+    "narHash": "sha256-0bYPQwI4+vkIGMHMBgawx1lpoV8XFpGhDyZFXM6T5b4=",
+    "lastModified": 1793825007
+  },
+  "starship-nerd-font-symbols": {
+    "type": "fixed",
+    "url": "https://starship.rs/presets/toml/nerd-font-symbols.toml",
+    "sha256": "sha256-NikTdNoPtPtModrvqJiGL6AObzLSYauCz/Fk7hxrjOc=",
+    "unpack": "file"
+  },
+  "stylix": {
+    "type": "github",
+    "owner": "nix-community",
+    "repo": "stylix",
+    "rev": "3e27b6c499e507df6e3bb8eca3614f5c95e28140",
+    "narHash": "sha256-2pkE97wOXAYIn2/Nhs9y+iR0qVT+g/3UtukXdkywxXc=",
+    "lastModified": 1792920263
+  },
+  "systems": {
+    "type": "github",
+    "owner": "nix-systems",
+    "repo": "x86_64-linux",
+    "rev": "2ecfcac5e15790ba6ce360ceccddb15ad16d08a8",
+    "narHash": "sha256-Gtqg8b/v49BFDpDetjclCYXm8mAnTrUzR0JnE2nv5aw=",
+    "lastModified": 1680978846
+  },
+  "tack": {
+    "type": "github",
+    "owner": "manic-systems",
+    "repo": "tack",
+    "rev": "cd02f41558f0ccf8b1ae67fd96950ed0e6553129",
+    "narHash": "sha256-NkEQK3h5pn39Cj4zMf/EYoxUo0/SNnkR0yGaYvJ96DA=",
+    "lastModified": 1794039014
+  },
+  "treefmt-nix": {
+    "type": "github",
+    "owner": "numtide",
+    "repo": "treefmt-nix",
+    "rev": "0d6d739a833ba9a9c93034862e4a7b061a062a1c",
+    "narHash": "sha256-C3alQ2MEt0zVrUSho5NUDo3jmhbff72++bfwoqT9Omo=",
+    "lastModified": 1791885023
+  },
+  "unify": {
+    "type": "git",
+    "url": "https://codeberg.org/quasigod/unify",
+    "ref": "HEAD",
+    "rev": "35824b87edab3df89474b426a8fcbe02cb720504",
+    "narHash": "sha256-3VJMOW8DOFgWerzUmOI5YiGA3auqW4ZbIDHNaqvLp0E=",
+    "lastModified": 1765403820
+  },
+  "vicinae": {
+    "type": "github",
+    "owner": "vicinaehq",
+    "repo": "vicinae",
+    "rev": "84a0086f0e589576c3c55a211579e63c20d83e59",
+    "narHash": "sha256-GyN4K/lOaRRO2RkFJS5dVmpNX7xsrVbclzBfxd3mxtU=",
+    "lastModified": 1794153382
+  },
+  "vpkgs": {
+    "type": "github",
+    "owner": "Vortriz",
+    "repo": "vpkgs",
+    "rev": "8074c928113304c817e7c16944856d6907d0b8d6",
+    "narHash": "sha256-uqsx6+hcifDhxjJM3TN7HPsWXRKXHz0N0/8IQimWiUk=",
+    "lastModified": 1794147359
+  }
+}

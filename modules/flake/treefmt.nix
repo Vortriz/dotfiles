@@ -29,6 +29,8 @@
             };
 
             settings = {
+                global.excludes = [ ".tack/*" ];
+
                 formatter = {
                     # nix
                     deadnix.priority = 1;
