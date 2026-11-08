@@ -1,8 +1,6 @@
 { inputs, ... }: {
     unify = {
         nixos = {
-            nixpkgs.overlays = [ inputs.nur-vortriz.overlays.yaziPlugins ];
-
             # gvfs
             services.gvfs.enable = true;
         };
@@ -23,30 +21,30 @@
                     plugins = {
                         inherit (pkgs.yaziPlugins)
                             # keep-sorted start
+                            gvfs
                             jump-to-char
                             mediainfo
+                            office
                             ouch
                             piper
                             restore
                             smart-enter
                             smart-filter
+                            starship
                             toggle-pane
                             yafg
                             zoom
                             # keep-sorted end
                             ;
                     }
-                    # from nur
+                    # from vpkgs
                     // {
-                        inherit (pkgs.yaziPlugins)
+                        inherit (inputs.vpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system}.yaziPlugins)
                             # keep-sorted start
                             bunny
                             custom-shell
                             enhance-piper
                             file-extra-metadata
-                            gvfs
-                            office
-                            starship
                             what-size
                             # keep-sorted end
                             ;

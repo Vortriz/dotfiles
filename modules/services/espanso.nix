@@ -8,8 +8,6 @@
                 ...
             }:
             {
-                nixpkgs.overlays = [ inputs.nur-vortriz.overlays.espansoPackages ];
-
                 security.wrappers.espanso = {
                     capabilities = "cap_dac_override+p";
                     owner = "root";
@@ -51,7 +49,8 @@
                     map
                         (name: {
                             name = "espanso/match/packages/${name}";
-                            value.source = pkgs.espansoPackages.${name};
+                            value.source =
+                                inputs.vpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system}.espansoPackages.${name};
                         })
                         [
                             "greek-letters-improved"

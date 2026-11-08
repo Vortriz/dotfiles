@@ -8,7 +8,7 @@
             ...
         }:
         {
-            home.packages = [ pkgs.surge ];
+            home.packages = [ pkgs.surge-downloader ];
 
             xdg.configFile."surge/settings.json".text = lib.toJSON {
                 general = {
@@ -26,7 +26,7 @@
             ];
 
             wayland.windowManager.niri.settings.spawn-sh-at-startup = [
-                [ "${lib.getExe pkgs.surge} server" ]
+                [ "${lib.getExe pkgs.surge-downloader} server" ]
             ];
         };
 }

@@ -84,27 +84,6 @@
         "type": "github"
       }
     },
-    "devshell": {
-      "inputs": {
-        "nixpkgs": [
-          "nur-vortriz",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1791918082,
-        "narHash": "sha256-oN9JrhRfHa7MUTdUq+11dHn7u0Z4WfEA4mhzBq0/zoQ=",
-        "owner": "numtide",
-        "repo": "devshell",
-        "rev": "9e29c63dde99a2d80c94b3d024c9768c01544558",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "devshell",
-        "type": "github"
-      }
-    },
     "dux-shell": {
       "inputs": {
         "dank-qml-common": "dank-qml-common",
@@ -494,34 +473,6 @@
         "type": "github"
       }
     },
-    "nur-vortriz": {
-      "inputs": {
-        "devshell": "devshell",
-        "flake-parts": [
-          "flake-parts"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "systems": [
-          "systems"
-        ],
-        "treefmt-nix": "treefmt-nix"
-      },
-      "locked": {
-        "lastModified": 1794024928,
-        "narHash": "sha256-ukL+uJSGZw8VVtfeb9ttZw/gb8vooWyArBj5d3vf8xA=",
-        "owner": "Vortriz",
-        "repo": "nur-packages",
-        "rev": "71c13b513e16c2af2e5376d43071b01090eb05b5",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Vortriz",
-        "repo": "nur-packages",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "dux-shell": "dux-shell",
@@ -534,15 +485,15 @@
         "nixdatifier": "nixdatifier",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_3",
-        "nur-vortriz": "nur-vortriz",
         "shyfox": "shyfox",
         "silentSDDM": "silentSDDM",
         "starship-nerd-font-symbols": "starship-nerd-font-symbols",
         "stylix": "stylix",
         "systems": "systems",
-        "treefmt-nix": "treefmt-nix_2",
+        "treefmt-nix": "treefmt-nix",
         "unify": "unify",
-        "vicinae": "vicinae"
+        "vicinae": "vicinae",
+        "vpkgs": "vpkgs"
       }
     },
     "shyfox": {
@@ -749,27 +700,6 @@
     "treefmt-nix": {
       "inputs": {
         "nixpkgs": [
-          "nur-vortriz",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1791885023,
-        "narHash": "sha256-C3alQ2MEt0zVrUSho5NUDo3jmhbff72++bfwoqT9Omo=",
-        "owner": "numtide",
-        "repo": "treefmt-nix",
-        "rev": "0d6d739a833ba9a9c93034862e4a7b061a062a1c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "treefmt-nix",
-        "type": "github"
-      }
-    },
-    "treefmt-nix_2": {
-      "inputs": {
-        "nixpkgs": [
           "nixpkgs"
         ]
       },
@@ -832,6 +762,18 @@
         "owner": "vicinaehq",
         "repo": "vicinae",
         "type": "github"
+      }
+    },
+    "vpkgs": {
+      "locked": {
+        "lastModified": 1794141781,
+        "narHash": "sha256-3E/Me4J8rfLaPogwSQaD//1VDbJyZmKCRxdpO/+H7QI=",
+        "path": "/mnt/HOUSE/dev/others/vpkgs",
+        "type": "path"
+      },
+      "original": {
+        "path": "/mnt/HOUSE/dev/others/vpkgs",
+        "type": "path"
       }
     }
   },

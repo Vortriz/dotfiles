@@ -14,11 +14,26 @@
                 ...
             }:
             let
-                fprintPkg = pkgs.libfprint-focaltech-2808-a658-alt;
+                libfprintPkg = pkgs.libfprint-focaltech-2808-a658;
             in
             {
                 imports = [
                     inputs.nixos-hardware.nixosModules.common-cpu-intel
+                ];
+
+                nixpkgs.overlays = [
+                    (_self: super: {
+                        fprintd = super.fprintd.overrideAttrs {
+                            version = "1.94.4";
+                            src = pkgs.fetchFromGitLab {
+                                domain = "gitlab.freedesktop.org";
+                                owner = "libfprint";
+                                repo = "fprintd";
+                                rev = "refs/tags/v1.94.4}";
+                                hash = "sha256-B2g2d29jSER30OUqCkdk3+Hv5T3DA4SUKoyiqHb8FeU=";
+                            };
+                        };
+                    })
                 ];
 
                 nixpkgs.hostPlatform = {
@@ -81,10 +96,10 @@
                     fprintd = {
                         enable = true;
                         package = pkgs.fprintd.override {
-                            libfprint = fprintPkg;
+                            libfprint = libfprintPkg;
                         };
                     };
-                    udev.packages = [ fprintPkg ];
+                    udev.packages = [ libfprintPkg ];
                 };
             };
     };

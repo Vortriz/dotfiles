@@ -1,8 +1,6 @@
 { inputs, ... }: {
     unify = {
         nixos = {
-            nixpkgs.overlays = [ inputs.nur-vortriz.overlays.zoteroAddons ];
-
             nixpkgs.config.permittedInsecurePackages = [
                 "firefox-esr-140-bin-unwrapped-140.17.0esr"
             ];
@@ -16,7 +14,7 @@
                 ...
             }:
             {
-                imports = [ inputs.nur-vortriz.homeModules.zotero ];
+                imports = [ inputs.vpkgs.homeModules.zotero ];
 
                 programs.zotero = {
                     enable = true;
@@ -42,7 +40,7 @@
                                 # keep-sorted end
                             };
 
-                        extensions = with pkgs.zoteroAddons; [
+                        extensions = with inputs.vpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system}.zoteroAddons; [
                             # keep-sorted start
                             zotero-better-bibtex
                             zotero-scipdf

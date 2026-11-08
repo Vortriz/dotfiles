@@ -6,8 +6,6 @@
             ...
         }:
         {
-            nixpkgs.overlays = [ inputs.nur-vortriz.overlays.fonts ];
-
             fonts.packages =
                 with pkgs;
                 [
@@ -27,7 +25,7 @@
                     # keep-sorted end
                 ]
                 # from nur
-                ++ (with pkgs.fonts; [
+                ++ (with inputs.vpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system}.fonts; [
                     HelveticaNeueCyr
                     SFMono-Nerd-Font-Ligaturized
                 ])

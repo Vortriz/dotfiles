@@ -59,13 +59,6 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         nixos-hardware.url = "github:NixOS/nixos-hardware";
-        nur-vortriz = {
-            url = "github:Vortriz/nur-packages";
-            # url = "/mnt/HOUSE/dev/others/nur-packages";
-            inputs.nixpkgs.follows = "nixpkgs";
-            inputs.systems.follows = "systems";
-            inputs.flake-parts.follows = "flake-parts";
-        };
         silentSDDM = {
             url = "github:uiriansan/SilentSDDM";
             inputs.nixpkgs.follows = "nixpkgs";
@@ -81,6 +74,10 @@
             inputs.nixpkgs.follows = "nixpkgs";
         };
         vicinae.url = "github:vicinaehq/vicinae";
+        vpkgs = {
+            # url = "github:Vortriz/nur-packages";
+            url = "/mnt/HOUSE/dev/others/vpkgs";
+        };
         # keep-sorted end
 
         # keep-sorted start block=yes

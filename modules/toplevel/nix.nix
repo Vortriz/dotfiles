@@ -10,7 +10,7 @@
                 nixpkgs = {
                     config.allowUnfree = true;
                     overlays = [
-                        inputs.nur-vortriz.overlays.default
+                        inputs.vpkgs.overlays.default
                     ];
                 };
 
