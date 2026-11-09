@@ -61,7 +61,7 @@ url = "git+https://codeberg.org/quasigod/unify"
 url = "github:nix-community/home-manager"
 
 
-# Other
+# Others
 [inputs.dux-shell]
 url = "github:duxlabs-dev/dux-shell/stable"
 
@@ -112,11 +112,11 @@ url = "https://raw.githubusercontent.com/Vortriz/nix-search-tv/refs/heads/main/n
 type = "fixed"
 unpack = "file"
 
+[inputs.shyfox]
+url = "github:Vortriz/ShyFox"
+type = "fetch"
+
 [inputs.starship-nerd-font-symbols]
 url = "https://starship.rs/presets/toml/nerd-font-symbols.toml"
 type = "fixed"
 unpack = "file"
-
-[inputs.shyfox]
-url = "github:Vortriz/ShyFox"
-type = "fetch"
