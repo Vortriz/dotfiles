@@ -27191,3 +27191,47 @@ NOTE: 237 hidden (--full to show)
 
 PATHS: 2729 -> 2729 (+10, -10)
 SIZE: 21.3 GiB -> 21.3 GiB (-72 bytes)
+
+---
+
+09/11/26 12:35:11 PM IST
+<<< /nix/store/ncnl860syrixld3qs5gy37wbzvzmbfai-nixos-system-sagittarius-26.11.20261107.f4a03c0
+>>> /nix/store/lnrbi11v4s1r34k91ddqdi1fzndv6651-nixos-system-sagittarius-26.11.20261107.f4a03c0
+
+ADDED (3)
+[A.] unit-watt.service                          <none>
+[A+] watt                                       1.4.0, +4.16 MiB
+[A.] watt-config.toml                           <none>
+
+REMOVED (26)
+[R.] X-Restart-Triggers-tlp                     <none>
+[R.] etc-tlp.conf                               <none>
+[R.] hdparm                                     9.65, -159 KiB
+[R.] nixos-loading-plymouth-spin                0.1.0, -354 KiB
+[R-] plymouth                                   26.134.222, 26.134.222_fish-completions, -2.33 MiB
+[R.] plymouth-logos                             <none>
+[R.] plymouth-themes                            <none>, -43.1 KiB
+[R.] plymouthd.conf                             <none>
+[R.] smartmontools                              7.5, -2.34 MiB
+[R-] tlp                                        1.10.2, 1.10.2_fish-completions, -842 KiB
+[R.] unit-cpufreq.service-disabled              <none>
+[R.] unit-emergency.service                     <none>
+[R.] unit-plymouth-halt.service                 <none>
+[R.] unit-plymouth-kexec.service                <none>
+[R.] unit-plymouth-poweroff.service             <none>
+[R.] unit-plymouth-quit-wait.service            <none>
+[R.] unit-plymouth-quit.service                 <none>
+[R.] unit-plymouth-read-write.service           <none>
+[R.] unit-plymouth-reboot.service               <none>
+[R.] unit-plymouth-start.service                <none>
+[R.] unit-rescue.service                        <none>
+[R.] unit-systemd-ask-password-plymouth.path    <none>
+[R.] unit-systemd-ask-password-plymouth.service <none>
+[R.] unit-tlp-sleep.service                     <none>
+[R.] unit-tlp.service                           <none>
+[R.] x86_energy_perf_policy                     6.18.62, -51.0 KiB
+
+PATHS: 2729 -> 2704 (+40, -65)
+SIZE: 21.3 GiB -> 21.3 GiB (-8.78 MiB)
+
+NOTE: 3 hidden (--full to show)
