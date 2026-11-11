@@ -62,12 +62,12 @@ alias pf := prefetch
 @repl:
     nix repl --expr \
     "let \
+        inputs = (import ./.tack); \
         flake = builtins.getFlake (toString ./.); \
-        nixpkgs = flake.inputs.nixpkgs; \
-        pkgs = nixpkgs.legacyPackages.{{ system }}; \
+        pkgs = import inputs.nixpkgs { system = \"{{ system }}\"; }; \
     in \
-        {inherit flake pkgs;} // builtins // nixpkgs.lib // \
-        flake.nixosConfigurations.sagittarius.config // flake.nixosConfigurations.sagittarius.config.home-manager.users"
+        {inherit flake pkgs;} // builtins // inputs.nixpkgs.lib // \
+        flake.nixosConfigurations.sagittarius // flake.nixosConfigurations.sagittarius.config.home-manager.users"
 
 [group('TOOLS')]
 @get-diff:
