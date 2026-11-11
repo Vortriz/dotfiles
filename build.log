@@ -27235,3 +27235,85 @@ PATHS: 2729 -> 2704 (+40, -65)
 SIZE: 21.3 GiB -> 21.3 GiB (-8.78 MiB)
 
 NOTE: 3 hidden (--full to show)
+
+---
+
+11/11/26 07:38:57 PM IST
+<<< /nix/store/lnrbi11v4s1r34k91ddqdi1fzndv6651-nixos-system-sagittarius-26.11.20261107.f4a03c0
+>>> /nix/store/cgims0zin3g9d1qk2hgvp1pm9m5zvlja-nixos-system-sagittarius-26.11.20261107.f4a03c0
+
+CHANGED (4)
+[U.] ZotLit                                2.2.1 -> 2.2.2
+[D*] bind                                  9.20.30-dnsutils, <unchanged> -> <unchanged>, -472 KiB
+[U.] doi2bib3                              1.7.1, 1.7.1-fish-completions -> 1.8.1, 1.8.1-fish-completions, +8.66 KiB
+[D*] polkit                                127-dev, <unchanged> -> <unchanged>, -427 KiB
+
+ADDED (13)
+[A.] HelveticaNeueCyr                      2025-11-06, +206 KiB
+[A.] SFMono-Nerd-Font-Ligaturized          2023-07-01, +49.1 MiB
+[A.] Zotero-Scihub                         2.0.1, +14.6 KiB
+[A.] actually-all-emojis-spaces            2023-06-22, +101 KiB
+[A.] bunny.yazi                            2026-10-20, +147 KiB
+[A.] custom-shell.yazi                     2026-08-07, +617 KiB
+[A.] enhance-piper.yazi                    2026-09-08, +9.12 KiB
+[A.] file-extra-metadata.yazi              2026-09-08, +656 KiB
+[A.] greek-letters-improved                2026-07-02
+[A.] lower-upper                           2021-11-04
+[A.] math-symbols                          2026-07-02
+[A.] super-sub-scripts                     2026-07-02, +9.80 KiB
+[A.] what-size.yazi                        2026-09-02, +44.3 KiB
+
+REMOVED (48)
+[R.] HelveticaNeueCyr-unstable             2025-11-06, -206 KiB
+[R.] SFMono-Nerd-Font-Ligaturized-unstable 2023-07-01, -49.1 MiB
+[R.] SciPDF-For-Zotero                     8.1.1, -45.0 KiB
+[R.] actually-all-emojis-spaces-unstable   2023-06-22, -101 KiB
+[R.] bunny.yazi-unstable                   2026-11-08, -147 KiB
+[R.] cinnamon-desktop                      6.6.2, -1.16 MiB
+[R.] cinnamon-translations                 6.6.2, -25.2 MiB
+[R.] custom-shell.yazi-unstable            2026-11-08, -617 KiB
+[R.] dconf-editor                          49.0, -3.71 MiB
+[R.] enhance-piper.yazi-unstable           2026-11-08, -9.12 KiB
+[R.] file-extra-metadata.yazi-unstable     2026-11-08, -656 KiB
+[R.] file-roller                           44.7, -4.58 MiB
+[R.] folder-color-switcher                 1.7.1, -257 KiB
+[R.] gitui                                 0.28.1, 0.28.1-fish-completions, -10.4 MiB
+[R.] gitui-key-config.ron                  <none>
+[R.] gitui-theme.ron                       <none>
+[R.] greek-letters-improved-unstable       2026-07-02
+[R.] gtk-layer-shell                       0.10.1, -321 KiB
+[R.] inxi                                  3.3.41-1, -1.31 MiB
+[R.] libgnomekbd                           3.28.1, -698 KiB
+[R.] libgtop                               2.41.3, -611 KiB
+[R.] libmatekbd                            1.28.0, -846 KiB
+[R.] libmatemixer                          1.28.0, -963 KiB
+[R.] libmateweather                        1.28.2, -114 MiB
+[R.] libwnck                               43.3, -2.09 MiB
+[R.] libxklavier                           5.4, -159 KiB
+[R.] lower-upper-unstable                  2021-11-04
+[R.] marco                                 1.28.2, -6.70 MiB
+[R.] mate-desktop                          1.28.2, -3.35 MiB
+[R.] mate-menus                            1.28.1, -664 KiB
+[R.] mate-panel                            1.28.7, -14.6 MiB
+[R.] mate-settings-daemon                  1.28.0, -3.61 MiB
+[R.] math-symbols-unstable                 2026-07-02
+[R.] nemo                                  6.6.4, -7.46 MiB
+[R.] nemo-emblems                          6.6.0, -44.8 KiB
+[R.] nemo-fileroller                       6.6.0, -26.2 KiB
+[R.] nemo-python                           6.6.0, -42.6 KiB
+[R.] nemo-with-extensions                  6.6.4, 6.6.4-fish-completions, -132 KiB
+[R.] nemo.desktop                          <none>
+[R.] nemo.desktop-fish-completions         <none>
+[R.] perl5.42.3-Cpanel-JSON-XS             4.80, -249 KiB
+[R.] ps-procps                             4.0.7
+[R.] python3.14-python-xapp                3.0.3, -214 KiB
+[R.] python3.14-setproctitle               1.3.8, -49.4 KiB
+[R.] super-sub-scripts-unstable            2026-07-02, -9.80 KiB
+[R.] what-size.yazi-unstable               2026-11-08, -44.3 KiB
+[R.] xapp                                  3.2.3, 3.2.3-dev, -1.57 MiB
+[R.] xapp-symbolic-icons                   1.1.1, -1.09 MiB
+
+PATHS: 2704 -> 2662 (+67, -109)
+SIZE: 21.3 GiB -> 21.1 GiB (-206 MiB)
+
+NOTE: 5 hidden (--full to show)
