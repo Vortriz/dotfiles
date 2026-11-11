@@ -21,9 +21,5 @@
                 git_protocol = "https";
             };
         };
-
-        programs.gitui.enable = true;
-
-        stylix.targets.gitui.enable = true;
     };
 }

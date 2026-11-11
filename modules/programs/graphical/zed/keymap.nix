@@ -36,7 +36,7 @@
                     bindings = {
                         ctrl-shift-f = [
                             "pane::DeploySearch"
-                            { excluded_files = "build.log, *.lock"; }
+                            { excluded_files = "build.log, **/*.lock"; }
                         ];
                     };
                 }
