@@ -104,6 +104,7 @@ group = "cached"
 
 [inputs.vpkgs]
 url = "github:Vortriz/vpkgs"
+# url = "path:/mnt/HOUSE/dev/others/vpkgs"
 
 
 # Non-flake

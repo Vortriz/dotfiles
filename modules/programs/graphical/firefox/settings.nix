@@ -52,6 +52,7 @@
                 "toolkit.telemetry.unified" = false;
                 "ui.systemUsesDarkTheme" = 1;
                 "widget.use-xdg-desktop-portal.file-picker" = 1;
+                "widget.use-xdg-desktop-portal.open-uri" = 2;
                 # keep-sorted end
             };
     };

@@ -7,20 +7,18 @@
             ...
         }:
         let
-            xdp-termfilechooser = pkgs.xdg-desktop-portal-termfilechooser;
+            xdpt = pkgs.xdg-desktop-portal-termfilechooser;
+            offc = pkgs.org-freedesktop-FileManager1-common;
         in
         {
             programs.yazi = {
                 enable = true;
 
                 initLua = ./init.lua;
-
                 shellWrapperName = "y";
             };
 
             stylix.targets.yazi.enable = true;
-
-            home.packages = [ pkgs.exiftool ];
 
             wayland.windowManager.niri.settings.binds."Mod+E" = {
                 spawn-sh = "xdg-terminal-exec --app-id=yazi ${lib.getExe config.programs.yazi.finalPackage}";
@@ -29,17 +27,30 @@
 
             xdg = {
                 portal = {
-                    extraPortals = [ xdp-termfilechooser ];
-
+                    extraPortals = [ xdpt ];
                     config.niri."org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
                 };
 
-                configFile."xdg-desktop-portal-termfilechooser/config".text = ''
+                configFile."${xdpt.pname}/config".text = ''
                     [filechooser]
-                    cmd=${xdp-termfilechooser}/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh
+                    cmd=${xdpt}/share/${xdpt.pname}/yazi-wrapper.sh
                     default_dir=$HOME
-                    env=TERMCMD=kitty
+                    env=TERMCMD=xdg-terminal-exec
                 '';
+
+                configFile."org.freedesktop.FileManager1.common/config".text = ''
+                    cmd=${offc}/share/${offc.pname}/yazi-wrapper.sh
+                    TERMCMD=xdg-terminal-exec
+                '';
+            };
+
+            systemd.user.services.org-freedesktop-filemanager1-common = {
+                Unit = {
+                    Description = "Run a FileManager1 interface to launch yazi";
+                    X-RestartIfChanged = true;
+                };
+                Install.WantedBy = [ "default.target" ];
+                Service.ExecStart = "${offc}/libexec/file_manager_dbus";
             };
         };
 }
