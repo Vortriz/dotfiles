@@ -13,6 +13,7 @@
                 (extension "istilldontcareaboutcookies" "idcac-pub@guus.ninja")
                 (extension "markdown-here" "markdown-here-webext@adam.pritchard")
                 (extension "raindropio" "jid0-adyhmvsP91nUO8pRv0Mn2VKeB84@jetpack")
+                (extension "sci-hub-addon" "{6031c27b-5ae2-4449-a7fd-ac7feabb4ef3}")
                 (extension "sponsorblock" "sponsorBlocker@ajay.app")
                 (extension "tabliss" "extension@tabliss.io")
                 (extensionPriv "sidebery" "{3c078156-979c-498b-8990-85f7987dd929}")
