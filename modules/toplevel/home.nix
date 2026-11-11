@@ -19,6 +19,7 @@
             { hostConfig, ... }:
             {
                 programs.home-manager.enable = true;
+                manual.manpages.enable = false;
 
                 home = {
                     inherit (hostConfig) username;

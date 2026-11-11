@@ -3,6 +3,7 @@
         documentation = {
             doc.enable = false;
             info.enable = false;
+            man.enable = false;
         };
 
         time.timeZone = "Asia/Kolkata";
