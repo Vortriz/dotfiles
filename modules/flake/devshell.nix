@@ -16,17 +16,12 @@
                     [
                         # keep-sorted start
                         dix
-                        fd
-                        fish
+                        fresh-editor
                         git
                         jaq
                         just
-                        micro
                         nh
-                        nix-init
                         nix-melt
-                        nix-prefetch-git
-                        nix-prefetch-github
                         ripgrep
                         # keep-sorted end
                     ]
