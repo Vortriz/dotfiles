@@ -43,7 +43,7 @@
                         extensions = with inputs.vpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system}.zoteroAddons; [
                             # keep-sorted start
                             zotero-better-bibtex
-                            zotero-scipdf
+                            zotero-scihub
                             zotlit
                             zotmoov
                             # keep-sorted end
