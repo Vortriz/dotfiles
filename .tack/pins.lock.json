@@ -50,9 +50,9 @@
     "type": "github",
     "owner": "nix-community",
     "repo": "home-manager",
-    "rev": "2c0c1f01521469cf0271180c453c79782d53c2f6",
-    "narHash": "sha256-7OoWDsYO9teiPxl0QdlS5lYE20Pue8/5mpscSL32FUA=",
-    "lastModified": 1793979366
+    "rev": "82ce401aa350502897c3f2e85f384d61cd3b0b6d",
+    "narHash": "sha256-rkrJwLgLSHBnXfgoSKIDa+2LLGdTqynsV3GAxOTGhUU=",
+    "lastModified": 1794278858
   },
   "niri": {
     "type": "git",
@@ -80,17 +80,17 @@
     "type": "github",
     "owner": "Muddyblack",
     "repo": "nixdatifier",
-    "rev": "621d83b90bf238aec2814daaeab69d1919c595ab",
-    "narHash": "sha256-+voAIg2AbGRzxqhrwCbxtozf5Sdc5bokwfBWYvSumQk=",
-    "lastModified": 1794151921
+    "rev": "cc153eab9f27c67565c3fed51725bffe05a8c1c8",
+    "narHash": "sha256-0zi8QJktqIsS3vPDIgU3W28Vypn9dQIVohn+BzYIAVo=",
+    "lastModified": 1794204280
   },
   "nixos-hardware": {
     "type": "github",
     "owner": "NixOS",
     "repo": "nixos-hardware",
-    "rev": "1a8ff4f57ffe1f732beaa1db842247a381ea471d",
-    "narHash": "sha256-mJok3uMK0awq2MPKdSnvTxm3UD89KD3LclQzASgtY1s=",
-    "lastModified": 1794051415
+    "rev": "37ba750aba1c1e78c4d2e0c28e1e4fb84c73ef35",
+    "narHash": "sha256-BuQB4OrIPcXCDVvmLBrzk1eH9Aq/oKYe/fnNJFqrRn4=",
+    "lastModified": 1794400081
   },
   "nixos-plymouth": {
     "type": "github",
@@ -154,9 +154,9 @@
     "type": "github",
     "owner": "manic-systems",
     "repo": "tack",
-    "rev": "cd02f41558f0ccf8b1ae67fd96950ed0e6553129",
-    "narHash": "sha256-NkEQK3h5pn39Cj4zMf/EYoxUo0/SNnkR0yGaYvJ96DA=",
-    "lastModified": 1794039014
+    "rev": "f59bc3e6679df14d402e40bf895cc2533bae4ca2",
+    "narHash": "sha256-ZK5sfTsvSo9VYEi8mAVtfu5FUFvMYoGMn6+CYzS1pPU=",
+    "lastModified": 1794242539
   },
   "treefmt-nix": {
     "type": "github",
@@ -178,9 +178,9 @@
     "type": "github",
     "owner": "vicinaehq",
     "repo": "vicinae",
-    "rev": "84a0086f0e589576c3c55a211579e63c20d83e59",
-    "narHash": "sha256-GyN4K/lOaRRO2RkFJS5dVmpNX7xsrVbclzBfxd3mxtU=",
-    "lastModified": 1794153382
+    "rev": "479026e394808340f3a31505e78bfea8851e9ac9",
+    "narHash": "sha256-kmBjKvYQIu8LfQt51Sow0H75lUsZfcRPCPB/3X8WRN8=",
+    "lastModified": 1794348084
   },
   "vpkgs": {
     "type": "github",

@@ -36,7 +36,7 @@ system := `echo $system`
 
 [group('SYSTEM')]
 @get-updates:
-    echo -e "Updating flake...\n"
+    echo -e "Updating inputs...\n"
     tack update
 
 [group('SYSTEM')]
