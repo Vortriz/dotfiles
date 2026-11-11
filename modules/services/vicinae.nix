@@ -1,4 +1,4 @@
-{ inputs, ... }: {
+{
     unify.home =
         {
             config,
@@ -7,16 +7,9 @@
             ...
         }:
         {
-            imports = [ inputs.vicinae.homeManagerModules.default ];
-
             programs.vicinae = {
                 enable = true;
-                package = inputs.vicinae.packages.${pkgs.stdenv.hostPlatform.system}.default;
-
-                systemd = {
-                    enable = true;
-                    autoStart = true;
-                };
+                systemd.enable = true;
             };
 
             home.packages = with pkgs; [ doi2bib3 ];

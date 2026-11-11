@@ -38,12 +38,10 @@
     nixConfig = {
         extra-substituters = [
             "https://niri-nix.cachix.org"
-            "https://vicinae.cachix.org"
             "https://cache.manic.systems"
         ];
         extra-trusted-public-keys = [
             "niri-nix.cachix.org-1:SvFtqpDcf7Sm1SMJdby1/+Y+6f3Yt3/3PMcSTKPJNJ0="
-            "vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc="
             "cache.manic.systems-1:s6OZanN8Us8vRi0jVivP3qlMn0cYHBjBALKrNe5nH8s="
         ];
     };

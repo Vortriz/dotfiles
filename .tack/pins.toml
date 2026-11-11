@@ -75,9 +75,6 @@ group = "cached"
 [inputs.nix-index-database]
 url = "github:nix-community/nix-index-database"
 
-[inputs.nixdatifier]
-url = "github:Muddyblack/nixdatifier"
-
 [inputs.nixos-hardware]
 url = "github:NixOS/nixos-hardware"
 
@@ -97,10 +94,6 @@ group = "cached"
 
 [inputs.treefmt-nix]
 url = "github:numtide/treefmt-nix"
-
-[inputs.vicinae]
-url = "github:vicinaehq/vicinae"
-group = "cached"
 
 [inputs.vpkgs]
 url = "github:Vortriz/vpkgs"

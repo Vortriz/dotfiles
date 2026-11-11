@@ -71,7 +71,6 @@
             # nix-index
             imports = [
                 inputs.nix-index-database.homeModules.nix-index
-                inputs.nixdatifier.homeManagerModules.default
             ];
 
             programs.nix-index.enable = true;
@@ -89,11 +88,6 @@
             programs.nix-your-shell = {
                 enable = true;
                 nix-output-monitor.enable = true;
-            };
-
-            programs.nixdatifier = {
-                enable = true;
-                autostart = true;
             };
         };
     };
