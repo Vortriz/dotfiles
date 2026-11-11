@@ -27317,3 +27317,89 @@ PATHS: 2704 -> 2662 (+67, -109)
 SIZE: 21.3 GiB -> 21.1 GiB (-206 MiB)
 
 NOTE: 5 hidden (--full to show)
+
+---
+
+12/11/26 01:32:18 AM IST
+<<< /nix/store/cgims0zin3g9d1qk2hgvp1pm9m5zvlja-nixos-system-sagittarius-26.11.20261107.f4a03c0
+>>> /nix/store/8wfd3glkzdxxvidywmqbdzf4immc4zg4-nixos-system-sagittarius-26.11.20261107.f4a03c0
+
+CHANGED (42)
+[D*] acl                                                   2.4.0-man, <unchanged> -> <unchanged>, -79.7 KiB
+[D*] attr                                                  2.6.0-man, <unchanged> -> <unchanged>, -20.3 KiB
+[D*] bind                                                  9.20.30-man, <unchanged> -> <unchanged>, -113 KiB
+[D*] btrfs-progs                                           7.3-man, <unchanged> -> <unchanged>, -144 KiB
+[D*] cups                                                  2.4.19-man, <unchanged> -> <unchanged>, -92.6 KiB
+[D*] dbus                                                  1.16.2-man, <unchanged> -> <unchanged>, -34.3 KiB
+[D*] dconf                                                 51.0-man, <unchanged> -> <unchanged>
+[D*] dosfstools                                            4.2-man, <unchanged> -> <unchanged>, -14.3 KiB
+[D*] e2fsprogs                                             1.47.4-man, <unchanged> -> <unchanged>, -90.2 KiB
+[D*] exfatprogs                                            1.4.3-man, <unchanged> -> <unchanged>, -10.5 KiB
+[D*] fuse                                                  3.18.2-man, <unchanged> -> <unchanged>
+[D.] gcc                                                   15.3.0-lib, 15.3.0-libgcc, <unchanged> -> <unchanged>, -10.2 MiB
+[D*] iproute2                                              7.2.0-man, <unchanged> -> <unchanged>, -334 KiB
+[D*] iptables                                              1.8.13-man, <unchanged> -> <unchanged>, -94.5 KiB
+[D*] iputils                                               20250605-man, <unchanged> -> <unchanged>, -14.1 KiB
+[D*] kbd                                                   2.9.0-man, <unchanged> -> <unchanged>, -43.8 KiB
+[D*] kmod                                                  31-man, <unchanged> -> <unchanged>, -20.3 KiB
+[D*] libressl                                              4.3.2-man, <unchanged> -> <unchanged>, -1.42 MiB
+[D*] linux-pam                                             1.7.2-man, <unchanged> -> <unchanged>, -173 KiB
+[D*] lm-sensors                                            3.6.2-man, <unchanged> -> <unchanged>, -22.4 KiB
+[D*] lvm2                                                  2.03.41-man, <unchanged> -> <unchanged>, -363 KiB
+[D-] man-db                                                2.13.1_fish-completions, <unchanged> -> <unchanged>, -9.23 KiB
+[D*] mkpasswd                                              5.6.6-man, <unchanged> -> <unchanged>
+[D*] mtools                                                4.0.49-man, <unchanged> -> <unchanged>, -58.6 KiB
+[D*] nano                                                  9.3-man, <unchanged> -> <unchanged>, -25.2 KiB
+[D*] nix                                                   2.35.3-man, <unchanged> -> <unchanged>
+[D*] ntfsprogs-plus                                        1.0.0-man, <unchanged> -> <unchanged>, -21.5 KiB
+[D.] numen                                                 0.8.0 -> 0.7.0, +27.3 KiB
+[D*] openssh                                               10.6p1-man, <unchanged> -> <unchanged>, -113 KiB
+[D*] p7zip                                                 17.06-man, <unchanged> -> <unchanged>
+[D*] pipewire                                              1.6.11-man, <unchanged> -> <unchanged>, -154 KiB
+[D*] podman                                                6.1.4-man, <unchanged> -> <unchanged>, -583 KiB
+[D*] podman-docker-compat                                  6.1.4-man, <unchanged> -> <unchanged>, -71.1 KiB
+[D*] procps                                                4.0.7-man, <unchanged> -> <unchanged>, -605 KiB
+[D.] sddm-unwrapped                                        0.21.0-man, <unchanged> -> <unchanged>
+[D*] strace                                                7.3-man, <unchanged> -> <unchanged>, -21.0 KiB
+[D*] systemd                                               262-man, <unchanged> -> <unchanged>, -2.03 MiB
+[D*] udisks                                                2.11.2-man, <unchanged> -> <unchanged>, -12.8 KiB
+[D*] util-linux                                            2.42.4-man, <unchanged> -> <unchanged>, -414 KiB
+[D.] vicinae                                               0.30.0, 0.30.0-configured-fish-completions, 0.30.0-configured -> 0.29.2, 0.29.2-fish-completions, -20.9 MiB
+[D*] which                                                 2.25-man, <unchanged> -> <unchanged>
+[D*] zstd                                                  1.5.7-man, <unchanged> -> <unchanged>, -13.9 KiB
+
+ADDED (5)
+[A.] com.vicinae.vicinae.json                              <none>
+[A.] hm_org.freedesktop.FileManager1.commonconfig          <none>
+[A.] librewolf-native-messaging-hosts                      <none>
+[A.] org-freedesktop-filemanager1-common.service           <none>
+[A.] org.freedesktop.FileManager1.common                   2026-11-09, +39.0 KiB
+
+REMOVED (22)
+[R.] etc-man_db.conf                                       <none>
+[R.] hm_autostartnixdatifier.desktop                       <none>
+[R.] home-configuration-reference-manpage                  <none>, -2.44 MiB
+[R.] home-configuration-reference-manpage-fish-completions <none>
+[R.] inotify-tools                                         4.26.270, -12.2 MiB
+[R.] man-paths                                             <none>, -1.66 MiB
+[R.] nix-manual                                            2.35.3-man, -499 KiB
+[R.] nixdatifier                                           2.2.2, 2.2.2-fish-completions, -5.11 MiB
+[R-] nixos-configuration-reference-manpage                 <none>, -1.44 MiB
+[R.] perl5.42.3-Archive-Zip                                1.68, -219 KiB
+[R.] perl5.42.3-Compress-Raw-Lzma                          2.206, -107 KiB
+[R.] perl5.42.3-File-Slurper                               0.014, -9.17 KiB
+[R.] perl5.42.3-Getopt-Long                                2.58, -91.4 KiB
+[R.] perl5.42.3-IO-Compress-Brotli                         0.019, -40.5 KiB
+[R.] perl5.42.3-Image-ExifTool                             13.59, 13.59-fish-completions, -20.0 MiB
+[R.] perl5.42.3-SUPER                                      1.20190531, -9.33 KiB
+[R.] perl5.42.3-Sub-Identify                               0.14, -23.3 KiB
+[R.] perl5.42.3-Test-MockModule                            0.177.0, -18.5 KiB
+[R-] sddm-wrapped-man                                      <none>
+[R.] unit-mandb.service                                    <none>
+[R.] unit-script-mandb-start                               <none>
+[R.] vicinae-settings.json                                 <none>
+
+PATHS: 2662 -> 2601 (+41, -102)
+SIZE: 21.1 GiB -> 21.0 GiB (-83.6 MiB)
+
+NOTE: 2 hidden (--full to show)
