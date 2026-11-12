@@ -78,9 +78,9 @@
     "type": "github",
     "owner": "NixOS",
     "repo": "nixos-hardware",
-    "rev": "37ba750aba1c1e78c4d2e0c28e1e4fb84c73ef35",
-    "narHash": "sha256-BuQB4OrIPcXCDVvmLBrzk1eH9Aq/oKYe/fnNJFqrRn4=",
-    "lastModified": 1794400081
+    "rev": "b6ca87f78ec5bafc4b2aef7b29803dcf419266af",
+    "narHash": "sha256-4s5CRvkYX4oAJVZ+zu2bBKFH2gG2GqN6OKHEWgJr1AY=",
+    "lastModified": 1794425805
   },
   "nixos-plymouth": {
     "type": "github",
@@ -94,9 +94,9 @@
     "type": "github",
     "owner": "NixOS",
     "repo": "nixpkgs",
-    "rev": "f4a03c008967841f2a0b3cb7c436fc6fc31671f6",
-    "narHash": "sha256-ziZn2PvCJE5JEEpqTdxXwJpPB+L3YqoCpTAMCzyaP3U=",
-    "lastModified": 1794042290
+    "rev": "177d0540942fb205af6993b1d5fa0b57799e09f8",
+    "narHash": "sha256-SvB8u5qaJAOwZZyZciqTVOg/rBoUs2w0sFTU6ED51AQ=",
+    "lastModified": 1794192123
   },
   "shyfox": {
     "type": "github",
@@ -144,9 +144,9 @@
     "type": "github",
     "owner": "manic-systems",
     "repo": "tack",
-    "rev": "f59bc3e6679df14d402e40bf895cc2533bae4ca2",
-    "narHash": "sha256-ZK5sfTsvSo9VYEi8mAVtfu5FUFvMYoGMn6+CYzS1pPU=",
-    "lastModified": 1794242539
+    "rev": "c107b0fc252b0b33b01e6b7d6111aaaedc49613e",
+    "narHash": "sha256-bdNCaHUF3c8hgsYw6FCI+lGcZanZIDxt2Sefu5AsERY=",
+    "lastModified": 1794450976
   },
   "treefmt-nix": {
     "type": "github",
