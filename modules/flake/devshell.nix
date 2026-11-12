@@ -16,7 +16,7 @@
                     [
                         # keep-sorted start
                         dix
-                        fresh-editor
+                        # fresh-editor
                         git
                         jaq
                         just
