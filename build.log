@@ -27438,3 +27438,50 @@ CHANGED (24)
 
 PATHS: 2601 -> 2601 (+169, -169)
 SIZE: 21.0 GiB -> 21.0 GiB (+13.0 MiB)
+
+---
+
+14/11/26 01:26:09 PM IST
+<<< /nix/store/flnwb4mlkaa12nwbxm128fxwvjwdp1xv-nixos-system-sagittarius-26.11.20261109.177d054
+>>> /nix/store/lwxai71z8a9v8i9sk2vi2m4ll5nifmg2-nixos-system-sagittarius-26.11.20261111.d4f25a3
+
+CHANGED (30)
+[U.] ZotLit                   2.2.2 -> 2.2.3
+[U.] acpi-call                1.2.2-7.3.3 -> 1.2.2-7.3.4
+[U.] breeze                   6.8.2 -> 6.8.3
+[D.] electron                 43.8.7, <unchanged> -> <unchanged>
+[D.] electron-unwrapped       43.8.7, <unchanged> -> <unchanged>, -356 MiB
+[U.] firefox                  159.0.1, 159.0.1-fish-completions -> 160.0, 160.0-fish-completions, -11.9 KiB
+[U.] firefox-unwrapped        159.0.1 -> 160.0, +4.98 MiB
+[U.] hyprgraphics             0.5.1 -> 0.6.0
+[U.] initrd-linux             7.3.3 -> 7.3.4, +95.1 KiB
+[U.] kdecoration              6.8.2 -> 6.8.3
+[U.] layer-shell-qt           6.8.2 -> 6.8.3
+[U.] lcevcdec                 4.3.0-lib -> 4.3.1-lib
+[U.] linux                    7.3.3, 7.3.3-modules ×2 -> 7.3.4, 7.3.4-modules ×2, +45.7 KiB
+[U.] mesa                     26.2.6 ×2 -> 26.3.0 ×2, -3.50 MiB
+[C*] nix                      2.35.5 ×2, 2.34.9 ×2 -> 2.35.6 ×2, -3.92 MiB
+[C.] nix-cmd                  2.35.5, 2.34.9 -> 2.35.6, -1.05 MiB
+[C.] nix-expr                 2.35.5, 2.34.9 -> 2.35.6, -3.37 MiB
+[C.] nix-fetchers             2.35.5, 2.34.9 -> 2.35.6, -1.55 MiB
+[C.] nix-flake                2.35.5, 2.34.9 -> 2.35.6, -987 KiB
+[C.] nix-main                 2.35.5, 2.34.9 -> 2.35.6, -393 KiB
+[C.] nix-nswrapper            2.35.5, 2.34.9 -> 2.35.6, -131 KiB
+[C.] nix-store                2.35.5, 2.34.9 -> 2.35.6, -5.89 MiB
+[C.] nix-util                 2.35.5, 2.34.9 -> 2.35.6, -2.41 MiB
+[U.] nixos-system-sagittarius 26.11.20261109.177d054 -> 26.11.20261111.d4f25a3
+[U.] nss                      3.132, <unchanged> -> 3.133, <unchanged>
+[U.] python3.14-cyclopts      5.3.3 -> 5.4.0, +28.5 KiB
+[U.] python3.14-uncalled-for  0.4.0 -> 0.6.1, +42.6 KiB
+[U.] svelte-language-server   0.18.5 -> 0.18.6, +72.5 KiB
+[U.] ty                       0.0.98 -> 0.0.99, +404 KiB
+[U.] xwayland                 24.1.14 -> 24.1.15
+
+ADDED (2)
+[A+] fresh                    0.5.4, +39.4 MiB
+[A.] level-zero               1.34.0, +7.77 MiB
+
+PATHS: 2601 -> 2591 (+150, -160)
+SIZE: 21.0 GiB -> 20.7 GiB (-325 MiB)
+
+NOTE: 2 hidden (--full to show)
